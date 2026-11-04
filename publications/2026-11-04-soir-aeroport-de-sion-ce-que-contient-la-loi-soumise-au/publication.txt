@@ -1,0 +1,37 @@
+LE POULS
+Aéroport de Sion : ce que contient la loi soumise au vote
+Édition du soir, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le 29 novembre, le Valais vote sur la loi de l'aéroport de Sion. On t'explique ce que prévoit la loi, les arguments des deux camps et ce qui se passe si c'est non.
+Sources : État du Valais ; RTS, « Aéroport de Sion: le Valais aux urnes le 29 novembre » ; La Télé (Keystone-ATS) ; 24heures ; comités du oui et du non
+#Valais #Sion #Votation #AéroportDeSion
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- État du Valais : La prochaine votation cantonale aura lieu le 29 novembre 2026 (https://www.vs.ch/web/communication/w/la-prochaine-votation-cantonale-aura-lieu-le-29-novembre-2026)
+- État du Valais : Votation cantonale - Deux objets soumis au vote de la population le 29 novembre 2026 (https://www.vs.ch/web/communication/w/votation-cantonale-deux-objets-soumis-au-vote-de-la-population-le-29-novembre-2026)
+- RTS : Aéroport de Sion: le Valais aux urnes le 29 novembre (https://www.rts.ch/info/regions/valais/2026/article/aeroport-de-sion-le-valais-aux-urnes-le-29-novembre-29372282.html)
+- La Télé (Keystone-ATS) : Aéroport de Sion : le comité du oui lance sa campagne pour la loi (https://latele.ch/articles/loi-sur-l-aeroport-de-sion-le-comite-du-oui-lance-sa-campagne)
+- 24heures : Aéroport de Sion: la gauche combat la nouvelle loi (https://www.24heures.ch/aeroport-de-sion-la-gauche-combat-la-nouvelle-loi-316562331326)
+- Comité du oui : L'avenir de l'aéroport de Sion se décide le 29 novembre (https://oui-aeroport-valais.ch/)
+- ATE Valais (comité référendaire) : Aéroport de Sion : pas d'argent public pour les jets privés (https://www.ate.ch/sektionen/wallis/news/aeroport-de-sion-pas-dargent-public-pour-les-jets-prives)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 3) : Le champ crédit de la scène photo contient encore un texte provisoire (« À compléter par le pipeline »), pas un vrai crédit auteur + licence. C'est acceptable en phase texte, puisque la photo n'est pas encore choisie.
+- mineur (scène 10) : La ligne « Sources » de l'outro est bien recalée. Bluewin reste pourtant utilisé dans `faits` (le maintien du fonctionnement actuel jusqu'en 2031 en cas de refus) sans figurer dans `sources` ni dans l'outro. L'ATE, comité référendaire, n'est couvert que par la formule « comités du oui et du non ».
+- mineur (scène 6) : La scène est équilibrée à l'écran, avec 3 points de chaque côté. Dans la voix, le oui occupe environ 39 mots (de « Le comité du oui avance » à « selon le Canton ») et le non environ 32 mots (de « Mais pour les opposants » à « jets privés »). L'écart est d'environ 18 %, légèrement au-dessus des 15 % tolérés. Le point « société majoritairement publique » n'est pas dit dans ce passage, alors qu'il apparaît dans la colonne du oui.
+- mineur (scène 1) : La scène ballot affiche l'intitulé officiel de l'objet dans un champ nommé « question ». La note de contrôle précise qu'il ne s'agit pas de la question du bulletin.
+- bloquant (scène 3) : Scène photo : le titre « L'aéroport de Sion Valais-Wallis » passe sur 3 lignes. Le mot « Wallis » est coupé par le bandeau de sous-titre « pour gérer l'aéroport. » et les deux textes se chevauchent. De plus, le titre se coupe sur le tiret (« Valais- / Wallis »).
+- important (scène 3) : Le crédit photo passe sur 2 lignes (« …CC / BY-SA 4.0 ») et dépasse x ≈ 990 px, donc dans la zone masquée par TikTok (160 px à droite). Le crédit risque d'être caché.
+- important (scène 9) : Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes.
+- important (scène 9) : Le sous-titre sur 2 lignes (« une société majoritairement publique, ») descend jusqu'à y ≈ 1545 px, dans la zone basse masquée (400 px, soit y > 1520). Il a aussi une largeur anormale par rapport aux autres sous-titres.
+- important (scène 5) : Barres (indemnité) : de 22.44 s à environ 28 s, l'écran n'a que le kicker et une note, avec un grand vide. Les barres n'apparaissent qu'à 5.68 s, 7 s et 8.14 s, soit une demi-scène sans contenu.
+- mineur (scène 5) : Le kicker « INDEMNITÉ ESTIMÉE : 3 À 6 MILLIONS PAR AN » passe sur 2 lignes et laisse « PAR AN » seul en fin de ligne.
+- mineur (scène 1) : Le titre de la question coupe « Valais-Wallis » sur le tiret et laisse « Wallis » seul sur la dernière ligne.
+- mineur (scène 10) : Outro : « Abonne-toi » est décalé à x ≈ 130 px (hors de la marge gauche de 90 px) et ne montre aucun bouton visible. Le texte est du crème sur du vert, sans fond. Le tagline répète « Le Pouls » juste sous le logo. Les sources se coupent avec « du non » seul sur la 2e ligne.

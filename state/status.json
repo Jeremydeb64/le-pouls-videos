@@ -3,96 +3,11 @@
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "travaille",
-  "controleur": "travaille",
+  "scenariste": "termine",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-04T10:32:08.566Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs refusée (401). Elle doit commencer par « sk_ » : recrée-la dans ElevenLabs et remplace le secret KEYS_ELEVEN_POULS.",
-   "t": "2026-11-04T10:40:21.361Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
-   "t": "2026-11-04T10:42:26.416Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-04T10:42:26.417Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "35 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T10:42:32.418Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Salaire minimum VS : J-25 ». Votation cantonale le 29 novembre, 15'000 salariés concernés selon le comité du oui, et des chiffres simples à mettre en image (22 fr., 18 fr. pour l'agriculture).",
-   "t": "2026-11-04T10:42:46.693Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Fiscalité des couples : explication de l'objet fédéral du 29 novembre ». Objet fédéral du 29 novembre que nous n'avons pas encore couvert ; exemple chiffré possible avec un couple marié à deux revenus. Source unique pour l'instant, à recouper avec le texte officiel avant tournage.",
-   "t": "2026-11-04T10:42:46.694Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T10:42:46.696Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:44:28.035Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T10:45:09.815Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Salaire minimum VS : J-25 » abandonné : Error: Type de scène inconnu : urne\n    at http://localhost:3000/bundle.js:376:24\n    at Array.map (<anonymous>)\n    at Episode (http://localhost:3000/bundle.js:374:12)\n    at Nh (http://localhost:3000/bundle.js:812:137)\n    at Vk (http://localhost:3000/bundle.js:941:337)\n    at Uk (http://localhost:3000/bundle.js:931:389)\n    at Tk (http://localhost:3000/bundle.js:931:320)\n    at Ik (http://localhost:3000/bundle.js:931:180)\n    at Nk (http://localhost:3000/bundle.js:922:88)\n    at Gk (http://localhost:3000/bundle.js:919:429)",
-   "t": "2026-11-04T10:45:18.557Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Canal9.",
-   "t": "2026-11-04T10:45:18.558Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:48:04.831Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T10:48:31.406Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Gab01 / Wikimedia Commons, Public domain.",
-   "t": "2026-11-04T10:48:32.221Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T10:48:32.222Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Fiscalité des couples : explication de l'objet fédéral du 29 novembre » abandonné : Error: Type de scène inconnu : urne\n    at http://localhost:3000/bundle.js:376:24\n    at Array.map (<anonymous>)\n    at Episode (http://localhost:3000/bundle.js:374:12)\n    at Nh (http://localhost:3000/bundle.js:812:137)\n    at Vk (http://localhost:3000/bundle.js:941:337)\n    at Uk (http://localhost:3000/bundle.js:931:389)\n    at Tk (http://localhost:3000/bundle.js:931:320)\n    at Ik (http://localhost:3000/bundle.js:931:180)\n    at Nk (http://localhost:3000/bundle.js:922:88)\n    at Gk (http://localhost:3000/bundle.js:919:429)",
-   "t": "2026-11-04T10:48:33.053Z"
-  },
   {
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
@@ -407,9 +322,94 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-04T14:38:43.135Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
+   "t": "2026-11-04T14:39:59.731Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du soir, je fais le tour des sources.",
+   "t": "2026-11-04T14:39:59.733Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "141 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T14:40:05.292Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Aéroport de Sion : ce que le oui met sur la table ». Votation cantonale en cours, campagne du oui lancée aujourd'hui, chiffres concrets (75 millions, 20 minutes en hélicoptère) pour une infographie. Fiabilité à 4 : les chiffres du comité doivent être présentés comme tels et vérifiés, la date du scrutin reste à confirmer.",
+   "t": "2026-11-04T14:40:28.898Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Le Nouvelliste.",
+   "t": "2026-11-04T14:40:28.901Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T14:42:03.895Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Le texte est globalement solide et neutre. Pour le oui et le contre, le temps de parole est équivalent (environ 24 mots chacun) et le versus compte 3 points de chaque côté. Le décompte J-25 est juste : le 29 novembre tombe bien un dimanche. Rien dans le contexte local récent n'impose un ton plus sobre. Les chiffres 103-24, 3805, 70/20/10, 3 à 6 millions et 2031 sont confirmés par RTS, 24heures et La Télé. À corriger : 1) sources manquantes pour « secours », « formation », « majorité publique » et « structurel » dans le versus ; 2) l'intitulé de la question du scrutin, à reprendre de l'officiel ; 3) le crédit photo (auteur + licence) ; 4) la ligne « Sources » à recaler sur `faits`, avec une source officielle ou neutre pour les chiffres de la loi ; 5) « estimés » dès l'accroche et « près de » 75 millions. Renvoie-moi le JSON corrigé.",
+   "t": "2026-11-04T14:42:59.275Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T14:42:59.278Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T14:44:34.799Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections demandées sont faites. Les sources du versus sont ajoutées, « formation » est supprimé, l'intitulé officiel est repris, « estimations » est dit dès l'accroche, « près de 75 millions » est partout, et le référendum et les 2 abstentions sont précisés. Il reste des détails mineurs : le crédit photo à renseigner, Bluewin à créditer, le temps de parole oui/non à resserrer un peu, et le libellé « question » de la scène ballot. Rien ne bloque le passage à la phase image.",
+   "t": "2026-11-04T14:44:55.128Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
+   "t": "2026-11-04T14:44:55.130Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T14:45:23.785Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Carsten Steger / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-04T14:45:24.562Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T14:45:24.565Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-04T14:46:49.642Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Un chevauchement bloque la validation. Sur la scène photo, le titre de 3 lignes passe sous le sous-titre : raccourcis-le à 2 lignes et garde « Valais-Wallis » ensemble. Ramène aussi le crédit photo dans les marges (160 px à droite) et aligne les libellés du récap sur une même colonne. Les sous-titres doivent tenir sur une ligne, au-dessus de y = 1500. Enfin, fais apparaître les barres de la scène 5 plus tôt, car la première demi-scène est vide.",
+   "t": "2026-11-04T14:47:31.909Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-04T14:47:31.912Z"
   }
  ],
- "maj": "2026-11-04T14:38:43.135Z",
+ "maj": "2026-11-04T14:47:46.445Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -608,6 +608,129 @@
      "correction_demandee": "À l'étape image, utiliser une photo libre (Wikimedia Commons ou équivalent) avec auteur et licence visibles. Sinon, repli sur un visuel graphique. Aucune photo de presse, aucune personne identifiable."
     }
    ]
+  },
+  {
+   "id": "2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au",
+   "titre": "Aéroport de Sion : ce que contient la loi soumise au vote",
+   "edition": "soir",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "Le champ crédit de la scène photo contient encore un texte provisoire (« À compléter par le pipeline »), pas un vrai crédit auteur + licence. C'est acceptable en phase texte, puisque la photo n'est pas encore choisie.",
+     "correction_demandee": "Le pipeline doit inscrire l'auteur et la licence Wikimedia Commons, et le crédit doit être visible à l'image. Si aucune photo libre n'est trouvée, il faut passer à une scène carte. Je vérifierai ce point en phase image."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "La ligne « Sources » de l'outro est bien recalée. Bluewin reste pourtant utilisé dans `faits` (le maintien du fonctionnement actuel jusqu'en 2031 en cas de refus) sans figurer dans `sources` ni dans l'outro. L'ATE, comité référendaire, n'est couvert que par la formule « comités du oui et du non ».",
+     "correction_demandee": "Si la place le permet, ajoute Bluewin dans `sources` et dans la description. Sinon, rattache le fait « si c'est non » à une source déjà créditée, comme la RTS ou l'État du Valais."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "La scène est équilibrée à l'écran, avec 3 points de chaque côté. Dans la voix, le oui occupe environ 39 mots (de « Le comité du oui avance » à « selon le Canton ») et le non environ 32 mots (de « Mais pour les opposants » à « jets privés »). L'écart est d'environ 18 %, légèrement au-dessus des 15 % tolérés. Le point « société majoritairement publique » n'est pas dit dans ce passage, alors qu'il apparaît dans la colonne du oui.",
+     "correction_demandee": "Si c'est facile, raccourcis un peu la phrase du oui (par exemple retirer « de deux mille vingt-deux ») ou ajoute un élément au non pour rapprocher les temps de parole. Je mesurerai le temps de parole réel sur l'audio en phase finale."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "La scène ballot affiche l'intitulé officiel de l'objet dans un champ nommé « question ». La note de contrôle précise qu'il ne s'agit pas de la question du bulletin.",
+     "correction_demandee": "Vérifie à l'image que l'intitulé est présenté comme « intitulé de l'objet » ou « loi soumise au vote », sans la mention « question »."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 3,
+     "constat": "Scène photo : le titre « L'aéroport de Sion Valais-Wallis » passe sur 3 lignes. Le mot « Wallis » est coupé par le bandeau de sous-titre « pour gérer l'aéroport. » et les deux textes se chevauchent. De plus, le titre se coupe sur le tiret (« Valais- / Wallis »).",
+     "correction_demandee": "Raccourcir le titre (ex. « L'aéroport de Sion », 2 lignes maximum) ou remonter le bloc titre pour qu'il s'arrête au-dessus de y = 1380. Utiliser un espace insécable ou un retour à la ligne forcé pour que « Valais-Wallis » ne soit pas coupé."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Le crédit photo passe sur 2 lignes (« …CC / BY-SA 4.0 ») et dépasse x ≈ 990 px, donc dans la zone masquée par TikTok (160 px à droite). Le crédit risque d'être caché.",
+     "correction_demandee": "Limiter la largeur du crédit à 920 px (marge droite de 160 px) ou le placer en bas à gauche, au-dessus de la zone des 400 px. Le crédit doit rester entièrement lisible."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes.",
+     "correction_demandee": "Fixer une colonne de libellés commune (même x pour toutes les lignes), alignée à gauche, avec une largeur plus généreuse."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Le sous-titre sur 2 lignes (« une société majoritairement publique, ») descend jusqu'à y ≈ 1545 px, dans la zone basse masquée (400 px, soit y > 1520). Il a aussi une largeur anormale par rapport aux autres sous-titres.",
+     "correction_demandee": "Limiter les sous-titres à une ligne, ou remonter le bloc pour que sa dernière ligne reste au-dessus de y = 1500. Les sous-titres doivent rester vers y = 1400."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Barres (indemnité) : de 22.44 s à environ 28 s, l'écran n'a que le kicker et une note, avec un grand vide. Les barres n'apparaissent qu'à 5.68 s, 7 s et 8.14 s, soit une demi-scène sans contenu.",
+     "correction_demandee": "Faire apparaître la première barre dans les 1,5 s après le début de la scène et caler les 'at' sur la voix. Sinon, raccourcir la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 5,
+     "constat": "Le kicker « INDEMNITÉ ESTIMÉE : 3 À 6 MILLIONS PAR AN » passe sur 2 lignes et laisse « PAR AN » seul en fin de ligne.",
+     "correction_demandee": "Raccourcir le kicker (ex. « Indemnité estimée : 3 à 6 M par an ») pour tenir sur une ligne."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "Le titre de la question coupe « Valais-Wallis » sur le tiret et laisse « Wallis » seul sur la dernière ligne.",
+     "correction_demandee": "Utiliser un trait d'union insécable pour garder « Valais-Wallis » sur une même ligne."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Outro : « Abonne-toi » est décalé à x ≈ 130 px (hors de la marge gauche de 90 px) et ne montre aucun bouton visible. Le texte est du crème sur du vert, sans fond. Le tagline répète « Le Pouls » juste sous le logo. Les sources se coupent avec « du non » seul sur la 2e ligne.",
+     "correction_demandee": "Aligner « Abonne-toi » sur la marge gauche ou lui donner un fond de bouton (papier avec texte encre). Raccourcir la ligne de sources pour éviter le mot orphelin."
+    }
+   ],
+   "description_tiktok": "Le 29 novembre, le Valais vote sur la loi de l'aéroport de Sion. On t'explique ce que prévoit la loi, les arguments des deux camps et ce qui se passe si c'est non.\nSources : État du Valais ; RTS, « Aéroport de Sion: le Valais aux urnes le 29 novembre » ; La Télé (Keystone-ATS) ; 24heures ; comités du oui et du non\n#Valais #Sion #Votation #AéroportDeSion",
+   "sources": [
+    {
+     "media": "État du Valais",
+     "titre": "La prochaine votation cantonale aura lieu le 29 novembre 2026",
+     "url": "https://www.vs.ch/web/communication/w/la-prochaine-votation-cantonale-aura-lieu-le-29-novembre-2026"
+    },
+    {
+     "media": "État du Valais",
+     "titre": "Votation cantonale - Deux objets soumis au vote de la population le 29 novembre 2026",
+     "url": "https://www.vs.ch/web/communication/w/votation-cantonale-deux-objets-soumis-au-vote-de-la-population-le-29-novembre-2026"
+    },
+    {
+     "media": "RTS",
+     "titre": "Aéroport de Sion: le Valais aux urnes le 29 novembre",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/aeroport-de-sion-le-valais-aux-urnes-le-29-novembre-29372282.html"
+    },
+    {
+     "media": "La Télé (Keystone-ATS)",
+     "titre": "Aéroport de Sion : le comité du oui lance sa campagne pour la loi",
+     "url": "https://latele.ch/articles/loi-sur-l-aeroport-de-sion-le-comite-du-oui-lance-sa-campagne"
+    },
+    {
+     "media": "24heures",
+     "titre": "Aéroport de Sion: la gauche combat la nouvelle loi",
+     "url": "https://www.24heures.ch/aeroport-de-sion-la-gauche-combat-la-nouvelle-loi-316562331326"
+    },
+    {
+     "media": "Comité du oui",
+     "titre": "L'avenir de l'aéroport de Sion se décide le 29 novembre",
+     "url": "https://oui-aeroport-valais.ch/"
+    },
+    {
+     "media": "ATE Valais (comité référendaire)",
+     "titre": "Aéroport de Sion : pas d'argent public pour les jets privés",
+     "url": "https://www.ate.ch/sektionen/wallis/news/aeroport-de-sion-pas-dargent-public-pour-les-jets-prives"
+    }
+   ],
+   "mp4": "out/aeroport-de-sion-ce-que-le-oui-met-sur-la-table/2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au.mp4",
+   "etat": "a_valider",
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au/LePouls_2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1qp6JzIpfz5AbeSYCMFvz8u5WNzngNjRp",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/3"
   }
  ]
 }
