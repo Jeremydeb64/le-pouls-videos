@@ -1,0 +1,29 @@
+name: Test dépôt Drive
+
+on:
+  push:
+    paths:
+      - ".github/test-drive.json"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Envoi d'un dossier de test vers Drive
+        env:
+          DRIVE_WEBAPP_URL: ${{ secrets.DRIVE_WEBAPP_URL }}
+          DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
+        run: |
+          node --input-type=module -e '
+          import fs from "node:fs";
+          import { driveActif, deposerSurDrive } from "./pipeline/lib/drive.mjs";
+          const t = JSON.parse(fs.readFileSync(".github/test-drive.json", "utf8"));
+          if (!driveActif()) { console.log("Secrets Drive absents"); process.exit(1); }
+          const lien = await deposerSurDrive(t.nom, t.fichiers);
+          console.log("OK Drive :", lien);
+          '
