@@ -1,0 +1,21 @@
+{
+ "lignes": [],
+ "executions": [
+  {
+   "date": "2026-11-04T15:49:10.567Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
+  }
+ ],
+ "par_jour": {},
+ "par_mois": {},
+ "par_video": {},
+ "soldes": {
+  "date": "2026-11-04T15:49:10.568Z",
+  "elevenlabs": {
+   "erreur": "Solde illisible (401) : activer la permission « User → Read » sur la clé ElevenLabs."
+  }
+ },
+ "usd_chf": 0.8,
+ "maj": "2026-11-04T15:49:10.957Z"
+}
