@@ -76,7 +76,7 @@ async function ecrire(sujet, retours = null) {
     }
   }
   return demanderJSON({
-    systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA,
+    systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA + (higgsfieldActif() ? "" : "\n\n---\n\nIMPORTANT : les visuels générés par IA sont désactivés pour l'instant. N'utilise ni `fond_ia` ni la scène `illustration`."),
     recherche: true,
     max: 32000,
     contenu:

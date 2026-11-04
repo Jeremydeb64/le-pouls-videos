@@ -38,7 +38,7 @@ jobs:
       - name: Veilleur → Scénariste → Voix → Rendu → Contrôleur
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || vars.ANTHROPIC_API_KEY }}
-          HIGGSFIELD_KEY: ${{ secrets.HIGGSFIELD_POULS_2 }}
+          # Visuels IA désactivés (pas de solde API Higgsfield). Pour réactiver : HIGGSFIELD_KEY: ${{ secrets.HIGGSFIELD_POULS_2 }}
           ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS || vars.KEYS_ELEVEN_POULS || secrets.ELEVENLABS_API_KEY }}
           DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
           EDITION_DEMANDEE: ${{ github.event.inputs.edition }}
