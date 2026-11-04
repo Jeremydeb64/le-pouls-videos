@@ -142,7 +142,12 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-04T10:32:08.566Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs refusée (401). Elle doit commencer par « sk_ » : recrée-la dans ElevenLabs et remplace le secret KEYS_ELEVEN_POULS.",
+   "t": "2026-11-04T10:40:21.361Z"
   }
  ],
- "maj": "2026-11-04T10:32:08.566Z"
+ "maj": "2026-11-04T10:40:21.361Z"
 }
