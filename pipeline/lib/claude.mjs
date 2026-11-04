@@ -55,15 +55,56 @@ async function appel(key, body) {
 }
 
 // Extrait le premier objet JSON d'une réponse (tolère ```json ... ```).
+// Tous les objets JSON équilibrés présents dans le texte (en tenant compte des chaînes)
+function objets(texte) {
+  const res = [];
+  for (let i = 0; i < texte.length; i++) {
+    if (texte[i] !== "{") continue;
+    let prof = 0, chaine = false, echap = false;
+    for (let j = i; j < texte.length; j++) {
+      const c = texte[j];
+      if (chaine) {
+        if (echap) echap = false;
+        else if (c === "\\") echap = true;
+        else if (c === '"') chaine = false;
+        continue;
+      }
+      if (c === '"') chaine = true;
+      else if (c === "{") prof++;
+      else if (c === "}" && --prof === 0) {
+        res.push(texte.slice(i, j + 1));
+        i = j;
+        break;
+      }
+    }
+  }
+  return res;
+}
+
 export function json(texte) {
-  const blocs = [...texte.matchAll(/```json\s*([\s\S]*?)```/g)].map((m) => m[1]);
-  const debut = texte.indexOf("{");
-  const fin = texte.lastIndexOf("}");
-  if (debut >= 0 && fin > debut) blocs.push(texte.slice(debut, fin + 1));
-  for (const b of blocs.reverse()) {
+  const candidats = [...[...texte.matchAll(/```json\s*([\s\S]*?)```/g)].map((m) => m[1]), ...objets(texte)];
+  const valides = [];
+  for (const c of candidats) {
     try {
-      return JSON.parse(b);
+      valides.push(JSON.parse(c));
     } catch {}
   }
-  throw new Error("JSON illisible dans la réponse de Claude : " + texte.slice(0, 500));
+  if (valides.length) return valides.sort((a, b) => JSON.stringify(b).length - JSON.stringify(a).length)[0];
+  throw new Error("JSON illisible dans la réponse de Claude : " + texte.slice(0, 300));
+}
+
+// Demande + lecture JSON ; en cas d'échec, Claude répare sa propre réponse une fois.
+export async function demanderJSON(opts) {
+  const rep = await demander(opts);
+  try {
+    return json(rep);
+  } catch {
+    const repare = await demander({
+      systeme: "Tu convertis une réponse en un objet JSON valide, sans rien changer au contenu. Réponds uniquement par le JSON.",
+      contenu: rep.slice(-60000),
+      modele: MODELE_LEGER,
+      max: 16000,
+    });
+    return json(repare);
+  }
 }

@@ -68,4 +68,4 @@ jobs:
           git checkout -- package-lock.json 2>/dev/null || true
           for d in state episodes publications; do [ -e "$d" ] && git add "$d"; done
           git commit -m "Édition ${{ github.run_number }} : état de la rédaction" || echo "Rien à archiver"
-          git pull --rebase --autostash && git push
+          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 15; done

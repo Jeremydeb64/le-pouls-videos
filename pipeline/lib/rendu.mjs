@@ -4,12 +4,17 @@ import { renderMedia, renderStill, selectComposition } from "@remotion/renderer"
 import path from "node:path";
 import fs from "node:fs";
 
-let serveUrl;
+
 const browserExecutable = process.env.CHROME_PATH || null; // sur GitHub, Remotion télécharge son navigateur
-const prepare = async () => (serveUrl ??= await bundle({ entryPoint: path.resolve("src/index.ts"), publicDir: path.resolve("public") }));
+// Le bundle copie public/ : on le refait pour chaque épisode afin d'inclure la voix et les photos du jour.
+const caches = new Map();
+const prepare = async (id = "x") => {
+  if (!caches.has(id)) caches.set(id, await bundle({ entryPoint: path.resolve("src/index.ts"), publicDir: path.resolve("public") }));
+  return caches.get(id);
+};
 
 export async function rendre(episode, sortie) {
-  const url = await prepare();
+  const url = await prepare(episode.id);
   const inputProps = { episode, withVoice: true };
   const composition = await selectComposition({ serveUrl: url, id: "Episode", inputProps, browserExecutable });
   await renderMedia({ composition, serveUrl: url, codec: "h264", outputLocation: sortie, inputProps, crf: 20, browserExecutable });
@@ -18,7 +23,7 @@ export async function rendre(episode, sortie) {
 
 // Une image au milieu de chaque scène (et une au tout début)
 export async function imagesCles(episode, dossier) {
-  const url = await prepare();
+  const url = await prepare(episode.id);
   const inputProps = { episode, withVoice: false };
   const composition = await selectComposition({ serveUrl: url, id: "Episode", inputProps, browserExecutable });
   fs.mkdirSync(dossier, { recursive: true });

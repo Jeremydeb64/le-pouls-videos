@@ -47,24 +47,41 @@ const jetons = (texte) => texte.replace(/\[[^\]]*\]/g, " ").split(/\s+/).filter(
 export function alignerSousTitres(segments, motsBruts) {
   const mots = nettoyer(motsBruts);
   const norm = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
-  const out = [];
-  let i = 0;
-  let ecart = 0;
-  for (const seg of segments) {
-    const toks = jetons(seg.dit);
-    if (!toks.length || i >= mots.length) continue;
-    const debutIdx = i;
-    for (const tok of toks) {
-      // cherche le mot dans une petite fenêtre (tolère un mot fusionné, coupé ou mal transcrit)
-      let trouve = -1;
-      for (let j = i; j < Math.min(i + 4, mots.length); j++) if (norm(mots[j].text) === norm(tok)) { trouve = j; break; }
-      if (trouve >= 0) { ecart += trouve - i; i = trouve + 1; }
-      else { ecart++; i = Math.min(i + 1, mots.length); }
-    }
-    const fin = Math.max(debutIdx, Math.min(i - 1, mots.length - 1));
-    out.push([+mots[Math.min(debutIdx, mots.length - 1)].start.toFixed(2), +mots[fin].end.toFixed(2), seg.affiche]);
+  // Jetons du texte, avec leur segment d'origine
+  const toks = [];
+  segments.forEach((seg, k) => jetons(seg.dit).forEach((t) => toks.push({ t: norm(t), k })));
+  const W = mots.map((m) => norm(m.text));
+  const n = toks.length, m = W.length;
+  // Alignement global (plus longue sous-séquence commune) entre texte et transcription
+  const L = Array.from({ length: n + 1 }, () => new Int16Array(m + 1));
+  for (let i = n - 1; i >= 0; i--)
+    for (let j = m - 1; j >= 0; j--) L[i][j] = toks[i].t === W[j] ? L[i + 1][j + 1] + 1 : Math.max(L[i + 1][j], L[i][j + 1]);
+  const lien = new Array(n).fill(-1);
+  for (let i = 0, j = 0; i < n && j < m; ) {
+    if (toks[i].t === W[j]) { lien[i] = j; i++; j++; }
+    else if (L[i + 1][j] >= L[i][j + 1]) i++;
+    else j++;
   }
-  return { sousTitres: out, ecart };
+  const ecart = n - lien.filter((x) => x >= 0).length;
+  // Bornes de chaque segment ; si un segment n'a aucun mot reconnu, il est interpolé entre ses voisins
+  const bornes = segments.map((_, k) => {
+    const idx = lien.filter((j, i) => j >= 0 && toks[i].k === k);
+    return idx.length ? [Math.min(...idx), Math.max(...idx)] : null;
+  });
+  const out = [];
+  segments.forEach((seg, k) => {
+    let b = bornes[k];
+    if (!b) {
+      const avant = bornes.slice(0, k).reverse().find(Boolean);
+      const apres = bornes.slice(k + 1).find(Boolean);
+      const s0 = avant ? mots[avant[1]].end : 0;
+      const s1 = apres ? mots[apres[0]].start : s0 + 1.5;
+      out.push([+s0.toFixed(2), +Math.max(s1, s0 + 0.5).toFixed(2), seg.affiche]);
+      return;
+    }
+    out.push([+mots[b[0]].start.toFixed(2), +mots[b[1]].end.toFixed(2), seg.affiche]);
+  });
+  return { sousTitres: out.filter((x) => jetons(x[2] || "").length || x[2]), ecart };
 }
 
 // Résout les ancres { "seg": k } dans les scènes : from/to en secondes, et les « at » relatifs au début de scène.

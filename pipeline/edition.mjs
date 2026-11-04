@@ -2,7 +2,7 @@
 // Lancé par GitHub Actions (matin et soir) ou à la main : EDITION=matin node pipeline/edition.mjs
 import fs from "node:fs";
 import path from "node:path";
-import { demander, json, consigne, MODELE_LEGER } from "./lib/claude.mjs";
+import { demanderJSON, consigne, MODELE_LEGER } from "./lib/claude.mjs";
 import { lire, rss, texteArticle, photoLibre } from "./lib/web.mjs";
 import { genererVoix, transcrire, alignerSousTitres, caleScenes } from "./lib/voix.mjs";
 import { rendre, imagesCles } from "./lib/rendu.mjs";
@@ -39,12 +39,11 @@ async function veille() {
   }
   if (!articles.length) throw new Error("Aucun article récupéré : vérifier config/sources.json");
   redaction.dit("veilleur", `${articles.length} articles lus, je regroupe par sujet.`);
-  const rep = await demander({
+  const choix = await demanderJSON({
     systeme: consigne("veilleur"),
     modele: MODELE_LEGER,
     contenu: `Nous sommes le ${AUJ}. Édition : ${EDITION}. Nombre de sujets à retenir : ${MAX_SUJETS}.\n\nSujets déjà traités (14 derniers jours) :\n${JSON.stringify(histo.slice(-40).map((h) => h.titre))}\n\nArticles :\n${JSON.stringify(articles.slice(0, 150))}`,
   });
-  const choix = json(rep);
   for (const s of choix.sujets) redaction.dit("veilleur", `Je garde « ${s.titre_travail} ». ${s.pourquoi || ""}`);
   redaction.agent("veilleur", "termine");
   return choix.sujets.slice(0, MAX_SUJETS);
@@ -60,7 +59,7 @@ async function ecrire(sujet, retours = null) {
   } catch (e) {
     redaction.dit("scenariste", "Article illisible, je travaille avec les autres sources.");
   }
-  const rep = await demander({
+  return demanderJSON({
     systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA,
     recherche: true,
     max: 32000,
@@ -69,7 +68,6 @@ async function ecrire(sujet, retours = null) {
       (retours ? `CORRECTIONS DEMANDÉES PAR LE CONTRÔLE (version précédente ci-dessous) :\n${JSON.stringify(retours)}\n\n` : "") +
       "Réponds UNIQUEMENT par un seul bloc ```json``` au format « Sortie technique » de ta consigne, sans aucun texte avant ou après. Fais tes recherches, puis écris directement le JSON.",
   });
-  return json(rep);
 }
 
 // ---------- 3. Voix + calage + photos ----------
@@ -129,7 +127,7 @@ async function controler(episode, script, dossier) {
     { type: "text", text: `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\nÉpisode :\n${JSON.stringify(episode)}\n\nTexte de la voix :\n${script.voix}\n\nFaits et sources :\n${JSON.stringify(script.faits)}` },
     ...images.map((f) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: fs.readFileSync(f).toString("base64") } })),
   ];
-  const verdict = json(await demander({ systeme: consigne("controleur"), contenu, recherche: true }));
+  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict, sans texte autour.", contenu, recherche: true });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
   redaction.agent("controleur", verdict.decision === "BLOQUE" ? "bloque" : "termine");
   return verdict;
