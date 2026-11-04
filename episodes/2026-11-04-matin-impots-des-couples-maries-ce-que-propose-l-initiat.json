@@ -1,0 +1,536 @@
+{
+ "id": "2026-11-04-matin-impots-des-couples-maries-ce-que-propose-l-initiat",
+ "voice": "voix-2026-11-04-matin-impots-des-couples-maries-ce-que-propose-l-initiat.mp3",
+ "duration": 83.12,
+ "captions": [
+  [
+   0.1,
+   1.68,
+   "Selon les estimations fédérales,"
+  ],
+  [
+   1.86,
+   3.16,
+   "près de 690’000"
+  ],
+  [
+   3.22,
+   4.46,
+   "couples mariés paient plus"
+  ],
+  [
+   4.48,
+   5.94,
+   "d’impôt fédéral que des couples"
+  ],
+  [
+   6,
+   7.7,
+   "non mariés, à situation égale."
+  ],
+  [
+   8.8,
+   9.74,
+   "Salut, c’est Lucie,"
+  ],
+  [
+   9.98,
+   11.52,
+   "et aujourd’hui, une votation"
+  ],
+  [
+   11.56,
+   12.46,
+   "qui te concerne."
+  ],
+  [
+   12.94,
+   14.08,
+   "Ce désavantage s’appelle"
+  ],
+  [
+   14.14,
+   15.74,
+   "la pénalisation du mariage."
+  ],
+  [
+   16.24,
+   17.84,
+   "Le Centre veut la supprimer"
+  ],
+  [
+   17.9,
+   18.92,
+   "par une initiative,"
+  ],
+  [
+   19.3,
+   20.14,
+   "soumise au vote le"
+  ],
+  [
+   20.16,
+   21.02,
+   "29 novembre,"
+  ],
+  [
+   21.22,
+   22.14,
+   "dans 25 jours."
+  ],
+  [
+   22.68,
+   24.36,
+   "À l’inverse, 630’000"
+  ],
+  [
+   24.4,
+   25.6,
+   "couples mariés profitent"
+  ],
+  [
+   25.62,
+   26.32,
+   "d’un bonus."
+  ],
+  [
+   26.9,
+   28.12,
+   "Le texte inscrirait dans"
+  ],
+  [
+   28.16,
+   29.74,
+   "la Constitution l’addition"
+  ],
+  [
+   29.78,
+   30.82,
+   "des revenus du couple"
+  ],
+  [
+   30.84,
+   31.84,
+   "pour l’impôt fédéral,"
+  ],
+  [
+   32.2,
+   33.14,
+   "sans payer plus que"
+  ],
+  [
+   33.18,
+   34.18,
+   "des couples non mariés."
+  ],
+  [
+   34.98,
+   36.02,
+   "En mars, la Suisse"
+  ],
+  [
+   36.06,
+   36.92,
+   "a déjà accepté"
+  ],
+  [
+   36.96,
+   38.4,
+   "l’imposition individuelle,"
+  ],
+  [
+   38.46,
+   40.24,
+   "à 54,2 %."
+  ],
+  [
+   40.72,
+   41.88,
+   "Mais là, il ne s’agit"
+  ],
+  [
+   41.92,
+   43.04,
+   "que de l’impôt fédéral."
+  ],
+  [
+   43.54,
+   44.44,
+   "Et sans loi d’ici"
+  ],
+  [
+   44.58,
+   45.84,
+   "2030,"
+  ],
+  [
+   45.9,
+   47.32,
+   "le Conseil fédéral devrait"
+  ],
+  [
+   47.36,
+   49.54,
+   "instaurer un calcul alternatif."
+  ],
+  [
+   49.58,
+   51.14,
+   "Pour le comité d’initiative,"
+  ],
+  [
+   51.18,
+   53.04,
+   "c’est une solution pragmatique,"
+  ],
+  [
+   53.08,
+   54.8,
+   "qui supprime la discrimination"
+  ],
+  [
+   54.82,
+   56.36,
+   "sans changer tout le système."
+  ],
+  [
+   56.38,
+   57.36,
+   "Pour le Conseil fédéral"
+  ],
+  [
+   57.4,
+   59.46,
+   "et le Parlement, qui disent non,"
+  ],
+  [
+   59.5,
+   60.42,
+   "elle avantage les mariés"
+  ],
+  [
+   60.46,
+   61.7,
+   "face aux non mariés,"
+  ],
+  [
+   61.74,
+   64.46,
+   "et crée des incertitudes."
+  ],
+  [
+   64.52,
+   65.86,
+   "Concrètement, tu décides si"
+  ],
+  [
+   65.92,
+   68.48,
+   "l’imposition commune des couples"
+  ],
+  [
+   68.88,
+   70.18,
+   "entre dans la Constitution."
+  ],
+  [
+   70.7,
+   71.74,
+   "À retenir : un,"
+  ],
+  [
+   71.8,
+   72.92,
+   "vote le 29 novembre."
+  ],
+  [
+   73,
+   74.52,
+   "Deux, le comité dit oui,"
+  ],
+  [
+   74.58,
+   76.4,
+   "le Conseil fédéral et"
+  ],
+  [
+   76.44,
+   78.42,
+   "le Parlement disent non."
+  ],
+  [
+   78.44,
+   79.48,
+   "Trois, seul l’impôt fédéral"
+  ],
+  [
+   79.9,
+   80.64,
+   "est concerné."
+  ],
+  [
+   80.7,
+   81.32,
+   "C’était Lucie, pour Le Pouls."
+  ],
+  [
+   81.1,
+   81.32,
+   "Abonne-toi, on se retrouve demain."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "bigFigure",
+   "from": 0,
+   "theme": "paper",
+   "props": {
+    "kicker": "Estimation de la Confédération",
+    "prefix": "près de",
+    "value": 690000,
+    "label": "couples mariés paient plus d'impôt fédéral que des couples non mariés",
+    "at": 1.86
+   },
+   "to": 8.7
+  },
+  {
+   "type": "urne",
+   "from": 8.7,
+   "theme": "green",
+   "props": {
+    "kicker": "Votation fédérale",
+    "title": "Imposition des couples mariés",
+    "bulletin": "Initiative du Centre"
+   },
+   "to": 12.84
+  },
+  {
+   "type": "statement",
+   "from": 12.84,
+   "theme": "paper",
+   "props": {
+    "text": "La pénalisation du mariage"
+   },
+   "to": 20.06
+  },
+  {
+   "type": "chrono",
+   "from": 20.06,
+   "theme": "green",
+   "props": {
+    "kicker": "Votation fédérale",
+    "label": "Dimanche 29 novembre, dans",
+    "value": 25,
+    "unit": "jours",
+    "headline": "Initiative du Centre sur l'imposition des couples mariés."
+   },
+   "to": 22.58
+  },
+  {
+   "type": "bigFigure",
+   "from": 22.58,
+   "theme": "paper",
+   "props": {
+    "kicker": "À l'inverse, selon la Confédération",
+    "value": 630000,
+    "label": "couples mariés profitent d'un bonus du mariage",
+    "at": 0.1
+   },
+   "to": 26.8
+  },
+  {
+   "type": "photo",
+   "from": 26.8,
+   "theme": "green",
+   "props": {
+    "recherche": "Palais fédéral Berne Bundeshaus",
+    "kicker": "Impôt fédéral direct",
+    "title": "Ce que vise l'initiative",
+    "src": "photo-2026-11-04-matin-impots-des-couples-maries-ce-que-propose-l-initiat-5.jpg",
+    "credit": "Photo : Gab01 / Wikimedia Commons, Public domain"
+   },
+   "to": 34.88
+  },
+  {
+   "type": "bigFigure",
+   "from": 34.88,
+   "theme": "paper",
+   "props": {
+    "kicker": "Mars 2026",
+    "value": 54.2,
+    "label": "% de oui à l'imposition individuelle",
+    "at": 3.58
+   },
+   "to": 40.62
+  },
+  {
+   "type": "statement",
+   "from": 40.62,
+   "theme": "green",
+   "props": {
+    "text": "Mais cette fois, seul l'impôt fédéral est concerné."
+   },
+   "to": 43.44
+  },
+  {
+   "type": "bigFigure",
+   "from": 43.44,
+   "theme": "paper",
+   "props": {
+    "kicker": "Sans loi d'ici là",
+    "prefix": "D'ici",
+    "value": 2030,
+    "label": "le Conseil fédéral devrait instaurer un calcul alternatif de l'impôt",
+    "at": 1.14
+   },
+   "to": 49.48
+  },
+  {
+   "type": "pourContre",
+   "from": 49.48,
+   "theme": "green",
+   "props": {
+    "kicker": "Deux positions officielles",
+    "traitement": "identique, couleur neutre, même taille",
+    "colonnes": [
+     {
+      "label": "Comité d'initiative",
+      "recommandation": "Oui",
+      "argument": "Une solution pragmatique, sans changer tout le système",
+      "at": 0.1
+     },
+     {
+      "label": "Conseil fédéral et Parlement",
+      "recommandation": "Non",
+      "argument": "Avantage les couples mariés, crée des incertitudes",
+      "at": 6.9
+     }
+    ]
+   },
+   "to": 64.42
+  },
+  {
+   "type": "urne",
+   "from": 64.42,
+   "theme": "paper",
+   "props": {
+    "kicker": "Le 29 novembre",
+    "title": "Imposition commune dans la Constitution ?",
+    "options": [
+     "Oui",
+     "Non"
+    ]
+   },
+   "to": 70.6
+  },
+  {
+   "type": "recap",
+   "from": 70.6,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Vote le 29 novembre",
+      "at": 1.2
+     },
+     {
+      "n": 2,
+      "label": "Comité : oui. Conseil fédéral et Parlement : non",
+      "at": 2.4
+     },
+     {
+      "n": 3,
+      "label": "Seul l'impôt fédéral est concerné",
+      "at": 7.84
+     }
+    ]
+   },
+   "to": 80.6
+  },
+  {
+   "type": "outro",
+   "from": 80.6,
+   "theme": "paper",
+   "props": {
+    "tagline": "Le Pouls",
+    "cta": "Abonne-toi",
+    "sources": "Sources : Canal9, EFD, ch.ch, Allnews"
+   },
+   "to": 83.12
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "Canal9",
+    "titre": "Votations du 29 novembre: nouvelle réforme sur la table pour la fiscalité des couples",
+    "url": "https://canal9.ch/fr/votations-du-29-novembre-nouvelle-reforme-sur-la-table-pour-la-fiscalite-des-couples/"
+   },
+   {
+    "media": "EFD",
+    "titre": "Initiative populaire « Oui à des impôts fédéraux équitables pour les couples mariés »",
+    "url": "https://www.efd.admin.ch/fr/initiative-populaire-en-finir-discrimination-mariage"
+   },
+   {
+    "media": "ch.ch",
+    "titre": "Votation populaire du 29 novembre 2026",
+    "url": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+   },
+   {
+    "media": "Allnews",
+    "titre": "La Suisse doit à nouveau se prononcer sur l'imposition des couples",
+    "url": "https://www.allnews.ch/content/r%C3%A9glementation/la-suisse-doit-%C3%A0-nouveau-se-prononcer-sur-l%E2%80%99imposition-des-couples"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Vote fédéral le 29 novembre 2026 sur l'initiative « Oui à des impôts fédéraux équitables pour les couples mariés – Pour enfin en finir avec la discrimination du mariage ! »",
+    "source": "https://www.admin.ch/fr/votation-populaire-du-29-novembre-2026"
+   },
+   {
+    "fait": "Compte à rebours : 25 jours entre le 4 novembre (publication) et le 29 novembre 2026",
+    "source": "https://www.admin.ch/fr/votation-populaire-du-29-novembre-2026"
+   },
+   {
+    "fait": "Estimation de l'Administration fédérale des contributions : près de 690’000 couples mariés subissent une pénalisation du mariage",
+    "source": "https://www.efd.admin.ch/fr/initiative-populaire-en-finir-discrimination-mariage"
+   },
+   {
+    "fait": "Estimation de l'Administration fédérale des contributions : 630’000 couples mariés bénéficient d'un bonus du mariage",
+    "source": "https://www.efd.admin.ch/fr/initiative-populaire-en-finir-discrimination-mariage"
+   },
+   {
+    "fait": "L'initiative demande d'inscrire dans la Constitution l'addition des revenus d'un couple marié pour l'impôt fédéral direct, avec la garantie qu'il ne soit pas désavantagé",
+    "source": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+   },
+   {
+    "fait": "Si aucune loi n'entre en vigueur d'ici 2030, le Conseil fédéral devra instaurer le calcul alternatif de l'impôt",
+    "source": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+   },
+   {
+    "fait": "Le calcul alternatif se fonde sur les barèmes et déductions applicables aux personnes non mariées",
+    "source": "https://www.estv.admin.ch/fr/imposition-commune"
+   },
+   {
+    "fait": "Imposition individuelle acceptée à 54,2 % en mars 2026",
+    "source": "https://canal9.ch/fr/votations-du-29-novembre-nouvelle-reforme-sur-la-table-pour-la-fiscalite-des-couples/"
+   },
+   {
+    "fait": "Recommandation du Conseil fédéral et du Parlement : non, car l'initiative privilégie les couples mariés par rapport aux non mariés et crée de nouvelles incertitudes",
+    "source": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+   },
+   {
+    "fait": "Position du comité d'initiative : solution pragmatique, principe clair dans la Constitution",
+    "source": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+   },
+   {
+    "fait": "Selon le comité d'initiative, supprime la discrimination sans changement complet de système",
+    "source": "https://www.allnews.ch/content/r%C3%A9glementation/la-suisse-doit-%C3%A0-nouveau-se-prononcer-sur-l%E2%80%99imposition-des-couples"
+   }
+  ],
+  "sensible": false
+ }
+}

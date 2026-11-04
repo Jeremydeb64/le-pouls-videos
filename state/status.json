@@ -3,7 +3,7 @@
  "etape": "scenariste",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "travaille",
+  "scenariste": "termine",
   "controleur": "attend",
   "diffuseur": "attend"
  },
@@ -147,7 +147,87 @@
    "agent": "systeme",
    "texte": "Clé ElevenLabs refusée (401). Elle doit commencer par « sk_ » : recrée-la dans ElevenLabs et remplace le secret KEYS_ELEVEN_POULS.",
    "t": "2026-11-04T10:40:21.361Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
+   "t": "2026-11-04T10:42:26.416Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-04T10:42:26.417Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "35 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T10:42:32.418Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Salaire minimum VS : J-25 ». Votation cantonale le 29 novembre, 15'000 salariés concernés selon le comité du oui, et des chiffres simples à mettre en image (22 fr., 18 fr. pour l'agriculture).",
+   "t": "2026-11-04T10:42:46.693Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Fiscalité des couples : explication de l'objet fédéral du 29 novembre ». Objet fédéral du 29 novembre que nous n'avons pas encore couvert ; exemple chiffré possible avec un couple marié à deux revenus. Source unique pour l'instant, à recouper avec le texte officiel avant tournage.",
+   "t": "2026-11-04T10:42:46.694Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T10:42:46.696Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:44:28.035Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T10:45:09.815Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Salaire minimum VS : J-25 » abandonné : Error: Type de scène inconnu : urne\n    at http://localhost:3000/bundle.js:376:24\n    at Array.map (<anonymous>)\n    at Episode (http://localhost:3000/bundle.js:374:12)\n    at Nh (http://localhost:3000/bundle.js:812:137)\n    at Vk (http://localhost:3000/bundle.js:941:337)\n    at Uk (http://localhost:3000/bundle.js:931:389)\n    at Tk (http://localhost:3000/bundle.js:931:320)\n    at Ik (http://localhost:3000/bundle.js:931:180)\n    at Nk (http://localhost:3000/bundle.js:922:88)\n    at Gk (http://localhost:3000/bundle.js:919:429)",
+   "t": "2026-11-04T10:45:18.557Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-04T10:45:18.558Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:48:04.831Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T10:48:31.406Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Gab01 / Wikimedia Commons, Public domain.",
+   "t": "2026-11-04T10:48:32.221Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T10:48:32.222Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Fiscalité des couples : explication de l'objet fédéral du 29 novembre » abandonné : Error: Type de scène inconnu : urne\n    at http://localhost:3000/bundle.js:376:24\n    at Array.map (<anonymous>)\n    at Episode (http://localhost:3000/bundle.js:374:12)\n    at Nh (http://localhost:3000/bundle.js:812:137)\n    at Vk (http://localhost:3000/bundle.js:941:337)\n    at Uk (http://localhost:3000/bundle.js:931:389)\n    at Tk (http://localhost:3000/bundle.js:931:320)\n    at Ik (http://localhost:3000/bundle.js:931:180)\n    at Nk (http://localhost:3000/bundle.js:922:88)\n    at Gk (http://localhost:3000/bundle.js:919:429)",
+   "t": "2026-11-04T10:48:33.053Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-04T10:48:33.054Z"
   }
  ],
- "maj": "2026-11-04T10:40:21.361Z"
+ "maj": "2026-11-04T10:48:33.054Z"
 }
