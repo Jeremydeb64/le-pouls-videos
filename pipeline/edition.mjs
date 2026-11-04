@@ -63,7 +63,7 @@ async function ecrire(sujet, retours = null) {
   const rep = await demander({
     systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA,
     recherche: true,
-    max: 12000,
+    max: 20000,
     contenu:
       `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\n\nSujet :\n${JSON.stringify(sujet)}\n\nTexte de l'article principal :\n${texte}\n\n` +
       (retours ? `CORRECTIONS DEMANDÉES PAR LE CONTRÔLE (version précédente ci-dessous) :\n${JSON.stringify(retours)}\n\n` : "") +
@@ -127,9 +127,15 @@ async function controler(episode, script, dossier) {
 }
 
 // ---------- Orchestration ----------
+process.on("unhandledRejection", (e) => {
+  redaction.dit("systeme", `Erreur : ${String(e?.stack || e).slice(0, 900)}`);
+  redaction.agent("scenariste", "bloque");
+  process.exit(1);
+});
 const sujets = await veille();
 const prets = [];
 for (const sujet of sujets) {
+ try {
   const dossier = path.resolve("out", slug(sujet.titre_travail));
   fs.mkdirSync(dossier, { recursive: true });
   let script = await ecrire(sujet);
@@ -154,6 +160,9 @@ for (const sujet of sujets) {
   redaction.episode(info);
   histo.push({ titre: sujet.titre_travail, date: new Date().toISOString(), id: info.id });
   prets.push(info);
+ } catch (e) {
+  redaction.dit("systeme", `Sujet « ${sujet.titre_travail} » abandonné : ${String(e?.stack || e).slice(0, 900)}`);
+ }
 }
 fs.writeFileSync(HISTO, JSON.stringify(histo.slice(-200), null, 1));
 fs.writeFileSync("out/edition.json", JSON.stringify(prets, null, 1));
