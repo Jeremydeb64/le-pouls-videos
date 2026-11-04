@@ -140,7 +140,7 @@ async function controlerVisuel(episode, dossier) {
     { type: "text", text: `PHASE VISUEL. Les faits ont déjà été validés. Contrôle uniquement la charte (point 4) et le son (point 5, d'après les sous-titres et la durée).\nÉpisode :\n${JSON.stringify({ duration: episode.duration, scenes: episode.scenes, captions: episode.captions.length })}` },
     ...images.map((f) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: fs.readFileSync(f).toString("base64") } })),
   ];
-  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict.", contenu, modele: MODELE_LEGER });
+  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict. Tout texte qui déborde, se chevauche ou sort de l'écran est BLOQUANT.", contenu });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
   redaction.agent("controleur", verdict.decision === "BLOQUE" ? "bloque" : "termine");
   return verdict;

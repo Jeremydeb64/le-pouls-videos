@@ -25,7 +25,7 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `chrono` | accroche compte à rebours | `kicker, label, value, unit, headline` |
 | `titleBib` | carte titre en dossard (+ logo optionnel) | `bib{top,number,bottom}, title, logo?` |
 | `calendar` | dates d'un événement + frise entre deux années | `kicker, days, title, fromYear, toYear, yearsAt, yearsCaption` |
-| `stats` | 2 à 4 chiffres clés avec portes de slalom | `kicker, items[{value,label,at}]` |
+| `stats` | 2 à 3 chiffres clés (portes de slalom en option, pour le ski) | `kicker, items[{value,label,at}], portes?` |
 | `crowd` | public sur place (tribune qui fait la ola) + écrans | `kicker, live{value,label,at}, screens{value,label,at,note}` |
 | `statement` | phrase de relance plein écran | `text` |
 | `bigFigure` | un très grand chiffre + grille d'unités | `kicker, prefix?, value, label, at, grid?{count,value,label,note,at}` |

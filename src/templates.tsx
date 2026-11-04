@@ -243,20 +243,25 @@ export const Calendar: React.FC<P<{ kicker: string; days: number; title: string;
   );
 };
 
-const StatRow: React.FC<{ value: number; label: string; delay: number; color: string; rule: string }> = ({ value, label, delay, color, rule }) => {
+const StatRow: React.FC<{ value: number; label: string; delay: number; color: string; rule: string; porte?: boolean }> = ({ value, label, delay, color, rule, porte }) => {
   const p = useEnter(delay);
+  const chiffres = (value >= 10000 ? swiss(value) : plain(value)).length;
+  const empile = chiffres > 3 || label.length > 14;
+  const taille = chiffres <= 3 ? 190 : chiffres <= 5 ? 150 : chiffres <= 7 ? 120 : 96;
   return (
     <div style={{ opacity: p, translate: `${interpolate(p, [0, 1], [-60, 0])}px 0`, display: "flex", alignItems: "center", gap: 30, borderBottom: `3px solid ${rule}`, padding: "18px 0" }}>
-      <Gate color={color} p={p} />
-      <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 190, lineHeight: 1, color, width: 380, letterSpacing: -6 }}>
-        <Counter to={value} delay={delay} />
+      {porte && <Gate color={color} p={p} />}
+      <div style={{ display: "flex", flexDirection: empile ? "column" : "row", alignItems: empile ? "flex-start" : "baseline", gap: empile ? 4 : 30, minWidth: 0 }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: taille, lineHeight: 1, color, letterSpacing: -4, whiteSpace: "nowrap", minWidth: empile ? 0 : 380 }}>
+          <Counter to={value} delay={delay} />
+        </div>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: empile ? 40 : 58, lineHeight: 1.15, color, maxWidth: 640 }}>{label}</div>
       </div>
-      <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 58, color }}>{label}</div>
     </div>
   );
 };
 
-export const Stats: React.FC<P<{ kicker: string; items: { value: number; label: string; at: number }[] }>> = ({ theme, kicker, items }) => {
+export const Stats: React.FC<P<{ kicker: string; items: { value: number; label: string; at: number }[]; portes?: boolean }>> = ({ theme, kicker, items, portes }) => {
   const t = th(theme);
   const at = useAt();
   return (
@@ -264,7 +269,7 @@ export const Stats: React.FC<P<{ kicker: string; items: { value: number; label: 
       <Body top={400}>
         <Kicker color={t.sub}>{kicker}</Kicker>
         {items.map((it) => (
-          <StatRow key={it.label} value={it.value} label={it.label} delay={at(it.at)} color={t.fg} rule={t.rule} />
+          <StatRow key={it.label} value={it.value} label={it.label} delay={at(it.at)} color={t.fg} rule={t.rule} porte={portes} />
         ))}
       </Body>
     </Frame>
@@ -303,11 +308,12 @@ export const Crowd: React.FC<P<{ kicker: string; live: { value: number; label: s
   );
 };
 
+const tailleTexte = (t: string) => (t.length <= 35 ? 140 : t.length <= 70 ? 104 : t.length <= 120 ? 80 : 64);
 export const Statement: React.FC<P<{ text: string }>> = ({ theme, text }) => (
   <Frame theme={theme}>
-    <Body top={640}>
+    <Body top={text.length <= 70 ? 560 : 360}>
       <Rise delay={2}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 140, lineHeight: 0.98, color: th(theme).fg, letterSpacing: -3 }}>{text}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: tailleTexte(text), lineHeight: 1.0, color: th(theme).fg, letterSpacing: -2 }}>{text}</div>
       </Rise>
     </Body>
   </Frame>
@@ -323,7 +329,7 @@ export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: num
         <Kicker color={t.accent}>{kicker}</Kicker>
         <Rise delay={d1}>
           {prefix && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: t.sub }}>{prefix}</div>}
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 330, lineHeight: 0.9, color: t.fg, letterSpacing: -10 }}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: String(Math.round(value)).length <= 3 ? 330 : String(Math.round(value)).length <= 5 ? 230 : 170, lineHeight: 0.9, color: t.fg, letterSpacing: -8, whiteSpace: "nowrap" }}>
             <Counter to={value} delay={d1} dur={30} />
           </div>
           <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: t.fg }}>{label}</div>
