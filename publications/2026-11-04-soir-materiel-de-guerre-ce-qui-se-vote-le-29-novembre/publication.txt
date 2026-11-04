@@ -1,0 +1,36 @@
+LE POULS
+Matériel de guerre : ce qui se vote le 29 novembre
+Édition du soir, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Exporter plus facilement des armes suisses : oui ou non ? On te résume la loi, le oui et le non, y compris en Valais, avant le vote du 29 novembre.
+Sources : RTS, « Emplois, PIB, exportations: ce que pèse vraiment l'industrie suisse de l'armement » ; Le Nouvelliste ; Conseil fédéral ; ch.ch ; 20 minutes
+#Valais #Votation #29novembre #MatérielDeGuerre
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : Emplois, PIB, exportations: ce que pèse vraiment l'industrie suisse de l'armement (https://www.rts.ch/info/suisse/2026/article/industrie-de-l-armement-en-suisse-les-chiffres-du-secteur-29399632.html)
+- Le Nouvelliste : Loi sur le matériel de guerre: la gauche valaisanne unie contre le texte (https://www.lenouvelliste.ch/valais/loi-sur-le-materiel-de-guerre-la-gauche-valaisanne-unie-contre-le-texte-1520457)
+- Le Nouvelliste : Loi sur le matériel de guerre: les partisans valaisans montent au front (https://www.lenouvelliste.ch/valais/loi-sur-le-materiel-de-guerre-les-partisans-valaisans-montent-au-front-1519602)
+- Conseil fédéral : Le Conseil fédéral recommande d'accepter la modification de la loi fédérale sur le matériel de guerre (https://www.blv.admin.ch/fr/newnsb/OZlg1hISnipC)
+- ch.ch : Votation populaire du 29 novembre 2026 (https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/)
+- 20 minutes : Guy Parmelin défend la révision de la loi sur le matériel de guerre en Suisse (https://www.20min.ch/fr/story/votations-29-novembre-le-conseil-federal-pret-a-assouplir-les-exportations-d-armes-103641201)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 6) : Accroche, versus national, point sur les États-Unis, récap, sources outro et description TikTok : ces corrections sont faites. Reste un écart de temps de parole dans le versus national. Le oui compte environ 17 mots et le non environ 25. Le versus affiche aussi 2 points par camp au lieu des 3 demandés.
+- mineur (scène 4) : « Pays partenaires » est mieux illustré (États-Unis, Japon) et la condition de neutralité est ajoutée. Il manque toujours une demi-phrase sur ce qui définit ces 36 pays. La condition est aussi réduite à la neutralité, alors que la source parle de neutralité et d'intérêts de politique étrangère ou de sécurité. L'écran bigFigure n'a pas d'explication.
+- mineur (scène 7) : La carte Hérémence (scène 7) ne met en avant que le lieu de Nammo, côté oui. Le versus de la scène 8 rééquilibre ensuite avec deux colonnes de même format. Côté voix, le oui valaisan est un peu plus long que le non, environ 38 mots contre 30. La formulation « plus que doublé depuis la guerre froide » est une simplification d'Amoos (environ 450 millions dans les années 1980, 950 millions en 2025). Elle est attribuée et reste exacte.
+- mineur (scène 5) : Une photo du Palais fédéral est prévue. Elle devra avoir un crédit visible (auteur et licence) et ne pas être une photo de presse.
+- important (scène 5) : Le crédit photo « Photo : Flooffy / Wikimedia Commons, CC BY 2.0 » est en petits caractères, collé au logo, sur deux lignes (« CC / BY 2.0 » coupé). Il se trouve à y ≈ 130-160 sur 1920, donc dans la zone d'interface TikTok (hors y 300-1450), et déborde un peu à droite (x ≈ 910 pour une limite de 900). Ce crédit est obligatoire et risque d'être masqué.
+- important (scène 7) : Le titre « Hérémence » est répété juste en dessous en sous-titre « Hérémence ». C'est redondant, et la carte ne dure que 2,9 s.
+- important (scène 8) : Le sous-titre affiché est « Pascal Guenot, défend le oui. » La virgule entre le sujet et le verbe est fautive et ne correspond pas à une phrase correcte.
+- important (scène 2) : Sur les images clés des scènes 2 et 3 (statements, 9 s et 6,8 s), aucun sous-titre n'est visible alors que la voix doit être présente. Cela peut être un trou entre deux sous-titres ou une absence de sous-titres.
+- mineur (scène 3) : La scène a une « demande_nouvelle_scene » (écran « règle actuelle » à deux cases avec icônes et légendes). Le rendu n'est qu'un titre en texte seul : « Aujourd'hui : pas d'armes aux pays en guerre. » La scène ne sert plus de point de départ visuel clair et la 2e interdiction (revente) n'apparaît pas.
+- mineur (scène 1) : Sur la première image (t≈0), le logo est coupé (« LE POUL ») et seul le sous-titre « Exporter plus facilement » est visible. C'est probablement l'animation d'entrée du logo.
+- mineur (scène 6) : La carte « Le non » reste vide pendant environ 7 s (contenu à 6,92 s) et la carte de droite n'a pas de titre. L'écran paraît inachevé pendant ce temps. La ligne « Sources » en sauge sur vert est petite et peu contrastée.
+- mineur (scène 10) : Dans la ligne des sources, « 20 minutes » est coupé sur deux lignes (« 20 / minutes »).

@@ -9,91 +9,6 @@
  },
  "messages": [
   {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-04T10:48:33.054Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
-   "t": "2026-11-04T11:02:44.274Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-04T11:02:44.275Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "35 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T11:02:50.388Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Salaire minimum valaisan : J-25 ». Votation cantonale le 29 novembre, 22 frs/h (18 frs/h pour l'agriculture), 15'000 salariés concernés selon le comité du oui : la matière est là et l'échéance est proche.",
-   "t": "2026-11-04T11:03:08.965Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Un bloc de glace menace Randa : chaque jour compte ». Mesures chiffrées (6 à 20 cm par jour) et risque pour Randa, parfait pour une animation de progression ; source unique mais institutionnelle (SVDN).",
-   "t": "2026-11-04T11:03:08.981Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T11:03:08.989Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:04:59.841Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:05:26.268Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:07:16.453Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits et le décompte J-25 sont corrects, et le temps de parole oui/non est équilibré (environ 17 s contre 16 s). À corriger : 1) la scène 7 déborde dans la zone TikTok du bas et recouvre les sous-titres, donc raccourcis le texte et réduis la taille ; 2) le « ? » orphelin de la scène 4 et le « NOVEMBRE » seul de la scène 1 ; 3) les pauses de voix dépassent 1 s à plusieurs endroits, surtout 1,36 s après l'accroche ; 4) « sans minimum légal cantonal » n'a pas de source dans les faits, donc ajoute-en une ou reformule ; 5) rends la scène du Grand Conseil plus neutre dans ses libellés.",
-   "t": "2026-11-04T11:08:18.065Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T11:08:18.067Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:09:42.023Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-04T11:10:10.641Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:10:10.642Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:11:43.257Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Salut, la votation est équilibrée (temps de parole oui/non quasi égal, ~14 s chacun, sources officielles, J-25 correct), donc pas de blocage. Il y a trois choses à corriger : 1) le point de « légal. » est coupé à la scène 9 et le « ? » de la scène 6 tombe dans la zone TikTok de droite, donc réduis la largeur du texte ; 2) les libellés de la scène 8 (« voix contre ») prêtent à confusion, écris plutôt « rejet » et « soutien » ; 3) « justice sociale » n'est pas dans tes faits, donc sources-le ou reformule. Mineur : mots orphelins (« exclus. », « aujourd'hui »), trois statements d'affilée, sources swissinfo et Conseil Jeunes à ajouter, et deux silences de plus d'une seconde (après l'accroche et à la fin).",
-   "t": "2026-11-04T11:12:35.808Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "Je reprends le script avec les corrections du contrôle.",
    "t": "2026-11-04T11:12:35.809Z"
@@ -407,9 +322,94 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-04T14:47:31.912Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
+   "t": "2026-11-04T15:25:12.311Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du soir, je fais le tour des sources.",
+   "t": "2026-11-04T15:25:12.313Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "141 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T15:25:17.305Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Loi sur le matériel de guerre : ce qui se vote le 29 novembre ». Votation fédérale le 29 novembre, sans explication encore publiée, et chiffres concrets (exportations de centaines de millions par an).",
+   "t": "2026-11-04T15:25:38.960Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Suisse.",
+   "t": "2026-11-04T15:25:38.963Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T15:28:01.474Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Sujet bien construit, deux camps à durée comparable. Je te demande de corriger 7 points. 1) Accroche neutre (la livraison ne concerne que 36 pays partenaires, sous conditions). 2) Écran versus : seulement des arguments sourcés dans `faits`. 3) Valais : même traitement graphique pour Nammo et pour la gauche. 4) Nammo : expliquer pourquoi il ne peut plus vendre aux États-Unis (engagés dans un conflit). 5) Sourcer l'argument « le secteur n'est pas en difficulté ». 6) Expliquer « pays partenaires » et la condition (neutralité et intérêts de la Suisse), et ajouter « sous conditions » au récap. 7) Ajouter ch.ch aux sources. Les faits chiffrés et le compte à rebours sont justes. Tu peux me renvoyer le script.",
+   "t": "2026-11-04T15:28:41.939Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T15:28:41.941Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T15:31:02.047Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les 9 corrections demandées sont appliquées : accroche neutre, arguments sourcés, graphisme équilibré en Valais, raison pour les États-Unis, argument d'Amoos sourcé, nuance « sous conditions » conservée dans le récap, ch.ch ajouté aux sources. Il reste quelques points mineurs, optionnels : temps de parole du non un peu plus long dans le versus national, explication des 36 pays, et crédit photo à prévoir. Feu vert pour la phase images.",
+   "t": "2026-11-04T15:31:28.129Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
+   "t": "2026-11-04T15:31:28.130Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 9 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T15:32:08.382Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Flooffy / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-04T15:32:08.959Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T15:32:08.961Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-04T15:33:51.722Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Charte globalement respectée : couleurs, typos, alternance papier/vert et zones sûres sont bons pour les titres et les sous-titres. Il reste quatre points à corriger : (1) scène 5, remonter le crédit photo dans la zone sûre, sur une ligne, sans le coller au logo ; (2) scène 7, supprimer le doublon « Hérémence » ; (3) scène 8, corriger la virgule dans « Pascal Guenot, défend le oui » ; (4) scènes 2 et 3, vérifier qu'il y a bien voix et sous-titres. Côté détails : sources de l'outro avec « 20 minutes » coupé, carte « Le non » vide trop longtemps, et le logo à vérifier sur la toute première image.",
+   "t": "2026-11-04T15:34:39.643Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-04T15:34:39.646Z"
   }
  ],
- "maj": "2026-11-04T14:47:46.445Z",
+ "maj": "2026-11-04T15:34:55.309Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -731,6 +731,124 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au/LePouls_2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1qp6JzIpfz5AbeSYCMFvz8u5WNzngNjRp",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/3"
+  },
+  {
+   "id": "2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre",
+   "titre": "Matériel de guerre : ce qui se vote le 29 novembre",
+   "edition": "soir",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Accroche, versus national, point sur les États-Unis, récap, sources outro et description TikTok : ces corrections sont faites. Reste un écart de temps de parole dans le versus national. Le oui compte environ 17 mots et le non environ 25. Le versus affiche aussi 2 points par camp au lieu des 3 demandés.",
+     "correction_demandee": "Si possible, resserrer la phrase du non (par exemple « craint une loi affaiblie et des armes chez des régimes en guerre ») ou étoffer légèrement celle du oui, pour rester dans l'écart toléré de 15 %. Les 2 points par camp sont acceptables, car ils sont sourcés et de longueur comparable."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "« Pays partenaires » est mieux illustré (États-Unis, Japon) et la condition de neutralité est ajoutée. Il manque toujours une demi-phrase sur ce qui définit ces 36 pays. La condition est aussi réduite à la neutralité, alors que la source parle de neutralité et d'intérêts de politique étrangère ou de sécurité. L'écran bigFigure n'a pas d'explication.",
+     "correction_demandee": "Option : ajouter « des pays aux contrôles à l'export proches des nôtres » et « neutralité et intérêts de la Suisse ». Non obligatoire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "La carte Hérémence (scène 7) ne met en avant que le lieu de Nammo, côté oui. Le versus de la scène 8 rééquilibre ensuite avec deux colonnes de même format. Côté voix, le oui valaisan est un peu plus long que le non, environ 38 mots contre 30. La formulation « plus que doublé depuis la guerre froide » est une simplification d'Amoos (environ 450 millions dans les années 1980, 950 millions en 2025). Elle est attribuée et reste exacte.",
+     "correction_demandee": "Option : titrer la carte « Hérémence, siège de Nammo » pour qu'elle ne passe pas pour un parti pris. Non obligatoire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 5,
+     "constat": "Une photo du Palais fédéral est prévue. Elle devra avoir un crédit visible (auteur et licence) et ne pas être une photo de presse.",
+     "correction_demandee": "À contrôler en phase images."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Le crédit photo « Photo : Flooffy / Wikimedia Commons, CC BY 2.0 » est en petits caractères, collé au logo, sur deux lignes (« CC / BY 2.0 » coupé). Il se trouve à y ≈ 130-160 sur 1920, donc dans la zone d'interface TikTok (hors y 300-1450), et déborde un peu à droite (x ≈ 910 pour une limite de 900). Ce crédit est obligatoire et risque d'être masqué.",
+     "correction_demandee": "Descendre le crédit dans la zone sûre, par exemple sous le titre ou au-dessus du sous-titre, sur une seule ligne, avec une taille lisible et x entre 100 et 900. Raccourcir si besoin : « Photo : Flooffy, CC BY 2.0 »."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Le titre « Hérémence » est répété juste en dessous en sous-titre « Hérémence ». C'est redondant, et la carte ne dure que 2,9 s.",
+     "correction_demandee": "Supprimer la ligne en double, ou la remplacer par une info utile (« Nammo, 51 emplois », « Val d'Hérens »), à condition qu'elle figure dans les faits validés."
+    },
+    {
+     "gravite": "important",
+     "scene": 8,
+     "constat": "Le sous-titre affiché est « Pascal Guenot, défend le oui. » La virgule entre le sujet et le verbe est fautive et ne correspond pas à une phrase correcte.",
+     "correction_demandee": "Corriger en « Pascal Guenot défend le oui. » ou rétablir la fonction (« Pascal Guenot, [fonction], défend le oui. »). Vérifier que la ponctuation des sous-titres suit la voix."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Sur les images clés des scènes 2 et 3 (statements, 9 s et 6,8 s), aucun sous-titre n'est visible alors que la voix doit être présente. Cela peut être un trou entre deux sous-titres ou une absence de sous-titres.",
+     "correction_demandee": "Vérifier que la voix couvre ces deux scènes et qu'il n'y a pas de silence de plus d'une seconde. Vérifier aussi que les sous-titres sont bien générés pour ces scènes. Les 62 sous-titres doivent couvrir toute la durée."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "La scène a une « demande_nouvelle_scene » (écran « règle actuelle » à deux cases avec icônes et légendes). Le rendu n'est qu'un titre en texte seul : « Aujourd'hui : pas d'armes aux pays en guerre. » La scène ne sert plus de point de départ visuel clair et la 2e interdiction (revente) n'apparaît pas.",
+     "correction_demandee": "Si le composant n'existe pas, laisser la phrase telle quelle (elle est lisible et conforme à la charte). Sinon, utiliser un composant existant (recap ou versus à deux cases) pour montrer les deux règles actuelles."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "Sur la première image (t≈0), le logo est coupé (« LE POUL ») et seul le sous-titre « Exporter plus facilement » est visible. C'est probablement l'animation d'entrée du logo.",
+     "correction_demandee": "Vérifier que le logo est complet dès la 1re seconde. Sinon, le faire apparaître entier dès la première image."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "La carte « Le non » reste vide pendant environ 7 s (contenu à 6,92 s) et la carte de droite n'a pas de titre. L'écran paraît inachevé pendant ce temps. La ligne « Sources » en sauge sur vert est petite et peu contrastée.",
+     "correction_demandee": "Griser ou atténuer la carte vide, ou afficher son titre « Le non » dès le début. Agrandir légèrement et éclaircir la ligne des sources. Même remarque pour la scène 8, où la carte de droite est vide pendant 11 s."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Dans la ligne des sources, « 20 minutes » est coupé sur deux lignes (« 20 / minutes »).",
+     "correction_demandee": "Utiliser une espace insécable entre « 20 » et « minutes », ou passer à la ligne avant « 20 minutes »."
+    }
+   ],
+   "description_tiktok": "Exporter plus facilement des armes suisses : oui ou non ? On te résume la loi, le oui et le non, y compris en Valais, avant le vote du 29 novembre.\nSources : RTS, « Emplois, PIB, exportations: ce que pèse vraiment l'industrie suisse de l'armement » ; Le Nouvelliste ; Conseil fédéral ; ch.ch ; 20 minutes\n#Valais #Votation #29novembre #MatérielDeGuerre",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "Emplois, PIB, exportations: ce que pèse vraiment l'industrie suisse de l'armement",
+     "url": "https://www.rts.ch/info/suisse/2026/article/industrie-de-l-armement-en-suisse-les-chiffres-du-secteur-29399632.html"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Loi sur le matériel de guerre: la gauche valaisanne unie contre le texte",
+     "url": "https://www.lenouvelliste.ch/valais/loi-sur-le-materiel-de-guerre-la-gauche-valaisanne-unie-contre-le-texte-1520457"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Loi sur le matériel de guerre: les partisans valaisans montent au front",
+     "url": "https://www.lenouvelliste.ch/valais/loi-sur-le-materiel-de-guerre-les-partisans-valaisans-montent-au-front-1519602"
+    },
+    {
+     "media": "Conseil fédéral",
+     "titre": "Le Conseil fédéral recommande d'accepter la modification de la loi fédérale sur le matériel de guerre",
+     "url": "https://www.blv.admin.ch/fr/newnsb/OZlg1hISnipC"
+    },
+    {
+     "media": "ch.ch",
+     "titre": "Votation populaire du 29 novembre 2026",
+     "url": "https://www.ch.ch/fr/votation-populaire-du-29-novembre-2026/"
+    },
+    {
+     "media": "20 minutes",
+     "titre": "Guy Parmelin défend la révision de la loi sur le matériel de guerre en Suisse",
+     "url": "https://www.20min.ch/fr/story/votations-29-novembre-le-conseil-federal-pret-a-assouplir-les-exportations-d-armes-103641201"
+    }
+   ],
+   "mp4": "out/loi-sur-le-materiel-de-guerre-ce-qui-se-vote-le-29/2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre.mp4",
+   "etat": "a_valider",
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre/LePouls_2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1YkizxE-tFMgSwGiB_NgIxEJ-s8X_N-4H",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/4"
   }
  ]
 }
