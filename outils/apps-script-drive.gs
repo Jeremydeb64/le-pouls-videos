@@ -19,7 +19,13 @@ function doPost(e) {
     if (!secret || d.secret !== secret) return reponse({ ok: false, erreur: "secret invalide" });
     // Mise à jour de l'état de la rédaction (envoyé par le pipeline à chaque étape)
     if (d.action === "statut") {
-      PropertiesService.getScriptProperties().setProperty("STATUT", JSON.stringify(d.statut).slice(0, 8800));
+      // Une propriété est limitée à 9 Ko : on retire les plus anciens messages si besoin
+      let texte = JSON.stringify(d.statut);
+      while (texte.length > 8800 && d.statut.messages && d.statut.messages.length) {
+        d.statut.messages.shift();
+        texte = JSON.stringify(d.statut);
+      }
+      PropertiesService.getScriptProperties().setProperty("STATUT", texte);
       return reponse({ ok: true });
     }
     const racine = DriveApp.getFolderById(DOSSIER_PUBLICATIONS);
