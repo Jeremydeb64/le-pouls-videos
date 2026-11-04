@@ -1,9 +1,9 @@
 // Lit un épisode (JSON) et assemble la vidéo : scènes, habillage permanent, sous-titres, voix.
 import React from "react";
 import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
-import { C, SANS, SERIF, PAD, CONTENT_W, fontFaces, SCENE_TYPES, NO_CAPTIONS, Mark } from "./templates";
+import { C, SANS, SERIF, PAD, CONTENT_W, fontFaces, SCENE_TYPES, NO_CAPTIONS, Mark, FondContext } from "./templates";
 
-export type SceneSpec = { type: string; from: number; to: number; theme: "paper" | "green"; props: Record<string, any> };
+export type SceneSpec = { type: string; from: number; to: number; theme: "paper" | "green"; props: Record<string, any>; fond_ia?: { src?: string; video?: boolean; duree?: number; opacite?: number } };
 export type EpisodeSpec = {
   id: string;
   ambiance?: "neutre" | "dynamique" | "sobre" | "aucune"; // fond musical
@@ -94,7 +94,7 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
   const t = frame / fps;
   const scenes = episode.scenes;
   const cur = scenes.find((s) => t >= s.from && t < s.to) ?? scenes[scenes.length - 1];
-  const dark = cur.theme === "green" || cur.type === "photo";
+  const dark = cur.theme === "green" || cur.type === "photo" || cur.type === "illustration";
   return (
     <AbsoluteFill style={{ backgroundColor: C.paper }}>
       <style>{fontFaces}</style>
@@ -105,7 +105,9 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
         const dur = Math.round(s.to * fps) - from + (i < scenes.length - 1 ? 10 : 0);
         return (
           <Sequence key={i} from={from} durationInFrames={dur}>
-            <Comp theme={s.theme} {...s.props} />
+            <FondContext.Provider value={s.fond_ia?.src ? (s.fond_ia as any) : null}>
+              <Comp theme={s.theme} {...s.props} />
+            </FondContext.Provider>
           </Sequence>
         );
       })}

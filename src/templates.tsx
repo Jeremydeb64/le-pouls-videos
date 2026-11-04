@@ -1,7 +1,7 @@
 // Modèles de scènes Le Pouls — charte V3.1 (vert profond, crème, ocre, Inter Display).
 // Chaque scène reçoit ses props depuis le fichier d'épisode JSON. Les temps « at » sont en secondes depuis le début de la scène.
 import React from "react";
-import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, Loop, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import VALAIS from "./geo/valais.json";
 
 // Jetons de la charte (design-tokens.json V3.1)
@@ -117,14 +117,44 @@ const Rythme: React.FC<{ color: string; delay?: number; heights?: number[] }> = 
   );
 };
 
+// Visuel généré par IA en arrière-plan d'une scène (image ou courte animation), légendé
+export type FondIA = { src: string; video?: boolean; duree?: number; opacite?: number; libre?: boolean };
+export const FondContext = React.createContext<FondIA | null>(null);
+export const LegendeIA: React.FC<{ clair?: boolean }> = ({ clair = true }) => (
+  <div style={{ position: "absolute", right: 180, top: 246, fontFamily: SANS, fontWeight: 600, fontSize: 22, color: clair ? "rgba(245,242,234,0.9)" : "rgba(17,26,25,0.75)", letterSpacing: 0.3 }}>Image générée avec l’IA</div>
+);
+const CoucheIA: React.FC<{ fond: FondIA; theme: Theme }> = ({ fond, theme }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames, fps } = useVideoConfig();
+  const zoom = interpolate(frame, [0, durationInFrames], [1.0, 1.08]);
+  // Voile aux couleurs de la scène pour garder les textes lisibles (sauf visuel « libre » en pleine intensité)
+  const voile = fond.libre ? 0.25 : 1 - (fond.opacite ?? 0.38);
+  const bg = th(theme).bg;
+  const media = fond.video ? (
+    <Loop durationInFrames={Math.max(1, Math.round((fond.duree || 5) * fps))}>
+      <OffthreadVideo src={staticFile(fond.src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+    </Loop>
+  ) : (
+    <Img src={staticFile(fond.src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
+  );
+  return (
+    <>
+      <AbsoluteFill style={{ overflow: "hidden" }}>{media}</AbsoluteFill>
+      <AbsoluteFill style={{ background: bg, opacity: voile }} />
+    </>
+  );
+};
+
 const Frame: React.FC<{ theme: Theme; children: React.ReactNode }> = ({ theme, children }) => {
   const frame = useCurrentFrame();
+  const fond = React.useContext(FondContext);
   // Volet aligné sur la grille, 280 ms
   const p = interpolate(frame, [0, 8], [100, 0], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   return (
     <AbsoluteFill style={{ backgroundColor: th(theme).bg, clipPath: `inset(${p}% 0 0 0)` }}>
-      {theme === "green" && <Trames />}
+      {fond ? <CoucheIA fond={fond} theme={theme} /> : theme === "green" && <Trames />}
       {children}
+      {fond && <LegendeIA clair={theme === "green"} />}
     </AbsoluteFill>
   );
 };
@@ -558,6 +588,25 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
 };
 
 // Écran de fin : retour des barres, logo, baseline, maintien
+// Visuel IA plein écran (peut sortir de la charte pour coller à l'actualité), toujours légendé
+export const Illustration: React.FC<P<{ src: string; video?: boolean; duree?: number; kicker?: string; title?: string }>> = ({ theme, src, video, duree, kicker, title }) => (
+  <FondContext.Provider value={{ src, video, duree, libre: true }}>
+    <Frame theme={theme}>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(17,26,25,0.35) 0%, rgba(17,26,25,0) 30%, rgba(17,26,25,0) 50%, rgba(17,26,25,0.75) 75%, rgba(17,26,25,0.9) 100%)" }} />
+      {(kicker || title) && (
+        <Body top={980}>
+          {kicker && <Kicker>{kicker}</Kicker>}
+          {title && (
+            <Rise delay={8}>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 96 : title.length <= 32 ? 74 : 60, lineHeight: 1.02, color: C.paper, letterSpacing: TRACK_TITRE, textTransform: "uppercase", maxHeight: 220, overflow: "hidden" }}>{title}</div>
+            </Rise>
+          )}
+        </Body>
+      )}
+    </Frame>
+  </FondContext.Provider>
+);
+
 export const Outro: React.FC<P<{ tagline?: string; cta?: string; sources: string }>> = ({ cta, sources }) => (
   <Frame theme="green">
     <Body top={420}>
@@ -836,6 +885,7 @@ export const SCENE_TYPES: Record<string, React.FC<any>> = {
   frise: Frise,
   barres: Barres,
   avantApres: AvantApres,
+  illustration: Illustration,
 };
 // Scènes sans sous-titres (le texte à l'écran reprend déjà la voix)
 export const NO_CAPTIONS = new Set(["statement", "outro"]);
