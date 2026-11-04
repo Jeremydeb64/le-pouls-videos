@@ -26,7 +26,6 @@ jobs:
       - name: Relevé des soldes
         env:
           ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS || vars.KEYS_ELEVEN_POULS || secrets.ELEVENLABS_API_KEY }}
-          ANTHROPIC_ADMIN_KEY: ${{ secrets.ANTHROPIC_ADMIN_KEY }}
         run: node pipeline/budget.mjs
       - name: Archive
         run: |

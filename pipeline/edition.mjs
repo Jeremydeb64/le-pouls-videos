@@ -8,6 +8,7 @@ import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes
 import { rendre, imagesCles } from "./lib/rendu.mjs";
 import { redaction } from "./lib/redaction.mjs";
 import { definirContexte, enregistrer, coutDe } from "./lib/couts.mjs";
+import { visuelIA, higgsfieldActif } from "./lib/higgsfield.mjs";
 
 const EDITION = process.env.EDITION || (new Date().getUTCHours() < 11 ? "matin" : "soir");
 const MAX_SUJETS = +(process.env.MAX_SUJETS || 1);
@@ -102,7 +103,7 @@ async function produire(script, dossier) {
   const { sousTitres, ecart } = alignerSousTitres(script.segments, mots);
   if (ecart > 3) redaction.dit("scenariste", `Attention, ${ecart} mots d'écart entre le texte et la voix.`);
   const duree = +(mots[mots.length - 1].end + 1.8).toFixed(2);
-  const CONNUS = ["chrono", "titleBib", "calendar", "stats", "crowd", "statement", "bigFigure", "finish", "person", "recap", "photo", "outro", "ballot", "versus", "carte", "frise", "barres", "avantApres"];
+  const CONNUS = ["chrono", "titleBib", "calendar", "stats", "crowd", "statement", "bigFigure", "finish", "person", "recap", "photo", "outro", "ballot", "versus", "carte", "frise", "barres", "avantApres", "illustration"];
   for (const sc of script.scenes) {
     if (!CONNUS.includes(sc.type)) {
       redaction.dit("scenariste", `Pas de modèle « ${sc.type} » : je mets un plein écran texte à la place (demande notée).`);
@@ -136,6 +137,37 @@ async function produire(script, dossier) {
       redaction.dit("scenariste", "Pas de photo libre convenable, je la remplace par un plein écran texte.");
     }
   }
+  // Visuels générés par IA (Higgsfield) : fonds d'infographie et plans plein écran, en parallèle
+  const demandes = [];
+  scenes.forEach((s, i) => {
+    if (s.type === "illustration" && s.props?.prompt) demandes.push({ s, i, plein: true, prompt: s.props.prompt, animation: !!s.props.animation });
+    else if (s.fond_ia?.prompt) demandes.push({ s, i, plein: false, prompt: s.fond_ia.prompt, animation: !!s.fond_ia.animation });
+  });
+  let animations = 0;
+  const retenues = demandes.slice(0, 4).map((d) => ({ ...d, animation: d.animation && animations++ < 2 }));
+  if (retenues.length && higgsfieldActif()) redaction.dit("scenariste", `Je commande ${retenues.length} visuel(s) à l'IA.`);
+  await Promise.all(
+    retenues.map(async (d) => {
+      try {
+        if (!higgsfieldActif()) throw new Error("clé Higgsfield absente");
+        const v = await visuelIA({ prompt: d.prompt, animation: d.animation }, path.join("public", `ia-${id}-${d.i}`));
+        const src = path.basename(v.fichier);
+        if (d.plein) d.s.props = { ...d.s.props, src, video: v.video, duree: v.duree };
+        else d.s.fond_ia = { ...d.s.fond_ia, src, video: v.video, duree: v.duree };
+      } catch (e) {
+        console.warn("Visuel IA :", e.message);
+        d.e = e.message;
+      }
+    })
+  );
+  for (const d of demandes) {
+    if (d.plein && !d.s.props.src) {
+      d.s.type = "statement";
+      d.s.props = { text: d.s.props.title || d.s.props.kicker || "" };
+    } else if (!d.plein && !d.s.fond_ia?.src) delete d.s.fond_ia;
+  }
+  const echecs = retenues.filter((d) => d.e);
+  if (echecs.length) redaction.dit("scenariste", `Visuels IA non disponibles (${echecs[0].e}) : je continue sans.`);
   const ambiance = script.sensible ? "aucune" : script.ambiance || "neutre";
   const episode = { id, ambiance, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
   fs.mkdirSync("episodes", { recursive: true });

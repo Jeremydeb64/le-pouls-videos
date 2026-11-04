@@ -101,7 +101,7 @@ export async function enregistrer(etiquette = "") {
   for (const l of j.lignes) {
     const d = jourZurich(l.date), m = d.slice(0, 7);
     for (const [tab, k] of [[parJour, d], [parMois, m]]) {
-      tab[k] ??= { anthropic: 0, elevenlabs: 0, total: 0 };
+      tab[k] ??= { anthropic: 0, elevenlabs: 0, higgsfield: 0, total: 0 };
       tab[k][l.service] = arrondi((tab[k][l.service] || 0) + l.usd);
       tab[k].total = arrondi(tab[k].total + l.usd);
     }

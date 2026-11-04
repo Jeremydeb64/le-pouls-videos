@@ -336,13 +336,13 @@ async function budget() {
     const jours = Object.entries(j.par_jour || {}).sort().reverse().slice(0, 10);
     el.innerHTML = `<div class="kpis">
       ${kpi(f(auj.total), "Aujourd'hui", c(auj.total))}
-      ${kpi(f(mois.total), "Ce mois", `${c(mois.total)} · Claude ${f(mois.anthropic)} · ElevenLabs ${f(mois.elevenlabs)}`)}
+      ${kpi(f(mois.total), "Ce mois", `${c(mois.total)} · Claude ${f(mois.anthropic)} · ElevenLabs ${f(mois.elevenlabs)} · IA ${f(mois.higgsfield)}`)}
       ${kpi(f(moy), "Par vidéo (moyenne)", `${vids.length} vidéo(s) suivie(s)`)}
       ${kpi(e.credits_restants != null ? e.credits_restants.toLocaleString("fr-CH") : "?", "Crédits ElevenLabs restants", e.credits_restants != null ? `sur ${e.credits_mois.toLocaleString("fr-CH")} · plan ${esc(e.plan)}${e.renouvellement ? ` · renouvelés le ${new Date(e.renouvellement).toLocaleDateString("fr-CH")}` : ""}` : esc(e.erreur || "non relevé"), e.credits_mois ? `<div class="jauge"><i style="width:${pct}%"></i></div>` : "")}
       ${kpi(a.credit_estime_restant_usd != null ? f(a.credit_estime_restant_usd) : a.mois_en_cours_usd != null ? f(a.mois_en_cours_usd) : "—", a.credit_estime_restant_usd != null ? "Crédit Claude restant (estimé)" : a.mois_en_cours_usd != null ? "Claude ce mois (facture réelle)" : "Solde Claude", a.erreur ? esc(a.erreur) : a.credit_estime_restant_usd == null && a.mois_en_cours_usd == null ? "Voir console.anthropic.com → Billing" : "")}
     </div>
-    <table class="couts"><tr><th>Jour</th><th>Claude</th><th>ElevenLabs</th><th>Total</th></tr>
-    ${jours.map(([d, v]) => `<tr><td>${new Date(d).toLocaleDateString("fr-CH", { weekday: "short", day: "numeric", month: "short" })}</td><td>${f(v.anthropic)}</td><td>${f(v.elevenlabs)}</td><td><b>${f(v.total)}</b> <span style="color:var(--muted)">${c(v.total)}</span></td></tr>`).join("") || `<tr><td colspan="4">Aucune dépense notée pour l'instant.</td></tr>`}
+    <table class="couts"><tr><th>Jour</th><th>Claude</th><th>ElevenLabs</th><th>Visuels IA</th><th>Total</th></tr>
+    ${jours.map(([d, v]) => `<tr><td>${new Date(d).toLocaleDateString("fr-CH", { weekday: "short", day: "numeric", month: "short" })}</td><td>${f(v.anthropic)}</td><td>${f(v.elevenlabs)}</td><td>${f(v.higgsfield)}</td><td><b>${f(v.total)}</b> <span style="color:var(--muted)">${c(v.total)}</span></td></tr>`).join("") || `<tr><td colspan="5">Aucune dépense notée pour l'instant.</td></tr>`}
     </table>
     <p class="vide" style="margin-top:8px">Coûts estimés au tarif public des API (relevé ${j.maj ? new Date(j.maj).toLocaleString("fr-CH") : "?"}). GitHub, Google Drive et Wikimedia sont gratuits.</p>`;
   } catch (e) {

@@ -54,7 +54,7 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   const medias = [];
   try {
     const ep = JSON.parse(fs.readFileSync(path.join("episodes", `${v.id}.json`), "utf8"));
-    for (const f of [ep.voice, ...ep.scenes.filter((s) => s.type === "photo").map((s) => s.props.src)]) if (f && fs.existsSync(path.join("public", f))) medias.push(f);
+    for (const f of [ep.voice, ...ep.scenes.filter((s) => s.type === "photo" || s.type === "illustration").map((s) => s.props.src), ...ep.scenes.map((s) => s.fond_ia?.src)]) if (f && fs.existsSync(path.join("public", f))) medias.push(f);
   } catch {}
   const archiveMedias = path.join("out", "publications", `${nom}-medias.tgz`);
   if (medias.length) execFileSync("tar", ["-czf", archiveMedias, "-C", "public", ...medias]);

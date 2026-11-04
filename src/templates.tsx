@@ -121,7 +121,7 @@ const Rythme: React.FC<{ color: string; delay?: number; heights?: number[] }> = 
 export type FondIA = { src: string; video?: boolean; duree?: number; opacite?: number; libre?: boolean };
 export const FondContext = React.createContext<FondIA | null>(null);
 export const LegendeIA: React.FC<{ clair?: boolean }> = ({ clair = true }) => (
-  <div style={{ position: "absolute", right: 180, top: 246, fontFamily: SANS, fontWeight: 600, fontSize: 22, color: clair ? "rgba(245,242,234,0.9)" : "rgba(17,26,25,0.75)", letterSpacing: 0.3 }}>Image générée avec l’IA</div>
+  <div style={{ position: "absolute", right: 180, top: 246, fontFamily: SANS, fontWeight: 600, fontSize: 24, color: clair ? "rgba(245,242,234,0.9)" : "rgba(17,26,25,0.75)", letterSpacing: 0.3 }}>Image générée avec l’IA</div>
 );
 const CoucheIA: React.FC<{ fond: FondIA; theme: Theme }> = ({ fond, theme }) => {
   const frame = useCurrentFrame();
