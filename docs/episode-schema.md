@@ -33,6 +33,9 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `person` | personne citée (dossard, bio, propos rapportés) | `kicker, name, bib, bio, quote, quoteAt, quoteSource` |
 | `recap` | « À retenir » en 3 lignes | `kicker, items[{n,label,at}]` |
 | `photo` | photo plein écran avec crédit | `src, credit, kicker?, title?` |
+| `illustration` | visuel généré par IA plein écran (image ou animation), légendé, peut sortir de la charte | `prompt, animation?, kicker?, title?` (le pipeline remplit `src`) |
+
+Toute scène peut recevoir `fond_ia: { prompt, animation? }` : visuel IA en arrière-plan sous un voile aux couleurs de la scène, avec la légende « Image générée avec l'IA ».
 | `outro` | fin : logo, baseline, sources (pas d'appel à s'abonner) | `sources` (`cta` facultatif, jamais « abonne-toi ») |
 | `ballot` | votation : urne, date du scrutin, question | `kicker, date, niveau ("cantonal"/"fédéral"), question` |
 | `carte` | carte du Valais, zoom sur la ou les communes (noms officiels des 122 communes) | `kicker, communes[], titre?, zoom?, at?` |

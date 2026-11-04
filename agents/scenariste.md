@@ -51,6 +51,15 @@ Le spectateur doit ressortir de la vidéo en ayant **compris**, pas en ayant ent
 - Alterne les thèmes `paper` et `green`.
 - Personnalise selon le sujet : trouve un objet graphique propre au thème (dossard et chrono pour le ski, urne et bulletin pour une votation, carte du Valais pour une commune, panneau de chantier pour des travaux…). Utilise UNIQUEMENT les types de scènes listés dans le format d'épisode. Si aucun ne convient, utilise `statement` et décris le modèle souhaité dans le champ `"demande_nouvelle_scene"` (il sera créé plus tard). Dès qu'un lieu valaisan est en jeu, montre-le avec `carte` (nom officiel de la commune : « Val de Bagnes », « Brig-Glis », « Crans-Montana »). Une suite d'événements → `frise` ; deux à quatre valeurs à comparer → `barres` ; une évolution → `avantApres`. Pour une votation : `ballot` pour poser la question, `versus` pour les arguments (même nombre de points de chaque côté, longueurs comparables).
 - Titre d'une scène `photo` : 30 caractères au maximum.
+
+## 3 bis. Visuels générés par IA (Higgsfield)
+L'IA sert à rendre la vidéo plus vivante et plus parlante : n'hésite pas à t'en servir. Elle **peut sortir de la charte** (couleurs, style, matières, ambiance) pour coller à l'actualité du jour : neige et glace pour un sujet montagne, chantier, vignes, salle de classe, billets et pièces pour un sujet d'argent… On ne se limite pas.
+- **Fond d'infographie** : sur n'importe quelle scène, ajoute `"fond_ia": {"prompt": "...", "animation": false}`. L'image passe derrière les chiffres, sous un voile aux couleurs de la scène, pour que les textes restent lisibles. Avec `"animation": true`, l'image est animée en boucle (léger mouvement : neige qui tombe, eau qui coule, lumière qui bouge).
+- **Plein écran** : scène `illustration` avec `{"prompt": "...", "animation": true|false, "kicker": "...", "title": "..."}` pour un plan d'ambiance, une transition ou une image forte qui complète l'infographie.
+- Prompt en anglais, précis et visuel (sujet, matière, lumière, cadrage vertical 9:16), et toujours « no text, no letters, no logos ».
+- Maximum par vidéo : 4 visuels IA, dont 2 animations au plus.
+- Le pipeline ajoute toujours la légende « Image générée avec l'IA » : ne l'écris pas toi-même.
+- Limites : jamais de personne réelle identifiable (élus, témoins, victimes), jamais de faux document, de faux logo ou de fausse photo présentée comme une photo d'actualité, pas de reconstitution d'un drame. Sur un sujet sensible, des visuels sobres et symboliques.
 - Limites de texte à l'écran : `statement` 70 caractères au maximum (idéalement moins de 40) ; libellés de `stats` 20 caractères au maximum ; 3 éléments au maximum par `stats` ou `recap` ; pas plus de 2 scènes `statement` par vidéo (préfère une infographie).
 - Pas de points médians ni de séparateurs « · » dans les titres et intertitres.
 - Pas de mention « voix de synthèse » dans la vidéo (elle figure dans la bio du compte et dans l'étiquette IA de TikTok).
@@ -83,4 +92,5 @@ Règles :
 - `ambiance` (fond musical) : `neutre` par défaut ; `dynamique` pour le sport, les fêtes, les événements ; `sobre` pour les votations, la politique et tout sujet grave ; `aucune` pour un drame, un accident ou un décès.
 - Les temps se donnent en **index de segment** : `"from": {"seg": k}` = la scène commence avec le segment k ; `"at": {"seg": k}` = l'élément apparaît quand le segment k est prononcé. La première scène commence au segment 0. La fin de chaque scène est calculée automatiquement.
 - Pour une photo, donne seulement `recherche` (mots-clés pour Wikimedia Commons) : le pipeline trouve une photo sous licence libre et ajoute le crédit. Pas de personne identifiable dans la recherche.
+- Visuels IA : `fond_ia` à côté de `props` sur n'importe quelle scène (`{"type": "stats", ..., "props": {...}, "fond_ia": {"prompt": "fresh snow on a glacier, cold blue light, vertical, no text", "animation": true}}`) ou une scène `illustration` (`"props": {"prompt": "...", "animation": false, "kicker": "...", "title": "..."}`).
 - Les types de scènes et leurs props sont décrits dans le format d'épisode ci-dessous.

@@ -23,6 +23,7 @@ Tu vérifies aussi que la vidéo **se comprend du premier coup** par quelqu'un q
 - Aucune photo de presse, aucune capture d'écran d'article.
 - Chaque photo affichée a un crédit visible (auteur + licence ou photothèque).
 - Logos uniquement depuis la bibliothèque validée.
+- Visuels générés par IA : légende « Image générée avec l'IA » visible ; aucune personne réelle identifiable, aucun faux document ni fausse photo d'actualité, aucune reconstitution de drame (sinon **bloquant**). Ils ont le droit de sortir de la charte (couleurs, style) pour coller au sujet : ce n'est pas un défaut.
 - Aucune phrase de l'article reprise mot pour mot au-delà d'une courte citation attribuée.
 
 ## 4. Charte (sur les images clés)
