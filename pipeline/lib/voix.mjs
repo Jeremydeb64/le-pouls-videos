@@ -24,6 +24,17 @@ export async function genererVoix(texte, presentateur, fichier) {
   fs.writeFileSync(fichier, Buffer.from(await r.arrayBuffer()));
 }
 
+// Format à deux voix : [{ qui: "lucie" | "nicolas", texte }] → un seul fichier audio (dialogue ElevenLabs)
+export async function genererDialogue(repliques, fichier) {
+  const r = await fetch(`${EL}/text-to-dialogue?output_format=mp3_44100_128`, {
+    method: "POST",
+    headers: { "xi-api-key": cle(), "content-type": "application/json" },
+    body: JSON.stringify({ model_id: "eleven_v3", inputs: repliques.map((x) => ({ text: x.texte, voice_id: VOIX[x.qui] || VOIX.lucie })) }),
+  });
+  if (!r.ok) throw new Error(`ElevenLabs dialogue ${r.status} : ${(await r.text()).slice(0, 300)}`);
+  fs.writeFileSync(fichier, Buffer.from(await r.arrayBuffer()));
+}
+
 export async function transcrire(fichier) {
   const form = new FormData();
   form.append("model_id", "scribe_v1");

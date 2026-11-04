@@ -1,0 +1,24 @@
+name: Test des sources
+
+on:
+  push:
+    paths: ["config/sources.json"]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          node --input-type=module -e '
+          import fs from "node:fs";
+          import { rss } from "./pipeline/lib/web.mjs";
+          const cfg = JSON.parse(fs.readFileSync("config/sources.json", "utf8"));
+          for (const f of cfg.flux) {
+            try { const a = await rss(f.url); console.log("SOURCE OK", a.length, f.media, "|", a[0]?.titre || ""); }
+            catch (e) { console.log("SOURCE KO", f.media, f.url, e.message); }
+          }'

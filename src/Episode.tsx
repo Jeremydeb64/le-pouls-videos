@@ -6,6 +6,7 @@ import { C, SANS, SERIF, PAD, CONTENT_W, fontFaces, SCENE_TYPES, NO_CAPTIONS } f
 export type SceneSpec = { type: string; from: number; to: number; theme: "paper" | "green"; props: Record<string, any> };
 export type EpisodeSpec = {
   id: string;
+  ambiance?: "neutre" | "dynamique" | "sobre" | "aucune"; // fond musical
   voice?: string; // fichier dans public/
   duration: number; // secondes
   captions: [number, number, string][];
@@ -44,6 +45,40 @@ const Captions: React.FC<{ list: [number, number, string][]; dark: boolean }> = 
   );
 };
 
+// Fond musical sous la voix + effets discrets (whoosh aux transitions, pop sur les chiffres)
+const SCENES_CHIFFRES = new Set(["stats", "bigFigure", "barres", "avantApres", "crowd", "finish", "chrono"]);
+const Sons: React.FC<{ episode: EpisodeSpec }> = ({ episode }) => {
+  const { fps, durationInFrames } = useVideoConfig();
+  const amb = episode.ambiance || "neutre";
+  const volumeMusique = amb === "sobre" ? 0.07 : amb === "dynamique" ? 0.11 : 0.09;
+  const effets = amb !== "sobre" && amb !== "aucune";
+  return (
+    <>
+      {amb !== "aucune" && (
+        <Audio
+          src={staticFile(`sons/musique-${amb}.mp3`)}
+          loop
+          volume={(f) => volumeMusique * interpolate(f, [0, fps, durationInFrames - 2 * fps, durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
+        />
+      )}
+      {effets &&
+        episode.scenes.slice(1).map((s, i) => (
+          <Sequence key={"w" + i} from={Math.max(0, Math.round(s.from * fps) - 6)} durationInFrames={30}>
+            <Audio src={staticFile("sons/whoosh.mp3")} volume={0.18} />
+          </Sequence>
+        ))}
+      {effets &&
+        episode.scenes
+          .filter((s) => SCENES_CHIFFRES.has(s.type))
+          .map((s, i) => (
+            <Sequence key={"p" + i} from={Math.round((s.from + 0.5) * fps)} durationInFrames={20}>
+              <Audio src={staticFile("sons/pop.mp3")} volume={0.22} />
+            </Sequence>
+          ))}
+    </>
+  );
+};
+
 export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = ({ episode, withVoice = true }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -68,6 +103,7 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
       <Chrome dark={dark} />
       {!NO_CAPTIONS.has(cur.type) && <Captions list={episode.captions} dark={dark} />}
       {withVoice && episode.voice && <Audio src={staticFile(episode.voice)} />}
+      {withVoice && <Sons episode={episode} />}
     </AbsoluteFill>
   );
 };

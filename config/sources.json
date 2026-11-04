@@ -1,10 +1,34 @@
 {
-  "_note": "Flux à vérifier au premier lancement : les adresses exactes des flux RSS peuvent changer. 'veille_json' peut pointer vers la sortie JSON du dashboard Le Pouls (dépôt Veille-boomerang-).",
+  "_note": "Le workflow « Test des sources » indique combien d'articles chaque flux renvoie. 'veille_json' peut pointer vers la sortie JSON du dashboard Le Pouls.",
   "flux": [
-    { "media": "Le Nouvelliste", "url": "https://www.lenouvelliste.ch/rss/valais" },
-    { "media": "RTS Valais", "url": "https://www.rts.ch/info/regions/valais/?format=rss/news" },
-    { "media": "Canal9", "url": "https://www.canal9.ch/feed/" },
-    { "media": "Canton du Valais", "url": "https://www.vs.ch/web/communication/rss" }
+    {
+      "media": "Le Nouvelliste",
+      "url": "https://www.lenouvelliste.ch/rss/valais"
+    },
+    {
+      "media": "RTS Valais",
+      "url": "https://www.rts.ch/info/regions/valais/?format=rss/news"
+    },
+    {
+      "media": "Canal9",
+      "url": "https://www.canal9.ch/feed/"
+    },
+    {
+      "media": "Canton du Valais",
+      "url": "https://www.vs.ch/web/communication/rss"
+    },
+    {
+      "media": "RTS Suisse",
+      "url": "https://www.rts.ch/info/suisse/?format=rss/news"
+    },
+    {
+      "media": "Confédération (communiqués)",
+      "url": "https://www.admin.ch/gov/fr/accueil/documentation/communiques.rss.html"
+    },
+    {
+      "media": "Le Temps Suisse",
+      "url": "https://www.letemps.ch/suisse.rss"
+    }
   ],
   "veille_json": null
 }

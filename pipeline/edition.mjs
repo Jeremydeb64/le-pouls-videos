@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { demanderJSON, consigne, MODELE_LEGER } from "./lib/claude.mjs";
 import { lire, rss, texteArticle, photoLibre } from "./lib/web.mjs";
-import { genererVoix, transcrire, alignerSousTitres, caleScenes } from "./lib/voix.mjs";
+import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes } from "./lib/voix.mjs";
 import { rendre, imagesCles } from "./lib/rendu.mjs";
 import { redaction } from "./lib/redaction.mjs";
 
@@ -74,8 +74,13 @@ async function ecrire(sujet, retours = null) {
 async function produire(script, dossier) {
   const id = `${new Date().toISOString().slice(0, 10)}-${EDITION}-${slug(script.titre || "sujet")}`;
   const voixFichier = `voix-${id}.mp3`;
-  redaction.dit("scenariste", `J'envoie le texte à ${script.presentateur === "nicolas" ? "Nicolas" : "Lucie"}.`);
-  await genererVoix(script.voix, script.presentateur, path.join("public", voixFichier));
+  if (script.presentateur === "duo" && Array.isArray(script.dialogue) && script.dialogue.length) {
+    redaction.dit("scenariste", "J'envoie le dialogue à Lucie et Nicolas.");
+    await genererDialogue(script.dialogue, path.join("public", voixFichier));
+  } else {
+    redaction.dit("scenariste", `J'envoie le texte à ${script.presentateur === "nicolas" ? "Nicolas" : "Lucie"}.`);
+    await genererVoix(script.voix, script.presentateur, path.join("public", voixFichier));
+  }
   const mots = await transcrire(path.join("public", voixFichier));
   const { sousTitres, ecart } = alignerSousTitres(script.segments, mots);
   if (ecart > 3) redaction.dit("scenariste", `Attention, ${ecart} mots d'écart entre le texte et la voix.`);
@@ -109,7 +114,8 @@ async function produire(script, dossier) {
       redaction.dit("scenariste", "Pas de photo libre convenable, je la remplace par un plein écran texte.");
     }
   }
-  const episode = { id, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
+  const ambiance = script.sensible ? "aucune" : script.ambiance || "neutre";
+  const episode = { id, ambiance, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
   fs.mkdirSync("episodes", { recursive: true });
   fs.writeFileSync(`episodes/${id}.json`, JSON.stringify(episode, null, 1));
   redaction.agent("scenariste", "termine");
