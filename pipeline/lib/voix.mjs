@@ -1,5 +1,6 @@
 // Voix ElevenLabs + minutage mot par mot (transcription Scribe) + calage des sous-titres et des scènes.
 import fs from "node:fs";
+import { execFileSync } from "node:child_process";
 import { noterVoix, noterTranscription } from "./couts.mjs";
 
 const EL = "https://api.elevenlabs.io/v1";
@@ -8,6 +9,23 @@ export const VOIX = {
   nicolas: process.env.VOIX_NICOLAS || "aQROLel5sQbj1vuIVi6B",
 };
 const MODELE_TTS = process.env.ELEVEN_MODEL || "eleven_v3";
+// Réglages par présentateur. Nicolas : stabilité « Creative » (plus d'intonation) et ton énergique par défaut.
+const REGLAGES = {
+  lucie: { stability: 0.5 },
+  nicolas: { stability: 0.0 },
+};
+const TON_PAR_DEFAUT = { nicolas: "[energetic]" };
+// Ajoute une balise d'énergie en tête de réplique quand le Scénariste n'en a pas mis
+const avecTon = (texte, qui) => (TON_PAR_DEFAUT[qui] && !/^\s*\[/.test(texte) ? `${TON_PAR_DEFAUT[qui]} ${texte}` : texte);
+// Rythme : la voix est légèrement accélérée (sans changer la hauteur) avant la transcription
+export const VITESSE = { lucie: +(process.env.VITESSE_LUCIE || 1.07), nicolas: +(process.env.VITESSE_NICOLAS || 1.1), duo: +(process.env.VITESSE_DUO || 1.07) };
+export function accelerer(fichier, facteur) {
+  if (!facteur || Math.abs(facteur - 1) < 0.005) return;
+  const tmp = fichier.replace(/\.mp3$/, "-brut.mp3");
+  fs.renameSync(fichier, tmp);
+  execFileSync("npx", ["remotion", "ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", tmp, "-filter:a", `atempo=${facteur}`, "-ar", "44100", "-b:a", "128k", fichier], { stdio: "inherit" });
+  fs.rmSync(tmp);
+}
 
 const cle = () => {
   const k = process.env.ELEVENLABS_API_KEY;
@@ -19,7 +37,7 @@ export async function genererVoix(texte, presentateur, fichier) {
   const r = await fetch(`${EL}/text-to-speech/${VOIX[presentateur] || VOIX.lucie}?output_format=mp3_44100_128`, {
     method: "POST",
     headers: { "xi-api-key": cle(), "content-type": "application/json" },
-    body: JSON.stringify({ text: texte, model_id: MODELE_TTS, language_code: "fr" }),
+    body: JSON.stringify({ text: avecTon(texte, presentateur), model_id: MODELE_TTS, language_code: "fr", voice_settings: REGLAGES[presentateur] || REGLAGES.lucie }),
   });
   if (!r.ok) throw new Error(`ElevenLabs TTS ${r.status} : ${(await r.text()).slice(0, 300)}`);
   noterVoix("voix", r, texte.length);
@@ -31,7 +49,7 @@ export async function genererDialogue(repliques, fichier) {
   const r = await fetch(`${EL}/text-to-dialogue?output_format=mp3_44100_128`, {
     method: "POST",
     headers: { "xi-api-key": cle(), "content-type": "application/json" },
-    body: JSON.stringify({ model_id: "eleven_v3", inputs: repliques.map((x) => ({ text: x.texte, voice_id: VOIX[x.qui] || VOIX.lucie })) }),
+    body: JSON.stringify({ model_id: "eleven_v3", inputs: repliques.map((x) => ({ text: avecTon(x.texte, x.qui), voice_id: VOIX[x.qui] || VOIX.lucie })) }),
   });
   if (!r.ok) throw new Error(`ElevenLabs dialogue ${r.status} : ${(await r.text()).slice(0, 300)}`);
   noterVoix("dialogue", r, repliques.reduce((n, x) => n + x.texte.length, 0));

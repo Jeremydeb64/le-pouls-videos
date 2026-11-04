@@ -33,7 +33,7 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `person` | personne citée (dossard, bio, propos rapportés) | `kicker, name, bib, bio, quote, quoteAt, quoteSource` |
 | `recap` | « À retenir » en 3 lignes | `kicker, items[{n,label,at}]` |
 | `photo` | photo plein écran avec crédit | `src, credit, kicker?, title?` |
-| `outro` | fin : marque, appel à s'abonner, sources | `tagline, cta, sources` |
+| `outro` | fin : logo, baseline, sources (pas d'appel à s'abonner) | `sources` (`cta` facultatif, jamais « abonne-toi ») |
 | `ballot` | votation : urne, date du scrutin, question | `kicker, date, niveau ("cantonal"/"fédéral"), question` |
 | `carte` | carte du Valais, zoom sur la ou les communes (noms officiels des 122 communes) | `kicker, communes[], titre?, zoom?, at?` |
 | `frise` | frise chronologique, 2 à 4 étapes | `kicker, items[{date,label,at}]` |

@@ -558,7 +558,7 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
 };
 
 // Écran de fin : retour des barres, logo, baseline, maintien
-export const Outro: React.FC<P<{ tagline?: string; cta: string; sources: string }>> = ({ cta, sources }) => (
+export const Outro: React.FC<P<{ tagline?: string; cta?: string; sources: string }>> = ({ cta, sources }) => (
   <Frame theme="green">
     <Body top={420}>
       <div style={{ marginLeft: 30 }}>
@@ -571,9 +571,9 @@ export const Outro: React.FC<P<{ tagline?: string; cta: string; sources: string 
       <Rise delay={22}>
         <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 51, color: C.paper, letterSpacing: 1 }}>SENTIR L’ACTUALITÉ</div>
       </Rise>
-      <Rise delay={34}>
+      {cta && <Rise delay={34}>
         <div style={{ display: "inline-block", marginTop: 70, background: C.ochre, color: C.ink, fontFamily: SANS, fontWeight: 800, fontSize: 40, padding: "20px 34px", borderRadius: 12 }}>{cta}</div>
-      </Rise>
+      </Rise>}
       <Rise delay={46}>
         <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: C.sage, marginTop: 60, lineHeight: 1.4 }}>{sources}</div>
       </Rise>

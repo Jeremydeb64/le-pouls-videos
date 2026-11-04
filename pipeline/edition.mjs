@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { demanderJSON, consigne, MODELE_LEGER } from "./lib/claude.mjs";
 import { lire, rss, texteArticle, photoLibre } from "./lib/web.mjs";
-import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes } from "./lib/voix.mjs";
+import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes, accelerer, VITESSE } from "./lib/voix.mjs";
 import { rendre, imagesCles } from "./lib/rendu.mjs";
 import { redaction } from "./lib/redaction.mjs";
 import { definirContexte, enregistrer, coutDe } from "./lib/couts.mjs";
@@ -96,6 +96,8 @@ async function produire(script, dossier) {
     redaction.dit("scenariste", `J'envoie le texte à ${script.presentateur === "nicolas" ? "Nicolas" : "Lucie"}.`);
     await genererVoix(script.voix, script.presentateur, path.join("public", voixFichier));
   }
+  const duo = script.presentateur === "duo" && Array.isArray(script.dialogue) && script.dialogue.length;
+  accelerer(path.join("public", voixFichier), duo ? VITESSE.duo : VITESSE[script.presentateur] || VITESSE.lucie);
   const mots = await transcrire(path.join("public", voixFichier));
   const { sousTitres, ecart } = alignerSousTitres(script.segments, mots);
   if (ecart > 3) redaction.dit("scenariste", `Attention, ${ecart} mots d'écart entre le texte et la voix.`);
@@ -112,6 +114,8 @@ async function produire(script, dossier) {
   let scenes = caleScenes(script.scenes, sousTitres, duree);
   // Alternance papier / vert imposée (jamais deux scènes du même thème d'affilée), la fin reste sur papier
   scenes.forEach((sc, i) => (sc.theme = i % 2 === 0 ? "paper" : "green"));
+  // Pas d'appel à s'abonner sur l'écran de fin
+  for (const sc of scenes) if (sc.type === "outro" && /abonn/i.test(sc.props?.cta || "")) delete sc.props.cta;
   if (scenes.length && scenes[scenes.length - 1].type === "outro") scenes[scenes.length - 1].theme = "paper";
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }

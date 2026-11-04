@@ -14,23 +14,16 @@ export type EpisodeSpec = {
   scenes: SceneSpec[];
 };
 
-// Habillage permanent : logo (barres + LE POULS), filet, pied de page « Sentir l'actualité »
+// Habillage permanent : barre de progression et pied de page « Sentir l'actualité » (logo seulement sur l'écran de fin)
 const Chrome: React.FC<{ dark: boolean; outro: boolean }> = ({ dark, outro }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const fg = dark ? C.paper : C.green;
   const filet = dark ? C.ochre : C.mid;
   if (outro) return null;
-  // Ouverture signal : trois barres en décalage de 80 ms, logo révélé par masque
-  const logo = interpolate(frame, [6, 18], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   return (
     <>
       <div style={{ position: "absolute", top: 0, left: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: C.ochre }} />
-      <div style={{ position: "absolute", top: 120, left: PAD, display: "flex", alignItems: "center", gap: 22 }}>
-        <Mark h={62} colors={[C.sage, C.ochre, dark ? C.paper : C.green]} delays={[0, 2.4, 4.8]} />
-        <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: fg, letterSpacing: "-0.02em", lineHeight: 1, clipPath: `inset(0 ${100 - logo}% 0 0)` }}>LE POULS</span>
-      </div>
-      <div style={{ position: "absolute", top: 224, left: PAD, width: CONTENT_W, height: 3, background: filet, opacity: 0.9 }} />
       <div style={{ position: "absolute", top: 1490, left: PAD, width: CONTENT_W, height: 3, background: dark ? C.paper : C.mid, opacity: 0.6 }} />
       <div style={{ position: "absolute", top: 1512, left: PAD, fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 1.5, color: dark ? C.paper : C.mid, opacity: 0.8 }}>SENTIR L’ACTUALITÉ</div>
     </>
@@ -66,8 +59,7 @@ const Sons: React.FC<{ episode: EpisodeSpec }> = ({ episode }) => {
   const debutOutro = outro ? Math.round(outro.from * fps) : durationInFrames - 4 * fps;
   return (
     <>
-      {/* Signature sonore : courte ponctuation à l'ouverture (avec les trois barres du logo), version complète sur l'écran de fin */}
-      <Audio src={staticFile("sons/signature-courte.mp3")} volume={0.35} />
+      {/* Signature sonore sur l'écran de fin (le logo n'apparaît qu'à la fin) */}
       <Sequence from={debutOutro + 2} durationInFrames={Math.max(1, durationInFrames - debutOutro - 2)}>
         <Audio src={staticFile("sons/signature.mp3")} volume={(f) => 0.6 * interpolate(f, [durationInFrames - debutOutro - 2 - 8, durationInFrames - debutOutro - 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
       </Sequence>
