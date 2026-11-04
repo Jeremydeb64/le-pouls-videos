@@ -14,7 +14,7 @@ Lancement manuel : onglet **Actions → Édition Le Pouls → Run workflow**.
 | Secret | Obligatoire | Rôle |
 |---|---|---|
 | `ANTHROPIC_API_KEY` | oui | agents (Claude) |
-| `ELEVENLABS_API_KEY` | oui | voix + minutage |
+| `KEYS_ELEVEN_POULS` | oui | voix + minutage |
 | `POSTIZ_API_KEY`, `POSTIZ_TIKTOK_ID` | plus tard | publication TikTok |
 
 ## Dossiers
