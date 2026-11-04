@@ -1,68 +1,13 @@
 {
  "edition": "matin",
- "etape": "scenariste",
+ "etape": "controleur",
  "agents": {
   "veilleur": "termine",
   "scenariste": "termine",
-  "controleur": "attend",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-04T09:12:03.349Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "35 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T09:12:11.456Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Salaire minimum valaisan : le vote du 29 novembre ». Objet cantonal le 29 novembre, chiffres clairs (22 fr., 18 fr. pour l'agriculture, 15'000 salariés concernés) et deux camps déjà présentés.",
-   "t": "2026-11-04T09:12:25.615Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Fiscalité des couples : la réforme soumise au vote fédéral ». Objet fédéral le 29 novembre, qui n'a encore aucune explication neutre à mon sens ; le sujet est récent et peu couvert en Valais.",
-   "t": "2026-11-04T09:12:25.616Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T09:12:25.617Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-04T10:01:21.412Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "35 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T10:01:27.638Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Salaire minimum en Valais : le oui et le non face à face ». Votation cantonale le 29 novembre, 22 fr/h (18 fr/h en agriculture), 15'000 salariés concernés selon le oui : matière idéale pour une infographie neutre.",
-   "t": "2026-11-04T10:01:44.448Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « PFAS : un explorateur cartographie le Rhône, de la source à la Méditerranée ». Parcours source-mer du fleuve avec des points de mesure : carte et chiffres directement exploitables. Fiabilité limitée (une seule source, chapô tronqué) : à vérifier avant tournage.",
-   "t": "2026-11-04T10:01:44.448Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T10:01:44.450Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:03:32.452Z"
-  },
   {
    "agent": "systeme",
    "texte": "Sujet « Salaire minimum en Valais : le oui et le non face à face » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"56fcd1c4e8210ec01a3c54a7a56a5798\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
@@ -227,7 +172,411 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-04T10:48:33.054Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
+   "t": "2026-11-04T11:02:44.274Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-04T11:02:44.275Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "35 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T11:02:50.388Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Salaire minimum valaisan : J-25 ». Votation cantonale le 29 novembre, 22 frs/h (18 frs/h pour l'agriculture), 15'000 salariés concernés selon le comité du oui : la matière est là et l'échéance est proche.",
+   "t": "2026-11-04T11:03:08.965Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Un bloc de glace menace Randa : chaque jour compte ». Mesures chiffrées (6 à 20 cm par jour) et risque pour Randa, parfait pour une animation de progression ; source unique mais institutionnelle (SVDN).",
+   "t": "2026-11-04T11:03:08.981Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T11:03:08.989Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:04:59.841Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:05:26.268Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:07:16.453Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les faits et le décompte J-25 sont corrects, et le temps de parole oui/non est équilibré (environ 17 s contre 16 s). À corriger : 1) la scène 7 déborde dans la zone TikTok du bas et recouvre les sous-titres, donc raccourcis le texte et réduis la taille ; 2) le « ? » orphelin de la scène 4 et le « NOVEMBRE » seul de la scène 1 ; 3) les pauses de voix dépassent 1 s à plusieurs endroits, surtout 1,36 s après l'accroche ; 4) « sans minimum légal cantonal » n'a pas de source dans les faits, donc ajoute-en une ou reformule ; 5) rends la scène du Grand Conseil plus neutre dans ses libellés.",
+   "t": "2026-11-04T11:08:18.065Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T11:08:18.067Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:09:42.023Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-04T11:10:10.641Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:10:10.642Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:11:43.257Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Salut, la votation est équilibrée (temps de parole oui/non quasi égal, ~14 s chacun, sources officielles, J-25 correct), donc pas de blocage. Il y a trois choses à corriger : 1) le point de « légal. » est coupé à la scène 9 et le « ? » de la scène 6 tombe dans la zone TikTok de droite, donc réduis la largeur du texte ; 2) les libellés de la scène 8 (« voix contre ») prêtent à confusion, écris plutôt « rejet » et « soutien » ; 3) « justice sociale » n'est pas dans tes faits, donc sources-le ou reformule. Mineur : mots orphelins (« exclus. », « aujourd'hui »), trois statements d'affilée, sources swissinfo et Conseil Jeunes à ajouter, et deux silences de plus d'une seconde (après l'accroche et à la fin).",
+   "t": "2026-11-04T11:12:35.808Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T11:12:35.809Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:13:53.099Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-04T11:14:25.095Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:14:25.131Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:15:53.848Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Épisode bloqué par la règle votations : aucune source officielle dans la liste. Il n'y a que de la presse, et la question de la carte « ballot » n'est pas confirmée. Peux-tu ajouter la brochure ou la source de l'État du Valais ? Le traitement oui/non est par ailleurs équilibré : environ 14 s contre 14 s, 3 points contre 3, avec la même mise en forme. Corrections ensuite : 25 jours dès la première frame, reformuler « quitter leur formation » pour rester fidèle à la source, corriger « soutien à l'initiative » pour les 33 voix, refaire les retours à la ligne de la scène « Oui / Non », aligner le CTA et raccourcir la fin de 1 s.",
+   "t": "2026-11-04T11:16:35.478Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T11:16:35.480Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:18:10.077Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 5 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T11:18:47.662Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-04T11:18:48.473Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-04T11:18:48.861Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:18:48.862Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:20:42.699Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Salut, quelques corrections avant publication. 1) Cartes 3 et 8 : les gros chiffres (500’000 et 10’000’000) débordent à droite et recouvrent leur libellé. Réduis-les ou mets le libellé dessous, avec une marge de 160 px à droite. 2) Carte 9 : la phrase est trop longue, elle descend dans la zone TikTok du bas. Raccourcis-la et précise quel scénario concerne l'expert (Carlen) : d'après le Walliser Bote et Blick, une avalanche avec neige aurait une portée plus grande. Ajoute aussi « sur la base des données actuelles » pour l'évacuation. 3) Carte 4 : pas d'orange, il est hors charte. Raccourcis le texte pour qu'il reste au-dessus de y≈1500. 4) Carte 6 : le « ? » est seul sur sa ligne. Coupe en 2 lignes équilibrées et enlève [intrigued]. 5) Carte 7 : 11 s sur 3 mots, ça fait vide. Mets la neige et le replat à l'écran. 6) Ton global : sujet sensible (Blatten). Voix sobre du début à la fin, sans [intrigued] ni [warm] enjoué. 7) Mineurs : « une vingtaine d'années » à la place de « 20 ans », « Entre » ou « De » à harmoniser, tagline en doublon à l'outro, CTA à réaligner, sources SRF et second Blick à ajouter, 4 pauses audio à resserrer sous 1 s.",
+   "t": "2026-11-04T11:22:05.001Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T11:22:05.002Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:24:06.161Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T11:24:29.897Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-04T11:24:30.223Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-04T11:24:30.242Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:24:30.243Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:26:08.773Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les faits sont bons et sourcés, la charte est respectée et le ton est sobre. Il reste quatre corrections. 1) Phrase « n'ont pas à évacuer… le Canton juge cela très peu probable » : « cela » est ambigu, à reformuler (« une évacuation très peu probable ») et à re-enregistrer. 2) Crédit photo de la scène 2 : le ramener à gauche de x = 920. 3) Carte Blatten : « plus de 30 fois plus petit », à remettre dans le bon ordre. 4) Pauses de plus d'une seconde à 6 endroits : à réduire. Pense aussi à nuancer la vitesse (parfois moins de 10 cm ces derniers jours) et à ajouter « plutôt improbable » sur la carte de la portée.",
+   "t": "2026-11-04T11:27:28.319Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T11:27:28.321Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T11:29:01.834Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 4 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-04T11:29:35.347Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-04T11:29:35.698Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-04T11:29:35.718Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-04T11:29:35.719Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis les faits et je regarde les images clés.",
+   "t": "2026-11-04T11:31:15.545Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Sujet sensible (Randa/Blatten) : le ton est sobre, les faits sont sourcés et les estimations bien signalées, donc pas de blocage. Il y a un souci de mise en page. Les cartes 3, 4, 11, 12 et 14 sont à reprendre : texte coupé (cartes 4 et 12), chevauchement du « 500’000 » avec son libellé (carte 3) et texte dans la zone masquée TikTok (cartes 4, 11, 12 et 14). Raccourcis les textes. Ajoute « pour cet hiver » à la phrase sur le scénario improbable. Cale le chiffre 450 sur la voix. Resserre les deux pauses de plus d'une seconde (vers 29 s et 39 s). Décale aussi un peu le crédit photo vers la gauche.",
+   "t": "2026-11-04T11:32:15.649Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-04T11:32:15.651Z"
   }
  ],
- "maj": "2026-11-04T10:48:33.054Z"
+ "maj": "2026-11-04T11:32:15.651Z",
+ "episodes": [
+  {
+   "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
+   "titre": "Salaire minimum valaisan : J-25",
+   "edition": "matin",
+   "decision": "BLOQUE",
+   "problemes": [
+    {
+     "gravite": "bloquant",
+     "scene": 2,
+     "constat": "C'est une votation et la liste des sources ne contient que des articles de presse (RTS Valais x2, La Télé). Elle ne contient aucune source officielle (Chancellerie d'État, brochure de votation, texte de l'initiative). La question de la carte « Faut-il introduire un salaire minimum légal de 22 francs de l'heure en Valais ? » n'est donc pas vérifiable. Rien ne prouve que ce soit le libellé officiel. Les arguments des deux camps viennent uniquement d'articles de campagne.",
+     "correction_demandee": "Alerte humaine. Ajouter au moins une source officielle (État du Valais, libellé de la question, contenu de l'initiative, résultat du vote du Grand Conseil) et la rattacher aux faits. Reprendre le libellé officiel exact sur la carte « ballot », ou remplacer la question par une formulation neutre non présentée comme officielle."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "La première image (début de l'épisode) affiche « 19 jours », alors que le compte à rebours juste est de 25 jours (4 novembre au 29 novembre). La valeur ne passe à 25 qu'ensuite, ce qui est probablement l'animation du compteur. Si cette image sert de couverture ou de première frame, elle affiche un chiffre faux.",
+     "correction_demandee": "Faire apparaître 25 dès la première frame, ou ne pas animer le compteur depuis une valeur inférieure. Sinon, vérifier que la couverture n'utilise pas cette image."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "La voix dit que le non craint que les apprentis « pourraient quitter leur formation ». Le fait source parle seulement d'une menace pour la formation des apprentis. La précision sur le départ des apprentis n'est pas dans la liste des faits.",
+     "correction_demandee": "Vérifier cette formulation dans l'article RTS. Sinon, la remplacer par une version fidèle au fait, par exemple « il craint pour les emplois et pour la formation des apprentis »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "Le libellé « 33 voix : soutien à l'initiative » dépasse le fait source (« 93 voix contre 33 »). Les 33 voix ne sont pas explicitement décrites comme un soutien. Elles pourraient inclure des abstentions, selon la source.",
+     "correction_demandee": "Utiliser « 33 voix contre le rejet » ou « 33 voix contre », conforme à la source. Vérifier aussi la valeur 33 dans la source, car l'image clé montre un état intermédiaire (57 à l'écran pour 93)."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "Le texte « Oui : un plancher légal. Non : le droit actuel. » est coupé sans respecter les retours à la ligne prévus. « Non : » reste seul en fin de ligne, séparé de « le droit actuel ». La lecture est moins claire et le mot est orphelin.",
+     "correction_demandee": "Forcer le retour à la ligne après « Oui : un plancher légal. » et placer « Non : le droit actuel. » sur des lignes séparées. Réduire la taille du texte si nécessaire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Le texte du CTA « Abonne-toi, on se retrouve demain » est décalé vers la droite (environ 20 px) par rapport à la marge gauche des autres éléments. Une marge à gauche de 45 px est utilisée ailleurs.",
+     "correction_demandee": "Aligner le CTA sur la marge gauche (45 px)."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "La voix s'arrête à 84,68 s alors que la vidéo dure 86,48 s, soit environ 1,8 s de silence final, ce qui dépasse la seconde tolérée.",
+     "correction_demandee": "Raccourcir la dernière scène à environ 85,5 s ou ajouter une courte respiration naturelle avant le CTA."
+    }
+   ],
+   "description_tiktok": "Salaire minimum de 22 francs en Valais : le vote a lieu dans 25 jours. Voici le texte et les arguments des deux camps, pour te faire ton propre avis.\nSources : RTS Valais, « La droite et des faîtières économiques lancent leur campagne contre le salaire minimum en Valais » ; RTS Valais, « Salaire minimum en Valais : campagne lancée pour les 22 francs » ; La Télé\n#Valais #Votation #SalaireMinimum #29novembre",
+   "sources": [
+    {
+     "media": "RTS Valais",
+     "titre": "La droite et des faîtières économiques lancent leur campagne contre le salaire minimum en Valais",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/salaire-minimum-en-valais-la-droite-lance-sa-campagne-du-non-29396723.html"
+    },
+    {
+     "media": "RTS Valais",
+     "titre": "Salaire minimum en Valais : campagne lancée pour les 22 francs",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/salaire-minimum-en-valais-campagne-lancee-pour-les-22-francs-29385357.html"
+    },
+    {
+     "media": "La Télé",
+     "titre": "Salaire minimum en Valais : la gauche défend l'initiative à 22 francs",
+     "url": "https://latele.ch/articles/la-gauche-defend-le-salaire-minimum-en-valais"
+    }
+   ],
+   "mp4": "out/salaire-minimum-valaisan-j-25/2026-11-04-matin-salaire-minimum-valaisan-j-25.mp4",
+   "etat": "bloque"
+  },
+  {
+   "id": "2026-11-04-matin-randa-un-bloc-de-glace-sous-haute-surveillance",
+   "titre": "Randa : un bloc de glace sous haute surveillance",
+   "edition": "matin",
+   "decision": "A_CORRIGER",
+   "problemes": [
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Le grand chiffre « 500’000 » chevauche son libellé « m³ au départ (environ) ». Le libellé est illisible et le texte déborde de la colonne. La seconde ligne (300’000, libellé long) risque le même problème.",
+     "correction_demandee": "Réduire la taille du chiffre ou passer le libellé sous le chiffre. Raccourcir les libellés, par exemple « m³ au départ » et « m³ aujourd'hui (estimation) ». Vérifier que les deux lignes tiennent sans chevauchement."
+    },
+    {
+     "gravite": "important",
+     "scene": 4,
+     "constat": "Le texte est coupé en bas de l'écran : on lit « contre jusqu'à 20… » puis la fin disparaît (« cm en été », « Nau.ch »). Le texte entre aussi dans la zone masquée par TikTok (400 px en bas).",
+     "correction_demandee": "Raccourcir le texte ou réduire la taille de police. Garder 6 lignes au maximum, avec la dernière ligne au-dessus de y ≈ 1500. Exemple : « Le mouvement a ralenti : parfois moins de 10 cm par jour, contre 20 en été (Nau.ch) »."
+    },
+    {
+     "gravite": "important",
+     "scene": 12,
+     "constat": "Le texte est coupé en bas (« l'expert juge ce… » puis fin invisible). Le scénario « plutôt improbable » n'est donc pas lisible à l'écran. Le texte déborde aussi dans la zone masquée.",
+     "correction_demandee": "Raccourcir, par exemple « Beaucoup de neige : portée plus grande, scénario jugé plutôt improbable ». Réduire la taille de police pour que tout reste visible et au-dessus de y ≈ 1500."
+    },
+    {
+     "gravite": "important",
+     "scene": 11,
+     "constat": "Le texte de 8 lignes descend jusqu'à y ≈ 1860 (en pleine zone masquée par TikTok) et frôle le bord de l'écran.",
+     "correction_demandee": "Raccourcir ou réduire la taille de police. Par exemple « Selon l'expert cantonal, rupture complète : les maisons seraient épargnées ». Garder le texte au-dessus de y ≈ 1500."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 14,
+     "constat": "Le texte de 7 lignes descend jusqu'à environ y ≈ 1740, donc dans la zone masquée par TikTok.",
+     "correction_demandee": "Réduire la taille de police ou resserrer le texte pour finir au-dessus de y ≈ 1500."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 13,
+     "constat": "Sur l'image clé, le compteur affiche 394 alors que la voix dit déjà « 450 » (animation de comptage encore en cours). Le chiffre à l'écran contredit brièvement la voix.",
+     "correction_demandee": "Avancer le `at` ou raccourcir le comptage pour que le chiffre soit à 450 au moment où la voix le prononce (≈ 72,9 s). Vérifier que la valeur finale affichée est bien 450."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 12,
+     "constat": "Nuance omise : selon la source Blick, le scénario extrême est jugé plutôt improbable « pour cet hiver ». La voix et l'écran le présentent sans cette limite temporelle, ce qui peut rassurer plus que la source.",
+     "correction_demandee": "Ajouter « pour cet hiver » dans la voix et dans le texte à l'écran, ou justifier l'omission."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Le crédit photo est lisible (auteur + licence), mais il se trouve très près du bord droit, en partie dans les 160 px réservés à TikTok.",
+     "correction_demandee": "Décaler le crédit vers la gauche, avec une marge droite d'au moins 160 px."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Deux silences dépassent 1 s dans la voix : 39,4 s à 40,76 s (1,36 s) et 29,14 s à 30,2 s (1,06 s).",
+     "correction_demandee": "Resserrer les pauses dans la voix, par exemple après « un radar l'observent » et après « selon Nau »."
+    }
+   ],
+   "description_tiktok": "Un bloc de glace avance sous le Weisshorn. Aucune évacuation n'est prévue à Randa pour l'instant, mais la neige reste le point à suivre.\nSources : RTS Valais, « Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS) » ; Blick ; Nau.ch ; Bluewin ; Rhône FM\n#Valais #Randa #Weisshorn #Glacier #Zermatt",
+   "sources": [
+    {
+     "media": "RTS Valais",
+     "titre": "Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS)",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/glacier-du-weisshorn-un-bloc-de-glace-menace-randa-29399585.html"
+    },
+    {
+     "media": "Blick",
+     "titre": "Pas d'appel à évacuer Randa (VS), malgré le déplacement d'un immense bloc de glace",
+     "url": "https://www.blick.ch/fr/suisse/romande/randa-vs-un-bloc-de-glace-menace-de-se-decrocher/8s3pcek"
+    },
+    {
+     "media": "Blick",
+     "titre": "Wallis: 250'000-Tonnen-Eisblock bedroht Randa",
+     "url": "https://www.blick.ch/schweiz/westschweiz/wallis/wallis-250000-tonnen-eisblock-bedroht-randa/z0ntb2y"
+    },
+    {
+     "media": "Nau.ch",
+     "titre": "Instabiler Gletscher bedroht laut Experte Walliser Dorf Randa nicht",
+     "url": "https://www.nau.ch/news/schweiz/instabiler-gletscher-bedroht-laut-experte-walliser-dorf-randa-nicht-67196771"
+    },
+    {
+     "media": "Bluewin",
+     "titre": "Abbruch? Experte gibt Teil-Entwarnung für Eisblock über Walliser Dorf",
+     "url": "https://www.bluewin.ch/de/news/schweiz/eisblock-ueber-schweizer-dorf-experte-gibt-teil-entwarnung-li.3658266"
+    },
+    {
+     "media": "Rhône FM",
+     "titre": "Le glacier du Weisshorn sous haute surveillance",
+     "url": "https://www.rhonefm.ch/valais/le-glacier-du-weisshorn-sous-haute-surveillance-1821218"
+    }
+   ],
+   "mp4": "out/un-bloc-de-glace-menace-randa-chaque-jour-compte/2026-11-04-matin-randa-un-bloc-de-glace-sous-haute-surveillance.mp4",
+   "etat": "bloque"
+  }
+ ]
 }

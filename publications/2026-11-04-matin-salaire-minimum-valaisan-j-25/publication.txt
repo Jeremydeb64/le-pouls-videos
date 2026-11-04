@@ -1,0 +1,28 @@
+LE POULS
+Salaire minimum valaisan : J-25
+Édition du matin, à publier vers 7 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Salaire minimum de 22 francs en Valais : le vote a lieu dans 25 jours. Voici le texte et les arguments des deux camps, pour te faire ton propre avis.
+Sources : RTS Valais, « La droite et des faîtières économiques lancent leur campagne contre le salaire minimum en Valais » ; RTS Valais, « Salaire minimum en Valais : campagne lancée pour les 22 francs » ; La Télé
+#Valais #Votation #SalaireMinimum #29novembre
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS Valais : La droite et des faîtières économiques lancent leur campagne contre le salaire minimum en Valais (https://www.rts.ch/info/regions/valais/2026/article/salaire-minimum-en-valais-la-droite-lance-sa-campagne-du-non-29396723.html)
+- RTS Valais : Salaire minimum en Valais : campagne lancée pour les 22 francs (https://www.rts.ch/info/regions/valais/2026/article/salaire-minimum-en-valais-campagne-lancee-pour-les-22-francs-29385357.html)
+- La Télé : Salaire minimum en Valais : la gauche défend l'initiative à 22 francs (https://latele.ch/articles/la-gauche-defend-le-salaire-minimum-en-valais)
+
+=== CONTRÔLE ===
+Décision : BLOQUE
+- bloquant (scène 2) : C'est une votation et la liste des sources ne contient que des articles de presse (RTS Valais x2, La Télé). Elle ne contient aucune source officielle (Chancellerie d'État, brochure de votation, texte de l'initiative). La question de la carte « Faut-il introduire un salaire minimum légal de 22 francs de l'heure en Valais ? » n'est donc pas vérifiable. Rien ne prouve que ce soit le libellé officiel. Les arguments des deux camps viennent uniquement d'articles de campagne.
+- important (scène 1) : La première image (début de l'épisode) affiche « 19 jours », alors que le compte à rebours juste est de 25 jours (4 novembre au 29 novembre). La valeur ne passe à 25 qu'ensuite, ce qui est probablement l'animation du compteur. Si cette image sert de couverture ou de première frame, elle affiche un chiffre faux.
+- important (scène 6) : La voix dit que le non craint que les apprentis « pourraient quitter leur formation ». Le fait source parle seulement d'une menace pour la formation des apprentis. La précision sur le départ des apprentis n'est pas dans la liste des faits.
+- mineur (scène 7) : Le libellé « 33 voix : soutien à l'initiative » dépasse le fait source (« 93 voix contre 33 »). Les 33 voix ne sont pas explicitement décrites comme un soutien. Elles pourraient inclure des abstentions, selon la source.
+- mineur (scène 8) : Le texte « Oui : un plancher légal. Non : le droit actuel. » est coupé sans respecter les retours à la ligne prévus. « Non : » reste seul en fin de ligne, séparé de « le droit actuel ». La lecture est moins claire et le mot est orphelin.
+- mineur (scène 10) : Le texte du CTA « Abonne-toi, on se retrouve demain » est décalé vers la droite (environ 20 px) par rapport à la marge gauche des autres éléments. Une marge à gauche de 45 px est utilisée ailleurs.
+- mineur (scène 10) : La voix s'arrête à 84,68 s alors que la vidéo dure 86,48 s, soit environ 1,8 s de silence final, ce qui dépasse la seconde tolérée.

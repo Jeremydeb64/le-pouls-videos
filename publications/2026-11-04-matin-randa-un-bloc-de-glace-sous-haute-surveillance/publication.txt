@@ -1,0 +1,33 @@
+LE POULS
+Randa : un bloc de glace sous haute surveillance
+Édition du matin, à publier vers 7 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Un bloc de glace avance sous le Weisshorn. Aucune évacuation n'est prévue à Randa pour l'instant, mais la neige reste le point à suivre.
+Sources : RTS Valais, « Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS) » ; Blick ; Nau.ch ; Bluewin ; Rhône FM
+#Valais #Randa #Weisshorn #Glacier #Zermatt
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS Valais : Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS) (https://www.rts.ch/info/regions/valais/2026/article/glacier-du-weisshorn-un-bloc-de-glace-menace-randa-29399585.html)
+- Blick : Pas d'appel à évacuer Randa (VS), malgré le déplacement d'un immense bloc de glace (https://www.blick.ch/fr/suisse/romande/randa-vs-un-bloc-de-glace-menace-de-se-decrocher/8s3pcek)
+- Blick : Wallis: 250'000-Tonnen-Eisblock bedroht Randa (https://www.blick.ch/schweiz/westschweiz/wallis/wallis-250000-tonnen-eisblock-bedroht-randa/z0ntb2y)
+- Nau.ch : Instabiler Gletscher bedroht laut Experte Walliser Dorf Randa nicht (https://www.nau.ch/news/schweiz/instabiler-gletscher-bedroht-laut-experte-walliser-dorf-randa-nicht-67196771)
+- Bluewin : Abbruch? Experte gibt Teil-Entwarnung für Eisblock über Walliser Dorf (https://www.bluewin.ch/de/news/schweiz/eisblock-ueber-schweizer-dorf-experte-gibt-teil-entwarnung-li.3658266)
+- Rhône FM : Le glacier du Weisshorn sous haute surveillance (https://www.rhonefm.ch/valais/le-glacier-du-weisshorn-sous-haute-surveillance-1821218)
+
+=== CONTRÔLE ===
+Décision : A_CORRIGER
+- important (scène 3) : Le grand chiffre « 500’000 » chevauche son libellé « m³ au départ (environ) ». Le libellé est illisible et le texte déborde de la colonne. La seconde ligne (300’000, libellé long) risque le même problème.
+- important (scène 4) : Le texte est coupé en bas de l'écran : on lit « contre jusqu'à 20… » puis la fin disparaît (« cm en été », « Nau.ch »). Le texte entre aussi dans la zone masquée par TikTok (400 px en bas).
+- important (scène 12) : Le texte est coupé en bas (« l'expert juge ce… » puis fin invisible). Le scénario « plutôt improbable » n'est donc pas lisible à l'écran. Le texte déborde aussi dans la zone masquée.
+- important (scène 11) : Le texte de 8 lignes descend jusqu'à y ≈ 1860 (en pleine zone masquée par TikTok) et frôle le bord de l'écran.
+- mineur (scène 14) : Le texte de 7 lignes descend jusqu'à environ y ≈ 1740, donc dans la zone masquée par TikTok.
+- mineur (scène 13) : Sur l'image clé, le compteur affiche 394 alors que la voix dit déjà « 450 » (animation de comptage encore en cours). Le chiffre à l'écran contredit brièvement la voix.
+- mineur (scène 12) : Nuance omise : selon la source Blick, le scénario extrême est jugé plutôt improbable « pour cet hiver ». La voix et l'écran le présentent sans cette limite temporelle, ce qui peut rassurer plus que la source.
+- mineur (scène 2) : Le crédit photo est lisible (auteur + licence), mais il se trouve très près du bord droit, en partie dans les 160 px réservés à TikTok.
+- mineur (scène 6) : Deux silences dépassent 1 s dans la voix : 39,4 s à 40,76 s (1,36 s) et 29,14 s à 30,2 s (1,06 s).
