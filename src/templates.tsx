@@ -552,7 +552,7 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
           )}
         </Body>
       )}
-      <div style={{ position: "absolute", right: 170, top: 118, maxWidth: 460, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
+      <div style={{ position: "absolute", right: 180, top: 246, maxWidth: 520, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
     </Frame>
   );
 };
