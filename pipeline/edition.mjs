@@ -132,6 +132,17 @@ process.on("unhandledRejection", (e) => {
   redaction.agent("scenariste", "bloque");
   process.exit(1);
 });
+// Vérification des clés avant de lancer les agents (évite de payer des scripts qui ne seront jamais montés)
+{
+  const k = process.env.ELEVENLABS_API_KEY || "";
+  const r = await fetch("https://api.elevenlabs.io/v1/user/subscription", { headers: { "xi-api-key": k } });
+  if (!k.startsWith("sk_") || !r.ok) {
+    redaction.dit("systeme", `Clé ElevenLabs refusée (${r.status}). Elle doit commencer par « sk_ » : recrée-la dans ElevenLabs et remplace le secret KEYS_ELEVEN_POULS.`);
+    process.exit(1);
+  }
+  const abo = await r.json();
+  redaction.dit("systeme", `Clé ElevenLabs OK, ${abo.character_limit - abo.character_count} crédits restants ce mois-ci.`);
+}
 const sujets = await veille();
 const prets = [];
 for (const sujet of sujets) {
