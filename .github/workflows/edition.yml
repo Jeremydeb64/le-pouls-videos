@@ -37,8 +37,8 @@ jobs:
       - run: npx remotion browser ensure
       - name: Veilleur → Scénariste → Voix → Rendu → Contrôleur
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || vars.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS || vars.KEYS_ELEVEN_POULS || secrets.ELEVENLABS_API_KEY }}
           EDITION_DEMANDEE: ${{ github.event.inputs.edition }}
           MAX_DEMANDE: ${{ github.event.inputs.max_sujets }}
           CRON: ${{ github.event.schedule }}
@@ -67,6 +67,6 @@ jobs:
           git config user.name "Le Pouls"
           git config user.email "actions@users.noreply.github.com"
           git checkout -- package-lock.json 2>/dev/null || true
-          git add state episodes publications
+          for d in state episodes publications; do [ -e "$d" ] && git add "$d"; done
           git commit -m "Édition ${{ github.run_number }} : état de la rédaction" || echo "Rien à archiver"
           git pull --rebase --autostash && git push

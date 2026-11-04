@@ -63,11 +63,11 @@ async function ecrire(sujet, retours = null) {
   const rep = await demander({
     systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA,
     recherche: true,
-    max: 20000,
+    max: 32000,
     contenu:
       `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\n\nSujet :\n${JSON.stringify(sujet)}\n\nTexte de l'article principal :\n${texte}\n\n` +
       (retours ? `CORRECTIONS DEMANDÉES PAR LE CONTRÔLE (version précédente ci-dessous) :\n${JSON.stringify(retours)}\n\n` : "") +
-      "Rends un seul bloc ```json``` au format « Sortie technique » de ta consigne.",
+      "Réponds UNIQUEMENT par un seul bloc ```json``` au format « Sortie technique » de ta consigne, sans aucun texte avant ou après. Fais tes recherches, puis écris directement le JSON.",
   });
   return json(rep);
 }
