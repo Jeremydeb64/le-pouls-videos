@@ -3,7 +3,15 @@
   "flux": [
     {
       "media": "Le Nouvelliste",
-      "url": "https://www.lenouvelliste.ch/rss/valais"
+      "url": "https://news.google.com/rss/search?q=site:lenouvelliste.ch+when:2d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Canton du Valais",
+      "url": "https://news.google.com/rss/search?q=site:vs.ch+when:7d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Actu Valais (Google Actualités)",
+      "url": "https://news.google.com/rss/search?q=Valais+when:1d&hl=fr-CH&gl=CH&ceid=CH:fr"
     },
     {
       "media": "RTS Valais",
@@ -14,16 +22,8 @@
       "url": "https://www.canal9.ch/feed/"
     },
     {
-      "media": "Canton du Valais",
-      "url": "https://www.vs.ch/web/communication/rss"
-    },
-    {
       "media": "RTS Suisse",
       "url": "https://www.rts.ch/info/suisse/?format=rss/news"
-    },
-    {
-      "media": "Confédération (communiqués)",
-      "url": "https://www.admin.ch/gov/fr/accueil/documentation/communiques.rss.html"
     },
     {
       "media": "Le Temps Suisse",
