@@ -49,6 +49,6 @@ jobs:
         run: |
           git config user.name "Le Pouls"
           git config user.email "actions@users.noreply.github.com"
-          git add state episodes
+          git add state episodes publications
           git commit -m "Édition ${{ github.run_number }} : état de la rédaction" || echo "Rien à archiver"
           git pull --rebase && git push
