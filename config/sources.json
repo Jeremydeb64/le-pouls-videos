@@ -1,5 +1,5 @@
 {
-  "_note": "Le workflow « Test des sources » indique combien d'articles chaque flux renvoie. 'veille_json' peut pointer vers la sortie JSON du dashboard Le Pouls.",
+  "_note": "Sources de la veille du Veilleur (indépendantes du dashboard Le Pouls). Le workflow « Test des sources » indique combien d'articles chaque flux renvoie. Le Scénariste complète ensuite chaque sujet par une recherche web (sources officielles, autres médias).",
   "flux": [
     {
       "media": "Le Nouvelliste",
@@ -28,6 +28,38 @@
     {
       "media": "Le Temps Suisse",
       "url": "https://www.letemps.ch/suisse.rss"
+    },
+    {
+      "media": "Rhône FM",
+      "url": "https://news.google.com/rss/search?q=site:rhonefm.ch+when:2d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Walliser Bote / 1815.ch (Haut-Valais)",
+      "url": "https://news.google.com/rss/search?q=site:1815.ch+when:2d&hl=de-CH&gl=CH&ceid=CH:de"
+    },
+    {
+      "media": "24 heures / 20 minutes (Valais)",
+      "url": "https://news.google.com/rss/search?q=Valais+(site:24heures.ch+OR+site:20min.ch)+when:2d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Keystone-ATS / Swissinfo (Valais)",
+      "url": "https://news.google.com/rss/search?q=Valais+(site:swissinfo.ch+OR+site:keystone-sda.ch)+when:3d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Confédération (admin.ch)",
+      "url": "https://news.google.com/rss/search?q=site:admin.ch+when:3d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Votations (ch.ch, Chancellerie)",
+      "url": "https://news.google.com/rss/search?q=votation+29+novembre+(Valais+OR+fédérale)+when:3d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Villes valaisannes",
+      "url": "https://news.google.com/rss/search?q=(site:sion.ch+OR+site:sierre.ch+OR+site:monthey.ch+OR+site:martigny.ch+OR+site:brig-glis.ch)+when:7d&hl=fr-CH&gl=CH&ceid=CH:fr"
+    },
+    {
+      "media": "Watson / Blick romand (Valais)",
+      "url": "https://news.google.com/rss/search?q=Valais+(site:watson.ch+OR+site:blick.ch)+when:2d&hl=fr-CH&gl=CH&ceid=CH:fr"
     }
   ],
   "veille_json": null

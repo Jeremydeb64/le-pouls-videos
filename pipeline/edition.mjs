@@ -36,7 +36,7 @@ async function veille() {
   const articles = [];
   for (const f of cfg.flux) {
     try {
-      articles.push(...(await rss(f.url)).slice(0, 25).map((a) => ({ ...a, media: f.media })));
+      articles.push(...(await rss(f.url)).slice(0, 20).map((a) => ({ ...a, media: f.media })));
     } catch (e) {
       console.warn("Flux ignoré :", f.url, e.message);
     }
@@ -53,7 +53,7 @@ async function veille() {
   const choix = await demanderJSON({
     systeme: consigne("veilleur"),
     modele: MODELE_LEGER,
-    contenu: `Nous sommes le ${AUJ}. Édition : ${EDITION}. Nombre de sujets à retenir : ${MAX_SUJETS}.\n\nSujets déjà traités (14 derniers jours) :\n${JSON.stringify(histo.slice(-40).map((h) => h.titre))}\n\nArticles :\n${JSON.stringify(articles.slice(0, 150))}`,
+    contenu: `Nous sommes le ${AUJ}. Édition : ${EDITION}. Nombre de sujets à retenir : ${MAX_SUJETS}.\n\nSujets déjà traités (14 derniers jours) :\n${JSON.stringify(histo.slice(-40).map((h) => h.titre))}\n\nArticles :\n${JSON.stringify(articles.slice(0, 220))}`,
   });
   for (const s of choix.sujets) redaction.dit("veilleur", `Je garde « ${s.titre_travail} ». ${s.pourquoi || ""}`);
   redaction.agent("veilleur", "termine");
