@@ -34,8 +34,8 @@
       "url": "https://news.google.com/rss/search?q=site:rhonefm.ch+when:2d&hl=fr-CH&gl=CH&ceid=CH:fr"
     },
     {
-      "media": "Walliser Bote / 1815.ch (Haut-Valais)",
-      "url": "https://news.google.com/rss/search?q=site:1815.ch+when:2d&hl=de-CH&gl=CH&ceid=CH:de"
+      "media": "Haut-Valais (presse alémanique)",
+      "url": "https://news.google.com/rss/search?q=Oberwallis+OR+Wallis+when:2d&hl=de-CH&gl=CH&ceid=CH:de"
     },
     {
       "media": "24 heures / 20 minutes (Valais)",
