@@ -1,0 +1,38 @@
+{
+ "edition": "matin",
+ "etape": "scenariste",
+ "agents": {
+  "veilleur": "termine",
+  "scenariste": "travaille",
+  "controleur": "attend",
+  "diffuseur": "attend"
+ },
+ "messages": [
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-04T09:12:03.349Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "35 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T09:12:11.456Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Salaire minimum valaisan : le vote du 29 novembre ». Objet cantonal le 29 novembre, chiffres clairs (22 fr., 18 fr. pour l'agriculture, 15'000 salariés concernés) et deux camps déjà présentés.",
+   "t": "2026-11-04T09:12:25.615Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Fiscalité des couples : la réforme soumise au vote fédéral ». Objet fédéral le 29 novembre, qui n'a encore aucune explication neutre à mon sens ; le sujet est récent et peu couvert en Valais.",
+   "t": "2026-11-04T09:12:25.616Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T09:12:25.617Z"
+  }
+ ],
+ "maj": "2026-11-04T09:12:25.617Z"
+}
