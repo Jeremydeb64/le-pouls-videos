@@ -34,6 +34,8 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `recap` | « À retenir » en 3 lignes | `kicker, items[{n,label,at}]` |
 | `photo` | photo plein écran avec crédit | `src, credit, kicker?, title?` |
 | `outro` | fin : marque, appel à s'abonner, sources | `tagline, cta, sources` |
+| `ballot` | votation : urne, date du scrutin, question | `kicker, date, niveau ("cantonal"/"fédéral"), question` |
+| `versus` | votation : arguments du oui et du non, deux colonnes identiques | `kicker, pour{titre?,points[],at}, contre{titre?,points[],at}, note?` |
 
 Les types `stats`, `titleBib`, `finish`, `person` sont habillés « ski » pour l'épisode pilote. Pour d'autres sujets, le Scénariste demande un nouveau type adapté (urne, carte, chantier, etc.) plutôt que de détourner ces scènes.
 

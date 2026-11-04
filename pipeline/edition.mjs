@@ -82,6 +82,15 @@ async function produire(script, dossier) {
   const { sousTitres, ecart } = alignerSousTitres(script.segments, mots);
   if (ecart > 3) redaction.dit("scenariste", `Attention, ${ecart} mots d'écart entre le texte et la voix.`);
   const duree = +(mots[mots.length - 1].end + 1.8).toFixed(2);
+  const CONNUS = ["chrono", "titleBib", "calendar", "stats", "crowd", "statement", "bigFigure", "finish", "person", "recap", "photo", "outro", "ballot", "versus"];
+  for (const sc of script.scenes) {
+    if (!CONNUS.includes(sc.type)) {
+      redaction.dit("scenariste", `Pas de modèle « ${sc.type} » : je mets un plein écran texte à la place (demande notée).`);
+      const p = sc.props || {};
+      sc.props = { text: p.title || p.titre || p.question || p.text || p.kicker || "" };
+      sc.type = "statement";
+    }
+  }
   let scenes = caleScenes(script.scenes, sousTitres, duree);
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }

@@ -34,7 +34,7 @@ Tu es le scénariste du Pouls, un média TikTok d'actualité valaisanne pour les
 ## 4. Choisir les scènes
 - Chaque scène correspond à une phrase ou un groupe de phrases de la voix. Une scène dure en général 3 à 9 secondes.
 - Alterne les thèmes `paper` et `green`.
-- Personnalise selon le sujet : trouve un objet graphique propre au thème (dossard et chrono pour le ski, urne et bulletin pour une votation, carte du Valais pour une commune, panneau de chantier pour des travaux…). Si aucune scène existante ne convient, propose un nouveau type dans `"demande_nouvelle_scene"` au lieu de forcer un modèle générique.
+- Personnalise selon le sujet : trouve un objet graphique propre au thème (dossard et chrono pour le ski, urne et bulletin pour une votation, carte du Valais pour une commune, panneau de chantier pour des travaux…). Utilise UNIQUEMENT les types de scènes listés dans le format d'épisode. Si aucun ne convient, utilise `statement` et décris le modèle souhaité dans le champ `"demande_nouvelle_scene"` (il sera créé plus tard). Pour une votation : `ballot` pour poser la question, `versus` pour les arguments (même nombre de points de chaque côté, longueurs comparables).
 - Pas de points médians ni de séparateurs « · » dans les titres et intertitres.
 - Pas de mention « voix de synthèse » dans la vidéo (elle figure dans la bio du compte et dans l'étiquette IA de TikTok).
 - Le dernier écran affiche les sources : « Sources : Média 1, Média 2 ».

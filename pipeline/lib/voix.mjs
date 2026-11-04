@@ -46,18 +46,25 @@ const jetons = (texte) => texte.replace(/\[[^\]]*\]/g, " ").split(/\s+/).filter(
  */
 export function alignerSousTitres(segments, motsBruts) {
   const mots = nettoyer(motsBruts);
+  const norm = (x) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]/g, "");
   const out = [];
   let i = 0;
+  let ecart = 0;
   for (const seg of segments) {
-    const n = jetons(seg.dit).length;
-    if (n === 0) continue;
-    const debut = mots[Math.min(i, mots.length - 1)];
-    const fin = mots[Math.min(i + n - 1, mots.length - 1)];
-    out.push([+debut.start.toFixed(2), +fin.end.toFixed(2), seg.affiche]);
-    i += n;
+    const toks = jetons(seg.dit);
+    if (!toks.length || i >= mots.length) continue;
+    const debutIdx = i;
+    for (const tok of toks) {
+      // cherche le mot dans une petite fenêtre (tolère un mot fusionné, coupé ou mal transcrit)
+      let trouve = -1;
+      for (let j = i; j < Math.min(i + 4, mots.length); j++) if (norm(mots[j].text) === norm(tok)) { trouve = j; break; }
+      if (trouve >= 0) { ecart += trouve - i; i = trouve + 1; }
+      else { ecart++; i = Math.min(i + 1, mots.length); }
+    }
+    const fin = Math.max(debutIdx, Math.min(i - 1, mots.length - 1));
+    out.push([+mots[Math.min(debutIdx, mots.length - 1)].start.toFixed(2), +mots[fin].end.toFixed(2), seg.affiche]);
   }
-  const ecart = Math.abs(i - mots.length);
-  return { sousTitres: out, ecart }; // un écart > 3 mots signale un texte qui ne correspond pas à la voix
+  return { sousTitres: out, ecart };
 }
 
 // Résout les ancres { "seg": k } dans les scènes : from/to en secondes, et les « at » relatifs au début de scène.

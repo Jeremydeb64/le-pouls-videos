@@ -485,6 +485,72 @@ export const Outro: React.FC<P<{ tagline: string; cta: string; sources: string }
   );
 };
 
+
+// ---------- Votations ----------
+export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; question: string }>> = ({ theme, kicker, date, niveau, question }) => {
+  const t = th(theme);
+  const frame = useCurrentFrame();
+  const drop = interpolate(frame, [10, 34], [-170, 40], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const fade = interpolate(frame, [30, 38], [1, 0], clamp);
+  return (
+    <Frame theme={theme}>
+      <Body top={260}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        <div style={{ position: "relative", height: 380, width: CONTENT_W }}>
+          <svg width={CONTENT_W} height={380} viewBox={`0 0 ${CONTENT_W} 380`} style={{ position: "absolute", inset: 0 }}>
+            <g transform={`translate(${CONTENT_W / 2 - 110} ${drop})`} opacity={fade}>
+              <rect width={220} height={150} rx={8} fill={t.bg === C.paper ? "#FFFFFF" : C.paper} stroke={t.fg} strokeWidth={4} />
+              <rect x={30} y={34} width={160} height={10} rx={5} fill={t.sub} />
+              <rect x={30} y={62} width={120} height={10} rx={5} fill={t.sub} />
+              <rect x={30} y={96} width={34} height={34} rx={6} fill="none" stroke={t.fg} strokeWidth={4} />
+              <rect x={120} y={96} width={34} height={34} rx={6} fill="none" stroke={t.fg} strokeWidth={4} />
+            </g>
+            <rect x={CONTENT_W / 2 - 230} y={150} width={460} height={220} rx={18} fill={t.fg} />
+            <rect x={CONTENT_W / 2 - 130} y={170} width={260} height={16} rx={8} fill={t.bg} />
+            <text x={CONTENT_W / 2} y={300} textAnchor="middle" fontFamily={SANS} fontWeight={800} fontSize={44} letterSpacing={6} fill={t.bg}>{niveau.toUpperCase()}</text>
+          </svg>
+        </div>
+        <Rise delay={30}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 110, lineHeight: 1, color: t.fg, marginTop: 30, letterSpacing: -2 }}>{date}</div>
+        </Rise>
+        <Rise delay={44}>
+          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: t.fg, marginTop: 24 }}>{question}</div>
+        </Rise>
+      </Body>
+    </Frame>
+  );
+};
+
+// Pour et contre : deux colonnes STRICTEMENT identiques (même couleur, même taille, même rythme)
+export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points: string[]; at: number }; contre: { titre?: string; points: string[]; at: number }; note?: string }>> = ({ theme, kicker, pour, contre, note }) => {
+  const t = th(theme);
+  const at = useAt();
+  const Col: React.FC<{ titre: string; points: string[]; a: number }> = ({ titre, points, a }) => (
+    <div style={{ flex: 1, border: `4px solid ${t.fg}`, borderRadius: 24, padding: "28px 26px", minHeight: 520 }}>
+      <Rise delay={at(a)}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: t.fg, lineHeight: 1 }}>{titre}</div>
+      </Rise>
+      {points.map((p, i) => (
+        <Rise key={i} delay={at(a) + 12 + i * 14} dist={30}>
+          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 36, lineHeight: 1.2, color: t.fg, marginTop: 28, borderTop: `3px solid ${t.rule}`, paddingTop: 20 }}>{p}</div>
+        </Rise>
+      ))}
+    </div>
+  );
+  return (
+    <Frame theme={theme}>
+      <Body top={240}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        <div style={{ display: "flex", gap: 24 }}>
+          <Col titre={pour.titre || "Oui"} points={pour.points} a={pour.at} />
+          <Col titre={contre.titre || "Non"} points={contre.points} a={contre.at} />
+        </div>
+        {note && <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: t.sub, marginTop: 18 }}>{note}</div>}
+      </Body>
+    </Frame>
+  );
+};
+
 export const SCENE_TYPES: Record<string, React.FC<any>> = {
   chrono: Chrono,
   titleBib: TitleBib,
@@ -498,6 +564,8 @@ export const SCENE_TYPES: Record<string, React.FC<any>> = {
   recap: Recap,
   photo: Photo,
   outro: Outro,
+  ballot: Ballot,
+  versus: Versus,
 };
 // Scènes sans sous-titres (le texte à l'écran reprend déjà la voix)
 export const NO_CAPTIONS = new Set(["statement", "outro"]);
