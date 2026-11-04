@@ -1,88 +1,13 @@
 {
- "edition": "matin",
+ "edition": "soir",
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "termine",
-  "controleur": "termine",
+  "scenariste": "travaille",
+  "controleur": "travaille",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Salaire minimum en Valais : le oui et le non face à face » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"56fcd1c4e8210ec01a3c54a7a56a5798\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
-   "t": "2026-11-04T10:03:32.570Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Canal9.",
-   "t": "2026-11-04T10:03:32.571Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:05:05.714Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « PFAS : un explorateur cartographie le Rhône, de la source à la Méditerranée » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"03ac03a09a5628684edba9dc685de174\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
-   "t": "2026-11-04T10:05:05.833Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-04T10:05:05.834Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-04T10:27:47.792Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "35 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T10:27:53.997Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Salaire minimum valaisan : votation du 29 novembre ». Votation cantonale le 29 novembre, 22 fr/h (18 fr/h pour l'agriculture), 15'000 salariés concernés selon le comité du oui : chiffres et comparaison idéals pour une explication neutre.",
-   "t": "2026-11-04T10:28:07.807Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Fiscalité des couples : votation fédérale du 29 novembre ». Objet fédéral du même scrutin : la fenêtre de 6 semaines impose une vidéo neutre. Le texte source est un extrait, à compléter avec le communiqué officiel avant production.",
-   "t": "2026-11-04T10:28:07.808Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T10:28:07.809Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:29:55.497Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Salaire minimum valaisan : votation du 29 novembre » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"d76e27ccd03022db1fc14cb00b46277a\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
-   "t": "2026-11-04T10:29:55.679Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Canal9.",
-   "t": "2026-11-04T10:29:55.680Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T10:32:08.304Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Fiscalité des couples : votation fédérale du 29 novembre » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"14c8647fd23fe556a555925f0eb02515\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
-   "t": "2026-11-04T10:32:08.565Z"
-  },
   {
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
@@ -407,9 +332,84 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-04T11:32:15.651Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
+   "t": "2026-11-04T14:29:32.344Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du soir, je fais le tour des sources.",
+   "t": "2026-11-04T14:29:32.345Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "118 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T14:29:38.345Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Aéroport de Sion : ce qui se vote ». Campagne lancée aujourd'hui, sujet local avec des chiffres et des comparaisons faciles à mettre en infographie ; la date du scrutin n'apparaît pas dans les articles et doit être vérifiée avant production, de même que les chiffres avancés par le comité du oui.",
+   "t": "2026-11-04T14:30:01.813Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Le Nouvelliste.",
+   "t": "2026-11-04T14:30:01.822Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T14:31:57.883Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Pas de blocage : le texte est globalement équilibré. Dates et chiffres vérifiés : J-25 est juste, le vote est le 29 novembre, 103 voix contre 24, 34 % et 20 %, 70/20/10, 2031. Aucun drame local récent trouvé autour de l'aéroport de Sion. Corrections à faire : (1) l'écran ballot doit reprendre l'intitulé officiel de la loi, sans « oui ou non ? », et le titre ne doit pas laisser croire que c'est le seul objet du 29 novembre, puisque le salaire minimum est aussi au vote ; (2) la scène photo « Ce que change le oui » doit devenir neutre et symétrique avec le non, avec un crédit photo visible (auteur + licence Wikimedia Commons) ; (3) remets « estimée » sur les 3 à 6 millions dans le récap et à l'oral ; (4) documente dans `faits` les arguments « secours et formation » et le déficit de 3 millions, car une autre source d'opposants parle de 6 millions, puis ajoute la source des Vert-e-s ; (5) retire Le Nouvelliste des crédits s'il n'est pas lu.",
+   "t": "2026-11-04T14:32:56.321Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T14:32:56.322Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T14:35:15.620Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bon travail : les chiffres collent aux sources (34 %, 20 %, 70/20/10, 3 à 6 millions, 75 millions), J-25 est juste, le oui et le non sont à égalité et il n'y a aucune recommandation. À corriger avant le rendu : 1) le « déficit de 3 millions » est le déficit actuel de l'aéroport selon les opposants, alors dis-le à la voix et à l'écran (scène 8) pour qu'on ne croie pas que la loi le crée. 2) Ajoute l'ATE aux sources et aux crédits de l'outro, et si possible une source directe du comité du non. 3) Mentionne en une demi-phrase le second objet (salaire minimum), ou reformule « deux objets ». 4) Rends la scène « Concrètement » plus neutre en reprenant les formulations de vs.ch. 5) Si tu peux, varie un des trois versus. Renvoie-moi le tout et je valide.",
+   "t": "2026-11-04T14:36:04.470Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-04T14:36:04.471Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-04T14:38:00.280Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les faits tiennent. J'ai vérifié chaque point : 34 % et 20 %, 12 mars, référendum du 1er juillet, indemnité de 3 à 6 millions, 2031, J-25 le 4 novembre, déficit d'environ 3 millions, 75 millions. Les attributions sont correctes et le second objet est bien traité sans contenu. Un seul point à corriger avant de passer aux images : la parole n'est pas égale entre oui et non à la scène 7. Le non fait environ 20 mots sur 5 segments, le oui environ 13 mots sur 4 segments. Ramène les deux phrases à une longueur comparable, par exemple en ajoutant « économie et tourisme » côté oui ou en retirant « sans plafond dans la loi » côté non. Ajoute aussi le site du comité référendaire (referendum-aeroport-sion.ch) dans les sources, pour que le non soit cité comme le oui. Pour la photo de la scène 2, pas de photo de presse : prends une photo libre avec auteur et licence visibles.",
+   "t": "2026-11-04T14:38:43.132Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je bloque ce sujet, il ne part pas au montage.",
+   "t": "2026-11-04T14:38:43.133Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-04T14:38:43.135Z"
   }
  ],
- "maj": "2026-11-04T11:32:15.651Z",
+ "maj": "2026-11-04T14:38:43.135Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -577,6 +577,37 @@
    ],
    "mp4": "out/un-bloc-de-glace-menace-randa-chaque-jour-compte/2026-11-04-matin-randa-un-bloc-de-glace-sous-haute-surveillance.mp4",
    "etat": "bloque"
+  },
+  {
+   "id": "2026-11-04-soir-aeroport-de-sion-ce-qui-se-vote",
+   "titre": "Aéroport de Sion : ce qui se vote",
+   "etat": "bloque",
+   "problemes": [
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Le temps de parole n'est pas égal entre les deux camps dans la scène d'arguments (segments 26 à 34). Le oui a une phrase d'environ 13 mots : « Le oui veut une société majoritairement publique, utile aux secours et à la formation ». Le non a environ 20 mots : « chèque en blanc, sans plafond dans la loi, et craint plus de bruit et de pollution ». Le non a donc environ 50 % de temps en plus, et 5 segments contre 4 pour le oui. Pour une votation, l'égalité doit être stricte, à l'oral comme à l'écran.",
+     "correction_demandee": "Équilibrer les deux phrases, avec le même nombre de segments et à peu près le même nombre de mots. Exemple : ajouter côté oui « économie et tourisme », ce que le comité du oui avance (La Télé, bluewin). Ou raccourcir le non, par exemple en retirant « sans plafond dans la loi », qui est déjà la raison du « chèque en blanc ». Garder 3 points de chaque côté à l'écran, avec des segments `at` cohérents."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 11,
+     "constat": "Les sources de l'outro nomment le « comité du oui » (site oui-aeroport-valais.ch). Le camp du non n'apparaît que par ATE Valais et les Vert-e-s. Il existe pourtant un site de la campagne du non, referendum-aeroport-sion.ch (« Pas d'argent public pour les jets privés »). Sa présence dans les sources donnerait un traitement plus symétrique.",
+     "correction_demandee": "Ajouter le site du comité référendaire (referendum-aeroport-sion.ch) dans `sources`, dans l'outro et dans la description TikTok. Le contrôle des images vérifiera que la ligne de sources reste lisible."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "Le chiffre de 75 millions est attribué au comité du oui, ce qui est exact (La Télé, bluewin). Il reprend toutefois une étude HES-SO de 2022 qui chiffre les retombées à 74,9 millions, citée aussi par le Conseil d'État. Le chiffre du non (déficit d'environ 3 millions) est bien attribué et décrit la situation actuelle. Les deux chiffres sont de nature différente, mais l'attribution « selon… » est présente à l'oral et à l'écran, donc c'est acceptable.",
+     "correction_demandee": "Optionnel : ajouter « étude 2022 » dans la note de la scène, par exemple « Étude HES-SO 2022, avancée par le comité du oui »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "La scène photo n'est pas encore vérifiable : c'est le point 3 des droits. Les articles RTS et La Télé illustrent l'aéroport avec des photos de presse, qui sont interdites.",
+     "correction_demandee": "À l'étape image, utiliser une photo libre (Wikimedia Commons ou équivalent) avec auteur et licence visibles. Sinon, repli sur un visuel graphique. Aucune photo de presse, aucune personne identifiable."
+    }
+   ]
   }
  ]
 }
