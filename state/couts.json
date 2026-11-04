@@ -5,17 +5,29 @@
    "date": "2026-11-04T15:49:10.567Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-04T16:39:20.233Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {},
  "par_mois": {},
  "par_video": {},
  "soldes": {
-  "date": "2026-11-04T15:49:10.568Z",
+  "date": "2026-11-04T16:39:20.233Z",
   "elevenlabs": {
-   "erreur": "Solde illisible (401) : activer la permission « User → Read » sur la clé ElevenLabs."
+   "plan": "creator",
+   "credits_utilises": 27263,
+   "credits_mois": 131000,
+   "credits_restants": 103737,
+   "renouvellement": "2026-12-04T07:53:19.000Z"
+  },
+  "anthropic": {
+   "erreur": "cost_report 401"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-04T15:49:10.957Z"
+ "maj": "2026-11-04T16:39:21.741Z"
 }
