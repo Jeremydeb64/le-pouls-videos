@@ -10,13 +10,18 @@
    "date": "2026-11-04T16:39:20.233Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-04T17:04:18.611Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {},
  "par_mois": {},
  "par_video": {},
  "soldes": {
-  "date": "2026-11-04T16:39:20.233Z",
+  "date": "2026-11-04T17:04:18.611Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 27263,
@@ -25,9 +30,10 @@
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "erreur": "cost_report 401"
+   "credit_estime_restant_usd": 14.94,
+   "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-04T16:39:21.741Z"
+ "maj": "2026-11-04T17:04:20.121Z"
 }
