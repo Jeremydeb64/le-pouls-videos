@@ -17,6 +17,9 @@ Lancement manuel : onglet **Actions → Édition Le Pouls → Run workflow**, ou
 | `KEYS_ELEVEN_POULS` | oui | voix + minutage |
 | `DRIVE_WEBAPP_URL`, `DRIVE_SECRET` | optionnel | dépôt des dossiers dans Drive via `outils/apps-script-drive.gs` |
 
+## Mini rédaction
+Page `redaction/index.html`, publiée sur GitHub Pages : https://jeremydeb64.github.io/le-pouls-videos/ (mode démo : ajouter `#demo`). Elle lit l'état en direct via le script Google (`doGet`).
+
 ## Dossiers
 - `agents/` : consignes des 4 agents (règles éditoriales)
 - `src/templates.tsx` : modèles de scènes, charte « Éditorial papier »

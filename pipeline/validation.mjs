@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { driveActif, deposerSurDrive } from "./lib/drive.mjs";
+import { redaction } from "./lib/redaction.mjs";
 
 const gh = (...a) => execFileSync("gh", a, { encoding: "utf8" }).trim();
 const ed = fs.existsSync("out/edition.json") ? JSON.parse(fs.readFileSync("out/edition.json", "utf8")) : [];
@@ -84,6 +85,8 @@ ${v.description_tiktok || ""}
 ---
 ${v.etat === "a_valider" ? "Publie la vidéo sur TikTok (étiquette IA activée), puis commente **OK** ici pour l'archiver." : "⛔ Bloquée par le Contrôleur : à revoir avant toute publication."}`;
   fs.writeFileSync("out/issue.md", body);
-  gh("issue", "create", "--title", `🎬 ${v.titre || v.id}`, "--body-file", "out/issue.md", "--label", v.etat === "a_valider" ? "a-valider" : "bloque", "--assignee", process.env.GITHUB_REPOSITORY_OWNER || "@me");
+  const lienIssue = gh("issue", "create", "--title", `🎬 ${v.titre || v.id}`, "--body-file", "out/issue.md", "--label", v.etat === "a_valider" ? "a-valider" : "bloque", "--assignee", process.env.GITHUB_REPOSITORY_OWNER || "@me");
+  redaction.episode({ id: v.id, titre: v.titre, etat: v.etat, lien_video: lien(".mp4"), lien_drive: lienDrive, lien_issue: lienIssue });
   console.log("Dossier de publication prêt pour", v.id);
 }
+await redaction.fin();

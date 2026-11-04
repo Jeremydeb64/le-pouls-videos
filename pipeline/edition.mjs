@@ -160,6 +160,7 @@ process.on("unhandledRejection", (e) => {
   const statut = d?.detail?.status || d?.detail?.code || "";
   if (!k.startsWith("sk_") || /invalid_api_key|api_key_id_used/.test(statut)) {
     redaction.dit("systeme", `Clé ElevenLabs refusée (${r.status} ${statut}). Elle doit commencer par « sk_ ».`);
+    await redaction.fin();
     process.exit(1);
   }
   if (r.ok) redaction.dit("systeme", `Clé ElevenLabs OK, ${d.character_limit - d.character_count} crédits restants ce mois-ci.`);
@@ -210,3 +211,4 @@ fs.writeFileSync(HISTO, JSON.stringify(histo.slice(-200), null, 1));
 fs.writeFileSync("out/edition.json", JSON.stringify(prets, null, 1));
 redaction.agent("diffuseur", "attend");
 redaction.dit("diffuseur", prets.some((p) => p.etat === "a_valider") ? "Vidéo prête, j'attends le feu vert de Jérémy." : "Rien à publier pour cette édition.");
+await redaction.fin();

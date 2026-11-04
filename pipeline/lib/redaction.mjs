@@ -12,14 +12,48 @@ const load = () => {
   }
 };
 
+// Diffusion en direct vers la mini rédaction (via le script Google), au plus toutes les 4 secondes.
+const URL_SCRIPT = process.env.DRIVE_WEBAPP_URL_FORCEE || "https://script.google.com/macros/s/AKfycbw_kNNMFTU7mo957ry6olWuJwdbuEmS-RGPOQ8mz25TTNxdM9AcEb38Q9DYwGDy2pfiLQ/exec";
+let enAttente = null;
+let minuterie = null;
+let envoi = Promise.resolve();
+const compact = (s) => ({
+  ...s,
+  messages: s.messages.slice(-22).map((m) => ({ ...m, texte: m.texte.slice(0, 220) })),
+  episodes: (s.episodes || []).slice(-6).map((e) => ({ id: e.id, titre: e.titre, etat: e.etat, lien_video: e.lien_video, lien_drive: e.lien_drive, lien_issue: e.lien_issue })),
+});
+function diffuser(s) {
+  if (!process.env.DRIVE_SECRET) return;
+  enAttente = compact(s);
+  if (minuterie) return;
+  minuterie = setTimeout(() => {
+    minuterie = null;
+    const statut = enAttente;
+    envoi = envoi.then(() =>
+      fetch(URL_SCRIPT, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ secret: process.env.DRIVE_SECRET.trim(), action: "statut", statut }) }).catch(() => {})
+    );
+  }, 4000);
+}
+
 const save = (s) => {
   fs.mkdirSync(path.dirname(FILE), { recursive: true });
   s.maj = new Date().toISOString();
   s.messages = s.messages.slice(-80);
   fs.writeFileSync(FILE, JSON.stringify(s, null, 1));
+  diffuser(s);
 };
 
 export const redaction = {
+  // À appeler en fin de script : envoie le dernier état
+  async fin() {
+    if (minuterie) {
+      clearTimeout(minuterie);
+      minuterie = null;
+      const statut = enAttente;
+      envoi = envoi.then(() => fetch(URL_SCRIPT, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ secret: process.env.DRIVE_SECRET.trim(), action: "statut", statut }) }).catch(() => {}));
+    }
+    await envoi;
+  },
   debut(edition) {
     const s = load();
     s.edition = edition;

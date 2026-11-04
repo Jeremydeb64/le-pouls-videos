@@ -1,16 +1,27 @@
 /**
- * Le Pouls : dépôt des dossiers de publication dans Google Drive.
+ * Le Pouls : dépôt des dossiers de publication dans Google Drive + état en direct de la mini rédaction.
  * À coller dans un projet Google Apps Script (script.google.com), puis déployer en « Application Web ».
  * GitHub envoie : { secret, nom, fichiers: [{ nom, url }] } ; le script télécharge les fichiers
  * (vidéo + texte) depuis la release GitHub et les range dans CLAUDE / Le Pouls – publications / <nom>.
  */
 const DOSSIER_PUBLICATIONS = "1Wq2z4OzxHN7htpRMcqgh_rMPbdRQsNxU"; // CLAUDE / Le Pouls – publications
 
+// Lecture publique de l'état de la rédaction (pour la mini rédaction)
+function doGet() {
+  const statut = PropertiesService.getScriptProperties().getProperty("STATUT");
+  return ContentService.createTextOutput(statut || "{}").setMimeType(ContentService.MimeType.JSON);
+}
+
 function doPost(e) {
   try {
     const d = JSON.parse(e.postData.contents);
     const secret = PropertiesService.getScriptProperties().getProperty("SECRET");
     if (!secret || d.secret !== secret) return reponse({ ok: false, erreur: "secret invalide" });
+    // Mise à jour de l'état de la rédaction (envoyé par le pipeline à chaque étape)
+    if (d.action === "statut") {
+      PropertiesService.getScriptProperties().setProperty("STATUT", JSON.stringify(d.statut).slice(0, 8800));
+      return reponse({ ok: true });
+    }
     const racine = DriveApp.getFolderById(DOSSIER_PUBLICATIONS);
     const existants = racine.getFoldersByName(d.nom);
     const dossier = existants.hasNext() ? existants.next() : racine.createFolder(d.nom);

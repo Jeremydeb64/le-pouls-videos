@@ -39,6 +39,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY || vars.ANTHROPIC_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS || vars.KEYS_ELEVEN_POULS || secrets.ELEVENLABS_API_KEY }}
+          DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
           EDITION_DEMANDEE: ${{ github.event.inputs.edition }}
           MAX_DEMANDE: ${{ github.event.inputs.max_sujets }}
           CRON: ${{ github.event.schedule }}
@@ -57,7 +58,6 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-          DRIVE_WEBAPP_URL: ${{ secrets.DRIVE_WEBAPP_URL }}
           DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
         run: node pipeline/validation.mjs
       - name: Archive (état de la rédaction et épisodes)
