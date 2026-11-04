@@ -1,0 +1,11 @@
+{
+  "_note": "Flux à vérifier au premier lancement : les adresses exactes des flux RSS peuvent changer. 'veille_json' peut pointer vers la sortie JSON du dashboard Le Pouls (dépôt Veille-boomerang-).",
+  "flux": [
+    { "media": "Le Nouvelliste", "url": "https://www.lenouvelliste.ch/rss/valais" },
+    { "media": "RTS Valais", "url": "https://www.rts.ch/info/regions/valais/?format=rss/news" },
+    { "media": "Canal9", "url": "https://www.canal9.ch/feed/" },
+    { "media": "Rhône FM", "url": "https://www.rhonefm.ch/feed/" },
+    { "media": "Canton du Valais", "url": "https://www.vs.ch/web/communication/rss" }
+  ],
+  "veille_json": null
+}

@@ -1,0 +1,54 @@
+name: Édition Le Pouls
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # édition du matin (6 h en hiver, 7 h en été, heure de Zurich)
+    - cron: "0 15 * * *"  # édition du soir (16 h en hiver, 17 h en été)
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: "matin ou soir"
+        default: "matin"
+      max_sujets:
+        description: "Nombre de vidéos (1 à 3)"
+        default: "1"
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  edition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx remotion browser ensure
+      - name: Veilleur → Scénariste → Voix → Rendu → Contrôleur
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          EDITION: ${{ github.event.inputs.edition || (github.event.schedule == '0 5 * * *' && 'matin' || 'soir') }}
+          MAX_SUJETS: ${{ github.event.inputs.max_sujets || '1' }}
+        run: node pipeline/edition.mjs
+      - name: Demande de validation (release + issue par vidéo)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node pipeline/validation.mjs
+      - name: Archive (état de la rédaction et épisodes)
+        if: always()
+        run: |
+          git config user.name "Le Pouls"
+          git config user.email "actions@users.noreply.github.com"
+          git add state episodes
+          git commit -m "Édition ${{ github.run_number }} : état de la rédaction" || echo "Rien à archiver"
+          git pull --rebase && git push

@@ -1,0 +1,52 @@
+name: Publier sur TikTok
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  publier:
+    # Seul le propriétaire du dépôt peut valider, en commentant « OK » sur une issue « à valider »
+    if: >-
+      github.event.comment.user.login == github.repository_owner &&
+      startsWith(github.event.comment.body, 'OK') &&
+      contains(github.event.issue.labels.*.name, 'a-valider')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Récupérer la vidéo et la description
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BODY: ${{ github.event.issue.body }}
+        run: |
+          ID=$(echo "$BODY" | sed -n 's/.*<!-- episode:\(.*\) -->.*/\1/p' | head -1)
+          echo "EPISODE_ID=$ID" >> $GITHUB_ENV
+          gh release download "video-$ID" -p "*.mp4" -D out
+          echo "VIDEO=$(ls out/*.mp4 | head -1)" >> $GITHUB_ENV
+          echo "$BODY" | awk '/<!-- description -->/{f=1;next}/<!-- \/description -->/{f=0}f' > out/description.txt
+          echo "DESCRIPTION_FILE=out/description.txt" >> $GITHUB_ENV
+      - name: Diffuseur
+        env:
+          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
+          POSTIZ_TIKTOK_ID: ${{ secrets.POSTIZ_TIKTOK_ID }}
+        run: node pipeline/diffuseur.mjs
+      - name: Clore l'issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue edit ${{ github.event.issue.number }} --remove-label a-valider --add-label publie
+          gh issue comment ${{ github.event.issue.number }} --body "Transmis au Diffuseur. Voir l'onglet Actions pour le détail."
+          gh issue close ${{ github.event.issue.number }}
+      - name: Archive
+        run: |
+          git config user.name "Le Pouls"
+          git config user.email "actions@users.noreply.github.com"
+          git add state && git commit -m "Publication ${{ env.EPISODE_ID }}" || true
+          git pull --rebase && git push
