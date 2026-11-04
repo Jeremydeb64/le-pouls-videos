@@ -4,11 +4,17 @@
 export const driveActif = () => !!(process.env.DRIVE_WEBAPP_URL && process.env.DRIVE_SECRET);
 
 // fichiers : [{ nom, url }] (URL publiques de la release GitHub)
+// Accepte l'URL complète ou seulement l'ID de déploiement (AKfy…), avec espaces ou guillemets parasites.
+const urlScript = () => {
+  const v = (process.env.DRIVE_WEBAPP_URL || "").trim().replace(/^["']|["']$/g, "");
+  return v.startsWith("http") ? v : `https://script.google.com/macros/s/${v}/exec`;
+};
+
 export async function deposerSurDrive(nom, fichiers) {
-  const r = await fetch(process.env.DRIVE_WEBAPP_URL, {
+  const r = await fetch(urlScript(), {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ secret: process.env.DRIVE_SECRET, nom, fichiers }),
+    body: JSON.stringify({ secret: (process.env.DRIVE_SECRET || "").trim(), nom, fichiers }),
     redirect: "follow",
   });
   const t = await r.text();
