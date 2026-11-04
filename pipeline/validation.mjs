@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import { driveActif, deposerSurDrive } from "./lib/drive.mjs";
 
 const gh = (...a) => execFileSync("gh", a, { encoding: "utf8" }).trim();
 const ed = fs.existsSync("out/edition.json") ? JSON.parse(fs.readFileSync("out/edition.json", "utf8")) : [];
@@ -47,6 +48,16 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   fs.mkdirSync(path.join("publications", v.id), { recursive: true });
   fs.writeFileSync(path.join("publications", v.id, "publication.txt"), texte);
 
+  let lienDrive = null;
+  if (driveActif()) {
+    try {
+      lienDrive = await deposerSurDrive(dossier);
+      console.log("Déposé sur Drive :", lienDrive);
+    } catch (e) {
+      console.warn("Drive :", e.message);
+    }
+  }
+
   const tag = `video-${v.id}`;
   gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
   const assets = JSON.parse(gh("release", "view", tag, "--json", "assets"));
@@ -57,7 +68,7 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
 
 ▶️ [Voir la vidéo](${lien(".mp4")})
 📦 [Télécharger le dossier de publication (vidéo + texte)](${lien(".zip")})
-📝 [Texte de publication](${lien(".txt")})
+📝 [Texte de publication](${lien(".txt")})${lienDrive ? `\n📁 [Dossier sur Google Drive](${lienDrive})` : ""}
 
 ### Remarques du Contrôleur
 ${problemes}

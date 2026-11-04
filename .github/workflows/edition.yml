@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "0 5 * * *"   # édition du matin (6 h en hiver, 7 h en été, heure de Zurich)
     - cron: "0 15 * * *"  # édition du soir (16 h en hiver, 17 h en été)
+  push:
+    paths:
+      - ".github/lancer-edition.json"   # permet de lancer une édition en poussant ce fichier
   workflow_dispatch:
     inputs:
       edition:
@@ -36,13 +39,27 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS }}
-          EDITION: ${{ github.event.inputs.edition || (github.event.schedule == '0 5 * * *' && 'matin' || 'soir') }}
-          MAX_SUJETS: ${{ github.event.inputs.max_sujets || '1' }}
-        run: node pipeline/edition.mjs
+          EDITION_DEMANDEE: ${{ github.event.inputs.edition }}
+          MAX_DEMANDE: ${{ github.event.inputs.max_sujets }}
+          CRON: ${{ github.event.schedule }}
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            EDITION=$(node -p "require('./.github/lancer-edition.json').edition")
+            MAX_SUJETS=$(node -p "require('./.github/lancer-edition.json').max_sujets")
+          elif [ -n "$EDITION_DEMANDEE" ]; then
+            EDITION=$EDITION_DEMANDEE; MAX_SUJETS=${MAX_DEMANDE:-1}
+          else
+            if [ "$CRON" = "0 5 * * *" ]; then EDITION=matin; else EDITION=soir; fi; MAX_SUJETS=1
+          fi
+          export EDITION MAX_SUJETS
+          node pipeline/edition.mjs
       - name: Demande de validation (release + issue par vidéo)
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: node pipeline/validation.mjs
       - name: Archive (état de la rédaction et épisodes)
         if: always()
