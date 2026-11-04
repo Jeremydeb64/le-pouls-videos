@@ -1,0 +1,17 @@
+name: Test Higgsfield
+on:
+  push:
+    paths:
+      - "outils/test-higgsfield.mjs"
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node outils/test-higgsfield.mjs
+        env:
+          HIGGSFIELD_KEY: ${{ secrets.HIGGSFIELD_POULS_2 }}
