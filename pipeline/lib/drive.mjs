@@ -4,7 +4,17 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const DOSSIER = process.env.DRIVE_FOLDER_ID || "1Wq2z4OzxHN7htpRMcqgh_rMPbdRQsNxU";
+// Accès limité (scope drive.file) : le pipeline ne voit que les fichiers qu'il a créés lui-même.
+// Au premier dépôt, il crée « Le Pouls – publications » à la racine du Drive et mémorise son identifiant
+// dans state/drive.json. Tu peux ensuite déplacer ce dossier où tu veux (par exemple dans CLAUDE).
+const ETAT = "state/drive.json";
+async function dossierRacine(tok) {
+  if (process.env.DRIVE_FOLDER_ID) return process.env.DRIVE_FOLDER_ID;
+  if (fs.existsSync(ETAT)) return JSON.parse(fs.readFileSync(ETAT, "utf8")).dossier;
+  const d = await creerDossier(tok, "Le Pouls – publications", "root");
+  fs.writeFileSync(ETAT, JSON.stringify({ dossier: d.id, lien: d.webViewLink }, null, 1));
+  return d.id;
+}
 
 export const driveActif = () => !!(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET && process.env.GOOGLE_REFRESH_TOKEN);
 
@@ -49,7 +59,7 @@ async function envoyer(tok, fichier, parent, type) {
 // Copie le dossier local (vidéo + publication.txt) dans un sous-dossier Drive ; renvoie le lien.
 export async function deposerSurDrive(dossierLocal) {
   const tok = await jeton();
-  const d = await creerDossier(tok, path.basename(dossierLocal), DOSSIER);
+  const d = await creerDossier(tok, path.basename(dossierLocal), await dossierRacine(tok));
   for (const f of fs.readdirSync(dossierLocal)) {
     const type = f.endsWith(".mp4") ? "video/mp4" : "text/plain";
     await envoyer(tok, path.join(dossierLocal, f), d.id, type);
