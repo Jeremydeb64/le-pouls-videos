@@ -46,4 +46,5 @@ Les types `stats`, `titleBib`, `finish`, `person` sont habillés « ski » pour 
 ## Contraintes de mise en page
 - Format 1080 × 1920, 30 images/s.
 - Marge gauche 90 px, zone libre à droite 160 px, rien d'important sous y = 1500 (interface TikTok).
-- Sous-titres à y = 1400, masqués sur `statement` et `outro`.
+- Sous-titres (charte V3.1) : Inter 700, 52 px, blanc sur vert, centrés, bas du bloc à y = 1450, 2 lignes max (29 caractères par ligne environ) ; masqués sur `statement` et `outro`.
+- Zone essentielle : x = 100 à 900, y = 300 à 1450. Rien d'important à droite de x = 900 ni sous y = 1450.

@@ -50,7 +50,15 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   fs.writeFileSync(path.join("publications", v.id, "publication.txt"), texte);
 
   const tag = `video-${v.id}`;
-  gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
+  // Médias d'origine (voix, photos) archivés pour pouvoir refaire le rendu plus tard (changement de charte, correction)
+  const medias = [];
+  try {
+    const ep = JSON.parse(fs.readFileSync(path.join("episodes", `${v.id}.json`), "utf8"));
+    for (const f of [ep.voice, ...ep.scenes.filter((s) => s.type === "photo").map((s) => s.props.src)]) if (f && fs.existsSync(path.join("public", f))) medias.push(f);
+  } catch {}
+  const archiveMedias = path.join("out", "publications", `${nom}-medias.tgz`);
+  if (medias.length) execFileSync("tar", ["-czf", archiveMedias, "-C", "public", ...medias]);
+  gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), ...(medias.length ? [archiveMedias] : []), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
   const assets = JSON.parse(gh("release", "view", tag, "--json", "assets"));
   const lien = (ext) => (assets.assets.find((a) => a.name.endsWith(ext)) || {}).url;
 

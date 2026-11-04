@@ -26,10 +26,11 @@ Tu vérifies aussi que la vidéo **se comprend du premier coup** par quelqu'un q
 - Aucune phrase de l'article reprise mot pour mot au-delà d'une courte citation attribuée.
 
 ## 4. Charte (sur les images clés)
-- Couleurs uniquement : papier #EFEBE3, encre #15171A, vert #1E5B4F (+ vert foncé #16463D, gris #6B6860).
-- Typos : Fraunces (titres, grands chiffres), Inter Tight (texte, sous-titres).
+- Charte V3.1. Couleurs uniquement : vert profond #1A3A35, crème #F5F2EA, encre #111A19, vert moyen #3F6B62, sauge #91A883, ocre #D3A657 (accent ponctuel), blanc, gris doux #D9DEE1, gris texte #647772. Jamais de texte sauge ou ocre sur fond crème (contraste insuffisant).
+- Typos : Inter Display Black (titres, grands chiffres, logo), Inter (texte, sous-titres).
+- Pas de cœur ni d'ECG, pas de vert néon, pas de montagne décorative, pas de rebond cartoon.
 - Aucun texte coupé, aucun débordement, aucun mot orphelin en fin de titre si évitable.
-- Rien d'important dans les zones masquées par TikTok : 160 px à droite, 400 px en bas. Les sous-titres restent vers y = 1400.
+- Rien d'important hors de la zone x = 100 à 900, y = 300 à 1450 (interface TikTok). Sous-titres : deux lignes au maximum.
 - Pas de séparateur « · » dans les titres.
 - Alternance papier / vert respectée, pas plus de deux scènes du même thème d'affilée.
 

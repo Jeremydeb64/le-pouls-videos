@@ -1,77 +1,151 @@
-// Modèles de scènes Le Pouls (charte E « Éditorial papier »).
+// Modèles de scènes Le Pouls — charte V3.1 (vert profond, crème, ocre, Inter Display).
 // Chaque scène reçoit ses props depuis le fichier d'épisode JSON. Les temps « at » sont en secondes depuis le début de la scène.
 import React from "react";
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
 import VALAIS from "./geo/valais.json";
 
+// Jetons de la charte (design-tokens.json V3.1)
 export const C = {
-  paper: "#EFEBE3",
-  ink: "#15171A",
-  green: "#1E5B4F",
-  greenDark: "#16463D",
-  muted: "#6B6860",
-  line: "#D8D2C5",
-  mutedOnGreen: "#A9C2BA",
+  paper: "#F5F2EA",
+  ink: "#111A19",
+  green: "#1A3A35", // forest : identité principale
+  mid: "#3F6B62",
+  sage: "#91A883",
+  ochre: "#D3A657",
+  white: "#FFFFFF",
+  softgrey: "#D9DEE1",
+  muted: "#647772",
+  line: "#CFD6D0",
+  greenDark: "#2A4C45", // traits sur fond vert
+  mutedOnGreen: "#91A883",
+  beige: "#E8E5DA",
 };
-export const SERIF = "Fraunces";
-export const SANS = "InterTight";
-export const PAD = 90;
-export const CONTENT_W = 1080 - PAD - 160; // ~160 px libres à droite (icônes TikTok)
+export const SERIF = "InterDisplay"; // titres, grands chiffres (Inter Display Black)
+export const SANS = "Inter"; // texte, sous-titres, légendes
+export const PAD = 100;
+export const CONTENT_W = 800; // zone essentielle x = 100 à 900 (droite réservée à TikTok)
+export const TRACK_TITRE = "-0.035em";
+export const TRACK_CHIFFRE = "-0.05em";
 
 export const fontFaces = `
-@font-face{font-family:'Fraunces';src:url('${staticFile("fraunces-700.woff2")}') format('woff2');font-weight:700;}
-@font-face{font-family:'Fraunces';src:url('${staticFile("fraunces-900.woff2")}') format('woff2');font-weight:900;}
-@font-face{font-family:'InterTight';src:url('${staticFile("inter-500.woff2")}') format('woff2');font-weight:500;}
-@font-face{font-family:'InterTight';src:url('${staticFile("inter-800.woff2")}') format('woff2');font-weight:800;}
+@font-face{font-family:'InterDisplay';src:url('${staticFile("fonts/InterDisplay-ExtraBold.woff2")}') format('woff2');font-weight:700 800;}
+@font-face{font-family:'InterDisplay';src:url('${staticFile("fonts/InterDisplay-Black.woff2")}') format('woff2');font-weight:900;}
+@font-face{font-family:'Inter';src:url('${staticFile("fonts/Inter-Medium.woff2")}') format('woff2');font-weight:400 500;}
+@font-face{font-family:'Inter';src:url('${staticFile("fonts/Inter-SemiBold.woff2")}') format('woff2');font-weight:600;}
+@font-face{font-family:'Inter';src:url('${staticFile("fonts/Inter-Bold.woff2")}') format('woff2');font-weight:700;}
+@font-face{font-family:'Inter';src:url('${staticFile("fonts/Inter-ExtraBold.woff2")}') format('woff2');font-weight:800 900;}
 `;
 
 type Theme = "paper" | "green";
-const th = (t: Theme) =>
+export const th = (t: Theme) =>
   t === "green"
-    ? { bg: C.green, fg: C.paper, accent: C.paper, sub: C.mutedOnGreen, rule: C.greenDark }
-    : { bg: C.paper, fg: C.ink, accent: C.green, sub: C.muted, rule: C.line };
+    ? { bg: C.green, fg: C.paper, accent: C.ochre, sub: C.sage, rule: C.greenDark, data: C.sage, card: C.white, cardFg: C.green }
+    : { bg: C.paper, fg: C.green, accent: C.mid, sub: C.muted, rule: C.line, data: C.mid, card: C.white, cardFg: C.green };
 
 // ---------- primitives ----------
 const useAt = () => {
   const { fps } = useVideoConfig();
   return (sec = 0) => Math.round(sec * fps);
 };
+// Entrées sans rebond (charte : easeOutCubic, 420 ms)
 const useEnter = (delay = 0) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
-  return spring({ frame: frame - delay, fps, config: { damping: 18, mass: 0.7 } });
+  return interpolate(frame - delay, [0, 13], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
 };
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
-export const Rise: React.FC<{ delay?: number; dist?: number; children: React.ReactNode }> = ({ delay = 0, dist = 60, children }) => {
+// Révélation par masque vertical + déplacement de 24 px maximum
+export const Rise: React.FC<{ delay?: number; dist?: number; children: React.ReactNode }> = ({ delay = 0, dist = 24, children }) => {
   const p = useEnter(delay);
-  return <div style={{ opacity: p, translate: `0 ${interpolate(p, [0, 1], [dist, 0])}px` }}>{children}</div>;
+  const d = Math.min(dist, 24);
+  return (
+    <div style={{ opacity: interpolate(p, [0, 0.4], [0, 1], clamp), translate: `0 ${interpolate(p, [0, 1], [d, 0])}px`, clipPath: `inset(0 0 ${interpolate(p, [0, 1], [100, 0])}% 0)` }}>{children}</div>
+  );
 };
 
 export const swiss = (n: number) => Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, "’");
 const plain = (n: number) => Math.round(n).toString();
 
-const Counter: React.FC<{ to: number; delay?: number; dur?: number; grouped?: boolean }> = ({ to, delay = 0, dur = 22, grouped = true }) => {
+// Données : progression mesurée (easeOutQuart, 700 ms) puis valeur stable
+const Counter: React.FC<{ to: number; delay?: number; dur?: number; grouped?: boolean }> = ({ to, delay = 0, dur = 21, grouped = true }) => {
   const frame = useCurrentFrame();
-  const v = interpolate(frame - delay, [0, dur], [0, to], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const v = interpolate(frame - delay, [0, dur], [0, to], { ...clamp, easing: Easing.out(Easing.quad) });
   return <>{(grouped && to >= 10000 ? swiss : plain)(v)}</>;
+};
+
+// Barre inclinée (18°), élément d'identité
+const slashPts = (x: number, y: number, h: number, w: number) => `${x + h * 0.33},${y} ${x + h * 0.33 + w},${y} ${x + w},${y + h} ${x},${y + h}`;
+export const Mark: React.FC<{ h?: number; colors: string[]; delays?: number[] }> = ({ h = 60, colors, delays }) => {
+  const frame = useCurrentFrame();
+  const w = h * 0.24;
+  const step = h * 0.33 + 10 * (h / 75);
+  const W = step * 2 + h * 0.33 + w + 2;
+  return (
+    <svg width={W} height={h} viewBox={`0 0 ${W} ${h}`} style={{ overflow: "visible" }}>
+      {colors.map((c, i) => {
+        const p = delays ? interpolate(frame - delays[i], [0, 8], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) }) : 1;
+        return <polygon key={i} points={slashPts(i * step, h * (1 - p), h * p, w)} fill={c} />;
+      })}
+    </svg>
+  );
+};
+
+// Trames diagonales translucides (fonds sombres uniquement)
+const Trames: React.FC = () => (
+  <svg width={1080} height={1920} viewBox="0 0 1080 720" preserveAspectRatio="xMidYMin slice" style={{ position: "absolute", inset: 0 }}>
+    <g opacity={0.16} fill={C.mid}>
+      <polygon points="665,0 770,0 465,720 360,720" />
+      <polygon points="815,0 865,0 560,720 510,720" />
+      <polygon points="970,0 993,0 685,720 662,720" />
+    </g>
+  </svg>
+);
+
+// Barres de rythme (grand chiffre)
+const Rythme: React.FC<{ color: string; delay?: number; heights?: number[] }> = ({ color, delay = 0, heights = [95, 155, 222, 277] }) => {
+  const frame = useCurrentFrame();
+  const w = 40, g = 13, max = Math.max(...heights);
+  return (
+    <svg width={heights.length * (w + g) + 40} height={max} viewBox={`0 0 ${heights.length * (w + g) + 40} ${max}`}>
+      {heights.map((h0, i) => {
+        const p = interpolate(frame - delay - i * 3, [0, 18], [0, 1], { ...clamp, easing: Easing.out(Easing.quad) });
+        const h = h0 * p;
+        const a = i * (w + g);
+        return <polygon key={i} points={`${a + h * 0.33},${max - h} ${a + h * 0.33 + w},${max - h} ${a + w},${max} ${a},${max}`} fill={color} />;
+      })}
+    </svg>
+  );
 };
 
 const Frame: React.FC<{ theme: Theme; children: React.ReactNode }> = ({ theme, children }) => {
   const frame = useCurrentFrame();
-  const p = interpolate(frame, [0, 9], [100, 0], { ...clamp, easing: Easing.out(Easing.cubic) });
-  return <AbsoluteFill style={{ backgroundColor: th(theme).bg, clipPath: `inset(${p}% 0 0 0)` }}>{children}</AbsoluteFill>;
+  // Volet aligné sur la grille, 280 ms
+  const p = interpolate(frame, [0, 8], [100, 0], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  return (
+    <AbsoluteFill style={{ backgroundColor: th(theme).bg, clipPath: `inset(${p}% 0 0 0)` }}>
+      {theme === "green" && <Trames />}
+      {children}
+    </AbsoluteFill>
+  );
 };
 
-const Body: React.FC<{ top?: number; children: React.ReactNode }> = ({ top = 300, children }) => (
-  <div style={{ position: "absolute", left: PAD, top, width: CONTENT_W }}>{children}</div>
+const Body: React.FC<{ top?: number; children: React.ReactNode }> = ({ top = 320, children }) => (
+  <div style={{ position: "absolute", left: PAD, top: Math.max(top, 300), width: CONTENT_W }}>{children}</div>
 );
 
-const Kicker: React.FC<{ color: string; delay?: number; children: React.ReactNode }> = ({ color, delay = 4, children }) => (
-  <Rise delay={delay} dist={20}>
-    <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 5, textTransform: "uppercase", color, marginBottom: 28 }}>{children}</div>
+// Cartouche ocre (onglet éditorial)
+const Kicker: React.FC<{ color?: string; delay?: number; children: React.ReactNode }> = ({ delay = 4, children }) => (
+  <Rise delay={delay}>
+    <div style={{ display: "inline-block", background: C.ochre, color: C.ink, fontFamily: SANS, fontWeight: 800, fontSize: 30, letterSpacing: 1.5, textTransform: "uppercase", padding: "12px 20px", borderRadius: 9, marginBottom: 34, maxWidth: CONTENT_W }}>{children}</div>
   </Rise>
 );
+
+// Trait de soulignement ocre (14 px, plein, sans halo)
+const Souligne: React.FC<{ width?: number; delay?: number; color?: string }> = ({ width = 420, delay = 6, color = C.ochre }) => {
+  const frame = useCurrentFrame();
+  const p = interpolate(frame - delay, [0, 12], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  return <div style={{ width: width * p, height: 14, background: color, marginTop: 26, marginBottom: 26 }} />;
+};
 
 // ---------- éléments graphiques ----------
 export const Bib: React.FC<{ top: string; number: string; bottom: string; small?: boolean; dark?: boolean }> = ({ top, number, bottom, small, dark }) => {
@@ -101,7 +175,7 @@ const Tribune: React.FC = () => {
   const frame = useCurrentFrame();
   const rows = 4;
   const cols = 15;
-  const palette = [C.ink, C.green, C.muted, C.greenDark, "#B9B2A3"];
+  const palette = [C.green, C.mid, C.sage, C.ochre, C.muted];
   const wavePos = ((frame % 75) / 75) * (cols + 6) - 3;
   return (
     <svg width={CONTENT_W} height={330} viewBox={`0 0 ${CONTENT_W} 330`}>
@@ -168,11 +242,11 @@ export const Chrono: React.FC<P<{ kicker: string; label: string; value: number; 
         <Rise delay={2}>
           <div style={{ background: C.ink, borderRadius: 28, padding: "36px 44px", width: CONTENT_W }}>
             <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 32, letterSpacing: 4, color: C.mutedOnGreen, display: "flex", alignItems: "center", gap: 16, textTransform: "uppercase" }}>
-              <span style={{ width: 18, height: 18, borderRadius: 9, background: "#7FD1B9", opacity: blink }} />
+              <span style={{ width: 18, height: 18, borderRadius: 9, background: C.ochre, opacity: blink }} />
               {label}
             </div>
             <div style={{ display: "flex", alignItems: "baseline", gap: 18, marginTop: 6 }}>
-              <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 300, lineHeight: 1, color: C.paper, letterSpacing: -12 }}>
+              <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 280, lineHeight: 1, color: C.paper, letterSpacing: TRACK_CHIFFRE }}>
                 <Counter to={value} delay={2} dur={26} />
               </span>
               <span style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 90, color: C.paper }}>{unit}</span>
@@ -253,10 +327,10 @@ const StatRow: React.FC<{ value: number; label: string; delay: number; color: st
     <div style={{ opacity: p, translate: `${interpolate(p, [0, 1], [-60, 0])}px 0`, display: "flex", alignItems: "center", gap: 30, borderBottom: `3px solid ${rule}`, padding: "18px 0" }}>
       {porte && <Gate color={color} p={p} />}
       <div style={{ display: "flex", flexDirection: empile ? "column" : "row", alignItems: empile ? "flex-start" : "baseline", gap: empile ? 4 : 30, minWidth: 0 }}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: taille, lineHeight: 1, color, letterSpacing: -4, whiteSpace: "nowrap", minWidth: empile ? 0 : 380 }}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: taille, lineHeight: 1, color, letterSpacing: TRACK_CHIFFRE, whiteSpace: "nowrap", minWidth: empile ? 0 : 340 }}>
           <Counter to={value} delay={delay} />
         </div>
-        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: empile ? 40 : 58, lineHeight: 1.15, color, maxWidth: 640 }}>{label}</div>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: empile ? 40 : 52, lineHeight: 1.15, color, maxWidth: 600 }}>{label}</div>
       </div>
     </div>
   );
@@ -309,16 +383,20 @@ export const Crowd: React.FC<P<{ kicker: string; live: { value: number; label: s
   );
 };
 
-const tailleTexte = (t: string) => (t.length <= 35 ? 140 : t.length <= 70 ? 104 : t.length <= 120 ? 80 : 64);
-export const Statement: React.FC<P<{ text: string }>> = ({ theme, text }) => (
-  <Frame theme={theme}>
-    <Body top={text.length <= 70 ? 560 : 360}>
-      <Rise delay={2}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: tailleTexte(text), lineHeight: 1.0, color: th(theme).fg, letterSpacing: -2 }}>{text}</div>
-      </Rise>
-    </Body>
-  </Frame>
-);
+const tailleTexte = (t: string) => (t.length <= 30 ? 116 : t.length <= 50 ? 100 : t.length <= 70 ? 84 : t.length <= 120 ? 68 : 56);
+export const Statement: React.FC<P<{ text: string }>> = ({ theme, text }) => {
+  const court = text.length <= 70;
+  return (
+    <Frame theme={theme}>
+      <Body top={court ? 520 : 380}>
+        <Rise delay={2}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: tailleTexte(text), lineHeight: 1.02, color: th(theme).fg, letterSpacing: TRACK_TITRE, textTransform: court ? "uppercase" : "none", whiteSpace: "pre-line" }}>{text}</div>
+        </Rise>
+        <Souligne width={420} delay={10} />
+      </Body>
+    </Frame>
+  );
+};
 
 export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: number; label: string; at: number; grid?: { count: number; value: number; label: string; note: string; at: number } }>> = ({ theme, kicker, prefix, value, label, at: a1, grid }) => {
   const t = th(theme);
@@ -330,10 +408,18 @@ export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: num
         <Kicker color={t.accent}>{kicker}</Kicker>
         <Rise delay={d1}>
           {prefix && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: t.sub }}>{prefix}</div>}
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: String(Math.round(value)).length <= 3 ? 330 : String(Math.round(value)).length <= 5 ? 230 : 170, lineHeight: 0.9, color: t.fg, letterSpacing: -8, whiteSpace: "nowrap" }}>
-            <Counter to={value} delay={d1} dur={30} />
+          <div style={{ display: "flex", alignItems: "flex-end", gap: 30 }}>
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: String(Math.round(value)).length <= 2 ? 400 : String(Math.round(value)).length <= 3 ? 320 : String(Math.round(value)).length <= 5 ? 220 : 160, lineHeight: 0.92, color: t.fg, letterSpacing: TRACK_CHIFFRE, whiteSpace: "nowrap" }}>
+              <Counter to={value} delay={d1} dur={21} />
+            </div>
+            {String(Math.round(value)).length <= 2 && (
+              <div style={{ paddingBottom: 30 }}>
+                <Rythme color={theme === "green" ? C.sage : C.mid} delay={d1 + 4} heights={[70, 115, 165, 205]} />
+              </div>
+            )}
           </div>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: t.fg }}>{label}</div>
+          <Souligne width={480} delay={d1 + 10} />
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, lineHeight: 1.15, color: t.fg }}>{label}</div>
         </Rise>
         {grid && (
           <div style={{ marginTop: 80 }}>
@@ -434,9 +520,9 @@ export const Recap: React.FC<P<{ kicker: string; items: { n: string; label: stri
         <Kicker color={t.sub} delay={2}>{kicker}</Kicker>
         {items.map((it) => (
           <Rise key={it.label} delay={at(it.at)}>
-            <div style={{ display: "flex", alignItems: "baseline", gap: 30, borderBottom: `3px solid ${t.rule}`, padding: "20px 0" }}>
-              <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 170, color: t.fg, width: 300, lineHeight: 1 }}>{it.n}</span>
-              <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 54, color: t.fg, lineHeight: 1.1 }}>{it.label}</span>
+            <div style={{ display: "flex", alignItems: "center", gap: 40, borderBottom: `3px solid ${t.rule}`, padding: "30px 0" }}>
+              <span style={{ flexShrink: 0, width: 92, height: 92, borderRadius: 46, background: C.sage, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: C.green }}>{it.n}</span>
+              <span style={{ fontFamily: SERIF, fontWeight: 800, fontSize: 54, color: t.fg, lineHeight: 1.1, letterSpacing: "-0.02em" }}>{it.label}</span>
             </div>
           </Rise>
         ))}
@@ -455,43 +541,45 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
       </AbsoluteFill>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(21,23,26,0.6) 0%, rgba(21,23,26,0) 22%, rgba(21,23,26,0) 38%, rgba(21,23,26,0.82) 62%, rgba(21,23,26,0.9) 100%)" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(17,26,25,0.65) 0%, rgba(17,26,25,0) 22%, rgba(17,26,25,0) 36%, rgba(26,58,53,0.85) 60%, rgba(26,58,53,0.95) 100%)" }} />
       {(kicker || title) && (
-        <Body top={1040}>
+        <Body top={980}>
           {kicker && <Kicker color={C.paper}>{kicker}</Kicker>}
           {title && (
             <Rise delay={8}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 104 : title.length <= 32 ? 80 : 64, lineHeight: 1.02, color: C.paper, letterSpacing: -2, maxHeight: 220, overflow: "hidden" }}>{title}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 96 : title.length <= 32 ? 74 : 60, lineHeight: 1.02, color: C.paper, letterSpacing: TRACK_TITRE, textTransform: "uppercase", maxHeight: 220, overflow: "hidden" }}>{title}</div>
             </Rise>
           )}
         </Body>
       )}
-      <div style={{ position: "absolute", right: 170, top: 118, maxWidth: 460, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(239,235,227,0.9)" }}>{credit}</div>
+      <div style={{ position: "absolute", right: 170, top: 118, maxWidth: 460, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
     </Frame>
   );
 };
 
-export const Outro: React.FC<P<{ tagline: string; cta: string; sources: string }>> = ({ theme, tagline, cta, sources }) => {
-  const t = th(theme);
-  return (
-    <Frame theme={theme}>
-      <Body top={420}>
-        <Rise delay={3}>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 200, color: t.accent, letterSpacing: -14, lineHeight: 1 }}>///</div>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, color: t.fg, lineHeight: 1, marginTop: 10 }}>Le Pouls</div>
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 40, color: t.sub, marginTop: 14 }}>{tagline}</div>
-        </Rise>
-        <Rise delay={30}>
-          <div style={{ display: "inline-block", marginTop: 60, background: C.green, color: C.paper, fontFamily: SANS, fontWeight: 800, fontSize: 46, padding: "22px 40px", borderRadius: 60 }}>{cta}</div>
-        </Rise>
-        <Rise delay={50}>
-          <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: t.sub, marginTop: 70, lineHeight: 1.4 }}>{sources}</div>
-        </Rise>
-      </Body>
-    </Frame>
-  );
-};
-
+// Écran de fin : retour des barres, logo, baseline, maintien
+export const Outro: React.FC<P<{ tagline?: string; cta: string; sources: string }>> = ({ cta, sources }) => (
+  <Frame theme="green">
+    <Body top={420}>
+      <div style={{ marginLeft: 30 }}>
+        <Mark h={180} colors={[C.sage, C.ochre, C.paper]} delays={[4, 6.4, 8.8]} />
+      </div>
+      <Rise delay={12}>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 152, color: C.white, lineHeight: 1, letterSpacing: TRACK_TITRE, marginTop: 50 }}>LE POULS</div>
+      </Rise>
+      <Souligne width={630} delay={18} />
+      <Rise delay={22}>
+        <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 51, color: C.paper, letterSpacing: 1 }}>SENTIR L’ACTUALITÉ</div>
+      </Rise>
+      <Rise delay={34}>
+        <div style={{ display: "inline-block", marginTop: 70, background: C.ochre, color: C.ink, fontFamily: SANS, fontWeight: 800, fontSize: 40, padding: "20px 34px", borderRadius: 12 }}>{cta}</div>
+      </Rise>
+      <Rise delay={46}>
+        <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: C.sage, marginTop: 60, lineHeight: 1.4 }}>{sources}</div>
+      </Rise>
+    </Body>
+  </Frame>
+);
 
 // ---------- Votations ----------
 export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; question: string }>> = ({ theme, kicker, date, niveau, question }) => {
@@ -506,7 +594,7 @@ export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; 
         <div style={{ position: "relative", height: 380, width: CONTENT_W }}>
           <svg width={CONTENT_W} height={380} viewBox={`0 0 ${CONTENT_W} 380`} style={{ position: "absolute", inset: 0 }}>
             <g transform={`translate(${CONTENT_W / 2 - 110} ${drop})`} opacity={fade}>
-              <rect width={220} height={150} rx={8} fill={t.bg === C.paper ? "#FFFFFF" : C.paper} stroke={t.fg} strokeWidth={4} />
+              <rect width={220} height={150} rx={8} fill={C.white} stroke={t.fg} strokeWidth={4} />
               <rect x={30} y={34} width={160} height={10} rx={5} fill={t.sub} />
               <rect x={30} y={62} width={120} height={10} rx={5} fill={t.sub} />
               <rect x={30} y={96} width={34} height={34} rx={6} fill="none" stroke={t.fg} strokeWidth={4} />
@@ -518,10 +606,11 @@ export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; 
           </svg>
         </div>
         <Rise delay={30}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 110, lineHeight: 1, color: t.fg, marginTop: 30, letterSpacing: -2 }}>{date}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 104, lineHeight: 1, color: t.fg, marginTop: 30, letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{date}</div>
         </Rise>
+        <Souligne width={420} delay={36} />
         <Rise delay={44}>
-          <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 60, lineHeight: 1.1, color: t.fg, marginTop: 24 }}>{question}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, lineHeight: 1.1, color: t.fg, marginTop: 24 }}>{question}</div>
         </Rise>
       </Body>
     </Frame>
@@ -533,22 +622,29 @@ export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points
   const t = th(theme);
   const at = useAt();
   const Col: React.FC<{ titre: string; points: string[]; a: number }> = ({ titre, points, a }) => (
-    <div style={{ flex: 1, border: `4px solid ${t.fg}`, borderRadius: 24, padding: "28px 26px", minHeight: 520 }}>
-      <Rise delay={at(a)}>
-        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 84, color: t.fg, lineHeight: 1 }}>{titre}</div>
-      </Rise>
-      {points.map((p, i) => (
-        <Rise key={i} delay={at(a) + 12 + i * 14} dist={30}>
-          <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 36, lineHeight: 1.2, color: t.fg, marginTop: 28, borderTop: `3px solid ${t.rule}`, paddingTop: 20 }}>{p}</div>
+    <div style={{ flex: 1, background: C.white, borderRadius: 16, overflow: "hidden", minHeight: 640 }}>
+      <div style={{ height: 20, background: C.ochre }} />
+      <div style={{ padding: "26px 26px 30px" }}>
+        <Rise delay={at(a)}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: C.green, lineHeight: 1, letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{titre}</div>
         </Rise>
-      ))}
+        <div style={{ height: 3, background: C.softgrey, margin: "24px 0 6px" }} />
+        {points.map((p, i) => (
+          <Rise key={i} delay={at(a) + 12 + i * 14}>
+            <div style={{ display: "flex", gap: 16, marginTop: 24 }}>
+              <span style={{ flexShrink: 0, width: 20, height: 20, borderRadius: 10, background: C.mid, marginTop: 10 }} />
+              <span style={{ fontFamily: SANS, fontWeight: 600, fontSize: 33, lineHeight: 1.2, color: C.ink }}>{p}</span>
+            </div>
+          </Rise>
+        ))}
+      </div>
     </div>
   );
   return (
     <Frame theme={theme}>
       <Body top={240}>
         <Kicker color={t.accent}>{kicker}</Kicker>
-        <div style={{ display: "flex", gap: 24 }}>
+        <div style={{ display: "flex", gap: 40 }}>
           <Col titre={pour.titre || "Oui"} points={pour.points} a={pour.at} />
           <Col titre={contre.titre || "Non"} points={contre.points} a={contre.at} />
         </div>
@@ -585,17 +681,17 @@ export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: str
   // Zoom progressif centré sur la (les) commune(s)
   const centreX = VALAIS.w / 2 + (cx - VALAIS.w / 2) * p;
   const centreY = VALAIS.h / 2 + (cy - VALAIS.h / 2) * p;
-  const fondCanton = theme === "green" ? C.greenDark : "#E4DED2";
-  const surbrillance = theme === "green" ? C.paper : C.green;
-  const pulse = 1 + 0.15 * Math.sin(frame / 6);
+  const fondCanton = theme === "green" ? C.mid : "#B1C9BA";
+  const surbrillance = C.ochre;
+  const pulse = 1;
   return (
     <Frame theme={theme}>
       <Body top={380}>
         <Kicker color={t.accent}>{kicker}</Kicker>
-        <div style={{ width: W, height: H, overflow: "hidden", borderRadius: 18, marginBottom: 40 }}>
+        <div style={{ width: W, height: H, overflow: "hidden", borderRadius: 18, marginBottom: 40, background: theme === "green" ? C.greenDark : "#E4EAE4" }}>
           <svg width={W} height={H} viewBox={`0 0 ${VALAIS.w} ${VALAIS.h}`}>
             <g transform={`translate(${VALAIS.w / 2} ${VALAIS.h / 2}) scale(${echelle}) translate(${-centreX} ${-centreY})`}>
-              <path d={VALAIS.canton} fill={fondCanton} stroke={t.fg} strokeWidth={3 / echelle} />
+              <path d={VALAIS.canton} fill={fondCanton} stroke={theme === "green" ? C.sage : C.mid} strokeWidth={4 / echelle} />
               {VALAIS.lacs.map((d: string, i: number) => <path key={i} d={d} fill="#B9D3DE" />)}
               {Object.values(COMMUNES).map((c, i) => <path key={i} d={c.d} fill="none" stroke={t.fg} strokeOpacity={0.12} strokeWidth={1 / echelle} />)}
               {cibles.map((c, i) => (
@@ -612,7 +708,7 @@ export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: str
               })}
               {cibles.map((c) => (
                 <g key={"p" + c.nom} opacity={p}>
-                  <circle cx={c.x} cy={c.y} r={(9 * pulse) / echelle} fill={C.ink} stroke={C.paper} strokeWidth={3 / echelle} />
+                  <circle cx={c.x} cy={c.y} r={(10 * pulse) / echelle} fill={C.ochre} stroke={C.green} strokeWidth={4 / echelle} />
                 </g>
               ))}
             </g>
@@ -668,7 +764,7 @@ export const Barres: React.FC<P<{ kicker: string; items: { label: string; value:
         <Kicker color={t.accent}>{kicker}</Kicker>
         {items.map((it, i) => {
           const p = interpolate(frame, [at(it.at), at(it.at) + 22], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
-          const couleur = it.accent ? t.accent : t.fg;
+          const couleur = t.fg;
           return (
             <div key={i} style={{ marginBottom: 56, opacity: interpolate(p, [0, 0.2], [0, 1], clamp) }}>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
@@ -678,7 +774,7 @@ export const Barres: React.FC<P<{ kicker: string; items: { label: string; value:
                 </span>
               </div>
               <div style={{ height: 70, background: t.rule, borderRadius: 12, marginTop: 10 }}>
-                <div style={{ height: 70, width: `${(it.value / max) * 100 * p}%`, background: it.accent ? t.accent : theme === "green" ? C.mutedOnGreen : C.ink, borderRadius: 10 }} />
+                <div style={{ height: 70, width: `${(it.value / max) * 100 * p}%`, background: it.accent ? C.ochre : t.data, borderRadius: 10 }} />
               </div>
             </div>
           );

@@ -1,44 +1,53 @@
 // Lit un épisode (JSON) et assemble la vidéo : scènes, habillage permanent, sous-titres, voix.
 import React from "react";
-import { AbsoluteFill, Audio, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
-import { C, SANS, SERIF, PAD, CONTENT_W, fontFaces, SCENE_TYPES, NO_CAPTIONS } from "./templates";
+import { AbsoluteFill, Audio, Easing, Sequence, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { C, SANS, SERIF, PAD, CONTENT_W, fontFaces, SCENE_TYPES, NO_CAPTIONS, Mark } from "./templates";
 
 export type SceneSpec = { type: string; from: number; to: number; theme: "paper" | "green"; props: Record<string, any> };
 export type EpisodeSpec = {
   id: string;
   ambiance?: "neutre" | "dynamique" | "sobre" | "aucune"; // fond musical
   voice?: string; // fichier dans public/
+  sonsIntegres?: boolean; // la piste « voice » contient déjà musique et effets (re-rendu d'une vidéo existante)
   duration: number; // secondes
   captions: [number, number, string][];
   scenes: SceneSpec[];
 };
 
-const Chrome: React.FC<{ dark: boolean }> = ({ dark }) => {
+// Habillage permanent : logo (barres + LE POULS), filet, pied de page « Sentir l'actualité »
+const Chrome: React.FC<{ dark: boolean; outro: boolean }> = ({ dark, outro }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const fg = dark ? C.paper : C.ink;
-  const accent = dark ? C.paper : C.green;
+  const fg = dark ? C.paper : C.green;
+  const filet = dark ? C.ochre : C.mid;
+  if (outro) return null;
+  // Ouverture signal : trois barres en décalage de 80 ms, logo révélé par masque
+  const logo = interpolate(frame, [6, 18], [0, 100], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   return (
     <>
-      <div style={{ position: "absolute", top: 0, left: 0, height: 10, width: `${(frame / durationInFrames) * 100}%`, background: accent }} />
-      <div style={{ position: "absolute", top: 110, left: PAD, display: "flex", alignItems: "baseline", gap: 14 }}>
-        <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 46, color: accent, letterSpacing: -4 }}>///</span>
-        <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 40, color: fg }}>Le Pouls</span>
+      <div style={{ position: "absolute", top: 0, left: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: C.ochre }} />
+      <div style={{ position: "absolute", top: 120, left: PAD, display: "flex", alignItems: "center", gap: 22 }}>
+        <Mark h={62} colors={[C.sage, C.ochre, dark ? C.paper : C.green]} delays={[0, 2.4, 4.8]} />
+        <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 52, color: fg, letterSpacing: "-0.02em", lineHeight: 1, clipPath: `inset(0 ${100 - logo}% 0 0)` }}>LE POULS</span>
       </div>
+      <div style={{ position: "absolute", top: 224, left: PAD, width: CONTENT_W, height: 3, background: filet, opacity: 0.9 }} />
+      <div style={{ position: "absolute", top: 1490, left: PAD, width: CONTENT_W, height: 3, background: dark ? C.paper : C.mid, opacity: 0.6 }} />
+      <div style={{ position: "absolute", top: 1512, left: PAD, fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 1.5, color: dark ? C.paper : C.mid, opacity: 0.8 }}>SENTIR L’ACTUALITÉ</div>
     </>
   );
 };
 
+// Sous-titres : Inter 700 52 px, blanc sur vert, 2 lignes max, centrés, apparition par fondu très court
 const Captions: React.FC<{ list: [number, number, string][]; dark: boolean }> = ({ list, dark }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
   const cur = list.find(([s, e]) => t >= s - 0.05 && t <= e + 0.12);
   if (!cur) return null;
-  const pop = interpolate(t - cur[0], [0, 0.12], [0.92, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const op = interpolate(t - cur[0], [-0.05, 0.05], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: PAD, width: CONTENT_W, top: 1400, display: "flex" }}>
-      <div style={{ scale: `${pop}`, transformOrigin: "left center", background: dark ? C.paper : C.ink, color: dark ? C.ink : C.paper, fontFamily: SANS, fontWeight: 800, fontSize: 50, lineHeight: 1.15, padding: "14px 26px", borderRadius: 14 }}>
+    <div style={{ position: "absolute", left: PAD, width: CONTENT_W, bottom: 1920 - 1450, display: "flex", justifyContent: "center", opacity: op }}>
+      <div style={{ background: dark ? C.ink : C.green, color: C.white, fontFamily: SANS, fontWeight: 700, fontSize: 52, lineHeight: 1.16, padding: "14px 22px", borderRadius: 12, textAlign: "center", maxWidth: CONTENT_W }}>
         {cur[2]}
       </div>
     </div>
@@ -51,14 +60,22 @@ const Sons: React.FC<{ episode: EpisodeSpec }> = ({ episode }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const amb = episode.ambiance || "neutre";
   const volumeMusique = amb === "sobre" ? 0.07 : amb === "dynamique" ? 0.11 : 0.09;
-  const effets = amb !== "sobre" && amb !== "aucune";
+  const integres = !!episode.sonsIntegres;
+  const effets = !integres && amb !== "sobre" && amb !== "aucune";
+  const outro = episode.scenes.find((s) => s.type === "outro");
+  const debutOutro = outro ? Math.round(outro.from * fps) : durationInFrames - 4 * fps;
   return (
     <>
-      {amb !== "aucune" && (
+      {/* Signature sonore : courte ponctuation à l'ouverture (avec les trois barres du logo), version complète sur l'écran de fin */}
+      <Audio src={staticFile("sons/signature-courte.mp3")} volume={0.35} />
+      <Sequence from={debutOutro + 2} durationInFrames={Math.max(1, durationInFrames - debutOutro - 2)}>
+        <Audio src={staticFile("sons/signature.mp3")} volume={(f) => 0.6 * interpolate(f, [durationInFrames - debutOutro - 2 - 8, durationInFrames - debutOutro - 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })} />
+      </Sequence>
+      {!integres && amb !== "aucune" && (
         <Audio
           src={staticFile(`sons/musique-${amb}.mp3`)}
           loop
-          volume={(f) => volumeMusique * interpolate(f, [0, fps, durationInFrames - 2 * fps, durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
+          volume={(f) => volumeMusique * interpolate(f, [0, fps, durationInFrames - 2 * fps, durationInFrames], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) * interpolate(f, [debutOutro - 10, debutOutro + 20], [1, 0.4], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })}
         />
       )}
       {effets &&
@@ -100,7 +117,7 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
           </Sequence>
         );
       })}
-      <Chrome dark={dark} />
+      <Chrome dark={dark} outro={cur.type === "outro"} />
       {!NO_CAPTIONS.has(cur.type) && <Captions list={episode.captions} dark={dark} />}
       {withVoice && episode.voice && <Audio src={staticFile(episode.voice)} />}
       {withVoice && <Sons episode={episode} />}

@@ -15,6 +15,15 @@ const PUBLICATION = EDITION === "matin" ? "aujourd'hui vers 7 h 30" : "aujourd'h
 const HISTO = "state/historique.json";
 const histo = fs.existsSync(HISTO) ? JSON.parse(fs.readFileSync(HISTO, "utf8")) : [];
 const SCHEMA = fs.readFileSync("docs/episode-schema.md", "utf8");
+// Édition automatique (cron) : 3 vidéos par jour au maximum, éditions lancées à la main comprises
+if (process.env.CRON) {
+  const jour = new Date().toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" });
+  const faites = histo.filter((h) => new Date(h.date).toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" }) === jour).length;
+  if (faites >= 3) {
+    console.log(`Déjà ${faites} vidéos aujourd'hui : édition automatique ignorée.`);
+    process.exit(0);
+  }
+}
 const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50);
 
 // ---------- 1. Veilleur ----------

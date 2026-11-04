@@ -1,0 +1,42 @@
+name: Re-rendu (charte)
+
+on:
+  push:
+    paths:
+      - ".github/lancer-rerendu.json"   # { "ids": ["…", "…"] }
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Identifiants des épisodes, séparés par des espaces"
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  rerendu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx remotion browser ensure
+      - name: Re-rendu avec la charte actuelle
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
+          IDS_DEMANDES: ${{ github.event.inputs.ids }}
+        run: |
+          if [ -n "$IDS_DEMANDES" ]; then IDS="$IDS_DEMANDES"; else IDS=$(node -p "require('./.github/lancer-rerendu.json').ids.join(' ')"); fi
+          export IDS
+          node pipeline/rerendu.mjs
+      - name: Bilan
+        if: always()
+        run: cat out/rerendu.json || true
