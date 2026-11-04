@@ -4,7 +4,7 @@
 //   node pipeline/terminal.mjs --demo     → démonstration
 import fs from "node:fs";
 
-const URL_ETAT = "https://script.google.com/macros/s/AKfycbw_kNNMFTU7mo957ry6olWuJwdbuEmS-RGPOQ8mz25TTNxdM9AcEb38Q9DYwGDy2pfiLQ/exec";
+const URL_ETAT = "https://script.google.com/macros/s/AKfycby0pxEgRNfRiB09clLAMNDSJUUPMZ4oj5aZ7i3QP7IIYjH5V7lQMlgulkvTkx7tESi-Kg/exec";
 const MODE = process.argv.includes("--demo") ? "demo" : process.argv.includes("--local") ? "local" : "direct";
 const ARRET_AUTO = process.argv.includes("--jusqua-fin"); // utilisé par edition:ecran
 

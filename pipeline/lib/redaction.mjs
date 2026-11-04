@@ -13,7 +13,7 @@ const load = () => {
 };
 
 // Diffusion en direct vers la mini rédaction (via le script Google), au plus toutes les 4 secondes.
-const URL_SCRIPT = process.env.DRIVE_WEBAPP_URL_FORCEE || "https://script.google.com/macros/s/AKfycbw_kNNMFTU7mo957ry6olWuJwdbuEmS-RGPOQ8mz25TTNxdM9AcEb38Q9DYwGDy2pfiLQ/exec";
+const URL_SCRIPT = process.env.DRIVE_WEBAPP_URL_FORCEE || "https://script.google.com/macros/s/AKfycby0pxEgRNfRiB09clLAMNDSJUUPMZ4oj5aZ7i3QP7IIYjH5V7lQMlgulkvTkx7tESi-Kg/exec";
 let enAttente = null;
 let minuterie = null;
 let envoi = Promise.resolve();

@@ -19,7 +19,7 @@ jobs:
           DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
         run: |
           node --input-type=module -e '
-          const URL = "https://script.google.com/macros/s/AKfycbw_kNNMFTU7mo957ry6olWuJwdbuEmS-RGPOQ8mz25TTNxdM9AcEb38Q9DYwGDy2pfiLQ/exec";
+          const URL = "https://script.google.com/macros/s/AKfycby0pxEgRNfRiB09clLAMNDSJUUPMZ4oj5aZ7i3QP7IIYjH5V7lQMlgulkvTkx7tESi-Kg/exec";
           const statut = { edition: "test", agents: { veilleur: "termine", scenariste: "attend", controleur: "attend", diffuseur: "attend" }, messages: [{ agent: "veilleur", texte: "Test de connexion : la rédaction est en ligne.", t: new Date().toISOString() }], episodes: [], maj: new Date().toISOString() };
           const r = await fetch(URL, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ secret: process.env.DRIVE_SECRET.trim(), action: "statut", statut }) });
           console.log("Envoi :", await r.text());

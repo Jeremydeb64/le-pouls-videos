@@ -6,7 +6,7 @@ export const driveActif = () => !!process.env.DRIVE_SECRET;
 // fichiers : [{ nom, url }] (URL publiques de la release GitHub)
 // Accepte l'URL complète ou seulement l'ID de déploiement (AKfy…), avec espaces ou guillemets parasites.
 // URL de l'application Web « Le Pouls Drive » (non secrète : c'est DRIVE_SECRET qui protège l'accès).
-const URL_PAR_DEFAUT = "https://script.google.com/macros/s/AKfycbw_kNNMFTU7mo957ry6olWuJwdbuEmS-RGPOQ8mz25TTNxdM9AcEb38Q9DYwGDy2pfiLQ/exec";
+const URL_PAR_DEFAUT = "https://script.google.com/macros/s/AKfycby0pxEgRNfRiB09clLAMNDSJUUPMZ4oj5aZ7i3QP7IIYjH5V7lQMlgulkvTkx7tESi-Kg/exec";
 const urlScript = () => {
   const v = (process.env.DRIVE_WEBAPP_URL_FORCEE || URL_PAR_DEFAUT).trim().replace(/^["']|["']$/g, "");
   return v.startsWith("http") ? v : `https://script.google.com/macros/s/${v}/exec`;
