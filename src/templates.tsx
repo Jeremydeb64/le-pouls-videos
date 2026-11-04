@@ -461,12 +461,12 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
           {kicker && <Kicker color={C.paper}>{kicker}</Kicker>}
           {title && (
             <Rise delay={8}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 104, lineHeight: 1, color: C.paper, letterSpacing: -2 }}>{title}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 104 : title.length <= 32 ? 80 : 64, lineHeight: 1.02, color: C.paper, letterSpacing: -2, maxHeight: 220, overflow: "hidden" }}>{title}</div>
             </Rise>
           )}
         </Body>
       )}
-      <div style={{ position: "absolute", right: 40, top: 118, maxWidth: 520, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(239,235,227,0.9)" }}>{credit}</div>
+      <div style={{ position: "absolute", right: 170, top: 118, maxWidth: 460, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(239,235,227,0.9)" }}>{credit}</div>
     </Frame>
   );
 };

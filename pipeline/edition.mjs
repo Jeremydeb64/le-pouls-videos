@@ -100,6 +100,9 @@ async function produire(script, dossier) {
     }
   }
   let scenes = caleScenes(script.scenes, sousTitres, duree);
+  // Alternance papier / vert imposée (jamais deux scènes du même thème d'affilée), la fin reste sur papier
+  scenes.forEach((sc, i) => (sc.theme = i % 2 === 0 ? "paper" : "green"));
+  if (scenes.length && scenes[scenes.length - 1].type === "outro") scenes[scenes.length - 1].theme = "paper";
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }
   for (const s of scenes.filter((x) => x.type === "photo")) {
