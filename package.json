@@ -6,7 +6,10 @@
     "studio": "remotion studio src/index.ts",
     "edition": "node pipeline/edition.mjs",
     "publier": "node pipeline/diffuseur.mjs",
-    "test:alignement": "node pipeline/test-alignement.mjs"
+    "test:alignement": "node pipeline/test-alignement.mjs",
+    "redaction": "node pipeline/terminal.mjs",
+    "redaction:demo": "node pipeline/terminal.mjs --demo",
+    "edition:ecran": "node pipeline/edition-ecran.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.540",

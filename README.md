@@ -20,6 +20,13 @@ Lancement manuel : onglet **Actions → Édition Le Pouls → Run workflow**, ou
 ## Mini rédaction
 Page `redaction/index.html`, publiée sur GitHub Pages : https://jeremydeb64.github.io/le-pouls-videos/ (mode démo : ajouter `#demo`). Elle lit l'état en direct via le script Google (`doGet`).
 
+## Mini rédaction dans le terminal
+```bash
+npm run redaction        # suit en direct l'édition qui tourne sur GitHub
+npm run redaction:demo   # démonstration
+npm run edition:ecran    # lance une édition sur cet ordinateur avec la rédaction à l'écran (journal : out/edition.log)
+```
+
 ## Dossiers
 - `agents/` : consignes des 4 agents (règles éditoriales)
 - `src/templates.tsx` : modèles de scènes, charte « Éditorial papier »
