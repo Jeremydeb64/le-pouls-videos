@@ -131,12 +131,16 @@ async function produire(script, dossier) {
 
 // ---------- 4. Contrôleur ----------
 // Phase « texte » : faits, neutralité, droits, sur le script (avant voix et montage, peu coûteux).
-async function controlerTexte(script) {
+async function controlerTexte(script, precedents = null) {
   redaction.agent("controleur", "travaille");
   redaction.dit("controleur", "Je relis le script et je vérifie les faits.");
   const verdict = await demanderJSON({
     systeme: consigne("controleur") + "\n\nPHASE TEXTE : tu n'as pas encore les images. Contrôle uniquement les points 1 (faits), 2 (neutralité et sensibilité), 3 (droits) et la cohérence des scènes avec le texte. Réponds UNIQUEMENT par le bloc ```json``` du verdict.",
-    contenu: `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\nScript complet :\n${JSON.stringify(script)}`,
+    contenu:
+      `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\nScript complet :\n${JSON.stringify(script)}` +
+      (precedents
+        ? `\n\nDEUXIÈME LECTURE. Corrections que tu avais demandées :\n${JSON.stringify(precedents)}\nVérifie seulement qu'elles ont été faites. Ne soulève un nouveau point que s'il est BLOQUANT (fait faux, absence de neutralité manifeste, problème de droits). Sinon, réponds OK en listant les remarques restantes comme « mineur ».`
+        : ""),
     recherche: true,
   });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
@@ -187,9 +191,13 @@ for (const sujet of sujets) {
   let verdictTexte = await controlerTexte(script);
   for (let tour = 0; tour < 2 && verdictTexte.decision === "A_CORRIGER"; tour++) {
     script = await ecrire(sujet, { version_precedente: script, problemes: verdictTexte.problemes });
-    verdictTexte = await controlerTexte(script);
+    verdictTexte = await controlerTexte(script, verdictTexte.problemes);
   }
-  if (verdictTexte.decision !== "OK") {
+  const bloquant = verdictTexte.decision === "BLOQUE" || (verdictTexte.problemes || []).some((p) => p.gravite === "bloquant");
+  if (verdictTexte.decision === "A_CORRIGER" && !bloquant) {
+    redaction.dit("controleur", "Il reste des remarques mineures, je les note pour Jérémy. On passe au montage.");
+  }
+  if (bloquant) {
     redaction.dit("controleur", "Je bloque ce sujet, il ne part pas au montage.");
     redaction.episode({ id: `${new Date().toISOString().slice(0, 10)}-${EDITION}-${slug(sujet.titre_travail)}`, titre: sujet.titre_travail, etat: "bloque", problemes: verdictTexte.problemes });
     continue;
