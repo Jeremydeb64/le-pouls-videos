@@ -31,7 +31,7 @@ for (const id of ids) {
   } else {
     const ancien = path.join(w, fichiers.find((f) => f.endsWith(".mp4")));
     const piste = `rerendu-${id}.mp3`;
-    sh("ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", ancien, "-vn", "-ar", "44100", "-b:a", "192k", path.join("public", piste));
+    sh("npx", "remotion", "ffmpeg", "-nostdin", "-y", "-loglevel", "error", "-i", ancien, "-vn", "-ar", "44100", "-b:a", "192k", path.join("public", piste));
     ep.voice = piste;
     ep.sonsIntegres = true;
     // Photos : on refait la même recherche sur Wikimedia Commons (licence libre, crédit affiché)
