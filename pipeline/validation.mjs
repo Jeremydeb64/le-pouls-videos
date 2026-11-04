@@ -48,20 +48,23 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   fs.mkdirSync(path.join("publications", v.id), { recursive: true });
   fs.writeFileSync(path.join("publications", v.id, "publication.txt"), texte);
 
+  const tag = `video-${v.id}`;
+  gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
+  const assets = JSON.parse(gh("release", "view", tag, "--json", "assets"));
+  const lien = (ext) => (assets.assets.find((a) => a.name.endsWith(ext)) || {}).url;
+
   let lienDrive = null;
   if (driveActif()) {
     try {
-      lienDrive = await deposerSurDrive(dossier);
+      lienDrive = await deposerSurDrive(nom, [
+        { nom: `${nom}.mp4`, url: lien(".mp4") },
+        { nom: "publication.txt", url: lien(".txt") },
+      ]);
       console.log("Déposé sur Drive :", lienDrive);
     } catch (e) {
       console.warn("Drive :", e.message);
     }
   }
-
-  const tag = `video-${v.id}`;
-  gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
-  const assets = JSON.parse(gh("release", "view", tag, "--json", "assets"));
-  const lien = (ext) => (assets.assets.find((a) => a.name.endsWith(ext)) || {}).url;
   const problemes = (v.problemes || []).map((p) => `- **${p.gravite}** (scène ${p.scene}) : ${p.constat}`).join("\n") || "Aucune.";
   const body = `<!-- episode:${v.id} -->
 **Édition du ${v.edition}**, à publier ${creneau(v.edition)}. Décision du Contrôleur : **${v.decision}**

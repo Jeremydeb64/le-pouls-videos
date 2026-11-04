@@ -15,7 +15,7 @@ Lancement manuel : onglet **Actions → Édition Le Pouls → Run workflow**, ou
 |---|---|---|
 | `ANTHROPIC_API_KEY` | oui | agents (Claude) |
 | `KEYS_ELEVEN_POULS` | oui | voix + minutage |
-| `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`, `GOOGLE_REFRESH_TOKEN` | optionnel | dépôt des dossiers de publication dans Drive (CLAUDE / Le Pouls – publications) |
+| `DRIVE_WEBAPP_URL`, `DRIVE_SECRET` | optionnel | dépôt des dossiers dans Drive via `outils/apps-script-drive.gs` |
 
 ## Dossiers
 - `agents/` : consignes des 4 agents (règles éditoriales)

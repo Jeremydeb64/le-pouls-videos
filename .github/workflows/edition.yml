@@ -57,9 +57,8 @@ jobs:
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
-          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
-          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          DRIVE_WEBAPP_URL: ${{ secrets.DRIVE_WEBAPP_URL }}
+          DRIVE_SECRET: ${{ secrets.DRIVE_SECRET }}
         run: node pipeline/validation.mjs
       - name: Archive (état de la rédaction et épisodes)
         if: always()
