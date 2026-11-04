@@ -87,7 +87,62 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-04T10:05:05.834Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-04T10:27:47.792Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "35 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T10:27:53.997Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Salaire minimum valaisan : votation du 29 novembre ». Votation cantonale le 29 novembre, 22 fr/h (18 fr/h pour l'agriculture), 15'000 salariés concernés selon le comité du oui : chiffres et comparaison idéals pour une explication neutre.",
+   "t": "2026-11-04T10:28:07.807Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Fiscalité des couples : votation fédérale du 29 novembre ». Objet fédéral du même scrutin : la fenêtre de 6 semaines impose une vidéo neutre. Le texte source est un extrait, à compléter avec le communiqué officiel avant production.",
+   "t": "2026-11-04T10:28:07.808Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T10:28:07.809Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:29:55.497Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Salaire minimum valaisan : votation du 29 novembre » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"d76e27ccd03022db1fc14cb00b46277a\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
+   "t": "2026-11-04T10:29:55.679Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-04T10:29:55.680Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:32:08.304Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Fiscalité des couples : votation fédérale du 29 novembre » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"14c8647fd23fe556a555925f0eb02515\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
+   "t": "2026-11-04T10:32:08.565Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-04T10:32:08.566Z"
   }
  ],
- "maj": "2026-11-04T10:05:05.834Z"
+ "maj": "2026-11-04T10:32:08.566Z"
 }
