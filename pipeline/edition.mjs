@@ -119,15 +119,28 @@ async function produire(script, dossier) {
 }
 
 // ---------- 4. Contrôleur ----------
-async function controler(episode, script, dossier) {
+// Phase « texte » : faits, neutralité, droits, sur le script (avant voix et montage, peu coûteux).
+async function controlerTexte(script) {
   redaction.agent("controleur", "travaille");
-  redaction.dit("controleur", "Je relis les faits et je regarde les images clés.");
+  redaction.dit("controleur", "Je relis le script et je vérifie les faits.");
+  const verdict = await demanderJSON({
+    systeme: consigne("controleur") + "\n\nPHASE TEXTE : tu n'as pas encore les images. Contrôle uniquement les points 1 (faits), 2 (neutralité et sensibilité), 3 (droits) et la cohérence des scènes avec le texte. Réponds UNIQUEMENT par le bloc ```json``` du verdict.",
+    contenu: `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\nScript complet :\n${JSON.stringify(script)}`,
+    recherche: true,
+  });
+  redaction.dit("controleur", verdict.message_redaction || verdict.decision);
+  return verdict;
+}
+
+// Phase « visuel » : charte, lisibilité, zones TikTok, sur les images clés de la vidéo montée.
+async function controlerVisuel(episode, dossier) {
+  redaction.dit("controleur", "Je regarde les images clés de la vidéo.");
   const images = await imagesCles(episode, path.join(dossier, "cles"));
   const contenu = [
-    { type: "text", text: `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\nÉpisode :\n${JSON.stringify(episode)}\n\nTexte de la voix :\n${script.voix}\n\nFaits et sources :\n${JSON.stringify(script.faits)}` },
+    { type: "text", text: `PHASE VISUEL. Les faits ont déjà été validés. Contrôle uniquement la charte (point 4) et le son (point 5, d'après les sous-titres et la durée).\nÉpisode :\n${JSON.stringify({ duration: episode.duration, scenes: episode.scenes, captions: episode.captions.length })}` },
     ...images.map((f) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: fs.readFileSync(f).toString("base64") } })),
   ];
-  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict, sans texte autour.", contenu, recherche: true });
+  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict.", contenu, modele: MODELE_LEGER });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
   redaction.agent("controleur", verdict.decision === "BLOQUE" ? "bloque" : "termine");
   return verdict;
@@ -159,13 +172,22 @@ for (const sujet of sujets) {
   const dossier = path.resolve("out", slug(sujet.titre_travail));
   fs.mkdirSync(dossier, { recursive: true });
   let script = await ecrire(sujet);
-  let resultat, verdict;
-  for (let tour = 0; tour < 3; tour++) {
-    resultat = await produire(script, dossier);
-    verdict = await controler(resultat.episode, script, dossier);
-    if (verdict.decision !== "A_CORRIGER" || tour === 2) break;
-    script = await ecrire(sujet, { version_precedente: script, problemes: verdict.problemes });
+  let verdictTexte = await controlerTexte(script);
+  for (let tour = 0; tour < 2 && verdictTexte.decision === "A_CORRIGER"; tour++) {
+    script = await ecrire(sujet, { version_precedente: script, problemes: verdictTexte.problemes });
+    verdictTexte = await controlerTexte(script);
   }
+  if (verdictTexte.decision !== "OK") {
+    redaction.dit("controleur", "Je bloque ce sujet, il ne part pas au montage.");
+    redaction.episode({ id: `${new Date().toISOString().slice(0, 10)}-${EDITION}-${slug(sujet.titre_travail)}`, titre: sujet.titre_travail, etat: "bloque", problemes: verdictTexte.problemes });
+    continue;
+  }
+  const resultat = await produire(script, dossier);
+  const verdictVisuel = await controlerVisuel(resultat.episode, dossier);
+  const verdict = {
+    decision: verdictVisuel.decision === "BLOQUE" ? "BLOQUE" : "OK",
+    problemes: [...(verdictTexte.problemes || []), ...(verdictVisuel.problemes || [])],
+  };
   const info = {
     id: resultat.episode.id,
     titre: script.titre,

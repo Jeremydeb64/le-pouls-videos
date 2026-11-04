@@ -3,6 +3,7 @@ import { bundle } from "@remotion/bundler";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import path from "node:path";
 import fs from "node:fs";
+import os from "node:os";
 
 
 const browserExecutable = process.env.CHROME_PATH || null; // sur GitHub, Remotion télécharge son navigateur
@@ -17,7 +18,7 @@ export async function rendre(episode, sortie) {
   const url = await prepare(episode.id);
   const inputProps = { episode, withVoice: true };
   const composition = await selectComposition({ serveUrl: url, id: "Episode", inputProps, browserExecutable });
-  await renderMedia({ composition, serveUrl: url, codec: "h264", outputLocation: sortie, inputProps, crf: 20, browserExecutable });
+  await renderMedia({ composition, serveUrl: url, codec: "h264", outputLocation: sortie, inputProps, crf: 20, browserExecutable, concurrency: os.cpus().length });
   return sortie;
 }
 
