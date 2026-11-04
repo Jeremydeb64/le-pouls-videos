@@ -1,0 +1,37 @@
+name: Budget API
+
+on:
+  schedule:
+    - cron: "30 20 * * *"   # relevé quotidien des soldes (21 h 30 en hiver)
+  push:
+    paths:
+      - ".github/lancer-budget.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  budget:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Relevé des soldes
+        env:
+          ELEVENLABS_API_KEY: ${{ secrets.KEYS_ELEVEN_POULS || vars.KEYS_ELEVEN_POULS || secrets.ELEVENLABS_API_KEY }}
+          ANTHROPIC_ADMIN_KEY: ${{ secrets.ANTHROPIC_ADMIN_KEY }}
+        run: node pipeline/budget.mjs
+      - name: Archive
+        run: |
+          git config user.name "Le Pouls"
+          git config user.email "actions@users.noreply.github.com"
+          git add state/couts.json
+          git commit -m "Budget : relevé des soldes" || echo "Rien à archiver"
+          for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 15; done

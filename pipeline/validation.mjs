@@ -76,7 +76,7 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   }
   const problemes = (v.problemes || []).map((p) => `- **${p.gravite}** (scène ${p.scene}) : ${p.constat}`).join("\n") || "Aucune.";
   const body = `<!-- episode:${v.id} -->
-**Édition du ${v.edition}**, à publier ${creneau(v.edition)}. Décision du Contrôleur : **${v.decision}**
+**Édition du ${v.edition}**, à publier ${creneau(v.edition)}. Décision du Contrôleur : **${v.decision}**${v.cout_usd != null ? `\n💰 Coût de production estimé : ${v.cout_usd.toFixed(2)} $ (≈ ${(v.cout_usd * 0.8).toFixed(2)} CHF)` : ""}
 
 ▶️ [Voir la vidéo](${lien(".mp4")})
 📦 [Télécharger le dossier de publication (vidéo + texte)](${lien(".zip")})

@@ -1,5 +1,6 @@
 // Appel à l'API Claude (Anthropic) sans dépendance externe.
 import fs from "node:fs";
+import { noterClaude } from "./couts.mjs";
 
 const API = "https://api.anthropic.com/v1/messages";
 export const MODELE_REDACTION = process.env.CLAUDE_MODEL || "claude-sonnet-5-5";
@@ -49,6 +50,7 @@ async function appel(key, body) {
     }
     const d = await r.json();
     if (!r.ok) throw new Error(`Claude ${r.status} : ${JSON.stringify(d).slice(0, 400)}`);
+    noterClaude(body.model, d.usage);
     return d;
   }
   throw new Error("Claude indisponible après 4 essais.");

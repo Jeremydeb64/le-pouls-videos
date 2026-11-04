@@ -1,0 +1,21 @@
+{
+  "_note": "Tarifs publics en USD, à mettre à jour si les prix changent. Vérifiés le 4 novembre 2026 (platform.claude.com/docs/en/about-claude/pricing, elevenlabs.io/pricing/api).",
+  "usd_chf": 0.80,
+  "anthropic": {
+    "claude-sonnet-5-5": { "entree": 2.0, "sortie": 10.0, "cache_lecture": 0.10, "cache_ecriture": 2.5 },
+    "claude-haiku-5-5": { "entree": 0.10, "sortie": 0.50, "cache_lecture": 0.01, "cache_ecriture": 0.125 },
+    "claude-opus-5-5": { "entree": 4.0, "sortie": 20.0, "cache_lecture": 0.40, "cache_ecriture": 5.0 },
+    "recherche_web_par_1000": 10.0,
+    "_unite": "USD par million de tokens"
+  },
+  "elevenlabs": {
+    "tts_par_1000_caracteres": 0.08,
+    "stt_par_heure": 0.22,
+    "_note": "Avec un abonnement, la voix consomme des crédits (1 crédit par caractère) : le solde de crédits affiché est la référence, le montant en USD est l'équivalent au tarif API."
+  },
+  "budget": {
+    "anthropic_credit_achete_usd": null,
+    "anthropic_credit_depuis": null,
+    "_note": "Facultatif : montant de crédit Anthropic acheté et date (AAAA-MM-JJ) pour estimer le solde restant. Sinon, ajouter le secret ANTHROPIC_ADMIN_KEY pour lire les coûts réels du mois."
+  }
+}

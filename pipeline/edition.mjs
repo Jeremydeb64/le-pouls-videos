@@ -7,6 +7,7 @@ import { lire, rss, texteArticle, photoLibre } from "./lib/web.mjs";
 import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes } from "./lib/voix.mjs";
 import { rendre, imagesCles } from "./lib/rendu.mjs";
 import { redaction } from "./lib/redaction.mjs";
+import { definirContexte, enregistrer, coutDe } from "./lib/couts.mjs";
 
 const EDITION = process.env.EDITION || (new Date().getUTCHours() < 11 ? "matin" : "soir");
 const MAX_SUJETS = +(process.env.MAX_SUJETS || 1);
@@ -197,6 +198,8 @@ const sujets = await veille();
 const prets = [];
 for (const sujet of sujets) {
  try {
+  const ctx = `${new Date().toISOString().slice(0, 10)}-${EDITION}-${slug(sujet.titre_travail)}`;
+  definirContexte(ctx);
   const dossier = path.resolve("out", slug(sujet.titre_travail));
   fs.mkdirSync(dossier, { recursive: true });
   let script = await ecrire(sujet);
@@ -230,6 +233,7 @@ for (const sujet of sujets) {
     sources: script.sources,
     mp4: path.relative(process.cwd(), resultat.mp4),
     etat: verdict.decision === "OK" ? "a_valider" : "bloque",
+    cout_usd: coutDe(ctx),
   };
   redaction.episode(info);
   histo.push({ titre: sujet.titre_travail, date: new Date().toISOString(), id: info.id });
@@ -239,6 +243,8 @@ for (const sujet of sujets) {
  }
 }
 fs.writeFileSync(HISTO, JSON.stringify(histo.slice(-200), null, 1));
+const { execution } = await enregistrer(`édition ${EDITION} ${new Date().toISOString().slice(0, 10)}`);
+redaction.dit("systeme", `Coût de cette édition : ${execution.usd.toFixed(2)} $ (Claude + ElevenLabs).`);
 fs.writeFileSync("out/edition.json", JSON.stringify(prets, null, 1));
 redaction.agent("diffuseur", "attend");
 redaction.dit("diffuseur", prets.some((p) => p.etat === "a_valider") ? "Vidéo prête, j'attends le feu vert de Jérémy." : "Rien à publier pour cette édition.");

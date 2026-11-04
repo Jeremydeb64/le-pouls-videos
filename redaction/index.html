@@ -66,6 +66,17 @@ h2{font-family:Fraunces,serif;font-weight:900;font-size:24px;margin:0 0 12px}
 @keyframes zz{0%{transform:translateY(0);opacity:0}30%{opacity:1}100%{transform:translateY(-16px);opacity:0}}
 .loupe,.page{transform-box:fill-box;transform-origin:center}
 @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+.budget{margin-top:22px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.kpi{border:2.5px solid var(--ink);border-radius:14px;padding:12px 14px;background:var(--white)}
+.kpi .v{font-size:26px;font-weight:800;color:var(--green);line-height:1.1}
+.kpi .l{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-top:4px}
+.kpi .n{font-size:12px;color:var(--muted);margin-top:4px}
+.jauge{height:8px;border-radius:4px;background:var(--line);margin-top:8px;overflow:hidden}.jauge i{display:block;height:100%;background:var(--green)}
+table.couts{width:100%;border-collapse:collapse;margin-top:14px;font-size:14px}
+table.couts td,table.couts th{padding:6px 4px;border-bottom:2px solid var(--line);text-align:right}
+table.couts td:first-child,table.couts th:first-child{text-align:left}
+table.couts th{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -200,6 +211,10 @@ h2{font-family:Fraunces,serif;font-weight:900;font-size:24px;margin:0 0 12px}
       <div id="videos"><p class="vide">Aucune vidéo pour l'instant.</p></div>
     </section>
   </div>
+  <section class="budget">
+    <h2>Budget des API</h2>
+    <div id="budget"><p class="vide">Chargement…</p></div>
+  </section>
 </main>
 
 <script>
@@ -299,6 +314,42 @@ async function rafraichir() {
     demarrerDemo();
   }
 }
+
+// Budget : journal des coûts archivé par chaque édition (state/couts.json du dépôt public)
+const URL_COUTS = "https://raw.githubusercontent.com/Jeremydeb64/le-pouls-videos/main/state/couts.json";
+async function budget() {
+  const el = document.getElementById("budget");
+  try {
+    const r = await fetch(URL_COUTS + "?t=" + Date.now(), { cache: "no-store" });
+    if (!r.ok) throw new Error(r.status);
+    const j = await r.json();
+    const k = j.usd_chf || 0.8;
+    const f = (u) => `${(u || 0).toFixed(2)} $`;
+    const c = (u) => `≈ ${((u || 0) * k).toFixed(2)} CHF`;
+    const jour = new Date().toLocaleDateString("sv-SE", { timeZone: "Europe/Zurich" });
+    const auj = (j.par_jour || {})[jour] || {}, mois = (j.par_mois || {})[jour.slice(0, 7)] || {};
+    const vids = Object.values(j.par_video || {});
+    const moy = vids.length ? vids.reduce((a, b) => a + b, 0) / vids.length : 0;
+    const e = (j.soldes || {}).elevenlabs || {}, a = (j.soldes || {}).anthropic || {};
+    const pct = e.credits_mois ? Math.max(0, Math.min(100, (e.credits_restants / e.credits_mois) * 100)) : 0;
+    const kpi = (v, l, n, extra = "") => `<div class="kpi"><div class="v">${v}</div><div class="l">${l}</div>${n ? `<div class="n">${n}</div>` : ""}${extra}</div>`;
+    const jours = Object.entries(j.par_jour || {}).sort().reverse().slice(0, 10);
+    el.innerHTML = `<div class="kpis">
+      ${kpi(f(auj.total), "Aujourd'hui", c(auj.total))}
+      ${kpi(f(mois.total), "Ce mois", `${c(mois.total)} · Claude ${f(mois.anthropic)} · ElevenLabs ${f(mois.elevenlabs)}`)}
+      ${kpi(f(moy), "Par vidéo (moyenne)", `${vids.length} vidéo(s) suivie(s)`)}
+      ${kpi(e.credits_restants != null ? e.credits_restants.toLocaleString("fr-CH") : "?", "Crédits ElevenLabs restants", e.credits_restants != null ? `sur ${e.credits_mois.toLocaleString("fr-CH")} · plan ${esc(e.plan)}${e.renouvellement ? ` · renouvelés le ${new Date(e.renouvellement).toLocaleDateString("fr-CH")}` : ""}` : esc(e.erreur || "non relevé"), e.credits_mois ? `<div class="jauge"><i style="width:${pct}%"></i></div>` : "")}
+      ${kpi(a.credit_estime_restant_usd != null ? f(a.credit_estime_restant_usd) : a.mois_en_cours_usd != null ? f(a.mois_en_cours_usd) : "—", a.credit_estime_restant_usd != null ? "Crédit Claude restant (estimé)" : a.mois_en_cours_usd != null ? "Claude ce mois (facture réelle)" : "Solde Claude", a.erreur ? esc(a.erreur) : a.credit_estime_restant_usd == null && a.mois_en_cours_usd == null ? "Voir console.anthropic.com → Billing" : "")}
+    </div>
+    <table class="couts"><tr><th>Jour</th><th>Claude</th><th>ElevenLabs</th><th>Total</th></tr>
+    ${jours.map(([d, v]) => `<tr><td>${new Date(d).toLocaleDateString("fr-CH", { weekday: "short", day: "numeric", month: "short" })}</td><td>${f(v.anthropic)}</td><td>${f(v.elevenlabs)}</td><td><b>${f(v.total)}</b> <span style="color:var(--muted)">${c(v.total)}</span></td></tr>`).join("") || `<tr><td colspan="4">Aucune dépense notée pour l'instant.</td></tr>`}
+    </table>
+    <p class="vide" style="margin-top:8px">Coûts estimés au tarif public des API (relevé ${j.maj ? new Date(j.maj).toLocaleString("fr-CH") : "?"}). GitHub, Google Drive et Wikimedia sont gratuits.</p>`;
+  } catch (e) {
+    el.innerHTML = `<p class="vide">Pas encore de relevé des coûts.</p>`;
+  }
+}
+budget(); setInterval(budget, 60000);
 
 function horloge() {
   const d = new Date();

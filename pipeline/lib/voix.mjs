@@ -1,5 +1,6 @@
 // Voix ElevenLabs + minutage mot par mot (transcription Scribe) + calage des sous-titres et des scènes.
 import fs from "node:fs";
+import { noterVoix, noterTranscription } from "./couts.mjs";
 
 const EL = "https://api.elevenlabs.io/v1";
 export const VOIX = {
@@ -21,6 +22,7 @@ export async function genererVoix(texte, presentateur, fichier) {
     body: JSON.stringify({ text: texte, model_id: MODELE_TTS, language_code: "fr" }),
   });
   if (!r.ok) throw new Error(`ElevenLabs TTS ${r.status} : ${(await r.text()).slice(0, 300)}`);
+  noterVoix("voix", r, texte.length);
   fs.writeFileSync(fichier, Buffer.from(await r.arrayBuffer()));
 }
 
@@ -32,6 +34,7 @@ export async function genererDialogue(repliques, fichier) {
     body: JSON.stringify({ model_id: "eleven_v3", inputs: repliques.map((x) => ({ text: x.texte, voice_id: VOIX[x.qui] || VOIX.lucie })) }),
   });
   if (!r.ok) throw new Error(`ElevenLabs dialogue ${r.status} : ${(await r.text()).slice(0, 300)}`);
+  noterVoix("dialogue", r, repliques.reduce((n, x) => n + x.texte.length, 0));
   fs.writeFileSync(fichier, Buffer.from(await r.arrayBuffer()));
 }
 
@@ -44,6 +47,7 @@ export async function transcrire(fichier) {
   const r = await fetch(`${EL}/speech-to-text`, { method: "POST", headers: { "xi-api-key": cle() }, body: form });
   if (!r.ok) throw new Error(`ElevenLabs STT ${r.status} : ${(await r.text()).slice(0, 300)}`);
   const d = await r.json();
+  noterTranscription(Math.max(0, ...(d.words || []).map((w) => w.end || 0)));
   return d.words.filter((w) => w.type === "word");
 }
 
