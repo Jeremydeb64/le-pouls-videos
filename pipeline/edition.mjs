@@ -54,10 +54,15 @@ async function ecrire(sujet, retours = null) {
   redaction.agent("scenariste", "travaille");
   redaction.dit("scenariste", retours ? "Je reprends le script avec les corrections du contrôle." : `Je lis l'article du ${sujet.source_principale.media}.`);
   let texte = "";
-  try {
-    texte = texteArticle(await lire(sujet.source_principale.url));
-  } catch (e) {
-    redaction.dit("scenariste", "Article illisible, je travaille avec les autres sources.");
+  const url = sujet.source_principale?.url || "";
+  if (url.includes("news.google.com")) {
+    texte = "(Lien Google Actualités : retrouve l'article original avec la recherche web, à partir de son titre et du média, puis lis-le.)";
+  } else {
+    try {
+      texte = texteArticle(await lire(url));
+    } catch (e) {
+      redaction.dit("scenariste", "Article illisible, je cherche d'autres sources.");
+    }
   }
   return demanderJSON({
     systeme: consigne("scenariste") + "\n\n---\n\n" + SCHEMA,
