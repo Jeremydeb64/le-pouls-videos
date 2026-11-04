@@ -32,17 +32,20 @@ jobs:
           echo "VIDEO=$(ls out/*.mp4 | head -1)" >> $GITHUB_ENV
           echo "$BODY" | awk '/<!-- description -->/{f=1;next}/<!-- \/description -->/{f=0}f' > out/description.txt
           echo "DESCRIPTION_FILE=out/description.txt" >> $GITHUB_ENV
-      - name: Diffuseur
+      - name: Diffuseur (brouillon dans l'appli TikTok)
         env:
-          POSTIZ_API_KEY: ${{ secrets.POSTIZ_API_KEY }}
-          POSTIZ_TIKTOK_ID: ${{ secrets.POSTIZ_TIKTOK_ID }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          TIKTOK_REFRESH_TOKEN: ${{ secrets.TIKTOK_REFRESH_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: node pipeline/diffuseur.mjs
       - name: Clore l'issue
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue edit ${{ github.event.issue.number }} --remove-label a-valider --add-label publie
-          gh issue comment ${{ github.event.issue.number }} --body "Archivée comme publiée sur TikTok."
+          gh label create envoye-tiktok --color D3A657 --force || true
+          gh issue edit ${{ github.event.issue.number }} --remove-label a-valider --add-label envoye-tiktok
+          gh issue comment ${{ github.event.issue.number }} --body-file out/diffusion.txt
           gh issue close ${{ github.event.issue.number }}
       - name: Archive
         run: |

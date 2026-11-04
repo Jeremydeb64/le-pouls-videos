@@ -1,0 +1,10 @@
+body{margin:0;background:#F5F2EA;color:#111A19;font:17px/1.6 Inter,system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:48px 24px}
+h1{color:#1A3A35;font-size:34px;line-height:1.1;margin:0 0 8px}
+h2{color:#1A3A35;font-size:21px;margin-top:32px}
+.date{color:#647772;font-size:14px}
+a{color:#3F6B62}
+.marque{display:flex;align-items:center;gap:12px;margin-bottom:32px;font-weight:900;color:#1A3A35;letter-spacing:-.02em;font-size:22px}
+.marque img{width:48px;height:48px;border-radius:24px}
+code,.code{font-family:ui-monospace,Menlo,monospace;background:#fff;border:2px solid #1A3A35;border-radius:10px;padding:14px;display:block;word-break:break-all;font-size:15px}
+button{background:#D3A657;color:#111A19;border:0;border-radius:10px;padding:12px 20px;font-weight:800;font-size:16px;cursor:pointer;margin-top:12px}

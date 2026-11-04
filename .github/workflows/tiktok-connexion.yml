@@ -1,0 +1,24 @@
+name: Connexion TikTok
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Code affiché sur la page de retour (valable quelques minutes)"
+        required: true
+
+jobs:
+  connexion:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Échange du code et enregistrement du jeton
+        env:
+          CODE: ${{ github.event.inputs.code }}
+          TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+          TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: node pipeline/tiktok-connexion.mjs

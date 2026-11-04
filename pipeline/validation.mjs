@@ -91,7 +91,7 @@ ${v.description_tiktok || ""}
 <!-- /description -->
 
 ---
-${v.etat === "a_valider" ? "Publie la vidéo sur TikTok (étiquette IA activée), puis commente **OK** ici pour l'archiver." : "⛔ Bloquée par le Contrôleur : à revoir avant toute publication."}`;
+${v.etat === "a_valider" ? "Si la vidéo te convient, commente **OK** ici : elle arrive en brouillon dans ton appli TikTok (étiquette IA à activer, texte ci-dessus à coller), puis tu publies." : "⛔ Bloquée par le Contrôleur : à revoir avant toute publication."}`;
   fs.writeFileSync("out/issue.md", body);
   const lienIssue = gh("issue", "create", "--title", `🎬 ${v.titre || v.id}`, "--body-file", "out/issue.md", "--label", v.etat === "a_valider" ? "a-valider" : "bloque", "--assignee", process.env.GITHUB_REPOSITORY_OWNER || "@me");
   redaction.episode({ id: v.id, titre: v.titre, etat: v.etat, lien_video: lien(".mp4"), lien_drive: lienDrive, lien_issue: lienIssue });
