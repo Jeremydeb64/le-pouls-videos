@@ -2,6 +2,7 @@
 // Chaque scène reçoit ses props depuis le fichier d'épisode JSON. Les temps « at » sont en secondes depuis le début de la scène.
 import React from "react";
 import { AbsoluteFill, Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig, Easing } from "remotion";
+import VALAIS from "./geo/valais.json";
 
 export const C = {
   paper: "#EFEBE3",
@@ -557,6 +558,169 @@ export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points
   );
 };
 
+
+// ---------- Carte du Valais (communes réelles, géodonnées swisstopo via swiss-maps) ----------
+const normNom = (x: string) => x.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z]/g, "");
+const COMMUNES = VALAIS.communes as Record<string, { x: number; y: number; d: string }>;
+export const trouverCommune = (nom: string) => {
+  const n = normNom(nom);
+  const cles = Object.keys(COMMUNES);
+  const k = cles.find((c) => normNom(c) === n) || cles.find((c) => normNom(c).startsWith(n) || n.startsWith(normNom(c))) || cles.find((c) => normNom(c).includes(n));
+  return k ? { nom: k, ...COMMUNES[k] } : null;
+};
+const REPERES = ["Monthey", "Martigny", "Sion", "Sierre", "Visp", "Brig-Glis"];
+
+export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: string; zoom?: number; at?: number }>> = ({ theme, kicker, communes, titre, zoom = 1.8, at: a1 = 0.6 }) => {
+  const t = th(theme);
+  const frame = useCurrentFrame();
+  const at = useAt();
+  const cibles = communes.map(trouverCommune).filter(Boolean) as { nom: string; x: number; y: number; d: string }[];
+  const cx = cibles.length ? cibles.reduce((s, c) => s + c.x, 0) / cibles.length : VALAIS.w / 2;
+  const cy = cibles.length ? cibles.reduce((s, c) => s + c.y, 0) / cibles.length : VALAIS.h / 2;
+  const z = cibles.length ? zoom : 1;
+  const p = interpolate(frame, [at(a1), at(a1) + 30], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const echelle = 1 + (z - 1) * p;
+  const W = CONTENT_W;
+  const H = Math.round((VALAIS.h / VALAIS.w) * W);
+  // Zoom progressif centré sur la (les) commune(s)
+  const centreX = VALAIS.w / 2 + (cx - VALAIS.w / 2) * p;
+  const centreY = VALAIS.h / 2 + (cy - VALAIS.h / 2) * p;
+  const fondCanton = theme === "green" ? C.greenDark : "#E4DED2";
+  const surbrillance = theme === "green" ? C.paper : C.green;
+  const pulse = 1 + 0.15 * Math.sin(frame / 6);
+  return (
+    <Frame theme={theme}>
+      <Body top={380}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        <div style={{ width: W, height: H, overflow: "hidden", borderRadius: 18, marginBottom: 40 }}>
+          <svg width={W} height={H} viewBox={`0 0 ${VALAIS.w} ${VALAIS.h}`}>
+            <g transform={`translate(${VALAIS.w / 2} ${VALAIS.h / 2}) scale(${echelle}) translate(${-centreX} ${-centreY})`}>
+              <path d={VALAIS.canton} fill={fondCanton} stroke={t.fg} strokeWidth={3 / echelle} />
+              {VALAIS.lacs.map((d: string, i: number) => <path key={i} d={d} fill="#B9D3DE" />)}
+              {Object.values(COMMUNES).map((c, i) => <path key={i} d={c.d} fill="none" stroke={t.fg} strokeOpacity={0.12} strokeWidth={1 / echelle} />)}
+              {cibles.map((c, i) => (
+                <path key={c.nom} d={c.d} fill={surbrillance} opacity={interpolate(frame, [at(a1) + 10 + i * 6, at(a1) + 24 + i * 6], [0, 1], clamp)} />
+              ))}
+              {REPERES.filter((r) => !cibles.some((c) => c.nom === r)).map((r) => {
+                const c = COMMUNES[r];
+                return c ? (
+                  <g key={r} opacity={0.55}>
+                    <circle cx={c.x} cy={c.y} r={4 / echelle} fill={t.fg} />
+                    <text x={c.x + 8 / echelle} y={c.y + 5 / echelle} fontFamily={SANS} fontWeight={500} fontSize={18 / echelle} fill={t.fg}>{r === "Brig-Glis" ? "Brigue" : r === "Visp" ? "Viège" : r}</text>
+                  </g>
+                ) : null;
+              })}
+              {cibles.map((c) => (
+                <g key={"p" + c.nom} opacity={p}>
+                  <circle cx={c.x} cy={c.y} r={(9 * pulse) / echelle} fill={C.ink} stroke={C.paper} strokeWidth={3 / echelle} />
+                </g>
+              ))}
+            </g>
+          </svg>
+        </div>
+        <Rise delay={at(a1) + 24}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, lineHeight: 1, color: t.fg, letterSpacing: -2 }}>{cibles.map((c) => c.nom).join(", ") || communes.join(", ")}</div>
+          {titre && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 42, lineHeight: 1.2, color: t.fg, marginTop: 14 }}>{titre}</div>}
+        </Rise>
+      </Body>
+    </Frame>
+  );
+};
+
+// ---------- Frise chronologique ----------
+export const Frise: React.FC<P<{ kicker: string; items: { date: string; label: string; at: number }[] }>> = ({ theme, kicker, items }) => {
+  const t = th(theme);
+  const frame = useCurrentFrame();
+  const at = useAt();
+  const dernier = items.length ? at(items[items.length - 1].at) + 10 : 10;
+  const ligne = interpolate(frame, [at(items[0]?.at || 0), dernier], [0, 1], clamp);
+  return (
+    <Frame theme={theme}>
+      <Body top={400}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        <div style={{ position: "relative", paddingLeft: 70 }}>
+          <div style={{ position: "absolute", left: 22, top: 20, width: 8, height: `calc(${ligne * 100}% - 40px)`, background: t.accent, borderRadius: 4 }} />
+          {items.map((it, i) => {
+            const p = spring({ frame: frame - at(it.at), fps: 30, config: { damping: 16 } });
+            return (
+              <div key={i} style={{ position: "relative", marginBottom: 64, opacity: p, translate: `${interpolate(p, [0, 1], [40, 0])}px 0` }}>
+                <div style={{ position: "absolute", left: -66, top: 14, width: 44, height: 44, borderRadius: 22, background: t.bg, border: `8px solid ${t.accent}` }} />
+                <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 40, letterSpacing: 2, textTransform: "uppercase", color: t.sub }}>{it.date}</div>
+                <div style={{ fontFamily: SERIF, fontWeight: 700, fontSize: 72, lineHeight: 1.08, color: t.fg, marginTop: 6 }}>{it.label}</div>
+              </div>
+            );
+          })}
+        </div>
+      </Body>
+    </Frame>
+  );
+};
+
+// ---------- Comparaison en barres ----------
+export const Barres: React.FC<P<{ kicker: string; items: { label: string; value: number; at: number; accent?: boolean }[]; unite?: string; note?: string }>> = ({ theme, kicker, items, unite = "", note }) => {
+  const t = th(theme);
+  const frame = useCurrentFrame();
+  const at = useAt();
+  const max = Math.max(...items.map((i) => i.value), 1);
+  return (
+    <Frame theme={theme}>
+      <Body top={420}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        {items.map((it, i) => {
+          const p = interpolate(frame, [at(it.at), at(it.at) + 22], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+          const couleur = it.accent ? t.accent : t.fg;
+          return (
+            <div key={i} style={{ marginBottom: 56, opacity: interpolate(p, [0, 0.2], [0, 1], clamp) }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 46, color: t.fg }}>{it.label}</span>
+                <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 76, color: couleur }}>
+                  <Counter to={it.value} delay={at(it.at)} /> {unite}
+                </span>
+              </div>
+              <div style={{ height: 70, background: t.rule, borderRadius: 12, marginTop: 10 }}>
+                <div style={{ height: 70, width: `${(it.value / max) * 100 * p}%`, background: it.accent ? t.accent : theme === "green" ? C.mutedOnGreen : C.ink, borderRadius: 10 }} />
+              </div>
+            </div>
+          );
+        })}
+        {note && <div style={{ fontFamily: SANS, fontWeight: 500, fontSize: 28, color: t.sub, marginTop: 10 }}>{note}</div>}
+      </Body>
+    </Frame>
+  );
+};
+
+// ---------- Avant / après ----------
+export const AvantApres: React.FC<P<{ kicker: string; avant: { label: string; value: number }; apres: { label: string; value: number }; unite?: string; at: number }>> = ({ theme, kicker, avant, apres, unite = "", at: a1 }) => {
+  const t = th(theme);
+  const at = useAt();
+  const d = at(a1);
+  const variation = avant.value ? ((apres.value - avant.value) / avant.value) * 100 : 0;
+  const Bloc: React.FC<{ b: { label: string; value: number }; delay: number; fort?: boolean }> = ({ b, delay, fort }) => (
+    <Rise delay={delay}>
+      <div style={{ border: `4px solid ${t.fg}`, background: fort ? t.fg : "transparent", borderRadius: 24, padding: "40px 34px" }}>
+        <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 2, textTransform: "uppercase", color: fort ? t.bg : t.sub }}>{b.label}</div>
+        <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, lineHeight: 1, color: fort ? t.bg : t.fg, letterSpacing: -3, whiteSpace: "nowrap", marginTop: 10 }}>
+          <Counter to={b.value} delay={delay} /> <span style={{ fontSize: 56 }}>{unite}</span>
+        </div>
+      </div>
+    </Rise>
+  );
+  return (
+    <Frame theme={theme}>
+      <Body top={380}>
+        <Kicker color={t.accent}>{kicker}</Kicker>
+        <Bloc b={avant} delay={d} />
+        <Rise delay={d + 16}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: t.accent, textAlign: "center", margin: "30px 0" }}>
+            ↓ {variation > 0 ? "+" : ""}{Math.round(variation)} %
+          </div>
+        </Rise>
+        <Bloc b={apres} delay={d + 26} fort />
+      </Body>
+    </Frame>
+  );
+};
+
 export const SCENE_TYPES: Record<string, React.FC<any>> = {
   chrono: Chrono,
   titleBib: TitleBib,
@@ -572,6 +736,10 @@ export const SCENE_TYPES: Record<string, React.FC<any>> = {
   outro: Outro,
   ballot: Ballot,
   versus: Versus,
+  carte: Carte,
+  frise: Frise,
+  barres: Barres,
+  avantApres: AvantApres,
 };
 // Scènes sans sous-titres (le texte à l'écran reprend déjà la voix)
 export const NO_CAPTIONS = new Set(["statement", "outro"]);

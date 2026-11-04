@@ -35,6 +35,10 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `photo` | photo plein écran avec crédit | `src, credit, kicker?, title?` |
 | `outro` | fin : marque, appel à s'abonner, sources | `tagline, cta, sources` |
 | `ballot` | votation : urne, date du scrutin, question | `kicker, date, niveau ("cantonal"/"fédéral"), question` |
+| `carte` | carte du Valais, zoom sur la ou les communes (noms officiels des 122 communes) | `kicker, communes[], titre?, zoom?, at?` |
+| `frise` | frise chronologique, 2 à 4 étapes | `kicker, items[{date,label,at}]` |
+| `barres` | comparaison de 2 à 4 valeurs | `kicker, items[{label,value,at,accent?}], unite?, note?` |
+| `avantApres` | évolution d'une valeur, variation en % calculée | `kicker, avant{label,value}, apres{label,value}, unite?, at` |
 | `versus` | votation : arguments du oui et du non, deux colonnes identiques | `kicker, pour{titre?,points[],at}, contre{titre?,points[],at}, note?` |
 
 Les types `stats`, `titleBib`, `finish`, `person` sont habillés « ski » pour l'épisode pilote. Pour d'autres sujets, le Scénariste demande un nouveau type adapté (urne, carte, chantier, etc.) plutôt que de détourner ces scènes.
