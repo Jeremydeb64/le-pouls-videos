@@ -32,7 +32,62 @@
    "agent": "scenariste",
    "texte": "Je lis l'article du RTS Valais.",
    "t": "2026-11-04T09:12:25.617Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-04T10:01:21.412Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "35 articles lus, je regroupe par sujet.",
+   "t": "2026-11-04T10:01:27.638Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Salaire minimum en Valais : le oui et le non face à face ». Votation cantonale le 29 novembre, 22 fr/h (18 fr/h en agriculture), 15'000 salariés concernés selon le oui : matière idéale pour une infographie neutre.",
+   "t": "2026-11-04T10:01:44.448Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « PFAS : un explorateur cartographie le Rhône, de la source à la Méditerranée ». Parcours source-mer du fleuve avec des points de mesure : carte et chiffres directement exploitables. Fiabilité limitée (une seule source, chapô tronqué) : à vérifier avant tournage.",
+   "t": "2026-11-04T10:01:44.448Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-04T10:01:44.450Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:03:32.452Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Salaire minimum en Valais : le oui et le non face à face » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"56fcd1c4e8210ec01a3c54a7a56a5798\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
+   "t": "2026-11-04T10:03:32.570Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-04T10:03:32.571Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-04T10:05:05.714Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « PFAS : un explorateur cartographie le Rhône, de la source à la Méditerranée » abandonné : Error: ElevenLabs TTS 400 : {\"detail\":{\"type\":\"authentication_error\",\"code\":\"invalid_api_key\",\"message\":\"API key ID used as API key - only valid API keys can be used. API keys start with 'sk_' and are shown when the key is created or rotated.\",\"status\":\"api_key_id_used_as_api_key\",\"request_id\":\"03ac03a09a5628684edba9dc685de174\n    at genererVoix (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/voix.mjs:23:20)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async produire (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:80:3)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:144:16",
+   "t": "2026-11-04T10:05:05.833Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-04T10:05:05.834Z"
   }
  ],
- "maj": "2026-11-04T09:12:25.617Z"
+ "maj": "2026-11-04T10:05:05.834Z"
 }
