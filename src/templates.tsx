@@ -416,7 +416,12 @@ export const Crowd: React.FC<P<{ kicker: string; live: { value: number; label: s
   );
 };
 
-const tailleTexte = (t: string) => (t.length <= 30 ? 116 : t.length <= 50 ? 100 : t.length <= 70 ? 84 : t.length <= 120 ? 68 : 56);
+// Taille selon la longueur totale ET le mot le plus long (en capitales, un long mot ne doit jamais sortir du cadre)
+const tailleTexte = (t: string) => {
+  const base = t.length <= 30 ? 116 : t.length <= 50 ? 100 : t.length <= 70 ? 84 : t.length <= 120 ? 68 : 56;
+  const mot = Math.max(...t.split(/\s+/).map((m) => m.length));
+  return Math.min(base, Math.floor(CONTENT_W / (mot * 0.66)));
+};
 export const Statement: React.FC<P<{ text: string }>> = ({ theme, text }) => {
   const court = text.length <= 70;
   return (
@@ -585,7 +590,7 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
           )}
         </Body>
       )}
-      <div style={{ position: "absolute", right: 180, top: 246, maxWidth: 520, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
+      <div style={{ position: "absolute", right: 180, top: 246, maxWidth: 800, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 20, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
     </Frame>
   );
 };
@@ -754,7 +759,7 @@ export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: str
                 return c ? (
                   <g key={r} opacity={0.55}>
                     <circle cx={c.x} cy={c.y} r={4 / echelle} fill={t.fg} />
-                    <text x={c.x + 8 / echelle} y={c.y + 5 / echelle} fontFamily={SANS} fontWeight={500} fontSize={18 / echelle} fill={t.fg}>{r === "Brig-Glis" ? "Brigue" : r === "Visp" ? "Viège" : r}</text>
+                    <text x={r === "Visp" ? c.x - 8 / echelle : c.x + 8 / echelle} y={r === "Visp" ? c.y + 22 / echelle : c.y + 5 / echelle} textAnchor={r === "Visp" ? "end" : "start"} fontFamily={SANS} fontWeight={500} fontSize={18 / echelle} fill={t.fg}>{r === "Brig-Glis" ? "Brigue" : r === "Visp" ? "Viège" : r}</text>
                   </g>
                 ) : null;
               })}

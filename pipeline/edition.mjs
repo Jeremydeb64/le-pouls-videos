@@ -266,7 +266,8 @@ for (const sujet of sujets) {
   const resultat = await produire(script, dossier);
   const verdictVisuel = await controlerVisuel(resultat.episode, dossier);
   const verdict = {
-    decision: verdictVisuel.decision === "BLOQUE" ? "BLOQUE" : "OK",
+    // Toute remarque « bloquant » du contrôle visuel bloque la vidéo, même si le modèle a répondu OK
+    decision: verdictVisuel.decision === "BLOQUE" || (verdictVisuel.problemes || []).some((p) => p.gravite === "bloquant") ? "BLOQUE" : "OK",
     problemes: [...(verdictTexte.problemes || []), ...(verdictVisuel.problemes || [])],
   };
   const info = {
