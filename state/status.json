@@ -1,5 +1,5 @@
 {
- "edition": "soir",
+ "edition": "matin",
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
@@ -8,91 +8,6 @@
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T11:12:35.809Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:13:53.099Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-04T11:14:25.095Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:14:25.131Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:15:53.848Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Épisode bloqué par la règle votations : aucune source officielle dans la liste. Il n'y a que de la presse, et la question de la carte « ballot » n'est pas confirmée. Peux-tu ajouter la brochure ou la source de l'État du Valais ? Le traitement oui/non est par ailleurs équilibré : environ 14 s contre 14 s, 3 points contre 3, avec la même mise en forme. Corrections ensuite : 25 jours dès la première frame, reformuler « quitter leur formation » pour rester fidèle à la source, corriger « soutien à l'initiative » pour les 33 voix, refaire les retours à la ligne de la scène « Oui / Non », aligner le CTA et raccourcir la fin de 1 s.",
-   "t": "2026-11-04T11:16:35.478Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-04T11:16:35.480Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:18:10.077Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 5 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T11:18:47.662Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-04T11:18:48.473Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-04T11:18:48.861Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:18:48.862Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:20:42.699Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Salut, quelques corrections avant publication. 1) Cartes 3 et 8 : les gros chiffres (500’000 et 10’000’000) débordent à droite et recouvrent leur libellé. Réduis-les ou mets le libellé dessous, avec une marge de 160 px à droite. 2) Carte 9 : la phrase est trop longue, elle descend dans la zone TikTok du bas. Raccourcis-la et précise quel scénario concerne l'expert (Carlen) : d'après le Walliser Bote et Blick, une avalanche avec neige aurait une portée plus grande. Ajoute aussi « sur la base des données actuelles » pour l'évacuation. 3) Carte 4 : pas d'orange, il est hors charte. Raccourcis le texte pour qu'il reste au-dessus de y≈1500. 4) Carte 6 : le « ? » est seul sur sa ligne. Coupe en 2 lignes équilibrées et enlève [intrigued]. 5) Carte 7 : 11 s sur 3 mots, ça fait vide. Mets la neige et le replat à l'écran. 6) Ton global : sujet sensible (Blatten). Voix sobre du début à la fin, sans [intrigued] ni [warm] enjoué. 7) Mineurs : « une vingtaine d'années » à la place de « 20 ans », « Entre » ou « De » à harmoniser, tagline en doublon à l'outro, CTA à réaligner, sources SRF et second Blick à ajouter, 4 pauses audio à resserrer sous 1 s.",
-   "t": "2026-11-04T11:22:05.001Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T11:22:05.002Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:24:06.161Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T11:24:29.897Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
@@ -407,9 +322,94 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-04T15:34:39.646Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 74823 crédits restants ce mois-ci.",
+   "t": "2026-11-05T09:06:19.958Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-05T09:06:19.960Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "261 articles lus, je regroupe par sujet.",
+   "t": "2026-11-05T09:06:27.103Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « 13e rente AVS : la TVA pour la financer, J-24 ». Le 29 novembre, on vote sur une hausse de la TVA pour financer la 13e rente AVS : tout le monde est concerné, et l'explication doit être neutre et publiée avant le vote.",
+   "t": "2026-11-05T09:06:44.398Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Suisse.",
+   "t": "2026-11-05T09:06:44.407Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-05T09:09:14.237Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Faits OK : chiffres, dates et noms recoupés avec les sources officielles (J-24, 8,1 → 8,5 %, 1,5 et 4,2 milliards, 84 à 336 francs, 2028, double majorité, positions des partis). À corriger avant le rendu : 1) mets le même ton pour le oui et le non, car [energetic] d'un côté et [serious] de l'autre déséquilibre le traitement. 2) Remplace « payer la 13e rente » par « financer en partie la 13e rente », y compris dans le titre de la scène 1. 3) Allège les chiffres des scènes 4 à 6, il y en a trop pour un spectateur qui découvre le sujet. 4) Ajoute dans `faits` les sources de « UDC : économies », de « retraités compris » et de « produits de première nécessité ». 5) Recale l'item « 29 novembre » de la frise.",
+   "t": "2026-11-05T09:10:01.600Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-05T09:10:01.602Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-05T09:11:35.062Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections sont faites. Si tu as le temps, ajoute bluewin à `sources` (remarque mineure). Sinon, on peut passer à l'étape suivante.",
+   "t": "2026-11-05T09:11:53.673Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
+   "t": "2026-11-05T09:11:53.688Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-05T09:12:23.573Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-05T09:12:23.575Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-05T09:13:14.691Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Quelques corrections avant validation. 1) Scène avant/après (8,1 → 8,5 %): les chiffres doivent s'afficher plus tôt, la scène est vide trop longtemps. 2) Scène des coûts: « 84 francs par / an » passe à la ligne, mets seulement « 84 francs » et « 336 francs ». 3) Versus: affiche les deux colonnes dès le début et vérifie l'équilibre des temps (Oui environ 12,4 s, Non environ 9,9 s, soit plus de 15 % d'écart). 4) Vérifie les sous-titres des scènes 3 et 5 (rien à l'écran sur les images contrôlées). 5) Dans le récap, la ligne 2 est coupée pendant son animation. 6) « 13E » doit rester « 13e ». Le reste de la charte (couleurs, typos, alternance, zone sûre) est bon.",
+   "t": "2026-11-05T09:14:10.639Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 1.22 $ (Claude + ElevenLabs).",
+   "t": "2026-11-05T09:14:12.105Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-05T09:14:12.106Z"
   }
  ],
- "maj": "2026-11-04T15:34:55.309Z",
+ "maj": "2026-11-05T09:14:47.998Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -849,6 +849,114 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre/LePouls_2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1YkizxE-tFMgSwGiB_NgIxEJ-s8X_N-4H",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/4"
+  },
+  {
+   "id": "2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24",
+   "titre": "13e rente AVS : la TVA en votation, J-24",
+   "edition": "matin",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "Les corrections demandées ont été faites. Nicolas lit seul les deux camps avec la même balise [serious], et le temps de parole est équilibré (environ 36 mots pour le oui, 33 pour le non). L'UDC a été retirée du script, donc l'ajout dans `faits` n'est plus nécessaire. « Tout le monde participe, retraités compris » est bien couvert par la source Blick. « L'alimentation et les médicaments » suit la formulation de la source RTS.",
+     "correction_demandee": "Rien à corriger. Pour plus de rigueur, on pourrait ajouter le détail des camps (« partis bourgeois ») dans la note de l'écran, mais ce n'est pas nécessaire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Le fait « les réserves fondent » cite une source bluewin qui ne figure pas dans la liste `sources`. L'écran final affiche « RTS, Blick, Confédération ». Le contenu reste exact et c'est un simple écart de traçabilité.",
+     "correction_demandee": "Si possible, ajouter bluewin à `sources`, ou remplacer par une source RTS ou Blick déjà listée pour ce fait."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Les autres corrections sont en place. « Financer en partie » est dit à l'oral. Le titre est devenu « Comment financer la 13e rente AVS ? ». La scène 5 ne contient plus que l'idée « une partie de la facture », sans chiffre. Les chiffres clés se limitent à 8,1 → 8,5 %, 84 à 336 francs et la date du vote. Les `at` de la frise (segments 52 et 55) correspondent maintenant au texte dit. Le décompte J-24 est juste pour le 5 novembre 2026.",
+     "correction_demandee": "Aucune."
+    },
+    {
+     "gravite": "important",
+     "scene": 4,
+     "constat": "Scène avant/après quasi vide: seul le bandeau « Taux normal de la TVA » est visible à environ 3,2 s, juste avant l'apparition prévue des valeurs (at 3,3 s sur 4,7 s de scène). Les chiffres 8,1 % et 8,5 % ne restent donc à l'écran qu'environ 1,4 s, alors que la voix dit déjà « à 8,5 % ». Le sous-titre est en plus quasi transparent sur le fond vert (fondu en cours), donc illisible sur cette image.",
+     "correction_demandee": "Faire apparaître « Aujourd'hui 8,1 % » dès le début de la scène (at ≈ 0,3 s) et « Si oui 8,5 % » en phase avec la voix (at ≈ 1,5 à 2 s), pour que les chiffres restent lisibles au moins 2 s. Vérifier que le sous-titre est pleinement opaque pendant qu'il est prononcé."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par an » est répétée sur chaque ligne alors que le bandeau dit déjà « par an ». Difficile à lire d'un coup d'œil.",
+     "correction_demandee": "Afficher seulement « 84 francs » et « 336 francs » (unité « francs », « par an » déjà dans le bandeau). Raccourcir les libellés (« Minimum », « Maximum ») ou réduire la colonne de libellés pour tenir sur une ligne."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "La colonne « Non » reste vide jusqu'à 14,3 s dans la scène, alors que « Oui » apparaît à 1,8 s. Pendant plus de 12 s, seul « Oui » est visible. Cela ne respecte pas le même traitement graphique des deux camps. À vérifier: « Oui » reste affiché environ 12,4 s et « Non » environ 9,9 s, soit un écart d'environ 20 %, au-dessus des 15 % tolérés.",
+     "correction_demandee": "Rééquilibrer les temps d'apparition et de parole des deux colonnes (écart de 15 % maximum). Idéalement, afficher les deux titres « Oui » et « Non » dès le début de la scène et révéler les points au rythme de la voix."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Aucun sous-titre visible sur cette image (≈16 s), alors que la scène dure 8,2 s pour une phrase courte. Même constat sur la scène 5 (≈27,6 s). Il faut s'assurer que la voix ne parle pas sans sous-titre et qu'il n'y a pas de silence de plus d'une seconde.",
+     "correction_demandee": "Vérifier la synchro voix/sous-titres sur les scènes 3 et 5 (les 67 sous-titres doivent couvrir toute la parole). Si la phrase est dite en 4 s environ, raccourcir la scène 3 (8,2 s) pour supprimer le blanc."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Le point 2 « TVA à 8,5 % si oui » est coupé net en bas (pastille et bas des lettres tronqués vers y≈390) pendant sa révélation, à 3,5 s dans la scène. Si c'est une animation de masque, elle est visible comme un texte coupé.",
+     "correction_demandee": "Remplacer le masque de révélation par un fondu ou un léger glissement sans découpe, ou vérifier que la découpe disparaît bien en moins de 0,2 s."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "En majuscules, « 13e » devient « 13E » (écriture incorrecte de l'ordinal). Les retours à la ligne séparent « QUEL / QUE SOIT LE VOTE » et laissent une ligne courte « VERSÉE EN ».",
+     "correction_demandee": "Garder « 13e » avec le « e » en minuscule (ou en exposant), et forcer les retours à la ligne: « La 13e rente sera versée / en décembre, / quel que soit le vote. »"
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "La première image affiche « 15 jours » pendant que le sous-titre dit « Dans 24 jours » (compteur en cours d'animation), sans titre à l'écran à cet instant.",
+     "correction_demandee": "Raccourcir l'animation du compteur pour que 24 soit atteint dès que la voix prononce « 24 jours », et faire apparaître le titre sans retard."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Le pied de page « SENTIR L'ACTUALITÉ » est à y≈1526 en 1080×1920, hors de la zone sûre (y max 1450). Il est discret et fait partie du gabarit.",
+     "correction_demandee": "Si possible, remonter la ligne et la signature au-dessus de y = 1450, ou confirmer que c'est un élément décoratif sans importance."
+    }
+   ],
+   "description_tiktok": "Le 29 novembre, on vote sur une hausse de la TVA pour financer en partie la 13e rente AVS. Les arguments des deux camps, en une minute.\nSources : RTS, Blick, Confédération\n#Valais #Votation #AVS #TVA",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "La 13e rente AVS doit être financée par une « réforme de fond », plaide Cyril Aellen",
+     "url": "https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-cyril-aellen-plaide-pour-une-reforme-de-fond-29403721.html"
+    },
+    {
+     "media": "RTS",
+     "titre": "13e rente AVS : Baume-Schneider défend la hausse de la TVA",
+     "url": "https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-baume-schneider-defend-la-hausse-de-la-tva-29402432.html"
+    },
+    {
+     "media": "RTS",
+     "titre": "Hausse de la TVA pour l'AVS : ce qui change pour votre budget",
+     "url": "https://www.rts.ch/info/economie/2026/article/hausse-de-la-tva-pour-l-avs-ce-qui-change-pour-votre-budget-29399070.html"
+    },
+    {
+     "media": "Blick",
+     "titre": "Votation : tout ce qu'il faut savoir sur le financement de l'AVS",
+     "url": "https://www.blick.ch/fr/suisse/votation-tout-ce-quil-faut-savoir-sur-le-financement-de-lavs/n3d10y4"
+    },
+    {
+     "media": "Confédération",
+     "titre": "Votation du 29 novembre 2026",
+     "url": "https://www.bsv.admin.ch/fr/votation-29-novembre-2026-langue-facile"
+    }
+   ],
+   "mp4": "out/13e-rente-avs-la-tva-pour-la-financer-j-24/2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24.mp4",
+   "etat": "a_valider",
+   "cout_usd": 1.2115,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24/LePouls_2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1kv4ZPkLJ6vt3aUauKteLp9q3oxHSCqYK",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/5"
   }
  ]
 }

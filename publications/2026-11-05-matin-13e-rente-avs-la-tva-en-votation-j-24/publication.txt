@@ -1,0 +1,34 @@
+LE POULS
+13e rente AVS : la TVA en votation, J-24
+Édition du matin, à publier vers 7 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le 29 novembre, on vote sur une hausse de la TVA pour financer en partie la 13e rente AVS. Les arguments des deux camps, en une minute.
+Sources : RTS, Blick, Confédération
+#Valais #Votation #AVS #TVA
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : La 13e rente AVS doit être financée par une « réforme de fond », plaide Cyril Aellen (https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-cyril-aellen-plaide-pour-une-reforme-de-fond-29403721.html)
+- RTS : 13e rente AVS : Baume-Schneider défend la hausse de la TVA (https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-baume-schneider-defend-la-hausse-de-la-tva-29402432.html)
+- RTS : Hausse de la TVA pour l'AVS : ce qui change pour votre budget (https://www.rts.ch/info/economie/2026/article/hausse-de-la-tva-pour-l-avs-ce-qui-change-pour-votre-budget-29399070.html)
+- Blick : Votation : tout ce qu'il faut savoir sur le financement de l'AVS (https://www.blick.ch/fr/suisse/votation-tout-ce-quil-faut-savoir-sur-le-financement-de-lavs/n3d10y4)
+- Confédération : Votation du 29 novembre 2026 (https://www.bsv.admin.ch/fr/votation-29-novembre-2026-langue-facile)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 7) : Les corrections demandées ont été faites. Nicolas lit seul les deux camps avec la même balise [serious], et le temps de parole est équilibré (environ 36 mots pour le oui, 33 pour le non). L'UDC a été retirée du script, donc l'ajout dans `faits` n'est plus nécessaire. « Tout le monde participe, retraités compris » est bien couvert par la source Blick. « L'alimentation et les médicaments » suit la formulation de la source RTS.
+- mineur (scène 9) : Le fait « les réserves fondent » cite une source bluewin qui ne figure pas dans la liste `sources`. L'écran final affiche « RTS, Blick, Confédération ». Le contenu reste exact et c'est un simple écart de traçabilité.
+- mineur (scène 2) : Les autres corrections sont en place. « Financer en partie » est dit à l'oral. Le titre est devenu « Comment financer la 13e rente AVS ? ». La scène 5 ne contient plus que l'idée « une partie de la facture », sans chiffre. Les chiffres clés se limitent à 8,1 → 8,5 %, 84 à 336 francs et la date du vote. Les `at` de la frise (segments 52 et 55) correspondent maintenant au texte dit. Le décompte J-24 est juste pour le 5 novembre 2026.
+- important (scène 4) : Scène avant/après quasi vide: seul le bandeau « Taux normal de la TVA » est visible à environ 3,2 s, juste avant l'apparition prévue des valeurs (at 3,3 s sur 4,7 s de scène). Les chiffres 8,1 % et 8,5 % ne restent donc à l'écran qu'environ 1,4 s, alors que la voix dit déjà « à 8,5 % ». Le sous-titre est en plus quasi transparent sur le fond vert (fondu en cours), donc illisible sur cette image.
+- important (scène 6) : Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par an » est répétée sur chaque ligne alors que le bandeau dit déjà « par an ». Difficile à lire d'un coup d'œil.
+- important (scène 7) : La colonne « Non » reste vide jusqu'à 14,3 s dans la scène, alors que « Oui » apparaît à 1,8 s. Pendant plus de 12 s, seul « Oui » est visible. Cela ne respecte pas le même traitement graphique des deux camps. À vérifier: « Oui » reste affiché environ 12,4 s et « Non » environ 9,9 s, soit un écart d'environ 20 %, au-dessus des 15 % tolérés.
+- important (scène 3) : Aucun sous-titre visible sur cette image (≈16 s), alors que la scène dure 8,2 s pour une phrase courte. Même constat sur la scène 5 (≈27,6 s). Il faut s'assurer que la voix ne parle pas sans sous-titre et qu'il n'y a pas de silence de plus d'une seconde.
+- important (scène 9) : Le point 2 « TVA à 8,5 % si oui » est coupé net en bas (pastille et bas des lettres tronqués vers y≈390) pendant sa révélation, à 3,5 s dans la scène. Si c'est une animation de masque, elle est visible comme un texte coupé.
+- mineur (scène 3) : En majuscules, « 13e » devient « 13E » (écriture incorrecte de l'ordinal). Les retours à la ligne séparent « QUEL / QUE SOIT LE VOTE » et laissent une ligne courte « VERSÉE EN ».
+- mineur (scène 1) : La première image affiche « 15 jours » pendant que le sous-titre dit « Dans 24 jours » (compteur en cours d'animation), sans titre à l'écran à cet instant.
+- mineur (scène 10) : Le pied de page « SENTIR L'ACTUALITÉ » est à y≈1526 en 1080×1920, hors de la zone sûre (y max 1450). Il est discret et fait partie du gabarit.

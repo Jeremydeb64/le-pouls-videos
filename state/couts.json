@@ -1,5 +1,116 @@
 {
- "lignes": [],
+ "lignes": [
+  {
+   "date": "2026-11-05T09:06:44.398Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 93018,
+   "unite": "tokens",
+   "usd": 0.0107,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:09:14.234Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 135535,
+   "unite": "tokens",
+   "usd": 0.4563,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:09:14.234Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 5,
+   "unite": "recherches",
+   "usd": 0.05,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:10:01.599Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 70567,
+   "unite": "tokens",
+   "usd": 0.1913,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:10:01.599Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:11:35.061Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 73278,
+   "unite": "tokens",
+   "usd": 0.2741,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:11:35.061Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:11:53.673Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 15769,
+   "unite": "tokens",
+   "usd": 0.0543,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:12:20.406Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 653,
+   "unite": "crédits",
+   "usd": 0.0522,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:12:23.568Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 74,
+   "unite": "secondes",
+   "usd": 0.0045,
+   "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T09:14:10.638Z",
+   "contexte": "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 17377,
+   "unite": "tokens",
+   "usd": 0.0888,
+   "execution": "édition matin 2026-11-05"
+  }
+ ],
  "executions": [
   {
    "date": "2026-11-04T15:49:10.567Z",
@@ -20,25 +131,46 @@
    "date": "2026-11-05T01:00:01.980Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-05T09:14:10.642Z",
+   "etiquette": "édition matin 2026-11-05",
+   "usd": 1.2222
   }
  ],
- "par_jour": {},
- "par_mois": {},
- "par_video": {},
+ "par_jour": {
+  "2026-11-05": {
+   "anthropic": 1.1655,
+   "elevenlabs": 0.0567,
+   "higgsfield": 0,
+   "total": 1.2222
+  }
+ },
+ "par_mois": {
+  "2026-11": {
+   "anthropic": 1.1655,
+   "elevenlabs": 0.0567,
+   "higgsfield": 0,
+   "total": 1.2222
+  }
+ },
+ "par_video": {
+  "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115
+ },
  "soldes": {
-  "date": "2026-11-05T01:00:01.980Z",
+  "date": "2026-11-05T09:14:10.644Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 56177,
+   "credits_utilises": 56855,
    "credits_mois": 131000,
-   "credits_restants": 74823,
+   "credits_restants": 74145,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 14.94,
+   "credit_estime_restant_usd": 13.7745,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-05T01:00:04.043Z"
+ "maj": "2026-11-05T09:14:12.101Z"
 }
