@@ -10,11 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-04T11:24:30.223Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
    "t": "2026-11-04T11:24:30.242Z"
   },
@@ -407,9 +402,14 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-05T09:14:12.106Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo archivée comme publiée sur TikTok.",
+   "t": "2026-11-05T09:32:00.285Z"
   }
  ],
- "maj": "2026-11-05T09:14:47.998Z",
+ "maj": "2026-11-05T09:32:00.287Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
