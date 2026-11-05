@@ -36,7 +36,7 @@ for (const id of ids) {
     ep.sonsIntegres = true;
     // Photos : on refait la même recherche sur Wikimedia Commons (licence libre, crédit affiché)
     for (const [i, s] of ep.scenes.entries()) {
-      if (s.type !== "photo") continue;
+      if (s.type !== "photo" && s.type !== "photoRonde") continue;
       if (s.props.src && fs.existsSync(path.join("public", s.props.src))) continue;
       const f = path.join("public", `photo-${id}-${i}.jpg`);
       const p = s.props.recherche ? await photoLibre(s.props.recherche, f).catch(() => null) : null;

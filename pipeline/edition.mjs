@@ -108,7 +108,7 @@ async function produire(script, dossier) {
   const { sousTitres, ecart } = alignerSousTitres(script.segments, mots);
   if (ecart > 3) redaction.dit("scenariste", `Attention, ${ecart} mots d'écart entre le texte et la voix.`);
   const duree = +(mots[mots.length - 1].end + 1.8).toFixed(2);
-  const CONNUS = ["chrono", "titleBib", "calendar", "stats", "crowd", "statement", "bigFigure", "finish", "person", "recap", "photo", "outro", "ballot", "versus", "carte", "frise", "barres", "avantApres", "illustration"];
+  const CONNUS = ["chrono", "titleBib", "calendar", "stats", "crowd", "statement", "bigFigure", "finish", "person", "recap", "photo", "outro", "ballot", "versus", "carte", "frise", "barres", "avantApres", "illustration", "photoRonde"];
   for (const sc of script.scenes) {
     if (!CONNUS.includes(sc.type)) {
       redaction.dit("scenariste", `Pas de modèle « ${sc.type} » : je mets un plein écran texte à la place (demande notée).`);
@@ -125,7 +125,7 @@ async function produire(script, dossier) {
   if (scenes.length && scenes[scenes.length - 1].type === "outro") scenes[scenes.length - 1].theme = "paper";
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }
-  for (const s of scenes.filter((x) => x.type === "photo")) {
+  for (const s of scenes.filter((x) => x.type === "photo" || x.type === "photoRonde")) {
     const f = path.join("public", `photo-${id}-${scenes.indexOf(s)}.jpg`);
     let p = null;
     try {
@@ -174,7 +174,7 @@ async function produire(script, dossier) {
   const echecs = retenues.filter((d) => d.e);
   if (echecs.length) redaction.dit("scenariste", `Visuels IA non disponibles (${echecs[0].e}) : je continue sans.`);
   const ambiance = script.sensible ? "aucune" : script.ambiance || "neutre";
-  const episode = { id, ambiance, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
+  const episode = { id, rubrique: script.rubrique || "VALAIS", ambiance, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
   fs.mkdirSync("episodes", { recursive: true });
   fs.writeFileSync(`episodes/${id}.json`, JSON.stringify(episode, null, 1));
   redaction.agent("scenariste", "termine");

@@ -8,40 +8,70 @@ export type EpisodeSpec = {
   id: string;
   ambiance?: "neutre" | "dynamique" | "sobre" | "aucune"; // fond musical
   voice?: string; // fichier dans public/
-  sonsIntegres?: boolean; // la piste « voice » contient déjà musique et effets (re-rendu d'une vidéo existante)
+  sonsIntegres?: boolean;
+  rubrique?: string; // pastille en haut à gauche : VALAIS, VOTATION, ÉCONOMIE, POLITIQUE, SOCIÉTÉ, MONTAGNE, SPORT, ENVIRONNEMENT // la piste « voice » contient déjà musique et effets (re-rendu d'une vidéo existante)
   duration: number; // secondes
   captions: [number, number, string][];
   scenes: SceneSpec[];
 };
 
-// Habillage permanent : barre de progression et pied de page « Sentir l'actualité » (logo seulement sur l'écran de fin)
-const Chrome: React.FC<{ dark: boolean; outro: boolean }> = ({ dark, outro }) => {
+// Pictogrammes de rubrique (traits simples, sur pastille ocre)
+const PICTOS: Record<string, React.ReactNode> = {
+  VOTATION: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><rect x="16" y="30" width="40" height="28" rx="3" /><path d="M28 30 L28 16 L44 16 L44 30" /><path d="M26 44 h20" /></g>,
+  ÉCONOMIE: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinecap="round" strokeLinejoin="round"><path d="M16 54 V40 M30 54 V30 M44 54 V36 M58 54 V20" /><path d="M14 58 h46" /></g>,
+  POLITIQUE: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M14 28 L36 14 L58 28 Z" /><path d="M20 30 V52 M31 30 V52 M41 30 V52 M52 30 V52 M14 56 h44" /></g>,
+  MONTAGNE: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M10 56 L28 24 L38 40 L46 30 L62 56 Z" /></g>,
+  SPORT: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M24 16 h24 v12 a12 12 0 0 1 -24 0 Z" /><path d="M36 40 v10 M26 56 h20" /></g>,
+  SOCIÉTÉ: <g fill="none" stroke={C.ink} strokeWidth={5}><circle cx="26" cy="26" r="7" /><circle cx="46" cy="26" r="7" /><path d="M14 54 a12 12 0 0 1 24 0 M34 54 a12 12 0 0 1 24 0" /></g>,
+  ENVIRONNEMENT: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M18 52 C18 28 36 16 56 16 C56 38 44 52 18 52 Z" /><path d="M18 52 L40 30" /></g>,
+  VALAIS: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M36 58 C24 44 18 36 18 28 a18 18 0 0 1 36 0 c0 8 -6 16 -18 30 Z" /><circle cx="36" cy="28" r="6" /></g>,
+};
+const normRub = (r?: string) => {
+  const u = (r || "VALAIS").toUpperCase().normalize("NFC");
+  return Object.keys(PICTOS).find((k) => k.normalize("NFD").replace(/[\u0300-\u036f]/g, "") === u.normalize("NFD").replace(/[\u0300-\u036f]/g, "")) || "VALAIS";
+};
+
+// Habillage permanent : barre de progression et pastille de rubrique (logo seulement sur l'écran de fin)
+const Chrome: React.FC<{ outro: boolean; rubrique?: string; fondClair: boolean }> = ({ outro, rubrique, fondClair }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const fg = dark ? C.paper : C.green;
-  const filet = dark ? C.ochre : C.mid;
   if (outro) return null;
+  const rub = normRub(rubrique);
+  const p = interpolate(frame, [4, 16], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) });
   return (
     <>
-      <div style={{ position: "absolute", top: 0, left: 0, height: 8, width: `${(frame / durationInFrames) * 100}%`, background: C.ochre }} />
-      <div style={{ position: "absolute", top: 1490, left: PAD, width: CONTENT_W, height: 3, background: dark ? C.paper : C.mid, opacity: 0.6 }} />
-      <div style={{ position: "absolute", top: 1512, left: PAD, fontFamily: SANS, fontWeight: 700, fontSize: 24, letterSpacing: 1.5, color: dark ? C.paper : C.mid, opacity: 0.8 }}>SENTIR L’ACTUALITÉ</div>
+      <div style={{ position: "absolute", top: 0, left: 0, height: 10, width: `${(frame / durationInFrames) * 100}%`, background: C.ochre }} />
+      <div style={{ position: "absolute", top: 250, left: PAD, display: "flex", alignItems: "center", gap: 22, opacity: p }}>
+        <svg width={88} height={88} viewBox="0 0 72 72" style={{ scale: `${0.7 + 0.3 * p}` }}>
+          <circle cx="36" cy="36" r="36" fill={C.ochre} />
+          {PICTOS[rub]}
+        </svg>
+        <span style={{ fontFamily: SANS, fontWeight: 900, fontSize: 36, letterSpacing: 3, color: C.ochre, background: fondClair ? "rgba(16,36,31,0.85)" : "transparent", padding: fondClair ? "6px 14px" : 0, borderRadius: 6 }}>{rub}</span>
+      </div>
     </>
   );
 };
 
-// Sous-titres : Inter 700 52 px, blanc sur vert, 2 lignes max, centrés, apparition par fondu très court
-const Captions: React.FC<{ list: [number, number, string][]; dark: boolean }> = ({ list, dark }) => {
+// Sous-titres : gros, gras, centrés, sans fond ; le mot prononcé passe en ocre
+const Captions: React.FC<{ list: [number, number, string][] }> = ({ list }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps;
   const cur = list.find(([s, e]) => t >= s - 0.05 && t <= e + 0.12);
   if (!cur) return null;
+  const mots = cur[2].split(/\s+/).filter(Boolean);
+  // Répartition du temps proportionnelle à la longueur des mots
+  const total = mots.reduce((n, m) => n + m.length + 1, 0);
+  const avance = Math.min(1, Math.max(0, (t - cur[0]) / Math.max(0.2, cur[1] - cur[0])));
+  let cumul = 0, actif = -1;
+  mots.forEach((m, i) => { if (actif < 0 && avance * total < (cumul += m.length + 1)) actif = i; });
   const op = interpolate(t - cur[0], [-0.05, 0.05], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
-    <div style={{ position: "absolute", left: PAD, width: CONTENT_W, bottom: 1920 - 1450, display: "flex", justifyContent: "center", opacity: op }}>
-      <div style={{ background: dark ? C.ink : C.green, color: C.white, fontFamily: SANS, fontWeight: 700, fontSize: 52, lineHeight: 1.16, padding: "14px 22px", borderRadius: 12, textAlign: "center", maxWidth: CONTENT_W }}>
-        {cur[2]}
+    <div style={{ position: "absolute", left: PAD, width: CONTENT_W, bottom: 1920 - 1440, display: "flex", justifyContent: "center", opacity: op }}>
+      <div style={{ color: C.paper, fontFamily: SANS, fontWeight: 900, fontSize: 60, lineHeight: 1.15, textAlign: "center", textShadow: "0 3px 14px rgba(0,0,0,0.55)", maxWidth: CONTENT_W }}>
+        {mots.map((m, i) => (
+          <span key={i} style={{ color: i === actif ? C.ochre : C.paper }}>{m}{i < mots.length - 1 ? " " : ""}</span>
+        ))}
       </div>
     </div>
   );
@@ -94,9 +124,8 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
   const t = frame / fps;
   const scenes = episode.scenes;
   const cur = scenes.find((s) => t >= s.from && t < s.to) ?? scenes[scenes.length - 1];
-  const dark = cur.theme === "green" || cur.type === "photo" || cur.type === "illustration";
   return (
-    <AbsoluteFill style={{ backgroundColor: C.paper }}>
+    <AbsoluteFill style={{ backgroundColor: C.green }}>
       <style>{fontFaces}</style>
       {scenes.map((s, i) => {
         const Comp = SCENE_TYPES[s.type];
@@ -106,13 +135,13 @@ export const Episode: React.FC<{ episode: EpisodeSpec; withVoice?: boolean }> = 
         return (
           <Sequence key={i} from={from} durationInFrames={dur}>
             <FondContext.Provider value={s.fond_ia?.src ? (s.fond_ia as any) : null}>
-              <Comp theme={s.theme} {...s.props} />
+              <Comp theme="green" {...s.props} />
             </FondContext.Provider>
           </Sequence>
         );
       })}
-      <Chrome dark={dark} outro={cur.type === "outro"} />
-      {!NO_CAPTIONS.has(cur.type) && <Captions list={episode.captions} dark={dark} />}
+      <Chrome outro={cur.type === "outro"} rubrique={episode.rubrique} fondClair={cur.type === "photo" || cur.type === "illustration"} />
+      {!NO_CAPTIONS.has(cur.type) && <Captions list={episode.captions} />}
       {withVoice && episode.voice && <Audio src={staticFile(episode.voice)} />}
       {withVoice && <Sons episode={episode} />}
     </AbsoluteFill>

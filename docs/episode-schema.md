@@ -27,12 +27,13 @@ Chaque scène : `{ "type", "from", "to", "theme": "paper" | "green", "props": {.
 | `calendar` | dates d'un événement + frise entre deux années | `kicker, days, title, fromYear, toYear, yearsAt, yearsCaption` |
 | `stats` | 2 à 3 chiffres clés (portes de slalom en option, pour le ski) | `kicker, items[{value,label,at}], portes?` |
 | `crowd` | public sur place (tribune qui fait la ola) + écrans | `kicker, live{value,label,at}, screens{value,label,at,note}` |
-| `statement` | phrase de relance plein écran | `text` |
+| `statement` | phrase forte centrée, mots clés entre *astérisques* en ocre, double soulignement | `text, kicker?` |
 | `bigFigure` | un très grand chiffre + grille d'unités | `kicker, prefix?, value, label, at, grid?{count,value,label,note,at}` |
 | `finish` | montant + part en anneau, sous une arche | `arch, place, intro, value, unit, at, share (0–1), shareAt, shareLabel` |
 | `person` | personne citée (dossard, bio, propos rapportés) | `kicker, name, bib, bio, quote, quoteAt, quoteSource` |
 | `recap` | « À retenir » en 3 lignes | `kicker, items[{n,label,at}]` |
-| `photo` | photo plein écran avec crédit | `src, credit, kicker?, title?` |
+| `photo` | photo sur le haut de l'écran, fondue dans le fond, crédit en petit | `recherche` (le pipeline remplit `src, credit`), `kicker?, title?, nom?, role?` |
+| `photoRonde` | photo découpée en cercle, anneau ocre, titre centré dessous | `recherche`, `kicker?, title?, legende?` |
 | `illustration` | visuel généré par IA plein écran (image ou animation), légendé, peut sortir de la charte | `prompt, animation?, kicker?, title?` (le pipeline remplit `src`) |
 
 Toute scène peut recevoir `fond_ia: { prompt, animation? }` : visuel IA en arrière-plan sous un voile aux couleurs de la scène, avec la légende « Image générée avec l'IA ».

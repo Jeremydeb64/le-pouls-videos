@@ -65,10 +65,18 @@ L'IA sert à rendre la vidéo plus vivante et plus parlante : n'hésite pas à t
 - Pas de mention « voix de synthèse » dans la vidéo (elle figure dans la bio du compte et dans l'étiquette IA de TikTok).
 - Le dernier écran affiche les sources : « Sources : Média 1, Média 2 ».
 
+## 4 bis. Style visuel (inspiré des formats « explicatifs » TikTok)
+- Fond vert profond partout, textes crème, accents ocre. Compositions **centrées** pour les titres et les chiffres.
+- **Mots clés en ocre** : dans les textes à l'écran (`statement`, `title` des photos), entoure d'astérisques le ou les deux mots qui portent l'idée : `"UNE *HAUSSE* DE LA TVA"`, `"Pourquoi ces *économies* ?"`. Un ou deux mots par écran, jamais plus.
+- Un `statement` peut avoir un `kicker` (cartouche ocre au-dessus).
+- **Rubrique** : choisis `rubrique` parmi VALAIS, VOTATION, ÉCONOMIE, POLITIQUE, SOCIÉTÉ, MONTAGNE, SPORT, ENVIRONNEMENT (pastille affichée en haut à gauche).
+- **Images** : vise 2 à 3 images par vidéo (Wikimedia, licence libre). `photo` = image sur le haut de l'écran, avec si besoin une carte nom/rôle (`"nom": "Palais du Gouvernement", "role": "Sion"`) ; `photoRonde` = image découpée en cercle avec titre et `legende` dessous, idéale pour un lieu, un bâtiment, un objet. Pas de personne identifiable.
+
 ## 5. Sortie technique (un seul bloc ```json```)
 ```json
 {
   "titre": "Mondiaux de Crans-Montana : J-89",
+  "rubrique": "SPORT",
   "presentateur": "lucie",
   "sensible": false,
   "ambiance": "neutre",
@@ -80,7 +88,8 @@ L'IA sert à rendre la vidéo plus vivante et plus parlante : n'hésite pas à t
   "scenes": [
     {"type": "chrono", "from": {"seg": 0}, "theme": "paper", "props": {"kicker": "Mondiaux de ski alpin 2027", "label": "Départ dans", "value": 89, "unit": "jours", "headline": "Le monde du ski regarde le Valais."}},
     {"type": "stats", "from": {"seg": 12}, "theme": "green", "props": {"kicker": "Les organisateurs voient grand", "items": [{"value": 600, "label": "athlètes", "at": {"seg": 13}}]}},
-    {"type": "photo", "from": {"seg": 20}, "theme": "green", "props": {"recherche": "Crans-Montana hiver", "kicker": "Crans-Montana", "title": "Le Haut-Plateau"}}
+    {"type": "photo", "from": {"seg": 20}, "theme": "green", "props": {"recherche": "Crans-Montana hiver", "kicker": "Crans-Montana", "title": "Le *Haut-Plateau*", "nom": "Crans-Montana", "role": "Station hôte"}},
+    {"type": "photoRonde", "from": {"seg": 24}, "theme": "green", "props": {"recherche": "Palais du Gouvernement Sion", "kicker": "Le Conseil d'État", "title": "Un plan *d'économies*", "legende": "présenté le 4 novembre"}}
   ],
   "faits": [{"fait": "600 athlètes", "source": "https://..."}],
   "sources": [{"media": "Le Nouvelliste", "titre": "Titre de l'article", "url": "https://..."}],

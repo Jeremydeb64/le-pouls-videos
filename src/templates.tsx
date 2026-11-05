@@ -93,6 +93,21 @@ export const Mark: React.FC<{ h?: number; colors: string[]; delays?: number[] }>
   );
 };
 
+// Fond sombre : vignette radiale et fins traits lumineux horizontaux qui glissent lentement
+const Ambiance: React.FC = () => {
+  const frame = useCurrentFrame();
+  const traits = [[300, 0.5, 420], [610, 0.35, 300], [880, 0.45, 520], [1180, 0.3, 360], [1500, 0.4, 460], [1720, 0.3, 280]];
+  return (
+    <>
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse 75% 50% at 50% 42%, #24493F 0%, #1A3A35 45%, #10241F 100%)" }} />
+      {traits.map(([y, op, w], i) => {
+        const x = ((frame * (0.6 + i * 0.15) + i * 260) % 1400) - 300;
+        return <div key={i} style={{ position: "absolute", top: y, left: i % 2 ? 1080 - x - w : x, width: w, height: 2, background: `linear-gradient(90deg, rgba(245,242,234,0), rgba(245,242,234,${op * 0.35}), rgba(245,242,234,0))` }} />;
+      })}
+    </>
+  );
+};
+
 // Trames diagonales translucides (fonds sombres uniquement)
 const Trames: React.FC = () => (
   <svg width={1080} height={1920} viewBox="0 0 1080 720" preserveAspectRatio="xMidYMin slice" style={{ position: "absolute", inset: 0 }}>
@@ -155,7 +170,7 @@ const Frame: React.FC<{ theme: Theme; children: React.ReactNode }> = ({ theme, c
   const p = interpolate(frame, [0, 8], [100, 0], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   return (
     <AbsoluteFill style={{ backgroundColor: th(theme).bg, clipPath: `inset(${p}% 0 0 0)` }}>
-      {fond ? <CoucheIA fond={fond} theme={theme} /> : theme === "green" && <Trames />}
+      {fond ? <CoucheIA fond={fond} theme={theme} /> : theme === "green" && <Ambiance />}
       {children}
       {fond && <LegendeIA clair={theme === "green"} />}
     </AbsoluteFill>
@@ -167,11 +182,38 @@ const Body: React.FC<{ top?: number; children: React.ReactNode }> = ({ top = 320
 );
 
 // Cartouche ocre (onglet éditorial)
-const Kicker: React.FC<{ color?: string; delay?: number; children: React.ReactNode }> = ({ delay = 4, children }) => (
+const Kicker: React.FC<{ color?: string; delay?: number; center?: boolean; children: React.ReactNode }> = ({ delay = 4, center, children }) => (
   <Rise delay={delay}>
-    <div style={{ display: "inline-block", background: C.ochre, color: C.ink, fontFamily: SANS, fontWeight: 800, fontSize: 30, letterSpacing: 1.5, textTransform: "uppercase", padding: "12px 20px", borderRadius: 9, marginBottom: 34, maxWidth: CONTENT_W }}>{children}</div>
+    <div style={{ textAlign: center ? "center" : "left" }}>
+      <div style={{ display: "inline-block", background: C.ochre, color: C.ink, fontFamily: SANS, fontWeight: 900, fontSize: 34, letterSpacing: 3, textTransform: "uppercase", padding: "12px 26px", borderRadius: 8, marginBottom: 34, maxWidth: CONTENT_W }}>{children}</div>
+    </div>
   </Rise>
 );
+
+// Mots clés : le texte entre *astérisques* passe en ocre (« UNE *MARCHE* QUI CHANGE »)
+export const Mots: React.FC<{ texte: string; accent?: string }> = ({ texte: t0, accent = C.ochre }) => {
+  // Espaces insécables avant ? ! : ; (jamais de ponctuation seule sur une ligne)
+  const texte = t0.replace(/ ([?!:;»])/g, "\u00a0$1").replace(/« /g, "«\u00a0");
+  return (
+  <>
+    {texte.split(/(\*[^*]+\*)/g).map((m, i) => (m.startsWith("*") && m.endsWith("*") ? <span key={i} style={{ color: accent }}>{m.slice(1, -1)}</span> : <React.Fragment key={i}>{m}</React.Fragment>))}
+  </>
+  );
+};
+const sansEtoiles = (t: string) => t.replace(/\*/g, "");
+
+// Double soulignement centré (deux traits ocre de longueurs différentes, tracés l'un après l'autre)
+const DoubleTrait: React.FC<{ delay?: number }> = ({ delay = 8 }) => {
+  const frame = useCurrentFrame();
+  const p1 = interpolate(frame - delay, [0, 10], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const p2 = interpolate(frame - delay - 4, [0, 10], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  return (
+    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 18, marginTop: 40 }}>
+      <div style={{ width: 300 * p1, height: 12, borderRadius: 6, background: C.ochre }} />
+      <div style={{ width: 400 * p2, height: 12, borderRadius: 6, background: C.ochre }} />
+    </div>
+  );
+};
 
 // Trait de soulignement ocre (14 px, plein, sans halo)
 const Souligne: React.FC<{ width?: number; delay?: number; color?: string }> = ({ width = 420, delay = 6, color = C.ochre }) => {
@@ -417,20 +459,24 @@ export const Crowd: React.FC<P<{ kicker: string; live: { value: number; label: s
 };
 
 // Taille selon la longueur totale ET le mot le plus long (en capitales, un long mot ne doit jamais sortir du cadre)
-const tailleTexte = (t: string) => {
-  const base = t.length <= 30 ? 116 : t.length <= 50 ? 100 : t.length <= 70 ? 84 : t.length <= 120 ? 68 : 56;
+const tailleTexte = (t0: string) => {
+  const t = sansEtoiles(t0).replace(/ ([?!:;»])/g, "$1");
+  const base = t.length <= 30 ? 124 : t.length <= 50 ? 106 : t.length <= 70 ? 90 : t.length <= 120 ? 70 : 58;
   const mot = Math.max(...t.split(/\s+/).map((m) => m.length));
-  return Math.min(base, Math.floor(CONTENT_W / (mot * 0.66)));
+  return Math.min(base, Math.floor(CONTENT_W / (mot * 0.68)));
 };
-export const Statement: React.FC<P<{ text: string }>> = ({ theme, text }) => {
-  const court = text.length <= 70;
+export const Statement: React.FC<P<{ text: string; kicker?: string }>> = ({ theme, text, kicker }) => {
+  const court = sansEtoiles(text).length <= 70;
   return (
     <Frame theme={theme}>
-      <Body top={court ? 520 : 380}>
+      <Body top={court ? 520 : 400}>
+        {kicker && <Kicker center>{kicker}</Kicker>}
         <Rise delay={2}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: tailleTexte(text), lineHeight: 1.02, color: th(theme).fg, letterSpacing: TRACK_TITRE, textTransform: court ? "uppercase" : "none", whiteSpace: "pre-line" }}>{text}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: tailleTexte(text), lineHeight: 1.04, color: C.paper, letterSpacing: "-0.01em", textTransform: court ? "uppercase" : "none", whiteSpace: "pre-line", textAlign: "center" }}>
+            <Mots texte={text} />
+          </div>
         </Rise>
-        <Souligne width={420} delay={10} />
+        <DoubleTrait delay={10} />
       </Body>
     </Frame>
   );
@@ -440,24 +486,19 @@ export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: num
   const t = th(theme);
   const at = useAt();
   const d1 = at(a1);
+  const n = String(Math.round(value)).length;
   return (
     <Frame theme={theme}>
-      <Body top={240}>
-        <Kicker color={t.accent}>{kicker}</Kicker>
+      <Body top={grid ? 300 : 470}>
+        <Kicker center color={t.accent}>{kicker}</Kicker>
         <Rise delay={d1}>
-          {prefix && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 52, color: t.sub }}>{prefix}</div>}
-          <div style={{ display: "flex", alignItems: "flex-end", gap: 30 }}>
-            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: String(Math.round(value)).length <= 2 ? 400 : String(Math.round(value)).length <= 3 ? 320 : String(Math.round(value)).length <= 5 ? 220 : 160, lineHeight: 0.92, color: t.fg, letterSpacing: TRACK_CHIFFRE, whiteSpace: "nowrap" }}>
+          <div style={{ textAlign: "center" }}>
+            {prefix && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 48, color: C.sage, textTransform: "uppercase", letterSpacing: 2 }}>{prefix}</div>}
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: n <= 3 ? 340 : n <= 5 ? 250 : 180, lineHeight: 0.95, color: C.ochre, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>
               <Counter to={value} delay={d1} dur={21} />
             </div>
-            {String(Math.round(value)).length <= 2 && (
-              <div style={{ paddingBottom: 30 }}>
-                <Rythme color={theme === "green" ? C.sage : C.mid} delay={d1 + 4} heights={[70, 115, 165, 205]} />
-              </div>
-            )}
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: label.length <= 24 ? 64 : 46, lineHeight: 1.1, color: C.paper, textTransform: "uppercase", marginTop: 18 }}>{label}</div>
           </div>
-          <Souligne width={480} delay={d1 + 10} />
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, lineHeight: 1.15, color: t.fg }}>{label}</div>
         </Rise>
         {grid && (
           <div style={{ marginTop: 80 }}>
@@ -569,28 +610,75 @@ export const Recap: React.FC<P<{ kicker: string; items: { n: string; label: stri
   );
 };
 
-// Photo plein écran (licence libre ou photothèque autorisée), crédit obligatoire en petit
-export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; title?: string }>> = ({ theme, src, credit, kicker, title }) => {
+// Photo (licence libre) : image sur le haut de l'écran fondue dans le fond, titre centré, carte « nom / rôle » facultative, crédit en petit
+export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; title?: string; nom?: string; role?: string }>> = ({ theme, src, credit, kicker, title, nom, role }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const zoom = interpolate(frame, [0, durationInFrames], [1.0, 1.12]);
+  const zoom = interpolate(frame, [0, durationInFrames], [1.0, 1.1]);
+  const carte = interpolate(frame, [10, 20], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   return (
     <Frame theme={theme}>
-      <AbsoluteFill style={{ overflow: "hidden" }}>
+      <div style={{ position: "absolute", top: 0, left: 0, width: 1080, height: 1250, overflow: "hidden", WebkitMaskImage: "linear-gradient(180deg, #000 0%, #000 55%, transparent 100%)", maskImage: "linear-gradient(180deg, #000 0%, #000 55%, transparent 100%)" }}>
         <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
-      </AbsoluteFill>
-      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(17,26,25,0.65) 0%, rgba(17,26,25,0) 22%, rgba(17,26,25,0) 36%, rgba(26,58,53,0.85) 60%, rgba(26,58,53,0.95) 100%)" }} />
+        <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(16,36,31,0.4) 0%, rgba(16,36,31,0) 25%)" }} />
+      </div>
+      {nom && (
+        <div style={{ position: "absolute", left: 0, top: 770, opacity: carte, translate: `${(1 - carte) * -40}px 0`, background: "rgba(16,36,31,0.92)", borderLeft: `14px solid ${C.ochre}`, padding: "22px 40px 22px 70px", borderRadius: "0 12px 12px 0", maxWidth: 820 }}>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 56, color: C.paper, textTransform: "uppercase", lineHeight: 1 }}>{nom}</div>
+          {role && <div style={{ fontFamily: SANS, fontWeight: 900, fontSize: 32, color: C.ochre, textTransform: "uppercase", letterSpacing: 2, marginTop: 10 }}>{role}</div>}
+        </div>
+      )}
       {(kicker || title) && (
-        <Body top={980}>
-          {kicker && <Kicker color={C.paper}>{kicker}</Kicker>}
+        <Body top={1030}>
+          {kicker && <Kicker center>{kicker}</Kicker>}
           {title && (
             <Rise delay={8}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 96 : title.length <= 32 ? 74 : 60, lineHeight: 1.02, color: C.paper, letterSpacing: TRACK_TITRE, textTransform: "uppercase", maxHeight: 220, overflow: "hidden" }}>{title}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: sansEtoiles(title).length <= 18 ? 92 : sansEtoiles(title).length <= 32 ? 72 : 58, lineHeight: 1.04, color: C.paper, textTransform: "uppercase", textAlign: "center", maxHeight: 200, overflow: "hidden" }}>
+                <Mots texte={title} />
+              </div>
             </Rise>
           )}
         </Body>
       )}
-      <div style={{ position: "absolute", right: 180, top: 246, maxWidth: 800, textAlign: "right", fontFamily: SANS, fontWeight: 500, fontSize: 20, lineHeight: 1.3, color: "rgba(245,242,234,0.9)" }}>{credit}</div>
+      <div style={{ position: "absolute", left: PAD, width: CONTENT_W, top: 1470, textAlign: "center", fontFamily: SANS, fontWeight: 500, fontSize: 22, lineHeight: 1.3, color: "rgba(245,242,234,0.55)" }}>{credit}</div>
+    </Frame>
+  );
+};
+
+// Photo ronde : image découpée en cercle, cerclée d'ocre, avec titre centré dessous
+export const PhotoRonde: React.FC<P<{ src: string; credit: string; kicker?: string; title?: string; legende?: string }>> = ({ theme, src, credit, kicker, title, legende }) => {
+  const frame = useCurrentFrame();
+  const { durationInFrames } = useVideoConfig();
+  const p = interpolate(frame, [2, 16], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const anneau = interpolate(frame, [8, 26], [0, 360], { ...clamp, easing: Easing.out(Easing.cubic) });
+  const zoom = interpolate(frame, [0, durationInFrames], [1.05, 1.15]);
+  const D = 520;
+  return (
+    <Frame theme={theme}>
+      <div style={{ position: "absolute", left: PAD + CONTENT_W / 2 - D / 2, top: 400, width: D, height: D }}>
+        <svg width={D + 40} height={D + 40} style={{ position: "absolute", left: -20, top: -20 }}>
+          <circle cx={(D + 40) / 2} cy={(D + 40) / 2} r={D / 2 + 10} fill="none" stroke={C.ochre} strokeWidth={12} strokeDasharray={`${(anneau / 360) * Math.PI * (D + 20)} 9999`} transform={`rotate(-90 ${(D + 40) / 2} ${(D + 40) / 2})`} strokeLinecap="round" />
+        </svg>
+        <div style={{ width: D, height: D, borderRadius: "50%", overflow: "hidden", scale: `${0.85 + 0.15 * p}`, opacity: p }}>
+          <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
+        </div>
+      </div>
+      <Body top={985}>
+        {kicker && <Kicker center>{kicker}</Kicker>}
+        {title && (
+          <Rise delay={10}>
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: sansEtoiles(title).length <= 20 ? 88 : 66, lineHeight: 1.04, color: C.paper, textTransform: "uppercase", textAlign: "center" }}>
+              <Mots texte={title} />
+            </div>
+          </Rise>
+        )}
+        {legende && (
+          <Rise delay={16}>
+            <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 40, color: C.sage, textAlign: "center", marginTop: 20 }}>{legende}</div>
+          </Rise>
+        )}
+      </Body>
+      <div style={{ position: "absolute", left: PAD, width: CONTENT_W, top: 1470, textAlign: "center", fontFamily: SANS, fontWeight: 500, fontSize: 22, color: "rgba(245,242,234,0.55)" }}>{credit}</div>
     </Frame>
   );
 };
@@ -894,6 +982,7 @@ export const SCENE_TYPES: Record<string, React.FC<any>> = {
   barres: Barres,
   avantApres: AvantApres,
   illustration: Illustration,
+  photoRonde: PhotoRonde,
 };
 // Scènes sans sous-titres (le texte à l'écran reprend déjà la voix)
 export const NO_CAPTIONS = new Set(["statement", "outro"]);
