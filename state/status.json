@@ -10,11 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-04T11:24:30.242Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Montage lancé.",
    "t": "2026-11-04T11:24:30.243Z"
   },
@@ -407,9 +402,14 @@
    "agent": "diffuseur",
    "texte": "Vidéo archivée comme publiée sur TikTok.",
    "t": "2026-11-05T09:32:00.285Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo archivée comme publiée sur TikTok.",
+   "t": "2026-11-05T09:32:14.419Z"
   }
  ],
- "maj": "2026-11-05T09:32:00.287Z",
+ "maj": "2026-11-05T09:32:14.423Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
