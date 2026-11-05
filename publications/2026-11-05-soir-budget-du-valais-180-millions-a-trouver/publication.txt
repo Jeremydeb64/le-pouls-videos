@@ -1,0 +1,31 @@
+LE POULS
+Budget du Valais : 180 millions à trouver
+Édition du soir, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le Valais veut dégager au moins 180 millions d'ici 2030. Pas de licenciements prévus, une hausse d'impôts à l'étude pour les particuliers : on t'explique.
+Sources : RTS Valais, « Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030 » ; Rhône FM ; Canton du Valais
+#Valais #Finances #Budget #Economies #Impots
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS Valais : Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030 (https://www.rts.ch/info/regions/valais/2026/article/valais-le-conseil-d-etat-cherche-180-millions-d-economies-29405945.html)
+- Rhône FM : L'Etat du Valais veut trouver 180 millions de francs pour 2030 (https://www.rhonefm.ch/valais/letat-du-valais-veut-trouver-180-millions-de-francs-pour-2030-1843768)
+- Canton du Valais : Programme d'équilibre des finances cantonales : principes, organisation et calendrier (https://www.vs.ch/)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 6) : La scène « Subventions, personnel, investissements, fiscalité » démarre au seg 26, alors que « Rien n'est décidé » est au seg 28 et les groupes de travail sont cités au seg 29. Les quatre thèmes sont affichés en une seule ligne, sans les quatre pastilles demandées dans la note `demande_nouvelle_scene`.
+- mineur (scène 9) : La frise reprend les repères demandés (fin 2027, 2028, dès 2029), mais les libellés ne sont pas tout à fait ceux proposés, et « Dès 2029 » ne précise pas que certaines mesures passent par le Grand Conseil et arrivent en 2030.
+- mineur (scène 11) : La source « Canton du Valais » pointe toujours vers la page d'accueil https://www.vs.ch/, qui ne permet pas de vérifier la conférence de presse du 4 novembre.
+- bloquant (scène 2) : Sur la carte, les libellés « Viège » et « Brigue » se chevauchent et deviennent illisibles.
+- bloquant (scène 6) : Le titre « SUBVENTIONS, PERSONNEL, INVESTISSEMENT, FISCALITÉ » est coupé : le « T » final de INVESTISSEMENT sort du cadre à droite.
+- important (scène 6) : La demande de quatre pastilles icônes (Subventions, Personnel, Investissements, Fiscalité) n'apparaît pas à l'écran : la scène n'affiche que le titre.
+- mineur (scène 3) : Le mot « francs » est seul sur la deuxième ligne du titre « 180 millions de francs ».
+- mineur (scène 7) : Le crédit photo se coupe en deux lignes avec « SA 3.0 » isolé, et il se situe en haut de l'image, dans la zone TikTok.
+- mineur (scène 11) : Le titre de la carte récapitulative « Au moins 180 millions d'ici 2030 » laisse « 2030 » seul en fin de ligne.
+- mineur (scène 2) : La pastille de sous-titre « et aujourd'hui, on parle » commence à x≈92, légèrement en dehors de la zone x 100–900.

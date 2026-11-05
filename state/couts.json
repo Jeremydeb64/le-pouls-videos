@@ -109,6 +109,116 @@
    "unite": "tokens",
    "usd": 0.0888,
    "execution": "édition matin 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:23:08.671Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 94683,
+   "unite": "tokens",
+   "usd": 0.0113,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:24:35.685Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 54591,
+   "unite": "tokens",
+   "usd": 0.2254,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:24:35.685Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:25:40.362Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 82970,
+   "unite": "tokens",
+   "usd": 0.2382,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:25:40.362Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 3,
+   "unite": "recherches",
+   "usd": 0.03,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:27:44.939Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 76261,
+   "unite": "tokens",
+   "usd": 0.3224,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:27:44.939Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:28:00.365Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 14107,
+   "unite": "tokens",
+   "usd": 0.0028,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:28:25.783Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 642,
+   "unite": "crédits",
+   "usd": 0.0514,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:28:30.673Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 68,
+   "unite": "secondes",
+   "usd": 0.0042,
+   "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-05T17:30:23.219Z",
+   "contexte": "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 17273,
+   "unite": "tokens",
+   "usd": 0.0037,
+   "execution": "édition soir 2026-11-05"
   }
  ],
  "executions": [
@@ -136,41 +246,47 @@
    "date": "2026-11-05T09:14:10.642Z",
    "etiquette": "édition matin 2026-11-05",
    "usd": 1.2222
+  },
+  {
+   "date": "2026-11-05T17:30:23.224Z",
+   "etiquette": "édition soir 2026-11-05",
+   "usd": 0.9294
   }
  ],
  "par_jour": {
   "2026-11-05": {
-   "anthropic": 1.1655,
-   "elevenlabs": 0.0567,
+   "anthropic": 2.0393,
+   "elevenlabs": 0.1123,
    "higgsfield": 0,
-   "total": 1.2222
+   "total": 2.1516
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 1.1655,
-   "elevenlabs": 0.0567,
+   "anthropic": 2.0393,
+   "elevenlabs": 0.1123,
    "higgsfield": 0,
-   "total": 1.2222
+   "total": 2.1516
   }
  },
  "par_video": {
-  "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115
+  "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115,
+  "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181
  },
  "soldes": {
-  "date": "2026-11-05T09:14:10.644Z",
+  "date": "2026-11-05T17:30:23.226Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 56855,
+   "credits_utilises": 60220,
    "credits_mois": 131000,
-   "credits_restants": 74145,
+   "credits_restants": 70780,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 13.7745,
+   "credit_estime_restant_usd": 12.9007,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-05T09:14:12.101Z"
+ "maj": "2026-11-05T17:30:24.646Z"
 }

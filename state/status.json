@@ -1,5 +1,5 @@
 {
- "edition": "matin",
+ "edition": "soir",
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
@@ -8,96 +8,6 @@
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:24:30.243Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:26:08.773Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits sont bons et sourcés, la charte est respectée et le ton est sobre. Il reste quatre corrections. 1) Phrase « n'ont pas à évacuer… le Canton juge cela très peu probable » : « cela » est ambigu, à reformuler (« une évacuation très peu probable ») et à re-enregistrer. 2) Crédit photo de la scène 2 : le ramener à gauche de x = 920. 3) Carte Blatten : « plus de 30 fois plus petit », à remettre dans le bon ordre. 4) Pauses de plus d'une seconde à 6 endroits : à réduire. Pense aussi à nuancer la vitesse (parfois moins de 10 cm ces derniers jours) et à ajouter « plutôt improbable » sur la carte de la portée.",
-   "t": "2026-11-04T11:27:28.319Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T11:27:28.321Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-04T11:29:01.834Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 4 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T11:29:35.347Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Jeffrey Pang from Berkeley, CA, USA / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-04T11:29:35.698Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-04T11:29:35.718Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T11:29:35.719Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis les faits et je regarde les images clés.",
-   "t": "2026-11-04T11:31:15.545Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Sujet sensible (Randa/Blatten) : le ton est sobre, les faits sont sourcés et les estimations bien signalées, donc pas de blocage. Il y a un souci de mise en page. Les cartes 3, 4, 11, 12 et 14 sont à reprendre : texte coupé (cartes 4 et 12), chevauchement du « 500’000 » avec son libellé (carte 3) et texte dans la zone masquée TikTok (cartes 4, 11, 12 et 14). Raccourcis les textes. Ajoute « pour cet hiver » à la phrase sur le scénario improbable. Cale le chiffre 450 sur la voix. Resserre les deux pauses de plus d'une seconde (vers 29 s et 39 s). Décale aussi un peu le crédit photo vers la gauche.",
-   "t": "2026-11-04T11:32:15.649Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-04T11:32:15.651Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
-   "t": "2026-11-04T14:29:32.344Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du soir, je fais le tour des sources.",
-   "t": "2026-11-04T14:29:32.345Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "118 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T14:29:38.345Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Aéroport de Sion : ce qui se vote ». Campagne lancée aujourd'hui, sujet local avec des chiffres et des comparaisons faciles à mettre en infographie ; la date du scrutin n'apparaît pas dans les articles et doit être vérifiée avant production, de même que les chiffres avancés par le comité du oui.",
-   "t": "2026-11-04T14:30:01.813Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Le Nouvelliste.",
-   "t": "2026-11-04T14:30:01.822Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T14:31:57.883Z"
-  },
   {
    "agent": "controleur",
    "texte": "Pas de blocage : le texte est globalement équilibré. Dates et chiffres vérifiés : J-25 est juste, le vote est le 29 novembre, 103 voix contre 24, 34 % et 20 %, 70/20/10, 2031. Aucun drame local récent trouvé autour de l'aéroport de Sion. Corrections à faire : (1) l'écran ballot doit reprendre l'intitulé officiel de la loi, sans « oui ou non ? », et le titre ne doit pas laisser croire que c'est le seul objet du 29 novembre, puisque le salaire minimum est aussi au vote ; (2) la scène photo « Ce que change le oui » doit devenir neutre et symétrique avec le non, avec un crédit photo visible (auteur + licence Wikimedia Commons) ; (3) remets « estimée » sur les 3 à 6 millions dans le récap et à l'oral ; (4) documente dans `faits` les arguments « secours et formation » et le déficit de 3 millions, car une autre source d'opposants parle de 6 millions, puis ajoute la source des Vert-e-s ; (5) retire Le Nouvelliste des crédits s'il n'est pas lu.",
@@ -407,9 +317,99 @@
    "agent": "diffuseur",
    "texte": "Vidéo archivée comme publiée sur TikTok.",
    "t": "2026-11-05T09:32:14.419Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 71445 crédits restants ce mois-ci.",
+   "t": "2026-11-05T17:22:36.995Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du soir, je fais le tour des sources.",
+   "t": "2026-11-05T17:22:36.998Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "264 articles lus, je regroupe par sujet.",
+   "t": "2026-11-05T17:22:45.552Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Budget cantonal : 180 millions à trouver d'ici 2030 ». Un chiffre clair (180 millions d'ici 2030, dont deux tiers pour 2028), qui touche directement les services publics, et une question simple : économies ou hausse d'impôts ?",
+   "t": "2026-11-05T17:23:08.672Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-05T17:23:08.675Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-05T17:24:35.688Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Faits confirmés : 180 millions, deux tiers dès 2028 (120 millions), plus de 200 millions côté Confédération, quatre groupes, hausse d'impôts sauf classes défavorisées, dernière hausse au début du XXIe siècle. Quatre points à reprendre : 1) Ne dis pas que Berne est la seule cause : les dépenses grimpent aussi plus vite que les recettes. Remplace « surtout » par « notamment » (santé, primes maladie) et précise « charges en plus ou recettes en moins ». 2) Dis clairement si les 180 millions sont un montant annuel, car Rhône FM écrit « par an » et pas la RTS. 3) Simplifie le calendrier : moins d'années dites, et une frise qui affiche ce que la voix annonce, dont fin 2027. 4) Dans le récap, nuance « licenciements » et « impôts » (pour les particuliers). Corrige aussi le décalage de la scène 6 et l'URL vs.ch.",
+   "t": "2026-11-05T17:25:40.363Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-05T17:25:40.365Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-05T17:27:44.941Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Corrections des deux relectures bien prises en compte : nuance sur Berne, « notamment » au lieu de « surtout », récap adouci, visuel sur le personnel et fiche de faits complétée. Il reste trois petites retouches : démarrer la scène des quatre groupes au seg 29 (ou afficher les quatre pastilles), préciser le libellé de la frise 2029-2030, et mettre l'URL exacte du communiqué cantonal dans les sources.",
+   "t": "2026-11-05T17:28:00.365Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
+   "t": "2026-11-05T17:28:00.367Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 21 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-05T17:28:30.679Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : vaquins / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-05T17:28:42.679Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-05T17:28:42.685Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-05T17:29:54.941Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Trois points à corriger côté rendu : les libellés Viège et Brigue se chevauchent sur la carte, le « T » de INVESTISSEMENT est coupé, et les quatre pastilles de la scène Subventions ne sont pas affichées. Pour le son, je ne peux pas vérifier les silences ni la fin à partir des seules images, donc merci de confirmer la voix sur toute la durée.",
+   "t": "2026-11-05T17:30:23.219Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.93 $ (Claude + ElevenLabs).",
+   "t": "2026-11-05T17:30:24.651Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-05T17:30:24.653Z"
   }
  ],
- "maj": "2026-11-05T09:32:14.423Z",
+ "maj": "2026-11-05T17:30:41.331Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -957,6 +957,98 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24/LePouls_2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1kv4ZPkLJ6vt3aUauKteLp9q3oxHSCqYK",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/5"
+  },
+  {
+   "id": "2026-11-05-soir-budget-du-valais-180-millions-a-trouver",
+   "titre": "Budget du Valais : 180 millions à trouver",
+   "edition": "soir",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "La scène « Subventions, personnel, investissements, fiscalité » démarre au seg 26, alors que « Rien n'est décidé » est au seg 28 et les groupes de travail sont cités au seg 29. Les quatre thèmes sont affichés en une seule ligne, sans les quatre pastilles demandées dans la note `demande_nouvelle_scene`.",
+     "correction_demandee": "Démarrer la scène au seg 29, ou afficher les quatre thèmes en pastilles apparaissant une à une, comme prévu dans la note de scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "La frise reprend les repères demandés (fin 2027, 2028, dès 2029), mais les libellés ne sont pas tout à fait ceux proposés, et « Dès 2029 » ne précise pas que certaines mesures passent par le Grand Conseil et arrivent en 2030.",
+     "correction_demandee": "Facultatif : reprendre les libellés proposés (« Les autres mesures décidées », « Premières mesures », « Mise en œuvre des autres »)."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 11,
+     "constat": "La source « Canton du Valais » pointe toujours vers la page d'accueil https://www.vs.ch/, qui ne permet pas de vérifier la conférence de presse du 4 novembre.",
+     "correction_demandee": "Remplacer l'URL par celle du communiqué ou de la page « Programme d'équilibre des finances cantonales », ou retirer cette source."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 2,
+     "constat": "Sur la carte, les libellés « Viège » et « Brigue » se chevauchent et deviennent illisibles.",
+     "correction_demandee": "Écarter les libellés Viège et Brigue (décalage ou suppression de l'un des deux) pour qu'aucun texte ne se superpose."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 6,
+     "constat": "Le titre « SUBVENTIONS, PERSONNEL, INVESTISSEMENT, FISCALITÉ » est coupé : le « T » final de INVESTISSEMENT sort du cadre à droite.",
+     "correction_demandee": "Réduire la taille de police ou passer le mot sur une ligne plus courte pour que le titre entre entièrement dans la marge."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "La demande de quatre pastilles icônes (Subventions, Personnel, Investissements, Fiscalité) n'apparaît pas à l'écran : la scène n'affiche que le titre.",
+     "correction_demandee": "Ajouter les quatre pastilles apparaissant une à une, avec le même style neutre, comme prévu dans le scénario."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "Le mot « francs » est seul sur la deuxième ligne du titre « 180 millions de francs ».",
+     "correction_demandee": "Reformuler ou ajuster la largeur pour éviter le mot orphelin."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "Le crédit photo se coupe en deux lignes avec « SA 3.0 » isolé, et il se situe en haut de l'image, dans la zone TikTok.",
+     "correction_demandee": "Raccourcir le crédit ou le réduire en taille pour qu'il tienne sur une ligne, et le placer dans la zone sûre tout en restant visible."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 11,
+     "constat": "Le titre de la carte récapitulative « Au moins 180 millions d'ici 2030 » laisse « 2030 » seul en fin de ligne.",
+     "correction_demandee": "Ajuster le retour à la ligne pour éviter le mot orphelin."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "La pastille de sous-titre « et aujourd'hui, on parle » commence à x≈92, légèrement en dehors de la zone x 100–900.",
+     "correction_demandee": "Recentrer ou réduire la pastille pour qu'elle reste dans la zone x 100–900."
+    }
+   ],
+   "description_tiktok": "Le Valais veut dégager au moins 180 millions d'ici 2030. Pas de licenciements prévus, une hausse d'impôts à l'étude pour les particuliers : on t'explique.\nSources : RTS Valais, « Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030 » ; Rhône FM ; Canton du Valais\n#Valais #Finances #Budget #Economies #Impots",
+   "sources": [
+    {
+     "media": "RTS Valais",
+     "titre": "Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-le-conseil-d-etat-cherche-180-millions-d-economies-29405945.html"
+    },
+    {
+     "media": "Rhône FM",
+     "titre": "L'Etat du Valais veut trouver 180 millions de francs pour 2030",
+     "url": "https://www.rhonefm.ch/valais/letat-du-valais-veut-trouver-180-millions-de-francs-pour-2030-1843768"
+    },
+    {
+     "media": "Canton du Valais",
+     "titre": "Programme d'équilibre des finances cantonales : principes, organisation et calendrier",
+     "url": "https://www.vs.ch/"
+    }
+   ],
+   "mp4": "out/budget-cantonal-180-millions-a-trouver-d-ici-2030/2026-11-05-soir-budget-du-valais-180-millions-a-trouver.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.9181,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-soir-budget-du-valais-180-millions-a-trouver/LePouls_2026-11-05-soir-budget-du-valais-180-millions-a-trouver.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1ZG5DmDYO3xX3hHZ1fMhlCtypZrG_ajOc",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/6"
   }
  ]
 }
