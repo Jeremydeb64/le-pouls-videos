@@ -25,6 +25,11 @@ if (process.env.CRON) {
     console.log(`Déjà ${faites} vidéos aujourd'hui : édition automatique ignorée.`);
     process.exit(0);
   }
+  const dejaFaite = histo.some((h) => h.id?.includes(`-${EDITION}-`) && new Date(h.date).toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" }) === jour);
+  if (dejaFaite) {
+    console.log(`L'édition du ${EDITION} a déjà été faite aujourd'hui : essai ignoré.`);
+    process.exit(0);
+  }
 }
 const slug = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 50);
 
