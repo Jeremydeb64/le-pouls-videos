@@ -67,9 +67,12 @@ export const swiss = (n: number) => Math.round(n).toString().replace(/\B(?=(\d{3
 const plain = (n: number) => Math.round(n).toString();
 
 // Données : progression mesurée (easeOutQuart, 700 ms) puis valeur stable
-const Counter: React.FC<{ to: number; delay?: number; dur?: number; grouped?: boolean }> = ({ to, delay = 0, dur = 21, grouped = true }) => {
+const Counter: React.FC<{ to: number; from?: number; delay?: number; dur?: number; grouped?: boolean }> = ({ to, from = 0, delay = 0, dur = 21, grouped = true }) => {
   const frame = useCurrentFrame();
-  const v = interpolate(frame - delay, [0, dur], [0, to], { ...clamp, easing: Easing.out(Easing.quad) });
+  const v = interpolate(frame - delay, [0, dur], [from, to], { ...clamp, easing: Easing.out(Easing.quad) });
+  // Décimales conservées (8,1 % reste 8,1 %), virgule à la française
+  const dec = Number.isInteger(to) ? 0 : Math.min(2, (String(to).split(".")[1] || "").length);
+  if (dec) return <>{v.toFixed(dec).replace(".", ",")}</>;
   return <>{(grouped && to >= 10000 ? swiss : plain)(v)}</>;
 };
 
@@ -840,12 +843,12 @@ export const AvantApres: React.FC<P<{ kicker: string; avant: { label: string; va
   const at = useAt();
   const d = at(a1);
   const variation = avant.value ? ((apres.value - avant.value) / avant.value) * 100 : 0;
-  const Bloc: React.FC<{ b: { label: string; value: number }; delay: number; fort?: boolean }> = ({ b, delay, fort }) => (
+  const Bloc: React.FC<{ b: { label: string; value: number }; delay: number; fort?: boolean; depart?: number }> = ({ b, delay, fort, depart = 0 }) => (
     <Rise delay={delay}>
       <div style={{ border: `4px solid ${t.fg}`, background: fort ? t.fg : "transparent", borderRadius: 24, padding: "40px 34px" }}>
         <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 2, textTransform: "uppercase", color: fort ? t.bg : t.sub }}>{b.label}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, lineHeight: 1, color: fort ? t.bg : t.fg, letterSpacing: -3, whiteSpace: "nowrap", marginTop: 10 }}>
-          <Counter to={b.value} delay={delay} /> <span style={{ fontSize: 56 }}>{unite}</span>
+          <Counter to={b.value} from={depart} delay={delay} dur={14} /> <span style={{ fontSize: 56 }}>{unite}</span>
         </div>
       </div>
     </Rise>
@@ -855,12 +858,12 @@ export const AvantApres: React.FC<P<{ kicker: string; avant: { label: string; va
       <Body top={380}>
         <Kicker color={t.accent}>{kicker}</Kicker>
         <Bloc b={avant} delay={d} />
-        <Rise delay={d + 16}>
+        <Rise delay={d + 8}>
           <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 110, color: t.accent, textAlign: "center", margin: "30px 0" }}>
-            ↓ {variation > 0 ? "+" : ""}{Math.round(variation)} %
+            ↓ {unite.includes("%") ? `${apres.value - avant.value > 0 ? "+" : ""}${(Math.round((apres.value - avant.value) * 10) / 10).toString().replace(".", ",")} point${Math.abs(apres.value - avant.value) >= 2 ? "s" : ""}` : `${variation > 0 ? "+" : ""}${Math.round(variation)} %`}
           </div>
         </Rise>
-        <Bloc b={apres} delay={d + 26} fort />
+        <Bloc b={apres} delay={d + 12} fort depart={avant.value} />
       </Body>
     </Frame>
   );

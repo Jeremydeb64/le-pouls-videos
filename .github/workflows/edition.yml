@@ -57,7 +57,7 @@ jobs:
           elif [ -n "$EDITION_DEMANDEE" ]; then
             EDITION=$EDITION_DEMANDEE; MAX_SUJETS=${MAX_DEMANDE:-1}
           else
-            case "$CRON" in "7 5 * * *"|"37 5 * * *"|"17 6 * * *") EDITION=matin;; *) EDITION=soir;; esac; MAX_SUJETS=1
+            case "$CRON" in "0 5 * * *"|"7 5 * * *"|"37 5 * * *"|"17 6 * * *") EDITION=matin;; *) EDITION=soir;; esac; MAX_SUJETS=1
           fi
           export EDITION MAX_SUJETS
           node pipeline/edition.mjs
