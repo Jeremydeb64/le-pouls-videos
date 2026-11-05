@@ -50,3 +50,29 @@ function testerAcces() {
   Logger.log(DriveApp.getFolderById(DOSSIER_PUBLICATIONS).getName());
   Logger.log(UrlFetchApp.fetch("https://github.com").getResponseCode());
 }
+
+// ---------------------------------------------------------------------------
+// Déclenchement fiable des éditions (les tâches planifiées de GitHub sont souvent retardées ou sautées).
+// Propriété du script à ajouter : GITHUB_TOKEN = jeton GitHub « fine-grained », dépôt le-pouls-videos,
+// permission « Actions : Read and write ». Puis exécuter une fois installerDeclencheurs().
+function lancerEdition_(edition) {
+  const jeton = PropertiesService.getScriptProperties().getProperty("GITHUB_TOKEN");
+  if (!jeton) throw new Error("Propriété GITHUB_TOKEN manquante");
+  const r = UrlFetchApp.fetch("https://api.github.com/repos/Jeremydeb64/le-pouls-videos/actions/workflows/edition.yml/dispatches", {
+    method: "post",
+    contentType: "application/json",
+    headers: { Authorization: "Bearer " + jeton, Accept: "application/vnd.github+json" },
+    payload: JSON.stringify({ ref: "main", inputs: { edition: edition, max_sujets: "1" } }),
+    muteHttpExceptions: true,
+  });
+  if (r.getResponseCode() !== 204) throw new Error("GitHub " + r.getResponseCode() + " : " + r.getContentText());
+}
+function editionMatin() { lancerEdition_("matin"); }
+function editionSoir() { lancerEdition_("soir"); }
+
+// À exécuter une seule fois : édition du matin entre 6 h et 7 h, du soir entre 16 h et 17 h (heure du projet Apps Script)
+function installerDeclencheurs() {
+  ScriptApp.getProjectTriggers().filter(function (t) { return /^edition(Matin|Soir)$/.test(t.getHandlerFunction()); }).forEach(function (t) { ScriptApp.deleteTrigger(t); });
+  ScriptApp.newTrigger("editionMatin").timeBased().everyDays(1).atHour(6).inTimezone("Europe/Zurich").create();
+  ScriptApp.newTrigger("editionSoir").timeBased().everyDays(1).atHour(16).inTimezone("Europe/Zurich").create();
+}
