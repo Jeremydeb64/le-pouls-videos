@@ -195,7 +195,10 @@ async function controlerTexte(script, precedents = null) {
       (precedents
         ? `\n\nDEUXIÈME LECTURE. Corrections que tu avais demandées :\n${JSON.stringify(precedents)}\nVérifie seulement qu'elles ont été faites. Ne soulève un nouveau point que s'il est BLOQUANT (fait faux, absence de neutralité manifeste, problème de droits). Sinon, réponds OK en listant les remarques restantes comme « mineur ».`
         : ""),
-    recherche: true,
+    // Première lecture : modèle principal avec recherche web (vérification des faits).
+    // Deuxième lecture (seulement vérifier les corrections) : modèle léger, sans recherche.
+    recherche: !precedents,
+    ...(precedents ? { modele: MODELE_LEGER } : {}),
   });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
   return verdict;
@@ -209,7 +212,7 @@ async function controlerVisuel(episode, dossier) {
     { type: "text", text: `PHASE VISUEL. Les faits ont déjà été validés. Contrôle uniquement la charte (point 4) et le son (point 5, d'après les sous-titres et la durée).\nÉpisode :\n${JSON.stringify({ duration: episode.duration, scenes: episode.scenes, captions: episode.captions.length })}` },
     ...images.map((f) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: fs.readFileSync(f).toString("base64") } })),
   ];
-  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict. Tout texte qui déborde, se chevauche ou sort de l'écran est BLOQUANT.", contenu });
+  const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict. Tout texte qui déborde, se chevauche ou sort de l'écran est BLOQUANT.", contenu, modele: MODELE_LEGER });
   redaction.dit("controleur", verdict.message_redaction || verdict.decision);
   redaction.agent("controleur", verdict.decision === "BLOQUE" ? "bloque" : "termine");
   return verdict;
@@ -245,7 +248,9 @@ for (const sujet of sujets) {
   fs.mkdirSync(dossier, { recursive: true });
   let script = await ecrire(sujet);
   let verdictTexte = await controlerTexte(script);
-  for (let tour = 0; tour < 2 && verdictTexte.decision === "A_CORRIGER"; tour++) {
+  // Un seul aller-retour de corrections, et seulement s'il y a au moins une remarque « important » ou « bloquant »
+  const aCorriger = (v) => v.decision === "A_CORRIGER" && (v.problemes || []).some((p) => p.gravite !== "mineur");
+  for (let tour = 0; tour < 1 && aCorriger(verdictTexte); tour++) {
     script = await ecrire(sujet, { version_precedente: script, problemes: verdictTexte.problemes });
     verdictTexte = await controlerTexte(script, verdictTexte.problemes);
   }
