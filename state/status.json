@@ -1,103 +1,13 @@
 {
  "edition": "soir",
- "etape": "veille",
+ "etape": "controleur",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "attend",
-  "controleur": "attend",
+  "scenariste": "termine",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "controleur",
-   "texte": "Charte globalement respectée : couleurs, typos, alternance papier/vert et zones sûres sont bons pour les titres et les sous-titres. Il reste quatre points à corriger : (1) scène 5, remonter le crédit photo dans la zone sûre, sur une ligne, sans le coller au logo ; (2) scène 7, supprimer le doublon « Hérémence » ; (3) scène 8, corriger la virgule dans « Pascal Guenot, défend le oui » ; (4) scènes 2 et 3, vérifier qu'il y a bien voix et sous-titres. Côté détails : sources de l'outro avec « 20 minutes » coupé, carte « Le non » vide trop longtemps, et le logo à vérifier sur la toute première image.",
-   "t": "2026-11-04T15:34:39.643Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-04T15:34:39.646Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 74823 crédits restants ce mois-ci.",
-   "t": "2026-11-05T09:06:19.958Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-05T09:06:19.960Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "261 articles lus, je regroupe par sujet.",
-   "t": "2026-11-05T09:06:27.103Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « 13e rente AVS : la TVA pour la financer, J-24 ». Le 29 novembre, on vote sur une hausse de la TVA pour financer la 13e rente AVS : tout le monde est concerné, et l'explication doit être neutre et publiée avant le vote.",
-   "t": "2026-11-05T09:06:44.398Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Suisse.",
-   "t": "2026-11-05T09:06:44.407Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-05T09:09:14.237Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Faits OK : chiffres, dates et noms recoupés avec les sources officielles (J-24, 8,1 → 8,5 %, 1,5 et 4,2 milliards, 84 à 336 francs, 2028, double majorité, positions des partis). À corriger avant le rendu : 1) mets le même ton pour le oui et le non, car [energetic] d'un côté et [serious] de l'autre déséquilibre le traitement. 2) Remplace « payer la 13e rente » par « financer en partie la 13e rente », y compris dans le titre de la scène 1. 3) Allège les chiffres des scènes 4 à 6, il y en a trop pour un spectateur qui découvre le sujet. 4) Ajoute dans `faits` les sources de « UDC : économies », de « retraités compris » et de « produits de première nécessité ». 5) Recale l'item « 29 novembre » de la frise.",
-   "t": "2026-11-05T09:10:01.600Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-05T09:10:01.602Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-05T09:11:35.062Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Toutes les corrections sont faites. Si tu as le temps, ajoute bluewin à `sources` (remarque mineure). Sinon, on peut passer à l'étape suivante.",
-   "t": "2026-11-05T09:11:53.673Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
-   "t": "2026-11-05T09:11:53.688Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-05T09:12:23.573Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-05T09:12:23.575Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-05T09:13:14.691Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Quelques corrections avant validation. 1) Scène avant/après (8,1 → 8,5 %): les chiffres doivent s'afficher plus tôt, la scène est vide trop longtemps. 2) Scène des coûts: « 84 francs par / an » passe à la ligne, mets seulement « 84 francs » et « 336 francs ». 3) Versus: affiche les deux colonnes dès le début et vérifie l'équilibre des temps (Oui environ 12,4 s, Non environ 9,9 s, soit plus de 15 % d'écart). 4) Vérifie les sous-titres des scènes 3 et 5 (rien à l'écran sur les images contrôlées). 5) Dans le récap, la ligne 2 est coupée pendant son animation. 6) « 13E » doit rester « 13e ». Le reste de la charte (couleurs, typos, alternance, zone sûre) est bon.",
-   "t": "2026-11-05T09:14:10.639Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 1.22 $ (Claude + ElevenLabs).",
-   "t": "2026-11-05T09:14:12.105Z"
-  },
   {
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
@@ -407,9 +317,99 @@
    "agent": "veilleur",
    "texte": "Je garde « Ski : les premières descentes dès ce week-end ». Information pratique pour le week-end, à relier à la carte des domaines ouverts ; vérifier les pistes annoncées auprès des stations avant publication.",
    "t": "2026-11-06T16:11:45.289Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 68463 crédits restants ce mois-ci.",
+   "t": "2026-11-06T16:13:29.380Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Sujet choisi par la rédaction : « Col du Lein et Grand-Saint-Bernard : fermetures pour l'hiver ». Je transmets au Scénariste.",
+   "t": "2026-11-06T16:13:29.381Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du 24 heures.",
+   "t": "2026-11-06T16:13:29.384Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T16:14:43.077Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Texte globalement exact et neutre. Les dates (jeudi 5 novembre à 8 h pour le Grand-Saint-Bernard, vendredi 6 novembre pour le Lein), le « selon la Commune » et le 85'000 sont corrects. Je me suis aussi appuyé sur saxon.ch pour le Lein. Cinq points à reprendre. 1) Le tunnel « ouvert toute l'année » n'est pas vérifié pour cet hiver : source officielle ou nuance (« en principe »). 2) Carte du Lein : enlève Sembrancher, qui n'est pas dans les sources de la fermeture, ou ssource-le, et corrige « Valais central ». 3) Remplace « Super Saint-Bernard » par une formule claire, par exemple « au-dessus de Bourg-Saint-Pierre ». 4) Ajoute aux `faits` l'information sur les usagers des mayens (24 heures). 5) Précise la frise : la réouverture au printemps 2027 concerne le Lein. Ajoute la Commune de Saxon aux sources.",
+   "t": "2026-11-06T16:15:22.351Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-06T16:15:22.353Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T16:16:53.715Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées ont été faites : nuance du tunnel (voix, récap, légende), carte du Lein limitée à Saxon, « Super Saint-Bernard » et l'heure retirés de la voix, fait sur les usagers du Lein ajouté, frise sans date précise pour le Grand-Saint-Bernard, sources de l'outro alignées sur les faits. Reste à vérifier les crédits photo en phase image.",
+   "t": "2026-11-06T16:17:01.351Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-06T16:17:01.353Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 5 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-06T16:17:28.416Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Ludovic Péron / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-06T16:17:29.525Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Olivier Bruchez from Lausanne, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
+   "t": "2026-11-06T16:17:30.146Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-06T16:17:30.637Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-06T16:17:30.641Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-06T16:18:55.901Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Trois débordements visuels bloquants : titre et sous-titre qui se chevauchent sur la carte Bourg-Saint-Pierre (scène 1), légende et sous-titres superposés sur la photo de l'hospice (scène 2), et le chiffre 85'000 coupé à droite (scène 3). Corrige la mise en page de ces trois scènes, puis ajoute l'accent sur « État » dans l'outro.",
+   "t": "2026-11-06T16:19:12.559Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.75 $ (Claude + ElevenLabs).",
+   "t": "2026-11-06T16:19:13.783Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-06T16:19:13.786Z"
   }
  ],
- "maj": "2026-11-06T16:11:45.291Z",
+ "maj": "2026-11-06T16:19:31.899Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1256,6 +1256,93 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-soir-ava-l-ia-du-valais/LePouls_2026-11-06-soir-ava-l-ia-du-valais.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1WCz_QMcpuM4o7VLpBFPK6tVf-TF_966L",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/8"
+  },
+  {
+   "id": "2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h",
+   "titre": "Grand-Saint-Bernard et col du Lein : fermés pour l'hiver",
+   "edition": "soir",
+   "decision": "BLOQUE",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Les scènes photo (Grand-Saint-Bernard, tunnel, col du Lein) n'ont pas encore de champ de crédit visible. Non vérifiable en phase texte.",
+     "correction_demandee": "À contrôler en phase image : chaque photo doit venir d'une photothèque libre ou sous licence, avec auteur et licence visibles à l'écran. Aucune photo de presse ni capture d'article."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 1,
+     "constat": "Le titre « Bourg-Saint-Pierre » se chevauche avec le sous-titre « Grand-Saint-Bernard », qui est partiellement masqué et illisible.",
+     "correction_demandee": "Réduire la taille du titre ou laisser de la place au sous-titre sous le nom de commune, ou décaler le sous-titre pour qu'il ne soit plus recouvert."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 2,
+     "constat": "La légende « Accès à pied ou à skis de randonnée » se superpose au sous-titre vidéo « quand il y a assez de neige. ».",
+     "correction_demandee": "Déplacer la légende ou les sous-titres pour qu'ils ne se chevauchent pas, par exemple en remontant la légende ou en descendant les sous-titres dans la zone sûre."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 3,
+     "constat": "Le grand chiffre « 85'000 » est coupé à droite : le dernier zéro dépasse du bloc et est tronqué.",
+     "correction_demandee": "Réduire la taille du chiffre ou élargir son conteneur pour que « 85'000 » s'affiche en entier, avec une marge à droite, dans la zone x = 100 à 900."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Dans la mention des sources, « Etat du Valais » n'a pas d'accent sur le « É » de « État ».",
+     "correction_demandee": "Corriger l'orthographe en « État du Valais » dans l'outro."
+    }
+   ],
+   "description_tiktok": "Le Grand-Saint-Bernard et le col du Lein sont fermés pour l'hiver. Pour l'Italie, le tunnel reste en principe la voie à suivre : vérifie la route avant de partir.\nSources : 24 heures, « Le col du Grand-Saint-Bernard ferme ses portes aux voitures jusqu'au printemps » ; Le Nouvelliste ; Commune de Saxon ; Etat du Valais\n#Valais #GrandSaintBernard #ColduLein #Saxon #Entremont",
+   "sources": [
+    {
+     "media": "24 heures",
+     "titre": "Le col du Grand-Saint-Bernard ferme ses portes aux voitures jusqu'au printemps",
+     "url": "https://www.24heures.ch/grand-saint-bernard-le-col-ferme-pour-lhiver-des-ce-jeudi-197379022669"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Valais central: le col du Lein fermé à Saxon jusqu'au printemps 2027",
+     "url": "https://www.24heures.ch/col-du-lein-la-route-de-saxon-fermee-jusquau-printemps-590561688083"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Grand-Saint-Bernard: la route ferme à la circulation pour l'hiver",
+     "url": "https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/bourg-saint-pierre-commune/grand-saint-bernard/grand-saint-bernard-la-route-ferme-a-la-circulation-pour-lhiver-1520403"
+    },
+    {
+     "media": "Commune de Saxon",
+     "titre": "Fermeture hivernale – Col du Lein",
+     "url": "https://www.saxon.ch/"
+    },
+    {
+     "media": "Etat du Valais",
+     "titre": "Ouverture de la route du col du Grand-St-Bernard",
+     "url": "https://www.vs.ch/web/communication/w/ouverture-de-la-route-du-col-du-grand-st-bernard-2-476-m-2"
+    },
+    {
+     "media": "Tunnel du Grand-Saint-Bernard (exploitant)",
+     "titre": "Le Tunnel du Grand-Saint-Bernard",
+     "url": "https://letunnel.com/en/"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Intempéries: la route du Grand-Saint-Bernard fermée jusqu'à nouvel ordre",
+     "url": "https://www.24heures.ch/intemperies-la-route-du-grand-saint-bernard-fermee-jusqua-nouvel-ordre-763935870206"
+    },
+    {
+     "media": "TCS",
+     "titre": "Cols suisses : ouverture et météo",
+     "url": "https://www.tcs.ch/fr/tools/inforoute-situation-trafic/cols-en-suisse.php"
+    }
+   ],
+   "mp4": "out/col-du-lein-et-grand-saint-bernard-fermetures-pour/2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h.mp4",
+   "etat": "bloque",
+   "cout_usd": 0.754,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h/LePouls_2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1xVM8udfo22J2B2-S6wz5DFVk2oKAyI73",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/9"
   }
  ]
 }

@@ -1,0 +1,31 @@
+LE POULS
+Grand-Saint-Bernard et col du Lein : fermés pour l'hiver
+Édition du soir, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le Grand-Saint-Bernard et le col du Lein sont fermés pour l'hiver. Pour l'Italie, le tunnel reste en principe la voie à suivre : vérifie la route avant de partir.
+Sources : 24 heures, « Le col du Grand-Saint-Bernard ferme ses portes aux voitures jusqu'au printemps » ; Le Nouvelliste ; Commune de Saxon ; Etat du Valais
+#Valais #GrandSaintBernard #ColduLein #Saxon #Entremont
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- 24 heures : Le col du Grand-Saint-Bernard ferme ses portes aux voitures jusqu'au printemps (https://www.24heures.ch/grand-saint-bernard-le-col-ferme-pour-lhiver-des-ce-jeudi-197379022669)
+- 24 heures : Valais central: le col du Lein fermé à Saxon jusqu'au printemps 2027 (https://www.24heures.ch/col-du-lein-la-route-de-saxon-fermee-jusquau-printemps-590561688083)
+- Le Nouvelliste : Grand-Saint-Bernard: la route ferme à la circulation pour l'hiver (https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/bourg-saint-pierre-commune/grand-saint-bernard/grand-saint-bernard-la-route-ferme-a-la-circulation-pour-lhiver-1520403)
+- Commune de Saxon : Fermeture hivernale – Col du Lein (https://www.saxon.ch/)
+- Etat du Valais : Ouverture de la route du col du Grand-St-Bernard (https://www.vs.ch/web/communication/w/ouverture-de-la-route-du-col-du-grand-st-bernard-2-476-m-2)
+- Tunnel du Grand-Saint-Bernard (exploitant) : Le Tunnel du Grand-Saint-Bernard (https://letunnel.com/en/)
+- 24 heures : Intempéries: la route du Grand-Saint-Bernard fermée jusqu'à nouvel ordre (https://www.24heures.ch/intemperies-la-route-du-grand-saint-bernard-fermee-jusqua-nouvel-ordre-763935870206)
+- TCS : Cols suisses : ouverture et météo (https://www.tcs.ch/fr/tools/inforoute-situation-trafic/cols-en-suisse.php)
+
+=== CONTRÔLE ===
+Décision : BLOQUE
+- mineur (scène 2) : Les scènes photo (Grand-Saint-Bernard, tunnel, col du Lein) n'ont pas encore de champ de crédit visible. Non vérifiable en phase texte.
+- bloquant (scène 1) : Le titre « Bourg-Saint-Pierre » se chevauche avec le sous-titre « Grand-Saint-Bernard », qui est partiellement masqué et illisible.
+- bloquant (scène 2) : La légende « Accès à pied ou à skis de randonnée » se superpose au sous-titre vidéo « quand il y a assez de neige. ».
+- bloquant (scène 3) : Le grand chiffre « 85'000 » est coupé à droite : le dernier zéro dépasse du bloc et est tronqué.
+- mineur (scène 10) : Dans la mention des sources, « Etat du Valais » n'a pas d'accent sur le « É » de « État ».

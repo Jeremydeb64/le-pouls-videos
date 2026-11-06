@@ -419,6 +419,106 @@
    "unite": "tokens",
    "usd": 0.0035,
    "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:14:43.074Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 59054,
+   "unite": "tokens",
+   "usd": 0.2174,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:14:43.074Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 3,
+   "unite": "recherches",
+   "usd": 0.03,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:15:22.350Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 42874,
+   "unite": "tokens",
+   "usd": 0.1302,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:15:22.350Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:16:53.713Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 74100,
+   "unite": "tokens",
+   "usd": 0.2707,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:16:53.713Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 3,
+   "unite": "recherches",
+   "usd": 0.03,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:17:01.350Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 11660,
+   "unite": "tokens",
+   "usd": 0.0018,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:17:24.378Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 590,
+   "unite": "crédits",
+   "usd": 0.0472,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:17:28.404Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 70,
+   "unite": "secondes",
+   "usd": 0.0043,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T16:19:12.558Z",
+   "contexte": "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 13927,
+   "unite": "tokens",
+   "usd": 0.0024,
+   "execution": "édition soir 2026-11-06"
   }
  ],
  "executions": [
@@ -466,6 +566,11 @@
    "date": "2026-11-06T11:38:45.355Z",
    "etiquette": "édition soir 2026-11-06",
    "usd": 0.7306
+  },
+  {
+   "date": "2026-11-06T16:19:12.563Z",
+   "etiquette": "édition soir 2026-11-06",
+   "usd": 0.754
   }
  ],
  "par_jour": {
@@ -476,40 +581,41 @@
    "total": 2.1516
   },
   "2026-11-06": {
-   "anthropic": 1.2509,
-   "elevenlabs": 0.1264,
+   "anthropic": 1.9534,
+   "elevenlabs": 0.1779,
    "higgsfield": 0,
-   "total": 1.3773
+   "total": 2.1313
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 3.2902,
-   "elevenlabs": 0.2387,
+   "anthropic": 3.9927,
+   "elevenlabs": 0.2902,
    "higgsfield": 0,
-   "total": 3.5289
+   "total": 4.2829
   }
  },
  "par_video": {
   "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115,
   "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181,
   "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial": 0.6357,
-  "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala": 0.7306
+  "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala": 0.7306,
+  "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour": 0.754
  },
  "soldes": {
-  "date": "2026-11-06T11:38:45.359Z",
+  "date": "2026-11-06T16:19:12.568Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 61727,
+   "credits_utilises": 63150,
    "credits_mois": 131000,
-   "credits_restants": 69273,
+   "credits_restants": 67850,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 11.6498,
+   "credit_estime_restant_usd": 10.9473,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-06T11:38:46.639Z"
+ "maj": "2026-11-06T16:19:13.778Z"
 }
