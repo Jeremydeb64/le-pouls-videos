@@ -319,6 +319,106 @@
    "unite": "tokens",
    "usd": 0.004,
    "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:33:32.312Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 63783,
+   "unite": "tokens",
+   "usd": 0.2367,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:33:32.312Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:34:11.896Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 34468,
+   "unite": "tokens",
+   "usd": 0.1137,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:34:11.896Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:35:19.645Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 78399,
+   "unite": "tokens",
+   "usd": 0.2562,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:35:19.645Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:35:33.176Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 13728,
+   "unite": "tokens",
+   "usd": 0.0026,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:36:18.590Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 783,
+   "unite": "crédits",
+   "usd": 0.0626,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:36:23.392Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 87,
+   "unite": "secondes",
+   "usd": 0.0053,
+   "execution": "édition soir 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T11:38:45.350Z",
+   "contexte": "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 15400,
+   "unite": "tokens",
+   "usd": 0.0035,
+   "execution": "édition soir 2026-11-06"
   }
  ],
  "executions": [
@@ -361,6 +461,11 @@
    "date": "2026-11-06T09:10:14.643Z",
    "etiquette": "édition matin 2026-11-06",
    "usd": 0.6467
+  },
+  {
+   "date": "2026-11-06T11:38:45.355Z",
+   "etiquette": "édition soir 2026-11-06",
+   "usd": 0.7306
   }
  ],
  "par_jour": {
@@ -371,39 +476,40 @@
    "total": 2.1516
   },
   "2026-11-06": {
-   "anthropic": 0.5882,
-   "elevenlabs": 0.0585,
+   "anthropic": 1.2509,
+   "elevenlabs": 0.1264,
    "higgsfield": 0,
-   "total": 0.6467
+   "total": 1.3773
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 2.6275,
-   "elevenlabs": 0.1708,
+   "anthropic": 3.2902,
+   "elevenlabs": 0.2387,
    "higgsfield": 0,
-   "total": 2.7983
+   "total": 3.5289
   }
  },
  "par_video": {
   "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115,
   "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181,
-  "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial": 0.6357
+  "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial": 0.6357,
+  "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala": 0.7306
  },
  "soldes": {
-  "date": "2026-11-06T09:10:14.645Z",
+  "date": "2026-11-06T11:38:45.359Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 60915,
+   "credits_utilises": 61727,
    "credits_mois": 131000,
-   "credits_restants": 70085,
+   "credits_restants": 69273,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 12.3125,
+   "credit_estime_restant_usd": 11.6498,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-06T09:10:15.981Z"
+ "maj": "2026-11-06T11:38:46.639Z"
 }

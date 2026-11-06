@@ -1,0 +1,556 @@
+{
+ "id": "2026-11-06-soir-ava-l-ia-du-valais",
+ "rubrique": "VALAIS",
+ "ambiance": "neutre",
+ "voice": "voix-2026-11-06-soir-ava-l-ia-du-valais.mp3",
+ "duration": 89.18,
+ "captions": [
+  [
+   0.1,
+   1.56,
+   "Environ 2 francs par mois,"
+  ],
+  [
+   1.6,
+   2.84,
+   "par utilisateur actif."
+  ],
+  [
+   3.58,
+   4.16,
+   "C'est ce que coûte"
+  ],
+  [
+   4.22,
+   5.24,
+   "l'IA de l'État du Valais,"
+  ],
+  [
+   5.48,
+   6.18,
+   "selon le Canton."
+  ],
+  [
+   6.96,
+   7.84,
+   "Salut, c'est Lucie,"
+  ],
+  [
+   8.08,
+   9.34,
+   "et aujourd'hui, l'État"
+  ],
+  [
+   9.4,
+   10.36,
+   "lance sa propre IA."
+  ],
+  [
+   10.8,
+   11.96,
+   "Et moi, c'est Nicolas !"
+  ],
+  [
+   12.26,
+   13.22,
+   "Elle s'appelle AVA."
+  ],
+  [
+   13.52,
+   14.34,
+   "C'est un assistant"
+  ],
+  [
+   14.44,
+   16.16,
+   "comme ChatGPT, mais fait maison."
+  ],
+  [
+   16.4,
+   17.92,
+   "Depuis hier, tous les employés"
+  ],
+  [
+   17.96,
+   19.14,
+   "de l'État peuvent s'en servir."
+  ],
+  [
+   19.38,
+   20.28,
+   "Pourquoi ne pas simplement"
+  ],
+  [
+   20.32,
+   21.42,
+   "utiliser ChatGPT ?"
+  ],
+  [
+   21.64,
+   23.24,
+   "Parce que l'administration manipule"
+  ],
+  [
+   23.38,
+   24.7,
+   "beaucoup de données protégées."
+  ],
+  [
+   24.74,
+   25.72,
+   "Dans les outils commerciaux,"
+  ],
+  [
+   26.06,
+   27.16,
+   "elles partent sur des serveurs"
+  ],
+  [
+   27.22,
+   27.78,
+   "à l'étranger."
+  ],
+  [
+   28.04,
+   28.84,
+   "Un vrai problème"
+  ],
+  [
+   28.88,
+   29.74,
+   "de confidentialité."
+  ],
+  [
+   30,
+   31.56,
+   "Avec AVA, les données restent"
+  ],
+  [
+   31.6,
+   32.62,
+   "sur les serveurs de l'État,"
+  ],
+  [
+   32.9,
+   34.24,
+   "et le calcul se fait en Suisse."
+  ],
+  [
+   34.54,
+   35.8,
+   "Les conversations ne servent pas"
+  ],
+  [
+   35.84,
+   36.58,
+   "à entraîner l'IA."
+  ],
+  [
+   36.86,
+   38.04,
+   "C'est ça, une IA souveraine :"
+  ],
+  [
+   38.32,
+   39.36,
+   "le Canton garde la main."
+  ],
+  [
+   39.58,
+   40.32,
+   "Et côté budget ?"
+  ],
+  [
+   40.64,
+   41.94,
+   "Le Canton parle d'environ"
+  ],
+  [
+   42.08,
+   42.84,
+   "2 francs par mois"
+  ],
+  [
+   42.98,
+   44.32,
+   "pour un utilisateur actif,"
+  ],
+  [
+   44.62,
+   45.9,
+   "soit quelqu'un qui s'en sert"
+  ],
+  [
+   45.96,
+   47.02,
+   "plus d'une heure par jour."
+  ],
+  [
+   47.3,
+   48.68,
+   "Selon lui, c'est nettement"
+  ],
+  [
+   48.72,
+   50.24,
+   "moins cher qu'une solution commerciale."
+  ],
+  [
+   50.52,
+   51.08,
+   "Mais attention :"
+  ],
+  [
+   51.54,
+   52.64,
+   "AVA ne décide de rien."
+  ],
+  [
+   52.92,
+   53.74,
+   "Elle aide à rédiger,"
+  ],
+  [
+   53.98,
+   55.08,
+   "résumer ou chercher."
+  ],
+  [
+   55.4,
+   56.4,
+   "Une personne vérifie"
+  ],
+  [
+   56.58,
+   57.52,
+   "et tranche toujours."
+  ],
+  [
+   57.7,
+   58.4,
+   "Et concrètement,"
+  ],
+  [
+   58.7,
+   59.56,
+   "ça change quoi pour toi ?"
+  ],
+  [
+   59.82,
+   61.46,
+   "Pour l'instant, surtout en coulisses."
+  ],
+  [
+   61.68,
+   63.12,
+   "Plus de 2000 collaborateurs"
+  ],
+  [
+   63.16,
+   63.96,
+   "l'utilisent déjà."
+  ],
+  [
+   64.26,
+   65.64,
+   "Un premier assistant en ligne"
+  ],
+  [
+   65.72,
+   67.14,
+   "répondra bientôt aux citoyens,"
+  ],
+  [
+   67.48,
+   68.86,
+   "pour le service de la circulation."
+  ],
+  [
+   69.12,
+   69.7,
+   "Et les communes ?"
+  ],
+  [
+   70.12,
+   71.22,
+   "Le Canton veut les inviter"
+  ],
+  [
+   71.26,
+   71.98,
+   "progressivement."
+  ],
+  [
+   72.32,
+   73.28,
+   "Les composants de l'outil"
+  ],
+  [
+   73.36,
+   74.76,
+   "seront publiés en libre accès,"
+  ],
+  [
+   75.16,
+   75.98,
+   "pour que d'autres puissent"
+  ],
+  [
+   76.02,
+   76.74,
+   "les réutiliser."
+  ],
+  [
+   77,
+   77.68,
+   "À retenir :"
+  ],
+  [
+   78.02,
+   79.76,
+   "1, AVA est l'IA du Canton."
+  ],
+  [
+   80.12,
+   81.38,
+   "2, les données restent"
+  ],
+  [
+   81.42,
+   82.74,
+   "chez l'État, en Suisse."
+  ],
+  [
+   82.96,
+   84.14,
+   "3, les communes"
+  ],
+  [
+   84.18,
+   85.1,
+   "pourront la rejoindre."
+  ],
+  [
+   85.36,
+   85.92,
+   "C'était Lucie…"
+  ],
+  [
+   86.12,
+   86.7,
+   "…et Nicolas,"
+  ],
+  [
+   86.98,
+   87.16,
+   "pour Le Pouls."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "bigFigure",
+   "from": 0,
+   "theme": "paper",
+   "props": {
+    "kicker": "L'IA de l'État du Valais, selon le Canton",
+    "prefix": "env. CHF",
+    "value": 2,
+    "label": "par mois et par utilisateur actif",
+    "at": 0.1
+   },
+   "to": 6.86
+  },
+  {
+   "type": "photo",
+   "from": 6.86,
+   "theme": "green",
+   "props": {
+    "src": "sujets/ava-visuel.jpg",
+    "credit": "Image : État du Valais",
+    "kicker": "Lancée jeudi",
+    "title": "Voici *AVA*",
+    "nom": "AVA",
+    "role": "Assistant IA de l'État"
+   },
+   "to": 19.28
+  },
+  {
+   "type": "statement",
+   "from": 19.28,
+   "theme": "paper",
+   "props": {
+    "kicker": "Le problème",
+    "text": "Données *protégées*, serveurs à l'étranger"
+   },
+   "to": 29.9
+  },
+  {
+   "type": "statement",
+   "from": 29.9,
+   "theme": "green",
+   "props": {
+    "kicker": "IA souveraine",
+    "text": "Les données *restent* chez l'État"
+   },
+   "to": 39.48
+  },
+  {
+   "type": "stats",
+   "from": 39.48,
+   "theme": "paper",
+   "props": {
+    "kicker": "Utilisateur actif, selon le Canton",
+    "items": [
+     {
+      "value": 2,
+      "label": "francs par mois",
+      "at": 2.6
+     },
+     {
+      "value": 1,
+      "label": "heure par jour",
+      "at": 6.48
+     }
+    ]
+   },
+   "to": 50.42
+  },
+  {
+   "type": "photoRonde",
+   "from": 50.42,
+   "theme": "green",
+   "props": {
+    "src": "sujets/ava-illustration-2.jpg",
+    "credit": "Illustration : État du Valais, générée par IA",
+    "kicker": "AVA assiste",
+    "title": "Une personne *décide*",
+    "legende": "AVA ne signe rien"
+   },
+   "to": 57.6
+  },
+  {
+   "type": "photo",
+   "from": 57.6,
+   "theme": "paper",
+   "props": {
+    "src": "sujets/ava-illustration-3.jpg",
+    "credit": "Illustration : État du Valais, générée par IA",
+    "kicker": "Et pour toi ?",
+    "title": "Des *services* en ligne"
+   },
+   "to": 69.02
+  },
+  {
+   "type": "photoRonde",
+   "from": 69.02,
+   "theme": "green",
+   "props": {
+    "src": "sujets/ava-logo.jpg",
+    "credit": "Logo : État du Valais",
+    "kicker": "La suite",
+    "title": "Bientôt les *communes* ?",
+    "legende": "Ouverture progressive"
+   },
+   "to": 76.9
+  },
+  {
+   "type": "recap",
+   "from": 76.9,
+   "theme": "paper",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "AVA, l'IA du Canton",
+      "at": 1.12
+     },
+     {
+      "n": 2,
+      "label": "Données chez l'État, en Suisse",
+      "at": 3.22
+     },
+     {
+      "n": 3,
+      "label": "Ouverte aux communes",
+      "at": 6.06
+     }
+    ]
+   },
+   "to": 85.26
+  },
+  {
+   "type": "outro",
+   "from": 85.26,
+   "theme": "paper",
+   "props": {
+    "sources": "Sources : Canal9, État du Valais, RTS, Radio Chablais"
+   },
+   "to": 89.18
+  }
+ ],
+ "meta": {
+  "presentateur": "duo",
+  "sources": [
+   {
+    "media": "Canal9",
+    "titre": "Une intelligence artificielle valaisanne au service de l'État",
+    "url": "https://canal9.ch/fr/une-intelligence-artificielle-valaisanne-au-service-de-letat/"
+   },
+   {
+    "media": "État du Valais",
+    "titre": "Intelligence artificielle : le Valais se dote de sa propre IA souveraine",
+    "url": "https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine"
+   },
+   {
+    "media": "RTS",
+    "titre": "Valais : l'Etat lance sa propre intelligence artificielle",
+    "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-l-etat-lance-sa-propre-intelligence-artificielle-29407171.html"
+   },
+   {
+    "media": "Radio Chablais",
+    "titre": "L'État du Valais devient le premier canton suisse à se doter d'une IA pour son administration",
+    "url": "https://radiochablais.ch/infos/103168-letat-du-valais-devient-le-premier-canton-suisse-a-se-doter-dune-ia-pour-son-administration"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "AVA (Assistant Valaisan Augmenté), plateforme d'IA développée par la Filière IA du Service cantonal de l'informatique, mise en service dès jeudi 5 novembre 2026 pour l'ensemble des collaboratrices et collaborateurs de l'administration cantonale ; « l'une des premières IA étatiques souveraines de Suisse » (formulation officielle retenue ; certains médias écrivent « premier canton », non repris)",
+    "source": "https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine"
+   },
+   {
+    "fait": "Les données restent sur les serveurs de l'État et le traitement est assuré en Suisse sous le seul contrôle du canton",
+    "source": "https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine"
+   },
+   {
+    "fait": "Les outils commerciaux posaient des problèmes de confidentialité, notamment parce que leurs serveurs se trouvent à l'étranger ; « aucune donnée ne transite chez des fournisseurs étrangers » avec AVA (Franziska Biner)",
+    "source": "https://radiochablais.ch/infos/103168-letat-du-valais-devient-le-premier-canton-suisse-a-se-doter-dune-ia-pour-son-administration"
+   },
+   {
+    "fait": "Les conversations sont personnelles et ne servent pas à entraîner les modèles",
+    "source": "docs/sujets/ava-presentation.txt"
+   },
+   {
+    "fait": "Coût d'exploitation d'environ 2 francs par mois et par utilisateur actif quotidien (au moins une heure par jour), selon les chiffres de l'État. La comparaison avec une solution commerciale est formulée différemment selon les sources (« au minimum 20x moins cher » dans la présentation, « au moins 20 francs de moins » dans RTS/ATS) : le chiffre de comparaison n'est donc pas repris, seulement « nettement moins cher, selon lui ».",
+    "source": "https://www.rts.ch/info/regions/valais/2026/article/valais-l-etat-lance-sa-propre-intelligence-artificielle-29407171.html"
+   },
+   {
+    "fait": "Plus de 2000 utilisateurs actifs dans l'administration (phase pilote, sans obligation)",
+    "source": "docs/sujets/ava-presentation.txt"
+   },
+   {
+    "fait": "AVA « assiste et recherche les informations, mais ne prend pas de décision » (Franziska Biner) ; soutien à la rédaction, la synthèse, la recherche d'informations, la traduction",
+    "source": "https://www.24heures.ch/intelligence-artificielle-le-valais-lance-sa-propre-ia-souveraine-738291159843"
+   },
+   {
+    "fait": "Premier chatbot IA bientôt en ligne pour le service de la circulation et de la navigation (SCN)",
+    "source": "docs/sujets/ava-presentation.txt"
+   },
+   {
+    "fait": "Ouverture progressive aux communes prévue ; composants publiés en open source",
+    "source": "docs/sujets/ava-presentation.txt"
+   }
+  ],
+  "sensible": false
+ }
+}

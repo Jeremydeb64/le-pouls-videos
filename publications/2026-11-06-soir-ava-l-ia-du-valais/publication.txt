@@ -1,0 +1,32 @@
+LE POULS
+AVA, l'IA du Valais
+Édition du soir, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le Valais lance AVA, sa propre IA pour l'administration : données gardées chez l'État, coûts annoncés bas, communes bientôt invitées.
+Sources : Canal9, « Une intelligence artificielle valaisanne au service de l'État » ; État du Valais ; RTS ; Radio Chablais
+#Valais #IA #AVA #Innovation
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Canal9 : Une intelligence artificielle valaisanne au service de l'État (https://canal9.ch/fr/une-intelligence-artificielle-valaisanne-au-service-de-letat/)
+- État du Valais : Intelligence artificielle : le Valais se dote de sa propre IA souveraine (https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine)
+- RTS : Valais : l'Etat lance sa propre intelligence artificielle (https://www.rts.ch/info/regions/valais/2026/article/valais-l-etat-lance-sa-propre-intelligence-artificielle-29407171.html)
+- Radio Chablais : L'État du Valais devient le premier canton suisse à se doter d'une IA pour son administration (https://radiochablais.ch/infos/103168-letat-du-valais-devient-le-premier-canton-suisse-a-se-doter-dune-ia-pour-son-administration)
+
+=== CONTRÔLE ===
+Décision : BLOQUE
+- mineur (scène 2) : Le crédit « Image : État du Valais » n'indique toujours ni licence ni autorisation de réutilisation. La correction demandée n'a pas été appliquée.
+- mineur (scène 6) : Les scènes 6, 7 et 8 portent le crédit « Illustration : État du Valais, générée par IA », mais la légende exacte « Image générée avec l'IA » n'a pas été ajoutée. L'origine des fichiers reste à confirmer.
+- mineur (scène 3) : La scène 3 affiche « Données protégées : serveurs à l'étranger » sans le mot « problème » que demandait la correction. Le fond est juste.
+- bloquant (scène 1) : Dans la photo AVA, le texte de l'interface à droite (« Comment p… », « vs.ch/… ») est coupé par le bord de l'écran.
+- bloquant (scène 1) : Le tag « VALAIS » se superpose au texte du logo AVA en haut à gauche.
+- important (scène 1) : Le logo AVA est coupé par le bord gauche de l'écran.
+- bloquant (scène 6) : Dans l'illustration « Des services en ligne », un fragment de texte (« AI Gé… ») est coupé par le bord droit, en bas de l'image.
+- important (scène 5) : Le crédit affiché dit « générée par IA » et non « Image générée avec l'IA ».
+- important (scène 9) : L'outro (environ 3,9 s, de 85,26 à 89,18) n'a aucun sous-titre visible : risque de silence de plus d'une seconde si la voix ne couvre pas cette fin.
+- mineur (scène 2) : Dans le titre « Serveurs à / l'étranger », le « À » reste en fin de ligne.

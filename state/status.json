@@ -4,80 +4,10 @@
  "agents": {
   "veilleur": "termine",
   "scenariste": "termine",
-  "controleur": "bloque",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
-   "t": "2026-11-04T14:44:55.130Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T14:45:23.785Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Carsten Steger / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-04T14:45:24.562Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T14:45:24.565Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-04T14:46:49.642Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Un chevauchement bloque la validation. Sur la scène photo, le titre de 3 lignes passe sous le sous-titre : raccourcis-le à 2 lignes et garde « Valais-Wallis » ensemble. Ramène aussi le crédit photo dans les marges (160 px à droite) et aligne les libellés du récap sur une même colonne. Les sous-titres doivent tenir sur une ligne, au-dessus de y = 1500. Enfin, fais apparaître les barres de la scène 5 plus tôt, car la première demi-scène est vide.",
-   "t": "2026-11-04T14:47:31.909Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-04T14:47:31.912Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
-   "t": "2026-11-04T15:25:12.311Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du soir, je fais le tour des sources.",
-   "t": "2026-11-04T15:25:12.313Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "141 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T15:25:17.305Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Loi sur le matériel de guerre : ce qui se vote le 29 novembre ». Votation fédérale le 29 novembre, sans explication encore publiée, et chiffres concrets (exportations de centaines de millions par an).",
-   "t": "2026-11-04T15:25:38.960Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Suisse.",
-   "t": "2026-11-04T15:25:38.963Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T15:28:01.474Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Sujet bien construit, deux camps à durée comparable. Je te demande de corriger 7 points. 1) Accroche neutre (la livraison ne concerne que 36 pays partenaires, sous conditions). 2) Écran versus : seulement des arguments sourcés dans `faits`. 3) Valais : même traitement graphique pour Nammo et pour la gauche. 4) Nammo : expliquer pourquoi il ne peut plus vendre aux États-Unis (engagés dans un conflit). 5) Sourcer l'argument « le secteur n'est pas en difficulté ». 6) Expliquer « pays partenaires » et la condition (neutralité et intérêts de la Suisse), et ajouter « sous conditions » au récap. 7) Ajouter ch.ch aux sources. Les faits chiffrés et le compte à rebours sont justes. Tu peux me renvoyer le script.",
-   "t": "2026-11-04T15:28:41.939Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Je reprends le script avec les corrections du contrôle.",
@@ -407,9 +337,79 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-06T09:10:15.987Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 70085 crédits restants ce mois-ci.",
+   "t": "2026-11-06T11:32:08.978Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Sujet choisi par la rédaction : « AVA, l'intelligence artificielle souveraine du Valais ». Je transmets au Scénariste.",
+   "t": "2026-11-06T11:32:08.980Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-06T11:32:08.983Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T11:33:32.314Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Merci pour le script, la structure est claire et les attributions au Canton sont bien posées. Six points à revoir : 1) Accroche et scène 1 : précise que les 2 francs sont par utilisateur actif, ajoute « environ » et « selon le Canton ». 2) Remplace « interdites » (voix et scène 3) par le vrai motif, des serveurs à l'étranger et un problème de confidentialité, car aucune source ne parle d'interdiction. 3) Vérifie dans le PDF officiel le « 20 fois moins cher » (RTS dit autre chose) et garde « au moins ». 4) Crédits : licence ou autorisation pour le visuel de la scène 2, et légende « Image générée avec l'IA » sur les scènes 6, 7 et 8. 5) Remplace « briques » par « composants ». 6) Uniformise « en Suisse » et « en Valais » dans la récap. Le reste (dates, 2000 utilisateurs, chatbot de la circulation, ouverture aux communes, « une personne tranche toujours ») est correct. Rien de sensible ici, et aucune recommandation ou partialité.",
+   "t": "2026-11-06T11:34:11.896Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-06T11:34:11.899Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T11:35:19.647Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections importantes sont faites : le coût est présenté comme « environ 2 francs par utilisateur actif, selon le Canton », l'interdiction supposée a disparu, la comparaison chiffrée est retirée, « briques » est remplacé et la récap est harmonisée. Il reste à régler avant publication les crédits des visuels (scène 2) et la légende « Image générée avec l'IA » (scènes 6 à 8).",
+   "t": "2026-11-06T11:35:33.177Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
+   "t": "2026-11-06T11:35:33.180Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-06T11:36:23.404Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-06T11:38:17.796Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Visuels à corriger : texte coupé sur la photo AVA et sur l'illustration des services, tag VALAIS qui chevauche le logo AVA, crédit IA à reformuler en « Image générée avec l'IA », et fin de l'outro à vérifier côté voix.",
+   "t": "2026-11-06T11:38:45.351Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.73 $ (Claude + ElevenLabs).",
+   "t": "2026-11-06T11:38:46.644Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-06T11:38:46.646Z"
   }
  ],
- "maj": "2026-11-06T09:10:34.169Z",
+ "maj": "2026-11-06T11:39:03.002Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1159,6 +1159,103 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g/LePouls_2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1ons8ztp-mRyoieqw0ecHqtkn9co0AHIM",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/7"
+  },
+  {
+   "id": "2026-11-06-soir-ava-l-ia-du-valais",
+   "titre": "AVA, l'IA du Valais",
+   "edition": "soir",
+   "decision": "BLOQUE",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Le crédit « Image : État du Valais » n'indique toujours ni licence ni autorisation de réutilisation. La correction demandée n'a pas été appliquée.",
+     "correction_demandee": "Avant publication, confirmer les droits du visuel et compléter le crédit (auteur + licence ou mention d'autorisation). À défaut, remplacer par une scène de la charte sans photo."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Les scènes 6, 7 et 8 portent le crédit « Illustration : État du Valais, générée par IA », mais la légende exacte « Image générée avec l'IA » n'a pas été ajoutée. L'origine des fichiers reste à confirmer.",
+     "correction_demandee": "Ajouter la légende visible « Image générée avec l'IA » sur ces scènes et préciser l'origine et les droits des fichiers. Le contrôle des personnes identifiables et des faux documents se fera sur les images clés."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "La scène 3 affiche « Données protégées : serveurs à l'étranger » sans le mot « problème » que demandait la correction. Le fond est juste.",
+     "correction_demandee": "Optionnel : écrire « Données protégées, serveurs à l'étranger : un problème » pour coller à la voix."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 1,
+     "constat": "Dans la photo AVA, le texte de l'interface à droite (« Comment p… », « vs.ch/… ») est coupé par le bord de l'écran.",
+     "correction_demandee": "Recadrer l'image pour qu'aucun texte ne sorte de l'écran, ou remplacer la visuelle par une version sans texte coupé."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 1,
+     "constat": "Le tag « VALAIS » se superpose au texte du logo AVA en haut à gauche.",
+     "correction_demandee": "Déplacer le tag de localisation hors du logo ou recadrer l'image pour laisser le logo dégagé."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Le logo AVA est coupé par le bord gauche de l'écran.",
+     "correction_demandee": "Recadrer pour que le logo soit entièrement visible dans la zone sûre (x 100 à 900)."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 6,
+     "constat": "Dans l'illustration « Des services en ligne », un fragment de texte (« AI Gé… ») est coupé par le bord droit, en bas de l'image.",
+     "correction_demandee": "Recadrer ou retoucher l'image pour supprimer le texte coupé, puis contrôler à nouveau le cadrage."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Le crédit affiché dit « générée par IA » et non « Image générée avec l'IA ».",
+     "correction_demandee": "Remplacer le crédit par la légende exacte « Image générée avec l'IA », visible à l'écran."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "L'outro (environ 3,9 s, de 85,26 à 89,18) n'a aucun sous-titre visible : risque de silence de plus d'une seconde si la voix ne couvre pas cette fin.",
+     "correction_demandee": "Vérifier que la voix couvre toute l'outro, ou ajouter une locution ou un sous-titre, sinon raccourcir la fin."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Dans le titre « Serveurs à / l'étranger », le « À » reste en fin de ligne.",
+     "correction_demandee": "Reformuler le retour à la ligne pour éviter un mot isolé en fin de ligne si possible."
+    }
+   ],
+   "description_tiktok": "Le Valais lance AVA, sa propre IA pour l'administration : données gardées chez l'État, coûts annoncés bas, communes bientôt invitées.\nSources : Canal9, « Une intelligence artificielle valaisanne au service de l'État » ; État du Valais ; RTS ; Radio Chablais\n#Valais #IA #AVA #Innovation",
+   "sources": [
+    {
+     "media": "Canal9",
+     "titre": "Une intelligence artificielle valaisanne au service de l'État",
+     "url": "https://canal9.ch/fr/une-intelligence-artificielle-valaisanne-au-service-de-letat/"
+    },
+    {
+     "media": "État du Valais",
+     "titre": "Intelligence artificielle : le Valais se dote de sa propre IA souveraine",
+     "url": "https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine"
+    },
+    {
+     "media": "RTS",
+     "titre": "Valais : l'Etat lance sa propre intelligence artificielle",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-l-etat-lance-sa-propre-intelligence-artificielle-29407171.html"
+    },
+    {
+     "media": "Radio Chablais",
+     "titre": "L'État du Valais devient le premier canton suisse à se doter d'une IA pour son administration",
+     "url": "https://radiochablais.ch/infos/103168-letat-du-valais-devient-le-premier-canton-suisse-a-se-doter-dune-ia-pour-son-administration"
+    }
+   ],
+   "mp4": "out/ava-l-intelligence-artificielle-souveraine-du-vala/2026-11-06-soir-ava-l-ia-du-valais.mp4",
+   "etat": "bloque",
+   "cout_usd": 0.7306,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-soir-ava-l-ia-du-valais/LePouls_2026-11-06-soir-ava-l-ia-du-valais.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1WCz_QMcpuM4o7VLpBFPK6tVf-TF_966L",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/8"
   }
  ]
 }
