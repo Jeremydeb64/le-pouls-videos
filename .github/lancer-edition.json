@@ -1,1 +1,30 @@
-{"edition": "soir", "max_sujets": 5, "veille_seule": true, "demande": "veille seule : propositions de sujets du 6 novembre"}
+{
+ "edition": "soir",
+ "max_sujets": 1,
+ "demande": "sujet choisi : cols du Lein et du Grand-Saint-Bernard fermés pour l'hiver",
+ "sujet": {
+  "titre_travail": "Col du Lein et Grand-Saint-Bernard : fermetures pour l'hiver",
+  "angle": "Comment se rendre dans le Valais central et au Grand-Saint-Bernard cet hiver",
+  "source_principale": {
+   "media": "24 heures",
+   "titre": "Le col du Grand-Saint-Bernard ferme ses portes aux voitures jusqu'au printemps",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVDUySFpXUGtBX21HSVYtNXRxZUxkeUoycS1MMGxvbGQwMkh1STJUV0pZS3ppTTF4TTNqSFRmeTRSa3NFMG05azlRSUpFUEVtdkVyclNJZnNRMEtBVktBQTBjUjVwUGNNOHF1VFk4VHhZcFM3YUxpTXoxaldXclZuRFRSOE00M0pKOUxiUkloYWx2RkNjdFNGNjhn?oc=5"
+  },
+  "sources_complementaires": [
+   {
+    "media": "24 heures",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSWNUcmZrV2Jrek9XdFNJYUR6cnJQejNEN3lJMTJFNE5nQXpWYlJaeVRNS1VDNXVOb0FMZWZCMEEwM2pSMERKMEswa1FWeEdNNnJUT3dVclZhVDJsYkxTNHYtVEY1N2JhZFBfLTZoVml1czFtZ1FwQ0RxeGxfdGJscW9FQmswUWJ5VW0wcmFDd2dzYTNMckE?oc=5"
+   }
+  ],
+  "scores": {
+   "proximite": 5,
+   "visuel": 4,
+   "fraicheur": 4,
+   "fiabilite": 4
+  },
+  "sensible": false,
+  "votation": false,
+  "pourquoi": "Sujet choisi par la rédaction : fort potentiel visuel (cols, routes de montagne, carte).",
+  "consignes_redaction": "Exploite le visuel : carte (communes de Bourg-Saint-Pierre et Saxon/Vollèges), 2 à 3 photos des cols (photo et photoRonde), dates de fermeture et itinéraires de remplacement (tunnel du Grand-Saint-Bernard, routes principales). Vérifie les dates sur des sources officielles (Canton, TCS, communes)."
+ }
+}
