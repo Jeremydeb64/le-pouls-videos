@@ -1,0 +1,411 @@
+        Le Valais se dote de sa
+        propre intelligence
+        artificielle
+
+
+
+                                                Franziska Biner
+                                                Cheffe du Département des finances
+                                                et de l’énergie
+    5 novembre 2026
+    Conférence de presse
+                                               Cette présentation a été préparée avec l’aide d’AVA
+
+
+1
+
+
+
+
+                 AVA (Assistant Valaisan Augmenté)
+
+                           IA en service pour toute l’administration
+                                          cantonale
+
+
+
+
+    2
+
+
+
+
+2
+            IA d’État 100% souveraine
+
+        Le Valais dispose de l’une des premières IA
+                   souveraines de Suisse
+
+
+
+
+    3
+
+
+
+
+3
+
+
+
+
+        2’000 utilisateurs durant la phase
+                       pilote
+
+        Sans obligation ni communication officielle
+
+
+
+
+    4
+
+
+
+
+4
+                    Point de départ d’une démarche
+                               partagée
+
+                 Ses composants seront publiés en open source,
+                    AVA pourra s’ouvrir progressivement aux
+                                  communes
+
+
+    5
+
+
+
+
+5
+
+
+
+
+        Pourquoi l’Etat devait agir
+        Jusqu’ici, l’IA restait en marge du travail administratif.
+        Désormais, elle y prend part.
+
+         Le constat : L’intelligence artificielle est devenue un outil de travail quotidien
+          en moins de trois ans.
+
+         Le risque du «Shadow AI» : sans offre interne, les collaborateurs se tournent
+          vers des services grand public non adaptés.
+
+         Le paradoxe : Plus une tâche est au cœur de métier de l’administration, plus
+          l’IA serait utile, et moins les outils commerciaux sont utilisables. Une grande
+          majorité du travail administratif porte sur des données protégées, qui sont
+          interdites dans les outils commerciaux.
+
+         Deux options s’offraient au canton : interdire, ce qui est inefficace, ou
+          proposer mieux. Le Valais a choisi de prendre les devants.
+    6
+
+
+
+
+6
+        Nos trois engagements envers la population
+
+
+         Vos données restent chez l’État. Elles ne sont ni transmises à des tiers ni
+          utilisées pour entraîner des modèles. Elles restent hébergées dans les
+          infrastructures de l’État.
+
+         C’est toujours une personne qui décide. AVA aide à préparer le travail, mais
+          elle ne signe rien et ne décide de rien.
+
+         L’argent public est bien investi. Le canton construit une infrastructure qui lui
+          appartient, qu’il contrôle de bout en bout et qu’il peut partager, au lieu de
+          multiplier les licences.
+
+
+    7
+
+
+
+
+7
+
+
+
+
+                                                 Dr Florian Bersier
+
+                                                 Chef de la Filière Intelligence Artificielle
+
+
+
+
+8
+           Pourquoi développer une IA souveraine ?
+
+
+           Raison n°1 :                     Raison n°2 :                    Raison n°3 :
+           libérer l'usage                  assurer la                      maîtriser les
+                                            conformité                      coûts
+           La souveraineté                                                  Indépendance et
+           technique transforme             Conformité par                  maîtrise des coûts
+           l'interdiction en                construction
+           autorisation.                                                    Éviter le «vendor
+                                            Alignement natif                lock-in»
+           L'IA devient utilisable          avec la LPD, la
+           par défaut, sans risque          LIPDA et la                     Prévisibilité
+           de fuite.                        Convention-cadre                budgétaire sans
+                                                                            coûts de licences
+                                                                            imprévisibles
+
+
+
+     9
+
+
+
+
+9
+
+
+
+
+          AVA
+          AVA est une plateforme d’IA générative et agentique, conçue, développée et
+          exploitée par la Filière IA de l’État du Valais. Elle repose sur cinq piliers :
+
+          1. LLM ouverts et fine-tunés (ex: Apertus, Mistral, Qwen)
+          2. Modèle RAG avec des bases de connaissances faciles à ajouter (ex: recueil
+             systématique, sites intranet, documents PDF) ;
+          3. Bases de données brutes et vectorielles sur les serveurs de l’Etat.
+          4. Inférence sur GPU dédiés en Suisse sous le seul contrôle de l’Etat.
+          5. Architecture modulaire permettant l’ajout de sous-modèles spécialisés (ex:
+             AVA RH, AVA Juriste, AVA Parlement, etc.)
+
+
+     10
+
+
+
+
+10
+          AVA en quelques chiffres
+
+                 2’000+
+          utilisateurs actifs au sein de l’administration valaisanne
+
+
+                 CHF 2.-
+          Coût par mois et par utilisateur actif quotidien (>1h par jour).
+          Au minimum 20x moins cher qu’une solution commerciale.
+
+
+                6 mois
+          Développement débuté en avril 2026 par la filière IA.
+          50+ outils et agents. Support Web, Mobile et App desktop.
+          Throughput > 10’000 tokens / seconde
+     11
+
+
+
+
+11
+
+
+
+
+     12                                        Nom de la diapositive
+
+
+
+12
+            AVA RH
+             Pour les
+          questions RH
+                des
+          collaborateurs
+
+
+
+
+     13                                Nom de la diapositive
+
+
+
+13
+
+
+
+
+                   AVA Parlement
+                  Pour les députés
+                  et collaborateurs.
+
+
+
+
+14
+                                                                                   AVA Juriste
+                                                                                 Pour la recherche
+                                                                                     juridique
+
+
+
+
+15
+
+
+
+
+          AVA: applications
+                     Ava peut transcrire des réunions et
+                      créer des procès-verbaux de
+                      manière automatisée.
+
+                     Ava peut également être ajouté aux
+                      sites web de l’administration afin de
+                      répondre aux questions des
+                      citoyens.
+                        Le premier chatbot IA sera bientôt mis en ligne
+                         pour le service de la circulation et de la navigation
+                         (SCN).
+
+                     Etc.
+
+
+
+
+     16
+
+
+
+
+16
+                                                    Claude-Alain Berclaz
+
+                                                    Chef du service cantonal de
+                                                    l’informatique
+
+
+
+
+17
+
+
+
+
+          IA, données et sécurité : les règles du jeu
+
+          AVA est autorisée pour les données de travail protégées.
+
+           Les conversations sont personnelles et ne servent pas à entraîner les
+            modèles.
+
+
+           Tout n’est pas interconnecté : chaque assistant n’accède qu’aux sources qui
+            lui sont rattachées.
+
+           Les nouvelles connexions passent par plusieurs garde-fous : examen par la
+            Cellule sécurité, accès limités au strict nécessaire, journalisation et validation
+            humaine des actions sensibles.
+
+           AVA est désormais l’outil IA par défaut de l’administration.
+     18
+
+
+
+
+18
+          IA et l’humain : accompagner le personnel
+
+           Former à un usage critique : il s’agit de comprendre ce que l’outil fait bien et
+            ce qu’il fait mal, et de toujours vérifier ses réponses.
+
+           Trois formats sont prévus : des guides en self-service sur l’intranet, des
+            webinaires d’introduction et des séminaires pratiques par métier.
+
+           Le temps gagné reste dans les services : il sert aux dossiers complexes,
+            aux prestations à la population et à absorber la charge de travail. Il faut tenir
+            compte du fait que les citoyens et les entreprises utiliseront également, de leur
+            côté, l’IA. Cela pourrait générer plus de demandes à l’administration.
+
+          AVA allège le personnel des tâches répétitives, elle ne le remplace pas.
+
+
+     19
+
+
+
+
+19
+
+
+
+
+          IA et son environnement : maîtriser l’impact
+
+
+           AVA utilise des modèles de taille moyenne, sans entraînement à partir de
+            zéro, et une consommation énergétique maîtrisée. Le raisonnement est
+            toujours adapté à la tâche.
+
+
+           Pour limiter les biais et les hallucinations, les assistants s’appuient sur des
+            sources officielles, sont testés avant leur mise à disposition et restent soumis à
+            la vérification humaine.
+
+           Aucune décision individuelle n’est automatisée, et AVA cite toujours ses
+            sources.
+
+
+
+     20
+
+
+
+
+20
+                                               Franziska Biner
+
+                                               Cheffe du Département des finances
+                                               et de l’énergie
+
+
+
+
+21
+
+
+
+
+          Que retenir ?
+
+          L’Etat du Valais a développé AVA, une IA souveraine.
+
+           Pionnier : le Valais dispose de l’une des premières IA souveraines
+            de Suisse, et plus de 2’000 collaborateurs l’utilisent déjà.
+
+           Souverain et responsable : nos données restent chez nous, et
+            c’est toujours une personne qui décide.
+
+           Une fondation pour l’avenir : AVA pourra s’ouvrir aux communes
+            et son architecture/code sont disponibles en open source.
+
+
+
+     22
+
+
+
+
+22
+          Questions
+
+
+
+
+          www.vs.ch/ia
+
+     23
+
+
+
+
+23
+

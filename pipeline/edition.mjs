@@ -86,6 +86,10 @@ async function ecrire(sujet, retours = null) {
     max: 32000,
     contenu:
       `Date : ${AUJ}. Publication prévue : ${PUBLICATION}.\n\nSujet :\n${JSON.stringify(sujet)}\n\nTexte de l'article principal :\n${texte}\n\n` +
+      (sujet.documents || []).map((d) => `Document fourni par la rédaction (${d}) :\n${fs.readFileSync(d, "utf8").slice(0, 20000)}\n\n`).join("") +
+      (sujet.images_fournies?.length
+        ? `Images fournies par la rédaction (droits réglés, à utiliser en priorité) : dans une scène \`photo\` ou \`photoRonde\`, mets \`"src"\` et \`"credit"\` tels quels au lieu de \`recherche\`.\n${JSON.stringify(sujet.images_fournies)}\n\n`
+        : "") +
       (retours ? `CORRECTIONS DEMANDÉES PAR LE CONTRÔLE (version précédente ci-dessous) :\n${JSON.stringify(retours)}\n\n` : "") +
       "Réponds UNIQUEMENT par un seul bloc ```json``` au format « Sortie technique » de ta consigne, sans aucun texte avant ou après. Fais tes recherches, puis écris directement le JSON.",
   });
@@ -126,6 +130,7 @@ async function produire(script, dossier) {
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }
   for (const s of scenes.filter((x) => x.type === "photo" || x.type === "photoRonde")) {
+    if (s.props.src && fs.existsSync(path.join("public", s.props.src))) continue; // image fournie par la rédaction
     const f = path.join("public", `photo-${id}-${scenes.indexOf(s)}.jpg`);
     let p = null;
     try {
@@ -238,7 +243,10 @@ process.on("unhandledRejection", (e) => {
   if (r.ok) redaction.dit("systeme", `Clé ElevenLabs OK, ${d.character_limit - d.character_count} crédits restants ce mois-ci.`);
   else redaction.dit("systeme", "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).");
 }
-const sujets = await veille();
+// Sujet imposé par la rédaction (lancer-edition.json → "sujet") : pas de veille, le Scénariste complète
+const SUJET_IMPOSE = process.env.SUJET ? JSON.parse(process.env.SUJET) : null;
+if (SUJET_IMPOSE) redaction.dit("veilleur", `Sujet choisi par la rédaction : « ${SUJET_IMPOSE.titre_travail} ». Je transmets au Scénariste.`);
+const sujets = SUJET_IMPOSE ? [SUJET_IMPOSE] : await veille();
 const prets = [];
 for (const sujet of sujets) {
  try {

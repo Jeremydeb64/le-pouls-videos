@@ -54,6 +54,7 @@ jobs:
           if [ "${{ github.event_name }}" = "push" ]; then
             EDITION=$(node -p "require('./.github/lancer-edition.json').edition")
             MAX_SUJETS=$(node -p "require('./.github/lancer-edition.json').max_sujets")
+            SUJET=$(node -p "JSON.stringify(require('./.github/lancer-edition.json').sujet || '')" | sed 's/^""$//'); export SUJET
           elif [ -n "$EDITION_DEMANDEE" ]; then
             EDITION=$EDITION_DEMANDEE; MAX_SUJETS=${MAX_DEMANDE:-1}
           else

@@ -1,1 +1,70 @@
-{"edition": "matin", "max_sujets": 1, "demande": "édition du matin du 6 novembre"}
+{
+ "edition": "soir",
+ "max_sujets": 1,
+ "demande": "sujet imposé : AVA, l'IA souveraine du Valais",
+ "sujet": {
+  "titre_travail": "AVA, l'intelligence artificielle souveraine du Valais",
+  "angle": "Le Canton a sa propre IA pour l'administration : ce que c'est, pourquoi, ce que ça change (données, coûts, communes)",
+  "source_principale": {
+   "media": "Canal9",
+   "titre": "Une intelligence artificielle valaisanne au service de l'État",
+   "url": "https://canal9.ch/fr/une-intelligence-artificielle-valaisanne-au-service-de-letat/"
+  },
+  "sources_complementaires": [
+   {
+    "media": "État du Valais",
+    "titre": "Intelligence artificielle : le Valais se dote de sa propre IA souveraine",
+    "url": "https://www.vs.ch/web/communication/w/intelligence-artificielle-le-valais-se-dote-de-sa-propre-ia-souveraine"
+   },
+   {
+    "media": "État du Valais",
+    "titre": "Outils d'IA de l'État du Valais",
+    "url": "https://www.vs.ch/web/ia/outils"
+   },
+   {
+    "media": "État du Valais",
+    "titre": "Présentation de la conférence de presse du 5 novembre 2026 (fournie par la rédaction)",
+    "url": "docs/sujets/ava-presentation.txt"
+   }
+  ],
+  "scores": {
+   "proximite": 5,
+   "visuel": 4,
+   "fraicheur": 5,
+   "fiabilite": 5
+  },
+  "sensible": false,
+  "votation": false,
+  "pourquoi": "Sujet choisi par la rédaction.",
+  "documents": [
+   "docs/sujets/ava-presentation.txt"
+  ],
+  "images_fournies": [
+   {
+    "src": "sujets/ava-visuel.jpg",
+    "credit": "Image : État du Valais",
+    "description": "Visuel officiel : logo AVA (silhouette rouge et blanche) et l'interface sur téléphone. À montrer tôt dans la vidéo (scène photo, nom « AVA », rôle « Assistant IA de l'État »)."
+   },
+   {
+    "src": "sujets/ava-logo.jpg",
+    "credit": "Logo : État du Valais",
+    "description": "Logo AVA seul, idéal en photoRonde."
+   },
+   {
+    "src": "sujets/ava-illustration-1.jpg",
+    "credit": "Illustration : État du Valais, générée par IA",
+    "description": "Jeune personne avec son téléphone dans une ville valaisanne (personnage fictif)."
+   },
+   {
+    "src": "sujets/ava-illustration-2.jpg",
+    "credit": "Illustration : État du Valais, générée par IA",
+    "description": "Collaboratrice au travail sur un ordinateur portable (personnage fictif)."
+   },
+   {
+    "src": "sujets/ava-illustration-3.jpg",
+    "credit": "Illustration : État du Valais, générée par IA",
+    "description": "Senior avec une tablette (personnage fictif)."
+   }
+  ]
+ }
+}
