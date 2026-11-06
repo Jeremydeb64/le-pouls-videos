@@ -1,53 +1,13 @@
 {
- "edition": "matin",
- "etape": "controleur",
+ "edition": "soir",
+ "etape": "veille",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "termine",
-  "controleur": "termine",
+  "scenariste": "attend",
+  "controleur": "attend",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T15:28:41.941Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T15:31:02.047Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les 9 corrections demandées sont appliquées : accroche neutre, arguments sourcés, graphisme équilibré en Valais, raison pour les États-Unis, argument d'Amoos sourcé, nuance « sous conditions » conservée dans le récap, ch.ch ajouté aux sources. Il reste quelques points mineurs, optionnels : temps de parole du non un peu plus long dans le versus national, explication des 36 pays, et crédit photo à prévoir. Feu vert pour la phase images.",
-   "t": "2026-11-04T15:31:28.129Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
-   "t": "2026-11-04T15:31:28.130Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 9 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-04T15:32:08.382Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Flooffy / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-04T15:32:08.959Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-04T15:32:08.961Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-04T15:33:51.722Z"
-  },
   {
    "agent": "controleur",
    "texte": "Charte globalement respectée : couleurs, typos, alternance papier/vert et zones sûres sont bons pour les titres et les sous-titres. Il reste quatre points à corriger : (1) scène 5, remonter le crédit photo dans la zone sûre, sur une ligne, sans le coller au logo ; (2) scène 7, supprimer le doublon « Hérémence » ; (3) scène 8, corriger la virgule dans « Pascal Guenot, défend le oui » ; (4) scènes 2 et 3, vérifier qu'il y a bien voix et sous-titres. Côté détails : sources de l'outro avec « 20 minutes » coupé, carte « Le non » vide trop longtemps, et le logo à vérifier sur la toute première image.",
@@ -407,9 +367,49 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-06T11:38:46.646Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 68463 crédits restants ce mois-ci.",
+   "t": "2026-11-06T16:10:49.294Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du soir, je fais le tour des sources.",
+   "t": "2026-11-06T16:10:49.297Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "263 articles lus, je regroupe par sujet.",
+   "t": "2026-11-06T16:10:56.755Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Chômage en Valais : légère hausse en octobre ». Chiffres officiels du canton sur l'emploi, qui touchent directement les Valaisans, avec une hausse légère à expliquer par un graphique simple.",
+   "t": "2026-11-06T16:11:45.282Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « AI : cotisations salariales en hausse de 0,2 point ? ». Une hausse de 0,2 point sur la fiche de salaire, et l'AI qui manquera d'argent en 2031 : un enjeu concret à expliquer avec des chiffres.",
+   "t": "2026-11-06T16:11:45.284Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Col du Lein et Grand-Saint-Bernard : fermetures pour l'hiver ». Deux cols fermés aux voitures jusqu'au printemps 2027 : une info utile pour tous ceux qui montent en station ou traversent le canton.",
+   "t": "2026-11-06T16:11:45.285Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Canicule 2026 : près de 1260 décès en Suisse ». Une estimation de Swiss TPH comparée à 2003 : un chiffre marquant, avec une comparaison graphique claire.",
+   "t": "2026-11-06T16:11:45.288Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Ski : les premières descentes dès ce week-end ». Information pratique pour le week-end, à relier à la carte des domaines ouverts ; vérifier les pistes annoncées auprès des stations avant publication.",
+   "t": "2026-11-06T16:11:45.289Z"
   }
  ],
- "maj": "2026-11-06T11:39:03.002Z",
+ "maj": "2026-11-06T16:11:45.291Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
