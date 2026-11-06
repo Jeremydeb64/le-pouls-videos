@@ -4,7 +4,7 @@ Média TikTok d'actualité valaisanne. Deux éditions par jour, préparées par 
 
 ## Comment ça tourne
 1. **Édition** (`.github/workflows/edition.yml`, matin et soir) :
-   Veilleur (choix du sujet) → Scénariste (article, script, scènes) → voix ElevenLabs (Lucie ou Nicolas) → rendu Remotion → Contrôleur (faits, neutralité, droits, charte ; jusqu'à 2 corrections).
+   Veilleur (choix du sujet) → Scénariste (article, script, scènes) → voix ElevenLabs (Lucie ou Arthur) → rendu Remotion → Contrôleur (faits, neutralité, droits, charte ; jusqu'à 2 corrections).
 2. **Validation** : chaque vidéo devient une *release* (lecture du MP4 sur téléphone) et une *issue* « à valider » avec les remarques du Contrôleur, les sources et la description TikTok.
 3. **Publication** (`.github/workflows/publier.yml`) : commenter **OK** sur l'issue déclenche le Diffuseur (Postiz → TikTok, étiquette IA cochée).
 

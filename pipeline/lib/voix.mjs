@@ -5,20 +5,21 @@ import { noterVoix, noterTranscription } from "./couts.mjs";
 
 const EL = "https://api.elevenlabs.io/v1";
 export const VOIX = {
+  get nicolas() { return this.arthur; }, // ancien nom, conservé pour les anciens scripts
   lucie: process.env.VOIX_LUCIE || "LFtQZWdaqmvamcTNGpwl",
-  nicolas: process.env.VOIX_NICOLAS || "aQROLel5sQbj1vuIVi6B",
+  arthur: process.env.VOIX_ARTHUR || "BUJMBsQ3Oq4cEeWSb48y", // voix « Sébastien » de la bibliothèque ElevenLabs, présentée comme Arthur
 };
 const MODELE_TTS = process.env.ELEVEN_MODEL || "eleven_v3";
-// Réglages par présentateur. Nicolas : stabilité « Creative » (plus d'intonation) et ton énergique par défaut.
+// Réglages par présentateur (stabilité « Natural » : voix fluide, pas de ton forcé)
 const REGLAGES = {
   lucie: { stability: 0.5 },
-  nicolas: { stability: 0.0 },
+  arthur: { stability: 0.5 },
 };
-const TON_PAR_DEFAUT = { nicolas: "[energetic]" };
+const TON_PAR_DEFAUT = {};
 // Ajoute une balise d'énergie en tête de réplique quand le Scénariste n'en a pas mis
 const avecTon = (texte, qui) => (TON_PAR_DEFAUT[qui] && !/^\s*\[/.test(texte) ? `${TON_PAR_DEFAUT[qui]} ${texte}` : texte);
 // Rythme : la voix est légèrement accélérée (sans changer la hauteur) avant la transcription
-export const VITESSE = { lucie: +(process.env.VITESSE_LUCIE || 1.07), nicolas: +(process.env.VITESSE_NICOLAS || 1.1), duo: +(process.env.VITESSE_DUO || 1.07) };
+export const VITESSE = { lucie: +(process.env.VITESSE_LUCIE || 1.07), arthur: +(process.env.VITESSE_ARTHUR || 1.07), duo: +(process.env.VITESSE_DUO || 1.07) };
 export function accelerer(fichier, facteur) {
   if (!facteur || Math.abs(facteur - 1) < 0.005) return;
   const tmp = fichier.replace(/\.mp3$/, "-brut.mp3");
@@ -44,7 +45,7 @@ export async function genererVoix(texte, presentateur, fichier) {
   fs.writeFileSync(fichier, Buffer.from(await r.arrayBuffer()));
 }
 
-// Format à deux voix : [{ qui: "lucie" | "nicolas", texte }] → un seul fichier audio (dialogue ElevenLabs)
+// Format à deux voix : [{ qui: "lucie" | "arthur", texte }] → un seul fichier audio (dialogue ElevenLabs)
 export async function genererDialogue(repliques, fichier) {
   const r = await fetch(`${EL}/text-to-dialogue?output_format=mp3_44100_128`, {
     method: "POST",

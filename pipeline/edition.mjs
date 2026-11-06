@@ -100,12 +100,13 @@ async function produire(script, dossier) {
   const id = `${new Date().toISOString().slice(0, 10)}-${EDITION}-${slug(script.titre || "sujet")}`;
   const voixFichier = `voix-${id}.mp3`;
   if (script.presentateur === "duo" && Array.isArray(script.dialogue) && script.dialogue.length) {
-    redaction.dit("scenariste", "J'envoie le dialogue à Lucie et Nicolas.");
+    redaction.dit("scenariste", "J'envoie le dialogue à Lucie et Arthur.");
     await genererDialogue(script.dialogue, path.join("public", voixFichier));
   } else {
-    redaction.dit("scenariste", `J'envoie le texte à ${script.presentateur === "nicolas" ? "Nicolas" : "Lucie"}.`);
+    redaction.dit("scenariste", `J'envoie le texte à ${script.presentateur === "arthur" || script.presentateur === "nicolas" ? "Arthur" : "Lucie"}.`);
     await genererVoix(script.voix, script.presentateur, path.join("public", voixFichier));
   }
+  if (script.presentateur === "nicolas") script.presentateur = "arthur";
   const duo = script.presentateur === "duo" && Array.isArray(script.dialogue) && script.dialogue.length;
   accelerer(path.join("public", voixFichier), duo ? VITESSE.duo : VITESSE[script.presentateur] || VITESSE.lucie);
   const mots = await transcrire(path.join("public", voixFichier));
