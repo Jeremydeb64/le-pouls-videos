@@ -39,11 +39,15 @@ export async function photoLibre(requete, destination) {
     "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=12" +
     `&gsrsearch=${encodeURIComponent(requete + " filetype:bitmap")}&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1280`;
   const d = JSON.parse(await lire(api));
-  const pages = Object.values(d.query?.pages || {});
+  // Ordre de pertinence de la recherche, et uniquement de vraies photos (pas de dessin, peinture, carte, affiche, logo)
+  const pages = Object.values(d.query?.pages || {}).sort((a, b) => (a.index || 0) - (b.index || 0));
+  const PAS_PHOTO = /drawing|painting|sketch|engraving|lithograph|illustration|watercolou?r|aquarelle|dessin|peinture|gravure|map\b|carte|karte|logo|poster|affiche|plakat|diagram|schema|stamp|timbre|briefmarke|postcard|carte postale|ansichtskarte/i;
   for (const p of pages) {
     const ii = p.imageinfo?.[0];
     if (!ii || ii.width < 1000) continue;
     const m = ii.extmetadata || {};
+    const desc = `${p.title} ${m.ImageDescription?.value || ""} ${m.Categories?.value || ""} ${m.ObjectName?.value || ""}`;
+    if (PAS_PHOTO.test(desc)) continue;
     const licence = (m.LicenseShortName?.value || "").trim();
     if (!LICENCES_OK.test(licence)) continue;
     const auteur = (m.Artist?.value || "auteur inconnu").replace(/<[^>]+>/g, "").trim().slice(0, 60);

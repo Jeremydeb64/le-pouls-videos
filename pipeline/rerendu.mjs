@@ -28,6 +28,14 @@ for (const id of ids) {
   if (medias) {
     // Voix et photos d'origine archivées : rendu complet, musique et effets refaits
     sh("tar", "-xzf", path.join(w, medias), "-C", "public");
+    // Photo remplacée (src absent des médias archivés) : nouvelle recherche sur Wikimedia
+    for (const [i, s] of ep.scenes.entries()) {
+      if ((s.type !== "photo" && s.type !== "photoRonde") || !s.props.recherche || fs.existsSync(path.join("public", s.props.src || "_"))) continue;
+      const f = path.join("public", s.props.src || `photo-${id}-${i}-b.jpg`);
+      const p = await photoLibre(s.props.recherche, f).catch(() => null);
+      if (p) s.props = { ...s.props, src: path.basename(f), credit: p.credit };
+      else ep.scenes[i] = { ...s, type: "statement", props: { text: s.props.title || s.props.kicker || "", kicker: s.props.kicker } };
+    }
   } else {
     const ancien = path.join(w, fichiers.find((f) => f.endsWith(".mp4")));
     const piste = `rerendu-${id}.mp3`;

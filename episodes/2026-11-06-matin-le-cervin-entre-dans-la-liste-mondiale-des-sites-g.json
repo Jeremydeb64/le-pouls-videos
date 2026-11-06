@@ -342,12 +342,12 @@
    "from": 3.9,
    "theme": "green",
    "props": {
-    "recherche": "Matterhorn Zermatt landscape",
+    "recherche": "Matterhorn east face Zermatt",
     "kicker": "Annoncé ce vendredi",
     "title": "Le *Cervin*",
     "nom": "Le Cervin",
     "role": "Zermatt",
-    "src": "photo-2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g-1.jpg",
+    "src": "photo-cervin-1-b.jpg",
     "credit": "Photo : Sikander Iqbal / Wikimedia Commons, Public domain"
    },
    "to": 13.22
@@ -409,11 +409,11 @@
    "from": 35.66,
    "theme": "green",
    "props": {
-    "recherche": "Matterhorn Zmutt glacier",
+    "recherche": "Matterhorn north face glacier",
     "kicker": "Pourquoi le Cervin ?",
     "title": "Sculpté par les *glaciers*",
     "legende": "Une forme taillée par la glace",
-    "src": "photo-2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g-5.jpg",
+    "src": "photo-cervin-5-b.jpg",
     "credit": "Photo : John Singer Sargent / Wikimedia Commons, CC0"
    },
    "to": 41.98
