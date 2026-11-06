@@ -29,3 +29,10 @@ export async function deposerSurDrive(nom, fichiers) {
   if (!d.ok) throw new Error(`Script Drive : ${d.erreur}`);
   return d.lien;
 }
+
+// Rangement : dossier « AAAA-MM-JJ », fichiers « AAAA-MM-JJ_sujet-court.mp4 » et « .txt »
+export function nomsDrive(id) {
+  const jour = id.slice(0, 10);
+  const sujet = id.slice(11).replace(/^(matin|soir|jour|midi)-/, "").split("-").slice(0, 6).join("-");
+  return { jour, base: `${jour}_${sujet}` };
+}

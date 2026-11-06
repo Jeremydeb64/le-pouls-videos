@@ -13,15 +13,15 @@ import { visuelIA, higgsfieldActif } from "./lib/higgsfield.mjs";
 const EDITION = process.env.EDITION || (new Date().getUTCHours() < 11 ? "matin" : "soir");
 const MAX_SUJETS = +(process.env.MAX_SUJETS || 1);
 const AUJ = new Date().toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich", weekday: "long", day: "numeric", month: "long", year: "numeric" });
-const PUBLICATION = EDITION === "matin" ? "aujourd'hui vers 7 h 30" : "aujourd'hui vers 18 h 30";
+const PUBLICATION = EDITION === "matin" ? "aujourd'hui vers 7 h 30" : EDITION === "jour" ? "aujourd'hui en fin d'après-midi (vers 17 h 30)" : "aujourd'hui vers 18 h 30";
 const HISTO = "state/historique.json";
 const histo = fs.existsSync(HISTO) ? JSON.parse(fs.readFileSync(HISTO, "utf8")) : [];
 const SCHEMA = fs.readFileSync("docs/episode-schema.md", "utf8");
-// Édition automatique (cron) : 3 vidéos par jour au maximum, éditions lancées à la main comprises
-if (process.env.CRON) {
+// Édition automatique (tâche planifiée GitHub ou déclencheur Google à 14 h) : une seule vidéo par jour
+if (process.env.CRON || EDITION === "jour") {
   const jour = new Date().toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" });
   const faites = histo.filter((h) => new Date(h.date).toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" }) === jour).length;
-  if (faites >= 3) {
+  if (faites >= 3 || histo.some((h) => h.id?.includes("-jour-") && new Date(h.date).toLocaleDateString("fr-CH", { timeZone: "Europe/Zurich" }) === jour)) {
     console.log(`Déjà ${faites} vidéos aujourd'hui : édition automatique ignorée.`);
     process.exit(0);
   }

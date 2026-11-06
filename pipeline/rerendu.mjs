@@ -7,7 +7,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { rendre } from "./lib/rendu.mjs";
 import { photoLibre } from "./lib/web.mjs";
-import { driveActif, deposerSurDrive } from "./lib/drive.mjs";
+import { driveActif, deposerSurDrive, nomsDrive } from "./lib/drive.mjs";
 
 const gh = (...a) => execFileSync("gh", a, { encoding: "utf8" }).trim();
 const sh = (cmd, ...a) => execFileSync(cmd, a, { encoding: "utf8", stdio: ["ignore", "pipe", "inherit"] });
@@ -68,9 +68,11 @@ for (const id of ids) {
   let lienDrive = null;
   if (driveActif()) {
     try {
-      lienDrive = await deposerSurDrive(`${nom} (charte V3)`, [
-        { nom: `${nom}.mp4`, url: lien(".mp4") },
-        { nom: "publication.txt", url: lien(".txt") },
+      // Même dossier du jour et mêmes noms : la nouvelle version remplace l'ancienne
+      const { jour, base } = nomsDrive(id);
+      lienDrive = await deposerSurDrive(jour, [
+        { nom: `${base}.mp4`, url: lien(".mp4") },
+        { nom: `${base}.txt`, url: lien(".txt") },
       ]);
     } catch (e) {
       console.warn("Drive :", e.message);

@@ -3,7 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
-import { driveActif, deposerSurDrive } from "./lib/drive.mjs";
+import { driveActif, deposerSurDrive, nomsDrive } from "./lib/drive.mjs";
 import { redaction } from "./lib/redaction.mjs";
 
 const gh = (...a) => execFileSync("gh", a, { encoding: "utf8" }).trim();
@@ -15,7 +15,7 @@ try {
   gh("label", "create", "publie", "--color", "6B6860", "--force");
 } catch {}
 
-const creneau = (e) => (e === "matin" ? "vers 7 h 30" : "vers 18 h 30");
+const creneau = (e) => (e === "matin" ? "vers 7 h 30" : e === "jour" ? "en fin d'après-midi (vers 17 h 30)" : "vers 18 h 30");
 
 for (const v of ed) {
   // Dossier de publication : vidéo + texte d'accompagnement, prêt à poster à la main
@@ -63,11 +63,13 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   const lien = (ext) => (assets.assets.find((a) => a.name.endsWith(ext)) || {}).url;
 
   let lienDrive = null;
-  if (driveActif()) {
+  // Drive : un dossier par jour, et uniquement les vidéos validées par le Contrôleur
+  if (driveActif() && v.decision === "OK") {
     try {
-      lienDrive = await deposerSurDrive(nom, [
-        { nom: `${nom}.mp4`, url: lien(".mp4") },
-        { nom: "publication.txt", url: lien(".txt") },
+      const { jour, base } = nomsDrive(v.id);
+      lienDrive = await deposerSurDrive(jour, [
+        { nom: `${base}.mp4`, url: lien(".mp4") },
+        { nom: `${base}.txt`, url: lien(".txt") },
       ]);
       console.log("Déposé sur Drive :", lienDrive);
     } catch (e) {

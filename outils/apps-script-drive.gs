@@ -2,7 +2,8 @@
  * Le Pouls : dépôt des dossiers de publication dans Google Drive + état en direct de la mini rédaction.
  * À coller dans un projet Google Apps Script (script.google.com), puis déployer en « Application Web ».
  * GitHub envoie : { secret, nom, fichiers: [{ nom, url }] } ; le script télécharge les fichiers
- * (vidéo + texte) depuis la release GitHub et les range dans CLAUDE / Le Pouls – publications / <nom>.
+ * (vidéo + texte) depuis la release GitHub et les range dans CLAUDE / Le Pouls – publications / <jour>.
+ * Un fichier du même nom déjà présent est mis à la corbeille : une vidéo refaite remplace l'ancienne.
  */
 const DOSSIER_PUBLICATIONS = "1Wq2z4OzxHN7htpRMcqgh_rMPbdRQsNxU"; // CLAUDE / Le Pouls – publications
 
@@ -33,6 +34,8 @@ function doPost(e) {
     const dossier = existants.hasNext() ? existants.next() : racine.createFolder(d.nom);
     for (const f of d.fichiers) {
       const blob = UrlFetchApp.fetch(f.url, { followRedirects: true }).getBlob().setName(f.nom);
+      const anciens = dossier.getFilesByName(f.nom);
+      while (anciens.hasNext()) anciens.next().setTrashed(true);
       dossier.createFile(blob);
     }
     return reponse({ ok: true, lien: dossier.getUrl() });
@@ -67,12 +70,10 @@ function lancerEdition_(edition) {
   });
   if (r.getResponseCode() !== 204) throw new Error("GitHub " + r.getResponseCode() + " : " + r.getContentText());
 }
-function editionMatin() { lancerEdition_("matin"); }
-function editionSoir() { lancerEdition_("soir"); }
+function editionJour() { lancerEdition_("jour"); }
 
-// À exécuter une seule fois : édition du matin entre 6 h et 7 h, du soir entre 16 h et 17 h (heure du projet Apps Script)
+// À exécuter une seule fois (et après chaque changement d'horaire) : une édition par jour entre 14 h et 15 h
 function installerDeclencheurs() {
-  ScriptApp.getProjectTriggers().filter(function (t) { return /^edition(Matin|Soir)$/.test(t.getHandlerFunction()); }).forEach(function (t) { ScriptApp.deleteTrigger(t); });
-  ScriptApp.newTrigger("editionMatin").timeBased().everyDays(1).atHour(6).inTimezone("Europe/Zurich").create();
-  ScriptApp.newTrigger("editionSoir").timeBased().everyDays(1).atHour(16).inTimezone("Europe/Zurich").create();
+  ScriptApp.getProjectTriggers().filter(function (t) { return /^edition(Matin|Soir|Jour)$/.test(t.getHandlerFunction()); }).forEach(function (t) { ScriptApp.deleteTrigger(t); });
+  ScriptApp.newTrigger("editionJour").timeBased().everyDays(1).atHour(14).inTimezone("Europe/Zurich").create();
 }
