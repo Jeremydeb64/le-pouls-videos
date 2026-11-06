@@ -94,7 +94,7 @@ async function ecrire(sujet, retours = null) {
         ? `Images fournies par la rédaction (droits réglés, à utiliser en priorité) : dans une scène \`photo\` ou \`photoRonde\`, mets \`"src"\` et \`"credit"\` tels quels au lieu de \`recherche\`.\n${JSON.stringify(sujet.images_fournies)}\n\n`
         : "") +
       (retours ? `CORRECTIONS DEMANDÉES PAR LE CONTRÔLE (version précédente ci-dessous) :\n${JSON.stringify(retours)}\n\n` : "") +
-      "Réponds UNIQUEMENT par un seul bloc ```json``` au format « Sortie technique » de ta consigne, sans aucun texte avant ou après. Fais tes recherches, puis écris directement le JSON.",
+      "Réponds UNIQUEMENT par un seul bloc ```json``` au format « Sortie technique » de ta consigne (sans oublier `rubrique`), sans aucun texte avant ou après. Fais tes recherches, puis écris directement le JSON.",
   });
 }
 
@@ -183,6 +183,8 @@ async function produire(script, dossier) {
   const echecs = retenues.filter((d) => d.e);
   if (echecs.length) redaction.dit("scenariste", `Visuels IA non disponibles (${echecs[0].e}) : je continue sans.`);
   const ambiance = script.sensible ? "aucune" : script.ambiance || "neutre";
+  // Accents sur les capitales (« Etat » → « État ») dans les sources affichées
+  for (const sc of scenes) if (sc.type === "outro" && sc.props?.sources) sc.props.sources = sc.props.sources.replace(/\bEtat\b/g, "État");
   const episode = { id, rubrique: script.rubrique || "VALAIS", ambiance, voice: voixFichier, duration: duree, captions: sousTitres, scenes, meta: { presentateur: script.presentateur, sources: script.sources, faits: script.faits, sensible: script.sensible } };
   fs.mkdirSync("episodes", { recursive: true });
   fs.writeFileSync(`episodes/${id}.json`, JSON.stringify(episode, null, 1));

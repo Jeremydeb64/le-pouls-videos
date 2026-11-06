@@ -487,6 +487,9 @@ export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: num
   const at = useAt();
   const d1 = at(a1);
   const n = String(Math.round(value)).length;
+  // Taille du grand chiffre : jamais plus large que la zone de contenu (séparateur de milliers compris)
+  const car = n + (value >= 10000 ? Math.floor((n - 1) / 3) * 0.4 : 0) + (Number.isInteger(value) ? 0 : 2);
+  const taille = Math.min(n <= 3 ? 340 : 250, Math.floor(CONTENT_W / (car * 0.66)));
   return (
     <Frame theme={theme}>
       <Body top={grid ? 300 : 470}>
@@ -494,7 +497,7 @@ export const BigFigure: React.FC<P<{ kicker: string; prefix?: string; value: num
         <Rise delay={d1}>
           <div style={{ textAlign: "center" }}>
             {prefix && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 48, color: C.sage, textTransform: "uppercase", letterSpacing: 2 }}>{prefix}</div>}
-            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: n <= 3 ? 340 : n <= 5 ? 250 : 180, lineHeight: 0.95, color: C.ochre, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>
+            <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: taille, lineHeight: 0.95, color: C.ochre, letterSpacing: "-0.03em", whiteSpace: "nowrap" }}>
               <Counter to={value} delay={d1} dur={21} />
             </div>
             <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: label.length <= 24 ? 64 : 46, lineHeight: 1.1, color: C.paper, textTransform: "uppercase", marginTop: 18 }}>{label}</div>
@@ -652,10 +655,10 @@ export const PhotoRonde: React.FC<P<{ src: string; credit: string; kicker?: stri
   const p = interpolate(frame, [2, 16], [0, 1], { ...clamp, easing: Easing.out(Easing.cubic) });
   const anneau = interpolate(frame, [8, 26], [0, 360], { ...clamp, easing: Easing.out(Easing.cubic) });
   const zoom = interpolate(frame, [0, durationInFrames], [1.05, 1.15]);
-  const D = 520;
+  const D = 460;
   return (
     <Frame theme={theme}>
-      <div style={{ position: "absolute", left: PAD + CONTENT_W / 2 - D / 2, top: 400, width: D, height: D }}>
+      <div style={{ position: "absolute", left: PAD + CONTENT_W / 2 - D / 2, top: 380, width: D, height: D }}>
         <svg width={D + 40} height={D + 40} style={{ position: "absolute", left: -20, top: -20 }}>
           <circle cx={(D + 40) / 2} cy={(D + 40) / 2} r={D / 2 + 10} fill="none" stroke={C.ochre} strokeWidth={12} strokeDasharray={`${(anneau / 360) * Math.PI * (D + 20)} 9999`} transform={`rotate(-90 ${(D + 40) / 2} ${(D + 40) / 2})`} strokeLinecap="round" />
         </svg>
@@ -663,7 +666,7 @@ export const PhotoRonde: React.FC<P<{ src: string; credit: string; kicker?: stri
           <Img src={staticFile(src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
         </div>
       </div>
-      <Body top={985}>
+      <Body top={880}>
         {kicker && <Kicker center>{kicker}</Kicker>}
         {title && (
           <Rise delay={10}>

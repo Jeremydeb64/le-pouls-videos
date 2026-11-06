@@ -1,6 +1,6 @@
 {
  "id": "2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h",
- "rubrique": "VALAIS",
+ "rubrique": "MONTAGNE",
  "ambiance": "neutre",
  "voice": "voix-2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h.mp3",
  "duration": 71.44,
@@ -457,7 +457,7 @@
    "from": 68.26,
    "theme": "paper",
    "props": {
-    "sources": "Sources : 24 heures, Le Nouvelliste, Commune de Saxon, Etat du Valais"
+    "sources": "Sources : 24 heures, Le Nouvelliste, Commune de Saxon, État du Valais"
    },
    "to": 71.44
   }
