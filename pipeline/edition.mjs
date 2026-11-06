@@ -61,6 +61,9 @@ async function veille() {
     contenu: `Nous sommes le ${AUJ}. Édition : ${EDITION}. Nombre de sujets à retenir : ${MAX_SUJETS}.\n\nSujets déjà traités (14 derniers jours) :\n${JSON.stringify(histo.slice(-40).map((h) => h.titre))}\n\nArticles :\n${JSON.stringify(articles.slice(0, 220))}`,
   });
   for (const s of choix.sujets) redaction.dit("veilleur", `Je garde « ${s.titre_travail} ». ${s.pourquoi || ""}`);
+  fs.mkdirSync("out", { recursive: true });
+  fs.writeFileSync("out/veille.json", JSON.stringify(choix, null, 1));
+  console.log("VEILLE", JSON.stringify(choix));
   redaction.agent("veilleur", "termine");
   return choix.sujets.slice(0, MAX_SUJETS);
 }
@@ -248,6 +251,11 @@ process.on("unhandledRejection", (e) => {
 const SUJET_IMPOSE = process.env.SUJET ? JSON.parse(process.env.SUJET) : null;
 if (SUJET_IMPOSE) redaction.dit("veilleur", `Sujet choisi par la rédaction : « ${SUJET_IMPOSE.titre_travail} ». Je transmets au Scénariste.`);
 const sujets = SUJET_IMPOSE ? [SUJET_IMPOSE] : await veille();
+// Mode « veille seule » : proposer des sujets sans produire de vidéo
+if (process.env.VEILLE_SEULE) {
+  await redaction.fin();
+  process.exit(0);
+}
 const prets = [];
 for (const sujet of sujets) {
  try {
