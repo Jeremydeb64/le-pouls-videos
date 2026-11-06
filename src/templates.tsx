@@ -193,7 +193,7 @@ const Kicker: React.FC<{ color?: string; delay?: number; center?: boolean; child
 // Mots clés : le texte entre *astérisques* passe en ocre (« UNE *MARCHE* QUI CHANGE »)
 export const Mots: React.FC<{ texte: string; accent?: string }> = ({ texte: t0, accent = C.ochre }) => {
   // Espaces insécables avant ? ! : ; (jamais de ponctuation seule sur une ligne)
-  const texte = t0.replace(/ ([?!:;»])/g, "\u00a0$1").replace(/« /g, "«\u00a0");
+  const texte = t0.replace(/ ([?!:;»])/g, "\u00a0$1").replace(/« /g, "«\u00a0").replace(/(^|\s)(à|a|y|et|ou|de|du|le|la|un|en|au|À|A|Y|ET|OU|DE|DU|LE|LA|UN|EN|AU) /g, "$1$2\u00a0");
   return (
   <>
     {texte.split(/(\*[^*]+\*)/g).map((m, i) => (m.startsWith("*") && m.endsWith("*") ? <span key={i} style={{ color: accent }}>{m.slice(1, -1)}</span> : <React.Fragment key={i}>{m}</React.Fragment>))}

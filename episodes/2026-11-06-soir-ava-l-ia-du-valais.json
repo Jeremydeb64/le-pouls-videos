@@ -365,8 +365,8 @@
    "from": 6.86,
    "theme": "green",
    "props": {
-    "src": "sujets/ava-visuel.jpg",
-    "credit": "Image : État du Valais",
+    "src": "sujets/ava-visuel-v2.jpg",
+    "credit": "Image : État du Valais (dossier de presse)",
     "kicker": "Lancée jeudi",
     "title": "Voici *AVA*",
     "nom": "AVA",
@@ -420,8 +420,8 @@
    "from": 50.42,
    "theme": "green",
    "props": {
-    "src": "sujets/ava-illustration-2.jpg",
-    "credit": "Illustration : État du Valais, générée par IA",
+    "src": "sujets/ava-illustration-2-v2.jpg",
+    "credit": "Image générée avec l'IA – État du Valais",
     "kicker": "AVA assiste",
     "title": "Une personne *décide*",
     "legende": "AVA ne signe rien"
@@ -433,8 +433,8 @@
    "from": 57.6,
    "theme": "paper",
    "props": {
-    "src": "sujets/ava-illustration-3.jpg",
-    "credit": "Illustration : État du Valais, générée par IA",
+    "src": "sujets/ava-illustration-3-v2.jpg",
+    "credit": "Image générée avec l'IA – État du Valais",
     "kicker": "Et pour toi ?",
     "title": "Des *services* en ligne"
    },
@@ -445,8 +445,8 @@
    "from": 69.02,
    "theme": "green",
    "props": {
-    "src": "sujets/ava-logo.jpg",
-    "credit": "Logo : État du Valais",
+    "src": "sujets/ava-logo-v2.jpg",
+    "credit": "Image : État du Valais (dossier de presse)",
     "kicker": "La suite",
     "title": "Bientôt les *communes* ?",
     "legende": "Ouverture progressive"
