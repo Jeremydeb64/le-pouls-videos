@@ -1,108 +1,13 @@
 {
- "edition": "soir",
+ "edition": "matin",
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
   "scenariste": "termine",
-  "controleur": "termine",
+  "controleur": "bloque",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "controleur",
-   "texte": "Pas de blocage : le texte est globalement équilibré. Dates et chiffres vérifiés : J-25 est juste, le vote est le 29 novembre, 103 voix contre 24, 34 % et 20 %, 70/20/10, 2031. Aucun drame local récent trouvé autour de l'aéroport de Sion. Corrections à faire : (1) l'écran ballot doit reprendre l'intitulé officiel de la loi, sans « oui ou non ? », et le titre ne doit pas laisser croire que c'est le seul objet du 29 novembre, puisque le salaire minimum est aussi au vote ; (2) la scène photo « Ce que change le oui » doit devenir neutre et symétrique avec le non, avec un crédit photo visible (auteur + licence Wikimedia Commons) ; (3) remets « estimée » sur les 3 à 6 millions dans le récap et à l'oral ; (4) documente dans `faits` les arguments « secours et formation » et le déficit de 3 millions, car une autre source d'opposants parle de 6 millions, puis ajoute la source des Vert-e-s ; (5) retire Le Nouvelliste des crédits s'il n'est pas lu.",
-   "t": "2026-11-04T14:32:56.321Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T14:32:56.322Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T14:35:15.620Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bon travail : les chiffres collent aux sources (34 %, 20 %, 70/20/10, 3 à 6 millions, 75 millions), J-25 est juste, le oui et le non sont à égalité et il n'y a aucune recommandation. À corriger avant le rendu : 1) le « déficit de 3 millions » est le déficit actuel de l'aéroport selon les opposants, alors dis-le à la voix et à l'écran (scène 8) pour qu'on ne croie pas que la loi le crée. 2) Ajoute l'ATE aux sources et aux crédits de l'outro, et si possible une source directe du comité du non. 3) Mentionne en une demi-phrase le second objet (salaire minimum), ou reformule « deux objets ». 4) Rends la scène « Concrètement » plus neutre en reprenant les formulations de vs.ch. 5) Si tu peux, varie un des trois versus. Renvoie-moi le tout et je valide.",
-   "t": "2026-11-04T14:36:04.470Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T14:36:04.471Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T14:38:00.280Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits tiennent. J'ai vérifié chaque point : 34 % et 20 %, 12 mars, référendum du 1er juillet, indemnité de 3 à 6 millions, 2031, J-25 le 4 novembre, déficit d'environ 3 millions, 75 millions. Les attributions sont correctes et le second objet est bien traité sans contenu. Un seul point à corriger avant de passer aux images : la parole n'est pas égale entre oui et non à la scène 7. Le non fait environ 20 mots sur 5 segments, le oui environ 13 mots sur 4 segments. Ramène les deux phrases à une longueur comparable, par exemple en ajoutant « économie et tourisme » côté oui ou en retirant « sans plafond dans la loi » côté non. Ajoute aussi le site du comité référendaire (referendum-aeroport-sion.ch) dans les sources, pour que le non soit cité comme le oui. Pour la photo de la scène 2, pas de photo de presse : prends une photo libre avec auteur et licence visibles.",
-   "t": "2026-11-04T14:38:43.132Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je bloque ce sujet, il ne part pas au montage.",
-   "t": "2026-11-04T14:38:43.133Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-04T14:38:43.135Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs reconnue (accès limité à la voix, crédits non lisibles).",
-   "t": "2026-11-04T14:39:59.731Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du soir, je fais le tour des sources.",
-   "t": "2026-11-04T14:39:59.733Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "141 articles lus, je regroupe par sujet.",
-   "t": "2026-11-04T14:40:05.292Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Aéroport de Sion : ce que le oui met sur la table ». Votation cantonale en cours, campagne du oui lancée aujourd'hui, chiffres concrets (75 millions, 20 minutes en hélicoptère) pour une infographie. Fiabilité à 4 : les chiffres du comité doivent être présentés comme tels et vérifiés, la date du scrutin reste à confirmer.",
-   "t": "2026-11-04T14:40:28.898Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Le Nouvelliste.",
-   "t": "2026-11-04T14:40:28.901Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T14:42:03.895Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Le texte est globalement solide et neutre. Pour le oui et le contre, le temps de parole est équivalent (environ 24 mots chacun) et le versus compte 3 points de chaque côté. Le décompte J-25 est juste : le 29 novembre tombe bien un dimanche. Rien dans le contexte local récent n'impose un ton plus sobre. Les chiffres 103-24, 3805, 70/20/10, 3 à 6 millions et 2031 sont confirmés par RTS, 24heures et La Télé. À corriger : 1) sources manquantes pour « secours », « formation », « majorité publique » et « structurel » dans le versus ; 2) l'intitulé de la question du scrutin, à reprendre de l'officiel ; 3) le crédit photo (auteur + licence) ; 4) la ligne « Sources » à recaler sur `faits`, avec une source officielle ou neutre pour les chiffres de la loi ; 5) « estimés » dès l'accroche et « près de » 75 millions. Renvoie-moi le JSON corrigé.",
-   "t": "2026-11-04T14:42:59.275Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-04T14:42:59.278Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-04T14:44:34.799Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections demandées sont faites. Les sources du versus sont ajoutées, « formation » est supprimé, l'intitulé officiel est repris, « estimations » est dit dès l'accroche, « près de 75 millions » est partout, et le référendum et les 2 abstentions sont précisés. Il reste des détails mineurs : le crédit photo à renseigner, Bluewin à créditer, le temps de parole oui/non à resserrer un peu, et le libellé « question » de la scène ballot. Rien ne bloque le passage à la phase image.",
-   "t": "2026-11-04T14:44:55.128Z"
-  },
   {
    "agent": "scenariste",
    "texte": "J'envoie le dialogue à Lucie et Nicolas.",
@@ -407,9 +312,104 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-05T17:30:24.653Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 70780 crédits restants ce mois-ci.",
+   "t": "2026-11-06T09:03:52.542Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du matin, je fais le tour des sources.",
+   "t": "2026-11-06T09:03:52.547Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "262 articles lus, je regroupe par sujet.",
+   "t": "2026-11-06T09:04:00.547Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Le Cervin entre au patrimoine géologique mondial ». Sujet emblématique, annoncé aujourd'hui par la SCNAT, avec des chiffres clairs (4478 m) et une image forte pour la vidéo.",
+   "t": "2026-11-06T09:04:22.409Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Suisse.",
+   "t": "2026-11-06T09:04:22.412Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T09:05:28.088Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les faits principaux sont bons : 300 sites, 4478 m, 3e site suisse, annonce de la SCNAT ce vendredi, roches d'Afrique et d'Europe. Pour la v2, à corriger : 1) enlève « la plus célèbre de Suisse » (superlatif non sourcé) ; 2) enlève « aucune nouvelle règle pour les visiteurs » et « connue dans le monde entier » (non sourcés), et mets à la place un fait sourcé ; 3) retire la date 2022 de la frise ou sources-la, et cale l'item Cervin sur une phrase parlée ; 4) allège les chiffres et le jargon : une seule phrase simple sur l'Engadine et Glaris, sans dates ; 5) ton sobre, car un alpiniste est mort au Cervin le 27 octobre et il y a eu d'autres accidents cet été : pas de célébration, pas d'images d'ascension ; 6) scène 7 à partir du segment 33, avec « ancienne marge de l'Europe » ; 7) photos de photothèque libre, avec crédit, sans Keystone ni ATS.",
+   "t": "2026-11-06T09:06:26.588Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-06T09:06:26.590Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-06T09:07:27.866Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections demandées ont été faites : ton sobre, sans superlatif non sourcé, frise sans dates non sourcées, scène 7 recalée au segment 33, règles pour les visiteurs supprimées. Il reste quelques points mineurs : simplifier « glaciers de blocs » et « faille » à l'oral, aligner le libellé du récap sur la nuance « fragments de croûte terrestre », et nettoyer le fait 2022 dans les sources. Les crédits photo seront vérifiés au rendu.",
+   "t": "2026-11-06T09:07:44.650Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-06T09:07:44.652Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Sikander Iqbal / Wikimedia Commons, Public domain.",
+   "t": "2026-11-06T09:08:20.935Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : John Singer Sargent / Wikimedia Commons, CC0.",
+   "t": "2026-11-06T09:08:23.187Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Peter elektro / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-06T09:08:23.742Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-06T09:08:23.744Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-06T09:09:43.410Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Remplace l'image « Sculpté par les glaciers » : elle montre un dessin de la Jungfrau et non le Cervin. Corrige aussi les fragments de texte à gauche de la scène 2, remonte les crédits photo dans la zone TikTok, et vérifie les fonds papier (ils s'affichent en vert) et la frise vide. Un humain doit valider l'image avant publication.",
+   "t": "2026-11-06T09:10:14.640Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.65 $ (Claude + ElevenLabs).",
+   "t": "2026-11-06T09:10:15.985Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-06T09:10:15.987Z"
   }
  ],
- "maj": "2026-11-05T17:30:41.331Z",
+ "maj": "2026-11-06T09:10:34.169Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1049,6 +1049,116 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-soir-budget-du-valais-180-millions-a-trouver/LePouls_2026-11-05-soir-budget-du-valais-180-millions-a-trouver.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1ZG5DmDYO3xX3hHZ1fMhlCtypZrG_ajOc",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/6"
+  },
+  {
+   "id": "2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g",
+   "titre": "Le Cervin entre dans la liste mondiale des sites géologiques",
+   "edition": "matin",
+   "decision": "BLOQUE",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 5,
+     "constat": "« Glaciers de blocs » et « grande faille » restent sans explication à l'oral. Le jargon n'est pas expliqué pour un spectateur qui ne connaît pas le sujet.",
+     "correction_demandee": "Simplifier à l'oral, par exemple : « deux autres sites suisses y figurent déjà : des glaciers de blocs dans l'Engadine et une grande faille à Glaris »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Le libellé du récap « Roches d'Afrique et de l'ancienne marge de l'Europe » ne reprend pas la nuance de la source (fragments de croûte terrestre).",
+     "correction_demandee": "Écrire « Des roches venues d'Afrique et de l'ancienne marge de l'Europe »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "Le fait « liste créée en 2022 » est toujours rattaché à la seule source RTS. Il n'apparaît plus à l'écran ni à l'oral, donc il n'est pas bloquant.",
+     "correction_demandee": "Retirer ce fait de `faits` s'il n'est pas utilisé, ou ajouter une source qui le confirme."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Droits des photos : la vérification du crédit (auteur + licence) et de la source libre ne peut se faire qu'au rendu.",
+     "correction_demandee": "Vérifier au rendu que les photos des scènes 2, 6 et 8 viennent de Wikimedia Commons ou d'une photothèque validée, avec crédit visible."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 6,
+     "constat": "L'image illustrant « Sculpté par les glaciers » est un dessin de Sargent portant l'inscription « JUNGFRAU ». Elle ne montre pas le Cervin, alors que le texte et le crédit la présentent comme le Cervin sculpté par la glace. Image trompeuse et identification incorrecte.",
+     "correction_demandee": "Remplacer par une image du Cervin dont la source et la licence sont vérifiables, ou faire valider par un humain l'usage de ce dessin. Ne pas publier en l'état."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 2,
+     "constat": "Des fragments de texte (« s h… », « ain lift. ») apparaissent à gauche de la carte titre, en dehors de l'encart. On ne sait pas s'il s'agit de texte de la photo ou d'un débordement de l'interface.",
+     "correction_demandee": "Vérifier le rendu. Si c'est un débordement, le corriger ; sinon recadrer la photo pour retirer ces fragments visibles ou les masquer."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Le crédit photo (« Photo : Sikander Iqbal… ») est placé à y ≈ 742 px sur la vue 540×960, soit hors de la zone de sécurité TikTok (y 300–1450 sur 1080×1920, soit ≈150–725 ici).",
+     "correction_demandee": "Remonter le crédit dans la zone de sécurité, par exemple juste sous le sous-titre, sans le couper."
+    },
+    {
+     "gravite": "important",
+     "scene": 8,
+     "constat": "Le crédit photo est à y ≈ 742 px, hors de la zone de sécurité.",
+     "correction_demandee": "Remonter le crédit dans la zone de sécurité."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Le crédit photo est à y ≈ 742 px, hors de la zone de sécurité.",
+     "correction_demandee": "Remonter le crédit dans la zone de sécurité."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Les scènes marquées « paper » (1, 3, 5, 7, 9, 10) apparaissent en vert foncé et non en crème. L'alternance papier / vert n'est donc pas visible à l'écran.",
+     "correction_demandee": "Vérifier le thème rendu. Les fonds papier doivent être crème #F5F2EA, ou la charte et le thème doivent être alignés."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "La frise « 3e site suisse » ne montre aucun de ses trois items sur les images prélevées (zone centrale vide, seul le sous-titre apparaît). Risque d'écran vide prolongé, donc de silence visuel.",
+     "correction_demandee": "Vérifier l'animation des items sur toute la durée (25,78–35,66 s) et s'assurer qu'aucune plage n'est vide."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "Les libellés de la carte (Monthey, Sion, Sierre, Viège, Brigue, Martigny) sont très petits et peu lisibles sur mobile. La carte est recadrée de façon abrupte (bords coupés).",
+     "correction_demandee": "Agrandir les libellés principaux et recadrer proprement la carte, sans bord coupé visible."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Seul l'item 1 du récapitulatif est visible sur l'image prélevée. Les items 2 et 3 n'apparaissent pas à cet instant.",
+     "correction_demandee": "Confirmer que les items 2 et 3 apparaissent bien dans le temps prévu (5,64 s et 8,40 s)."
+    }
+   ],
+   "description_tiktok": "Le Cervin entre dans la liste mondiale des sites géologiques. Pourquoi cette montagne est-elle unique ? On t'explique.\nSources : RTS, « Le Cervin fait son entrée au patrimoine mondial géologique » ; Le Temps ; Le Nouvelliste\n#Valais #Cervin #Zermatt #Geologie #Montagne",
+   "sources": [
+    {
+     "media": "RTS Suisse",
+     "titre": "Le Cervin fait son entrée au patrimoine mondial géologique",
+     "url": "https://www.rts.ch/info/suisse/2026/article/le-cervin-entre-au-patrimoine-mondial-de-la-geologie-29407489.html"
+    },
+    {
+     "media": "Le Temps",
+     "titre": "Le Cervin fait son entrée dans le classement mondial du patrimoine géologique",
+     "url": "https://www.letemps.ch/suisse/le-cervin-fait-son-entree-dans-le-classement-mondial-du-patrimoine-geologique"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Le Cervin classé au patrimoine mondial géologique",
+     "url": "https://www.lenouvelliste.ch/valais/haut-valais/zermatt/le-cervin-classe-au-patrimoine-mondial-geologique-1520689"
+    }
+   ],
+   "mp4": "out/le-cervin-entre-au-patrimoine-geologique-mondial/2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g.mp4",
+   "etat": "bloque",
+   "cout_usd": 0.6357,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g/LePouls_2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1ons8ztp-mRyoieqw0ecHqtkn9co0AHIM",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/7"
   }
  ]
 }

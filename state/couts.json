@@ -219,6 +219,106 @@
    "unite": "tokens",
    "usd": 0.0037,
    "execution": "édition soir 2026-11-05"
+  },
+  {
+   "date": "2026-11-06T09:04:22.408Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 94140,
+   "unite": "tokens",
+   "usd": 0.011,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:05:28.086Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 51034,
+   "unite": "tokens",
+   "usd": 0.1918,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:05:28.086Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:06:26.588Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 62363,
+   "unite": "tokens",
+   "usd": 0.1892,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:06:26.588Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:07:27.864Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 30409,
+   "unite": "tokens",
+   "usd": 0.1493,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:07:44.650Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 13185,
+   "unite": "tokens",
+   "usd": 0.0029,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:08:16.594Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 667,
+   "unite": "crédits",
+   "usd": 0.0534,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:08:20.273Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 84,
+   "unite": "secondes",
+   "usd": 0.0051,
+   "execution": "édition matin 2026-11-06"
+  },
+  {
+   "date": "2026-11-06T09:10:14.639Z",
+   "contexte": "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 16572,
+   "unite": "tokens",
+   "usd": 0.004,
+   "execution": "édition matin 2026-11-06"
   }
  ],
  "executions": [
@@ -256,6 +356,11 @@
    "date": "2026-11-06T01:04:28.796Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-06T09:10:14.643Z",
+   "etiquette": "édition matin 2026-11-06",
+   "usd": 0.6467
   }
  ],
  "par_jour": {
@@ -264,34 +369,41 @@
    "elevenlabs": 0.1123,
    "higgsfield": 0,
    "total": 2.1516
+  },
+  "2026-11-06": {
+   "anthropic": 0.5882,
+   "elevenlabs": 0.0585,
+   "higgsfield": 0,
+   "total": 0.6467
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 2.0393,
-   "elevenlabs": 0.1123,
+   "anthropic": 2.6275,
+   "elevenlabs": 0.1708,
    "higgsfield": 0,
-   "total": 2.1516
+   "total": 2.7983
   }
  },
  "par_video": {
   "2026-11-05-matin-13e-rente-avs-la-tva-pour-la-financer-j-24": 1.2115,
-  "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181
+  "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181,
+  "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial": 0.6357
  },
  "soldes": {
-  "date": "2026-11-06T01:04:29.254Z",
+  "date": "2026-11-06T09:10:14.645Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 60220,
+   "credits_utilises": 60915,
    "credits_mois": 131000,
-   "credits_restants": 70780,
+   "credits_restants": 70085,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 12.9007,
+   "credit_estime_restant_usd": 12.3125,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-06T01:04:30.750Z"
+ "maj": "2026-11-06T09:10:15.981Z"
 }
