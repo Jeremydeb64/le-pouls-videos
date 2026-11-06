@@ -251,6 +251,11 @@
    "date": "2026-11-05T17:30:23.224Z",
    "etiquette": "édition soir 2026-11-05",
    "usd": 0.9294
+  },
+  {
+   "date": "2026-11-06T01:04:28.796Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -274,7 +279,7 @@
   "2026-11-05-soir-budget-cantonal-180-millions-a-trouver-d-ici-2030": 0.9181
  },
  "soldes": {
-  "date": "2026-11-05T17:30:23.226Z",
+  "date": "2026-11-06T01:04:29.254Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 60220,
@@ -288,5 +293,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-05T17:30:24.646Z"
+ "maj": "2026-11-06T01:04:30.750Z"
 }
