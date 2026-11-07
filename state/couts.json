@@ -691,6 +691,11 @@
    "date": "2026-11-07T13:11:32.671Z",
    "etiquette": "édition jour 2026-11-07",
    "usd": 0.701
+  },
+  {
+   "date": "2026-11-07T23:50:47.250Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -730,7 +735,7 @@
   "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905
  },
  "soldes": {
-  "date": "2026-11-07T13:11:32.677Z",
+  "date": "2026-11-07T23:50:47.573Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 64245,
@@ -744,5 +749,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-07T13:11:33.914Z"
+ "maj": "2026-11-07T23:50:49.346Z"
 }
