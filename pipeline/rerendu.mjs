@@ -60,9 +60,9 @@ for (const id of ids) {
   fs.mkdirSync(dossier, { recursive: true });
   fs.copyFileSync(mp4, path.join(dossier, `${nom}.mp4`));
   if (fs.existsSync(path.join(w, "publication.txt"))) fs.copyFileSync(path.join(w, "publication.txt"), path.join(dossier, "publication.txt"));
-  fs.rmSync(`${dossier}.zip`, { force: true });
-  sh("zip", "-qrj", `${dossier}.zip`, dossier);
-  gh("release", "upload", tag, mp4, `${dossier}.zip`, "--clobber");
+  gh("release", "upload", tag, mp4, "--clobber");
+  // L'ancien dossier zip (doublon de la vidéo) n'est plus fourni
+  for (const z of fichiers.filter((f) => f.endsWith(".zip"))) try { gh("release", "delete-asset", tag, z, "-y"); } catch {}
   const assets = JSON.parse(gh("release", "view", tag, "--json", "assets")).assets;
   const lien = (ext) => (assets.find((a) => a.name.endsWith(ext)) || {}).url;
   let lienDrive = null;

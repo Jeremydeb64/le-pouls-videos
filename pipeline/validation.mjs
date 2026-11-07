@@ -44,7 +44,6 @@ Décision : ${v.decision}
 ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.constat}`).join("\n") || "Aucune remarque."}
 `;
   fs.writeFileSync(path.join(dossier, "publication.txt"), texte);
-  execFileSync("zip", ["-qrj", `${dossier}.zip`, dossier]);
   // Le texte est aussi archivé dans le dépôt (sans la vidéo)
   fs.mkdirSync(path.join("publications", v.id), { recursive: true });
   fs.writeFileSync(path.join("publications", v.id, "publication.txt"), texte);
@@ -58,7 +57,7 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
   } catch {}
   const archiveMedias = path.join("out", "publications", `${nom}-medias.tgz`);
   if (medias.length) execFileSync("tar", ["-czf", archiveMedias, "-C", "public", ...medias]);
-  gh("release", "create", tag, `${dossier}.zip`, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), ...(medias.length ? [archiveMedias] : []), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
+  gh("release", "create", tag, path.join(dossier, `${nom}.mp4`), path.join(dossier, "publication.txt"), ...(medias.length ? [archiveMedias] : []), "--title", v.titre || v.id, "--notes", texte, "--prerelease");
   const assets = JSON.parse(gh("release", "view", tag, "--json", "assets"));
   const lien = (ext) => (assets.assets.find((a) => a.name.endsWith(ext)) || {}).url;
 
@@ -81,7 +80,7 @@ ${(v.problemes || []).map((p) => `- ${p.gravite} (scène ${p.scene}) : ${p.const
 **Édition du ${v.edition}**, à publier ${creneau(v.edition)}. Décision du Contrôleur : **${v.decision}**${v.cout_usd != null ? `\n💰 Coût de production estimé : ${v.cout_usd.toFixed(2)} $ (≈ ${(v.cout_usd * 0.8).toFixed(2)} CHF)` : ""}
 
 ▶️ [Voir la vidéo](${lien(".mp4")})
-📦 [Télécharger le dossier de publication (vidéo + texte)](${lien(".zip")})
+🎬 [Télécharger la vidéo](${lien(".mp4")}) · 📝 [Texte de publication](${lien(".txt")})
 📝 [Texte de publication](${lien(".txt")})${lienDrive ? `\n📁 [Dossier sur Google Drive](${lienDrive})` : ""}
 
 ### Remarques du Contrôleur
