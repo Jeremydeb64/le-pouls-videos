@@ -1,123 +1,13 @@
 {
- "edition": "soir",
+ "edition": "jour",
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
   "scenariste": "termine",
-  "controleur": "termine",
+  "controleur": "bloque",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-05T09:14:12.106Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo archivée comme publiée sur TikTok.",
-   "t": "2026-11-05T09:32:00.285Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo archivée comme publiée sur TikTok.",
-   "t": "2026-11-05T09:32:14.419Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 71445 crédits restants ce mois-ci.",
-   "t": "2026-11-05T17:22:36.995Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du soir, je fais le tour des sources.",
-   "t": "2026-11-05T17:22:36.998Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "264 articles lus, je regroupe par sujet.",
-   "t": "2026-11-05T17:22:45.552Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Budget cantonal : 180 millions à trouver d'ici 2030 ». Un chiffre clair (180 millions d'ici 2030, dont deux tiers pour 2028), qui touche directement les services publics, et une question simple : économies ou hausse d'impôts ?",
-   "t": "2026-11-05T17:23:08.672Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-05T17:23:08.675Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-05T17:24:35.688Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Faits confirmés : 180 millions, deux tiers dès 2028 (120 millions), plus de 200 millions côté Confédération, quatre groupes, hausse d'impôts sauf classes défavorisées, dernière hausse au début du XXIe siècle. Quatre points à reprendre : 1) Ne dis pas que Berne est la seule cause : les dépenses grimpent aussi plus vite que les recettes. Remplace « surtout » par « notamment » (santé, primes maladie) et précise « charges en plus ou recettes en moins ». 2) Dis clairement si les 180 millions sont un montant annuel, car Rhône FM écrit « par an » et pas la RTS. 3) Simplifie le calendrier : moins d'années dites, et une frise qui affiche ce que la voix annonce, dont fin 2027. 4) Dans le récap, nuance « licenciements » et « impôts » (pour les particuliers). Corrige aussi le décalage de la scène 6 et l'URL vs.ch.",
-   "t": "2026-11-05T17:25:40.363Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-05T17:25:40.365Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-05T17:27:44.941Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Corrections des deux relectures bien prises en compte : nuance sur Berne, « notamment » au lieu de « surtout », récap adouci, visuel sur le personnel et fiche de faits complétée. Il reste trois petites retouches : démarrer la scène des quatre groupes au seg 29 (ou afficher les quatre pastilles), préciser le libellé de la frise 2029-2030, et mettre l'URL exacte du communiqué cantonal dans les sources.",
-   "t": "2026-11-05T17:28:00.365Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
-   "t": "2026-11-05T17:28:00.367Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 21 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-05T17:28:30.679Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : vaquins / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-05T17:28:42.679Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-05T17:28:42.685Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-05T17:29:54.941Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Trois points à corriger côté rendu : les libellés Viège et Brigue se chevauchent sur la carte, le « T » de INVESTISSEMENT est coupé, et les quatre pastilles de la scène Subventions ne sont pas affichées. Pour le son, je ne peux pas vérifier les silences ni la fin à partir des seules images, donc merci de confirmer la voix sur toute la durée.",
-   "t": "2026-11-05T17:30:23.219Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.93 $ (Claude + ElevenLabs).",
-   "t": "2026-11-05T17:30:24.651Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-05T17:30:24.653Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 70780 crédits restants ce mois-ci.",
-   "t": "2026-11-06T09:03:52.542Z"
-  },
   {
    "agent": "veilleur",
    "texte": "Édition du matin, je fais le tour des sources.",
@@ -407,9 +297,119 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-06T16:19:13.786Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 67350 crédits restants ce mois-ci.",
+   "t": "2026-11-07T13:05:05.191Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-07T13:05:05.194Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "243 articles lus, je regroupe par sujet.",
+   "t": "2026-11-07T13:05:13.355Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Ski en Valais romand : les premières pistes ouvrent ce week-end ». Les premières descentes sont possibles dès samedi à Verbier (lac des Vaux) et Glacier 3000 rouvre après révision : c'est concret pour tout skieur valaisan, et les dates se prêtent à une carte.",
+   "t": "2026-11-07T13:05:27.784Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-07T13:05:27.794Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Article illisible, je cherche d'autres sources.",
+   "t": "2026-11-07T13:05:28.981Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-07T13:06:44.126Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bonne structure, mais il y a deux points. 1) L'intro et le titre disent « premières pistes » et « de nouveau skier ». Zermatt, Saas-Fee, Engelberg et Diavolezza sont déjà ouverts. Cadre le sujet sur Verbier et Glacier 3000, « après Zermatt et Saas-Fee », et change le titre en « Ski : Verbier et Glacier 3000 ouvrent ». 2) Le récap n° 3 doit dire « à Verbier ». Cette nuance ne vaut pas pour Glacier 3000. Ajoute aussi 24heures dans les sources de l'outro et de la description. Précise les stations sur la frise et reformule « une vraie mise en jambes ». Vérifie les crédits photo : pas de photos de presse.",
+   "t": "2026-11-07T13:07:43.502Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-07T13:07:43.505Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Article illisible, je cherche d'autres sources.",
+   "t": "2026-11-07T13:07:44.720Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-07T13:08:48.883Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées sont faites : titre et intro sans « premières pistes », « de nouveau » retiré, « à Verbier » sur le point 3, 24heures ajouté à l'outro et à la description, frise nommée, stade d'entraînement noté, formulation reprise dans la scène 0. Il reste deux remarques mineures : ajouter « de Suisse romande » au cadrage et prévoir les crédits photo dans les props (à valider en phase image).",
+   "t": "2026-11-07T13:09:01.878Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-07T13:09:01.880Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 13 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-07T13:09:31.578Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-07T13:09:32.045Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-07T13:09:32.721Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Patrick Nouhailler from Genève, Suisse / Wikimedia Commons, CC BY-SA 2.0.",
+   "t": "2026-11-07T13:09:33.153Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-07T13:09:33.155Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-07T13:11:05.379Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "La photo de la gondole est coupée sur le bord droit et montre un logo de marque : il faut la recadrer ou la remplacer. Les scènes « papier » doivent être en fond crème, et « 1 pistes » devient « 1 piste ». Vérifie aussi l'audio de la scène « Le lac des Vaux » (pas de sous-titre pendant 8,5 s).",
+   "t": "2026-11-07T13:11:32.667Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.70 $ (Claude + ElevenLabs).",
+   "t": "2026-11-07T13:11:33.919Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-07T13:11:33.921Z"
   }
  ],
- "maj": "2026-11-06T16:19:31.899Z",
+ "maj": "2026-11-07T13:11:42.451Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1343,6 +1343,86 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h/LePouls_2026-11-06-soir-grand-saint-bernard-et-col-du-lein-fermes-pour-l-h.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1xVM8udfo22J2B2-S6wz5DFVk2oKAyI73",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/9"
+  },
+  {
+   "id": "2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent",
+   "titre": "Ski : Verbier et Glacier 3000 ouvrent",
+   "edition": "jour",
+   "decision": "BLOQUE",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "Le cadrage « Après Zermatt et Saas-Fee, deux autres domaines lancent leur saison » ne précise pas « de Suisse romande », demandé dans la correction. Engelberg et Diavolezza sont aussi ouverts, donc « deux autres » peut paraître exhaustif.",
+     "correction_demandee": "Ajouter « de Suisse romande » à la voix (seg 7) et au texte de la scène 1, par exemple : « Après Zermatt et Saas-Fee, deux autres domaines de Suisse romande lancent leur saison. »"
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "Les scènes photoRonde (seg 12 et 38) et photo (seg 18) n'ont pas de champ de crédit dans leurs props. La correction demandait de signaler le crédit (auteur et licence ou photothèque).",
+     "correction_demandee": "Ajouter un champ « credit » (auteur + licence ou photothèque) dans les props de ces trois scènes. Aucune photo de presse ni image de Verbier4Vallées ou de Glacier 3000 ne doit être utilisée. Vérification finale en phase image."
+    },
+    {
+     "gravite": "bloquant",
+     "scene": 4,
+     "constat": "Le texte de la photo de la gondole est coupé par le bord droit de l'écran (« SWISS WATC… » et le logo « TISSOT » sont tronqués). Ce texte déborde de la zone sûre et le logo de marque tiers n'est pas issu de la bibliothèque validée.",
+     "correction_demandee": "Recadrer la photo pour retirer la cabine et son logo (ou choisir une autre photo sous licence libre sans logo visible) et garder le crédit visible. Vérifier qu'aucun texte n'est coupé."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Faute d'accord : « 1 pistes » s'affiche sous Verbier.",
+     "correction_demandee": "Remplacer par « 1 piste » (le singulier est nécessaire pour la valeur 1)."
+    },
+    {
+     "gravite": "important",
+     "scene": 0,
+     "constat": "Les scènes de thème « paper » (0, 2, 4, 6, 8, 10) sont rendues sur fond vert très foncé. Aucun fond crème #F5F2EA n'apparaît, donc l'alternance papier / vert n'est pas respectée visuellement.",
+     "correction_demandee": "Appliquer le fond crème #F5F2EA aux scènes papier et adapter les couleurs de texte (encre #111A19 ou vert profond sur crème ; pas de sauge ni d'ocre sur crème)."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "La scène « Le lac des Vaux » dure 8,5 s sans sous-titre visible sur les images contrôlées. Une absence de voix de plus d'une seconde n'est pas exclue.",
+     "correction_demandee": "Vérifier la piste audio. Si la voix est silencieuse plus d'une seconde, ajouter le sous-titre correspondant ou raccourcir la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Le crédit de la photo de la station (scène 8) et celui de la photo Glacier 3000 (scène 4) se trouvent en bordure de la zone de sécurité interface (y > 1450 en coordonnées 1080×1920).",
+     "correction_demandee": "Remonter légèrement les crédits pour qu'ils restent dans la zone sûre, tout en restant visibles."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "L'ocre est utilisé très largement (kickers, titres, barres, accents), ce qui dépasse un usage « ponctuel ».",
+     "correction_demandee": "Limiter l'ocre à un mot ou une barre par scène pour rester dans l'esprit de la charte."
+    }
+   ],
+   "description_tiktok": "Verbier et Glacier 3000 ouvrent leurs pistes ce week-end : on fait le point.\nSources : Canal9, « Ski: les premières descentes possibles dès ce week-end dans le Valais romand » ; 24heures ; Blick\n#Valais #Verbier #Ski #Glacier3000",
+   "sources": [
+    {
+     "media": "Canal9",
+     "titre": "Ski: les premières descentes possibles dès ce week-end dans le Valais romand",
+     "url": "https://canal9.ch/fr/ski-les-premieres-descentes-possibles-des-ce-week-end-dans-le-valais-romand/"
+    },
+    {
+     "media": "24heures",
+     "titre": "Ski: des domaines skiables rouvrent ce week-end",
+     "url": "https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128"
+    },
+    {
+     "media": "Blick",
+     "titre": "Ski: Après Zermatt et Saas-Fee, Glacier 3000 ouvre ses pistes",
+     "url": "https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8"
+    }
+   ],
+   "mp4": "out/ski-en-valais-romand-les-premieres-pistes-ouvrent-/2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent.mp4",
+   "etat": "bloque",
+   "cout_usd": 0.6905,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent/LePouls_2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent.mp4",
+   "lien_drive": null,
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/10"
   }
  ]
 }

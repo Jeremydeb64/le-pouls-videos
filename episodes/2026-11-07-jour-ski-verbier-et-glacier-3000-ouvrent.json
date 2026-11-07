@@ -1,0 +1,497 @@
+{
+ "id": "2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent",
+ "rubrique": "MONTAGNE",
+ "ambiance": "dynamique",
+ "voice": "voix-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent.mp3",
+ "duration": 72.28,
+ "captions": [
+  [
+   0.2,
+   0.5,
+   "Ça y est :"
+  ],
+  [
+   0.82,
+   1.6,
+   "Verbier et Glacier 3000"
+  ],
+  [
+   2.2,
+   2.96,
+   "ouvrent leurs pistes"
+  ],
+  [
+   3,
+   3.56,
+   "ce week-end."
+  ],
+  [
+   4.26,
+   5.06,
+   "Salut, c'est Lucie,"
+  ],
+  [
+   5.22,
+   5.88,
+   "et aujourd'hui, on fait"
+  ],
+  [
+   5.92,
+   7.26,
+   "le point sur ces ouvertures."
+  ],
+  [
+   7.76,
+   9.04,
+   "Après Zermatt et Saas-Fee,"
+  ],
+  [
+   9.34,
+   10.14,
+   "deux autres domaines"
+  ],
+  [
+   10.2,
+   10.92,
+   "lancent leur saison."
+  ],
+  [
+   11.42,
+   12.66,
+   "À Verbier, une seule piste"
+  ],
+  [
+   12.68,
+   13.22,
+   "est ouverte :"
+  ],
+  [
+   13.52,
+   14.38,
+   "celle du lac des Vaux."
+  ],
+  [
+   14.9,
+   16.12,
+   "En novembre, les remontées"
+  ],
+  [
+   16.16,
+   17.38,
+   "ne tournent que le week-end."
+  ],
+  [
+   17.94,
+   18.74,
+   "Et d'autres pistes"
+  ],
+  [
+   18.78,
+   19.48,
+   "pourraient s'ajouter,"
+  ],
+  [
+   19.7,
+   21.24,
+   "selon la météo et la neige."
+  ],
+  [
+   22.04,
+   22.8,
+   "Mais Verbier n'est pas seul."
+  ],
+  [
+   23.4,
+   24.82,
+   "Glacier 3000 rouvre aussi,"
+  ],
+  [
+   25.02,
+   26.04,
+   "au-dessus des Diablerets."
+  ],
+  [
+   26.56,
+   27.56,
+   "Le domaine est à cheval"
+  ],
+  [
+   27.62,
+   28.72,
+   "sur Vaud et Berne."
+  ],
+  [
+   29.28,
+   30.5,
+   "3 pistes sont annoncées :"
+  ],
+  [
+   30.86,
+   32.4,
+   "le Scex Rouge, le Dôme"
+  ],
+  [
+   32.64,
+   33.36,
+   "et Tsanfleuron."
+  ],
+  [
+   33.96,
+   34.54,
+   "Sans oublier"
+  ],
+  [
+   34.58,
+   35.48,
+   "un stade d'entraînement."
+  ],
+  [
+   35.8,
+   36.76,
+   "On y skie jusqu'à près"
+  ],
+  [
+   36.82,
+   37.7,
+   "de 3000 mètres."
+  ],
+  [
+   38.44,
+   39.12,
+   "Et concrètement ?"
+  ],
+  [
+   39.54,
+   40.44,
+   "Tu peux encore y aller"
+  ],
+  [
+   40.48,
+   41.62,
+   "demain, dimanche."
+  ],
+  [
+   42.08,
+   42.52,
+   "À Glacier 3000,"
+  ],
+  [
+   43.2,
+   43.98,
+   "la première montée"
+  ],
+  [
+   44.02,
+   45.04,
+   "est à 8 h 30."
+  ],
+  [
+   45.6,
+   46.54,
+   "Là-haut, c'est ouvert"
+  ],
+  [
+   46.58,
+   48.08,
+   "tous les jours jusqu'à fin avril."
+  ],
+  [
+   48.78,
+   49.54,
+   "Avant de partir,"
+  ],
+  [
+   49.76,
+   50.98,
+   "vérifie l'état des pistes"
+  ],
+  [
+   51.04,
+   52.16,
+   "sur le site de la station."
+  ],
+  [
+   52.9,
+   53.86,
+   "C'est un début de saison :"
+  ],
+  [
+   54.08,
+   54.72,
+   "peu de pistes,"
+  ],
+  [
+   54.92,
+   56.02,
+   "mais de la neige sous les skis."
+  ],
+  [
+   56.76,
+   57.48,
+   "À retenir :"
+  ],
+  [
+   57.82,
+   59.8,
+   "1. Verbier ouvre le lac des Vaux,"
+  ],
+  [
+   59.88,
+   60.78,
+   "le week-end seulement."
+  ],
+  [
+   61.56,
+   63.18,
+   "2. Glacier 3000 rouvre"
+  ],
+  [
+   63.24,
+   64.1,
+   "avec 3 pistes."
+  ],
+  [
+   64.7,
+   65.7,
+   "3. À Verbier,"
+  ],
+  [
+   65.98,
+   67.36,
+   "d'autres pistes pourraient suivre."
+  ],
+  [
+   68.12,
+   69.12,
+   "C'était Lucie, pour Le Pouls."
+  ],
+  [
+   69.68,
+   70.48,
+   "On se retrouve demain."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "from": 0,
+   "theme": "paper",
+   "props": {
+    "kicker": "Ski",
+    "text": "*Verbier* et Glacier 3000 ouvrent"
+   },
+   "to": 7.66
+  },
+  {
+   "type": "statement",
+   "from": 7.66,
+   "theme": "green",
+   "props": {
+    "kicker": "Saison 2026-2027",
+    "text": "Après Zermatt et Saas-Fee : *deux autres* domaines"
+   },
+   "to": 11.32
+  },
+  {
+   "type": "carte",
+   "from": 11.32,
+   "theme": "paper",
+   "props": {
+    "kicker": "Ouverture ce samedi",
+    "communes": [
+     "Val de Bagnes"
+    ],
+    "titre": "Verbier",
+    "at": 0.1
+   },
+   "to": 13.42
+  },
+  {
+   "type": "statement",
+   "from": 13.42,
+   "theme": "green",
+   "props": {
+    "text": "Le *lac des Vaux*"
+   },
+   "to": 21.94
+  },
+  {
+   "type": "photo",
+   "from": 21.94,
+   "theme": "paper",
+   "props": {
+    "recherche": "Glacier 3000 Scex Rouge Les Diablerets",
+    "kicker": "Vaud et Berne",
+    "title": "*Glacier 3000*",
+    "nom": "Glacier 3000",
+    "role": "Au-dessus des Diablerets",
+    "src": "photo-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent-4.jpg",
+    "credit": "Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 29.18
+  },
+  {
+   "type": "barres",
+   "from": 29.18,
+   "theme": "green",
+   "props": {
+    "kicker": "Pistes annoncées ce week-end",
+    "items": [
+     {
+      "label": "Verbier",
+      "value": 1,
+      "at": 0.1
+     },
+     {
+      "label": "Glacier 3000",
+      "value": 3,
+      "at": 1.68,
+      "accent": true
+     }
+    ],
+    "unite": "pistes",
+    "note": "Glacier 3000 : et un stade d'entraînement"
+   },
+   "to": 35.7
+  },
+  {
+   "type": "bigFigure",
+   "from": 35.7,
+   "theme": "paper",
+   "props": {
+    "kicker": "Glacier 3000",
+    "prefix": "près de",
+    "value": 3000,
+    "label": "mètres d'altitude",
+    "at": 1.12
+   },
+   "to": 38.34
+  },
+  {
+   "type": "frise",
+   "from": 38.34,
+   "theme": "green",
+   "props": {
+    "kicker": "Pour y aller",
+    "items": [
+     {
+      "date": "Samedi 7 novembre",
+      "label": "Verbier et Glacier 3000 ouverts",
+      "at": 1.2
+     },
+     {
+      "date": "Dimanche 8 novembre",
+      "label": "Ouverts, Glacier 3000 dès 8 h 30",
+      "at": 2.14
+     },
+     {
+      "date": "Fin avril",
+      "label": "Glacier 3000 : tous les jours",
+      "at": 7.26
+     }
+    ]
+   },
+   "to": 48.68
+  },
+  {
+   "type": "photoRonde",
+   "from": 48.68,
+   "theme": "paper",
+   "props": {
+    "recherche": "Verbier station ski télécabine",
+    "kicker": "Verbier",
+    "title": "Un *début* de saison",
+    "legende": "Vérifie les conditions avant de partir",
+    "src": "photo-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent-8.jpg",
+    "credit": "Photo : Patrick Nouhailler from Genève, Suisse / Wikimedia Commons, CC BY-SA 2.0"
+   },
+   "to": 56.66
+  },
+  {
+   "type": "recap",
+   "from": 56.66,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Verbier : le week-end",
+      "at": 1.16
+     },
+     {
+      "n": 2,
+      "label": "Glacier 3000 : 3 pistes",
+      "at": 4.9
+     },
+     {
+      "n": 3,
+      "label": "Verbier : d'autres pistes",
+      "at": 8.04
+     }
+    ]
+   },
+   "to": 68.02
+  },
+  {
+   "type": "outro",
+   "from": 68.02,
+   "theme": "paper",
+   "props": {
+    "sources": "Sources : Canal9, 24heures, Blick"
+   },
+   "to": 72.28
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "Canal9",
+    "titre": "Ski: les premières descentes possibles dès ce week-end dans le Valais romand",
+    "url": "https://canal9.ch/fr/ski-les-premieres-descentes-possibles-des-ce-week-end-dans-le-valais-romand/"
+   },
+   {
+    "media": "24heures",
+    "titre": "Ski: des domaines skiables rouvrent ce week-end",
+    "url": "https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128"
+   },
+   {
+    "media": "Blick",
+    "titre": "Ski: Après Zermatt et Saas-Fee, Glacier 3000 ouvre ses pistes",
+    "url": "https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Verbier ouvre la piste du lac des Vaux dès samedi 7 novembre 2026",
+    "source": "https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128"
+   },
+   {
+    "fait": "En novembre, les installations de Verbier ne tournent que les week-ends ; d'autres pistes pourraient s'ajouter selon la météo et l'enneigement",
+    "source": "https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128"
+   },
+   {
+    "fait": "Canal9 annonce l'ouverture de la piste du lac des Vaux à Verbier, en exploitation anticipée pour les week-ends de novembre",
+    "source": "https://canal9.ch/fr/ski-les-premieres-descentes-possibles-des-ce-week-end-dans-le-valais-romand/"
+   },
+   {
+    "fait": "Glacier 3000 lance sa saison samedi, après Zermatt et Saas-Fee, déjà ouverts",
+    "source": "https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8"
+   },
+   {
+    "fait": "Pistes annoncées à Glacier 3000 : Scex Rouge, Dôme et Tsanfleuron, plus un stade d'entraînement",
+    "source": "https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8"
+   },
+   {
+    "fait": "Première montée en téléphérique à Glacier 3000 à 8 h 30 samedi et dimanche",
+    "source": "https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8"
+   },
+   {
+    "fait": "Glacier 3000 est au-dessus des Diablerets, à cheval sur Vaud et Berne, avec des pistes de 1300 à 3000 mètres, ouvert tous les jours jusqu'à fin avril",
+    "source": "https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128"
+   }
+  ],
+  "sensible": false
+ }
+}

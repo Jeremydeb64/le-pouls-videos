@@ -1,0 +1,29 @@
+LE POULS
+Ski : Verbier et Glacier 3000 ouvrent
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Verbier et Glacier 3000 ouvrent leurs pistes ce week-end : on fait le point.
+Sources : Canal9, « Ski: les premières descentes possibles dès ce week-end dans le Valais romand » ; 24heures ; Blick
+#Valais #Verbier #Ski #Glacier3000
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Canal9 : Ski: les premières descentes possibles dès ce week-end dans le Valais romand (https://canal9.ch/fr/ski-les-premieres-descentes-possibles-des-ce-week-end-dans-le-valais-romand/)
+- 24heures : Ski: des domaines skiables rouvrent ce week-end (https://www.24heures.ch/ski-des-domaine-skiables-rouvrent-ce-week-end-476875815128)
+- Blick : Ski: Après Zermatt et Saas-Fee, Glacier 3000 ouvre ses pistes (https://www.blick.ch/fr/suisse/romande/apres-zermatt-et-saas-fee-glacier-3000-ouvre-ses-pistes/vhhx6h8)
+
+=== CONTRÔLE ===
+Décision : BLOQUE
+- mineur (scène 0) : Le cadrage « Après Zermatt et Saas-Fee, deux autres domaines lancent leur saison » ne précise pas « de Suisse romande », demandé dans la correction. Engelberg et Diavolezza sont aussi ouverts, donc « deux autres » peut paraître exhaustif.
+- mineur (scène 3) : Les scènes photoRonde (seg 12 et 38) et photo (seg 18) n'ont pas de champ de crédit dans leurs props. La correction demandait de signaler le crédit (auteur et licence ou photothèque).
+- bloquant (scène 4) : Le texte de la photo de la gondole est coupé par le bord droit de l'écran (« SWISS WATC… » et le logo « TISSOT » sont tronqués). Ce texte déborde de la zone sûre et le logo de marque tiers n'est pas issu de la bibliothèque validée.
+- important (scène 5) : Faute d'accord : « 1 pistes » s'affiche sous Verbier.
+- important (scène 0) : Les scènes de thème « paper » (0, 2, 4, 6, 8, 10) sont rendues sur fond vert très foncé. Aucun fond crème #F5F2EA n'apparaît, donc l'alternance papier / vert n'est pas respectée visuellement.
+- important (scène 3) : La scène « Le lac des Vaux » dure 8,5 s sans sous-titre visible sur les images contrôlées. Une absence de voix de plus d'une seconde n'est pas exclue.
+- mineur (scène 6) : Le crédit de la photo de la station (scène 8) et celui de la photo Glacier 3000 (scène 4) se trouvent en bordure de la zone de sécurité interface (y > 1450 en coordonnées 1080×1920).
+- mineur (scène 0) : L'ocre est utilisé très largement (kickers, titres, barres, accents), ce qui dépasse un usage « ponctuel ».
