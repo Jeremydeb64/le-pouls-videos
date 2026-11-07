@@ -571,6 +571,11 @@
    "date": "2026-11-06T16:19:12.563Z",
    "etiquette": "édition soir 2026-11-06",
    "usd": 0.754
+  },
+  {
+   "date": "2026-11-07T00:14:58.237Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -603,12 +608,12 @@
   "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour": 0.754
  },
  "soldes": {
-  "date": "2026-11-06T16:19:12.568Z",
+  "date": "2026-11-07T00:14:58.495Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 63150,
+   "credits_utilises": 63169,
    "credits_mois": 131000,
-   "credits_restants": 67850,
+   "credits_restants": 67831,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
@@ -617,5 +622,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-06T16:19:13.778Z"
+ "maj": "2026-11-07T00:15:00.033Z"
 }
