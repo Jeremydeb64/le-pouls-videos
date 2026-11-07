@@ -21,19 +21,22 @@ Tu vérifies aussi que la vidéo **se comprend du premier coup** par quelqu'un q
 
 ## 3. Droits
 - Aucune photo de presse, aucune capture d'écran d'article.
-- Chaque photo affichée a un crédit visible (auteur + licence ou photothèque).
+- Chaque photo affichée a un crédit visible (auteur + licence ou photothèque). **Le crédit est ajouté automatiquement par le pipeline** (Wikimedia) : en phase texte, ne le signale jamais comme manquant.
+- Une photo ne doit montrer **aucune publicité, marque ou texte lisible** (enseigne, panneau, logo d'un sponsor) : c'est **bloquant** au contrôle visuel (la photo sera remplacée automatiquement).
 - Logos uniquement depuis la bibliothèque validée.
 - Visuels générés par IA : légende « Image générée avec l'IA » visible ; aucune personne réelle identifiable, aucun faux document ni fausse photo d'actualité, aucune reconstitution de drame (sinon **bloquant**). Ils ont le droit de sortir de la charte (couleurs, style) pour coller au sujet : ce n'est pas un défaut.
 - Aucune phrase de l'article reprise mot pour mot au-delà d'une courte citation attribuée.
 
 ## 4. Charte (sur les images clés)
-- Charte V3.1. Couleurs uniquement : vert profond #1A3A35, crème #F5F2EA, encre #111A19, vert moyen #3F6B62, sauge #91A883, ocre #D3A657 (accent ponctuel), blanc, gris doux #D9DEE1, gris texte #647772. Jamais de texte sauge ou ocre sur fond crème (contraste insuffisant).
+- Style actuel (validé par Jérémy, novembre 2026) : **fond vert profond sur toutes les scènes** (il n'y a plus d'alternance crème / vert), compositions centrées, mots clés en ocre, cartouches ocre, double soulignement ocre, pastille de rubrique en haut à gauche. L'usage de l'ocre dans ces éléments est normal, ce n'est pas un défaut.
+- Couleurs : vert profond #1A3A35, crème #F5F2EA (textes), encre #111A19, vert moyen #3F6B62, sauge #91A883, ocre #D3A657, blanc.
 - Typos : Inter Display Black (titres, grands chiffres, logo), Inter (texte, sous-titres).
 - Pas de cœur ni d'ECG, pas de vert néon, pas de montagne décorative, pas de rebond cartoon.
 - Aucun texte coupé, aucun débordement, aucun mot orphelin en fin de titre si évitable.
-- Rien d'important hors de la zone x = 100 à 900, y = 300 à 1450 (interface TikTok). Sous-titres : deux lignes au maximum.
+- Rien d'important hors de la zone x = 100 à 900, y = 230 à 1450 (interface TikTok). Sous-titres : deux lignes au maximum. Le crédit photo en petit sous les sous-titres (y ≈ 1470) est voulu : pas un défaut.
+- Les scènes `statement` et l'écran de fin n'ont volontairement pas de sous-titres (la phrase est déjà à l'écran) : pas un défaut.
+- Accords : « 1 piste », « 1 franc » (pas « 1 pistes ») : **important**.
 - Pas de séparateur « · » dans les titres.
-- Alternance papier / vert respectée, pas plus de deux scènes du même thème d'affilée.
 
 ## 5. Son
 - La voix couvre toute la vidéo, pas de silence de plus d'une seconde, la fin n'est pas coupée.

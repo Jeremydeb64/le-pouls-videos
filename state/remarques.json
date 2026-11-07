@@ -1,0 +1,194 @@
+[
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "C'est une votation et la liste des sources ne contient que des articles de presse (RTS Valais x2, La Télé). Elle ne contient aucune source officielle (Chancellerie d'État, brochure de votation, texte de l'initiative). La question de la carte « Faut-il introduire un salaire minimum légal de 22 francs"
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "La première image (début de l'épisode) affiche « 19 jours », alors que le compte à rebours juste est de 25 jours (4 novembre au 29 novembre). La valeur ne passe à 25 qu'ensuite, ce qui est probablement l'animation du compteur. Si cette image sert de couverture ou de première frame, elle affiche un c"
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "La voix dit que le non craint que les apprentis « pourraient quitter leur formation ». Le fait source parle seulement d'une menace pour la formation des apprentis. La précision sur le départ des apprentis n'est pas dans la liste des faits."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le grand chiffre « 500’000 » chevauche son libellé « m³ au départ (environ) ». Le libellé est illisible et le texte déborde de la colonne. La seconde ligne (300’000, libellé long) risque le même problème."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le texte est coupé en bas de l'écran : on lit « contre jusqu'à 20… » puis la fin disparaît (« cm en été », « Nau.ch »). Le texte entre aussi dans la zone masquée par TikTok (400 px en bas)."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le texte est coupé en bas (« l'expert juge ce… » puis fin invisible). Le scénario « plutôt improbable » n'est donc pas lisible à l'écran. Le texte déborde aussi dans la zone masquée."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le texte de 8 lignes descend jusqu'à y ≈ 1860 (en pleine zone masquée par TikTok) et frôle le bord de l'écran."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Scène photo : le titre « L'aéroport de Sion Valais-Wallis » passe sur 3 lignes. Le mot « Wallis » est coupé par le bandeau de sous-titre « pour gérer l'aéroport. » et les deux textes se chevauchent. De plus, le titre se coupe sur le tiret (« Valais- / Wallis »)."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le sous-titre sur 2 lignes (« une société majoritairement publique, ») descend jusqu'à y ≈ 1545 px, dans la zone basse masquée (400 px, soit y > 1520). Il a aussi une largeur anormale par rapport aux autres sous-titres."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Barres (indemnité) : de 22.44 s à environ 28 s, l'écran n'a que le kicker et une note, avec un grand vide. Les barres n'apparaissent qu'à 5.68 s, 7 s et 8.14 s, soit une demi-scène sans contenu."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le titre « Hérémence » est répété juste en dessous en sous-titre « Hérémence ». C'est redondant, et la carte ne dure que 2,9 s."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le sous-titre affiché est « Pascal Guenot, défend le oui. » La virgule entre le sujet et le verbe est fautive et ne correspond pas à une phrase correcte."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Sur les images clés des scènes 2 et 3 (statements, 9 s et 6,8 s), aucun sous-titre n'est visible alors que la voix doit être présente. Cela peut être un trou entre deux sous-titres ou une absence de sous-titres."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Scène avant/après quasi vide: seul le bandeau « Taux normal de la TVA » est visible à environ 3,2 s, juste avant l'apparition prévue des valeurs (at 3,3 s sur 4,7 s de scène). Les chiffres 8,1 % et 8,5 % ne restent donc à l'écran qu'environ 1,4 s, alors que la voix dit déjà « à 8,5 % ». Le sous-titr"
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par a"
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "La colonne « Non » reste vide jusqu'à 14,3 s dans la scène, alors que « Oui » apparaît à 1,8 s. Pendant plus de 12 s, seul « Oui » est visible. Cela ne respecte pas le même traitement graphique des deux camps. À vérifier: « Oui » reste affiché environ 12,4 s et « Non » environ 9,9 s, soit un écart d"
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le point 2 « TVA à 8,5 % si oui » est coupé net en bas (pastille et bas des lettres tronqués vers y≈390) pendant sa révélation, à 3,5 s dans la scène. Si c'est une animation de masque, elle est visible comme un texte coupé."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Sur la carte, les libellés « Viège » et « Brigue » se chevauchent et deviennent illisibles."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Le titre « SUBVENTIONS, PERSONNEL, INVESTISSEMENT, FISCALITÉ » est coupé : le « T » final de INVESTISSEMENT sort du cadre à droite."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "La demande de quatre pastilles icônes (Subventions, Personnel, Investissements, Fiscalité) n'apparaît pas à l'écran : la scène n'affiche que le titre."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Des fragments de texte (« s h… », « ain lift. ») apparaissent à gauche de la carte titre, en dehors de l'encart. On ne sait pas s'il s'agit de texte de la photo ou d'un débordement de l'interface."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "La frise « 3e site suisse » ne montre aucun de ses trois items sur les images prélevées (zone centrale vide, seul le sous-titre apparaît). Risque d'écran vide prolongé, donc de silence visuel."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Dans la photo AVA, le texte de l'interface à droite (« Comment p… », « vs.ch/… ») est coupé par le bord de l'écran."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Le tag « VALAIS » se superpose au texte du logo AVA en haut à gauche."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Le logo AVA est coupé par le bord gauche de l'écran."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Dans l'illustration « Des services en ligne », un fragment de texte (« AI Gé… ») est coupé par le bord droit, en bas de l'image."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Le titre « Bourg-Saint-Pierre » se chevauche avec le sous-titre « Grand-Saint-Bernard », qui est partiellement masqué et illisible."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "La légende « Accès à pied ou à skis de randonnée » se superpose au sous-titre vidéo « quand il y a assez de neige. »."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Le grand chiffre « 85'000 » est coupé à droite : le dernier zéro dépasse du bloc et est tronqué."
+ },
+ {
+  "date": "historique",
+  "gravite": "bloquant",
+  "type": null,
+  "constat": "Le texte de la photo de la gondole est coupé par le bord droit de l'écran (« SWISS WATC… » et le logo « TISSOT » sont tronqués). Ce texte déborde de la zone sûre et le logo de marque tiers n'est pas issu de la bibliothèque validée."
+ },
+ {
+  "date": "historique",
+  "gravite": "important",
+  "type": null,
+  "constat": "Faute d'accord : « 1 pistes » s'affiche sous Verbier."
+ }
+]

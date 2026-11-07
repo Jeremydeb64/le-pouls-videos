@@ -901,6 +901,12 @@ export const Frise: React.FC<P<{ kicker: string; items: { date: string; label: s
 };
 
 // ---------- Comparaison en barres ----------
+// Accord de l'unité : « 1 piste », « 2 pistes » (valeur absolue < 2 → singulier)
+export const accord = (unite: string, v: number) => {
+  if (!unite || Math.abs(v) >= 2) return unite;
+  return unite.split(" ").map((m, i) => (i === 0 && /[a-zà-ÿ]{3,}s$/i.test(m) && !/(fois|prix|mois|cours|temps|poids|bras|pays)$/i.test(m) ? m.slice(0, -1) : m)).join(" ");
+};
+
 export const Barres: React.FC<P<{ kicker: string; items: { label: string; value: number; at: number; accent?: boolean }[]; unite?: string; note?: string }>> = ({ theme, kicker, items, unite = "", note }) => {
   const t = th(theme);
   const frame = useCurrentFrame();
@@ -918,7 +924,7 @@ export const Barres: React.FC<P<{ kicker: string; items: { label: string; value:
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                 <span style={{ fontFamily: SANS, fontWeight: 800, fontSize: 46, color: t.fg }}>{it.label}</span>
                 <span style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 76, color: couleur }}>
-                  <Counter to={it.value} delay={at(it.at)} /> {unite}
+                  <Counter to={it.value} delay={at(it.at)} /> {accord(unite, it.value)}
                 </span>
               </div>
               <div style={{ height: 70, background: t.rule, borderRadius: 12, marginTop: 10 }}>
@@ -944,7 +950,7 @@ export const AvantApres: React.FC<P<{ kicker: string; avant: { label: string; va
       <div style={{ border: `4px solid ${t.fg}`, background: fort ? t.fg : "transparent", borderRadius: 24, padding: "40px 34px" }}>
         <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 34, letterSpacing: 2, textTransform: "uppercase", color: fort ? t.bg : t.sub }}>{b.label}</div>
         <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 150, lineHeight: 1, color: fort ? t.bg : t.fg, letterSpacing: -3, whiteSpace: "nowrap", marginTop: 10 }}>
-          <Counter to={b.value} from={depart} delay={delay} dur={14} /> <span style={{ fontSize: 56 }}>{unite}</span>
+          <Counter to={b.value} from={depart} delay={delay} dur={14} /> <span style={{ fontSize: 56 }}>{accord(unite, b.value)}</span>
         </div>
       </div>
     </Rise>

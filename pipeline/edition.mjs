@@ -126,11 +126,10 @@ async function produire(script, dossier) {
     }
   }
   let scenes = caleScenes(script.scenes, sousTitres, duree);
-  // Alternance papier / vert imposée (jamais deux scènes du même thème d'affilée), la fin reste sur papier
-  scenes.forEach((sc, i) => (sc.theme = i % 2 === 0 ? "paper" : "green"));
+  // Style actuel : fond vert profond sur toutes les scènes
+  scenes.forEach((sc) => (sc.theme = "green"));
   // Pas d'appel à s'abonner sur l'écran de fin
   for (const sc of scenes) if (sc.type === "outro" && /abonn/i.test(sc.props?.cta || "")) delete sc.props.cta;
-  if (scenes.length && scenes[scenes.length - 1].type === "outro") scenes[scenes.length - 1].theme = "paper";
 
   // Photos libres demandées par le Scénariste : { type: "photo", props: { recherche: "..." } }
   for (const s of scenes.filter((x) => x.type === "photo" || x.type === "photoRonde")) {
@@ -229,6 +228,57 @@ async function controlerVisuel(episode, dossier) {
   return verdict;
 }
 
+// ---------- Réparation automatique ----------
+// Le Scénariste corrige l'épisode monté d'après les remarques du contrôle visuel (texte trop long, accord, photo à changer…)
+async function reparer(episode, problemes, dossier) {
+  redaction.agent("scenariste", "travaille");
+  redaction.dit("scenariste", "Le Contrôleur a bloqué des images : je corrige et je refais le montage.");
+  let patch;
+  try {
+    patch = await demanderJSON({
+      systeme:
+        consigne("scenariste") +
+        "\n\nRÉPARATION. On te donne l'épisode monté et les remarques du contrôle visuel. Corrige uniquement ce qui est signalé, sans changer la voix ni le minutage (from/to). Réponds UNIQUEMENT par un bloc ```json``` : {\"corrections\": [ {\"scene\": n, \"props\": {…seulement les propriétés à modifier…}} | {\"scene\": n, \"nouvelle_photo\": \"autres mots-clés de recherche, précis et visuels\"} | {\"scene\": n, \"en_texte\": \"titre court\"} ]}. Utilise « nouvelle_photo » si la photo montre du texte, une pub, un logo ou ne correspond pas ; « en_texte » si aucune photo ne convient.",
+      contenu: `Remarques :\n${JSON.stringify(problemes)}\n\nÉpisode (scènes numérotées à partir de 0) :\n${JSON.stringify(episode.scenes)}`,
+    });
+  } catch (e) {
+    console.warn("Réparation :", e.message);
+    return false;
+  }
+  let n = 0;
+  for (const c of patch.corrections || []) {
+    const s = episode.scenes[c.scene];
+    if (!s) continue;
+    if (c.props) Object.assign(s.props, c.props), n++;
+    if (c.nouvelle_photo) {
+      const f = path.join("public", `photo-${episode.id}-${c.scene}-r.jpg`);
+      const p = await photoLibre(c.nouvelle_photo, f).catch(() => null);
+      if (p) {
+        s.props = { ...s.props, recherche: c.nouvelle_photo, src: path.basename(f), credit: p.credit };
+        n++;
+      } else c.en_texte = c.en_texte || s.props.title || s.props.kicker || "";
+    }
+    if (c.en_texte) {
+      s.type = "statement";
+      s.props = { text: c.en_texte, kicker: s.props.kicker };
+      n++;
+    }
+  }
+  redaction.dit("scenariste", n ? `${n} correction(s) appliquée(s), je relance le montage.` : "Rien de corrigeable automatiquement.");
+  return n > 0;
+}
+
+// Mémoire des remarques (bloquant / important) : réinjectée dans les consignes des prochaines éditions
+function noterRemarques(problemes, episode) {
+  const f = "state/remarques.json";
+  const anciennes = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, "utf8")) : [];
+  const nouvelles = problemes
+    .filter((p) => p.gravite === "bloquant" || p.gravite === "important")
+    .map((p) => ({ date: AUJ, gravite: p.gravite, type: episode.scenes[p.scene]?.type, constat: String(p.constat || "").slice(0, 300) }));
+  fs.mkdirSync("state", { recursive: true });
+  fs.writeFileSync(f, JSON.stringify([...anciennes, ...nouvelles].slice(-60), null, 1));
+}
+
 // ---------- Orchestration ----------
 process.on("unhandledRejection", (e) => {
   redaction.dit("systeme", `Erreur : ${String(e?.stack || e).slice(0, 900)}`);
@@ -283,7 +333,18 @@ for (const sujet of sujets) {
     continue;
   }
   const resultat = await produire(script, dossier);
-  const verdictVisuel = await controlerVisuel(resultat.episode, dossier);
+  let verdictVisuel = await controlerVisuel(resultat.episode, dossier);
+  // Réparation automatique (une fois) : si le contrôle visuel bloque, on corrige l'épisode, on refait le rendu et on recontrôle
+  const estBloque = (v) => v.decision === "BLOQUE" || (v.problemes || []).some((p) => p.gravite === "bloquant");
+  if (estBloque(verdictVisuel)) {
+    const ok = await reparer(resultat.episode, verdictVisuel.problemes || [], dossier);
+    if (ok) {
+      resultat.mp4 = await rendre(resultat.episode, resultat.mp4);
+      fs.writeFileSync(path.join("episodes", `${resultat.episode.id}.json`), JSON.stringify(resultat.episode, null, 1));
+      verdictVisuel = await controlerVisuel(resultat.episode, dossier);
+    }
+  }
+  noterRemarques([...(verdictTexte.problemes || []), ...(verdictVisuel.problemes || [])], resultat.episode);
   const verdict = {
     // Toute remarque « bloquant » du contrôle visuel bloque la vidéo, même si le modèle a répondu OK
     decision: verdictVisuel.decision === "BLOQUE" || (verdictVisuel.problemes || []).some((p) => p.gravite === "bloquant") ? "BLOQUE" : "OK",

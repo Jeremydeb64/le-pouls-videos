@@ -6,7 +6,18 @@ const API = "https://api.anthropic.com/v1/messages";
 export const MODELE_REDACTION = process.env.CLAUDE_MODEL || "claude-sonnet-5-5";
 export const MODELE_LEGER = process.env.CLAUDE_MODEL_LEGER || "claude-haiku-5-5";
 
-export const consigne = (agent) => fs.readFileSync(`agents/${agent}.md`, "utf8");
+// Consigne d'un agent + leçons tirées des vidéos précédentes (fixes et récentes) pour le Scénariste et le Contrôleur
+export const consigne = (agent) => {
+  let t = fs.readFileSync(`agents/${agent}.md`, "utf8");
+  if (agent === "scenariste" || agent === "controleur") {
+    if (fs.existsSync("agents/lecons.md")) t += "\n\n---\n\n" + fs.readFileSync("agents/lecons.md", "utf8");
+    try {
+      const r = JSON.parse(fs.readFileSync("state/remarques.json", "utf8")).slice(-25);
+      if (r.length) t += "\n\n## Remarques des derniers contrôles (à ne pas reproduire)\n" + r.map((x) => `- [${x.gravite}] (${x.type || "scène"}) ${x.constat}`).join("\n");
+    } catch {}
+  }
+  return t;
+};
 
 /**
  * contenu : string ou tableau de blocs (texte / images)

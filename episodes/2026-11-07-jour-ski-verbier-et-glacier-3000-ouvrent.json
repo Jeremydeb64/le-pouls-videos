@@ -288,7 +288,7 @@
    "theme": "green",
    "props": {
     "kicker": "Saison 2026-2027",
-    "text": "Après Zermatt et Saas-Fee : *deux autres* domaines"
+    "text": "Après Zermatt et Saas-Fee, *deux domaines romands*"
    },
    "to": 11.32
   },
@@ -320,12 +320,12 @@
    "from": 21.94,
    "theme": "paper",
    "props": {
-    "recherche": "Glacier 3000 Scex Rouge Les Diablerets",
+    "recherche": "Glacier 3000 Quille du Diable snow panorama",
     "kicker": "Vaud et Berne",
     "title": "*Glacier 3000*",
     "nom": "Glacier 3000",
     "role": "Au-dessus des Diablerets",
-    "src": "photo-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent-4.jpg",
+    "src": "photo-2026-11-07-ski-4-b.jpg",
     "credit": "Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0"
    },
    "to": 29.18
@@ -416,7 +416,7 @@
     "items": [
      {
       "n": 1,
-      "label": "Verbier : le week-end",
+      "label": "Verbier : ouvert ce week-end",
       "at": 1.16
      },
      {
@@ -438,7 +438,7 @@
    "from": 68.02,
    "theme": "paper",
    "props": {
-    "sources": "Sources : Canal9, 24heures, Blick"
+    "sources": "Sources : Canal9, 24 heures, Blick"
    },
    "to": 72.28
   }
