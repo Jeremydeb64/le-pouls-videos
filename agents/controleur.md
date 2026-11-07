@@ -22,7 +22,7 @@ Tu vérifies aussi que la vidéo **se comprend du premier coup** par quelqu'un q
 ## 3. Droits
 - Aucune photo de presse, aucune capture d'écran d'article.
 - Chaque photo affichée a un crédit visible (auteur + licence ou photothèque). **Le crédit est ajouté automatiquement par le pipeline** (Wikimedia) : en phase texte, ne le signale jamais comme manquant.
-- Une photo ne doit montrer **aucune publicité, marque ou texte lisible** (enseigne, panneau, logo d'un sponsor) : c'est **bloquant** au contrôle visuel (la photo sera remplacée automatiquement).
+- Les photos habillent la vidéo et Jérémy y tient : une publicité, une enseigne ou un panneau visible dans une photo de lieu est **mineur** (pas bloquant). Ce n'est bloquant que si la photo est trompeuse, inappropriée ou hors sujet.
 - Logos uniquement depuis la bibliothèque validée.
 - Visuels générés par IA : légende « Image générée avec l'IA » visible ; aucune personne réelle identifiable, aucun faux document ni fausse photo d'actualité, aucune reconstitution de drame (sinon **bloquant**). Ils ont le droit de sortir de la charte (couleurs, style) pour coller au sujet : ce n'est pas un défaut.
 - Aucune phrase de l'article reprise mot pour mot au-delà d'une courte citation attribuée.

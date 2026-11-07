@@ -12,7 +12,8 @@ Ces erreurs ont déjà bloqué des vidéos. Le Scénariste les évite d'emblée,
 - Une scène `statement` reste à l'écran au plus 6 secondes : au-delà, découpe en deux scènes ou ajoute une image.
 
 ## Images
-- Photos : vise des **paysages, bâtiments, objets**, sans texte lisible, sans publicité ni logo de marque (une télécabine couverte de pub, un panneau de station, une enseigne = bloquant). Mots-clés de `recherche` précis et visuels : « Verbier village winter snow », pas « Verbier station ski télécabine ».
+- **Toujours habiller** : 2 à 3 photos par vidéo. Une photo imparfaite (un panneau, une pub sur une télécabine) vaut mieux qu'un écran de texte. Vise des paysages, bâtiments, remontées, objets.
+- Mots-clés de `recherche` simples, en anglais ou tels que nommés sur Wikimedia : « Glacier 3000, Switzerland », « Verbier winter », pas une phrase longue et trop précise (sinon aucune photo n'est trouvée).
 - Pas de photo d'été pour un sujet d'hiver (et inversement) si le titre dit « en hiver » : choisis le titre en fonction ou précise la saison dans la recherche (« winter », « snow »).
 - Pas de dessin, de carte postale ou de gravure (le filtre les écarte, mais choisis des mots-clés de photo).
 - Images fournies par la rédaction : utilise-les telles quelles avec leur `credit`.

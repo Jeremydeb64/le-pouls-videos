@@ -238,7 +238,7 @@ async function reparer(episode, problemes, dossier) {
     patch = await demanderJSON({
       systeme:
         consigne("scenariste") +
-        "\n\nRÉPARATION. On te donne l'épisode monté et les remarques du contrôle visuel. Corrige uniquement ce qui est signalé, sans changer la voix ni le minutage (from/to). Réponds UNIQUEMENT par un bloc ```json``` : {\"corrections\": [ {\"scene\": n, \"props\": {…seulement les propriétés à modifier…}} | {\"scene\": n, \"nouvelle_photo\": \"autres mots-clés de recherche, précis et visuels\"} | {\"scene\": n, \"en_texte\": \"titre court\"} ]}. Utilise « nouvelle_photo » si la photo montre du texte, une pub, un logo ou ne correspond pas ; « en_texte » si aucune photo ne convient.",
+        "\n\nRÉPARATION. On te donne l'épisode monté et les remarques du contrôle visuel. Corrige uniquement ce qui est signalé, sans changer la voix ni le minutage (from/to). Réponds UNIQUEMENT par un bloc ```json``` : {\"corrections\": [ {\"scene\": n, \"props\": {…seulement les propriétés à modifier…}} | {\"scene\": n, \"nouvelle_photo\": \"autres mots-clés de recherche, précis et visuels\"} | {\"scene\": n, \"en_texte\": \"titre court\"} ]}. Utilise « nouvelle_photo » (mots-clés simples, 2 à 4 mots) si une photo est hors sujet ou trompeuse ; garde les photos autant que possible (une pub visible n'est pas une raison de la retirer) ; « en_texte » seulement en dernier recours.",
       contenu: `Remarques :\n${JSON.stringify(problemes)}\n\nÉpisode (scènes numérotées à partir de 0) :\n${JSON.stringify(episode.scenes)}`,
     });
   } catch (e) {
@@ -256,7 +256,8 @@ async function reparer(episode, problemes, dossier) {
       if (p) {
         s.props = { ...s.props, recherche: c.nouvelle_photo, src: path.basename(f), credit: p.credit };
         n++;
-      } else c.en_texte = c.en_texte || s.props.title || s.props.kicker || "";
+      }
+      // Aucune photo trouvée : on garde l'ancienne plutôt que de passer en écran texte
     }
     if (c.en_texte) {
       s.type = "statement";
