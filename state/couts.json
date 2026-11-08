@@ -831,6 +831,11 @@
    "date": "2026-11-08T13:14:18.396Z",
    "etiquette": "édition jour 2026-11-08",
    "usd": 0.8699
+  },
+  {
+   "date": "2026-11-08T23:56:57.091Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -877,7 +882,7 @@
   "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584
  },
  "soldes": {
-  "date": "2026-11-08T13:14:18.400Z",
+  "date": "2026-11-08T23:56:57.331Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 64838,
@@ -891,5 +896,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-08T13:14:20.064Z"
+ "maj": "2026-11-08T23:56:58.981Z"
 }
