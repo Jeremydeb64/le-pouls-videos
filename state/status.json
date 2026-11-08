@@ -1,143 +1,13 @@
 {
  "edition": "jour",
- "etape": "controleur",
+ "etape": "scenariste",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "termine",
-  "controleur": "bloque",
+  "scenariste": "travaille",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "veilleur",
-   "texte": "Édition du matin, je fais le tour des sources.",
-   "t": "2026-11-06T09:03:52.547Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "262 articles lus, je regroupe par sujet.",
-   "t": "2026-11-06T09:04:00.547Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Le Cervin entre au patrimoine géologique mondial ». Sujet emblématique, annoncé aujourd'hui par la SCNAT, avec des chiffres clairs (4478 m) et une image forte pour la vidéo.",
-   "t": "2026-11-06T09:04:22.409Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Suisse.",
-   "t": "2026-11-06T09:04:22.412Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T09:05:28.088Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits principaux sont bons : 300 sites, 4478 m, 3e site suisse, annonce de la SCNAT ce vendredi, roches d'Afrique et d'Europe. Pour la v2, à corriger : 1) enlève « la plus célèbre de Suisse » (superlatif non sourcé) ; 2) enlève « aucune nouvelle règle pour les visiteurs » et « connue dans le monde entier » (non sourcés), et mets à la place un fait sourcé ; 3) retire la date 2022 de la frise ou sources-la, et cale l'item Cervin sur une phrase parlée ; 4) allège les chiffres et le jargon : une seule phrase simple sur l'Engadine et Glaris, sans dates ; 5) ton sobre, car un alpiniste est mort au Cervin le 27 octobre et il y a eu d'autres accidents cet été : pas de célébration, pas d'images d'ascension ; 6) scène 7 à partir du segment 33, avec « ancienne marge de l'Europe » ; 7) photos de photothèque libre, avec crédit, sans Keystone ni ATS.",
-   "t": "2026-11-06T09:06:26.588Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-06T09:06:26.590Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T09:07:27.866Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections demandées ont été faites : ton sobre, sans superlatif non sourcé, frise sans dates non sourcées, scène 7 recalée au segment 33, règles pour les visiteurs supprimées. Il reste quelques points mineurs : simplifier « glaciers de blocs » et « faille » à l'oral, aligner le libellé du récap sur la nuance « fragments de croûte terrestre », et nettoyer le fait 2022 dans les sources. Les crédits photo seront vérifiés au rendu.",
-   "t": "2026-11-06T09:07:44.650Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-06T09:07:44.652Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Sikander Iqbal / Wikimedia Commons, Public domain.",
-   "t": "2026-11-06T09:08:20.935Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : John Singer Sargent / Wikimedia Commons, CC0.",
-   "t": "2026-11-06T09:08:23.187Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Peter elektro / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-06T09:08:23.742Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-06T09:08:23.744Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-06T09:09:43.410Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Remplace l'image « Sculpté par les glaciers » : elle montre un dessin de la Jungfrau et non le Cervin. Corrige aussi les fragments de texte à gauche de la scène 2, remonte les crédits photo dans la zone TikTok, et vérifie les fonds papier (ils s'affichent en vert) et la frise vide. Un humain doit valider l'image avant publication.",
-   "t": "2026-11-06T09:10:14.640Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.65 $ (Claude + ElevenLabs).",
-   "t": "2026-11-06T09:10:15.985Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-06T09:10:15.987Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 70085 crédits restants ce mois-ci.",
-   "t": "2026-11-06T11:32:08.978Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Sujet choisi par la rédaction : « AVA, l'intelligence artificielle souveraine du Valais ». Je transmets au Scénariste.",
-   "t": "2026-11-06T11:32:08.980Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Canal9.",
-   "t": "2026-11-06T11:32:08.983Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T11:33:32.314Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Merci pour le script, la structure est claire et les attributions au Canton sont bien posées. Six points à revoir : 1) Accroche et scène 1 : précise que les 2 francs sont par utilisateur actif, ajoute « environ » et « selon le Canton ». 2) Remplace « interdites » (voix et scène 3) par le vrai motif, des serveurs à l'étranger et un problème de confidentialité, car aucune source ne parle d'interdiction. 3) Vérifie dans le PDF officiel le « 20 fois moins cher » (RTS dit autre chose) et garde « au moins ». 4) Crédits : licence ou autorisation pour le visuel de la scène 2, et légende « Image générée avec l'IA » sur les scènes 6, 7 et 8. 5) Remplace « briques » par « composants ». 6) Uniformise « en Suisse » et « en Valais » dans la récap. Le reste (dates, 2000 utilisateurs, chatbot de la circulation, ouverture aux communes, « une personne tranche toujours ») est correct. Rien de sensible ici, et aucune recommandation ou partialité.",
-   "t": "2026-11-06T11:34:11.896Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-06T11:34:11.899Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T11:35:19.647Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections importantes sont faites : le coût est présenté comme « environ 2 francs par utilisateur actif, selon le Canton », l'interdiction supposée a disparu, la comparaison chiffrée est retirée, « briques » est remplacé et la récap est harmonisée. Il reste à régler avant publication les crédits des visuels (scène 2) et la légende « Image générée avec l'IA » (scènes 6 à 8).",
-   "t": "2026-11-06T11:35:33.177Z"
-  },
   {
    "agent": "scenariste",
    "texte": "J'envoie le dialogue à Lucie et Nicolas.",
@@ -407,9 +277,139 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-07T13:11:33.921Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 66755 crédits restants ce mois-ci.",
+   "t": "2026-11-08T13:05:02.835Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-08T13:05:02.838Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "243 articles lus, je regroupe par sujet.",
+   "t": "2026-11-08T13:05:12.057Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Crans-Montana : qui reçoit l'aide d'urgence, qui n'en reçoit pas ». Un sujet valaisan d'intérêt public direct : qui a droit à l'aide après le drame, et selon quels critères. Plusieurs médias le confirment.",
+   "t": "2026-11-08T13:05:39.227Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Le Temps.",
+   "t": "2026-11-08T13:05:39.231Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-08T13:08:17.703Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Sujet sensible bien traité et équilibré : l'avocat et le canton ont chacun leur place. Cinq corrections à faire. 1) Écris « au moins sept » (voix, grille, titre, description TikTok). 2) Remplace « Révélé samedi », car les sources divergent entre vendredi et samedi. 3) Retire « genevois » du kicker de la scène 5, et remplace la photo d'ambulance par une image neutre. 4) Reformule le statement de la scène 7 en phrase complète, par exemple « Des *centaines* de personnes pourraient y prétendre ». 5) Ajoute à `faits` la mention de la LAVI et de la fondation, avec la source Le Matin, et vérifie que le statement de la scène 9 reste sous 6 s.",
+   "t": "2026-11-08T13:09:02.873Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-08T13:09:02.875Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-08T13:10:30.439Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées ont été faites (« au moins » ajouté, kicker « Révélé ce week-end », « genevois » retiré, photo d'ambulance remplacée par un statement, phrase Reynard complétée, fait LAVI ajouté à faits). Il reste trois remarques mineures sans bloquant, à traiter à l'étape image.",
+   "t": "2026-11-08T13:10:41.700Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-08T13:10:41.702Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 4 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-08T13:11:09.035Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Raph75014 / Wikimedia Commons, CC BY 4.0.",
+   "t": "2026-11-08T13:11:11.948Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-08T13:11:13.721Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-08T13:11:14.169Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-08T13:11:15.266Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-08T13:11:15.941Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-08T13:11:15.943Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-08T13:12:24.061Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Scène 1 : le tag « CRANS-MONTANA » recouvre le kicker « SOCIÉTÉ », à décaler. Le libellé du compteur est coupé pendant l'animation, à corriger. Carte : le sous-titre répète le titre, à remplacer. Récap : vérifie que les items 2 et 3 s'affichent bien.",
+   "t": "2026-11-08T13:12:51.082Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
+   "t": "2026-11-08T13:12:51.085Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "3 correction(s) appliquée(s), je relance le montage.",
+   "t": "2026-11-08T13:13:00.234Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-08T13:13:59.825Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Visuel globalement conforme à la charte : fond vert, cartouches ocre, zone sûre respectée, crédits visibles, aucun texte coupé. Le seul point à vérifier est l'apparition de l'item 3 de la recap, que les images prélevées ne montrent pas. Le son n'a pas pu être contrôlé directement (silences et fin de voix) : à confirmer à l'écoute.",
+   "t": "2026-11-08T13:14:18.392Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.87 $ (Claude + ElevenLabs).",
+   "t": "2026-11-08T13:14:20.069Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-08T13:14:20.071Z"
   }
  ],
- "maj": "2026-11-07T13:11:42.451Z",
+ "maj": "2026-11-08T13:14:34.929Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1423,6 +1423,89 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent/LePouls_2026-11-07-jour-ski-verbier-et-glacier-3000-ouvrent.mp4",
    "lien_drive": null,
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/10"
+  },
+  {
+   "id": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence",
+   "titre": "Crans-Montana : qui reçoit l'aide d'urgence",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "La recherche « Sion hospital » reste inchangée. Aucune légende neutre n'a été ajoutée, et rien ne prouve que la photo d'hôpital concerne les victimes.",
+     "correction_demandee": "Ajouter une légende neutre, par exemple « Image d'illustration », ou vérifier à l'étape image que la photo est générique et sans personnes identifiables."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "La date « 1er janvier » (kicker de la carte, « Après l'incendie du 1er janvier ») n'apparaît dans aucun fait de la liste. Elle est probablement exacte, mais elle n'est pas sourcée.",
+     "correction_demandee": "Ajouter à `faits` la date de l'incendie avec sa source, ou vérifier qu'une source de la liste la mentionne."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "Sujet sensible (41 morts). Le texte est sobre et équilibré : critique de l'avocat et réponse du canton ont un poids comparable.",
+     "correction_demandee": "Aucune modification de texte. À vérifier à l'étape image et voix : voix [serious] sans effet festif, pas de photo du bar ni de l'incendie, pas de photo de presse."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "Sur l'image à 2 s, un fragment de texte très pâle apparaît au-dessus du chiffre 7 (vers y ≈ 378), probablement un élément en fondu. Il est quasi invisible et ne gêne pas la lecture.",
+     "correction_demandee": "Vérifier qu'il s'agit bien d'une transition et non d'un texte résiduel. Aucune action si c'est un fondu."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "La recap n'a pas pu être vérifiée sur l'item 3 « D'autres aides existent » (prévu à 5,2 s de la scène) : l'image prélevée ne le montre pas.",
+     "correction_demandee": "Contrôler à l'écran que l'item 3 apparaît bien et reste visible jusqu'à la fin de la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Le crédit photo de l'image 9 est sur deux lignes et reste long. Il est lisible et ne chevauche rien.",
+     "correction_demandee": "Aucune action obligatoire."
+    }
+   ],
+   "description_tiktok": "Au moins sept rescapés de Crans-Montana se sont vu refuser l'aide d'urgence de 60 000 francs. Qui y a droit, qui n'y a pas droit, et ce que répond le canton.\nSources : Le Temps, Le Matin, 24 heures, RTS, Blick\n#Valais #CransMontana #Actualité",
+   "sources": [
+    {
+     "media": "Le Temps",
+     "titre": "Le Valais défend ses critères après le refus de l'aide à certaines victimes de Crans-Montana",
+     "url": "https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana"
+    },
+    {
+     "media": "Le Matin",
+     "titre": "Crans-Montana: Mathias Reynard justifie le refus d'aide d'urgence pour sept rescapés",
+     "url": "https://www.lematin.ch/story/drame-de-crans-montana-pas-d-aide-d-urgence-pour-sept-rescapes-le-valais-s-explique-103663978"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Crans-Montana: refus d'aide financière à plusieurs rescapés",
+     "url": "https://www.24heures.ch/crans-montana-refus-daide-financiere-a-plusieurs-rescapes-757555477659"
+    },
+    {
+     "media": "20 minutes",
+     "titre": "Crans-Montana: des rescapés n'ont pas les aides financières prévues par le Valais",
+     "url": "https://www.20min.ch/fr/story/crans-montana-le-valais-refuse-l-aide-financiere-a-des-rescapes-103663387"
+    },
+    {
+     "media": "RTS",
+     "titre": "Crans-Montana : le Valais défend les critères du fonds d'urgence",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/crans-montana-le-valais-defend-les-criteres-du-fond-d-urgence-29408792.html"
+    },
+    {
+     "media": "Blick",
+     "titre": "Crans-Montana: des victimes de l'incendie ne touchent pas d'aide",
+     "url": "https://www.blick.ch/fr/suisse/crans-montana-des-victimes-de-lincendie-ne-touchent-pas-daide/xtgr6zn"
+    }
+   ],
+   "mp4": "out/crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en/2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.8584,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence/LePouls_2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1kvyk9sKA05_Gk9p6g9F2SF_b-puDlkUd",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/11"
   }
  ]
 }

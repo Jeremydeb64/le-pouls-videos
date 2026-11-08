@@ -629,6 +629,136 @@
    "unite": "tokens",
    "usd": 0.0035,
    "execution": "édition jour 2026-11-07"
+  },
+  {
+   "date": "2026-11-08T13:05:39.226Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 95601,
+   "unite": "tokens",
+   "usd": 0.0115,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:08:17.700Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 74844,
+   "unite": "tokens",
+   "usd": 0.3422,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:08:17.700Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:09:02.871Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 40874,
+   "unite": "tokens",
+   "usd": 0.1325,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:09:02.871Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:10:30.437Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 69087,
+   "unite": "tokens",
+   "usd": 0.2502,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:10:30.437Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:10:41.700Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 15376,
+   "unite": "tokens",
+   "usd": 0.0025,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:11:05.039Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 571,
+   "unite": "crédits",
+   "usd": 0.0457,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:11:09.029Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 66,
+   "unite": "secondes",
+   "usd": 0.004,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:12:51.081Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 20840,
+   "unite": "tokens",
+   "usd": 0.004,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:13:00.233Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 12520,
+   "unite": "tokens",
+   "usd": 0.0343,
+   "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-08T13:14:18.391Z",
+   "contexte": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 18775,
+   "unite": "tokens",
+   "usd": 0.003,
+   "execution": "édition jour 2026-11-08"
   }
  ],
  "executions": [
@@ -696,6 +826,11 @@
    "date": "2026-11-07T23:50:47.250Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-08T13:14:18.396Z",
+   "etiquette": "édition jour 2026-11-08",
+   "usd": 0.8699
   }
  ],
  "par_jour": {
@@ -716,14 +851,20 @@
    "elevenlabs": 0.05,
    "higgsfield": 0,
    "total": 0.701
+  },
+  "2026-11-08": {
+   "anthropic": 0.8202,
+   "elevenlabs": 0.0497,
+   "higgsfield": 0,
+   "total": 0.8699
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 4.6437,
-   "elevenlabs": 0.3402,
+   "anthropic": 5.4639,
+   "elevenlabs": 0.3899,
    "higgsfield": 0,
-   "total": 4.9839
+   "total": 5.8538
   }
  },
  "par_video": {
@@ -732,22 +873,23 @@
   "2026-11-06-matin-le-cervin-entre-au-patrimoine-geologique-mondial": 0.6357,
   "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala": 0.7306,
   "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour": 0.754,
-  "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905
+  "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905,
+  "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584
  },
  "soldes": {
-  "date": "2026-11-07T23:50:47.573Z",
+  "date": "2026-11-08T13:14:18.400Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 64245,
+   "credits_utilises": 64838,
    "credits_mois": 131000,
-   "credits_restants": 66755,
+   "credits_restants": 66162,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 10.2963,
+   "credit_estime_restant_usd": 9.4761,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-07T23:50:49.346Z"
+ "maj": "2026-11-08T13:14:20.064Z"
 }

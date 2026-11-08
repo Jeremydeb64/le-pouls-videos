@@ -1,0 +1,526 @@
+{
+ "id": "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence",
+ "rubrique": "SOCIÉTÉ",
+ "ambiance": "aucune",
+ "voice": "voix-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence.mp3",
+ "duration": 67.34,
+ "captions": [
+  [
+   0.16,
+   0.98,
+   "60’000 francs"
+  ],
+  [
+   1.02,
+   1.78,
+   "d’aide d’urgence."
+  ],
+  [
+   2.04,
+   3.08,
+   "Au moins 7 rescapés"
+  ],
+  [
+   3.12,
+   3.8,
+   "de Crans-Montana"
+  ],
+  [
+   3.9,
+   4.86,
+   "se sont vu refuser"
+  ],
+  [
+   4.9,
+   5.3,
+   "cette aide."
+  ],
+  [
+   6.22,
+   7.1,
+   "Salut, c’est Lucie,"
+  ],
+  [
+   7.34,
+   7.84,
+   "et aujourd’hui,"
+  ],
+  [
+   8.02,
+   8.9,
+   "on t’explique pourquoi."
+  ],
+  [
+   9.42,
+   10.8,
+   "Après l’incendie du Constellation,"
+  ],
+  [
+   11.04,
+   12.36,
+   "le canton et la Confédération"
+  ],
+  [
+   12.48,
+   13.3,
+   "ont promis cette somme"
+  ],
+  [
+   13.32,
+   13.88,
+   "aux victimes."
+  ],
+  [
+   14.34,
+   15.52,
+   "Selon la Tribune de Genève"
+  ],
+  [
+   15.64,
+   15.72,
+   "et 24 heures,"
+  ],
+  [
+   16.58,
+   17.78,
+   "au moins 7 survivants"
+  ],
+  [
+   17.82,
+   18.74,
+   "ont reçu un refus."
+  ],
+  [
+   19.12,
+   19.86,
+   "Pour y avoir droit,"
+  ],
+  [
+   20.06,
+   21.46,
+   "il faut avoir perdu un proche,"
+  ],
+  [
+   21.48,
+   22.12,
+   "ou avoir passé"
+  ],
+  [
+   22.14,
+   22.82,
+   "au moins une nuit"
+  ],
+  [
+   22.86,
+   23.44,
+   "à l’hôpital."
+  ],
+  [
+   23.76,
+   24.82,
+   "Les séquelles psychologiques"
+  ],
+  [
+   24.9,
+   26.02,
+   "seules ne suffisent pas."
+  ],
+  [
+   26.76,
+   27.82,
+   "Mais ce critère fait débat."
+  ],
+  [
+   28.12,
+   29.68,
+   "Un avocat le juge arbitraire."
+  ],
+  [
+   29.98,
+   31.02,
+   "Sa cliente, dit-il,"
+  ],
+  [
+   31.2,
+   32.3,
+   "aurait pu rester une nuit,"
+  ],
+  [
+   32.52,
+   33.46,
+   "mais elle a laissé sa place"
+  ],
+  [
+   33.5,
+   34.6,
+   "à des blessés plus graves."
+  ],
+  [
+   35.02,
+   35.7,
+   "Le canton répond"
+  ],
+  [
+   35.74,
+   36.84,
+   "qu’il faut une gradation"
+  ],
+  [
+   36.88,
+   37.78,
+   "entre les situations."
+  ],
+  [
+   38.22,
+   39,
+   "Le conseiller d’État"
+  ],
+  [
+   39.04,
+   40.24,
+   "Mathias Reynard assure"
+  ],
+  [
+   40.28,
+   40.88,
+   "que ces personnes"
+  ],
+  [
+   40.92,
+   41.84,
+   "restent des victimes."
+  ],
+  [
+   42.3,
+   43.54,
+   "Sans ces critères, dit-il,"
+  ],
+  [
+   43.8,
+   44.86,
+   "des centaines de personnes"
+  ],
+  [
+   44.9,
+   45.72,
+   "pourraient demander l’aide."
+  ],
+  [
+   46.34,
+   47.58,
+   "Concrètement, 127"
+  ],
+  [
+   47.62,
+   48.78,
+   "victimes ou familles"
+  ],
+  [
+   48.82,
+   50.34,
+   "ont reçu ou recevront l’aide."
+  ],
+  [
+   50.7,
+   51.68,
+   "Les personnes refusées"
+  ],
+  [
+   51.72,
+   53.02,
+   "peuvent recevoir d’autres aides."
+  ],
+  [
+   53.36,
+   54.34,
+   "Selon Blick, elles peuvent"
+  ],
+  [
+   54.36,
+   55.74,
+   "aussi contester la décision."
+  ],
+  [
+   56.26,
+   56.82,
+   "À retenir :"
+  ],
+  [
+   57.08,
+   58.2,
+   "une aide réservée aux proches"
+  ],
+  [
+   58.24,
+   59.78,
+   "de défunts et aux hospitalisés."
+  ],
+  [
+   60.1,
+   61.12,
+   "Le psychologique seul"
+  ],
+  [
+   61.36,
+   62.26,
+   "n’ouvre pas ce droit."
+  ],
+  [
+   62.78,
+   63.8,
+   "D’autres aides existent."
+  ],
+  [
+   64.22,
+   64.76,
+   "C’était Lucie,"
+  ],
+  [
+   65.12,
+   65.32,
+   "pour Le Pouls."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "bigFigure",
+   "from": 0,
+   "theme": "green",
+   "props": {
+    "kicker": "",
+    "value": 60000,
+    "label": "francs d'aide",
+    "at": 0.4,
+    "grid": {
+     "count": 7,
+     "value": 7,
+     "label": "rescapés refusés, au moins",
+     "note": "selon la Tribune de Genève",
+     "at": 2.04
+    }
+   },
+   "to": 6.12
+  },
+  {
+   "type": "carte",
+   "from": 6.12,
+   "theme": "green",
+   "props": {
+    "kicker": "Après l'incendie du 1er janvier",
+    "communes": [
+     "Crans-Montana"
+    ],
+    "titre": "Haut-Plateau",
+    "at": 0.1
+   },
+   "to": 14.24
+  },
+  {
+   "type": "photoRonde",
+   "from": 14.24,
+   "theme": "green",
+   "props": {
+    "recherche": "Crans-Montana",
+    "kicker": "Révélé ce week-end",
+    "title": "Au moins sept *refus*",
+    "legende": "Tribune de Genève et 24 heures",
+    "src": "photo-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-2.jpg",
+    "credit": "Photo : Raph75014 / Wikimedia Commons, CC BY 4.0"
+   },
+   "to": 19.02
+  },
+  {
+   "type": "photoRonde",
+   "from": 19.02,
+   "theme": "green",
+   "props": {
+    "recherche": "Sion hospital",
+    "kicker": "Pour avoir droit à l'aide",
+    "title": "Deux *critères*",
+    "legende": "Proche perdu ou nuit à l'hôpital",
+    "src": "photo-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-3.jpg",
+    "credit": "Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 26.66
+  },
+  {
+   "type": "statement",
+   "from": 26.66,
+   "theme": "green",
+   "props": {
+    "kicker": "Selon l'avocat d'une rescapée",
+    "text": "Un critère *arbitraire*"
+   },
+   "to": 29.88
+  },
+  {
+   "type": "statement",
+   "from": 29.88,
+   "theme": "green",
+   "props": {
+    "text": "Elle a *laissé* sa place"
+   },
+   "to": 34.92
+  },
+  {
+   "type": "photoRonde",
+   "from": 34.92,
+   "theme": "green",
+   "props": {
+    "recherche": "Palais du Gouvernement Sion",
+    "kicker": "La réponse du canton",
+    "title": "Une *gradation* des aides",
+    "legende": "Le Conseil d'État défend ses critères",
+    "src": "photo-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-6.jpg",
+    "credit": "Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 42.2
+  },
+  {
+   "type": "statement",
+   "from": 42.2,
+   "theme": "green",
+   "props": {
+    "kicker": "Selon Mathias Reynard",
+    "text": "Des *centaines* de personnes pourraient y prétendre"
+   },
+   "to": 46.24
+  },
+  {
+   "type": "bigFigure",
+   "from": 46.24,
+   "theme": "green",
+   "props": {
+    "kicker": "Aide d'urgence versée",
+    "value": 127,
+    "label": "victimes ou familles",
+    "at": 0.1
+   },
+   "to": 50.6
+  },
+  {
+   "type": "photo",
+   "from": 50.6,
+   "theme": "green",
+   "props": {
+    "recherche": "Sion Valais city",
+    "kicker": "Pour les personnes refusées",
+    "title": "D'autres *aides* possibles",
+    "nom": "Aide aux victimes",
+    "role": "LAVI et fondation du canton",
+    "src": "photo-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-9.jpg",
+    "credit": "Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 56.16
+  },
+  {
+   "type": "recap",
+   "from": 56.16,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Proches ou hospitalisés",
+      "at": 0.92
+     },
+     {
+      "n": 2,
+      "label": "Psychologique seul exclu",
+      "at": 3.2
+     },
+     {
+      "n": 3,
+      "label": "D'autres aides existent",
+      "at": 5.2
+     }
+    ]
+   },
+   "to": 64.12
+  },
+  {
+   "type": "outro",
+   "from": 64.12,
+   "theme": "green",
+   "props": {
+    "sources": "Sources : Le Temps, Le Matin, 24 heures, RTS, Blick"
+   },
+   "to": 67.34
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "Le Temps",
+    "titre": "Le Valais défend ses critères après le refus de l'aide à certaines victimes de Crans-Montana",
+    "url": "https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana"
+   },
+   {
+    "media": "Le Matin",
+    "titre": "Crans-Montana: Mathias Reynard justifie le refus d'aide d'urgence pour sept rescapés",
+    "url": "https://www.lematin.ch/story/drame-de-crans-montana-pas-d-aide-d-urgence-pour-sept-rescapes-le-valais-s-explique-103663978"
+   },
+   {
+    "media": "24 heures",
+    "titre": "Crans-Montana: refus d'aide financière à plusieurs rescapés",
+    "url": "https://www.24heures.ch/crans-montana-refus-daide-financiere-a-plusieurs-rescapes-757555477659"
+   },
+   {
+    "media": "20 minutes",
+    "titre": "Crans-Montana: des rescapés n'ont pas les aides financières prévues par le Valais",
+    "url": "https://www.20min.ch/fr/story/crans-montana-le-valais-refuse-l-aide-financiere-a-des-rescapes-103663387"
+   },
+   {
+    "media": "RTS",
+    "titre": "Crans-Montana : le Valais défend les critères du fonds d'urgence",
+    "url": "https://www.rts.ch/info/regions/valais/2026/article/crans-montana-le-valais-defend-les-criteres-du-fond-d-urgence-29408792.html"
+   },
+   {
+    "media": "Blick",
+    "titre": "Crans-Montana: des victimes de l'incendie ne touchent pas d'aide",
+    "url": "https://www.blick.ch/fr/suisse/crans-montana-des-victimes-de-lincendie-ne-touchent-pas-daide/xtgr6zn"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Au moins sept survivants se sont vu refuser la compensation d'urgence de 60 000 francs, révélé par la Tribune de Genève et 24 heures (« au moins sept » selon Le Matin, 24 heures et 20 minutes ; « sept » selon Le Temps)",
+    "source": "https://www.24heures.ch/crans-montana-refus-daide-financiere-a-plusieurs-rescapes-757555477659"
+   },
+   {
+    "fait": "L'aide de 60 000 francs comprend 10 000 francs du canton du Valais et 50 000 francs de contribution de solidarité de la Confédération",
+    "source": "https://www.20min.ch/fr/story/crans-montana-le-valais-refuse-l-aide-financiere-a-des-rescapes-103663387"
+   },
+   {
+    "fait": "Critères : avoir perdu un proche ou avoir été hospitalisé (nuit d'hospitalisation) ; les séquelles psychologiques seules ne donnent pas accès à l'aide d'urgence",
+    "source": "https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana"
+   },
+   {
+    "fait": "L'avocat Robert Assaël juge le critère de la nuit d'hospitalisation arbitraire ; sa cliente aurait pu passer une nuit à l'hôpital mais a laissé sa place à des blessés plus graves",
+    "source": "https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana"
+   },
+   {
+    "fait": "Mathias Reynard plaide pour une gradation des aides et affirme qu'il ne s'agit pas de nier la qualité de victimes des personnes refusées",
+    "source": "https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana"
+   },
+   {
+    "fait": "Sans ces critères, des centaines de personnes pourraient prétendre à l'aide d'urgence (Mathias Reynard)",
+    "source": "https://www.lematin.ch/story/drame-de-crans-montana-pas-d-aide-d-urgence-pour-sept-rescapes-le-valais-s-explique-103663978"
+   },
+   {
+    "fait": "127 victimes ou familles de personnes décédées ont reçu ou recevront l'aide d'urgence (Département de la santé du Valais)",
+    "source": "https://www.20min.ch/fr/story/crans-montana-le-valais-refuse-l-aide-financiere-a-des-rescapes-103663387"
+   },
+   {
+    "fait": "Les personnes refusées peuvent être aidées par la LAVI, par la fondation créée par l'État du Valais, ou par les deux (Mathias Reynard)",
+    "source": "https://www.lematin.ch/story/drame-de-crans-montana-pas-d-aide-d-urgence-pour-sept-rescapes-le-valais-s-explique-103663978"
+   },
+   {
+    "fait": "Les refus peuvent être contestés auprès du Conseil d'État (selon Blick)",
+    "source": "https://www.blick.ch/fr/suisse/crans-montana-des-victimes-de-lincendie-ne-touchent-pas-daide/xtgr6zn"
+   }
+  ],
+  "sensible": true
+ }
+}

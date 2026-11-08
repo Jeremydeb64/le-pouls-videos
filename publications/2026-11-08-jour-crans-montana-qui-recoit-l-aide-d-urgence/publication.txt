@@ -1,0 +1,30 @@
+LE POULS
+Crans-Montana : qui reçoit l'aide d'urgence
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Au moins sept rescapés de Crans-Montana se sont vu refuser l'aide d'urgence de 60 000 francs. Qui y a droit, qui n'y a pas droit, et ce que répond le canton.
+Sources : Le Temps, Le Matin, 24 heures, RTS, Blick
+#Valais #CransMontana #Actualité
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Le Temps : Le Valais défend ses critères après le refus de l'aide à certaines victimes de Crans-Montana (https://www.letemps.ch/suisse/valais/le-valais-defend-ses-criteres-apres-le-refus-de-l-aide-a-certaines-victimes-de-crans-montana)
+- Le Matin : Crans-Montana: Mathias Reynard justifie le refus d'aide d'urgence pour sept rescapés (https://www.lematin.ch/story/drame-de-crans-montana-pas-d-aide-d-urgence-pour-sept-rescapes-le-valais-s-explique-103663978)
+- 24 heures : Crans-Montana: refus d'aide financière à plusieurs rescapés (https://www.24heures.ch/crans-montana-refus-daide-financiere-a-plusieurs-rescapes-757555477659)
+- 20 minutes : Crans-Montana: des rescapés n'ont pas les aides financières prévues par le Valais (https://www.20min.ch/fr/story/crans-montana-le-valais-refuse-l-aide-financiere-a-des-rescapes-103663387)
+- RTS : Crans-Montana : le Valais défend les critères du fonds d'urgence (https://www.rts.ch/info/regions/valais/2026/article/crans-montana-le-valais-defend-les-criteres-du-fond-d-urgence-29408792.html)
+- Blick : Crans-Montana: des victimes de l'incendie ne touchent pas d'aide (https://www.blick.ch/fr/suisse/crans-montana-des-victimes-de-lincendie-ne-touchent-pas-daide/xtgr6zn)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 4) : La recherche « Sion hospital » reste inchangée. Aucune légende neutre n'a été ajoutée, et rien ne prouve que la photo d'hôpital concerne les victimes.
+- mineur (scène 1) : La date « 1er janvier » (kicker de la carte, « Après l'incendie du 1er janvier ») n'apparaît dans aucun fait de la liste. Elle est probablement exacte, mais elle n'est pas sourcée.
+- mineur (scène 0) : Sujet sensible (41 morts). Le texte est sobre et équilibré : critique de l'avocat et réponse du canton ont un poids comparable.
+- mineur (scène 1) : Sur l'image à 2 s, un fragment de texte très pâle apparaît au-dessus du chiffre 7 (vers y ≈ 378), probablement un élément en fondu. Il est quasi invisible et ne gêne pas la lecture.
+- mineur (scène 9) : La recap n'a pas pu être vérifiée sur l'item 3 « D'autres aides existent » (prévu à 5,2 s de la scène) : l'image prélevée ne le montre pas.
+- mineur (scène 10) : Le crédit photo de l'image 9 est sur deux lignes et reste long. Il est lisible et ne chevauche rien.
