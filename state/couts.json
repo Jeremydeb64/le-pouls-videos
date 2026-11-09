@@ -889,6 +889,126 @@
    "unite": "tokens",
    "usd": 0.003,
    "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:08:44.829Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 97719,
+   "unite": "tokens",
+   "usd": 0.0115,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:10:58.188Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 72305,
+   "unite": "tokens",
+   "usd": 0.3128,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:10:58.188Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:11:44.813Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 21121,
+   "unite": "tokens",
+   "usd": 0.096,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:13:17.641Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 76594,
+   "unite": "tokens",
+   "usd": 0.2762,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:13:17.641Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:13:32.445Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 17977,
+   "unite": "tokens",
+   "usd": 0.0031,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:13:57.734Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 639,
+   "unite": "crédits",
+   "usd": 0.0511,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:14:03.171Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 76,
+   "unite": "secondes",
+   "usd": 0.0046,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:16:16.758Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21714,
+   "unite": "tokens",
+   "usd": 0.0035,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:16:23.796Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 12582,
+   "unite": "tokens",
+   "usd": 0.032,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T23:18:33.526Z",
+   "contexte": "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 24830,
+   "unite": "tokens",
+   "usd": 0.005,
+   "execution": "édition jour 2026-11-09"
   }
  ],
  "executions": [
@@ -971,6 +1091,11 @@
    "date": "2026-11-09T13:13:43.024Z",
    "etiquette": "édition jour 2026-11-09",
    "usd": 0.7749
+  },
+  {
+   "date": "2026-11-09T23:18:33.531Z",
+   "etiquette": "édition jour 2026-11-09",
+   "usd": 0.8258
   }
  ],
  "par_jour": {
@@ -1003,14 +1128,20 @@
    "elevenlabs": 0.0544,
    "higgsfield": 0,
    "total": 0.7749
+  },
+  "2026-11-10": {
+   "anthropic": 0.7701,
+   "elevenlabs": 0.0557,
+   "higgsfield": 0,
+   "total": 0.8258
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 6.1844,
-   "elevenlabs": 0.4443,
+   "anthropic": 6.9545,
+   "elevenlabs": 0.5,
    "higgsfield": 0,
-   "total": 6.6287
+   "total": 7.4545
   }
  },
  "par_video": {
@@ -1021,22 +1152,23 @@
   "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour": 0.754,
   "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905,
   "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584,
-  "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran": 0.7638
+  "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran": 0.7638,
+  "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143
  },
  "soldes": {
-  "date": "2026-11-09T13:13:43.030Z",
+  "date": "2026-11-09T23:18:33.539Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 65497,
+   "credits_utilises": 66161,
    "credits_mois": 131000,
-   "credits_restants": 65503,
+   "credits_restants": 64839,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 8.7556,
+   "credit_estime_restant_usd": 7.9855,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-09T13:13:44.253Z"
+ "maj": "2026-11-09T23:18:35.177Z"
 }

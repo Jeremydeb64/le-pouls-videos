@@ -9,141 +9,6 @@
  },
  "messages": [
   {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Olivier Bruchez from Lausanne, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
-   "t": "2026-11-06T16:17:30.146Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-06T16:17:30.637Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-06T16:17:30.641Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-06T16:18:55.901Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Trois débordements visuels bloquants : titre et sous-titre qui se chevauchent sur la carte Bourg-Saint-Pierre (scène 1), légende et sous-titres superposés sur la photo de l'hospice (scène 2), et le chiffre 85'000 coupé à droite (scène 3). Corrige la mise en page de ces trois scènes, puis ajoute l'accent sur « État » dans l'outro.",
-   "t": "2026-11-06T16:19:12.559Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.75 $ (Claude + ElevenLabs).",
-   "t": "2026-11-06T16:19:13.783Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-06T16:19:13.786Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 67350 crédits restants ce mois-ci.",
-   "t": "2026-11-07T13:05:05.191Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-07T13:05:05.194Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "243 articles lus, je regroupe par sujet.",
-   "t": "2026-11-07T13:05:13.355Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Ski en Valais romand : les premières pistes ouvrent ce week-end ». Les premières descentes sont possibles dès samedi à Verbier (lac des Vaux) et Glacier 3000 rouvre après révision : c'est concret pour tout skieur valaisan, et les dates se prêtent à une carte.",
-   "t": "2026-11-07T13:05:27.784Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Canal9.",
-   "t": "2026-11-07T13:05:27.794Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Article illisible, je cherche d'autres sources.",
-   "t": "2026-11-07T13:05:28.981Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-07T13:06:44.126Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bonne structure, mais il y a deux points. 1) L'intro et le titre disent « premières pistes » et « de nouveau skier ». Zermatt, Saas-Fee, Engelberg et Diavolezza sont déjà ouverts. Cadre le sujet sur Verbier et Glacier 3000, « après Zermatt et Saas-Fee », et change le titre en « Ski : Verbier et Glacier 3000 ouvrent ». 2) Le récap n° 3 doit dire « à Verbier ». Cette nuance ne vaut pas pour Glacier 3000. Ajoute aussi 24heures dans les sources de l'outro et de la description. Précise les stations sur la frise et reformule « une vraie mise en jambes ». Vérifie les crédits photo : pas de photos de presse.",
-   "t": "2026-11-07T13:07:43.502Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-07T13:07:43.505Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Article illisible, je cherche d'autres sources.",
-   "t": "2026-11-07T13:07:44.720Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-07T13:08:48.883Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Toutes les corrections demandées sont faites : titre et intro sans « premières pistes », « de nouveau » retiré, « à Verbier » sur le point 3, 24heures ajouté à l'outro et à la description, frise nommée, stade d'entraînement noté, formulation reprise dans la scène 0. Il reste deux remarques mineures : ajouter « de Suisse romande » au cadrage et prévoir les crédits photo dans les props (à valider en phase image).",
-   "t": "2026-11-07T13:09:01.878Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-07T13:09:01.880Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 13 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-07T13:09:31.578Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-07T13:09:32.045Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-07T13:09:32.721Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Patrick Nouhailler from Genève, Suisse / Wikimedia Commons, CC BY-SA 2.0.",
-   "t": "2026-11-07T13:09:33.153Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-07T13:09:33.155Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-07T13:11:05.379Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "La photo de la gondole est coupée sur le bord droit et montre un logo de marque : il faut la recadrer ou la remplacer. Les scènes « papier » doivent être en fond crème, et « 1 pistes » devient « 1 piste ». Vérifie aussi l'audio de la scène « Le lac des Vaux » (pas de sous-titre pendant 8,5 s).",
-   "t": "2026-11-07T13:11:32.667Z"
-  },
-  {
    "agent": "systeme",
    "texte": "Coût de cette édition : 0.70 $ (Claude + ElevenLabs).",
    "t": "2026-11-07T13:11:33.919Z"
@@ -407,9 +272,144 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-09T13:13:44.262Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 65503 crédits restants ce mois-ci.",
+   "t": "2026-11-09T23:08:13.386Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-09T23:08:13.389Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "249 articles lus, je regroupe par sujet.",
+   "t": "2026-11-09T23:08:21.889Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Loi sur l'école valaisanne : une loi de 1962 à remplacer ». Le Grand Conseil entame cette semaine la deuxième lecture d'une loi qui remplacera celle de 1962, et plusieurs médias concordent.",
+   "t": "2026-11-09T23:08:44.830Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Canal9.",
+   "t": "2026-11-09T23:08:44.837Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-09T23:10:58.191Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Faits justes et sources cohérentes (113 oui / 11 non, 10 millions, 64 ans, vote vendredi), mais plusieurs formulations présentent comme acquis ce qui ne l'est pas encore. À corriger : « Déjà tranché en mai » devient « adopté en première lecture » ; le statement des directions d'école et le récap « Loi de 1962 remplacée » passent au conditionnel ou à « à remplacer ». Équilibre pour/contre : le camp « contre » a plus de temps et plus de noms, donc à rééquilibrer. Clarifier que l'UDC du Haut-Valais a refusé l'entrée en matière, alors que les UDC s'opposent aux directions cantonales. Préciser « formation postobligatoire, au moins jusqu'à la majorité » et changer la photo de la scène 6 en conséquence. Retirer « enfin », ajouter 24 heures et La Liberté aux sources.",
+   "t": "2026-11-09T23:11:44.814Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-09T23:11:44.817Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-09T23:13:17.643Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées sont faites, sauf une nuance mineure sur l'équilibre pour/contre (la voix ne précise pas « UDC sous ses deux formes » et la colonne « Contre » arrive 2 segments après « Pour »). Rien de bloquant : la vidéo peut passer. Si tu veux un dernier petit ajustement, c'est cette phrase et l'apparition simultanée des deux colonnes.",
+   "t": "2026-11-09T23:13:32.446Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-09T23:13:32.448Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-09T23:14:03.179Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Jamcib / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-09T23:14:04.485Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-09T23:14:04.932Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Dobrislava / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-09T23:14:05.675Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Adolphe Braun / Wikimedia Commons, Public domain.",
+   "t": "2026-11-09T23:14:06.369Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Orphée / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-09T23:14:07.169Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Leihbarista / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-09T23:14:07.890Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-09T23:14:07.893Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-09T23:15:55.310Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Scène versus : le kicker « Directions d'école cantonales » chevauche la pastille POLITIQUE, il faut le descendre ou décaler la pastille. Scène 1 : le titre ne doit pas apparaître coupé pendant l'animation. Petites retouches : retire le « : » final de « Côté contre », et vérifie qu'un sous-titre couvre la scène « 64 ans ».",
+   "t": "2026-11-09T23:16:16.759Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
+   "t": "2026-11-09T23:16:16.763Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "1 correction(s) appliquée(s), je relance le montage.",
+   "t": "2026-11-09T23:16:23.796Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-09T23:17:57.852Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Versus : fais apparaître « Pour » et « Contre » en même temps et vérifie que NEO s'affiche bien côté Contre. Vérifie aussi les sous-titres sous le « 64 ans d'âge » et la frise à trois items.",
+   "t": "2026-11-09T23:18:33.526Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.83 $ (Claude + ElevenLabs).",
+   "t": "2026-11-09T23:18:35.182Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-09T23:18:35.185Z"
   }
  ],
- "maj": "2026-11-09T13:14:04.905Z",
+ "maj": "2026-11-09T23:18:48.072Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1573,6 +1573,95 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec/LePouls_2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1_kh2s_tn69eFb3cm-m63_WHDhHHcchG7",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/12"
+  },
+  {
+   "id": "2026-11-09-jour-ecole-valaisanne-une-loi-de-1962-a-remplacer",
+   "titre": "École valaisanne : une loi de 1962 à remplacer",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Corrections appliquées : horaire continu reformulé au conditionnel, statement au présent supprimé, récap sans résultat acquis, formation « après l'école obligatoire » avec photo du collège, avis « importantes », sources 24 heures et La Liberté ajoutées, « enfin » supprimé, « par an » absent. Reste la demande d'équilibre pour/contre : la voix dit toujours « l'UDC et NEO » sans préciser « sous ses deux formes », et l'affichage « Contre » apparaît 2 segments après « Pour » (seg 45 contre seg 43).",
+     "correction_demandee": "Facultatif : dire « L'UDC, sous ses deux formes, et NEO sont contre », et faire apparaître les deux colonnes au même moment si le moteur le permet."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "Le contexte « directions d'école » n'est pas répété devant « Côté pour » et « Côté contre », alors que « Seule l'UDC du Haut-Valais a refusé de débattre » reste à quelques phrases. Le lien est porté par « Mais un point divise » et le kicker de la scène versus, donc le risque de confusion est faible.",
+     "correction_demandee": "Facultatif : ajouter « Sur les directions d'école, côté pour : le PS et le PLR. »"
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "La photo « school classroom empty » pour le harcèlement scolaire est un peu générique et peut suggérer un lieu vide plutôt qu'une question de climat scolaire. Ce n'est pas un défaut de droits ni de neutralité.",
+     "correction_demandee": "Facultatif : choisir une photo de couloir ou de cour d'école plus neutre."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "Le versus n'a pas le même traitement graphique pour les deux camps : la colonne « Pour » (PS, PLR) s'affiche dès 0,1 s et reste seule plus de 2 s, alors que « Contre » n'apparaît qu'à 2,64 s. Sur l'image prélevée, « Contre » n'affiche que « UDC » alors que « NEO » est attendu dans la liste.",
+     "correction_demandee": "Faire apparaître les deux colonnes au même instant (ou révéler « Pour » et « Contre » ensemble) et s'assurer que « NEO » est visible dans la colonne Contre avant la fin de la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Pendant le bigFigure « 64 ans d'âge » (12,94 à 17,12 s), aucun sous-titre n'est visible sur les images prélevées. Il peut s'agir d'un trou de plus d'une seconde entre deux sous-titres.",
+     "correction_demandee": "Vérifier dans les sous-titres qu'aucun silence visuel ou sonore dépasse 1 seconde ; ajouter un sous-titre si nécessaire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 12,
+     "constat": "La frise « La suite au Grand Conseil » ne montre que deux items (Lundi, Mardi) sur les images prélevées ; le troisième (Vendredi, Vote final) n'apparaît pas encore et le texte « Le vote final » n'est qu'un sous-titre en fondu.",
+     "correction_demandee": "Vérifier que les trois items sont bien visibles une fois affichés (à 3,54 s pour le troisième) et que la frise n'est pas vide pendant une longue durée."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "Sur la première image de la scène photo d'ouverture, le titre « UNE LOI DE 1962 » est coupé à mi-hauteur (animation de révélation en cours). Ce n'est acceptable que si l'animation est fluide et que le texte n'est pas figé ainsi.",
+     "correction_demandee": "Vérifier que la révélation du titre se termine proprement et que le texte n'est jamais visible coupé sur une image fixe."
+    }
+   ],
+   "description_tiktok": "Une loi de 1962 pour l'école valaisanne : le Grand Conseil la revoit cette semaine, vote final prévu vendredi.\nSources : Canal9, Keystone-ATS, 24 heures, La Liberté, Rhône FM, Le Nouvelliste\n#Valais #GrandConseil #École #Politique",
+   "sources": [
+    {
+     "media": "Canal9",
+     "titre": "Grand Conseil: bientôt une loi sur l'école pour remplacer celle de 1962",
+     "url": "https://canal9.ch/fr/grand-conseil-bientot-une-loi-sur-lecole-pour-remplacer-celle-de-1962/"
+    },
+    {
+     "media": "Keystone-ATS (RTN)",
+     "titre": "Loi sur l'école valaisanne: place au débat en seconde lecture",
+     "url": "https://www.rtn.ch/rtn/Actualite/Suisse/20261109-Loi-sur-l-ecole-valaisanne-place-au-debat-en-seconde-lecture.html"
+    },
+    {
+     "media": "Rhône FM",
+     "titre": "Loi sur l'école valaisanne : place au débat en seconde lecture",
+     "url": "https://www.rhonefm.ch/valais/loi-sur-l-ecole-valaisanne--place-au-debat-en-seconde-lecture-1851621"
+    },
+    {
+     "media": "La Liberté",
+     "titre": "Loi sur l'école valaisanne: place au débat en seconde lecture",
+     "url": "https://www.laliberte.ch/articles/suisse/politique/loi-sur-lecole-valaisanne-place-au-debat-en-seconde-lecture-1482176"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Valais : trois lois pour moderniser l'école dès 2026",
+     "url": "https://www.24heures.ch/valais-trois-lois-pour-moderniser-lecole-des-2026-340050445554"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Grand Conseil valaisan en direct",
+     "url": "https://www.lenouvelliste.ch/valais/grand-conseil-valaisan-en-direct-3-lois-scolaires-sous-la-loupe-1520964"
+    }
+   ],
+   "mp4": "out/loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl/2026-11-09-jour-ecole-valaisanne-une-loi-de-1962-a-remplacer.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.8143,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-09-jour-ecole-valaisanne-une-loi-de-1962-a-remplacer/LePouls_2026-11-09-jour-ecole-valaisanne-une-loi-de-1962-a-remplacer.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1_kh2s_tn69eFb3cm-m63_WHDhHHcchG7",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/13"
   }
  ]
 }

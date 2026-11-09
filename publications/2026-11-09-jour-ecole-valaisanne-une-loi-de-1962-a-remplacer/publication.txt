@@ -1,0 +1,31 @@
+LE POULS
+École valaisanne : une loi de 1962 à remplacer
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Une loi de 1962 pour l'école valaisanne : le Grand Conseil la revoit cette semaine, vote final prévu vendredi.
+Sources : Canal9, Keystone-ATS, 24 heures, La Liberté, Rhône FM, Le Nouvelliste
+#Valais #GrandConseil #École #Politique
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Canal9 : Grand Conseil: bientôt une loi sur l'école pour remplacer celle de 1962 (https://canal9.ch/fr/grand-conseil-bientot-une-loi-sur-lecole-pour-remplacer-celle-de-1962/)
+- Keystone-ATS (RTN) : Loi sur l'école valaisanne: place au débat en seconde lecture (https://www.rtn.ch/rtn/Actualite/Suisse/20261109-Loi-sur-l-ecole-valaisanne-place-au-debat-en-seconde-lecture.html)
+- Rhône FM : Loi sur l'école valaisanne : place au débat en seconde lecture (https://www.rhonefm.ch/valais/loi-sur-l-ecole-valaisanne--place-au-debat-en-seconde-lecture-1851621)
+- La Liberté : Loi sur l'école valaisanne: place au débat en seconde lecture (https://www.laliberte.ch/articles/suisse/politique/loi-sur-lecole-valaisanne-place-au-debat-en-seconde-lecture-1482176)
+- 24 heures : Valais : trois lois pour moderniser l'école dès 2026 (https://www.24heures.ch/valais-trois-lois-pour-moderniser-lecole-des-2026-340050445554)
+- Le Nouvelliste : Grand Conseil valaisan en direct (https://www.lenouvelliste.ch/valais/grand-conseil-valaisan-en-direct-3-lois-scolaires-sous-la-loupe-1520964)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 9) : Corrections appliquées : horaire continu reformulé au conditionnel, statement au présent supprimé, récap sans résultat acquis, formation « après l'école obligatoire » avec photo du collège, avis « importantes », sources 24 heures et La Liberté ajoutées, « enfin » supprimé, « par an » absent. Reste la demande d'équilibre pour/contre : la voix dit toujours « l'UDC et NEO » sans préciser « sous ses deux formes », et l'affichage « Contre » apparaît 2 segments après « Pour » (seg 45 contre seg 43).
+- mineur (scène 4) : Le contexte « directions d'école » n'est pas répété devant « Côté pour » et « Côté contre », alors que « Seule l'UDC du Haut-Valais a refusé de débattre » reste à quelques phrases. Le lien est porté par « Mais un point divise » et le kicker de la scène versus, donc le risque de confusion est faible.
+- mineur (scène 2) : La photo « school classroom empty » pour le harcèlement scolaire est un peu générique et peut suggérer un lieu vide plutôt qu'une question de climat scolaire. Ce n'est pas un défaut de droits ni de neutralité.
+- important (scène 10) : Le versus n'a pas le même traitement graphique pour les deux camps : la colonne « Pour » (PS, PLR) s'affiche dès 0,1 s et reste seule plus de 2 s, alors que « Contre » n'apparaît qu'à 2,64 s. Sur l'image prélevée, « Contre » n'affiche que « UDC » alors que « NEO » est attendu dans la liste.
+- mineur (scène 2) : Pendant le bigFigure « 64 ans d'âge » (12,94 à 17,12 s), aucun sous-titre n'est visible sur les images prélevées. Il peut s'agir d'un trou de plus d'une seconde entre deux sous-titres.
+- mineur (scène 12) : La frise « La suite au Grand Conseil » ne montre que deux items (Lundi, Mardi) sur les images prélevées ; le troisième (Vendredi, Vote final) n'apparaît pas encore et le texte « Le vote final » n'est qu'un sous-titre en fondu.
+- mineur (scène 0) : Sur la première image de la scène photo d'ouverture, le titre « UNE LOI DE 1962 » est coupé à mi-hauteur (animation de révélation en cours). Ce n'est acceptable que si l'animation est fluide et que le texte n'est pas figé ainsi.

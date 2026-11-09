@@ -190,5 +190,11 @@
   "gravite": "important",
   "type": null,
   "constat": "Faute d'accord : « 1 pistes » s'affiche sous Verbier."
+ },
+ {
+  "date": "mardi, 10 novembre 2026",
+  "gravite": "important",
+  "type": "versus",
+  "constat": "Le versus n'a pas le même traitement graphique pour les deux camps : la colonne « Pour » (PS, PLR) s'affiche dès 0,1 s et reste seule plus de 2 s, alors que « Contre » n'apparaît qu'à 2,64 s. Sur l'image prélevée, « Contre » n'affiche que « UDC » alors que « NEO » est attendu dans la liste."
  }
 ]
