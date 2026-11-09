@@ -10,131 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Nicolas.",
-   "t": "2026-11-06T11:35:33.180Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-06T11:36:23.404Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-06T11:38:17.796Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Visuels à corriger : texte coupé sur la photo AVA et sur l'illustration des services, tag VALAIS qui chevauche le logo AVA, crédit IA à reformuler en « Image générée avec l'IA », et fin de l'outro à vérifier côté voix.",
-   "t": "2026-11-06T11:38:45.351Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.73 $ (Claude + ElevenLabs).",
-   "t": "2026-11-06T11:38:46.644Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-06T11:38:46.646Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 68463 crédits restants ce mois-ci.",
-   "t": "2026-11-06T16:10:49.294Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du soir, je fais le tour des sources.",
-   "t": "2026-11-06T16:10:49.297Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "263 articles lus, je regroupe par sujet.",
-   "t": "2026-11-06T16:10:56.755Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Chômage en Valais : légère hausse en octobre ». Chiffres officiels du canton sur l'emploi, qui touchent directement les Valaisans, avec une hausse légère à expliquer par un graphique simple.",
-   "t": "2026-11-06T16:11:45.282Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « AI : cotisations salariales en hausse de 0,2 point ? ». Une hausse de 0,2 point sur la fiche de salaire, et l'AI qui manquera d'argent en 2031 : un enjeu concret à expliquer avec des chiffres.",
-   "t": "2026-11-06T16:11:45.284Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Col du Lein et Grand-Saint-Bernard : fermetures pour l'hiver ». Deux cols fermés aux voitures jusqu'au printemps 2027 : une info utile pour tous ceux qui montent en station ou traversent le canton.",
-   "t": "2026-11-06T16:11:45.285Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Canicule 2026 : près de 1260 décès en Suisse ». Une estimation de Swiss TPH comparée à 2003 : un chiffre marquant, avec une comparaison graphique claire.",
-   "t": "2026-11-06T16:11:45.288Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Ski : les premières descentes dès ce week-end ». Information pratique pour le week-end, à relier à la carte des domaines ouverts ; vérifier les pistes annoncées auprès des stations avant publication.",
-   "t": "2026-11-06T16:11:45.289Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 68463 crédits restants ce mois-ci.",
-   "t": "2026-11-06T16:13:29.380Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Sujet choisi par la rédaction : « Col du Lein et Grand-Saint-Bernard : fermetures pour l'hiver ». Je transmets au Scénariste.",
-   "t": "2026-11-06T16:13:29.381Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du 24 heures.",
-   "t": "2026-11-06T16:13:29.384Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T16:14:43.077Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Texte globalement exact et neutre. Les dates (jeudi 5 novembre à 8 h pour le Grand-Saint-Bernard, vendredi 6 novembre pour le Lein), le « selon la Commune » et le 85'000 sont corrects. Je me suis aussi appuyé sur saxon.ch pour le Lein. Cinq points à reprendre. 1) Le tunnel « ouvert toute l'année » n'est pas vérifié pour cet hiver : source officielle ou nuance (« en principe »). 2) Carte du Lein : enlève Sembrancher, qui n'est pas dans les sources de la fermeture, ou ssource-le, et corrige « Valais central ». 3) Remplace « Super Saint-Bernard » par une formule claire, par exemple « au-dessus de Bourg-Saint-Pierre ». 4) Ajoute aux `faits` l'information sur les usagers des mayens (24 heures). 5) Précise la frise : la réouverture au printemps 2027 concerne le Lein. Ajoute la Commune de Saxon aux sources.",
-   "t": "2026-11-06T16:15:22.351Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-06T16:15:22.353Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-06T16:16:53.715Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Toutes les corrections demandées ont été faites : nuance du tunnel (voix, récap, légende), carte du Lein limitée à Saxon, « Super Saint-Bernard » et l'heure retirés de la voix, fait sur les usagers du Lein ajouté, frise sans date précise pour le Grand-Saint-Bernard, sources de l'outro alignées sur les faits. Reste à vérifier les crédits photo en phase image.",
-   "t": "2026-11-06T16:17:01.351Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-06T16:17:01.353Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 5 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-06T16:17:28.416Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Ludovic Péron / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-06T16:17:29.525Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : Olivier Bruchez from Lausanne, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
    "t": "2026-11-06T16:17:30.146Z"
   },
@@ -407,9 +282,134 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-08T13:14:20.071Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 66152 crédits restants ce mois-ci.",
+   "t": "2026-11-09T13:05:05.771Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-09T13:05:05.806Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "266 articles lus, je regroupe par sujet.",
+   "t": "2026-11-09T13:05:14.396Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Zermatt : chalet trop peu loué, amende de 90 000 francs ». Un cas concret et chiffré (90 000 francs) qui parle de logement et de résidences secondaires, avec trois médias qui concordent.",
+   "t": "2026-11-09T13:05:37.346Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Le Nouvelliste.",
+   "t": "2026-11-09T13:05:37.352Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-09T13:07:10.197Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les faits correspondent aux sources : 90’000 francs avec sursis, 10’000 francs d'amende ferme et frais, 2016, 2017, sursis de 2 ans, commune de Zermatt à l'origine de la plainte. Trois points à corriger. 1) L'accroche généralise : seul un chalet enregistré comme logement touristique doit être loué, et les 90’000 francs sont avec sursis, pas à payer. Précise-le dès les premières secondes, par exemple « Ton chalet est classé logement touristique ? Alors tu dois le louer… il risque 90’000 francs de peine, avec sursis ». 2) Corrige « Un propriétaire de Zermatt » en « propriétaire d'un chalet à Zermatt », et mentionne que l'achat s'est fait via une société. 3) Raccourcis les deux statements (scènes 4 et 8, plus de 6 s) et fais apparaître plus tôt la deuxième barre de la scène 7, pour ne pas avoir un écran vide pendant environ 10 s.",
+   "t": "2026-11-09T13:07:55.836Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-09T13:07:55.839Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-09T13:09:25.894Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les sept corrections demandées sont faites : condition « classé logement touristique » dès l'accroche, peine « avec sursis » dite et affichée, propriétaire « suisse » et achat « via une société », statements remplacés par frise et photos (plus de 6 s), barre des 10’000 francs déplacée sur un bigFigure, légende de photo raccourcie. Pas de point bloquant ; on passe à la phase image.",
+   "t": "2026-11-09T13:09:37.453Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-09T13:09:37.456Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 8 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-09T13:10:21.715Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Deralpinbergsteiger / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-09T13:10:22.569Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Mikhail Hanief / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-09T13:10:25.044Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Deralpinbergsteiger / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-09T13:10:25.526Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-09T13:10:25.824Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-09T13:10:25.828Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-09T13:11:38.975Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Carte : retire le libellé « ny » coupé au bord et le sous-titre « Zermatt » qui répète le titre. Barres : mets « 3 semaines » sur une seule ligne, comme « 52 semaines ». Le reste est propre, à lisser au passage (apostrophes, espace du logo final).",
+   "t": "2026-11-09T13:12:07.502Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
+   "t": "2026-11-09T13:12:07.507Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "6 correction(s) appliquée(s), je relance le montage.",
+   "t": "2026-11-09T13:12:23.147Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-09T13:13:25.448Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Visuel validé : charte et sous-titres conformes, crédits photo présents, aucune coupure de texte en régime établi. Deux points mineurs facultatifs (kicker redondant scène 4, animation du titre scène 1).",
+   "t": "2026-11-09T13:13:43.018Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.77 $ (Claude + ElevenLabs).",
+   "t": "2026-11-09T13:13:44.258Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-09T13:13:44.262Z"
   }
  ],
- "maj": "2026-11-08T13:14:34.929Z",
+ "maj": "2026-11-09T13:14:04.905Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1506,6 +1506,73 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence/LePouls_2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1kvyk9sKA05_Gk9p6g9F2SF_b-puDlkUd",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/11"
+  },
+  {
+   "id": "2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec",
+   "titre": "Zermatt : un chalet trop peu loué, 90’000 francs avec sursis",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "L'écran de la scène 1 affiche « 90’000 francs de peine, avec sursis » et la voix le dit aussi. L'information est donc correcte, mais la phrase d'écran est longue.",
+     "correction_demandee": "Vérifier à l'image que le titre et le texte restent lisibles dans la zone sûre, sans débordement."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 5,
+     "constat": "La note « Certaines années, jamais » reprend la voix et est fidèle à la source. Le libellé de la barre « Loué, au maximum » est correct.",
+     "correction_demandee": "Contrôler à l'image que la note n'est pas coupée ni masquée par les sous-titres."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 10,
+     "constat": "Le titre « Pas une maison *privée* » et la voix « ne devient pas une maison de vacances privée » sont cohérents. Photo d'illustration avec crédit automatique.",
+     "correction_demandee": "Aucune correction de texte. Vérifier seulement le rendu visuel à la phase image."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "Le kicker « Un chalet presque toujours vide » répète presque mot pour mot le titre « Chalet presque vide ».",
+     "correction_demandee": "Facultatif : reformuler le kicker pour apporter une information nouvelle, par exemple « Un logement loué très peu souvent »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "Sur la première image de la scène photo, le titre « TOURISTIQUE » est encore coupé par une ligne pendant son apparition. Il s'agit probablement d'une animation d'entrée, mais elle se voit sur une frame.",
+     "correction_demandee": "Vérifier que l'animation est terminée avant la première seconde lisible ; sinon, aucune action requise."
+    }
+   ],
+   "description_tiktok": "Un chalet de luxe classé logement touristique à Zermatt, loué 2 à 3 semaines par an au maximum : son propriétaire est condamné, 90’000 francs avec sursis et 10’000 francs à payer. On t'explique.\nSources : Le Nouvelliste, 24 heures, Blick, Le Matin\n#Valais #Zermatt #Chalet #ResidencesSecondaires #Logement",
+   "sources": [
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Zermatt: un propriétaire sanctionné pour avoir laissé son chalet presque inoccupé",
+     "url": "https://www.lenouvelliste.ch/valais/haut-valais/zermatt/zermatt-un-proprietaire-sanctionne-pour-avoir-laisse-son-chalet-presque-inoccupe-1521006"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Son chalet de luxe trop peu loué à Zermatt, il écope de 90’000 francs d’amende",
+     "url": "https://www.24heures.ch/zermatt-il-est-condamne-pour-avoir-trop-peu-loue-son-chalet-111454560200"
+    },
+    {
+     "media": "Blick",
+     "titre": "Forte amende: chalet de luxe à Zermatt trop rarement loué",
+     "url": "https://www.blick.ch/fr/suisse/forte-amende-chalet-de-luxe-a-zermatt-trop-rarement-loue/rgl64c4"
+    },
+    {
+     "media": "Le Matin",
+     "titre": "Zermatt: Propriétaire de chalet condamné à 90'000 francs pour non-location",
+     "url": "https://www.lematin.ch/story/zermatt-amende-salee-pour-son-chalet-de-luxe-presque-toujours-vide-103664480"
+    }
+   ],
+   "mp4": "out/zermatt-chalet-trop-peu-loue-amende-de-90-000-fran/2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.7638,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec/LePouls_2026-11-09-jour-zermatt-un-chalet-trop-peu-loue-90-000-francs-avec.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1_kh2s_tn69eFb3cm-m63_WHDhHHcchG7",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/12"
   }
  ]
 }

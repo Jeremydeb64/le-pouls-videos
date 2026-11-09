@@ -759,6 +759,136 @@
    "unite": "tokens",
    "usd": 0.003,
    "execution": "édition jour 2026-11-08"
+  },
+  {
+   "date": "2026-11-09T13:05:37.344Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 94424,
+   "unite": "tokens",
+   "usd": 0.0111,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:07:10.194Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 60806,
+   "unite": "tokens",
+   "usd": 0.237,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:07:10.194Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:07:55.835Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 41438,
+   "unite": "tokens",
+   "usd": 0.1341,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:07:55.835Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:09:25.892Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 63696,
+   "unite": "tokens",
+   "usd": 0.2436,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:09:25.892Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:09:37.453Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 15107,
+   "unite": "tokens",
+   "usd": 0.0026,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:10:17.746Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 624,
+   "unite": "crédits",
+   "usd": 0.0499,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:10:21.707Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 74,
+   "unite": "secondes",
+   "usd": 0.0045,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:12:07.501Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21633,
+   "unite": "tokens",
+   "usd": 0.0041,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:12:23.146Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 13895,
+   "unite": "tokens",
+   "usd": 0.045,
+   "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-09T13:13:43.017Z",
+   "contexte": "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 19421,
+   "unite": "tokens",
+   "usd": 0.003,
+   "execution": "édition jour 2026-11-09"
   }
  ],
  "executions": [
@@ -836,6 +966,11 @@
    "date": "2026-11-08T23:56:57.091Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-09T13:13:43.024Z",
+   "etiquette": "édition jour 2026-11-09",
+   "usd": 0.7749
   }
  ],
  "par_jour": {
@@ -862,14 +997,20 @@
    "elevenlabs": 0.0497,
    "higgsfield": 0,
    "total": 0.8699
+  },
+  "2026-11-09": {
+   "anthropic": 0.7205,
+   "elevenlabs": 0.0544,
+   "higgsfield": 0,
+   "total": 0.7749
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 5.4639,
-   "elevenlabs": 0.3899,
+   "anthropic": 6.1844,
+   "elevenlabs": 0.4443,
    "higgsfield": 0,
-   "total": 5.8538
+   "total": 6.6287
   }
  },
  "par_video": {
@@ -879,22 +1020,23 @@
   "2026-11-06-soir-ava-l-intelligence-artificielle-souveraine-du-vala": 0.7306,
   "2026-11-06-soir-col-du-lein-et-grand-saint-bernard-fermetures-pour": 0.754,
   "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905,
-  "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584
+  "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584,
+  "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran": 0.7638
  },
  "soldes": {
-  "date": "2026-11-08T23:56:57.331Z",
+  "date": "2026-11-09T13:13:43.030Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 64838,
+   "credits_utilises": 65497,
    "credits_mois": 131000,
-   "credits_restants": 66162,
+   "credits_restants": 65503,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 9.4761,
+   "credit_estime_restant_usd": 8.7556,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-08T23:56:58.981Z"
+ "maj": "2026-11-09T13:13:44.253Z"
 }

@@ -1,0 +1,27 @@
+LE POULS
+Zermatt : un chalet trop peu loué, 90’000 francs avec sursis
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Un chalet de luxe classé logement touristique à Zermatt, loué 2 à 3 semaines par an au maximum : son propriétaire est condamné, 90’000 francs avec sursis et 10’000 francs à payer. On t'explique.
+Sources : Le Nouvelliste, 24 heures, Blick, Le Matin
+#Valais #Zermatt #Chalet #ResidencesSecondaires #Logement
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Le Nouvelliste : Zermatt: un propriétaire sanctionné pour avoir laissé son chalet presque inoccupé (https://www.lenouvelliste.ch/valais/haut-valais/zermatt/zermatt-un-proprietaire-sanctionne-pour-avoir-laisse-son-chalet-presque-inoccupe-1521006)
+- 24 heures : Son chalet de luxe trop peu loué à Zermatt, il écope de 90’000 francs d’amende (https://www.24heures.ch/zermatt-il-est-condamne-pour-avoir-trop-peu-loue-son-chalet-111454560200)
+- Blick : Forte amende: chalet de luxe à Zermatt trop rarement loué (https://www.blick.ch/fr/suisse/forte-amende-chalet-de-luxe-a-zermatt-trop-rarement-loue/rgl64c4)
+- Le Matin : Zermatt: Propriétaire de chalet condamné à 90'000 francs pour non-location (https://www.lematin.ch/story/zermatt-amende-salee-pour-son-chalet-de-luxe-presque-toujours-vide-103664480)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 1) : L'écran de la scène 1 affiche « 90’000 francs de peine, avec sursis » et la voix le dit aussi. L'information est donc correcte, mais la phrase d'écran est longue.
+- mineur (scène 5) : La note « Certaines années, jamais » reprend la voix et est fidèle à la source. Le libellé de la barre « Loué, au maximum » est correct.
+- mineur (scène 10) : Le titre « Pas une maison *privée* » et la voix « ne devient pas une maison de vacances privée » sont cohérents. Photo d'illustration avec crédit automatique.
+- mineur (scène 4) : Le kicker « Un chalet presque toujours vide » répète presque mot pour mot le titre « Chalet presque vide ».
+- mineur (scène 1) : Sur la première image de la scène photo, le titre « TOURISTIQUE » est encore coupé par une ligne pendant son apparition. Il s'agit probablement d'une animation d'entrée, mais elle se voit sur une frame.
