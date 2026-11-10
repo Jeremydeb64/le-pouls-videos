@@ -1096,6 +1096,11 @@
    "date": "2026-11-09T23:18:33.531Z",
    "etiquette": "édition jour 2026-11-09",
    "usd": 0.8258
+  },
+  {
+   "date": "2026-11-10T02:52:29.848Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -1156,7 +1161,7 @@
   "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143
  },
  "soldes": {
-  "date": "2026-11-09T23:18:33.539Z",
+  "date": "2026-11-10T02:52:29.942Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 66161,
@@ -1170,5 +1175,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-09T23:18:35.177Z"
+ "maj": "2026-11-10T02:52:31.802Z"
 }
