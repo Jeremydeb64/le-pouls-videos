@@ -219,7 +219,7 @@ async function controlerVisuel(episode, dossier) {
   redaction.dit("controleur", "Je regarde les images clés de la vidéo.");
   const images = await imagesCles(episode, path.join(dossier, "cles"));
   const contenu = [
-    { type: "text", text: `PHASE VISUEL. Les faits ont déjà été validés. Contrôle uniquement la charte (point 4) et le son (point 5, d'après les sous-titres et la durée).\nÉpisode :\n${JSON.stringify({ duration: episode.duration, scenes: episode.scenes, captions: episode.captions.length })}` },
+    { type: "text", text: `${HISTOIRE ? "MODE HISTOIRE IA : légende ou sujet de fond entièrement illustré par des images générées par IA, plein écran, légendées « Image générée avec l'IA ». Le style des images sort volontairement de la charte : ce n'est pas un défaut. Vérifie seulement la lisibilité des textes, les débordements et que rien de choquant n'apparaît.\n" : ""}PHASE VISUEL. Les faits ont déjà été validés. Contrôle uniquement la charte (point 4) et le son (point 5, d'après les sous-titres et la durée).\nÉpisode :\n${JSON.stringify({ duration: episode.duration, scenes: episode.scenes, captions: episode.captions.length })}` },
     ...images.map((f) => ({ type: "image", source: { type: "base64", media_type: "image/jpeg", data: fs.readFileSync(f).toString("base64") } })),
   ];
   const verdict = await demanderJSON({ systeme: consigne("controleur") + "\n\nRéponds UNIQUEMENT par le bloc ```json``` du verdict. Tout texte qui déborde, se chevauche ou sort de l'écran est BLOQUANT.", contenu, modele: MODELE_LEGER });
@@ -303,7 +303,10 @@ process.on("unhandledRejection", (e) => {
 // Sujet imposé par la rédaction (lancer-edition.json → "sujet") : pas de veille, le Scénariste complète
 const SUJET_IMPOSE = process.env.SUJET ? JSON.parse(process.env.SUJET) : null;
 if (SUJET_IMPOSE) redaction.dit("veilleur", `Sujet choisi par la rédaction : « ${SUJET_IMPOSE.titre_travail} ». Je transmets au Scénariste.`);
-const sujets = SUJET_IMPOSE ? [SUJET_IMPOSE] : await veille();
+// Mode HISTOIRE IA : script et visuels préparés en conversation (Claude + Higgsfield), le pipeline fait voix, montage, contrôle
+const HISTOIRE = process.env.HISTOIRE ? JSON.parse(fs.readFileSync(process.env.HISTOIRE, "utf8")) : null;
+if (HISTOIRE) redaction.dit("veilleur", `HISTOIRE IA : « ${HISTOIRE.titre} ». Script et images déjà prêts, on passe au montage.`);
+const sujets = HISTOIRE ? [{ titre_travail: HISTOIRE.titre }] : SUJET_IMPOSE ? [SUJET_IMPOSE] : await veille();
 // Mode « veille seule » : proposer des sujets sans produire de vidéo
 if (process.env.VEILLE_SEULE) {
   await redaction.fin();
@@ -316,8 +319,21 @@ for (const sujet of sujets) {
   definirContexte(ctx);
   const dossier = path.resolve("out", slug(sujet.titre_travail));
   fs.mkdirSync(dossier, { recursive: true });
-  let script = await ecrire(sujet);
-  let verdictTexte = await controlerTexte(script);
+  if (HISTOIRE) {
+    // Visuels générés par IA fournis par lien : téléchargés dans public/
+    for (const [i, sc] of HISTOIRE.scenes.entries()) {
+      if (!sc.props?.url) continue;
+      const ext = sc.props.video ? "mp4" : (sc.props.url.split("?")[0].match(/\.(png|jpe?g|webp)$/i) || [0, "jpg"])[1];
+      const f = `histoire-${slug(HISTOIRE.titre)}-${i}.${ext}`;
+      const r = await fetch(sc.props.url);
+      if (!r.ok) throw new Error(`Visuel ${i} introuvable (${r.status})`);
+      fs.writeFileSync(path.join("public", f), Buffer.from(await r.arrayBuffer()));
+      sc.props.src = f;
+      delete sc.props.url;
+    }
+  }
+  let script = HISTOIRE || (await ecrire(sujet));
+  let verdictTexte = HISTOIRE ? { decision: "OK", problemes: [] } : await controlerTexte(script);
   // Un seul aller-retour de corrections, et seulement s'il y a au moins une remarque « important » ou « bloquant »
   const aCorriger = (v) => v.decision === "A_CORRIGER" && (v.problemes || []).some((p) => p.gravite !== "mineur");
   for (let tour = 0; tour < 1 && aCorriger(verdictTexte); tour++) {

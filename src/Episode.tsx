@@ -24,6 +24,7 @@ const PICTOS: Record<string, React.ReactNode> = {
   SPORT: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M24 16 h24 v12 a12 12 0 0 1 -24 0 Z" /><path d="M36 40 v10 M26 56 h20" /></g>,
   SOCIÉTÉ: <g fill="none" stroke={C.ink} strokeWidth={5}><circle cx="26" cy="26" r="7" /><circle cx="46" cy="26" r="7" /><path d="M14 54 a12 12 0 0 1 24 0 M34 54 a12 12 0 0 1 24 0" /></g>,
   ENVIRONNEMENT: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M18 52 C18 28 36 16 56 16 C56 38 44 52 18 52 Z" /><path d="M18 52 L40 30" /></g>,
+  LÉGENDE: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round" strokeLinecap="round"><path d="M36 22 C28 16 18 16 12 20 V54 C18 50 28 50 36 56 C44 50 54 50 60 54 V20 C54 16 44 16 36 22 Z" /><path d="M36 22 V56" /></g>,
   VALAIS: <g fill="none" stroke={C.ink} strokeWidth={5} strokeLinejoin="round"><path d="M36 58 C24 44 18 36 18 28 a18 18 0 0 1 36 0 c0 8 -6 16 -18 30 Z" /><circle cx="36" cy="28" r="6" /></g>,
 };
 const normRub = (r?: string) => {

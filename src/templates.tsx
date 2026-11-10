@@ -694,10 +694,12 @@ export const Illustration: React.FC<P<{ src: string; video?: boolean; duree?: nu
       <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(17,26,25,0.35) 0%, rgba(17,26,25,0) 30%, rgba(17,26,25,0) 50%, rgba(17,26,25,0.75) 75%, rgba(17,26,25,0.9) 100%)" }} />
       {(kicker || title) && (
         <Body top={980}>
-          {kicker && <Kicker>{kicker}</Kicker>}
+          {kicker && <Kicker center>{kicker}</Kicker>}
           {title && (
             <Rise delay={8}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: title.length <= 18 ? 96 : title.length <= 32 ? 74 : 60, lineHeight: 1.02, color: C.paper, letterSpacing: TRACK_TITRE, textTransform: "uppercase", maxHeight: 220, overflow: "hidden" }}>{title}</div>
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: sansEtoiles(title).length <= 18 ? 100 : sansEtoiles(title).length <= 32 ? 76 : 60, lineHeight: 1.04, color: C.paper, textTransform: "uppercase", textAlign: "center", textShadow: "0 4px 18px rgba(0,0,0,0.6)", maxHeight: 230, overflow: "hidden" }}>
+                <Mots texte={title} />
+              </div>
             </Rise>
           )}
         </Body>

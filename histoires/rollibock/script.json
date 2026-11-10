@@ -1,0 +1,464 @@
+{
+ "titre": "Le Rollibock, gardien du glacier",
+ "rubrique": "LÉGENDE",
+ "presentateur": "duo",
+ "sensible": false,
+ "ambiance": "sobre",
+ "dialogue": [
+  {
+   "qui": "lucie",
+   "texte": "[whispers] Arthur, tu entends ce bruit ? Comme de la glace qui s'entrechoque."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[laughs softly] Arrête, Lucie. C'est juste le vent."
+  },
+  {
+   "qui": "lucie",
+   "texte": "[mischievously] C'est ce que disait Josi, aussi. [warm] Salut, c'est Lucie."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Et Arthur. Ce soir, on vous raconte une légende du Valais : le Rollibock."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Haut-Valais, il y a très longtemps. Josi est le meilleur chasseur de la vallée. Et le plus gourmand."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Il tire sur plus de chamois qu'il ne peut en porter. Juste pour le plaisir."
+  },
+  {
+   "qui": "lucie",
+   "texte": "La vieille Anna le prévient : là-haut, sous le glacier d'Aletsch, quelqu'un te regarde."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[serious] Le Rollibock. Un bouc géant, des cornes immenses, des yeux de feu."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Et à la place des poils, des glaçons qui s'entrechoquent quand il court."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Josi rigole. [smiling] Bon, moi aussi, j'aurais rigolé."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Un soir, il traverse le lac du glacier en barque. Le vent tombe. [whispers] Et il entend ce bruit."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[excited] La glace se fend. Le Rollibock surgit, crie ses fautes à toute la montagne, et l'engloutit avec sa barque."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Depuis, quand le lac débordait sur la vallée, on disait : le Rollibock est fâché. Et on courait se réfugier à la chapelle."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[smiling] Aujourd'hui, il ne fait plus peur. Dans la région d'Aletsch, il a même son club et ses fêtes."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Josi et Anna, on les a inventés. Mais le message de la légende, lui, n'a pas changé : la montagne, ça se respecte."
+  },
+  {
+   "qui": "arthur",
+   "texte": "C'était Arthur."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Et Lucie, pour Le Pouls. [mischievously] Et ce bruit, alors ?"
+  },
+  {
+   "qui": "arthur",
+   "texte": "[nervous] C'est le vent."
+  }
+ ],
+ "segments": [
+  {
+   "dit": "Arthur, tu entends ce bruit ?",
+   "affiche": "Arthur, tu entends ce bruit ?"
+  },
+  {
+   "dit": "Comme de la",
+   "affiche": "Comme de la"
+  },
+  {
+   "dit": "glace qui s'entrechoque.",
+   "affiche": "glace qui s'entrechoque."
+  },
+  {
+   "dit": "Arrête, Lucie.",
+   "affiche": "Arrête, Lucie."
+  },
+  {
+   "dit": "C'est juste le vent.",
+   "affiche": "C'est juste le vent."
+  },
+  {
+   "dit": "C'est ce que",
+   "affiche": "C'est ce que"
+  },
+  {
+   "dit": "disait Josi, aussi.",
+   "affiche": "disait Josi, aussi."
+  },
+  {
+   "dit": "Salut, c'est Lucie.",
+   "affiche": "Salut, c'est Lucie."
+  },
+  {
+   "dit": "Et Arthur.",
+   "affiche": "Et Arthur."
+  },
+  {
+   "dit": "Ce soir, on vous raconte",
+   "affiche": "Ce soir, on vous raconte"
+  },
+  {
+   "dit": "une légende du Valais :",
+   "affiche": "une légende du Valais :"
+  },
+  {
+   "dit": "le Rollibock.",
+   "affiche": "le Rollibock."
+  },
+  {
+   "dit": "Haut-Valais, il y",
+   "affiche": "Haut-Valais, il y"
+  },
+  {
+   "dit": "a très longtemps.",
+   "affiche": "a très longtemps."
+  },
+  {
+   "dit": "Josi est le meilleur",
+   "affiche": "Josi est le meilleur"
+  },
+  {
+   "dit": "chasseur de la vallée.",
+   "affiche": "chasseur de la vallée."
+  },
+  {
+   "dit": "Et le plus gourmand.",
+   "affiche": "Et le plus gourmand."
+  },
+  {
+   "dit": "Il tire sur plus",
+   "affiche": "Il tire sur plus"
+  },
+  {
+   "dit": "de chamois qu'il ne",
+   "affiche": "de chamois qu'il ne"
+  },
+  {
+   "dit": "peut en porter.",
+   "affiche": "peut en porter."
+  },
+  {
+   "dit": "Juste pour le plaisir.",
+   "affiche": "Juste pour le plaisir."
+  },
+  {
+   "dit": "La vieille Anna le prévient :",
+   "affiche": "La vieille Anna le prévient :"
+  },
+  {
+   "dit": "là-haut, sous le glacier",
+   "affiche": "là-haut, sous le glacier"
+  },
+  {
+   "dit": "d'Aletsch, quelqu'un te regarde.",
+   "affiche": "d'Aletsch, quelqu'un te regarde."
+  },
+  {
+   "dit": "Le Rollibock.",
+   "affiche": "Le Rollibock."
+  },
+  {
+   "dit": "Un bouc géant, des cornes",
+   "affiche": "Un bouc géant, des cornes"
+  },
+  {
+   "dit": "immenses, des yeux de feu.",
+   "affiche": "immenses, des yeux de feu."
+  },
+  {
+   "dit": "Et à la place des",
+   "affiche": "Et à la place des"
+  },
+  {
+   "dit": "poils, des glaçons qui s'entrechoquent",
+   "affiche": "poils, des glaçons qui s'entrechoquent"
+  },
+  {
+   "dit": "quand il court.",
+   "affiche": "quand il court."
+  },
+  {
+   "dit": "Josi rigole.",
+   "affiche": "Josi rigole."
+  },
+  {
+   "dit": "Bon, moi aussi, j'aurais rigolé.",
+   "affiche": "Bon, moi aussi, j'aurais rigolé."
+  },
+  {
+   "dit": "Un soir, il traverse le",
+   "affiche": "Un soir, il traverse le"
+  },
+  {
+   "dit": "lac du glacier en barque.",
+   "affiche": "lac du glacier en barque."
+  },
+  {
+   "dit": "Le vent tombe.",
+   "affiche": "Le vent tombe."
+  },
+  {
+   "dit": "Et il entend ce bruit.",
+   "affiche": "Et il entend ce bruit."
+  },
+  {
+   "dit": "La glace se fend.",
+   "affiche": "La glace se fend."
+  },
+  {
+   "dit": "Le Rollibock surgit, crie",
+   "affiche": "Le Rollibock surgit, crie"
+  },
+  {
+   "dit": "ses fautes à toute",
+   "affiche": "ses fautes à toute"
+  },
+  {
+   "dit": "la montagne, et l'engloutit",
+   "affiche": "la montagne, et l'engloutit"
+  },
+  {
+   "dit": "avec sa barque.",
+   "affiche": "avec sa barque."
+  },
+  {
+   "dit": "Depuis, quand le lac débordait",
+   "affiche": "Depuis, quand le lac débordait"
+  },
+  {
+   "dit": "sur la vallée, on disait :",
+   "affiche": "sur la vallée, on disait :"
+  },
+  {
+   "dit": "le Rollibock est fâché.",
+   "affiche": "le Rollibock est fâché."
+  },
+  {
+   "dit": "Et on courait se",
+   "affiche": "Et on courait se"
+  },
+  {
+   "dit": "réfugier à la chapelle.",
+   "affiche": "réfugier à la chapelle."
+  },
+  {
+   "dit": "Aujourd'hui, il ne",
+   "affiche": "Aujourd'hui, il ne"
+  },
+  {
+   "dit": "fait plus peur.",
+   "affiche": "fait plus peur."
+  },
+  {
+   "dit": "Dans la région d'Aletsch,",
+   "affiche": "Dans la région d'Aletsch,"
+  },
+  {
+   "dit": "il a même son",
+   "affiche": "il a même son"
+  },
+  {
+   "dit": "club et ses fêtes.",
+   "affiche": "club et ses fêtes."
+  },
+  {
+   "dit": "Josi et Anna, on",
+   "affiche": "Josi et Anna, on"
+  },
+  {
+   "dit": "les a inventés.",
+   "affiche": "les a inventés."
+  },
+  {
+   "dit": "Mais le message de la",
+   "affiche": "Mais le message de la"
+  },
+  {
+   "dit": "légende, lui, n'a pas changé :",
+   "affiche": "légende, lui, n'a pas changé :"
+  },
+  {
+   "dit": "la montagne, ça se respecte.",
+   "affiche": "la montagne, ça se respecte."
+  },
+  {
+   "dit": "C'était Arthur.",
+   "affiche": "C'était Arthur."
+  },
+  {
+   "dit": "Et Lucie, pour Le Pouls.",
+   "affiche": "Et Lucie, pour Le Pouls."
+  },
+  {
+   "dit": "Et ce bruit, alors ?",
+   "affiche": "Et ce bruit, alors ?"
+  },
+  {
+   "dit": "C'est le vent.",
+   "affiche": "C'est le vent."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162536_91841390-e22d-41ea-a664-caa8b0fa1473.png"
+   },
+   "from": {
+    "seg": 0
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "kicker": "Légende du Valais",
+    "title": "Le *Rollibock*",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162535_6afad99d-748b-4bf0-8d11-f0f08822dd66.png"
+   },
+   "from": {
+    "seg": 5
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "kicker": "Il était une fois",
+    "title": "*Josi* le chasseur",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162532_e5711749-73df-49ec-b60e-23814f440c1a.png"
+   },
+   "from": {
+    "seg": 12
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162534_52b8b539-f923-4f2f-a1fb-4f814583b62f.png"
+   },
+   "from": {
+    "seg": 17
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162535_9fe2cdf1-0f05-47b6-98c0-5b3768a44a56.png"
+   },
+   "from": {
+    "seg": 21
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162535_bf47dc0f-0fc4-444a-879c-749788cd2919.png"
+   },
+   "from": {
+    "seg": 24
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162536_b39898e2-f32b-4a84-9256-7a324736ee25.png"
+   },
+   "from": {
+    "seg": 27
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162531_9059e788-9016-4042-8c7a-ca5ace1fa76f.png"
+   },
+   "from": {
+    "seg": 30
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162533_95537ab1-30a0-44b4-8b9a-1c21e941c105.png"
+   },
+   "from": {
+    "seg": 32
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162533_63708415-59c5-42da-8e0f-94a68901f909.png"
+   },
+   "from": {
+    "seg": 36
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162533_9cdcbfce-1ec3-4e30-8c29-c06e97ce58f6.png"
+   },
+   "from": {
+    "seg": 41
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162536_852f30a6-666e-4a5d-bc61-2af410422dd8.png"
+   },
+   "from": {
+    "seg": 46
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_162535_6afad99d-748b-4bf0-8d11-f0f08822dd66.png"
+   },
+   "from": {
+    "seg": 51
+   }
+  },
+  {
+   "type": "outro",
+   "props": {
+    "sources": "Sources : Aletsch Arena, légende du Haut-Valais librement racontée"
+   },
+   "from": {
+    "seg": 56
+   }
+  }
+ ],
+ "faits": [],
+ "sources": [
+  {
+   "media": "Aletsch Arena",
+   "titre": "Tradition : la légende du Rollibock",
+   "url": "https://www.aletscharena.ch/en/planning-booking/experiences/tradition"
+  }
+ ],
+ "description_tiktok": "HISTOIRE IA. La légende du Rollibock, le gardien du glacier d'Aletsch, racontée par Lucie et Arthur. Les personnages de Josi et Anna sont inventés, les images sont générées par IA.\nSources : Aletsch Arena, légende du Haut-Valais\n#Valais #Légende #Aletsch #Rollibock #HistoireIA"
+}
