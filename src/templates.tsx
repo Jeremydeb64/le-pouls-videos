@@ -149,9 +149,14 @@ const CoucheIA: React.FC<{ fond: FondIA; theme: Theme }> = ({ fond, theme }) => 
   const voile = fond.libre ? 0.25 : 1 - (fond.opacite ?? 0.38);
   const bg = th(theme).bg;
   const media = fond.video ? (
-    <Loop durationInFrames={Math.max(1, Math.round((fond.duree || 5) * fps))}>
-      <OffthreadVideo src={staticFile(fond.src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-    </Loop>
+    // Clip plus court que la scène : ralenti léger (jusqu'à 0,6×) pour couvrir la scène sans boucle visible ; sinon boucle
+    (fond.duree || 5) * fps >= durationInFrames * 0.6 ? (
+      <OffthreadVideo src={staticFile(fond.src)} muted playbackRate={Math.min(1, ((fond.duree || 5) * fps - 2) / durationInFrames)} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+    ) : (
+      <Loop durationInFrames={Math.max(1, Math.round((fond.duree || 5) * fps))}>
+        <OffthreadVideo src={staticFile(fond.src)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+      </Loop>
+    )
   ) : (
     <Img src={staticFile(fond.src)} style={{ width: "100%", height: "100%", objectFit: "cover", scale: `${zoom}` }} />
   );

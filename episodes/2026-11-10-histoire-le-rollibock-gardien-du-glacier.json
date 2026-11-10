@@ -359,7 +359,10 @@
   {
    "type": "illustration",
    "props": {
-    "src": "histoire-le-rollibock-gardien-du-glacier-5.png"
+    "src": "histoire-rollibock-5.mp4",
+    "video": true,
+    "duree": 5,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_163735_33e2cb71-aa0b-4d8f-b05f-d5c3fd9ba6a3.mp4"
    },
    "from": 28.6,
    "to": 33.18,
@@ -368,7 +371,10 @@
   {
    "type": "illustration",
    "props": {
-    "src": "histoire-le-rollibock-gardien-du-glacier-6.png"
+    "src": "histoire-rollibock-6.mp4",
+    "video": true,
+    "duree": 5,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_163735_d23f94e7-dc8e-4715-99fb-ff7daea383c9.mp4"
    },
    "from": 33.18,
    "to": 37.2,
@@ -386,7 +392,10 @@
   {
    "type": "illustration",
    "props": {
-    "src": "histoire-le-rollibock-gardien-du-glacier-8.png"
+    "src": "histoire-rollibock-8.mp4",
+    "video": true,
+    "duree": 5,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_163735_4c99d086-b4ec-4426-9def-852c11dd4c68.mp4"
    },
    "from": 39.64,
    "to": 45.06,
@@ -395,7 +404,10 @@
   {
    "type": "illustration",
    "props": {
-    "src": "histoire-le-rollibock-gardien-du-glacier-9.png"
+    "src": "histoire-rollibock-9.mp4",
+    "video": true,
+    "duree": 5,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_163735_0d53cd97-5998-47cb-ba91-7993d9f07278.mp4"
    },
    "from": 45.06,
    "to": 51.1,

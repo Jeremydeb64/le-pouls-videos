@@ -28,6 +28,14 @@ for (const id of ids) {
   if (medias) {
     // Voix et photos d'origine archivées : rendu complet, musique et effets refaits
     sh("tar", "-xzf", path.join(w, medias), "-C", "public");
+    // Visuels remplacés par lien (HISTOIRE IA : image fixe remplacée par un clip animé)
+    for (const sc of ep.scenes) {
+      if (!sc.props?.url) continue;
+      const r = await fetch(sc.props.url);
+      if (!r.ok) throw new Error(`Visuel introuvable (${r.status}) : ${sc.props.url}`);
+      fs.writeFileSync(path.join("public", sc.props.src), Buffer.from(await r.arrayBuffer()));
+      delete sc.props.url;
+    }
     // Photo remplacée (src absent des médias archivés) : nouvelle recherche sur Wikimedia
     for (const [i, s] of ep.scenes.entries()) {
       if ((s.type !== "photo" && s.type !== "photoRonde") || !s.props.recherche || fs.existsSync(path.join("public", s.props.src || "_"))) continue;
