@@ -10,46 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-08T13:09:02.875Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-08T13:10:30.439Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Toutes les corrections demandées ont été faites (« au moins » ajouté, kicker « Révélé ce week-end », « genevois » retiré, photo d'ambulance remplacée par un statement, phrase Reynard complétée, fait LAVI ajouté à faits). Il reste trois remarques mineures sans bloquant, à traiter à l'étape image.",
-   "t": "2026-11-08T13:10:41.700Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-08T13:10:41.702Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 4 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-08T13:11:09.035Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Raph75014 / Wikimedia Commons, CC BY 4.0.",
-   "t": "2026-11-08T13:11:11.948Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-08T13:11:13.721Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-08T13:11:14.169Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
    "t": "2026-11-08T13:11:15.266Z"
   },
@@ -407,9 +367,49 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-10T16:30:28.194Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 60369 crédits restants ce mois-ci.",
+   "t": "2026-11-10T17:06:38.266Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "HISTOIRE IA : « La chasse au dahu ». Script et images déjà prêts, on passe au montage.",
+   "t": "2026-11-10T17:06:38.268Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-10T17:06:50.432Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-10T17:07:21.720Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-10T17:10:33.744Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "OK",
+   "t": "2026-11-10T17:10:55.205Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
+   "t": "2026-11-10T17:10:56.617Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-10T17:10:56.620Z"
   }
  ],
- "maj": "2026-11-10T16:30:54.871Z",
+ "maj": "2026-11-10T17:11:13.813Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1702,6 +1702,32 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-10-histoire-le-rollibock-gardien-du-glacier/LePouls_2026-11-10-histoire-le-rollibock-gardien-du-glacier.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1iWSUXBiC1K01opwEh5cgij9zwaC4qChK",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/14"
+  },
+  {
+   "id": "2026-11-10-histoire-la-chasse-au-dahu",
+   "titre": "La chasse au dahu",
+   "edition": "histoire",
+   "decision": "OK",
+   "problemes": [],
+   "description_tiktok": "HISTOIRE IA. La chasse au dahu, la plus célèbre farce des Alpes, vécue par Lucie et Arthur. Histoire inventée à partir de la tradition, images et animations générées par IA.\nSources : tradition orale des Alpes, Revue de géographie alpine\n#Valais #Légende #Dahu #Alpes #HistoireIA",
+   "sources": [
+    {
+     "media": "Revue de géographie alpine",
+     "titre": "Le dahu, légende vivante des Alpes",
+     "url": "https://journals.openedition.org/rga/2701"
+    },
+    {
+     "media": "Wikipédia",
+     "titre": "Dahu",
+     "url": "https://fr.wikipedia.org/wiki/Dahu"
+    }
+   ],
+   "mp4": "out/la-chasse-au-dahu/2026-11-10-histoire-la-chasse-au-dahu.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.0515,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-10-histoire-la-chasse-au-dahu/LePouls_2026-11-10-histoire-la-chasse-au-dahu.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1iWSUXBiC1K01opwEh5cgij9zwaC4qChK",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/15"
   }
  ]
 }
