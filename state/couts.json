@@ -1009,6 +1009,36 @@
    "unite": "tokens",
    "usd": 0.005,
    "execution": "édition jour 2026-11-09"
+  },
+  {
+   "date": "2026-11-10T16:27:42.605Z",
+   "contexte": "2026-11-10-histoire-le-rollibock-gardien-du-glacier",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 613,
+   "unite": "crédits",
+   "usd": 0.049,
+   "execution": "édition histoire 2026-11-10"
+  },
+  {
+   "date": "2026-11-10T16:27:47.480Z",
+   "contexte": "2026-11-10-histoire-le-rollibock-gardien-du-glacier",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 74,
+   "unite": "secondes",
+   "usd": 0.0045,
+   "execution": "édition histoire 2026-11-10"
+  },
+  {
+   "date": "2026-11-10T16:30:26.662Z",
+   "contexte": "2026-11-10-histoire-le-rollibock-gardien-du-glacier",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 19572,
+   "unite": "tokens",
+   "usd": 0.003,
+   "execution": "édition histoire 2026-11-10"
   }
  ],
  "executions": [
@@ -1101,6 +1131,11 @@
    "date": "2026-11-10T02:52:29.848Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-10T16:30:26.667Z",
+   "etiquette": "édition histoire 2026-11-10",
+   "usd": 0.0565
   }
  ],
  "par_jour": {
@@ -1135,18 +1170,18 @@
    "total": 0.7749
   },
   "2026-11-10": {
-   "anthropic": 0.7701,
-   "elevenlabs": 0.0557,
+   "anthropic": 0.7731,
+   "elevenlabs": 0.1092,
    "higgsfield": 0,
-   "total": 0.8258
+   "total": 0.8823
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 6.9545,
-   "elevenlabs": 0.5,
+   "anthropic": 6.9575,
+   "elevenlabs": 0.5535,
    "higgsfield": 0,
-   "total": 7.4545
+   "total": 7.511
   }
  },
  "par_video": {
@@ -1158,22 +1193,23 @@
   "2026-11-07-jour-ski-en-valais-romand-les-premieres-pistes-ouvrent-": 0.6905,
   "2026-11-08-jour-crans-montana-qui-recoit-l-aide-d-urgence-qui-n-en": 0.8584,
   "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran": 0.7638,
-  "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143
+  "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143,
+  "2026-11-10-histoire-le-rollibock-gardien-du-glacier": 0.0565
  },
  "soldes": {
-  "date": "2026-11-10T02:52:29.942Z",
+  "date": "2026-11-10T16:30:26.676Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 66161,
+   "credits_utilises": 70631,
    "credits_mois": 131000,
-   "credits_restants": 64839,
+   "credits_restants": 60369,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 7.9855,
+   "credit_estime_restant_usd": 7.9825,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-10T02:52:31.802Z"
+ "maj": "2026-11-10T16:30:28.186Z"
 }

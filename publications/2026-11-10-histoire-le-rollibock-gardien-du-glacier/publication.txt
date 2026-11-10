@@ -1,0 +1,22 @@
+LE POULS
+Le Rollibock, gardien du glacier
+Édition du histoire, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+HISTOIRE IA. La légende du Rollibock, le gardien du glacier d'Aletsch, racontée par Lucie et Arthur. Les personnages de Josi et Anna sont inventés, les images sont générées par IA.
+Sources : Aletsch Arena, légende du Haut-Valais
+#Valais #Légende #Aletsch #Rollibock #HistoireIA
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Aletsch Arena : Tradition : la légende du Rollibock (https://www.aletscharena.ch/en/planning-booking/experiences/tradition)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 1) : Le sous-titre « Et Arthur. » est gris et peu contrasté sur le fond sombre de l'image, à cause d'un fondu en cours sur la capture.
+- mineur (scène 4) : « Juste pour le plaisir. » est peu lisible sur la capture : le texte est en cours de fondu et se confond avec le manteau sombre du chasseur.
+- mineur (scène 0) : La mention « Image générée avec l'IA » passe sur des zones chargées (cornes, drapeau, branches) et y perd en lisibilité.
