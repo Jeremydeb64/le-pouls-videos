@@ -1,0 +1,539 @@
+{
+ "titre": "La chasse au dahu",
+ "rubrique": "LÉGENDE",
+ "presentateur": "duo",
+ "sensible": false,
+ "ambiance": "sobre",
+ "dialogue": [
+  {
+   "qui": "lucie",
+   "texte": "[excited] Arthur, prends ce sac. Ce soir, je t'emmène chasser le dahu."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[skeptical] Le quoi ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "[warm] Salut, c'est Lucie."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Et Arthur. Et apparemment, je pars à la chasse."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Le dahu, c'est l'animal le plus célèbre des Alpes. On raconte qu'il vit sur nos pentes les plus raides."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[curious] Et il a quoi de spécial ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "Ses pattes. Deux courtes côté montagne, deux longues côté vallée. Comme ça, il reste bien droit."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[laughs] Donc il ne peut pas faire demi-tour ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "Jamais. Il tourne autour de la montagne, toujours dans le même sens."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Pour l'attraper, c'est simple. Toi, tu attends en bas, la nuit, avec le sac grand ouvert."
+  },
+  {
+   "qui": "lucie",
+   "texte": "[mischievously] Moi, je monte derrière lui, et je siffle."
+  },
+  {
+   "qui": "lucie",
+   "texte": "[excited] Surpris, il se retourne, perd l'équilibre, et roule tout droit dans ton sac !"
+  },
+  {
+   "qui": "arthur",
+   "texte": "[shivering] Ça fait trois heures que j'attends, Lucie. [nervous] Lucie ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "[laughs] Voilà la vraie tradition. La chasse au dahu, c'est une farce qu'on joue aux nouveaux venus, partout dans les Alpes."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Pendant qu'ils attendent dans le froid, tout le village rigole au chaud."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[annoyed] Très drôle. Personne n'a jamais attrapé de dahu, c'est ça ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "Personne."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[whispers] Alors... c'est quoi, ce truc qui renifle mon sac ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "[warm] En Valais, tout le monde connaît quelqu'un qui en a vu un. Et toi, tu y crois ?"
+  },
+  {
+   "qui": "arthur",
+   "texte": "C'était Arthur."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Et Lucie, pour Le Pouls."
+  }
+ ],
+ "segments": [
+  {
+   "dit": "Arthur,",
+   "affiche": "Arthur,"
+  },
+  {
+   "dit": "prends ce sac.",
+   "affiche": "prends ce sac."
+  },
+  {
+   "dit": "Ce soir,",
+   "affiche": "Ce soir,"
+  },
+  {
+   "dit": "je t'emmène chasser le dahu.",
+   "affiche": "je t'emmène chasser le dahu."
+  },
+  {
+   "dit": "Le quoi ?",
+   "affiche": "Le quoi ?"
+  },
+  {
+   "dit": "Salut,",
+   "affiche": "Salut,"
+  },
+  {
+   "dit": "c'est Lucie.",
+   "affiche": "c'est Lucie."
+  },
+  {
+   "dit": "Et Arthur.",
+   "affiche": "Et Arthur."
+  },
+  {
+   "dit": "Et apparemment,",
+   "affiche": "Et apparemment,"
+  },
+  {
+   "dit": "je pars à la chasse.",
+   "affiche": "je pars à la chasse."
+  },
+  {
+   "dit": "Le dahu,",
+   "affiche": "Le dahu,"
+  },
+  {
+   "dit": "c'est l'animal le plus célèbre",
+   "affiche": "c'est l'animal le plus célèbre"
+  },
+  {
+   "dit": "des Alpes.",
+   "affiche": "des Alpes."
+  },
+  {
+   "dit": "On raconte qu'il vit sur",
+   "affiche": "On raconte qu'il vit sur"
+  },
+  {
+   "dit": "nos pentes les plus raides.",
+   "affiche": "nos pentes les plus raides."
+  },
+  {
+   "dit": "Et il a quoi de",
+   "affiche": "Et il a quoi de"
+  },
+  {
+   "dit": "spécial ?",
+   "affiche": "spécial ?"
+  },
+  {
+   "dit": "Ses pattes.",
+   "affiche": "Ses pattes."
+  },
+  {
+   "dit": "Deux courtes côté montagne,",
+   "affiche": "Deux courtes côté montagne,"
+  },
+  {
+   "dit": "deux longues côté vallée.",
+   "affiche": "deux longues côté vallée."
+  },
+  {
+   "dit": "Comme ça,",
+   "affiche": "Comme ça,"
+  },
+  {
+   "dit": "il reste bien droit.",
+   "affiche": "il reste bien droit."
+  },
+  {
+   "dit": "Donc il ne peut pas",
+   "affiche": "Donc il ne peut pas"
+  },
+  {
+   "dit": "faire demi-tour ?",
+   "affiche": "faire demi-tour ?"
+  },
+  {
+   "dit": "Jamais.",
+   "affiche": "Jamais."
+  },
+  {
+   "dit": "Il tourne autour de la montagne,",
+   "affiche": "Il tourne autour de la montagne,"
+  },
+  {
+   "dit": "toujours dans le même sens.",
+   "affiche": "toujours dans le même sens."
+  },
+  {
+   "dit": "Pour l'attraper,",
+   "affiche": "Pour l'attraper,"
+  },
+  {
+   "dit": "c'est simple. Toi,",
+   "affiche": "c'est simple. Toi,"
+  },
+  {
+   "dit": "tu attends en bas,",
+   "affiche": "tu attends en bas,"
+  },
+  {
+   "dit": "la nuit,",
+   "affiche": "la nuit,"
+  },
+  {
+   "dit": "avec le sac grand ouvert.",
+   "affiche": "avec le sac grand ouvert."
+  },
+  {
+   "dit": "Moi,",
+   "affiche": "Moi,"
+  },
+  {
+   "dit": "je monte derrière lui,",
+   "affiche": "je monte derrière lui,"
+  },
+  {
+   "dit": "et je siffle.",
+   "affiche": "et je siffle."
+  },
+  {
+   "dit": "Surpris,",
+   "affiche": "Surpris,"
+  },
+  {
+   "dit": "il se retourne,",
+   "affiche": "il se retourne,"
+  },
+  {
+   "dit": "perd l'équilibre,",
+   "affiche": "perd l'équilibre,"
+  },
+  {
+   "dit": "et roule tout droit dans",
+   "affiche": "et roule tout droit dans"
+  },
+  {
+   "dit": "ton sac !",
+   "affiche": "ton sac !"
+  },
+  {
+   "dit": "Ça fait trois heures que j'attends, Lucie.",
+   "affiche": "Ça fait trois heures que j'attends, Lucie."
+  },
+  {
+   "dit": "Lucie ?",
+   "affiche": "Lucie ?"
+  },
+  {
+   "dit": "Voilà la vraie tradition.",
+   "affiche": "Voilà la vraie tradition."
+  },
+  {
+   "dit": "La chasse au dahu,",
+   "affiche": "La chasse au dahu,"
+  },
+  {
+   "dit": "c'est une farce qu'on joue",
+   "affiche": "c'est une farce qu'on joue"
+  },
+  {
+   "dit": "aux nouveaux venus,",
+   "affiche": "aux nouveaux venus,"
+  },
+  {
+   "dit": "partout dans les Alpes.",
+   "affiche": "partout dans les Alpes."
+  },
+  {
+   "dit": "Pendant qu'ils attendent dans le froid,",
+   "affiche": "Pendant qu'ils attendent dans le froid,"
+  },
+  {
+   "dit": "tout le village rigole au chaud.",
+   "affiche": "tout le village rigole au chaud."
+  },
+  {
+   "dit": "Très drôle.",
+   "affiche": "Très drôle."
+  },
+  {
+   "dit": "Personne n'a jamais attrapé de dahu,",
+   "affiche": "Personne n'a jamais attrapé de dahu,"
+  },
+  {
+   "dit": "c'est ça ?",
+   "affiche": "c'est ça ?"
+  },
+  {
+   "dit": "Personne.",
+   "affiche": "Personne."
+  },
+  {
+   "dit": "Alors...",
+   "affiche": "Alors..."
+  },
+  {
+   "dit": "c'est quoi,",
+   "affiche": "c'est quoi,"
+  },
+  {
+   "dit": "ce truc qui renifle mon",
+   "affiche": "ce truc qui renifle mon"
+  },
+  {
+   "dit": "sac ?",
+   "affiche": "sac ?"
+  },
+  {
+   "dit": "En Valais,",
+   "affiche": "En Valais,"
+  },
+  {
+   "dit": "tout le monde connaît quelqu'un",
+   "affiche": "tout le monde connaît quelqu'un"
+  },
+  {
+   "dit": "qui en a vu un.",
+   "affiche": "qui en a vu un."
+  },
+  {
+   "dit": "Et toi,",
+   "affiche": "Et toi,"
+  },
+  {
+   "dit": "tu y crois ?",
+   "affiche": "tu y crois ?"
+  },
+  {
+   "dit": "C'était Arthur.",
+   "affiche": "C'était Arthur."
+  },
+  {
+   "dit": "Et Lucie,",
+   "affiche": "Et Lucie,"
+  },
+  {
+   "dit": "pour Le Pouls.",
+   "affiche": "pour Le Pouls."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_4109bb0c-35c8-401e-b422-26afdbe9eafe.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 0
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165639_57173c5c-2c0a-4f11-982d-545a2be7f7cd.mp4",
+    "video": true,
+    "duree": 5,
+    "kicker": "Légende des Alpes",
+    "title": "La chasse au *dahu*"
+   },
+   "from": {
+    "seg": 5
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_5a0349b9-2bf9-425e-9b18-bcd7ea60d35b.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 10
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165638_60d00bab-3795-4cc9-9b4a-ba2f042ef543.mp4",
+    "video": true,
+    "duree": 5,
+    "title": "Deux pattes *courtes*"
+   },
+   "from": {
+    "seg": 15
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_cb6f75e5-5eb0-479c-b70a-1d5bc6a3e8eb.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 22
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165638_b7c0ec6c-7c46-4c3a-aff6-51a0e64c67f6.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 27
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165638_a3954e3e-6baf-4352-9800-75b665d97ce8.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 32
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165638_b1379710-a36a-42f5-b194-fe37b55e78bb.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 35
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_df46a4f5-089d-403e-b16f-d340c8ce2f43.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 40
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165638_1701451d-58db-45d4-b76a-dd5e1a6e8764.mp4",
+    "video": true,
+    "duree": 5,
+    "kicker": "La vérité",
+    "title": "Une *farce* de montagnards"
+   },
+   "from": {
+    "seg": 42
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165902_6fb5642c-eee3-41c2-a163-af142888881f.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 47
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_cf22c616-41c8-43dd-90e3-db3fd3fd0a13.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 49
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165637_cc0fd6fe-1a89-4b83-be41-5b5a0ca515cf.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 53
+   }
+  },
+  {
+   "type": "illustration",
+   "props": {
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3Jif7NBwyUY9SJK9CgVdsFpB4eO/hf_20261110_165642_d748dc6e-5a4c-47c9-9ff9-11f620e66e39.mp4",
+    "video": true,
+    "duree": 5
+   },
+   "from": {
+    "seg": 57
+   }
+  },
+  {
+   "type": "outro",
+   "props": {
+    "sources": "Sources : tradition orale des Alpes, Revue de géographie alpine"
+   },
+   "from": {
+    "seg": 62
+   }
+  }
+ ],
+ "faits": [],
+ "sources": [
+  {
+   "media": "Revue de géographie alpine",
+   "titre": "Le dahu, légende vivante des Alpes",
+   "url": "https://journals.openedition.org/rga/2701"
+  },
+  {
+   "media": "Wikipédia",
+   "titre": "Dahu",
+   "url": "https://fr.wikipedia.org/wiki/Dahu"
+  }
+ ],
+ "description_tiktok": "HISTOIRE IA. La chasse au dahu, la plus célèbre farce des Alpes, vécue par Lucie et Arthur. Histoire inventée à partir de la tradition, images et animations générées par IA.\nSources : tradition orale des Alpes, Revue de géographie alpine\n#Valais #Légende #Dahu #Alpes #HistoireIA"
+}
