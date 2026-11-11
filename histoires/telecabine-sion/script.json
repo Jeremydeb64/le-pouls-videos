@@ -1,0 +1,555 @@
+{
+ "titre": "Télécabine de Sion : 30 millions, qui paie ?",
+ "rubrique": "ÉCONOMIE",
+ "presentateur": "arthur",
+ "sensible": false,
+ "ambiance": "neutre",
+ "voix": "Moins de 11 minutes pour monter de la gare de Sion au pied de la piste de l'Ours. Salut, c'est Arthur, et aujourd'hui, on parle de la télécabine de Sion. Elle partirait de la gare et arriverait aux Mayens de l'Ours, au pied de la piste, pour une connexion directe avec la télécabine de la piste de l'Ours, vers Thyon et les 4 Vallées. Coût du projet : 30 millions de francs. Hier, la Ville de Sion a dit qui paie quoi. 6 millions viennent des actionnaires, dont 3,6 pour la Ville. 6 millions sont empruntés à la banque. Et 18 millions sont espérés du Canton et de la Confédération. Et là, surprise : seuls 3,5 millions sont confirmés. C'est une aide du Canton, à condition que la télécabine roule tous les jours, comme un transport public. Pour le reste, le dossier est encore en cours d'analyse. Et ce n'est pas tout. Berne doit encore répondre, attendu au printemps 2027. 6 recours contre le plan de zone attendent aussi un jugement du Tribunal cantonal. Le président de Sion se dit « raisonnablement optimiste ». Concrètement : pas de date d'ouverture pour l'instant. Une fois l'autorisation obtenue, les travaux dureraient environ 2 ans. À retenir : un projet à 30 millions. 3,5 millions confirmés sur 18 espérés. Et la réponse de Berne au printemps 2027. C'était Arthur, pour Le Pouls. On se retrouve demain.",
+ "segments": [
+  {
+   "dit": "Moins de 11 minutes",
+   "affiche": "Moins de 11 minutes"
+  },
+  {
+   "dit": "pour monter de la gare de Sion",
+   "affiche": "pour monter de la gare de Sion"
+  },
+  {
+   "dit": "au pied de la piste de l'Ours.",
+   "affiche": "au pied de la piste de l'Ours."
+  },
+  {
+   "dit": "Salut, c'est Arthur,",
+   "affiche": "Salut, c'est Arthur,"
+  },
+  {
+   "dit": "et aujourd'hui, on parle",
+   "affiche": "et aujourd'hui, on parle"
+  },
+  {
+   "dit": "de la télécabine de Sion.",
+   "affiche": "de la télécabine de Sion."
+  },
+  {
+   "dit": "Elle partirait de la gare",
+   "affiche": "Elle partirait de la gare"
+  },
+  {
+   "dit": "et arriverait aux Mayens de l'Ours,",
+   "affiche": "et arriverait aux Mayens de l'Ours,"
+  },
+  {
+   "dit": "au pied de la piste,",
+   "affiche": "au pied de la piste,"
+  },
+  {
+   "dit": "pour une connexion directe",
+   "affiche": "pour une connexion directe"
+  },
+  {
+   "dit": "avec la télécabine",
+   "affiche": "avec la télécabine"
+  },
+  {
+   "dit": "de la piste de l'Ours,",
+   "affiche": "de la piste de l'Ours,"
+  },
+  {
+   "dit": "vers Thyon et les 4 Vallées.",
+   "affiche": "vers Thyon et les 4 Vallées."
+  },
+  {
+   "dit": "Coût du projet :",
+   "affiche": "Coût du projet :"
+  },
+  {
+   "dit": "30 millions de francs.",
+   "affiche": "30 millions de francs."
+  },
+  {
+   "dit": "Hier, la Ville de Sion",
+   "affiche": "Hier, la Ville de Sion"
+  },
+  {
+   "dit": "a dit qui paie quoi.",
+   "affiche": "a dit qui paie quoi."
+  },
+  {
+   "dit": "6 millions viennent des actionnaires,",
+   "affiche": "6 millions viennent des actionnaires,"
+  },
+  {
+   "dit": "dont 3,6",
+   "affiche": "dont 3,6"
+  },
+  {
+   "dit": "pour la Ville.",
+   "affiche": "pour la Ville."
+  },
+  {
+   "dit": "6 millions sont empruntés",
+   "affiche": "6 millions sont empruntés"
+  },
+  {
+   "dit": "à la banque.",
+   "affiche": "à la banque."
+  },
+  {
+   "dit": "Et 18 millions",
+   "affiche": "Et 18 millions"
+  },
+  {
+   "dit": "sont espérés du Canton",
+   "affiche": "sont espérés du Canton"
+  },
+  {
+   "dit": "et de la Confédération.",
+   "affiche": "et de la Confédération."
+  },
+  {
+   "dit": "Et là, surprise :",
+   "affiche": "Et là, surprise :"
+  },
+  {
+   "dit": "seuls 3,5 millions",
+   "affiche": "seuls 3,5 millions"
+  },
+  {
+   "dit": "sont confirmés.",
+   "affiche": "sont confirmés."
+  },
+  {
+   "dit": "C'est une aide du Canton,",
+   "affiche": "C'est une aide du Canton,"
+  },
+  {
+   "dit": "à condition que la télécabine",
+   "affiche": "à condition que la télécabine"
+  },
+  {
+   "dit": "roule tous les jours,",
+   "affiche": "roule tous les jours,"
+  },
+  {
+   "dit": "comme un transport public.",
+   "affiche": "comme un transport public."
+  },
+  {
+   "dit": "Pour le reste,",
+   "affiche": "Pour le reste,"
+  },
+  {
+   "dit": "le dossier est encore",
+   "affiche": "le dossier est encore"
+  },
+  {
+   "dit": "en cours d'analyse.",
+   "affiche": "en cours d'analyse."
+  },
+  {
+   "dit": "Et ce n'est pas tout.",
+   "affiche": "Et ce n'est pas tout."
+  },
+  {
+   "dit": "Berne doit encore répondre,",
+   "affiche": "Berne doit encore répondre,"
+  },
+  {
+   "dit": "attendu au printemps",
+   "affiche": "attendu au printemps"
+  },
+  {
+   "dit": "2027.",
+   "affiche": "2027."
+  },
+  {
+   "dit": "6 recours contre",
+   "affiche": "6 recours contre"
+  },
+  {
+   "dit": "le plan de zone",
+   "affiche": "le plan de zone"
+  },
+  {
+   "dit": "attendent aussi un jugement",
+   "affiche": "attendent aussi un jugement"
+  },
+  {
+   "dit": "du Tribunal cantonal.",
+   "affiche": "du Tribunal cantonal."
+  },
+  {
+   "dit": "Le président de Sion se dit",
+   "affiche": "Le président de Sion se dit"
+  },
+  {
+   "dit": "« raisonnablement optimiste ».",
+   "affiche": "« raisonnablement optimiste »."
+  },
+  {
+   "dit": "Concrètement :",
+   "affiche": "Concrètement :"
+  },
+  {
+   "dit": "pas de date d'ouverture",
+   "affiche": "pas de date d'ouverture"
+  },
+  {
+   "dit": "pour l'instant.",
+   "affiche": "pour l'instant."
+  },
+  {
+   "dit": "Une fois l'autorisation obtenue,",
+   "affiche": "Une fois l'autorisation obtenue,"
+  },
+  {
+   "dit": "les travaux dureraient",
+   "affiche": "les travaux dureraient"
+  },
+  {
+   "dit": "environ 2 ans.",
+   "affiche": "environ 2 ans."
+  },
+  {
+   "dit": "À retenir :",
+   "affiche": "À retenir :"
+  },
+  {
+   "dit": "un projet à 30 millions.",
+   "affiche": "un projet à 30 millions."
+  },
+  {
+   "dit": "3,5 millions",
+   "affiche": "3,5 millions"
+  },
+  {
+   "dit": "confirmés sur 18 espérés.",
+   "affiche": "confirmés sur 18 espérés."
+  },
+  {
+   "dit": "Et la réponse de Berne",
+   "affiche": "Et la réponse de Berne"
+  },
+  {
+   "dit": "au printemps 2027.",
+   "affiche": "au printemps 2027."
+  },
+  {
+   "dit": "C'était Arthur,",
+   "affiche": "C'était Arthur,"
+  },
+  {
+   "dit": "pour Le Pouls.",
+   "affiche": "pour Le Pouls."
+  },
+  {
+   "dit": "On se retrouve demain.",
+   "affiche": "On se retrouve demain."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "from": {
+    "seg": 0
+   },
+   "props": {
+    "recherche": "Gare de Sion",
+    "kicker": "De la gare à la piste de l'Ours",
+    "title": "Moins de *11 minutes*",
+    "nom": "Gare de Sion",
+    "role": "Départ de la télécabine"
+   }
+  },
+  {
+   "type": "carte",
+   "from": {
+    "seg": 6
+   },
+   "props": {
+    "kicker": "De la gare aux Mayens de l'Ours",
+    "communes": [
+     "Sion"
+    ],
+    "titre": "Arrivée au pied de la piste"
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 9
+   },
+   "props": {
+    "recherche": "Thyon 2000",
+    "kicker": "Piste de l'Ours",
+    "title": "Connexion *directe*",
+    "nom": "Thyon",
+    "role": "Domaine des 4 Vallées"
+   }
+  },
+  {
+   "type": "bigFigure",
+   "from": {
+    "seg": 13
+   },
+   "props": {
+    "kicker": "Coût du projet",
+    "value": 30,
+    "label": "millions de francs",
+    "at": {
+     "seg": 14
+    }
+   }
+  },
+  {
+   "type": "barres",
+   "from": {
+    "seg": 17
+   },
+   "props": {
+    "kicker": "Qui paie quoi ?",
+    "items": [
+     {
+      "label": "Actionnaires",
+      "value": 6,
+      "at": {
+       "seg": 17
+      }
+     },
+     {
+      "label": "Emprunts",
+      "value": 6,
+      "at": {
+       "seg": 20
+      }
+     },
+     {
+      "label": "Aides espérées",
+      "value": 18,
+      "at": {
+       "seg": 22
+      },
+      "accent": true
+     }
+    ],
+    "unite": "millions",
+    "note": "Dont 3,6 millions pour la Ville de Sion"
+   }
+  },
+  {
+   "type": "barres",
+   "from": {
+    "seg": 25
+   },
+   "props": {
+    "kicker": "Aides du Canton et de la Confédération",
+    "items": [
+     {
+      "label": "Espérées",
+      "value": 18,
+      "at": {
+       "seg": 25
+      }
+     },
+     {
+      "label": "Confirmées",
+      "value": 3.5,
+      "at": {
+       "seg": 26
+      },
+      "accent": true
+     }
+    ],
+    "unite": "millions"
+   }
+  },
+  {
+   "type": "statement",
+   "from": {
+    "seg": 28
+   },
+   "props": {
+    "kicker": "Condition de l'aide cantonale",
+    "text": "Rouler *tous les jours*"
+   }
+  },
+  {
+   "type": "statement",
+   "from": {
+    "seg": 32
+   },
+   "props": {
+    "kicker": "Le reste des 18 millions",
+    "text": "Dossier *en analyse*"
+   }
+  },
+  {
+   "type": "frise",
+   "from": {
+    "seg": 35
+   },
+   "props": {
+    "kicker": "Étape suivante : Berne",
+    "items": [
+     {
+      "date": "Aujourd'hui",
+      "label": "Dossier à l'examen à Berne",
+      "at": {
+       "seg": 35
+      }
+     },
+     {
+      "date": "Printemps 2027",
+      "label": "Réponse attendue",
+      "at": {
+       "seg": 37
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 39
+   },
+   "props": {
+    "recherche": "Sion Valais old town",
+    "kicker": "Contre le plan de zone",
+    "title": "*6 recours* en attente",
+    "nom": "Sion",
+    "role": "Tribunal cantonal"
+   }
+  },
+  {
+   "type": "frise",
+   "from": {
+    "seg": 45
+   },
+   "props": {
+    "kicker": "Et pour l'ouverture ?",
+    "items": [
+     {
+      "date": "Aujourd'hui",
+      "label": "Aucune date annoncée",
+      "at": {
+       "seg": 46
+      }
+     },
+     {
+      "date": "Après l'autorisation",
+      "label": "Environ 2 ans de travaux",
+      "at": {
+       "seg": 49
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "recap",
+   "from": {
+    "seg": 51
+   },
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "30 millions au total",
+      "at": {
+       "seg": 52
+      }
+     },
+     {
+      "n": 2,
+      "label": "3,5 des 18 millions confirmés",
+      "at": {
+       "seg": 53
+      }
+     },
+     {
+      "n": 3,
+      "label": "Réponse de Berne : printemps 2027",
+      "at": {
+       "seg": 55
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "outro",
+   "from": {
+    "seg": 57
+   },
+   "props": {
+    "sources": "Sources : Le Nouvelliste, Rhône FM, La Télé"
+   }
+  }
+ ],
+ "faits": [
+  {
+   "fait": "Coût total de la liaison : 30 millions de francs",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Répartition annoncée le 10 novembre 2026 : 6 millions de fonds propres (dont 3,6 millions pour la Ville de Sion), 6 millions d'emprunts bancaires, 18 millions espérés du Canton et de la Confédération",
+   "source": "https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214"
+  },
+  {
+   "fait": "Sur les 18 millions espérés, 3,5 millions sont confirmés (subvention d'investissement du Conseil d'État, plus 187'500 francs par an pour l'exploitation), conditionnés à une exploitation régulière comme un transport public",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Le dossier de demande du reste des subventions cantonales est encore en cours d'analyse selon le Centre de cautionnement et de financement (fiche de faits de la rédaction, d'après Le Nouvelliste du 11.11.2026)",
+   "source": "docs/sujets/telecabine-sion-ours.txt"
+  },
+  {
+   "fait": "Cabines de 10 places entre le sud de la gare CFF de Sion et les Mayens de l'Hôpital, trajet de 3,4 km en un peu moins de 11 minutes",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Les Mayens de l'Hôpital sont directement connectés à la station de départ de la télécabine de la piste de l'Ours",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "L'arrivée se raccorde à la remontée existante piste de l'Ours - Thyon 2000, porte d'entrée du domaine des 4 Vallées",
+   "source": "docs/sujets/telecabine-sion-ours.txt"
+  },
+  {
+   "fait": "Dossier technique transmis à l'Office fédéral des transports il y a quelques semaines, réponse attendue au printemps 2027",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Le plan de zone homologué par le Conseil d'État en début d'année fait l'objet de six recours devant le Tribunal cantonal",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Travaux prévus sur deux ans à partir de la délivrance de l'autorisation de construire ; aucune date d'ouverture annoncée",
+   "source": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  },
+  {
+   "fait": "Le président de la Ville de Sion, Philippe Varone, se dit « raisonnablement optimiste » (citation reprise de la fiche de faits de la rédaction, d'après Le Nouvelliste du 11.11.2026)",
+   "source": "docs/sujets/telecabine-sion-ours.txt"
+  }
+ ],
+ "sources": [
+  {
+   "media": "Le Nouvelliste",
+   "titre": "Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton",
+   "url": "https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214"
+  },
+  {
+   "media": "Rhône FM",
+   "titre": "Sion : la liaison câblée entre la ville et son coteau se précise",
+   "url": "https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189"
+  },
+  {
+   "media": "La Télé",
+   "titre": "Sion : la future télécabine vers les Mayens de l'Hôpital se précise",
+   "url": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+  }
+ ],
+ "description_tiktok": "Une télécabine de 30 millions entre la gare de Sion et les Mayens de l'Ours, au pied de la piste : qui paie quoi, et qu'est-ce qui est vraiment confirmé ?\nSources : Le Nouvelliste, Rhône FM, La Télé\n#Valais #Sion #4Vallées #Télécabine #Ski"
+}
