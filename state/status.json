@@ -10,66 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-09T13:07:55.839Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-09T13:09:25.894Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les sept corrections demandées sont faites : condition « classé logement touristique » dès l'accroche, peine « avec sursis » dite et affichée, propriétaire « suisse » et achat « via une société », statements remplacés par frise et photos (plus de 6 s), barre des 10’000 francs déplacée sur un bigFigure, légende de photo raccourcie. Pas de point bloquant ; on passe à la phase image.",
-   "t": "2026-11-09T13:09:37.453Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-09T13:09:37.456Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 8 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-09T13:10:21.715Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Deralpinbergsteiger / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-09T13:10:22.569Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Mikhail Hanief / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-09T13:10:25.044Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Deralpinbergsteiger / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-09T13:10:25.526Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-09T13:10:25.824Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-09T13:10:25.828Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-09T13:11:38.975Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Carte : retire le libellé « ny » coupé au bord et le sous-titre « Zermatt » qui répète le titre. Barres : mets « 3 semaines » sur une seule ligne, comme « 52 semaines ». Le reste est propre, à lisser au passage (apostrophes, espace du logo final).",
-   "t": "2026-11-09T13:12:07.502Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
    "t": "2026-11-09T13:12:07.507Z"
   },
@@ -407,9 +347,69 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-11T11:38:29.001Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 59164 crédits restants ce mois-ci.",
+   "t": "2026-11-11T11:42:58.274Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "HISTOIRE IA : « Télécabine de Sion : 30 millions, qui paie ? ». Script et images déjà prêts, on passe au montage.",
+   "t": "2026-11-11T11:42:58.276Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Arthur.",
+   "t": "2026-11-11T11:42:58.279Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 18 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-11T11:43:26.293Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Hans-Rudolf Berner / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-11T11:43:26.875Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Reust / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-11T11:43:27.591Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-11T11:43:27.931Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-11T11:43:27.935Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-11T11:45:00.634Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bon épisode, la mise en page tient. Il reste à corriger : le titre de la première scène est coupé à sa base et son sous-titre répète le titre ; la scène « Qui paie quoi ? » doit afficher la barre des 18 millions et les compteurs finaux ; « Berne » est orphelin dans la frise ; vérifie que le second item de la frise « ouverture » et le troisième du récapitulatif apparaissent bien, et qu'il n'y a pas de silence sur la scène Thyon.",
+   "t": "2026-11-11T11:45:33.796Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
+   "t": "2026-11-11T11:45:35.140Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-11T11:45:35.144Z"
   }
  ],
- "maj": "2026-11-11T11:38:44.134Z",
+ "maj": "2026-11-11T11:45:49.550Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1832,6 +1832,80 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie/LePouls_2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/18Vd7BSLxEYpM12os3pyonMKkislmf18y",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/16"
+  },
+  {
+   "id": "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie",
+   "titre": "Télécabine de Sion : 30 millions, qui paie ?",
+   "edition": "histoire",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "important",
+     "scene": 0,
+     "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base. Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué. Le sous-titre « Moins de 11 minutes » répète aussi le titre mot pour mot.",
+     "correction_demandee": "Vérifier que l'animation du titre est terminée avant la première seconde. Remplacer le sous-titre par une formulation qui apporte une information (par exemple « de la gare au pied de la piste »)."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Aucun sous-titre n'apparaît sur l'image prélevée entre 10,5 s et 15,2 s. Si la voix est silencieuse sur cette plage, cela dépasse la seconde de silence autorisée.",
+     "correction_demandee": "Vérifier la piste voix sur cette plage et ajouter une phrase d'appui ou raccourcir la scène si un silence est présent."
+    },
+    {
+     "gravite": "important",
+     "scene": 4,
+     "constat": "L'image prélevée de « Qui paie quoi ? » n'affiche que les barres Actionnaires (6 millions) et Emprunts. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 4 millions alors que la donnée est de 6, probablement en cours d'animation.",
+     "correction_demandee": "Vérifier que les trois barres apparaissent et que les compteurs atteignent leurs valeurs finales (6, 6, 18) avant la fin de la scène, en particulier avant la phrase « 6 millions sont empruntés »."
+    },
+    {
+     "gravite": "important",
+     "scene": 8,
+     "constat": "Le libellé « Dossier à l'examen à Berne » passe sur deux lignes et laisse « Berne » seul (mot orphelin).",
+     "correction_demandee": "Reformuler pour tenir sur une ligne ou répartir proprement, par exemple « Dossier examiné à Berne » ou « Examen à Berne »."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », prévu à 3,98 s) n'apparaît pas sur l'image.",
+     "correction_demandee": "Vérifier sur une image prise après 4 s que le second item apparaît bien et qu'il reste lisible jusqu'à la fin de la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Le libellé « Tribunal cantonal » est placé sous une photo de la vieille ville de Sion. Le visuel peut laisser croire qu'il montre le tribunal.",
+     "correction_demandee": "Remplacer le libellé par « Ville de Sion » ou « Tribunal cantonal, Sion » dans la carte du lieu, ou choisir une photo qui correspond au tribunal."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 11,
+     "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 5,18 s) n'apparaît pas sur cette image.",
+     "correction_demandee": "Vérifier sur une image prise après 5,2 s que l'item 3 apparaît bien."
+    }
+   ],
+   "description_tiktok": "Une télécabine de 30 millions entre la gare de Sion et les Mayens de l'Ours, au pied de la piste : qui paie quoi, et qu'est-ce qui est vraiment confirmé ?\nSources : Le Nouvelliste, Rhône FM, La Télé\n#Valais #Sion #4Vallées #Télécabine #Ski",
+   "sources": [
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton",
+     "url": "https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214"
+    },
+    {
+     "media": "Rhône FM",
+     "titre": "Sion : la liaison câblée entre la ville et son coteau se précise",
+     "url": "https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189"
+    },
+    {
+     "media": "La Télé",
+     "titre": "Sion : la future télécabine vers les Mayens de l'Hôpital se précise",
+     "url": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+    }
+   ],
+   "mp4": "out/telecabine-de-sion-30-millions-qui-paie/2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.0548,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie/LePouls_2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/18Vd7BSLxEYpM12os3pyonMKkislmf18y",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/17"
   }
  ]
 }

@@ -1,0 +1,28 @@
+LE POULS
+Télécabine de Sion : 30 millions, qui paie ?
+Édition du histoire, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Une télécabine de 30 millions entre la gare de Sion et les Mayens de l'Ours, au pied de la piste : qui paie quoi, et qu'est-ce qui est vraiment confirmé ?
+Sources : Le Nouvelliste, Rhône FM, La Télé
+#Valais #Sion #4Vallées #Télécabine #Ski
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Le Nouvelliste : Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton (https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214)
+- Rhône FM : Sion : la liaison câblée entre la ville et son coteau se précise (https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189)
+- La Télé : Sion : la future télécabine vers les Mayens de l'Hôpital se précise (https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise)
+
+=== CONTRÔLE ===
+Décision : OK
+- important (scène 0) : Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base. Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué. Le sous-titre « Moins de 11 minutes » répète aussi le titre mot pour mot.
+- important (scène 2) : Aucun sous-titre n'apparaît sur l'image prélevée entre 10,5 s et 15,2 s. Si la voix est silencieuse sur cette plage, cela dépasse la seconde de silence autorisée.
+- important (scène 4) : L'image prélevée de « Qui paie quoi ? » n'affiche que les barres Actionnaires (6 millions) et Emprunts. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 4 millions alors que la donnée est de 6, probablement en cours d'animation.
+- important (scène 8) : Le libellé « Dossier à l'examen à Berne » passe sur deux lignes et laisse « Berne » seul (mot orphelin).
+- important (scène 10) : Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », prévu à 3,98 s) n'apparaît pas sur l'image.
+- mineur (scène 9) : Le libellé « Tribunal cantonal » est placé sous une photo de la vieille ville de Sion. Le visuel peut laisser croire qu'il montre le tribunal.
+- mineur (scène 11) : Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 5,18 s) n'apparaît pas sur cette image.

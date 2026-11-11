@@ -232,5 +232,35 @@
   "gravite": "important",
   "type": "outro",
   "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 4,8 s) n'apparaît pas."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base. Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué. Le sous-titre « Moins de 11 minutes » répète aussi le titre mot pour mot."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Aucun sous-titre n'apparaît sur l'image prélevée entre 10,5 s et 15,2 s. Si la voix est silencieuse sur cette plage, cela dépasse la seconde de silence autorisée."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "barres",
+  "constat": "L'image prélevée de « Qui paie quoi ? » n'affiche que les barres Actionnaires (6 millions) et Emprunts. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 4 millions alors que la donnée est de 6, probablement en cours d'animation."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "frise",
+  "constat": "Le libellé « Dossier à l'examen à Berne » passe sur deux lignes et laisse « Berne » seul (mot orphelin)."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "frise",
+  "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », prévu à 3,98 s) n'apparaît pas sur l'image."
  }
 ]

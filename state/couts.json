@@ -1169,6 +1169,36 @@
    "unite": "tokens",
    "usd": 0.0042,
    "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:43:22.627Z",
+   "contexte": "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 578,
+   "unite": "crédits",
+   "usd": 0.0462,
+   "execution": "édition histoire 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:43:26.285Z",
+   "contexte": "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 63,
+   "unite": "secondes",
+   "usd": 0.0039,
+   "execution": "édition histoire 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:45:33.795Z",
+   "contexte": "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 23073,
+   "unite": "tokens",
+   "usd": 0.0047,
+   "execution": "édition histoire 2026-11-11"
   }
  ],
  "executions": [
@@ -1281,6 +1311,11 @@
    "date": "2026-11-11T11:38:27.686Z",
    "etiquette": "édition jour 2026-11-11",
    "usd": 0.7
+  },
+  {
+   "date": "2026-11-11T11:45:33.801Z",
+   "etiquette": "édition histoire 2026-11-11",
+   "usd": 0.0548
   }
  ],
  "par_jour": {
@@ -1321,18 +1356,18 @@
    "total": 0.9338
   },
   "2026-11-11": {
-   "anthropic": 0.6478,
-   "elevenlabs": 0.0522,
+   "anthropic": 0.6525,
+   "elevenlabs": 0.1023,
    "higgsfield": 0,
-   "total": 0.7
+   "total": 0.7548
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 7.608,
-   "elevenlabs": 0.6545,
+   "anthropic": 7.6127,
+   "elevenlabs": 0.7046,
    "higgsfield": 0,
-   "total": 8.2625
+   "total": 8.3173
   }
  },
  "par_video": {
@@ -1347,22 +1382,23 @@
   "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143,
   "2026-11-10-histoire-le-rollibock-gardien-du-glacier": 0.0565,
   "2026-11-10-histoire-la-chasse-au-dahu": 0.0515,
-  "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa": 0.7
+  "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa": 0.7,
+  "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie": 0.0548
  },
  "soldes": {
-  "date": "2026-11-11T11:38:27.696Z",
+  "date": "2026-11-11T11:45:33.810Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 71836,
+   "credits_utilises": 72433,
    "credits_mois": 131000,
-   "credits_restants": 59164,
+   "credits_restants": 58567,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 7.332,
+   "credit_estime_restant_usd": 7.3273,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-11T11:38:28.990Z"
+ "maj": "2026-11-11T11:45:35.134Z"
 }
