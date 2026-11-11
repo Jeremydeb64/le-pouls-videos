@@ -1171,6 +1171,11 @@
    "date": "2026-11-10T17:10:55.213Z",
    "etiquette": "édition histoire 2026-11-10",
    "usd": 0.0515
+  },
+  {
+   "date": "2026-11-11T00:49:13.008Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -1233,7 +1238,7 @@
   "2026-11-10-histoire-la-chasse-au-dahu": 0.0515
  },
  "soldes": {
-  "date": "2026-11-10T17:10:55.222Z",
+  "date": "2026-11-11T00:49:13.048Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 71212,
@@ -1247,5 +1252,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-10T17:10:56.611Z"
+ "maj": "2026-11-11T00:49:14.651Z"
 }
