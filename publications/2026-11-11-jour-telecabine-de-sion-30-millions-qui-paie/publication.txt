@@ -1,0 +1,33 @@
+LE POULS
+Télécabine de Sion : 30 millions, qui paie ?
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Une télécabine de 30 millions entre la gare de Sion et la piste de l'Ours : qui paie quoi, et qu'est-ce qui est vraiment confirmé ?
+Sources : Le Nouvelliste, Rhône FM, La Télé
+#Valais #Sion #4Vallées #Télécabine #Ski
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Le Nouvelliste : Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton (https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214)
+- Rhône FM : Sion : la liaison câblée entre la ville et son coteau se précise (https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189)
+- La Télé : Sion : la future télécabine vers les Mayens de l'Hôpital se précise (https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 0) : La voix dit « pour monter de la gare de Sion au pied de la piste de l'Ours ». Le trajet de 11 minutes couvre la gare jusqu'aux Mayens de l'Hôpital, la liaison avec la piste se faisant ensuite. La formulation reste approximative, sans être fausse.
+- mineur (scène 9) : La citation de Philippe Varone est sourcée à la fiche de faits interne, qui renvoie elle-même à Le Nouvelliste du 11.11.2026. La source primaire n'a pas été ajoutée à `faits`.
+- mineur (scène 2) : La photo ronde Thyon 2000 reste générique (« Thyon 2000 winter »). Elle illustre bien le raccord aux pistes, mais la photo ne montre pas la télécabine ni la gare.
+- mineur (scène 13) : La voix finale dit « Et la réponse de Berne au printemps. » sans l'année, alors que le corps de la voix dit « printemps 2027 ». Le récap et la frise sont corrects.
+- important (scène 1) : Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base (y≈593). Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué.
+- mineur (scène 1) : La photo de la gare montre une affiche « Enfin des loisirs ! » et un panneau CFF. C'est un élément de publicité mineur, pas bloquant.
+- mineur (scène 1) : Le sous-titre « Moins de 11 minutes » répète le titre affiché.
+- important (scène 2) : Sur la carte, le titre « Sion » et le sous-titre « Sion » sont identiques. C'est redondant, et la carte ne dure que 6 s.
+- important (scène 5) : Sur les images prélevées de la scène « Qui paie quoi ? », seules les barres Actionnaires et Emprunts apparaissent. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 2 millions alors que la donnée est de 6 : c'est probablement un compteur en cours d'animation.
+- important (scène 9) : Le titre « Dossier à l'examen à Berne » laisse « Berne » seul en deuxième ligne (mot orphelin).
+- important (scène 11) : Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », à 3,98 s dans la scène) n'apparaît pas sur l'image.
+- important (scène 12) : Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 4,8 s) n'apparaît pas.

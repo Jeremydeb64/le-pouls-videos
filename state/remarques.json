@@ -196,5 +196,41 @@
   "gravite": "important",
   "type": "versus",
   "constat": "Le versus n'a pas le même traitement graphique pour les deux camps : la colonne « Pour » (PS, PLR) s'affiche dès 0,1 s et reste seule plus de 2 s, alors que « Contre » n'apparaît qu'à 2,64 s. Sur l'image prélevée, « Contre » n'affiche que « UDC » alors que « NEO » est attendu dans la liste."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base (y≈593). Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Sur la carte, le titre « Sion » et le sous-titre « Sion » sont identiques. C'est redondant, et la carte ne dure que 6 s."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "barres",
+  "constat": "Sur les images prélevées de la scène « Qui paie quoi ? », seules les barres Actionnaires et Emprunts apparaissent. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 2 millions alors que la donnée est de 6 : c'est probablement un compteur en cours "
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Le titre « Dossier à l'examen à Berne » laisse « Berne » seul en deuxième ligne (mot orphelin)."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "recap",
+  "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », à 3,98 s dans la scène) n'apparaît pas sur l'image."
+ },
+ {
+  "date": "mercredi, 11 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 4,8 s) n'apparaît pas."
  }
 ]

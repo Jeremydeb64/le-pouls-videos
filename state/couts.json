@@ -1069,6 +1069,106 @@
    "unite": "tokens",
    "usd": 0.0027,
    "execution": "édition histoire 2026-11-10"
+  },
+  {
+   "date": "2026-11-11T11:33:36.961Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 56482,
+   "unite": "tokens",
+   "usd": 0.2272,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:33:36.961Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:34:14.549Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 41552,
+   "unite": "tokens",
+   "usd": 0.1244,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:34:14.549Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:35:26.557Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 75476,
+   "unite": "tokens",
+   "usd": 0.2484,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:35:26.557Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:35:47.605Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 17669,
+   "unite": "tokens",
+   "usd": 0.0036,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:36:25.993Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 605,
+   "unite": "crédits",
+   "usd": 0.0484,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:36:29.614Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 62,
+   "unite": "secondes",
+   "usd": 0.0038,
+   "execution": "édition jour 2026-11-11"
+  },
+  {
+   "date": "2026-11-11T11:38:27.678Z",
+   "contexte": "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21859,
+   "unite": "tokens",
+   "usd": 0.0042,
+   "execution": "édition jour 2026-11-11"
   }
  ],
  "executions": [
@@ -1176,6 +1276,11 @@
    "date": "2026-11-11T00:49:13.008Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-11T11:38:27.686Z",
+   "etiquette": "édition jour 2026-11-11",
+   "usd": 0.7
   }
  ],
  "par_jour": {
@@ -1214,14 +1319,20 @@
    "elevenlabs": 0.158,
    "higgsfield": 0,
    "total": 0.9338
+  },
+  "2026-11-11": {
+   "anthropic": 0.6478,
+   "elevenlabs": 0.0522,
+   "higgsfield": 0,
+   "total": 0.7
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 6.9602,
-   "elevenlabs": 0.6023,
+   "anthropic": 7.608,
+   "elevenlabs": 0.6545,
    "higgsfield": 0,
-   "total": 7.5625
+   "total": 8.2625
   }
  },
  "par_video": {
@@ -1235,22 +1346,23 @@
   "2026-11-09-jour-zermatt-chalet-trop-peu-loue-amende-de-90-000-fran": 0.7638,
   "2026-11-09-jour-loi-sur-l-ecole-valaisanne-une-loi-de-1962-a-rempl": 0.8143,
   "2026-11-10-histoire-le-rollibock-gardien-du-glacier": 0.0565,
-  "2026-11-10-histoire-la-chasse-au-dahu": 0.0515
+  "2026-11-10-histoire-la-chasse-au-dahu": 0.0515,
+  "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa": 0.7
  },
  "soldes": {
-  "date": "2026-11-11T00:49:13.048Z",
+  "date": "2026-11-11T11:38:27.696Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 71212,
+   "credits_utilises": 71836,
    "credits_mois": 131000,
-   "credits_restants": 59788,
+   "credits_restants": 59164,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 7.9798,
+   "credit_estime_restant_usd": 7.332,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-11T00:49:14.651Z"
+ "maj": "2026-11-11T11:38:28.990Z"
 }

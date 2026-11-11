@@ -1,6 +1,6 @@
 {
  "edition": "jour",
- "etape": "scenariste",
+ "etape": "controleur",
  "agents": {
   "veilleur": "termine",
   "scenariste": "termine",
@@ -8,96 +8,6 @@
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-08T13:11:15.266Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-08T13:11:15.941Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-08T13:11:15.943Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-08T13:12:24.061Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Scène 1 : le tag « CRANS-MONTANA » recouvre le kicker « SOCIÉTÉ », à décaler. Le libellé du compteur est coupé pendant l'animation, à corriger. Carte : le sous-titre répète le titre, à remplacer. Récap : vérifie que les items 2 et 3 s'affichent bien.",
-   "t": "2026-11-08T13:12:51.082Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
-   "t": "2026-11-08T13:12:51.085Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "3 correction(s) appliquée(s), je relance le montage.",
-   "t": "2026-11-08T13:13:00.234Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-08T13:13:59.825Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Visuel globalement conforme à la charte : fond vert, cartouches ocre, zone sûre respectée, crédits visibles, aucun texte coupé. Le seul point à vérifier est l'apparition de l'item 3 de la recap, que les images prélevées ne montrent pas. Le son n'a pas pu être contrôlé directement (silences et fin de voix) : à confirmer à l'écoute.",
-   "t": "2026-11-08T13:14:18.392Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.87 $ (Claude + ElevenLabs).",
-   "t": "2026-11-08T13:14:20.069Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-08T13:14:20.071Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 66152 crédits restants ce mois-ci.",
-   "t": "2026-11-09T13:05:05.771Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-09T13:05:05.806Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "266 articles lus, je regroupe par sujet.",
-   "t": "2026-11-09T13:05:14.396Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Zermatt : chalet trop peu loué, amende de 90 000 francs ». Un cas concret et chiffré (90 000 francs) qui parle de logement et de résidences secondaires, avec trois médias qui concordent.",
-   "t": "2026-11-09T13:05:37.346Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Le Nouvelliste.",
-   "t": "2026-11-09T13:05:37.352Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-09T13:07:10.197Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits correspondent aux sources : 90’000 francs avec sursis, 10’000 francs d'amende ferme et frais, 2016, 2017, sursis de 2 ans, commune de Zermatt à l'origine de la plainte. Trois points à corriger. 1) L'accroche généralise : seul un chalet enregistré comme logement touristique doit être loué, et les 90’000 francs sont avec sursis, pas à payer. Précise-le dès les premières secondes, par exemple « Ton chalet est classé logement touristique ? Alors tu dois le louer… il risque 90’000 francs de peine, avec sursis ». 2) Corrige « Un propriétaire de Zermatt » en « propriétaire d'un chalet à Zermatt », et mentionne que l'achat s'est fait via une société. 3) Raccourcis les deux statements (scènes 4 et 8, plus de 6 s) et fais apparaître plus tôt la deuxième barre de la scène 7, pour ne pas avoir un écran vide pendant environ 10 s.",
-   "t": "2026-11-09T13:07:55.836Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Je reprends le script avec les corrections du contrôle.",
@@ -407,9 +317,99 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-10T17:10:56.620Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 59788 crédits restants ce mois-ci.",
+   "t": "2026-11-11T11:32:05.352Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Sujet choisi par la rédaction : « Télécabine Sion - piste de l'Ours : 30 millions, qui paie ? ». Je transmets au Scénariste.",
+   "t": "2026-11-11T11:32:05.354Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Le Nouvelliste.",
+   "t": "2026-11-11T11:32:05.357Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-11T11:33:36.966Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les chiffres principaux (30 M, 6 + 6 + 18, 3,5 confirmés, 1200 pers/h, 2 ans de travaux) sont corrects. Cinq points à corriger. (1) L'accroche : les 11 minutes vont de la gare aux Mayens de l'Hôpital, pas jusqu'aux skis, donc reformule. (2) « Feu vert de Berne » : la source parle d'une réponse de l'OFT attendue au printemps 2027, sans dire qu'elle sera positive. (3) « Six oppositions » : ce sont six recours contre le plan de zone devant le Tribunal cantonal. (4) La citation de Varone (« raisonnablement optimiste ») n'est pas dans les faits : source-la ou supprime-la. (5) Récap : écris « 3,5 millions sur 18 confirmés ». Mineur : retire Veysonnaz de la carte et ajoute à `faits` les deux éléments non sourcés (« porte d'entrée des 4 Vallées », « à l'étude »).",
+   "t": "2026-11-11T11:34:14.550Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-11T11:34:14.553Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-11T11:35:26.562Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections sont faites (Berne 2027, six recours, Sion seule sur la carte, « 3,5 millions » au récap, faits complétés). Il reste quatre remarques mineures, à traiter si tu as le temps. Pas de nouveau point bloquant : la vidéo peut passer en phase image.",
+   "t": "2026-11-11T11:35:47.606Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Arthur.",
+   "t": "2026-11-11T11:35:47.608Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-11T11:36:29.621Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Hans-Rudolf Berner / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-11T11:36:31.445Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-11T11:36:31.866Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-11T11:36:32.442Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-11T11:36:32.447Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-11T11:37:58.843Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Trois points à vérifier côté rendu : le titre de la scène 1 (coupé à l'entrée), les trois barres de la scène 5 et les items 2 et 3 des frises et récap (scènes 11 et 12). Et le sous-titre « Sion » de la carte (scène 2) fait doublon avec le titre, à remplacer. Corrige « Berne » orphelin dans la frise (scène 9).",
+   "t": "2026-11-11T11:38:27.679Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.70 $ (Claude + ElevenLabs).",
+   "t": "2026-11-11T11:38:28.996Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-11T11:38:29.001Z"
   }
  ],
- "maj": "2026-11-10T17:11:13.813Z",
+ "maj": "2026-11-11T11:38:44.134Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -1728,6 +1728,110 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-10-histoire-la-chasse-au-dahu/LePouls_2026-11-10-histoire-la-chasse-au-dahu.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1iWSUXBiC1K01opwEh5cgij9zwaC4qChK",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/15"
+  },
+  {
+   "id": "2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie",
+   "titre": "Télécabine de Sion : 30 millions, qui paie ?",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "La voix dit « pour monter de la gare de Sion au pied de la piste de l'Ours ». Le trajet de 11 minutes couvre la gare jusqu'aux Mayens de l'Hôpital, la liaison avec la piste se faisant ensuite. La formulation reste approximative, sans être fausse.",
+     "correction_demandee": "Si possible, dire « jusqu'aux Mayens de l'Hôpital, au pied de la piste de l'Ours » dans la voix. Titre : « *11 minutes* de la gare aux Mayens » serait plus précis."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "La citation de Philippe Varone est sourcée à la fiche de faits interne, qui renvoie elle-même à Le Nouvelliste du 11.11.2026. La source primaire n'a pas été ajoutée à `faits`.",
+     "correction_demandee": "Ajouter le passage exact du Nouvelliste à `faits` si tu y as accès. Sinon, garder la citation avec la mention de la fiche de faits."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "La photo ronde Thyon 2000 reste générique (« Thyon 2000 winter »). Elle illustre bien le raccord aux pistes, mais la photo ne montre pas la télécabine ni la gare.",
+     "correction_demandee": "Facultatif : chercher une image de la remontée ou de la gare de Sion."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 13,
+     "constat": "La voix finale dit « Et la réponse de Berne au printemps. » sans l'année, alors que le corps de la voix dit « printemps 2027 ». Le récap et la frise sont corrects.",
+     "correction_demandee": "Facultatif : écrire « au printemps 2027 » dans la dernière phrase pour rester cohérent."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base (y≈593). Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué.",
+     "correction_demandee": "Vérifier l'état final du titre après l'animation d'entrée. Si la coupure persiste, corriger le masque ou le délai d'apparition."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "La photo de la gare montre une affiche « Enfin des loisirs ! » et un panneau CFF. C'est un élément de publicité mineur, pas bloquant.",
+     "correction_demandee": "Aucune correction obligatoire. Si une autre photo de la gare est disponible sans affiche, la préférer."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "Le sous-titre « Moins de 11 minutes » répète le titre affiché.",
+     "correction_demandee": "Optionnel : faire démarrer le sous-titre à « au pied de la piste de l'Ours » pour éviter la redondance."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Sur la carte, le titre « Sion » et le sous-titre « Sion » sont identiques. C'est redondant, et la carte ne dure que 6 s.",
+     "correction_demandee": "Remplacer le sous-titre par une information utile (par exemple « Départ de la télécabine ») ou le supprimer."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Sur les images prélevées de la scène « Qui paie quoi ? », seules les barres Actionnaires et Emprunts apparaissent. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 2 millions alors que la donnée est de 6 : c'est probablement un compteur en cours d'animation.",
+     "correction_demandee": "Vérifier que les trois barres sont bien présentes à leur moment d'apparition et que les compteurs finissent sur les valeurs exactes (6 millions pour Emprunts)."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Le titre « Dossier à l'examen à Berne » laisse « Berne » seul en deuxième ligne (mot orphelin).",
+     "correction_demandee": "Reformuler plus court (par exemple « Examen du dossier à Berne ») pour tenir sur une ligne ou équilibrer les deux lignes."
+    },
+    {
+     "gravite": "important",
+     "scene": 11,
+     "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », à 3,98 s dans la scène) n'apparaît pas sur l'image.",
+     "correction_demandee": "Vérifier que le second item apparaît bien à son moment prévu et qu'il reste affiché jusqu'à la fin de la scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 12,
+     "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 4,8 s) n'apparaît pas.",
+     "correction_demandee": "Vérifier que l'item 3 apparaît bien et reste lisible jusqu'à la fin de la scène, sans chevauchement avec les sous-titres."
+    }
+   ],
+   "description_tiktok": "Une télécabine de 30 millions entre la gare de Sion et la piste de l'Ours : qui paie quoi, et qu'est-ce qui est vraiment confirmé ?\nSources : Le Nouvelliste, Rhône FM, La Télé\n#Valais #Sion #4Vallées #Télécabine #Ski",
+   "sources": [
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton",
+     "url": "https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214"
+    },
+    {
+     "media": "Rhône FM",
+     "titre": "Sion : la liaison câblée entre la ville et son coteau se précise",
+     "url": "https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189"
+    },
+    {
+     "media": "La Télé",
+     "titre": "Sion : la future télécabine vers les Mayens de l'Hôpital se précise",
+     "url": "https://latele.ch/articles/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise"
+    }
+   ],
+   "mp4": "out/telecabine-sion-piste-de-l-ours-30-millions-qui-pa/2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.7,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie/LePouls_2026-11-11-jour-telecabine-de-sion-30-millions-qui-paie.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/18Vd7BSLxEYpM12os3pyonMKkislmf18y",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/16"
   }
  ]
 }
