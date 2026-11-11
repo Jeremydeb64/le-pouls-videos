@@ -1,1 +1,26 @@
-{"edition":"histoire","max_sujets":1,"histoire":"histoires/dahu/script.json","t":"dahu-1"}
+{
+ "edition": "jour",
+ "max_sujets": 1,
+ "demande": "sujet imposé : télécabine Sion - piste de l'Ours",
+ "sujet": {
+  "titre_travail": "Télécabine Sion - piste de l'Ours : 30 millions, qui paie ?",
+  "angle": "Monter skier depuis la gare de Sion en 11 minutes : le projet, son coût (30 millions), qui paie quoi, ce qui est confirmé (3,5 millions sur les 18 espérés des pouvoirs publics) et les étapes qui restent",
+  "source_principale": {
+   "media": "Le Nouvelliste",
+   "titre": "Télécabine Sion - piste de l'Ours : la Ville mettra 3,6 millions et en espère 18 du Canton",
+   "url": "https://www.lenouvelliste.ch/valais/valais-central/sion-district/sion-commune/telecabine-sion-piste-de-lours--la-ville-mettra-36-millions-et-en-espere-18-du-canton-1521214"
+  },
+  "sources_complementaires": [
+   {
+    "media": "Rhône FM",
+    "titre": "Sion : la liaison câblée entre la ville et son coteau se précise",
+    "url": "https://www.rhonefm.ch/suisse/sion-la-liaison-cablee-entre-la-ville-et-son-coteau-se-precise-1854189"
+   }
+  ],
+  "scores": {"proximite": 5, "visuel": 4, "fraicheur": 5, "fiabilite": 5},
+  "sensible": false,
+  "votation": false,
+  "pourquoi": "Sujet choisi par la rédaction.",
+  "documents": ["docs/sujets/telecabine-sion-ours.txt"]
+ }
+}
