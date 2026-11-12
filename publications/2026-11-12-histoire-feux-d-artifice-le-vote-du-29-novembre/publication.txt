@@ -1,0 +1,32 @@
+LE POULS
+Feux d'artifice : le vote du 29 novembre
+Édition du histoire, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le 29 novembre, la Suisse vote sur les feux d'artifice bruyants des particuliers. Les deux camps, expliqués simplement.
+Sources : Confédération, RTS, 24 heures, 20 minutes
+#Valais #Votation #FeuxDArtifice #Votation29Novembre
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : Tradition festive ou nuisance bruyante ? Le peuple suisse se prononce sur une restriction des feux d'artifice (https://www.rts.ch/info/suisse/2026/article/feux-d-artifice-les-enjeux-de-la-votation-du-29-novembre-29411543.html)
+- Confédération : Votation sur l'initiative sur les feux d'artifice (https://www.admin.ch/fr/votation-sur-linitiative-populaire-pour-une-limitation-des-feux-dartifice-initiative-sur-les-feux-dartifice-221026)
+- 24 heures : Ces stations valaisannes renoncent aux feux d'artifice pour le Nouvel-An (https://www.24heures.ch/bagnes-feux-dartifice-interdits-a-nouvel-an-par-respect-515565514165)
+- Le Nouvelliste : Nouvel An 2027 : Val de Bagnes interdit feux d'artifice et pétards sur tout son territoire (https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/val-de-bagnes/nouvel-an-2027-val-de-bagnes-interdit-feux-dartifice-et-petards-sur-tout-son-territoire-secheresse-oblige-1520592)
+- Confédération : Initiative sur les feux d'artifice (https://www.admin.ch/fr/initiative-feux-artifice)
+- 20 minutes : Votation du 29 novembre : les feux d'artifice bruyants bientôt interdits ? (https://www.20min.ch/fr/story/votations-federales-tout-savoir-sur-l-initiative-contre-les-feux-d-artifice-103652667)
+
+=== CONTRÔLE ===
+Décision : OK
+- important (scène 0) : Sur la première image (t≈0), le compteur affiche « 11 jours » et le titre « Les feux d'artifice bruyants » alors que la scène attend « 17 » et « Les feux d'artifice passent au vote. ». Incohérence visible au démarrage de la vidéo.
+- important (scène 2) : Le titre « LES FEUX BRUYANTS » est suivi du sous-titre « bruyants pour les particuliers. » : répétition du mot-clé, et les deux lignes se touchent visuellement.
+- important (scène 3) : Le sous-titre « Sans lien… » et la légende « Associations de protection des animaux » ainsi que le texte d'accroche sont redondants avec le titre ; la photo de chien n'illustre que partiellement le thème.
+- important (scène 7) : Le titre « Val de Bagnes, Nendaz » passe sur deux lignes et « Nendaz » reste seul en deuxième ligne (mot orphelin). Le nom de Nendaz est aussi répété dans la phrase de bas d'écran.
+- important (scène 8) : Le titre « NOUVEL AN SANS FEUX » laisse « FEUX » seul en deuxième ligne (mot orphelin). La légende « Sans lien avec l'initiative » répète le message de la phrase « Pas de lien avec l'initiative. ».
+- important (scène 9) : Sur l'image prélevée du versus, la colonne « Contre » est entièrement vide (ni titre « Si c'est non » ni points), alors que la colonne « Pour » est remplie : traitement graphique asymétrique entre les deux camps. Le titre « SI C'EST OUI » a par ailleurs un interlettrage trop serré.
+- important (scène 10) : Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Animaux ou tradition » (prévu à 4,7 s) n'apparaît pas.
+- mineur (scène 4) : Le chiffre « 1300 » s'écrit sans espace de milliers, alors que le reste du texte suit la typographie française (« 1 300 »).

@@ -3,76 +3,11 @@
  "etape": "scenariste",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "travaille",
+  "scenariste": "termine",
   "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-09T23:14:07.893Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-09T23:15:55.310Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Scène versus : le kicker « Directions d'école cantonales » chevauche la pastille POLITIQUE, il faut le descendre ou décaler la pastille. Scène 1 : le titre ne doit pas apparaître coupé pendant l'animation. Petites retouches : retire le « : » final de « Côté contre », et vérifie qu'un sous-titre couvre la scène « 64 ans ».",
-   "t": "2026-11-09T23:16:16.759Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
-   "t": "2026-11-09T23:16:16.763Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "1 correction(s) appliquée(s), je relance le montage.",
-   "t": "2026-11-09T23:16:23.796Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-09T23:17:57.852Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Versus : fais apparaître « Pour » et « Contre » en même temps et vérifie que NEO s'affiche bien côté Contre. Vérifie aussi les sous-titres sous le « 64 ans d'âge » et la frise à trois items.",
-   "t": "2026-11-09T23:18:33.526Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.83 $ (Claude + ElevenLabs).",
-   "t": "2026-11-09T23:18:35.182Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-09T23:18:35.185Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 61005 crédits restants ce mois-ci.",
-   "t": "2026-11-10T16:27:07.047Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "HISTOIRE IA : « Le Rollibock, gardien du glacier ». Script et images déjà prêts, on passe au montage.",
-   "t": "2026-11-10T16:27:07.049Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-10T16:27:15.533Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-10T16:27:47.491Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Montage lancé.",
@@ -407,9 +342,74 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-12T13:14:32.397Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 57960 crédits restants ce mois-ci.",
+   "t": "2026-11-12T13:31:49.766Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "HISTOIRE IA : « Feux d'artifice : le vote du 29 novembre ». Script et images déjà prêts, on passe au montage.",
+   "t": "2026-11-12T13:31:49.805Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-12T13:31:49.809Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 6 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-12T13:32:17.475Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Gabriel Pollard / Wikimedia Commons, CC BY-SA 2.5.",
+   "t": "2026-11-12T13:32:18.035Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Canarian / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-12T13:32:18.535Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-12T13:32:18.784Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Alessandra Volterra / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-12T13:32:19.061Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-12T13:32:19.064Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-12T13:33:18.698Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Vidéo proche du OK : il reste à corriger le compteur au démarrage, les mots orphelins (« Nendaz », « FEUX »), les répétitions de titre et de légende, la colonne « Contre » vide dans le versus et l'item 3 du récap invisible.",
+   "t": "2026-11-12T13:33:45.418Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
+   "t": "2026-11-12T13:33:46.693Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-12T13:33:46.696Z"
   }
  ],
- "maj": "2026-11-12T13:14:41.838Z",
+ "maj": "2026-11-12T13:34:01.629Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
@@ -2021,6 +2021,101 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-12-jour-feux-d-artifice-le-vote-du-29-novembre/LePouls_2026-11-12-jour-feux-d-artifice-le-vote-du-29-novembre.mp4",
    "lien_drive": null,
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/18"
+  },
+  {
+   "id": "2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre",
+   "titre": "Feux d'artifice : le vote du 29 novembre",
+   "edition": "histoire",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "important",
+     "scene": 0,
+     "constat": "Sur la première image (t≈0), le compteur affiche « 11 jours » et le titre « Les feux d'artifice bruyants » alors que la scène attend « 17 » et « Les feux d'artifice passent au vote. ». Incohérence visible au démarrage de la vidéo.",
+     "correction_demandee": "Vérifier que le compteur démarre à la valeur finale (17) ou qu'il s'anime sans afficher une autre valeur, et que le titre affiché est celui de la scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Le titre « LES FEUX BRUYANTS » est suivi du sous-titre « bruyants pour les particuliers. » : répétition du mot-clé, et les deux lignes se touchent visuellement.",
+     "correction_demandee": "Remplacer le sous-titre par une phrase qui n'répète pas « bruyants » (par exemple « Pour les particuliers »), et laisser un espace entre le titre et le sous-titre."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Le sous-titre « Sans lien… » et la légende « Associations de protection des animaux » ainsi que le texte d'accroche sont redondants avec le titre ; la photo de chien n'illustre que partiellement le thème.",
+     "correction_demandee": "Retirer la répétition d'une des deux lignes d'explication et conserver une seule formulation."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Le titre « Val de Bagnes, Nendaz » passe sur deux lignes et « Nendaz » reste seul en deuxième ligne (mot orphelin). Le nom de Nendaz est aussi répété dans la phrase de bas d'écran.",
+     "correction_demandee": "Raccourcir le titre (par exemple « Bagnes et Nendaz » ou « Val de Bagnes ») pour éviter le mot orphelin, et vérifier que la phrase de bas d'écran ne répète pas le titre."
+    },
+    {
+     "gravite": "important",
+     "scene": 8,
+     "constat": "Le titre « NOUVEL AN SANS FEUX » laisse « FEUX » seul en deuxième ligne (mot orphelin). La légende « Sans lien avec l'initiative » répète le message de la phrase « Pas de lien avec l'initiative. ».",
+     "correction_demandee": "Reformuler le titre pour éviter le mot orphelin (ou réduire la taille) et ne garder qu'une des deux formulations « sans lien avec l'initiative »."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Sur l'image prélevée du versus, la colonne « Contre » est entièrement vide (ni titre « Si c'est non » ni points), alors que la colonne « Pour » est remplie : traitement graphique asymétrique entre les deux camps. Le titre « SI C'EST OUI » a par ailleurs un interlettrage trop serré.",
+     "correction_demandee": "Vérifier que la colonne « Contre » s'affiche avec le même traitement que « Pour » (titre et points) avant la fin de la scène, et corriger l'interlettrage du titre."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Animaux ou tradition » (prévu à 4,7 s) n'apparaît pas.",
+     "correction_demandee": "Vérifier l'apparition de l'item 3 dans la plage de la scène et s'assurer qu'il reste à l'écran jusqu'à la fin de la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 4,
+     "constat": "Le chiffre « 1300 » s'écrit sans espace de milliers, alors que le reste du texte suit la typographie française (« 1 300 »).",
+     "correction_demandee": "Écrire « 1 300 » (ou garder la valeur exacte à l'écran si la typographie est déjà validée, sans l'abréger)."
+    }
+   ],
+   "description_tiktok": "Le 29 novembre, la Suisse vote sur les feux d'artifice bruyants des particuliers. Les deux camps, expliqués simplement.\nSources : Confédération, RTS, 24 heures, 20 minutes\n#Valais #Votation #FeuxDArtifice #Votation29Novembre",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "Tradition festive ou nuisance bruyante ? Le peuple suisse se prononce sur une restriction des feux d'artifice",
+     "url": "https://www.rts.ch/info/suisse/2026/article/feux-d-artifice-les-enjeux-de-la-votation-du-29-novembre-29411543.html"
+    },
+    {
+     "media": "Confédération",
+     "titre": "Votation sur l'initiative sur les feux d'artifice",
+     "url": "https://www.admin.ch/fr/votation-sur-linitiative-populaire-pour-une-limitation-des-feux-dartifice-initiative-sur-les-feux-dartifice-221026"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Ces stations valaisannes renoncent aux feux d'artifice pour le Nouvel-An",
+     "url": "https://www.24heures.ch/bagnes-feux-dartifice-interdits-a-nouvel-an-par-respect-515565514165"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Nouvel An 2027 : Val de Bagnes interdit feux d'artifice et pétards sur tout son territoire",
+     "url": "https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/val-de-bagnes/nouvel-an-2027-val-de-bagnes-interdit-feux-dartifice-et-petards-sur-tout-son-territoire-secheresse-oblige-1520592"
+    },
+    {
+     "media": "Confédération",
+     "titre": "Initiative sur les feux d'artifice",
+     "url": "https://www.admin.ch/fr/initiative-feux-artifice"
+    },
+    {
+     "media": "20 minutes",
+     "titre": "Votation du 29 novembre : les feux d'artifice bruyants bientôt interdits ?",
+     "url": "https://www.20min.ch/fr/story/votations-federales-tout-savoir-sur-l-initiative-contre-les-feux-d-artifice-103652667"
+    }
+   ],
+   "mp4": "out/feux-d-artifice-le-vote-du-29-novembre/2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.0522,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre/LePouls_2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1ckcHzT4SyH-QUTQVRgIUeNJkbLJCjlyg",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/19"
   }
  ]
 }
