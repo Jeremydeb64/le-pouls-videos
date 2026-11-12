@@ -1316,6 +1316,11 @@
    "date": "2026-11-11T11:45:33.801Z",
    "etiquette": "édition histoire 2026-11-11",
    "usd": 0.0548
+  },
+  {
+   "date": "2026-11-12T01:58:51.189Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -1386,7 +1391,7 @@
   "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie": 0.0548
  },
  "soldes": {
-  "date": "2026-11-11T11:45:33.810Z",
+  "date": "2026-11-12T01:58:51.265Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 72433,
@@ -1400,5 +1405,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-11T11:45:35.134Z"
+ "maj": "2026-11-12T01:58:52.777Z"
 }
