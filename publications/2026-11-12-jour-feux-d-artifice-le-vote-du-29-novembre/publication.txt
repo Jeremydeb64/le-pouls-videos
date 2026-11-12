@@ -1,0 +1,35 @@
+LE POULS
+Feux d'artifice : le vote du 29 novembre
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Le 29 novembre, la Suisse vote sur les feux d'artifice bruyants des particuliers. Les deux camps, expliqués simplement.
+Sources : RTS, Confédération, 24 heures, Le Nouvelliste
+#Valais #Votation #FeuxDArtifice #Votation29Novembre
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : Tradition festive ou nuisance bruyante ? Le peuple suisse se prononce sur une restriction des feux d'artifice (https://www.rts.ch/info/suisse/2026/article/feux-d-artifice-les-enjeux-de-la-votation-du-29-novembre-29411543.html)
+- Confédération : Votation sur l'initiative sur les feux d'artifice (https://www.admin.ch/fr/votation-sur-linitiative-populaire-pour-une-limitation-des-feux-dartifice-initiative-sur-les-feux-dartifice-221026)
+- 24 heures : Ces stations valaisannes renoncent aux feux d'artifice pour le Nouvel-An (https://www.24heures.ch/bagnes-feux-dartifice-interdits-a-nouvel-an-par-respect-515565514165)
+- Le Nouvelliste : Nouvel An 2027 : Val de Bagnes interdit feux d'artifice et pétards sur tout son territoire (https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/val-de-bagnes/nouvel-an-2027-val-de-bagnes-interdit-feux-dartifice-et-petards-sur-tout-son-territoire-secheresse-oblige-1520592)
+
+=== CONTRÔLE ===
+Décision : BLOQUE
+- mineur (scène 7) : La scène statement « 300 à 350 emplois en jeu » démarre toujours au segment 26 (« et craignent pour ») au lieu du segment 27. Le chiffre s'affiche avant d'être prononcé. La correction demandée n'a pas été appliquée.
+- mineur (scène 8) : Le kicker de la carte reste « Saint-Sylvestre 2026 ». Il ne porte pas la nuance sobre (sécheresse, respect après Crans-Montana) demandée pour que le sous-titre et la carte soient cohérents.
+- mineur (scène 3) : Les sources des faits ne sont pas resserrées : le fait parle toujours de « feux de Bengale » (la source évoque cierges magiques et volcans), et les URL admin.ch de la liste `faits` n'ont pas été vérifiées ni corrigées.
+- bloquant (scène 2) : Le libellé « VOTATION » en haut à gauche chevauche la pastille « VOTATION FÉDÉRALE » et l'icône du logo : les textes se superposent.
+- bloquant (scène 10) : Le libellé « VOTATION » chevauche la pastille « APRÈS LE 29 NOVEMBRE » et l'icône du logo.
+- bloquant (scène 10) : Le titre de la carte « SI LE OUI L'EMPORTE » est coupé à droite : le E final de « L'EMPORTE » sort de la carte.
+- important (scène 10) : Sur l'image prélevée, la colonne « Si le non l'emporte » est vide alors que la colonne « Si le oui » est remplie : traitement graphique asymétrique entre les deux camps.
+- important (scène 8) : Le titre « Val de Bagnes, Nendaz » est suivi du sous-titre « Bagnes et Nendaz » : redondance. « Nendaz » reste seul en deuxième ligne du titre.
+- important (scène 9) : Le titre « Sécheresse et respect » est illustré par une photo de chalet enneigé : l'image n'illustre pas le thème annoncé.
+- important (scène 11) : Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Animaux ou tradition » (prévu à 4,76 s) n'apparaît pas sur cette image.
+- mineur (scène 1) : Le compteur affiche « 11 jours » au début de la scène alors que la valeur finale est 17 : l'animation part d'une valeur qui ne correspond pas à la donnée.
+- mineur (scène 1) : Aucun sous-titre n'apparaît sur l'image prélevée à t≈0, et la première image ne correspond pas à la scène chrono (le titre « Les feux bruyants » de la scène photo apparaît).
+- mineur (scène 2) : Dans la question, « » ? » se retrouve seul sur une ligne, et le sous-titre « un texte lancé par des citoyens » se trouve sous le bloc de question.

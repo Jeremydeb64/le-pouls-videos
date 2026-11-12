@@ -262,5 +262,47 @@
   "gravite": "important",
   "type": "frise",
   "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », prévu à 3,98 s) n'apparaît pas sur l'image."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "bloquant",
+  "type": "photo",
+  "constat": "Le libellé « VOTATION » en haut à gauche chevauche la pastille « VOTATION FÉDÉRALE » et l'icône du logo : les textes se superposent."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "bloquant",
+  "type": "recap",
+  "constat": "Le libellé « VOTATION » chevauche la pastille « APRÈS LE 29 NOVEMBRE » et l'icône du logo."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "bloquant",
+  "type": "recap",
+  "constat": "Le titre de la carte « SI LE OUI L'EMPORTE » est coupé à droite : le E final de « L'EMPORTE » sort de la carte."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "important",
+  "type": "recap",
+  "constat": "Sur l'image prélevée, la colonne « Si le non l'emporte » est vide alors que la colonne « Si le oui » est remplie : traitement graphique asymétrique entre les deux camps."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Le titre « Val de Bagnes, Nendaz » est suivi du sous-titre « Bagnes et Nendaz » : redondance. « Nendaz » reste seul en deuxième ligne du titre."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "important",
+  "type": "versus",
+  "constat": "Le titre « Sécheresse et respect » est illustré par une photo de chalet enneigé : l'image n'illustre pas le thème annoncé."
+ },
+ {
+  "date": "jeudi, 12 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Animaux ou tradition » (prévu à 4,76 s) n'apparaît pas sur cette image."
  }
 ]

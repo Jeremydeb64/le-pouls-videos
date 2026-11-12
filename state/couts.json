@@ -1199,6 +1199,136 @@
    "unite": "tokens",
    "usd": 0.0047,
    "execution": "édition histoire 2026-11-11"
+  },
+  {
+   "date": "2026-11-12T13:05:35.846Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 97511,
+   "unite": "tokens",
+   "usd": 0.0113,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:07:20.822Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 67016,
+   "unite": "tokens",
+   "usd": 0.2665,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:07:20.822Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:08:07.888Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 71327,
+   "unite": "tokens",
+   "usd": 0.1909,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:08:07.888Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:09:37.108Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 77848,
+   "unite": "tokens",
+   "usd": 0.2764,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:09:37.108Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:09:54.671Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 17038,
+   "unite": "tokens",
+   "usd": 0.0034,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:10:24.387Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 587,
+   "unite": "crédits",
+   "usd": 0.047,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:10:28.920Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 66,
+   "unite": "secondes",
+   "usd": 0.004,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:12:32.735Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 22277,
+   "unite": "tokens",
+   "usd": 0.0048,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:12:45.788Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 13963,
+   "unite": "tokens",
+   "usd": 0.0412,
+   "execution": "édition jour 2026-11-12"
+  },
+  {
+   "date": "2026-11-12T13:14:30.743Z",
+   "contexte": "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 22163,
+   "unite": "tokens",
+   "usd": 0.0047,
+   "execution": "édition jour 2026-11-12"
   }
  ],
  "executions": [
@@ -1321,6 +1451,11 @@
    "date": "2026-11-12T01:58:51.189Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-12T13:14:30.750Z",
+   "etiquette": "édition jour 2026-11-12",
+   "usd": 0.9102
   }
  ],
  "par_jour": {
@@ -1365,14 +1500,20 @@
    "elevenlabs": 0.1023,
    "higgsfield": 0,
    "total": 0.7548
+  },
+  "2026-11-12": {
+   "anthropic": 0.8592,
+   "elevenlabs": 0.051,
+   "higgsfield": 0,
+   "total": 0.9102
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 7.6127,
-   "elevenlabs": 0.7046,
+   "anthropic": 8.4719,
+   "elevenlabs": 0.7556,
    "higgsfield": 0,
-   "total": 8.3173
+   "total": 9.2275
   }
  },
  "par_video": {
@@ -1388,22 +1529,23 @@
   "2026-11-10-histoire-le-rollibock-gardien-du-glacier": 0.0565,
   "2026-11-10-histoire-la-chasse-au-dahu": 0.0515,
   "2026-11-11-jour-telecabine-sion-piste-de-l-ours-30-millions-qui-pa": 0.7,
-  "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie": 0.0548
+  "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie": 0.0548,
+  "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre": 0.8989
  },
  "soldes": {
-  "date": "2026-11-12T01:58:51.265Z",
+  "date": "2026-11-12T13:14:30.760Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 72433,
+   "credits_utilises": 73040,
    "credits_mois": 131000,
-   "credits_restants": 58567,
+   "credits_restants": 57960,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 7.3273,
+   "credit_estime_restant_usd": 6.4681,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-12T01:58:52.777Z"
+ "maj": "2026-11-12T13:14:32.389Z"
 }
