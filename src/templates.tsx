@@ -744,10 +744,10 @@ export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; 
   const fade = interpolate(frame, [30, 38], [1, 0], clamp);
   return (
     <Frame theme={theme}>
-      <Body top={260}>
+      <Body top={400}>
         <Kicker color={t.accent}>{kicker}</Kicker>
-        <div style={{ position: "relative", height: 380, width: CONTENT_W }}>
-          <svg width={CONTENT_W} height={380} viewBox={`0 0 ${CONTENT_W} 380`} style={{ position: "absolute", inset: 0 }}>
+        <div style={{ position: "relative", height: 300, width: CONTENT_W }}>
+          <svg width={CONTENT_W} height={300} viewBox={`0 80 ${CONTENT_W} 300`} style={{ position: "absolute", inset: 0 }}>
             <g transform={`translate(${CONTENT_W / 2 - 110} ${drop})`} opacity={fade}>
               <rect width={220} height={150} rx={8} fill={C.white} stroke={t.fg} strokeWidth={4} />
               <rect x={30} y={34} width={160} height={10} rx={5} fill={t.sub} />
@@ -761,11 +761,11 @@ export const Ballot: React.FC<P<{ kicker: string; date: string; niveau: string; 
           </svg>
         </div>
         <Rise delay={30}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 104, lineHeight: 1, color: t.fg, marginTop: 30, letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{date}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 96, lineHeight: 1, color: t.fg, marginTop: 24, letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{date}</div>
         </Rise>
         <Souligne width={420} delay={36} />
         <Rise delay={44}>
-          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, lineHeight: 1.1, color: t.fg, marginTop: 24 }}>{question}</div>
+          <div style={{ fontFamily: SANS, fontWeight: 700, fontSize: 50, lineHeight: 1.1, color: t.fg, marginTop: 24 }}>{question.replace(/ ([?!:;»])/g, "\u00a0$1").replace(/« /g, "«\u00a0")}</div>
         </Rise>
       </Body>
     </Frame>
@@ -777,11 +777,11 @@ export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points
   const t = th(theme);
   const at = useAt();
   const Col: React.FC<{ titre: string; points: string[]; a: number }> = ({ titre, points, a }) => (
-    <div style={{ flex: 1, background: C.white, borderRadius: 16, overflow: "hidden", minHeight: 640 }}>
+    <div style={{ flex: 1, background: C.white, borderRadius: 16, overflow: "hidden", minHeight: 540 }}>
       <div style={{ height: 20, background: C.ochre }} />
       <div style={{ padding: "26px 26px 30px" }}>
         <Rise delay={at(a)}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 64, color: C.green, lineHeight: 1, letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{titre}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: C.green, lineHeight: 1.05, overflowWrap: "break-word", letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{titre}</div>
         </Rise>
         <div style={{ height: 3, background: C.softgrey, margin: "24px 0 6px" }} />
         {points.map((p, i) => (
@@ -797,7 +797,7 @@ export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points
   );
   return (
     <Frame theme={theme}>
-      <Body top={240}>
+      <Body top={400}>
         <Kicker color={t.accent}>{kicker}</Kicker>
         <div style={{ display: "flex", gap: 40 }}>
           <Col titre={pour.titre || "Oui"} points={pour.points} a={pour.at} />

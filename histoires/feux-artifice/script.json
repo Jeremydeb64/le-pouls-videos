@@ -1,0 +1,513 @@
+{
+ "titre": "Feux d'artifice : le vote du 29 novembre",
+ "rubrique": "VOTATION",
+ "presentateur": "duo",
+ "sensible": true,
+ "ambiance": "aucune",
+ "reprise": true,
+ "dialogue": [
+  {
+   "qui": "lucie",
+   "texte": "Les feux d'artifice bruyants vont-ils disparaître ? Salut, c'est Lucie, et aujourd'hui, la votation du 29 novembre, dans 17 jours."
+  },
+  {
+   "qui": "arthur",
+   "texte": "C'est une initiative : un texte lancé par des citoyens. Il veut interdire la vente et l'usage des feux d'artifice bruyants pour les particuliers."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Les feux de Bengale et les volcans resteraient permis."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Le camp du oui réunit des associations de protection des animaux. Pour elles, les détonations paniquent les bêtes. Elles pointent aussi 1300 tonnes de déchets par an."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Le camp du non réunit le Conseil fédéral, la majorité du Parlement et des milieux économiques. Pour eux, l'initiative va trop loin : les règles existent déjà. Ils défendent aussi la tradition, et craignent pour les emplois du secteur."
+  },
+  {
+   "qui": "arthur",
+   "texte": "En Valais, Val de Bagnes et Nendaz ne tireront rien à la Saint-Sylvestre : sécheresse, et respect après le drame de Crans-Montana. Pas de lien avec l'initiative. Bagnes en rediscutera après le vote."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Si le oui l'emporte, les particuliers ne pourront plus tirer de pièces bruyantes."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Si c'est non, les règles actuelles restent."
+  },
+  {
+   "qui": "lucie",
+   "texte": "À retenir : vote le 29 novembre. Il vise les feux bruyants des particuliers."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Un camp défend les animaux, l'autre la tradition et les emplois."
+  },
+  {
+   "qui": "lucie",
+   "texte": "C'était Lucie…"
+  },
+  {
+   "qui": "arthur",
+   "texte": "…et Arthur, pour Le Pouls."
+  },
+  {
+   "qui": "lucie",
+   "texte": "On se retrouve demain."
+  }
+ ],
+ "segments": [
+  {
+   "dit": "Les feux d'artifice bruyants",
+   "affiche": "Les feux d'artifice bruyants"
+  },
+  {
+   "dit": "vont-ils disparaître ?",
+   "affiche": "vont-ils disparaître ?"
+  },
+  {
+   "dit": "Salut, c'est Lucie,",
+   "affiche": "Salut, c'est Lucie,"
+  },
+  {
+   "dit": "et aujourd'hui, la votation",
+   "affiche": "et aujourd'hui, la votation"
+  },
+  {
+   "dit": "du 29 novembre,",
+   "affiche": "du 29 novembre,"
+  },
+  {
+   "dit": "dans 17 jours.",
+   "affiche": "dans 17 jours."
+  },
+  {
+   "dit": "C'est une initiative :",
+   "affiche": "C'est une initiative :"
+  },
+  {
+   "dit": "un texte lancé par des citoyens.",
+   "affiche": "un texte lancé par des citoyens."
+  },
+  {
+   "dit": "Il veut interdire la vente",
+   "affiche": "Il veut interdire la vente"
+  },
+  {
+   "dit": "et l'usage des feux d'artifice",
+   "affiche": "et l'usage des feux d'artifice"
+  },
+  {
+   "dit": "bruyants pour les particuliers.",
+   "affiche": "bruyants pour les particuliers."
+  },
+  {
+   "dit": "Les feux de Bengale",
+   "affiche": "Les feux de Bengale"
+  },
+  {
+   "dit": "et les volcans resteraient permis.",
+   "affiche": "et les volcans resteraient permis."
+  },
+  {
+   "dit": "Le camp du oui réunit",
+   "affiche": "Le camp du oui réunit"
+  },
+  {
+   "dit": "des associations de protection des animaux.",
+   "affiche": "des associations de protection des animaux."
+  },
+  {
+   "dit": "Pour elles, les détonations",
+   "affiche": "Pour elles, les détonations"
+  },
+  {
+   "dit": "paniquent les bêtes.",
+   "affiche": "paniquent les bêtes."
+  },
+  {
+   "dit": "Elles pointent aussi",
+   "affiche": "Elles pointent aussi"
+  },
+  {
+   "dit": "1300 tonnes",
+   "affiche": "1300 tonnes"
+  },
+  {
+   "dit": "de déchets par an.",
+   "affiche": "de déchets par an."
+  },
+  {
+   "dit": "Le camp du non réunit",
+   "affiche": "Le camp du non réunit"
+  },
+  {
+   "dit": "le Conseil fédéral,",
+   "affiche": "le Conseil fédéral,"
+  },
+  {
+   "dit": "la majorité du Parlement",
+   "affiche": "la majorité du Parlement"
+  },
+  {
+   "dit": "et des milieux économiques.",
+   "affiche": "et des milieux économiques."
+  },
+  {
+   "dit": "Pour eux, l'initiative va trop loin :",
+   "affiche": "Pour eux, l'initiative va trop loin :"
+  },
+  {
+   "dit": "les règles existent déjà.",
+   "affiche": "les règles existent déjà."
+  },
+  {
+   "dit": "Ils défendent aussi la tradition,",
+   "affiche": "Ils défendent aussi la tradition,"
+  },
+  {
+   "dit": "et craignent pour",
+   "affiche": "et craignent pour"
+  },
+  {
+   "dit": "les emplois du secteur.",
+   "affiche": "les emplois du secteur."
+  },
+  {
+   "dit": "En Valais, Val de Bagnes",
+   "affiche": "En Valais, Val de Bagnes"
+  },
+  {
+   "dit": "et Nendaz ne tireront rien",
+   "affiche": "et Nendaz ne tireront rien"
+  },
+  {
+   "dit": "à la Saint-Sylvestre :",
+   "affiche": "à la Saint-Sylvestre :"
+  },
+  {
+   "dit": "sécheresse, et respect après",
+   "affiche": "sécheresse, et respect après"
+  },
+  {
+   "dit": "le drame de Crans-Montana.",
+   "affiche": "le drame de Crans-Montana."
+  },
+  {
+   "dit": "Pas de lien avec l'initiative.",
+   "affiche": "Pas de lien avec l'initiative."
+  },
+  {
+   "dit": "Bagnes en rediscutera",
+   "affiche": "Bagnes en rediscutera"
+  },
+  {
+   "dit": "après le vote.",
+   "affiche": "après le vote."
+  },
+  {
+   "dit": "Si le oui l'emporte,",
+   "affiche": "Si le oui l'emporte,"
+  },
+  {
+   "dit": "les particuliers ne pourront plus",
+   "affiche": "les particuliers ne pourront plus"
+  },
+  {
+   "dit": "tirer de pièces bruyantes.",
+   "affiche": "tirer de pièces bruyantes."
+  },
+  {
+   "dit": "Si c'est non,",
+   "affiche": "Si c'est non,"
+  },
+  {
+   "dit": "les règles actuelles restent.",
+   "affiche": "les règles actuelles restent."
+  },
+  {
+   "dit": "À retenir :",
+   "affiche": "À retenir :"
+  },
+  {
+   "dit": "vote le 29 novembre.",
+   "affiche": "vote le 29 novembre."
+  },
+  {
+   "dit": "Il vise les feux bruyants",
+   "affiche": "Il vise les feux bruyants"
+  },
+  {
+   "dit": "des particuliers.",
+   "affiche": "des particuliers."
+  },
+  {
+   "dit": "Un camp défend les animaux,",
+   "affiche": "Un camp défend les animaux,"
+  },
+  {
+   "dit": "l'autre la tradition",
+   "affiche": "l'autre la tradition"
+  },
+  {
+   "dit": "et les emplois.",
+   "affiche": "et les emplois."
+  },
+  {
+   "dit": "C'était Lucie…",
+   "affiche": "C'était Lucie…"
+  },
+  {
+   "dit": "…et Arthur, pour Le Pouls.",
+   "affiche": "…et Arthur, pour Le Pouls."
+  },
+  {
+   "dit": "On se retrouve demain.",
+   "affiche": "On se retrouve demain."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "chrono",
+   "from": {
+    "seg": 0
+   },
+   "props": {
+    "kicker": "Votation fédérale",
+    "label": "Dans",
+    "value": 17,
+    "unit": "jours",
+    "headline": "Les feux d'artifice passent au vote."
+   }
+  },
+  {
+   "type": "ballot",
+   "from": {
+    "seg": 6
+   },
+   "props": {
+    "kicker": "Votation fédérale",
+    "date": "29 novembre 2026",
+    "niveau": "fédéral",
+    "question": "Acceptez-vous l'initiative populaire « Pour une limitation des feux d'artifice » ?"
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 8
+   },
+   "props": {
+    "recherche": "fireworks night",
+    "kicker": "Ce que vise le texte",
+    "title": "Les feux *bruyants*"
+   }
+  },
+  {
+   "type": "photoRonde",
+   "from": {
+    "seg": 13
+   },
+   "props": {
+    "recherche": "dog Switzerland",
+    "kicker": "Les partisans",
+    "title": "Le camp du *oui*",
+    "legende": "Associations de protection des animaux"
+   }
+  },
+  {
+   "type": "statement",
+   "from": {
+    "seg": 18
+   },
+   "props": {
+    "kicker": "Selon les initiants",
+    "text": "*1300 tonnes* de déchets par an"
+   }
+  },
+  {
+   "type": "photoRonde",
+   "from": {
+    "seg": 20
+   },
+   "props": {
+    "recherche": "Bundeshaus Bern",
+    "kicker": "Les opposants",
+    "title": "Le camp du *non*",
+    "legende": "Conseil fédéral et majorité du Parlement"
+   }
+  },
+  {
+   "type": "statement",
+   "from": {
+    "seg": 26
+   },
+   "props": {
+    "kicker": "Selon les opposants",
+    "text": "*Tradition* et emplois"
+   }
+  },
+  {
+   "type": "carte",
+   "from": {
+    "seg": 29
+   },
+   "props": {
+    "kicker": "En Valais",
+    "communes": [
+     "Val de Bagnes",
+     "Nendaz"
+    ],
+    "titre": "Pas de feux à la Saint-Sylvestre"
+   }
+  },
+  {
+   "type": "photoRonde",
+   "from": {
+    "seg": 32
+   },
+   "props": {
+    "recherche": "Verbier winter",
+    "kicker": "Sécheresse et respect",
+    "title": "Nouvel An *sans feux*",
+    "legende": "Sans lien avec l'initiative"
+   }
+  },
+  {
+   "type": "versus",
+   "from": {
+    "seg": 37
+   },
+   "props": {
+    "kicker": "Après le 29 novembre",
+    "pour": {
+     "titre": "Si c'est oui",
+     "points": [
+      "Plus de pièces bruyantes",
+      "Pour les particuliers"
+     ],
+     "at": {
+      "seg": 37
+     }
+    },
+    "contre": {
+     "titre": "Si c'est non",
+     "points": [
+      "Règles actuelles maintenues",
+      "Pas de changement"
+     ],
+     "at": {
+      "seg": 40
+     }
+    }
+   }
+  },
+  {
+   "type": "recap",
+   "from": {
+    "seg": 42
+   },
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Vote le 29 novembre",
+      "at": {
+       "seg": 43
+      }
+     },
+     {
+      "n": 2,
+      "label": "Feux bruyants visés",
+      "at": {
+       "seg": 44
+      }
+     },
+     {
+      "n": 3,
+      "label": "Animaux ou tradition",
+      "at": {
+       "seg": 46
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "outro",
+   "from": {
+    "seg": 49
+   },
+   "props": {
+    "sources": "Sources : Confédération, RTS, 24 heures, 20 minutes"
+   }
+  }
+ ],
+ "faits": [
+  {
+   "fait": "Votation fédérale le 29 novembre 2026 sur l'initiative « Pour une limitation des feux d'artifice »",
+   "source": "https://www.admin.ch/fr/initiative-feux-artifice"
+  },
+  {
+   "fait": "L'initiative vise à interdire la vente et l'utilisation de pièces d'artifice qui causent du bruit ; les feux de Bengale et volcans traditionnels resteraient autorisés",
+   "source": "https://www.admin.ch/fr/initiative-feux-artifice"
+  },
+  {
+   "fait": "Les initiants (organisations de protection des animaux) avancent 1300 tonnes de déchets par an (chiffre du comité)",
+   "source": "https://www.20min.ch/fr/story/votations-federales-tout-savoir-sur-l-initiative-contre-les-feux-d-artifice-103652667"
+  },
+  {
+   "fait": "Le Conseil fédéral et le Parlement estiment que l'initiative va trop loin, car l'usage des feux d'artifice est déjà réglementé par la Confédération, les cantons et les communes",
+   "source": "https://www.uvek.admin.ch/fr/initiative-sur-les-feux-d-artifice"
+  },
+  {
+   "fait": "Val de Bagnes et Nendaz ne tireront aucun feu d'artifice le 31 décembre (sécheresse et respect après le drame de Crans-Montana) ; l'interdiction de Bagnes ne vaut que pour ce réveillon et sera rediscutée, notamment à la lumière de la votation",
+   "source": "https://www.24heures.ch/bagnes-feux-dartifice-interdits-a-nouvel-an-par-respect-515565514165"
+  },
+  {
+   "fait": "Nendaz a décidé en janvier 2026 d'interdire tous les feux d'artifice sur son territoire, sans lien avec la votation",
+   "source": "https://www.nendaz.org/fr/infos-pratiques/actualites/interdiction-feux-d-artifice-15711/"
+  },
+  {
+   "fait": "Le Conseil fédéral et le Parlement recommandent le rejet ; les opposants invoquent la tradition et la menace pour le secteur des feux d'artifice",
+   "source": "https://www.uvek.admin.ch/fr/initiative-sur-les-feux-d-artifice"
+  }
+ ],
+ "sources": [
+  {
+   "media": "RTS",
+   "titre": "Tradition festive ou nuisance bruyante ? Le peuple suisse se prononce sur une restriction des feux d'artifice",
+   "url": "https://www.rts.ch/info/suisse/2026/article/feux-d-artifice-les-enjeux-de-la-votation-du-29-novembre-29411543.html"
+  },
+  {
+   "media": "Confédération",
+   "titre": "Votation sur l'initiative sur les feux d'artifice",
+   "url": "https://www.admin.ch/fr/votation-sur-linitiative-populaire-pour-une-limitation-des-feux-dartifice-initiative-sur-les-feux-dartifice-221026"
+  },
+  {
+   "media": "24 heures",
+   "titre": "Ces stations valaisannes renoncent aux feux d'artifice pour le Nouvel-An",
+   "url": "https://www.24heures.ch/bagnes-feux-dartifice-interdits-a-nouvel-an-par-respect-515565514165"
+  },
+  {
+   "media": "Le Nouvelliste",
+   "titre": "Nouvel An 2027 : Val de Bagnes interdit feux d'artifice et pétards sur tout son territoire",
+   "url": "https://www.lenouvelliste.ch/valais/bas-valais/entremont-district/val-de-bagnes/nouvel-an-2027-val-de-bagnes-interdit-feux-dartifice-et-petards-sur-tout-son-territoire-secheresse-oblige-1520592"
+  },
+  {
+   "media": "Confédération",
+   "titre": "Initiative sur les feux d'artifice",
+   "url": "https://www.admin.ch/fr/initiative-feux-artifice"
+  },
+  {
+   "media": "20 minutes",
+   "titre": "Votation du 29 novembre : les feux d'artifice bruyants bientôt interdits ?",
+   "url": "https://www.20min.ch/fr/story/votations-federales-tout-savoir-sur-l-initiative-contre-les-feux-d-artifice-103652667"
+  }
+ ],
+ "description_tiktok": "Le 29 novembre, la Suisse vote sur les feux d'artifice bruyants des particuliers. Les deux camps, expliqués simplement.\nSources : Confédération, RTS, 24 heures, 20 minutes\n#Valais #Votation #FeuxDArtifice #Votation29Novembre"
+}
