@@ -277,12 +277,12 @@
     "unit": "jours",
     "headline": "Les feux d'artifice passent au vote."
    },
-   "to": 8.02,
+   "to": 3.98,
    "theme": "green"
   },
   {
    "type": "ballot",
-   "from": 8.02,
+   "from": 3.98,
    "props": {
     "kicker": "Votation fédérale",
     "date": "29 novembre 2026",
@@ -298,7 +298,7 @@
    "props": {
     "recherche": "fireworks night",
     "kicker": "Ce que vise le texte",
-    "title": "Les feux *bruyants*",
+    "title": "Feux *bruyants*",
     "src": "photo-2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre-2.jpg",
     "credit": "Photo : Gabriel Pollard / Wikimedia Commons, CC BY-SA 2.5"
    },
@@ -324,7 +324,7 @@
    "from": 24.78,
    "props": {
     "kicker": "Selon les initiants",
-    "text": "*1300 tonnes* de déchets par an"
+    "text": "*1 300 tonnes* de déchets par an"
    },
    "to": 26.06,
    "theme": "green"
@@ -373,8 +373,8 @@
    "props": {
     "recherche": "Verbier winter",
     "kicker": "Sécheresse et respect",
-    "title": "Nouvel An *sans feux*",
-    "legende": "Sans lien avec l'initiative",
+    "title": "Pas de *feux*",
+    "legende": "Val de Bagnes et Nendaz",
     "src": "photo-2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre-8.jpg",
     "credit": "Photo : Alessandra Volterra / Wikimedia Commons, CC BY-SA 4.0"
    },

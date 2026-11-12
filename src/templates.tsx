@@ -781,7 +781,7 @@ export const Versus: React.FC<P<{ kicker: string; pour: { titre?: string; points
       <div style={{ height: 20, background: C.ochre }} />
       <div style={{ padding: "26px 26px 30px" }}>
         <Rise delay={at(a)}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: C.green, lineHeight: 1.05, overflowWrap: "break-word", letterSpacing: TRACK_TITRE, textTransform: "uppercase" }}>{titre}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 50, color: C.green, lineHeight: 1.05, overflowWrap: "break-word", letterSpacing: 0, wordSpacing: 6, textTransform: "uppercase" }}>{titre}</div>
         </Rise>
         <div style={{ height: 3, background: C.softgrey, margin: "24px 0 6px" }} />
         {points.map((p, i) => (
