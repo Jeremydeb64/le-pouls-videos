@@ -3,121 +3,11 @@
  "etape": "scenariste",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "termine",
+  "scenariste": "travaille",
   "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-10T16:27:47.495Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-10T16:30:05.992Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "OK",
-   "t": "2026-11-10T16:30:26.663Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.06 $ (Claude + ElevenLabs).",
-   "t": "2026-11-10T16:30:28.192Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-10T16:30:28.194Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 60369 crédits restants ce mois-ci.",
-   "t": "2026-11-10T17:06:38.266Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "HISTOIRE IA : « La chasse au dahu ». Script et images déjà prêts, on passe au montage.",
-   "t": "2026-11-10T17:06:38.268Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-10T17:06:50.432Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-10T17:07:21.720Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-10T17:10:33.744Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "OK",
-   "t": "2026-11-10T17:10:55.205Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
-   "t": "2026-11-10T17:10:56.617Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-10T17:10:56.620Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 59788 crédits restants ce mois-ci.",
-   "t": "2026-11-11T11:32:05.352Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Sujet choisi par la rédaction : « Télécabine Sion - piste de l'Ours : 30 millions, qui paie ? ». Je transmets au Scénariste.",
-   "t": "2026-11-11T11:32:05.354Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Le Nouvelliste.",
-   "t": "2026-11-11T11:32:05.357Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-11T11:33:36.966Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les chiffres principaux (30 M, 6 + 6 + 18, 3,5 confirmés, 1200 pers/h, 2 ans de travaux) sont corrects. Cinq points à corriger. (1) L'accroche : les 11 minutes vont de la gare aux Mayens de l'Hôpital, pas jusqu'aux skis, donc reformule. (2) « Feu vert de Berne » : la source parle d'une réponse de l'OFT attendue au printemps 2027, sans dire qu'elle sera positive. (3) « Six oppositions » : ce sont six recours contre le plan de zone devant le Tribunal cantonal. (4) La citation de Varone (« raisonnablement optimiste ») n'est pas dans les faits : source-la ou supprime-la. (5) Récap : écris « 3,5 millions sur 18 confirmés ». Mineur : retire Veysonnaz de la carte et ajoute à `faits` les deux éléments non sourcés (« porte d'entrée des 4 Vallées », « à l'étude »).",
-   "t": "2026-11-11T11:34:14.550Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-11T11:34:14.553Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-11T11:35:26.562Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections sont faites (Berne 2027, six recours, Sion seule sur la carte, « 3,5 millions » au récap, faits complétés). Il reste quatre remarques mineures, à traiter si tu as le temps. Pas de nouveau point bloquant : la vidéo peut passer en phase image.",
-   "t": "2026-11-11T11:35:47.606Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Arthur.",
-   "t": "2026-11-11T11:35:47.608Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
@@ -407,9 +297,119 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-12T13:33:46.696Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 53931 crédits restants ce mois-ci.",
+   "t": "2026-11-13T07:57:44.300Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Sujet choisi par la rédaction : « Cremo quitte le Valais : la raclette AOP en danger ? ». Je transmets au Scénariste.",
+   "t": "2026-11-13T07:57:44.302Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du État du Valais.",
+   "t": "2026-11-13T07:57:44.306Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-13T08:00:34.496Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Faits vérifiés et conformes aux sources : jeudi 12 novembre, 130 emplois, perte de 17 millions de francs en 2025, 13,5 puis 9 millions de kilos de lait, 1927, Villars-sur-Glâne, citation de Gérald Dayer. À corriger : (1) « 3 ans pour trouver un repreneur » n'est dans aucune source, remplace-le dans la voix et le récap. (2) « L'affinage ne peut pas partir » est trop affirmatif alors que la task force veut le « maintenir » : nuance la phrase. (3) Titre de la scène 1 : remets « Près d'une meule sur deux ». (4) « Arrêt en 2030 » : les sources parlent d'un arrêt définitif sans date, corrige la voix et la frise. (5) Ajoute Watson aux sources, ou appuie le fait des trois options sur une source déjà listée.",
+   "t": "2026-11-13T08:01:14.720Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-13T08:01:14.725Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-13T08:02:19.043Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Corrections vérifiées et appliquées : « 3 ans » supprimé, nuance sur l'affinage ajoutée, « Près d'une meule sur deux » corrigé, 2030 retiré de l'arrêt, Watson ajouté aux sources, « groupe de travail » remplace « task force », intro passée en [serious]. Reste deux mineurs non bloquants : le nom de la carte (Turtmann-Unterems) et la précision de « près de la moitié » pour Sierre.",
+   "t": "2026-11-13T08:02:29.205Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-13T08:02:29.207Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Arnaud 25 / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-13T08:03:18.497Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Marizbluesky / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-13T08:03:20.316Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Georg Russ / Wikimedia Commons, CC0.",
+   "t": "2026-11-13T08:03:24.789Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Conceptuel / Wikimedia Commons, CC0.",
+   "t": "2026-11-13T08:03:25.374Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : FkMohr / Wikimedia Commons, CC BY-SA 3.0 de.",
+   "t": "2026-11-13T08:03:30.319Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-13T08:03:30.323Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-13T08:05:12.277Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Deux points bloquants à corriger : le mot « LAISSERONS » déborde de la carte de la scène 11, et il faut vérifier le titre coupé à la première image. Ajoute aussi la correction du compteur à 9 (scène 7), l'orphelin « 2025 » (scène 5), la photo non valaisanne (scène 1) et la redondance « Sierre » (scène 2). Le son et les sous-titres sont cohérents, mais vérifie qu'aucune plage sans voix ne dépasse une seconde.",
+   "t": "2026-11-13T08:05:43.021Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
+   "t": "2026-11-13T08:05:43.025Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "5 correction(s) appliquée(s), je relance le montage.",
+   "t": "2026-11-13T08:05:57.717Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Cremo quitte le Valais : la raclette AOP en danger ? » abandonné : Error: Error loading image with src: http://localhost:3000/public/photo-2026-11-13-jour-cremo-veut-quitter-le-valais-d-ici-2030-0-r.jpg\n    at cancelRenderInternal (http://localhost:3000/bundle.js:3589:13)\n    at http://localhost:3000/bundle.js:3816:12\n    at handleImageError (http://localhost:3000/bundle.js:17607:5)\n    at Object.Nb (http://localhost:3000/bundle.js:1116:317)\n    at Tb (http://localhost:3000/bundle.js:1116:471)\n    at Ub (http://localhost:3000/bundle.js:1117:35)\n    at nf (http://localhost:3000/bundle.js:1167:68)\n    at se (http://localhost:3000/bundle.js:1168:380)\n    at http://localhost:3000/bundle.js:1179:104\n    at Qk (http://localhost:3000/bundle.js:1335:42)",
+   "t": "2026-11-13T08:06:02.296Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.83 $ (Claude + ElevenLabs).",
+   "t": "2026-11-13T08:06:03.757Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-13T08:06:03.760Z"
   }
  ],
- "maj": "2026-11-12T13:34:01.629Z",
+ "maj": "2026-11-13T08:06:03.760Z",
  "episodes": [
   {
    "id": "2026-11-04-matin-salaire-minimum-valaisan-j-25",
