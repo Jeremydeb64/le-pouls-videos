@@ -1491,6 +1491,11 @@
    "date": "2026-11-12T13:33:45.423Z",
    "etiquette": "édition histoire 2026-11-12",
    "usd": 0.0522
+  },
+  {
+   "date": "2026-11-13T01:23:29.197Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -1569,12 +1574,12 @@
   "2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre": 0.0522
  },
  "soldes": {
-  "date": "2026-11-12T13:33:45.428Z",
+  "date": "2026-11-13T01:23:29.240Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 73611,
+   "credits_utilises": 77069,
    "credits_mois": 131000,
-   "credits_restants": 57389,
+   "credits_restants": 53931,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
@@ -1583,5 +1588,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-12T13:33:46.689Z"
+ "maj": "2026-11-13T01:23:30.785Z"
 }
