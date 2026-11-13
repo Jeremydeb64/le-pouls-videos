@@ -3,96 +3,11 @@
  "etape": "controleur",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "travaille",
-  "controleur": "travaille",
+  "scenariste": "termine",
+  "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Arthur.",
-   "t": "2026-11-11T11:42:58.279Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 18 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-11T11:43:26.293Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Hans-Rudolf Berner / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-11T11:43:26.875Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Reust / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-11T11:43:27.591Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-11T11:43:27.931Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-11T11:43:27.935Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-11T11:45:00.634Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bon épisode, la mise en page tient. Il reste à corriger : le titre de la première scène est coupé à sa base et son sous-titre répète le titre ; la scène « Qui paie quoi ? » doit afficher la barre des 18 millions et les compteurs finaux ; « Berne » est orphelin dans la frise ; vérifie que le second item de la frise « ouverture » et le troisième du récapitulatif apparaissent bien, et qu'il n'y a pas de silence sur la scène Thyon.",
-   "t": "2026-11-11T11:45:33.796Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
-   "t": "2026-11-11T11:45:35.140Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-11T11:45:35.144Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 58567 crédits restants ce mois-ci.",
-   "t": "2026-11-12T13:05:06.555Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-12T13:05:06.558Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "277 articles lus, je regroupe par sujet.",
-   "t": "2026-11-12T13:05:15.388Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Feux d'artifice : ce que dit le vote du 29 novembre ». Votation fédérale dans 17 jours sur une question que chacun vit concrètement (fêtes, nouvel an, nuisances), sans sujet déjà traité sur cet objet.",
-   "t": "2026-11-12T13:05:35.847Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Suisse.",
-   "t": "2026-11-12T13:05:35.854Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-12T13:07:20.826Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Faits et chiffres corrects : votation le 29 novembre, 1300 tonnes (comité) et 300 à 350 emplois (opposants), tous deux bien attribués, et J-17 exact. Équilibre oui/non correct, aucune recommandation. À corriger : (1) pour Val de Bagnes et Nendaz, ajoute la raison (sécheresse et respect après Crans-Montana) et ne laisse pas croire que c'est une conséquence du vote ; (2) ton plus sobre, sans [smiling] en sortie ; (3) « feux d'artifice bruyants » dès l'accroche ; (4) statement des emplois à démarrer au segment 27 ; (5) mineurs : cierges magiques/feux de Bengale, URL des faits, ligne « cantons et communes libres » non dite.",
-   "t": "2026-11-12T13:08:07.889Z"
-  },
   {
    "agent": "scenariste",
    "texte": "Je reprends le script avec les corrections du contrôle.",
@@ -407,107 +322,95 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-13T08:13:31.755Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 53227 crédits restants ce mois-ci.",
+   "t": "2026-11-13T08:18:49.414Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "HISTOIRE IA : « Cremo veut quitter le Valais d'ici 2030 ». Script et images déjà prêts, on passe au montage.",
+   "t": "2026-11-13T08:18:49.416Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-13T08:18:49.419Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 6 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-13T08:19:19.674Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Arnaud 25 / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-13T08:19:20.343Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-13T08:19:25.863Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Marizbluesky / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-13T08:19:26.521Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Georg Russ / Wikimedia Commons, CC0.",
+   "t": "2026-11-13T08:19:27.190Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Faldrian. / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-13T08:19:27.962Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Conceptuel / Wikimedia Commons, CC0.",
+   "t": "2026-11-13T08:19:28.673Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-13T08:19:28.965Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : FkMohr / Wikimedia Commons, CC BY-SA 3.0 de.",
+   "t": "2026-11-13T08:19:29.627Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-13T08:19:29.630Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-13T08:21:15.970Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Visuel : le fond vert, les pastilles et les sous-titres respectent la charte et la zone TikTok, la fin est bien couverte. À corriger avant nouveau rendu : (1) le crédit de la scène Sierre affiche « Template:Bild-picswiss », à remplacer par le vrai auteur ; (2) le nom du site Tourtemagne/Turtmann-Unterems est à harmoniser, et la phrase « Sierre et Tourtemagne » est répétée trois fois dans la carte ; (3) les répétitions « né en 1927 », « en 2025 » et « Lait… canton » sont à nettoyer, ainsi que le mot orphelin « 2025 » et « canton » ; (4) vérifie sur les images finales que le chiffre 130 s'affiche bien (le rendu montre 88) et que les barres, les items de « Trois priorités » et de « À retenir » apparaissent tous à leur temps prévu ; (5) le titre de la première image est coupé : vérifie qu'il s'agit bien d'une animation en cours.",
+   "t": "2026-11-13T08:22:03.403Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.06 $ (Claude + ElevenLabs).",
+   "t": "2026-11-13T08:22:05.426Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-13T08:22:05.429Z"
   }
  ],
- "maj": "2026-11-13T08:13:31.755Z",
+ "maj": "2026-11-13T08:22:30.637Z",
  "episodes": [
-  {
-   "id": "2026-11-04-matin-randa-un-bloc-de-glace-sous-haute-surveillance",
-   "titre": "Randa : un bloc de glace sous haute surveillance",
-   "edition": "matin",
-   "decision": "A_CORRIGER",
-   "problemes": [
-    {
-     "gravite": "important",
-     "scene": 3,
-     "constat": "Le grand chiffre « 500’000 » chevauche son libellé « m³ au départ (environ) ». Le libellé est illisible et le texte déborde de la colonne. La seconde ligne (300’000, libellé long) risque le même problème.",
-     "correction_demandee": "Réduire la taille du chiffre ou passer le libellé sous le chiffre. Raccourcir les libellés, par exemple « m³ au départ » et « m³ aujourd'hui (estimation) ». Vérifier que les deux lignes tiennent sans chevauchement."
-    },
-    {
-     "gravite": "important",
-     "scene": 4,
-     "constat": "Le texte est coupé en bas de l'écran : on lit « contre jusqu'à 20… » puis la fin disparaît (« cm en été », « Nau.ch »). Le texte entre aussi dans la zone masquée par TikTok (400 px en bas).",
-     "correction_demandee": "Raccourcir le texte ou réduire la taille de police. Garder 6 lignes au maximum, avec la dernière ligne au-dessus de y ≈ 1500. Exemple : « Le mouvement a ralenti : parfois moins de 10 cm par jour, contre 20 en été (Nau.ch) »."
-    },
-    {
-     "gravite": "important",
-     "scene": 12,
-     "constat": "Le texte est coupé en bas (« l'expert juge ce… » puis fin invisible). Le scénario « plutôt improbable » n'est donc pas lisible à l'écran. Le texte déborde aussi dans la zone masquée.",
-     "correction_demandee": "Raccourcir, par exemple « Beaucoup de neige : portée plus grande, scénario jugé plutôt improbable ». Réduire la taille de police pour que tout reste visible et au-dessus de y ≈ 1500."
-    },
-    {
-     "gravite": "important",
-     "scene": 11,
-     "constat": "Le texte de 8 lignes descend jusqu'à y ≈ 1860 (en pleine zone masquée par TikTok) et frôle le bord de l'écran.",
-     "correction_demandee": "Raccourcir ou réduire la taille de police. Par exemple « Selon l'expert cantonal, rupture complète : les maisons seraient épargnées ». Garder le texte au-dessus de y ≈ 1500."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 14,
-     "constat": "Le texte de 7 lignes descend jusqu'à environ y ≈ 1740, donc dans la zone masquée par TikTok.",
-     "correction_demandee": "Réduire la taille de police ou resserrer le texte pour finir au-dessus de y ≈ 1500."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 13,
-     "constat": "Sur l'image clé, le compteur affiche 394 alors que la voix dit déjà « 450 » (animation de comptage encore en cours). Le chiffre à l'écran contredit brièvement la voix.",
-     "correction_demandee": "Avancer le `at` ou raccourcir le comptage pour que le chiffre soit à 450 au moment où la voix le prononce (≈ 72,9 s). Vérifier que la valeur finale affichée est bien 450."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 12,
-     "constat": "Nuance omise : selon la source Blick, le scénario extrême est jugé plutôt improbable « pour cet hiver ». La voix et l'écran le présentent sans cette limite temporelle, ce qui peut rassurer plus que la source.",
-     "correction_demandee": "Ajouter « pour cet hiver » dans la voix et dans le texte à l'écran, ou justifier l'omission."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 2,
-     "constat": "Le crédit photo est lisible (auteur + licence), mais il se trouve très près du bord droit, en partie dans les 160 px réservés à TikTok.",
-     "correction_demandee": "Décaler le crédit vers la gauche, avec une marge droite d'au moins 160 px."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 6,
-     "constat": "Deux silences dépassent 1 s dans la voix : 39,4 s à 40,76 s (1,36 s) et 29,14 s à 30,2 s (1,06 s).",
-     "correction_demandee": "Resserrer les pauses dans la voix, par exemple après « un radar l'observent » et après « selon Nau »."
-    }
-   ],
-   "description_tiktok": "Un bloc de glace avance sous le Weisshorn. Aucune évacuation n'est prévue à Randa pour l'instant, mais la neige reste le point à suivre.\nSources : RTS Valais, « Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS) » ; Blick ; Nau.ch ; Bluewin ; Rhône FM\n#Valais #Randa #Weisshorn #Glacier #Zermatt",
-   "sources": [
-    {
-     "media": "RTS Valais",
-     "titre": "Un gigantesque bloc de glace menace de se décrocher au-dessus de Randa (VS)",
-     "url": "https://www.rts.ch/info/regions/valais/2026/article/glacier-du-weisshorn-un-bloc-de-glace-menace-randa-29399585.html"
-    },
-    {
-     "media": "Blick",
-     "titre": "Pas d'appel à évacuer Randa (VS), malgré le déplacement d'un immense bloc de glace",
-     "url": "https://www.blick.ch/fr/suisse/romande/randa-vs-un-bloc-de-glace-menace-de-se-decrocher/8s3pcek"
-    },
-    {
-     "media": "Blick",
-     "titre": "Wallis: 250'000-Tonnen-Eisblock bedroht Randa",
-     "url": "https://www.blick.ch/schweiz/westschweiz/wallis/wallis-250000-tonnen-eisblock-bedroht-randa/z0ntb2y"
-    },
-    {
-     "media": "Nau.ch",
-     "titre": "Instabiler Gletscher bedroht laut Experte Walliser Dorf Randa nicht",
-     "url": "https://www.nau.ch/news/schweiz/instabiler-gletscher-bedroht-laut-experte-walliser-dorf-randa-nicht-67196771"
-    },
-    {
-     "media": "Bluewin",
-     "titre": "Abbruch? Experte gibt Teil-Entwarnung für Eisblock über Walliser Dorf",
-     "url": "https://www.bluewin.ch/de/news/schweiz/eisblock-ueber-schweizer-dorf-experte-gibt-teil-entwarnung-li.3658266"
-    },
-    {
-     "media": "Rhône FM",
-     "titre": "Le glacier du Weisshorn sous haute surveillance",
-     "url": "https://www.rhonefm.ch/valais/le-glacier-du-weisshorn-sous-haute-surveillance-1821218"
-    }
-   ],
-   "mp4": "out/un-bloc-de-glace-menace-randa-chaque-jour-compte/2026-11-04-matin-randa-un-bloc-de-glace-sous-haute-surveillance.mp4",
-   "etat": "bloque"
-  },
   {
    "id": "2026-11-04-soir-aeroport-de-sion-ce-qui-se-vote",
    "titre": "Aéroport de Sion : ce qui se vote",
@@ -2071,6 +1974,109 @@
      "correction_demandee": "Optionnel : ajouter « Sauvegarder les emplois » comme quatrième item, ou laisser tel quel."
     }
    ]
+  },
+  {
+   "id": "2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030",
+   "titre": "Cremo veut quitter le Valais d'ici 2030",
+   "edition": "histoire",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Sur l'image t≈0, le titre « PRÈS D'UNE MEULE SUR DEUX » est coupé à sa base (« SUR DEUX » tronqué, y≈610). Probablement un masque d'animation, mais la coupure est visible sur l'image.",
+     "correction_demandee": "Vérifier l'image à t≈1 s. Si la coupure persiste, ajuster l'animation d'entrée ou décaler le titre. Si elle disparaît, la scène est conforme."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Crédit photo malformé : « Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0 ». Le nom d'auteur est absent et « Template:… » est un artefact technique.",
+     "correction_demandee": "Corriger le crédit avec le vrai auteur (ou la photothèque) et la licence, par exemple « Photo : [auteur] / Wikimedia Commons, CC BY-SA 3.0 »."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Redondance : le titre « NÉ EN 1927 » est répété par le sous-titre « né en 1927. » en bas d'écran.",
+     "correction_demandee": "Remplacer la phrase du bas d'écran par une information nouvelle, ou supprimer le sous-titre répété."
+    },
+    {
+     "gravite": "important",
+     "scene": 4,
+     "constat": "Le nom « Sierre et Tourtemagne » apparaît trois fois dans la scène (sous-titre de carte, bas d'écran, titre). Le titre utilise « Turtmann-Unterems » alors que les autres éléments disent « Tourtemagne » : deux noms pour le même site à l'écran.",
+     "correction_demandee": "Supprimer la répétition du bas d'écran et harmoniser le nom du site (Tourtemagne partout, ou Turtmann-Unterems partout)."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Mot orphelin : le libellé « MILLIONS DE FRANCS DE PERTE EN 2025 » passe sur deux lignes et « 2025 » reste seul en deuxième ligne. Le sous-titre « en 2025. » répète la fin du libellé.",
+     "correction_demandee": "Raccourcir le libellé (par ex. « millions de perte en 2025 ») pour tenir sur une ligne, et supprimer la répétition « en 2025. » du bas d'écran."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Sur l'image prélevée, le grand chiffre affiche 88 alors que la donnée et le sous-titre disent 130 (« 130 emplois »). Probablement un compteur en cours d'animation, mais le chiffre affiché diffère de la donnée.",
+     "correction_demandee": "Vérifier l'image sur la valeur finale (130). Si le compteur n'atteint pas 130 avant la fin de la scène, allonger la scène ou corriger l'animation."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Sur l'image prélevée de « À Sierre, chaque année », seule la barre « Lait pris en charge » apparaît. La barre accentuée « Devenu raclette AOP » (9 millions de kilos) n'est pas visible.",
+     "correction_demandee": "Vérifier que les deux barres sont présentes à la fin de l'animation (9 s à 4,18 s) et corriger le délai d'apparition si nécessaire."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "Mot orphelin : le sous-titre « Lait, fabrication et affinage dans le canton » laisse « canton » seul sur la deuxième ligne.",
+     "correction_demandee": "Reformuler pour que la ligne ne soit pas orpheline, par exemple « Lait, fabrication et affinage en Valais »."
+    },
+    {
+     "gravite": "important",
+     "scene": 12,
+     "constat": "Sur l'image prélevée de « Trois priorités », seuls les items 1 et 2 sont visibles. L'item 3 « Fromagerie de Tourtemagne » (prévu à 4,12 s) n'apparaît pas sur cette image.",
+     "correction_demandee": "Vérifier que l'item 3 est affiché à son temps prévu. Si le récapitulatif est coupé ou trop court, ajuster l'animation ou la durée de la scène."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 13,
+     "constat": "Le sous-titre « et les sites continuent de tourner. » répète le sens de la pastille « LES SITES CONTINUENT » et laisse « tourner. » seul en fin de ligne.",
+     "correction_demandee": "Remplacer la pastille ou le sous-titre pour éviter la répétition, et rééquilibrer les lignes du sous-titre."
+    },
+    {
+     "gravite": "important",
+     "scene": 15,
+     "constat": "Sur l'image prélevée de « À retenir », seul l'item 1 est visible. Les items 2 (« 130 emplois… », prévu à 3,9 s) et 3 (prévu à 7,12 s) n'apparaissent pas sur cette image.",
+     "correction_demandee": "Vérifier l'apparition des items 2 et 3 à leur temps prévu. Raccourcir le libellé de l'item 2 s'il est trop long pour la ligne."
+    }
+   ],
+   "description_tiktok": "Cremo veut quitter Sierre et Tourtemagne d'ici 2030. 130 emplois et près de la moitié du Raclette du Valais AOP sont concernés. Ce qu'on sait, et ce qui n'est pas encore décidé.\nSources : État du Valais, Le Nouvelliste, RTS, Canal9\n#Valais #Sierre #Cremo #Raclette #Économie",
+   "sources": [
+    {
+     "media": "État du Valais",
+     "titre": "Cremo SA",
+     "url": "https://www.vs.ch/web/communication/w/cremo-sa"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Cremo va quitter Sierre : 130 emplois en jeu",
+     "url": "https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/cremo-va-quitter-sierre-130-emplois-en-jeu-et-des-incertitudes-pour-la-filiere-du-raclette-du-valais-aop-1521496"
+    },
+    {
+     "media": "RTS",
+     "titre": "Cremo veut regrouper ses activités à Villars-sur-Glâne d'ici 2030",
+     "url": "https://www.rts.ch/info/economie/2026/article/cremo-veut-regrouper-ses-activites-a-villars-sur-glane-d-ici-2030-29414138.html"
+    },
+    {
+     "media": "Canal9",
+     "titre": "Sierre et Tourtemagne : Cremo va quitter le Valais d'ici 2030",
+     "url": "https://canal9.ch/fr/sierre-et-tourtemagne-cremo-va-quitter-le-valais-dici-2030/"
+    }
+   ],
+   "mp4": "out/cremo-veut-quitter-le-valais-d-ici-2030/2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.0617,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030/LePouls_2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1UGMWyHXW_V0OOwf5ZHFj0qgWsVs6-g2h",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/20"
   }
  ]
 }

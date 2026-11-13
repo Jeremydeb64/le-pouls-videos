@@ -1,0 +1,33 @@
+LE POULS
+Cremo veut quitter le Valais d'ici 2030
+Édition du histoire, à publier vers 18 h 30
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Cremo veut quitter Sierre et Tourtemagne d'ici 2030. 130 emplois et près de la moitié du Raclette du Valais AOP sont concernés. Ce qu'on sait, et ce qui n'est pas encore décidé.
+Sources : État du Valais, Le Nouvelliste, RTS, Canal9
+#Valais #Sierre #Cremo #Raclette #Économie
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- État du Valais : Cremo SA (https://www.vs.ch/web/communication/w/cremo-sa)
+- Le Nouvelliste : Cremo va quitter Sierre : 130 emplois en jeu (https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/cremo-va-quitter-sierre-130-emplois-en-jeu-et-des-incertitudes-pour-la-filiere-du-raclette-du-valais-aop-1521496)
+- RTS : Cremo veut regrouper ses activités à Villars-sur-Glâne d'ici 2030 (https://www.rts.ch/info/economie/2026/article/cremo-veut-regrouper-ses-activites-a-villars-sur-glane-d-ici-2030-29414138.html)
+- Canal9 : Sierre et Tourtemagne : Cremo va quitter le Valais d'ici 2030 (https://canal9.ch/fr/sierre-et-tourtemagne-cremo-va-quitter-le-valais-dici-2030/)
+
+=== CONTRÔLE ===
+Décision : OK
+- important (scène 1) : Sur l'image t≈0, le titre « PRÈS D'UNE MEULE SUR DEUX » est coupé à sa base (« SUR DEUX » tronqué, y≈610). Probablement un masque d'animation, mais la coupure est visible sur l'image.
+- important (scène 2) : Crédit photo malformé : « Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0 ». Le nom d'auteur est absent et « Template:… » est un artefact technique.
+- important (scène 3) : Redondance : le titre « NÉ EN 1927 » est répété par le sous-titre « né en 1927. » en bas d'écran.
+- important (scène 4) : Le nom « Sierre et Tourtemagne » apparaît trois fois dans la scène (sous-titre de carte, bas d'écran, titre). Le titre utilise « Turtmann-Unterems » alors que les autres éléments disent « Tourtemagne » : deux noms pour le même site à l'écran.
+- important (scène 6) : Mot orphelin : le libellé « MILLIONS DE FRANCS DE PERTE EN 2025 » passe sur deux lignes et « 2025 » reste seul en deuxième ligne. Le sous-titre « en 2025. » répète la fin du libellé.
+- important (scène 7) : Sur l'image prélevée, le grand chiffre affiche 88 alors que la donnée et le sous-titre disent 130 (« 130 emplois »). Probablement un compteur en cours d'animation, mais le chiffre affiché diffère de la donnée.
+- important (scène 9) : Sur l'image prélevée de « À Sierre, chaque année », seule la barre « Lait pris en charge » apparaît. La barre accentuée « Devenu raclette AOP » (9 millions de kilos) n'est pas visible.
+- important (scène 10) : Mot orphelin : le sous-titre « Lait, fabrication et affinage dans le canton » laisse « canton » seul sur la deuxième ligne.
+- important (scène 12) : Sur l'image prélevée de « Trois priorités », seuls les items 1 et 2 sont visibles. L'item 3 « Fromagerie de Tourtemagne » (prévu à 4,12 s) n'apparaît pas sur cette image.
+- mineur (scène 13) : Le sous-titre « et les sites continuent de tourner. » répète le sens de la pastille « LES SITES CONTINUENT » et laisse « tourner. » seul en fin de ligne.
+- important (scène 15) : Sur l'image prélevée de « À retenir », seul l'item 1 est visible. Les items 2 (« 130 emplois… », prévu à 3,9 s) et 3 (prévu à 7,12 s) n'apparaissent pas sur cette image.

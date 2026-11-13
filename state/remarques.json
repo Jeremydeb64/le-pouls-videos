@@ -1,54 +1,6 @@
 [
  {
   "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "C'est une votation et la liste des sources ne contient que des articles de presse (RTS Valais x2, La Télé). Elle ne contient aucune source officielle (Chancellerie d'État, brochure de votation, texte de l'initiative). La question de la carte « Faut-il introduire un salaire minimum légal de 22 francs"
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "La première image (début de l'épisode) affiche « 19 jours », alors que le compte à rebours juste est de 25 jours (4 novembre au 29 novembre). La valeur ne passe à 25 qu'ensuite, ce qui est probablement l'animation du compteur. Si cette image sert de couverture ou de première frame, elle affiche un c"
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "La voix dit que le non craint que les apprentis « pourraient quitter leur formation ». Le fait source parle seulement d'une menace pour la formation des apprentis. La précision sur le départ des apprentis n'est pas dans la liste des faits."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le grand chiffre « 500’000 » chevauche son libellé « m³ au départ (environ) ». Le libellé est illisible et le texte déborde de la colonne. La seconde ligne (300’000, libellé long) risque le même problème."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le texte est coupé en bas de l'écran : on lit « contre jusqu'à 20… » puis la fin disparaît (« cm en été », « Nau.ch »). Le texte entre aussi dans la zone masquée par TikTok (400 px en bas)."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le texte est coupé en bas (« l'expert juge ce… » puis fin invisible). Le scénario « plutôt improbable » n'est donc pas lisible à l'écran. Le texte déborde aussi dans la zone masquée."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le texte de 8 lignes descend jusqu'à y ≈ 1860 (en pleine zone masquée par TikTok) et frôle le bord de l'écran."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Scène photo : le titre « L'aéroport de Sion Valais-Wallis » passe sur 3 lignes. Le mot « Wallis » est coupé par le bandeau de sous-titre « pour gérer l'aéroport. » et les deux textes se chevauchent. De plus, le titre se coupe sur le tiret (« Valais- / Wallis »)."
- },
- {
-  "date": "historique",
   "gravite": "important",
   "type": null,
   "constat": "Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes."
@@ -346,5 +298,65 @@
   "gravite": "important",
   "type": "recap",
   "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Animaux ou tradition » (prévu à 4,7 s) n'apparaît pas."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur l'image t≈0, le titre « PRÈS D'UNE MEULE SUR DEUX » est coupé à sa base (« SUR DEUX » tronqué, y≈610). Probablement un masque d'animation, mais la coupure est visible sur l'image."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Crédit photo malformé : « Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0 ». Le nom d'auteur est absent et « Template:… » est un artefact technique."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "Redondance : le titre « NÉ EN 1927 » est répété par le sous-titre « né en 1927. » en bas d'écran."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Le nom « Sierre et Tourtemagne » apparaît trois fois dans la scène (sous-titre de carte, bas d'écran, titre). Le titre utilise « Turtmann-Unterems » alors que les autres éléments disent « Tourtemagne » : deux noms pour le même site à l'écran."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "bigFigure",
+  "constat": "Mot orphelin : le libellé « MILLIONS DE FRANCS DE PERTE EN 2025 » passe sur deux lignes et « 2025 » reste seul en deuxième ligne. Le sous-titre « en 2025. » répète la fin du libellé."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur l'image prélevée, le grand chiffre affiche 88 alors que la donnée et le sous-titre disent 130 (« 130 emplois »). Probablement un compteur en cours d'animation, mais le chiffre affiché diffère de la donnée."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Sur l'image prélevée de « À Sierre, chaque année », seule la barre « Lait pris en charge » apparaît. La barre accentuée « Devenu raclette AOP » (9 millions de kilos) n'est pas visible."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Mot orphelin : le sous-titre « Lait, fabrication et affinage dans le canton » laisse « canton » seul sur la deuxième ligne."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur l'image prélevée de « Trois priorités », seuls les items 1 et 2 sont visibles. L'item 3 « Fromagerie de Tourtemagne » (prévu à 4,12 s) n'apparaît pas sur cette image."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée de « À retenir », seul l'item 1 est visible. Les items 2 (« 130 emplois… », prévu à 3,9 s) et 3 (prévu à 7,12 s) n'apparaissent pas sur cette image."
  }
 ]
