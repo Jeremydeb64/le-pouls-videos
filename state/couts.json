@@ -1459,6 +1459,76 @@
    "unite": "tokens",
    "usd": 0.0426,
    "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:11:03.588Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 65241,
+   "unite": "tokens",
+   "usd": 0.2985,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:11:03.588Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:11:49.135Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 51924,
+   "unite": "tokens",
+   "usd": 0.1545,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:11:49.135Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:13:14.645Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 92719,
+   "unite": "tokens",
+   "usd": 0.302,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:13:14.645Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 3,
+   "unite": "recherches",
+   "usd": 0.03,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T08:13:30.478Z",
+   "contexte": "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 18346,
+   "unite": "tokens",
+   "usd": 0.0032,
+   "execution": "édition jour 2026-11-13"
   }
  ],
  "executions": [
@@ -1601,6 +1671,11 @@
    "date": "2026-11-13T08:06:02.298Z",
    "etiquette": "édition jour 2026-11-13",
    "usd": 0.827
+  },
+  {
+   "date": "2026-11-13T08:13:30.487Z",
+   "etiquette": "édition jour 2026-11-13",
+   "usd": 0.8182
   }
  ],
  "par_jour": {
@@ -1653,18 +1728,18 @@
    "total": 0.9624
   },
   "2026-11-13": {
-   "anthropic": 0.7678,
+   "anthropic": 1.586,
    "elevenlabs": 0.0592,
    "higgsfield": 0,
-   "total": 0.827
+   "total": 1.6452
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 9.2438,
+   "anthropic": 10.062,
    "elevenlabs": 0.8629,
    "higgsfield": 0,
-   "total": 10.1067
+   "total": 10.9249
   }
  },
  "par_video": {
@@ -1683,10 +1758,10 @@
   "2026-11-11-histoire-telecabine-de-sion-30-millions-qui-paie": 0.0548,
   "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre": 0.8989,
   "2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre": 0.0522,
-  "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger": 0.827
+  "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger": 1.6452
  },
  "soldes": {
-  "date": "2026-11-13T08:06:02.315Z",
+  "date": "2026-11-13T08:13:30.497Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 77773,
@@ -1695,10 +1770,10 @@
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 5.6962,
+   "credit_estime_restant_usd": 4.878,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-13T08:06:03.751Z"
+ "maj": "2026-11-13T08:13:31.746Z"
 }
