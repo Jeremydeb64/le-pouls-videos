@@ -1,0 +1,656 @@
+{
+ "titre": "Cremo veut quitter le Valais d'ici 2030",
+ "rubrique": "ÉCONOMIE",
+ "presentateur": "duo",
+ "sensible": true,
+ "ambiance": "sobre",
+ "reprise": true,
+ "dialogue": [
+  {
+   "qui": "lucie",
+   "texte": "[serious] Près d'une meule de raclette du Valais sur deux passe par Sierre. Et l'entreprise qui s'en occupe veut quitter le canton."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Salut, c'est Arthur."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Et Lucie. Aujourd'hui, on parle de Cremo."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Cremo, c'est un groupe laitier fribourgeois, né en 1927. En Valais, il a deux sites : Sierre et Tourtemagne."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Jeudi, il a annoncé vouloir tout regrouper à Villars-sur-Glâne, dans le canton de Fribourg, d'ici 2030."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Pourquoi ? Cremo a perdu 17 millions de francs en 2025. Il cherche des repreneurs pour ses autres sites."
+  },
+  {
+   "qui": "lucie",
+   "texte": "[serious] En Valais, 130 emplois sont concernés."
+  },
+  {
+   "qui": "arthur",
+   "texte": "[curious] Et la raclette, dans tout ça ?"
+  },
+  {
+   "qui": "lucie",
+   "texte": "À Sierre, Cremo prend en charge 13 millions et demi de kilos de lait par an. 9 millions deviennent du Raclette du Valais AOP. C'est près de la moitié de la production."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Et ce fromage doit être affiné en Valais. C'est la règle de l'AOP."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Alors, qui le fera demain ? Le Canton a réuni un groupe de travail avec les acteurs du lait et du fromage."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Ses priorités : garder l'affinage en Valais, continuer à vendre le fromage, et assurer l'avenir de la fromagerie de Tourtemagne."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Rien n'est joué. Cremo dit vouloir éviter les licenciements, et les sites continuent de tourner."
+  },
+  {
+   "qui": "arthur",
+   "texte": "Trois pistes : un partenaire, un repreneur, ou l'arrêt, qui n'est pas exclu."
+  },
+  {
+   "qui": "lucie",
+   "texte": "À retenir. Cremo veut quitter le Valais d'ici 2030."
+  },
+  {
+   "qui": "arthur",
+   "texte": "130 emplois et près de la moitié du raclette AOP sont concernés."
+  },
+  {
+   "qui": "lucie",
+   "texte": "Et le Canton cherche une solution avec la filière."
+  },
+  {
+   "qui": "arthur",
+   "texte": "C'était Arthur…"
+  },
+  {
+   "qui": "lucie",
+   "texte": "…et Lucie, pour Le Pouls."
+  }
+ ],
+ "segments": [
+  {
+   "dit": "Près d'une meule",
+   "affiche": "Près d'une meule"
+  },
+  {
+   "dit": "de raclette du Valais",
+   "affiche": "de raclette du Valais"
+  },
+  {
+   "dit": "sur deux passe par Sierre.",
+   "affiche": "sur deux passe par Sierre."
+  },
+  {
+   "dit": "Et l'entreprise qui s'en occupe",
+   "affiche": "Et l'entreprise qui s'en occupe"
+  },
+  {
+   "dit": "veut quitter le canton.",
+   "affiche": "veut quitter le canton."
+  },
+  {
+   "dit": "Salut, c'est Arthur.",
+   "affiche": "Salut, c'est Arthur."
+  },
+  {
+   "dit": "Et Lucie.",
+   "affiche": "Et Lucie."
+  },
+  {
+   "dit": "Aujourd'hui, on parle de Cremo.",
+   "affiche": "Aujourd'hui, on parle de Cremo."
+  },
+  {
+   "dit": "Cremo, c'est un groupe",
+   "affiche": "Cremo, c'est un groupe"
+  },
+  {
+   "dit": "laitier fribourgeois,",
+   "affiche": "laitier fribourgeois,"
+  },
+  {
+   "dit": "né en 1927.",
+   "affiche": "né en 1927."
+  },
+  {
+   "dit": "En Valais, il a deux sites :",
+   "affiche": "En Valais, il a deux sites :"
+  },
+  {
+   "dit": "Sierre et Tourtemagne.",
+   "affiche": "Sierre et Tourtemagne."
+  },
+  {
+   "dit": "Jeudi, il a annoncé",
+   "affiche": "Jeudi, il a annoncé"
+  },
+  {
+   "dit": "vouloir tout regrouper",
+   "affiche": "vouloir tout regrouper"
+  },
+  {
+   "dit": "à Villars-sur-Glâne,",
+   "affiche": "à Villars-sur-Glâne,"
+  },
+  {
+   "dit": "dans le canton de Fribourg,",
+   "affiche": "dans le canton de Fribourg,"
+  },
+  {
+   "dit": "d'ici 2030.",
+   "affiche": "d'ici 2030."
+  },
+  {
+   "dit": "Pourquoi ?",
+   "affiche": "Pourquoi ?"
+  },
+  {
+   "dit": "Cremo a perdu",
+   "affiche": "Cremo a perdu"
+  },
+  {
+   "dit": "17 millions de francs",
+   "affiche": "17 millions de francs"
+  },
+  {
+   "dit": "en 2025.",
+   "affiche": "en 2025."
+  },
+  {
+   "dit": "Il cherche des repreneurs",
+   "affiche": "Il cherche des repreneurs"
+  },
+  {
+   "dit": "pour ses autres sites.",
+   "affiche": "pour ses autres sites."
+  },
+  {
+   "dit": "En Valais,",
+   "affiche": "En Valais,"
+  },
+  {
+   "dit": "130 emplois",
+   "affiche": "130 emplois"
+  },
+  {
+   "dit": "sont concernés.",
+   "affiche": "sont concernés."
+  },
+  {
+   "dit": "Et la raclette,",
+   "affiche": "Et la raclette,"
+  },
+  {
+   "dit": "dans tout ça ?",
+   "affiche": "dans tout ça ?"
+  },
+  {
+   "dit": "À Sierre, Cremo prend en charge",
+   "affiche": "À Sierre, Cremo prend en charge"
+  },
+  {
+   "dit": "13 millions et demi",
+   "affiche": "13,5 millions"
+  },
+  {
+   "dit": "de kilos de lait par an.",
+   "affiche": "de kilos de lait par an."
+  },
+  {
+   "dit": "9 millions deviennent",
+   "affiche": "9 millions deviennent"
+  },
+  {
+   "dit": "du Raclette du Valais AOP.",
+   "affiche": "du Raclette du Valais AOP."
+  },
+  {
+   "dit": "C'est près de la moitié",
+   "affiche": "C'est près de la moitié"
+  },
+  {
+   "dit": "de la production.",
+   "affiche": "de la production."
+  },
+  {
+   "dit": "Et ce fromage doit être",
+   "affiche": "Et ce fromage doit être"
+  },
+  {
+   "dit": "affiné en Valais.",
+   "affiche": "affiné en Valais."
+  },
+  {
+   "dit": "C'est la règle de l'AOP.",
+   "affiche": "C'est la règle de l'AOP."
+  },
+  {
+   "dit": "Alors, qui le fera demain ?",
+   "affiche": "Alors, qui le fera demain ?"
+  },
+  {
+   "dit": "Le Canton a réuni",
+   "affiche": "Le Canton a réuni"
+  },
+  {
+   "dit": "un groupe de travail",
+   "affiche": "un groupe de travail"
+  },
+  {
+   "dit": "avec les acteurs",
+   "affiche": "avec les acteurs"
+  },
+  {
+   "dit": "du lait et du fromage.",
+   "affiche": "du lait et du fromage."
+  },
+  {
+   "dit": "Ses priorités :",
+   "affiche": "Ses priorités :"
+  },
+  {
+   "dit": "garder l'affinage en Valais,",
+   "affiche": "garder l'affinage en Valais,"
+  },
+  {
+   "dit": "continuer à vendre le fromage,",
+   "affiche": "continuer à vendre le fromage,"
+  },
+  {
+   "dit": "et assurer l'avenir",
+   "affiche": "et assurer l'avenir"
+  },
+  {
+   "dit": "de la fromagerie de Tourtemagne.",
+   "affiche": "de la fromagerie de Tourtemagne."
+  },
+  {
+   "dit": "Rien n'est joué.",
+   "affiche": "Rien n'est joué."
+  },
+  {
+   "dit": "Cremo dit vouloir",
+   "affiche": "Cremo dit vouloir"
+  },
+  {
+   "dit": "éviter les licenciements,",
+   "affiche": "éviter les licenciements,"
+  },
+  {
+   "dit": "et les sites continuent de tourner.",
+   "affiche": "et les sites continuent de tourner."
+  },
+  {
+   "dit": "Trois pistes :",
+   "affiche": "Trois pistes :"
+  },
+  {
+   "dit": "un partenaire, un repreneur,",
+   "affiche": "un partenaire, un repreneur,"
+  },
+  {
+   "dit": "ou l'arrêt,",
+   "affiche": "ou l'arrêt,"
+  },
+  {
+   "dit": "qui n'est pas exclu.",
+   "affiche": "qui n'est pas exclu."
+  },
+  {
+   "dit": "À retenir.",
+   "affiche": "À retenir."
+  },
+  {
+   "dit": "Cremo veut quitter le Valais",
+   "affiche": "Cremo veut quitter le Valais"
+  },
+  {
+   "dit": "d'ici 2030.",
+   "affiche": "d'ici 2030."
+  },
+  {
+   "dit": "130 emplois et près de la moitié",
+   "affiche": "130 emplois et près de la moitié"
+  },
+  {
+   "dit": "du raclette AOP",
+   "affiche": "du raclette AOP"
+  },
+  {
+   "dit": "sont concernés.",
+   "affiche": "sont concernés."
+  },
+  {
+   "dit": "Et le Canton cherche",
+   "affiche": "Et le Canton cherche"
+  },
+  {
+   "dit": "une solution avec la filière.",
+   "affiche": "une solution avec la filière."
+  },
+  {
+   "dit": "C'était Arthur…",
+   "affiche": "C'était Arthur…"
+  },
+  {
+   "dit": "…et Lucie, pour Le Pouls.",
+   "affiche": "…et Lucie, pour Le Pouls."
+  }
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "from": {
+    "seg": 0
+   },
+   "props": {
+    "recherche": "Raclette du Valais",
+    "kicker": "Raclette du Valais AOP",
+    "title": "Près d'une meule sur *deux*"
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 3
+   },
+   "props": {
+    "recherche": "Sierre",
+    "kicker": "Économie",
+    "title": "Cremo veut *partir*",
+    "nom": "Sierre",
+    "role": "Valais"
+   }
+  },
+  {
+   "type": "photoRonde",
+   "from": {
+    "seg": 8
+   },
+   "props": {
+    "recherche": "cheese dairy Switzerland",
+    "kicker": "Cremo",
+    "title": "Né en *1927*",
+    "legende": "Groupe laitier fribourgeois"
+   }
+  },
+  {
+   "type": "carte",
+   "from": {
+    "seg": 11
+   },
+   "props": {
+    "kicker": "Les deux sites valaisans",
+    "communes": [
+     "Sierre",
+     "Turtmann-Unterems"
+    ],
+    "titre": "Sierre et Tourtemagne"
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 13
+   },
+   "props": {
+    "recherche": "Villars-sur-Glâne",
+    "kicker": "Cremo regroupe tout",
+    "title": "Objectif *2030*",
+    "nom": "Villars-sur-Glâne",
+    "role": "Canton de Fribourg"
+   }
+  },
+  {
+   "type": "bigFigure",
+   "from": {
+    "seg": 18
+   },
+   "props": {
+    "kicker": "Pourquoi ce départ ?",
+    "value": 17,
+    "label": "millions de francs de perte en 2025",
+    "at": {
+     "seg": 20
+    }
+   }
+  },
+  {
+   "type": "bigFigure",
+   "from": {
+    "seg": 24
+   },
+   "props": {
+    "kicker": "Sierre et Tourtemagne",
+    "value": 130,
+    "label": "emplois concernés en Valais",
+    "at": {
+     "seg": 25
+    }
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 27
+   },
+   "props": {
+    "recherche": "raclette cheese melting",
+    "kicker": "Raclette du Valais AOP",
+    "title": "Et la *raclette* ?"
+   }
+  },
+  {
+   "type": "barres",
+   "from": {
+    "seg": 29
+   },
+   "props": {
+    "kicker": "À Sierre, chaque année",
+    "items": [
+     {
+      "label": "Lait pris en charge",
+      "value": 13.5,
+      "at": {
+       "seg": 30
+      }
+     },
+     {
+      "label": "Devenu raclette AOP",
+      "value": 9,
+      "at": {
+       "seg": 32
+      },
+      "accent": true
+     }
+    ],
+    "unite": "millions de kilos",
+    "note": "Près de la moitié du raclette AOP"
+   }
+  },
+  {
+   "type": "photoRonde",
+   "from": {
+    "seg": 36
+   },
+   "props": {
+    "recherche": "cheese cellar Switzerland",
+    "kicker": "Règle de l'AOP",
+    "title": "Affiné *en Valais*",
+    "legende": "Lait, fabrication et affinage dans le canton"
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 39
+   },
+   "props": {
+    "recherche": "Eringer Kuh Wallis",
+    "kicker": "Le Canton réagit",
+    "title": "Groupe de *travail*"
+   }
+  },
+  {
+   "type": "recap",
+   "from": {
+    "seg": 44
+   },
+   "props": {
+    "kicker": "Trois priorités",
+    "items": [
+     {
+      "n": 1,
+      "label": "Affinage en Valais",
+      "at": {
+       "seg": 45
+      }
+     },
+     {
+      "n": 2,
+      "label": "Vente du fromage",
+      "at": {
+       "seg": 46
+      }
+     },
+     {
+      "n": 3,
+      "label": "Fromagerie de Tourtemagne",
+      "at": {
+       "seg": 47
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "photo",
+   "from": {
+    "seg": 49
+   },
+   "props": {
+    "recherche": "Turtmann",
+    "kicker": "Les sites continuent",
+    "title": "Rien n'est *joué*",
+    "nom": "Tourtemagne",
+    "role": "Haut-Valais"
+   }
+  },
+  {
+   "type": "statement",
+   "from": {
+    "seg": 53
+   },
+   "props": {
+    "kicker": "Trois pistes",
+    "text": "Partenaire, repreneur ou *arrêt*"
+   }
+  },
+  {
+   "type": "recap",
+   "from": {
+    "seg": 57
+   },
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Départ d'ici 2030",
+      "at": {
+       "seg": 58
+      }
+     },
+     {
+      "n": 2,
+      "label": "130 emplois, moitié du raclette AOP",
+      "at": {
+       "seg": 60
+      }
+     },
+     {
+      "n": 3,
+      "label": "Le Canton cherche une solution",
+      "at": {
+       "seg": 63
+      }
+     }
+    ]
+   }
+  },
+  {
+   "type": "outro",
+   "from": {
+    "seg": 65
+   },
+   "props": {
+    "sources": "Sources : État du Valais, Le Nouvelliste, RTS, Canal9"
+   }
+  }
+ ],
+ "faits": [
+  {
+   "fait": "Cremo, fondé en 1927, veut se retirer du Valais d'ici 2030 et se concentrer à Villars-sur-Glâne ; perte de 17 millions de francs en 2025",
+   "source": "https://www.vs.ch/web/communication/w/cremo-sa"
+  },
+  {
+   "fait": "Le site de Sierre prend en charge 13,5 millions de kilos de lait, dont 9 millions valorisés en Raclette du Valais AOP, près de la moitié de la production",
+   "source": "https://www.vs.ch/web/communication/w/cremo-sa"
+  },
+  {
+   "fait": "Groupe de travail piloté par le Service de l'agriculture avec Alpgold, la Fédération laitière valaisanne et l'Interprofession ; priorités : affinage en Valais, accès au marché, fromagerie de Tourtemagne",
+   "source": "https://www.vs.ch/web/communication/w/cremo-sa"
+  },
+  {
+   "fait": "130 emplois concernés à Sierre et Tourtemagne ; Cremo dit vouloir éviter tout licenciement ; les sites continuent de fonctionner ; trois scénarios dont l'arrêt définitif, pas exclu",
+   "source": "https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/cremo-va-quitter-sierre-130-emplois-en-jeu-et-des-incertitudes-pour-la-filiere-du-raclette-du-valais-aop-1521496"
+  },
+  {
+   "fait": "Cremo cherche des repreneurs pour ses autres sites",
+   "source": "https://www.rts.ch/info/economie/2026/article/cremo-veut-regrouper-ses-activites-a-villars-sur-glane-d-ici-2030-29414138.html"
+  },
+  {
+   "fait": "Production du lait, transformation et affinage du Raclette du Valais AOP exclusivement en Valais",
+   "source": "https://www.valais.ch/fr/savourer/specialites-du-valais/raclette"
+  }
+ ],
+ "sources": [
+  {
+   "media": "État du Valais",
+   "titre": "Cremo SA",
+   "url": "https://www.vs.ch/web/communication/w/cremo-sa"
+  },
+  {
+   "media": "Le Nouvelliste",
+   "titre": "Cremo va quitter Sierre : 130 emplois en jeu",
+   "url": "https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/cremo-va-quitter-sierre-130-emplois-en-jeu-et-des-incertitudes-pour-la-filiere-du-raclette-du-valais-aop-1521496"
+  },
+  {
+   "media": "RTS",
+   "titre": "Cremo veut regrouper ses activités à Villars-sur-Glâne d'ici 2030",
+   "url": "https://www.rts.ch/info/economie/2026/article/cremo-veut-regrouper-ses-activites-a-villars-sur-glane-d-ici-2030-29414138.html"
+  },
+  {
+   "media": "Canal9",
+   "titre": "Sierre et Tourtemagne : Cremo va quitter le Valais d'ici 2030",
+   "url": "https://canal9.ch/fr/sierre-et-tourtemagne-cremo-va-quitter-le-valais-dici-2030/"
+  }
+ ],
+ "description_tiktok": "Cremo veut quitter Sierre et Tourtemagne d'ici 2030. 130 emplois et près de la moitié du Raclette du Valais AOP sont concernés. Ce qu'on sait, et ce qui n'est pas encore décidé.\nSources : État du Valais, Le Nouvelliste, RTS, Canal9\n#Valais #Sierre #Cremo #Raclette #Économie"
+}
