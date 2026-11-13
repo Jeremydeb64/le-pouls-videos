@@ -5,7 +5,7 @@ import path from "node:path";
 import { demanderJSON, consigne, MODELE_LEGER } from "./lib/claude.mjs";
 import { lire, rss, texteArticle, photoLibre } from "./lib/web.mjs";
 import { genererVoix, genererDialogue, transcrire, alignerSousTitres, caleScenes, accelerer, VITESSE } from "./lib/voix.mjs";
-import { rendre, imagesCles } from "./lib/rendu.mjs";
+import { rendre, imagesCles, oublierBundle } from "./lib/rendu.mjs";
 import { redaction } from "./lib/redaction.mjs";
 import { definirContexte, enregistrer, coutDe } from "./lib/couts.mjs";
 import { visuelIA, higgsfieldActif } from "./lib/higgsfield.mjs";
@@ -265,6 +265,7 @@ async function reparer(episode, problemes, dossier) {
       n++;
     }
   }
+  oublierBundle(episode.id); // les photos de remplacement doivent entrer dans le bundle
   redaction.dit("scenariste", n ? `${n} correction(s) appliquée(s), je relance le montage.` : "Rien de corrigeable automatiquement.");
   return n > 0;
 }

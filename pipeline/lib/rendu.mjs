@@ -14,6 +14,9 @@ const prepare = async (id = "x") => {
   return caches.get(id);
 };
 
+// À appeler quand public/ a changé après un premier rendu (photo de remplacement) : le prochain rendu refait le bundle
+export const oublierBundle = (id) => caches.delete(id);
+
 export async function rendre(episode, sortie) {
   const url = await prepare(episode.id);
   const inputProps = { episode, withVoice: true };

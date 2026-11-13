@@ -467,7 +467,9 @@ export const Crowd: React.FC<P<{ kicker: string; live: { value: number; label: s
 const tailleTexte = (t0: string) => {
   const t = sansEtoiles(t0).replace(/ ([?!:;»])/g, "$1");
   const base = t.length <= 30 ? 124 : t.length <= 50 ? 106 : t.length <= 70 ? 90 : t.length <= 120 ? 70 : 58;
-  const mot = Math.max(...t.split(/\s+/).map((m) => m.length));
+  // Mêmes groupes insécables que <Mots> : « la laisserons » compte comme un seul bloc
+  const colle = t.replace(/« /g, "«\u00a0").replace(/(^|\s)(à|a|y|et|ou|de|du|le|la|un|en|au|À|A|Y|ET|OU|DE|DU|LE|LA|UN|EN|AU) /g, "$1$2\u00a0");
+  const mot = Math.max(...colle.split(/[ \n\t]+/).map((m) => m.length));
   return Math.min(base, Math.floor(CONTENT_W / (mot * 0.68)));
 };
 export const Statement: React.FC<P<{ text: string; kicker?: string }>> = ({ theme, text, kicker }) => {
