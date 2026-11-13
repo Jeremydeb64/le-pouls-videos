@@ -639,11 +639,12 @@ export const Photo: React.FC<P<{ src: string; credit: string; kicker?: string; t
         </div>
       )}
       {(kicker || title) && (
-        <Body top={1030}>
+        <Body top={1000}>
           {kicker && <Kicker center>{kicker}</Kicker>}
           {title && (
             <Rise delay={8}>
-              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: sansEtoiles(title).length <= 18 ? 92 : sansEtoiles(title).length <= 32 ? 72 : 58, lineHeight: 1.04, color: C.paper, textTransform: "uppercase", textAlign: "center", maxHeight: 200, overflow: "hidden" }}>
+              {/* Le titre ne doit jamais descendre dans la zone des sous-titres (deux lignes au plus, 160 px) */}
+              <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: sansEtoiles(title).length <= 12 ? 92 : sansEtoiles(title).length <= 18 ? 78 : sansEtoiles(title).length <= 32 ? 66 : 54, lineHeight: 1.04, color: C.paper, textTransform: "uppercase", textAlign: "center", maxHeight: 200, overflow: "hidden" }}>
                 <Mots texte={title} />
               </div>
             </Rise>
@@ -823,7 +824,7 @@ export const trouverCommune = (nom: string) => {
 };
 const REPERES = ["Monthey", "Martigny", "Sion", "Sierre", "Visp", "Brig-Glis"];
 
-export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: string; zoom?: number; at?: number }>> = ({ theme, kicker, communes, titre, zoom = 1.8, at: a1 = 0.6 }) => {
+export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: string; noms?: string; zoom?: number; at?: number }>> = ({ theme, kicker, communes, titre, noms, zoom = 1.8, at: a1 = 0.6 }) => {
   const t = th(theme);
   const frame = useCurrentFrame();
   const at = useAt();
@@ -872,7 +873,7 @@ export const Carte: React.FC<P<{ kicker: string; communes: string[]; titre?: str
           </svg>
         </div>
         <Rise delay={at(a1) + 24}>
-          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: 92, lineHeight: 1, color: t.fg, letterSpacing: -2 }}>{cibles.map((c) => c.nom).join(", ") || communes.join(", ")}</div>
+          <div style={{ fontFamily: SERIF, fontWeight: 900, fontSize: (noms || "").length > 16 ? 72 : 92, lineHeight: 1, color: t.fg, letterSpacing: -2 }}>{noms || cibles.map((c) => c.nom).join(", ") || communes.join(", ")}</div>
           {titre && <div style={{ fontFamily: SANS, fontWeight: 800, fontSize: 42, lineHeight: 1.2, color: t.fg, marginTop: 14 }}>{titre}</div>}
         </Rise>
       </Body>

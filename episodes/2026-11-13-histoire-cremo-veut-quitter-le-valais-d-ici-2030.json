@@ -346,11 +346,9 @@
    "type": "photo",
    "from": 0,
    "props": {
-    "recherche": "Raclette du Valais",
+    "recherche": "Walliser Raclette",
     "kicker": "Raclette du Valais AOP",
-    "title": "Près d'une meule sur *deux*",
-    "src": "photo-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030-0.jpg",
-    "credit": "Photo : Arnaud 25 / Wikimedia Commons, CC BY-SA 4.0"
+    "title": "Près d'une meule sur *deux*"
    },
    "to": 3.04,
    "theme": "green"
@@ -365,7 +363,7 @@
     "nom": "Sierre",
     "role": "Valais",
     "src": "photo-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030-1.jpg",
-    "credit": "Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0"
+    "credit": "Photo : Roland Zumbühl, picswiss.ch / Wikimedia Commons, CC BY-SA 3.0"
    },
    "to": 9.48,
    "theme": "green"
@@ -374,12 +372,10 @@
    "type": "photoRonde",
    "from": 9.48,
    "props": {
-    "recherche": "cheese dairy Switzerland",
+    "recherche": "Fribourg vieille ville",
     "kicker": "Cremo",
     "title": "Né en *1927*",
-    "legende": "Groupe laitier fribourgeois",
-    "src": "photo-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030-2.jpg",
-    "credit": "Photo : Marizbluesky / Wikimedia Commons, CC BY-SA 4.0"
+    "legende": "Groupe laitier fribourgeois"
    },
    "to": 12.68,
    "theme": "green"
@@ -393,7 +389,8 @@
      "Sierre",
      "Turtmann-Unterems"
     ],
-    "titre": "Sierre et Tourtemagne"
+    "titre": "Deux sites, 130 emplois",
+    "noms": "Sierre et Tourtemagne"
    },
    "to": 15.5,
    "theme": "green"
@@ -419,7 +416,7 @@
    "props": {
     "kicker": "Pourquoi ce départ ?",
     "value": 17,
-    "label": "millions de francs de perte en 2025",
+    "label": "millions de perte en 2025",
     "at": 2.36
    },
    "to": 27.16,
@@ -441,30 +438,28 @@
    "type": "photo",
    "from": 29.28,
    "props": {
-    "recherche": "raclette cheese melting",
+    "recherche": "Raclette feu",
     "kicker": "Raclette du Valais AOP",
-    "title": "Et la *raclette* ?",
-    "src": "photo-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030-7.jpg",
-    "credit": "Photo : Faldrian. / Wikimedia Commons, CC BY 2.0"
+    "title": "Et la *raclette* ?"
    },
-   "to": 30.52,
+   "to": 32.39,
    "theme": "green"
   },
   {
    "type": "barres",
-   "from": 30.52,
+   "from": 32.39,
    "props": {
     "kicker": "À Sierre, chaque année",
     "items": [
      {
       "label": "Lait pris en charge",
       "value": 13.5,
-      "at": 2.02
+      "at": 0.15
      },
      {
       "label": "Devenu raclette AOP",
       "value": 9,
-      "at": 4.18,
+      "at": 2.31,
       "accent": true
      }
     ],
@@ -481,7 +476,7 @@
     "recherche": "cheese cellar Switzerland",
     "kicker": "Règle de l'AOP",
     "title": "Affiné *en Valais*",
-    "legende": "Lait, fabrication et affinage dans le canton",
+    "legende": "Tout se fait dans le canton",
     "src": "photo-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030-9.jpg",
     "credit": "Photo : Conceptuel / Wikimedia Commons, CC0"
    },
@@ -489,10 +484,12 @@
    "theme": "green"
   },
   {
-   "type": "statement",
+   "type": "photo",
    "from": 42.18,
    "props": {
-    "text": "Groupe de *travail*"
+    "recherche": "Eringer Kuh",
+    "kicker": "Le Canton réagit",
+    "title": "Groupe de *travail*"
    },
    "to": 47.7,
    "theme": "green"

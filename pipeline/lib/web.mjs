@@ -50,7 +50,7 @@ export async function photoLibre(requete, destination) {
     if (PAS_PHOTO.test(desc)) continue;
     const licence = (m.LicenseShortName?.value || "").trim();
     if (!LICENCES_OK.test(licence)) continue;
-    const auteur = (m.Artist?.value || "auteur inconnu").replace(/<[^>]+>/g, "").trim().slice(0, 60);
+    const auteur = ((m.Artist?.value || "").replace(/<[^>]+>/g, "").trim().replace(/^Template:Bild-picswiss.*/i, "Roland Zumbühl, picswiss.ch").replace(/^(Template|Vorlage|Modèle):.*/i, "") || "auteur inconnu").slice(0, 60);
     const r = await fetch(ii.thumburl, { headers: { "user-agent": UA } });
     if (!r.ok) continue;
     fs.writeFileSync(destination, Buffer.from(await r.arrayBuffer()));
