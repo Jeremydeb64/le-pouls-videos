@@ -1559,6 +1559,106 @@
    "unite": "tokens",
    "usd": 0.0065,
    "execution": "édition histoire 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:05:39.504Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 99047,
+   "unite": "tokens",
+   "usd": 0.0117,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:07:10.186Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 59220,
+   "unite": "tokens",
+   "usd": 0.2326,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:07:10.186Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:07:44.700Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 18809,
+   "unite": "tokens",
+   "usd": 0.0763,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:08:53.905Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 72393,
+   "unite": "tokens",
+   "usd": 0.2409,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:08:53.905Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:09:08.560Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 16035,
+   "unite": "tokens",
+   "usd": 0.003,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:09:29.904Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 569,
+   "unite": "crédits",
+   "usd": 0.0455,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:09:34.720Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 64,
+   "unite": "secondes",
+   "usd": 0.0039,
+   "execution": "édition jour 2026-11-13"
+  },
+  {
+   "date": "2026-11-13T13:11:26.622Z",
+   "contexte": "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21035,
+   "unite": "tokens",
+   "usd": 0.0045,
+   "execution": "édition jour 2026-11-13"
   }
  ],
  "executions": [
@@ -1711,6 +1811,11 @@
    "date": "2026-11-13T08:22:03.409Z",
    "etiquette": "édition histoire 2026-11-13",
    "usd": 0.0617
+  },
+  {
+   "date": "2026-11-13T13:11:26.628Z",
+   "etiquette": "édition jour 2026-11-13",
+   "usd": 0.6584
   }
  ],
  "par_jour": {
@@ -1763,18 +1868,18 @@
    "total": 0.9624
   },
   "2026-11-13": {
-   "anthropic": 1.5925,
-   "elevenlabs": 0.1144,
+   "anthropic": 2.2015,
+   "elevenlabs": 0.1638,
    "higgsfield": 0,
-   "total": 1.7069
+   "total": 2.3653
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 10.0685,
-   "elevenlabs": 0.9181,
+   "anthropic": 10.6775,
+   "elevenlabs": 0.9675,
    "higgsfield": 0,
-   "total": 10.9866
+   "total": 11.645
   }
  },
  "par_video": {
@@ -1794,22 +1899,23 @@
   "2026-11-12-jour-feux-d-artifice-ce-que-dit-le-vote-du-29-novembre": 0.8989,
   "2026-11-12-histoire-feux-d-artifice-le-vote-du-29-novembre": 0.0522,
   "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger": 1.6452,
-  "2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030": 0.0617
+  "2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030": 0.0617,
+  "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i": 0.6467
  },
  "soldes": {
-  "date": "2026-11-13T08:22:03.420Z",
+  "date": "2026-11-13T13:11:26.641Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 78429,
+   "credits_utilises": 82400,
    "credits_mois": 131000,
-   "credits_restants": 52571,
+   "credits_restants": 48600,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 4.8715,
+   "credit_estime_restant_usd": 4.2625,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-13T08:22:05.421Z"
+ "maj": "2026-11-13T13:11:28.147Z"
 }

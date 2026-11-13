@@ -1,0 +1,34 @@
+LE POULS
+Snus : le Valais étudie une interdiction
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+62 voix contre 61 : le Grand Conseil valaisan veut faire étudier une interdiction du snus. Pour l'instant, rien ne change.
+Sources : Rhône FM, Le Nouvelliste, Watson, 20 Minuten
+#Valais #Snus #GrandConseil #Santé
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Rhône FM : Le grand Conseil pour une interdiction du snus en Valais (https://www.rhonefm.ch/valais/apres-la-puff-le-grand-conseil-sattaque-au-snus-1820148)
+- Le Nouvelliste : Snus: le Valais pourrait devenir le premier canton suisse à en interdire la vente généralisée (https://www.lenouvelliste.ch/valais/snus-le-valais-pourrait-devenir-le-premier-canton-suisse-a-en-interdire-la-vente-generalisee-1521490)
+- Watson : Le Valais pourrait interdire le snus, et ça agace le PLR et l'UDC (https://www.watson.ch/fr/suisse/politique/124112898-le-valais-pourrait-interdire-le-snus-et-ca-agace-le-plr-et-l-udc)
+- 20 Minuten : Knappes Resultat: Gibt es bald ein Snus-Verbot? (https://www.20min.ch/story/knappes-resultat-gibt-es-bald-ein-snus-verbot-wallis-will-verkauf-stoppen-103666648)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 7) : Le parti UDC figure à la fois parmi les auteurs du texte (Rhône FM) et parmi les opposants. La liste des faits le confirme : « Texte porté par quatre élus (Vert·e·s, Centre, neo, UDC) ». Le spectateur peut être dérouté entre « quatre élus de partis différents » et « les opposants, le PLR et l'UDC ».
+- mineur (scène 9) : Frise : l'item 1 « Jeudi, Postulat accepté » est visible dès le début de la scène (seg 45), ce qui est conforme à la demande. L'item 2 apparaît au seg 46 (« du Conseil d'État ») et l'item 3 au seg 48 (« par un changement de loi »). Le calage est cohérent avec la voix, mais diffère de la répartition demandée (seg 48 et 49).
+- mineur (scène 7) : La formulation des opposants n'a pas repris la suggestion « dont le PLR et l'UDC » mais « le PLR et l'UDC ». Le temps de parole des deux camps est désormais équilibré (environ 19 mots pour les auteurs, 21 pour les opposants, écart inférieur à 15 %) et les deux colonnes du versus comptent deux points chacune.
+- important (scène 1) : À t≈0, le grand chiffre affiche 45 avec le libellé « voix pour », mais la ligne du bas affiche « 62 contre », centrée, sans le format des autres lignes. Le libellé « voix contre » (61) n'apparaît pas à cet instant : affichage incohérent avec les données.
+- important (scène 2) : Le titre « Sion » est répété par le sous-titre « Sion » sous la carte : redondance.
+- mineur (scène 3) : Sur la photo du snus, une marque partiellement lisible apparaît sur la boîte. Tolérable pour une photo de lieu, mais c'est une enseigne de produit.
+- important (scène 7) : Sur l'image prélevée du versus, la colonne « Contre » est entièrement vide (ni titre « Les opposants », ni points), alors que la colonne « Pour » est remplie : traitement graphique asymétrique entre les deux camps.
+- important (scène 8) : La légende « Cigarettes électroniques jetables » ne correspond pas à la photo : on voit un appareil rechargeable (mod) à écran, et non une puff jetable.
+- mineur (scène 8) : Répétition : le titre dit « depuis 2025 » et le sous-titre « depuis le 1er mai ».
+- important (scène 9) : Sur l'image prélevée de la frise « La suite », seuls les items « Jeudi » et « Maintenant » sont visibles. Le troisième item « Peut-être / Changement de loi » (prévu à 2,8 s) n'apparaît pas sur cette image.
+- important (scène 10) : Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. Les items 2 (« Une étude, pas une interdiction », prévu à 4,28 s) et 3 (« Rien ne change pour l'instant », prévu à 6,7 s) n'apparaissent pas.
+- important (scène 10) : La scène récapitulatif (52,74 s à 61,58 s, environ 9 s) n'a pas de sous-titres sur les images, alors que ce n'est pas une scène exemptée (contrairement à statement et outro). Si la voix énonce les items pendant cette scène, la couverture des sous-titres est incomplète.

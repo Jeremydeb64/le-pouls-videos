@@ -3,48 +3,6 @@
   "date": "historique",
   "gravite": "important",
   "type": null,
-  "constat": "Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le sous-titre sur 2 lignes (« une société majoritairement publique, ») descend jusqu'à y ≈ 1545 px, dans la zone basse masquée (400 px, soit y > 1520). Il a aussi une largeur anormale par rapport aux autres sous-titres."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Barres (indemnité) : de 22.44 s à environ 28 s, l'écran n'a que le kicker et une note, avec un grand vide. Les barres n'apparaissent qu'à 5.68 s, 7 s et 8.14 s, soit une demi-scène sans contenu."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le titre « Hérémence » est répété juste en dessous en sous-titre « Hérémence ». C'est redondant, et la carte ne dure que 2,9 s."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le sous-titre affiché est « Pascal Guenot, défend le oui. » La virgule entre le sujet et le verbe est fautive et ne correspond pas à une phrase correcte."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Sur les images clés des scènes 2 et 3 (statements, 9 s et 6,8 s), aucun sous-titre n'est visible alors que la voix doit être présente. Cela peut être un trou entre deux sous-titres ou une absence de sous-titres."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Scène avant/après quasi vide: seul le bandeau « Taux normal de la TVA » est visible à environ 3,2 s, juste avant l'apparition prévue des valeurs (at 3,3 s sur 4,7 s de scène). Les chiffres 8,1 % et 8,5 % ne restent donc à l'écran qu'environ 1,4 s, alors que la voix dit déjà « à 8,5 % ». Le sous-titr"
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
   "constat": "Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par a"
  },
  {
@@ -358,5 +316,47 @@
   "gravite": "important",
   "type": "outro",
   "constat": "Sur l'image prélevée de « À retenir », seul l'item 1 est visible. Les items 2 (« 130 emplois… », prévu à 3,9 s) et 3 (prévu à 7,12 s) n'apparaissent pas sur cette image."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "À t≈0, le grand chiffre affiche 45 avec le libellé « voix pour », mais la ligne du bas affiche « 62 contre », centrée, sans le format des autres lignes. Le libellé « voix contre » (61) n'apparaît pas à cet instant : affichage incohérent avec les données."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Le titre « Sion » est répété par le sous-titre « Sion » sous la carte : redondance."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Sur l'image prélevée du versus, la colonne « Contre » est entièrement vide (ni titre « Les opposants », ni points), alors que la colonne « Pour » est remplie : traitement graphique asymétrique entre les deux camps."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "frise",
+  "constat": "La légende « Cigarettes électroniques jetables » ne correspond pas à la photo : on voit un appareil rechargeable (mod) à écran, et non une puff jetable."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "recap",
+  "constat": "Sur l'image prélevée de la frise « La suite », seuls les items « Jeudi » et « Maintenant » sont visibles. Le troisième item « Peut-être / Changement de loi » (prévu à 2,8 s) n'apparaît pas sur cette image."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. Les items 2 (« Une étude, pas une interdiction », prévu à 4,28 s) et 3 (« Rien ne change pour l'instant », prévu à 6,7 s) n'apparaissent pas."
+ },
+ {
+  "date": "vendredi, 13 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "La scène récapitulatif (52,74 s à 61,58 s, environ 9 s) n'a pas de sous-titres sur les images, alors que ce n'est pas une scène exemptée (contrairement à statement et outro). Si la voix énonce les items pendant cette scène, la couverture des sous-titres est incomplète."
  }
 ]

@@ -10,106 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-12T13:08:07.893Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-12T13:09:37.111Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections importantes sont faites : la raison des renoncements de Bagnes et Nendaz est ajoutée, « c'est déjà concret » est retiré, le ton passe en sobre avec sensible: true, l'accroche est nettoyée et le versus n'affiche plus « Cantons et communes libres ». Il reste trois points mineurs : décaler le statement « 300 à 350 emplois » au segment 27, ajouter la nuance sobre au kicker de la carte, et vérifier la formulation et les URL des sources avant publication.",
-   "t": "2026-11-12T13:09:54.672Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-12T13:09:54.675Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Gabriel Pollard / Wikimedia Commons, CC BY-SA 2.5.",
-   "t": "2026-11-12T13:10:30.351Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Canarian / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-12T13:10:31.479Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-12T13:10:32.021Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Alessandra Volterra / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-12T13:10:32.557Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-12T13:10:32.562Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-12T13:11:58.115Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bonjour, la vidéo a plusieurs problèmes de mise en page à corriger avant publication : l'ouverture affiche 11 jours au lieu de 17 et un autre titre ; les pastilles « VOTATION FÉDÉRALE » et « APRÈS LE 29 NOVEMBRE » chevauchent le logo de rubrique ; « L'EMPORTE » est coupé à droite de la carte ; la colonne « Contre » du versus doit apparaître en même temps que « Pour » ; le sous-titre de la scène « Les feux bruyants » répète « bruyants » ; et l'item 3 du récapitulatif doit bien apparaître à 4,76 s. Merci de vérifier aussi l'absence de silence de plus d'une seconde.",
-   "t": "2026-11-12T13:12:32.736Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
-   "t": "2026-11-12T13:12:32.740Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "5 correction(s) appliquée(s), je relance le montage.",
-   "t": "2026-11-12T13:12:45.789Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-12T13:13:58.240Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Trois corrections bloquantes : le libellé « VOTATION » chevauche la pastille sur les scènes 2 et 10, et le titre « L'EMPORTE » est coupé sur la scène 10. Il faut aussi aligner l'apparition des deux colonnes du versus, retirer le doublon « Bagnes et Nendaz » sur la carte et revoir la photo de « Sécheresse et respect ». Vérifie enfin l'item 3 du récapitulatif.",
-   "t": "2026-11-12T13:14:30.744Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.91 $ (Claude + ElevenLabs).",
-   "t": "2026-11-12T13:14:32.394Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-12T13:14:32.397Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 57960 crédits restants ce mois-ci.",
-   "t": "2026-11-12T13:31:49.766Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "HISTOIRE IA : « Feux d'artifice : le vote du 29 novembre ». Script et images déjà prêts, on passe au montage.",
-   "t": "2026-11-12T13:31:49.805Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-12T13:31:49.809Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Attention, 6 mots d'écart entre le texte et la voix.",
    "t": "2026-11-12T13:32:17.475Z"
   },
@@ -407,41 +307,110 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-13T08:22:05.429Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 49188 crédits restants ce mois-ci.",
+   "t": "2026-11-13T13:05:06.343Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-13T13:05:06.347Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "254 articles lus, je regroupe par sujet.",
+   "t": "2026-11-13T13:05:15.438Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Snus en Valais : le Grand Conseil veut étudier une interdiction ». Vote serré (62 contre 61) sur un sujet santé qui touche les jeunes, confirmé par plusieurs médias. Attention au cadrage : le texte a été transformé en postulat, donc il demande une étude et non une interdiction immédiate.",
+   "t": "2026-11-13T13:05:39.506Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Rhône FM.",
+   "t": "2026-11-13T13:05:39.514Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-13T13:07:10.191Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bonne base, claire, sobre et neutre sur le fond. Deux points à corriger. 1) Équilibre : les auteurs parlent environ 28 mots contre 17 pour les opposants, donc raccourcis les auteurs et étoffe un peu les opposants avec des éléments déjà sourcés. 2) Versus : cale les `at` sur le début de la voix de chaque camp (30 et 37). Ajoute aussi une source pour « puis un changement de loi », ou atténue la formulation. La frise est à resynchroniser légèrement (l'item 1 n'a pas de phrase dite en face).",
+   "t": "2026-11-13T13:07:44.701Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-13T13:07:44.705Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-13T13:08:53.908Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées ont été faites : équilibre des deux camps, apparition des colonnes du versus alignée sur le début de chaque voix, procédure du changement de loi sourcée (Rhône FM), frise synchronisée. Il reste trois remarques mineures, sans obligation de modifier : la nuance sur l'UDC, qui est à la fois auteur et opposant, et le calage des items de la frise. Feu vert pour la phase image.",
+   "t": "2026-11-13T13:09:08.561Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-13T13:09:08.563Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-13T13:09:34.728Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Alekos / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-13T13:09:36.075Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
+   "t": "2026-11-13T13:09:36.526Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Jacek Halicki / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-13T13:09:37.312Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-13T13:09:37.316Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-13T13:10:54.325Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Quelques corrections visuelles à faire avant la prochaine version : affichage du compteur de votes à t≈0 (« 62 contre » qui apparaît seul), colonne « Contre » du versus à rendre aussi remplie que « Pour », photo de la vape qui ne correspond pas à « jetables », redondance « Sion » sur la carte, items 2 et 3 du récapitulatif et de la frise à vérifier sur l'image, et sous-titres à ajouter ou confirmer pendant le récapitulatif.",
+   "t": "2026-11-13T13:11:26.623Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.66 $ (Claude + ElevenLabs).",
+   "t": "2026-11-13T13:11:28.153Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-13T13:11:28.156Z"
   }
  ],
- "maj": "2026-11-13T08:22:30.637Z",
+ "maj": "2026-11-13T13:11:43.567Z",
  "episodes": [
-  {
-   "id": "2026-11-04-soir-aeroport-de-sion-ce-qui-se-vote",
-   "titre": "Aéroport de Sion : ce qui se vote",
-   "etat": "bloque",
-   "problemes": [
-    {
-     "gravite": "important",
-     "scene": 7,
-     "constat": "Le temps de parole n'est pas égal entre les deux camps dans la scène d'arguments (segments 26 à 34). Le oui a une phrase d'environ 13 mots : « Le oui veut une société majoritairement publique, utile aux secours et à la formation ». Le non a environ 20 mots : « chèque en blanc, sans plafond dans la loi, et craint plus de bruit et de pollution ». Le non a donc environ 50 % de temps en plus, et 5 segments contre 4 pour le oui. Pour une votation, l'égalité doit être stricte, à l'oral comme à l'écran.",
-     "correction_demandee": "Équilibrer les deux phrases, avec le même nombre de segments et à peu près le même nombre de mots. Exemple : ajouter côté oui « économie et tourisme », ce que le comité du oui avance (La Télé, bluewin). Ou raccourcir le non, par exemple en retirant « sans plafond dans la loi », qui est déjà la raison du « chèque en blanc ». Garder 3 points de chaque côté à l'écran, avec des segments `at` cohérents."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 11,
-     "constat": "Les sources de l'outro nomment le « comité du oui » (site oui-aeroport-valais.ch). Le camp du non n'apparaît que par ATE Valais et les Vert-e-s. Il existe pourtant un site de la campagne du non, referendum-aeroport-sion.ch (« Pas d'argent public pour les jets privés »). Sa présence dans les sources donnerait un traitement plus symétrique.",
-     "correction_demandee": "Ajouter le site du comité référendaire (referendum-aeroport-sion.ch) dans `sources`, dans l'outro et dans la description TikTok. Le contrôle des images vérifiera que la ligne de sources reste lisible."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 8,
-     "constat": "Le chiffre de 75 millions est attribué au comité du oui, ce qui est exact (La Télé, bluewin). Il reprend toutefois une étude HES-SO de 2022 qui chiffre les retombées à 74,9 millions, citée aussi par le Conseil d'État. Le chiffre du non (déficit d'environ 3 millions) est bien attribué et décrit la situation actuelle. Les deux chiffres sont de nature différente, mais l'attribution « selon… » est présente à l'oral et à l'écran, donc c'est acceptable.",
-     "correction_demandee": "Optionnel : ajouter « étude 2022 » dans la note de la scène, par exemple « Étude HES-SO 2022, avancée par le comité du oui »."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 2,
-     "constat": "La scène photo n'est pas encore vérifiable : c'est le point 3 des droits. Les articles RTS et La Télé illustrent l'aéroport avec des photos de presse, qui sont interdites.",
-     "correction_demandee": "À l'étape image, utiliser une photo libre (Wikimedia Commons ou équivalent) avec auteur et licence visibles. Sinon, repli sur un visuel graphique. Aucune photo de presse, aucune personne identifiable."
-    }
-   ]
-  },
   {
    "id": "2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au",
    "titre": "Aéroport de Sion : ce que contient la loi soumise au vote",
@@ -2077,6 +2046,115 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030/LePouls_2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1UGMWyHXW_V0OOwf5ZHFj0qgWsVs6-g2h",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/20"
+  },
+  {
+   "id": "2026-11-13-jour-snus-le-valais-etudie-une-interdiction",
+   "titre": "Snus : le Valais étudie une interdiction",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "Le parti UDC figure à la fois parmi les auteurs du texte (Rhône FM) et parmi les opposants. La liste des faits le confirme : « Texte porté par quatre élus (Vert·e·s, Centre, neo, UDC) ». Le spectateur peut être dérouté entre « quatre élus de partis différents » et « les opposants, le PLR et l'UDC ».",
+     "correction_demandee": "Facultatif : préciser « une partie de l'UDC » à l'oral ou à l'écran, la source le permet. Sinon, laisser tel quel."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "Frise : l'item 1 « Jeudi, Postulat accepté » est visible dès le début de la scène (seg 45), ce qui est conforme à la demande. L'item 2 apparaît au seg 46 (« du Conseil d'État ») et l'item 3 au seg 48 (« par un changement de loi »). Le calage est cohérent avec la voix, mais diffère de la répartition demandée (seg 48 et 49).",
+     "correction_demandee": "Vérifier à l'image que les trois items sont bien lisibles dans la fenêtre de la scène. Pas de changement obligatoire."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "La formulation des opposants n'a pas repris la suggestion « dont le PLR et l'UDC » mais « le PLR et l'UDC ». Le temps de parole des deux camps est désormais équilibré (environ 19 mots pour les auteurs, 21 pour les opposants, écart inférieur à 15 %) et les deux colonnes du versus comptent deux points chacune.",
+     "correction_demandee": "Aucune. Correction jugée satisfaisante."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "À t≈0, le grand chiffre affiche 45 avec le libellé « voix pour », mais la ligne du bas affiche « 62 contre », centrée, sans le format des autres lignes. Le libellé « voix contre » (61) n'apparaît pas à cet instant : affichage incohérent avec les données.",
+     "correction_demandee": "Vérifier l'animation des deux items : chaque ligne doit garder le même format (chiffre + libellé à droite), sans élément « 62 contre » qui apparaît seul en bas d'écran."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Le titre « Sion » est répété par le sous-titre « Sion » sous la carte : redondance.",
+     "correction_demandee": "Remplacer le sous-titre par une information utile (ex. « Grand Conseil valaisan » est déjà dans le kicker, donc viser le canton : « Valais ») ou supprimer le sous-titre."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 3,
+     "constat": "Sur la photo du snus, une marque partiellement lisible apparaît sur la boîte. Tolérable pour une photo de lieu, mais c'est une enseigne de produit.",
+     "correction_demandee": "Si une autre photo sans marque est disponible, la préférer ; sinon, laisser en l'état."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Sur l'image prélevée du versus, la colonne « Contre » est entièrement vide (ni titre « Les opposants », ni points), alors que la colonne « Pour » est remplie : traitement graphique asymétrique entre les deux camps.",
+     "correction_demandee": "Faire apparaître titre et points de la colonne « Contre » au même instant que la colonne « Pour », ou vérifier que l'image prélevée est bien prise après l'apparition des deux colonnes."
+    },
+    {
+     "gravite": "important",
+     "scene": 8,
+     "constat": "La légende « Cigarettes électroniques jetables » ne correspond pas à la photo : on voit un appareil rechargeable (mod) à écran, et non une puff jetable.",
+     "correction_demandee": "Choisir une photo de cigarette électronique jetable (mots-clés plus précis) ou adapter la légende à ce qui est montré."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "Répétition : le titre dit « depuis 2025 » et le sous-titre « depuis le 1er mai ».",
+     "correction_demandee": "Reformuler le sous-titre pour donner une info nouvelle (ex. « Le 1er mai » ou « Vente et usage interdits »)."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Sur l'image prélevée de la frise « La suite », seuls les items « Jeudi » et « Maintenant » sont visibles. Le troisième item « Peut-être / Changement de loi » (prévu à 2,8 s) n'apparaît pas sur cette image.",
+     "correction_demandee": "Vérifier que le troisième item est affiché complètement sur l'image prélevée à son moment d'apparition et qu'il ne sort pas de la zone utile."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. Les items 2 (« Une étude, pas une interdiction », prévu à 4,28 s) et 3 (« Rien ne change pour l'instant », prévu à 6,7 s) n'apparaissent pas.",
+     "correction_demandee": "Vérifier que chaque item est présent sur l'image à son moment d'apparition et que les trois items restent lisibles jusqu'à la fin de la scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "La scène récapitulatif (52,74 s à 61,58 s, environ 9 s) n'a pas de sous-titres sur les images, alors que ce n'est pas une scène exemptée (contrairement à statement et outro). Si la voix énonce les items pendant cette scène, la couverture des sous-titres est incomplète.",
+     "correction_demandee": "Vérifier que la voix du récapitulatif est sous-titrée ; ajouter les sous-titres correspondants, ou confirmer qu'aucune voix n'est diffusée sur cette scène (sans silence de plus d'une seconde)."
+    }
+   ],
+   "description_tiktok": "62 voix contre 61 : le Grand Conseil valaisan veut faire étudier une interdiction du snus. Pour l'instant, rien ne change.\nSources : Rhône FM, Le Nouvelliste, Watson, 20 Minuten\n#Valais #Snus #GrandConseil #Santé",
+   "sources": [
+    {
+     "media": "Rhône FM",
+     "titre": "Le grand Conseil pour une interdiction du snus en Valais",
+     "url": "https://www.rhonefm.ch/valais/apres-la-puff-le-grand-conseil-sattaque-au-snus-1820148"
+    },
+    {
+     "media": "Le Nouvelliste",
+     "titre": "Snus: le Valais pourrait devenir le premier canton suisse à en interdire la vente généralisée",
+     "url": "https://www.lenouvelliste.ch/valais/snus-le-valais-pourrait-devenir-le-premier-canton-suisse-a-en-interdire-la-vente-generalisee-1521490"
+    },
+    {
+     "media": "Watson",
+     "titre": "Le Valais pourrait interdire le snus, et ça agace le PLR et l'UDC",
+     "url": "https://www.watson.ch/fr/suisse/politique/124112898-le-valais-pourrait-interdire-le-snus-et-ca-agace-le-plr-et-l-udc"
+    },
+    {
+     "media": "20 Minuten",
+     "titre": "Knappes Resultat: Gibt es bald ein Snus-Verbot?",
+     "url": "https://www.20min.ch/story/knappes-resultat-gibt-es-bald-ein-snus-verbot-wallis-will-verkauf-stoppen-103666648"
+    }
+   ],
+   "mp4": "out/snus-en-valais-le-grand-conseil-veut-etudier-une-i/2026-11-13-jour-snus-le-valais-etudie-une-interdiction.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.6467,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-13-jour-snus-le-valais-etudie-une-interdiction/LePouls_2026-11-13-jour-snus-le-valais-etudie-une-interdiction.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1UGMWyHXW_V0OOwf5ZHFj0qgWsVs6-g2h",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/21"
   }
  ]
 }
