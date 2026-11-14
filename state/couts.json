@@ -1816,6 +1816,11 @@
    "date": "2026-11-13T13:11:26.628Z",
    "etiquette": "édition jour 2026-11-13",
    "usd": 0.6584
+  },
+  {
+   "date": "2026-11-14T00:59:43.079Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -1903,7 +1908,7 @@
   "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i": 0.6467
  },
  "soldes": {
-  "date": "2026-11-13T13:11:26.641Z",
+  "date": "2026-11-14T00:59:43.112Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 82400,
@@ -1917,5 +1922,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-13T13:11:28.147Z"
+ "maj": "2026-11-14T00:59:44.535Z"
 }
