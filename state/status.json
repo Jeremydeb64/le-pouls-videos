@@ -10,111 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Attention, 6 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-12T13:32:17.475Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Gabriel Pollard / Wikimedia Commons, CC BY-SA 2.5.",
-   "t": "2026-11-12T13:32:18.035Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Canarian / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-12T13:32:18.535Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-12T13:32:18.784Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Alessandra Volterra / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-12T13:32:19.061Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-12T13:32:19.064Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-12T13:33:18.698Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Vidéo proche du OK : il reste à corriger le compteur au démarrage, les mots orphelins (« Nendaz », « FEUX »), les répétitions de titre et de légende, la colonne « Contre » vide dans le versus et l'item 3 du récap invisible.",
-   "t": "2026-11-12T13:33:45.418Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.05 $ (Claude + ElevenLabs).",
-   "t": "2026-11-12T13:33:46.693Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-12T13:33:46.696Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 53931 crédits restants ce mois-ci.",
-   "t": "2026-11-13T07:57:44.300Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Sujet choisi par la rédaction : « Cremo quitte le Valais : la raclette AOP en danger ? ». Je transmets au Scénariste.",
-   "t": "2026-11-13T07:57:44.302Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du État du Valais.",
-   "t": "2026-11-13T07:57:44.306Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-13T08:00:34.496Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Faits vérifiés et conformes aux sources : jeudi 12 novembre, 130 emplois, perte de 17 millions de francs en 2025, 13,5 puis 9 millions de kilos de lait, 1927, Villars-sur-Glâne, citation de Gérald Dayer. À corriger : (1) « 3 ans pour trouver un repreneur » n'est dans aucune source, remplace-le dans la voix et le récap. (2) « L'affinage ne peut pas partir » est trop affirmatif alors que la task force veut le « maintenir » : nuance la phrase. (3) Titre de la scène 1 : remets « Près d'une meule sur deux ». (4) « Arrêt en 2030 » : les sources parlent d'un arrêt définitif sans date, corrige la voix et la frise. (5) Ajoute Watson aux sources, ou appuie le fait des trois options sur une source déjà listée.",
-   "t": "2026-11-13T08:01:14.720Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-13T08:01:14.725Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-13T08:02:19.043Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Corrections vérifiées et appliquées : « 3 ans » supprimé, nuance sur l'affinage ajoutée, « Près d'une meule sur deux » corrigé, 2030 retiré de l'arrêt, Watson ajouté aux sources, « groupe de travail » remplace « task force », intro passée en [serious]. Reste deux mineurs non bloquants : le nom de la carte (Turtmann-Unterems) et la précision de « près de la moitié » pour Sierre.",
-   "t": "2026-11-13T08:02:29.205Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-13T08:02:29.207Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Arnaud 25 / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-13T08:03:18.497Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Marizbluesky / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-13T08:03:20.316Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : Georg Russ / Wikimedia Commons, CC0.",
    "t": "2026-11-13T08:03:24.789Z"
   },
@@ -407,133 +302,115 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-13T13:11:28.156Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 48600 crédits restants ce mois-ci.",
+   "t": "2026-11-14T13:05:01.830Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-14T13:05:01.833Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "256 articles lus, je regroupe par sujet.",
+   "t": "2026-11-14T13:05:10.290Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Cremo : le retrait s'étend à Sierre et Tourtemagne, la raclette AOC inquiète ». Le départ de Cremo touche des communes concrètes et la production de raclette AOP du Valais, avec une task force en cours et un premier repreneur potentiel.",
+   "t": "2026-11-14T13:05:36.140Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS.",
+   "t": "2026-11-14T13:05:36.145Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-14T13:07:55.793Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Faits OK : jeudi 12 novembre pour l'annonce, vendredi 13 pour la séance, 17 millions, 130 emplois et près de la moitié de la raclette sont tous vérifiés. À corriger : 1) la frise « La suite » ne colle pas à la voix (items aux segments 32 à 34), recale-la ou remplace-la. 2) Le statement d'ouverture (segments 0 à 3) dépasse 6 s, découpe-le ou ajoute une photo. 3) Affiche « Tourtemagne » sur la carte plutôt que « Turtmann-Unterems ». 4) Écris « valaisanne » pour Walker, ou source le « haut- ». 5) Ajoute Keystone-ATS aux sources.",
+   "t": "2026-11-14T13:08:27.293Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-14T13:08:27.296Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-14T13:09:29.307Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections demandées sont faites : frise recalée sur la voix, scène d'ouverture raccourcie, « valaisanne » sans « haut- », Keystone-ATS ajouté aux sources. Il reste trois remarques mineures, sans blocage.",
+   "t": "2026-11-14T13:09:42.308Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-14T13:09:42.310Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-14T13:10:11.998Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Faldrian. / Wikimedia Commons, CC BY 2.0.",
+   "t": "2026-11-14T13:10:12.591Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-14T13:10:13.110Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Conceptuel / Wikimedia Commons, CC0.",
+   "t": "2026-11-14T13:10:13.761Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Espandero / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-14T13:10:14.107Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-14T13:10:14.110Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-14T13:11:25.483Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bonne base visuelle : charte respectée, pas de débordement, crédits présents, sous-titres en deux lignes au plus. Il reste des corrections à faire : répétition « le départ de Cremo » (scène 2), deux noms pour le même site (scène 3 : Turtmann-Unterems / Tourtemagne), cartouche « AOP » orphelin et « Sierre » répété (scène 6), libellé « Aussi » qui n'est pas une date (frise), et sous-titres absents sur les deux scènes de chiffres (scènes 5 et 7). Vérifie aussi que les items 3 de la frise et du récapitulatif sont bien visibles au moment où la voix les énonce.",
+   "t": "2026-11-14T13:12:01.897Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.74 $ (Claude + ElevenLabs).",
+   "t": "2026-11-14T13:12:03.102Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-14T13:12:03.105Z"
   }
  ],
- "maj": "2026-11-13T13:11:43.567Z",
+ "maj": "2026-11-14T13:12:19.306Z",
  "episodes": [
-  {
-   "id": "2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au",
-   "titre": "Aéroport de Sion : ce que contient la loi soumise au vote",
-   "edition": "soir",
-   "decision": "OK",
-   "problemes": [
-    {
-     "gravite": "mineur",
-     "scene": 3,
-     "constat": "Le champ crédit de la scène photo contient encore un texte provisoire (« À compléter par le pipeline »), pas un vrai crédit auteur + licence. C'est acceptable en phase texte, puisque la photo n'est pas encore choisie.",
-     "correction_demandee": "Le pipeline doit inscrire l'auteur et la licence Wikimedia Commons, et le crédit doit être visible à l'image. Si aucune photo libre n'est trouvée, il faut passer à une scène carte. Je vérifierai ce point en phase image."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 10,
-     "constat": "La ligne « Sources » de l'outro est bien recalée. Bluewin reste pourtant utilisé dans `faits` (le maintien du fonctionnement actuel jusqu'en 2031 en cas de refus) sans figurer dans `sources` ni dans l'outro. L'ATE, comité référendaire, n'est couvert que par la formule « comités du oui et du non ».",
-     "correction_demandee": "Si la place le permet, ajoute Bluewin dans `sources` et dans la description. Sinon, rattache le fait « si c'est non » à une source déjà créditée, comme la RTS ou l'État du Valais."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 6,
-     "constat": "La scène est équilibrée à l'écran, avec 3 points de chaque côté. Dans la voix, le oui occupe environ 39 mots (de « Le comité du oui avance » à « selon le Canton ») et le non environ 32 mots (de « Mais pour les opposants » à « jets privés »). L'écart est d'environ 18 %, légèrement au-dessus des 15 % tolérés. Le point « société majoritairement publique » n'est pas dit dans ce passage, alors qu'il apparaît dans la colonne du oui.",
-     "correction_demandee": "Si c'est facile, raccourcis un peu la phrase du oui (par exemple retirer « de deux mille vingt-deux ») ou ajoute un élément au non pour rapprocher les temps de parole. Je mesurerai le temps de parole réel sur l'audio en phase finale."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 1,
-     "constat": "La scène ballot affiche l'intitulé officiel de l'objet dans un champ nommé « question ». La note de contrôle précise qu'il ne s'agit pas de la question du bulletin.",
-     "correction_demandee": "Vérifie à l'image que l'intitulé est présenté comme « intitulé de l'objet » ou « loi soumise au vote », sans la mention « question »."
-    },
-    {
-     "gravite": "bloquant",
-     "scene": 3,
-     "constat": "Scène photo : le titre « L'aéroport de Sion Valais-Wallis » passe sur 3 lignes. Le mot « Wallis » est coupé par le bandeau de sous-titre « pour gérer l'aéroport. » et les deux textes se chevauchent. De plus, le titre se coupe sur le tiret (« Valais- / Wallis »).",
-     "correction_demandee": "Raccourcir le titre (ex. « L'aéroport de Sion », 2 lignes maximum) ou remonter le bloc titre pour qu'il s'arrête au-dessus de y = 1380. Utiliser un espace insécable ou un retour à la ligne forcé pour que « Valais-Wallis » ne soit pas coupé."
-    },
-    {
-     "gravite": "important",
-     "scene": 3,
-     "constat": "Le crédit photo passe sur 2 lignes (« …CC / BY-SA 4.0 ») et dépasse x ≈ 990 px, donc dans la zone masquée par TikTok (160 px à droite). Le crédit risque d'être caché.",
-     "correction_demandee": "Limiter la largeur du crédit à 920 px (marge droite de 160 px) ou le placer en bas à gauche, au-dessus de la zone des 400 px. Le crédit doit rester entièrement lisible."
-    },
-    {
-     "gravite": "important",
-     "scene": 9,
-     "constat": "Récap : les libellés ne sont pas alignés. « Vote le 29 novembre » commence à x ≈ 415 px et « Société majoritairement publique » à x ≈ 330 px, avec un grand vide après le chiffre. Le décalage dépend visiblement de la largeur du chiffre. Le texte est aussi trop étroit et s'enroule sur 2 à 3 lignes.",
-     "correction_demandee": "Fixer une colonne de libellés commune (même x pour toutes les lignes), alignée à gauche, avec une largeur plus généreuse."
-    },
-    {
-     "gravite": "important",
-     "scene": 9,
-     "constat": "Le sous-titre sur 2 lignes (« une société majoritairement publique, ») descend jusqu'à y ≈ 1545 px, dans la zone basse masquée (400 px, soit y > 1520). Il a aussi une largeur anormale par rapport aux autres sous-titres.",
-     "correction_demandee": "Limiter les sous-titres à une ligne, ou remonter le bloc pour que sa dernière ligne reste au-dessus de y = 1500. Les sous-titres doivent rester vers y = 1400."
-    },
-    {
-     "gravite": "important",
-     "scene": 5,
-     "constat": "Barres (indemnité) : de 22.44 s à environ 28 s, l'écran n'a que le kicker et une note, avec un grand vide. Les barres n'apparaissent qu'à 5.68 s, 7 s et 8.14 s, soit une demi-scène sans contenu.",
-     "correction_demandee": "Faire apparaître la première barre dans les 1,5 s après le début de la scène et caler les 'at' sur la voix. Sinon, raccourcir la scène."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 5,
-     "constat": "Le kicker « INDEMNITÉ ESTIMÉE : 3 À 6 MILLIONS PAR AN » passe sur 2 lignes et laisse « PAR AN » seul en fin de ligne.",
-     "correction_demandee": "Raccourcir le kicker (ex. « Indemnité estimée : 3 à 6 M par an ») pour tenir sur une ligne."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 1,
-     "constat": "Le titre de la question coupe « Valais-Wallis » sur le tiret et laisse « Wallis » seul sur la dernière ligne.",
-     "correction_demandee": "Utiliser un trait d'union insécable pour garder « Valais-Wallis » sur une même ligne."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 10,
-     "constat": "Outro : « Abonne-toi » est décalé à x ≈ 130 px (hors de la marge gauche de 90 px) et ne montre aucun bouton visible. Le texte est du crème sur du vert, sans fond. Le tagline répète « Le Pouls » juste sous le logo. Les sources se coupent avec « du non » seul sur la 2e ligne.",
-     "correction_demandee": "Aligner « Abonne-toi » sur la marge gauche ou lui donner un fond de bouton (papier avec texte encre). Raccourcir la ligne de sources pour éviter le mot orphelin."
-    }
-   ],
-   "description_tiktok": "Le 29 novembre, le Valais vote sur la loi de l'aéroport de Sion. On t'explique ce que prévoit la loi, les arguments des deux camps et ce qui se passe si c'est non.\nSources : État du Valais ; RTS, « Aéroport de Sion: le Valais aux urnes le 29 novembre » ; La Télé (Keystone-ATS) ; 24heures ; comités du oui et du non\n#Valais #Sion #Votation #AéroportDeSion",
-   "sources": [
-    {
-     "media": "État du Valais",
-     "titre": "La prochaine votation cantonale aura lieu le 29 novembre 2026",
-     "url": "https://www.vs.ch/web/communication/w/la-prochaine-votation-cantonale-aura-lieu-le-29-novembre-2026"
-    },
-    {
-     "media": "État du Valais",
-     "titre": "Votation cantonale - Deux objets soumis au vote de la population le 29 novembre 2026",
-     "url": "https://www.vs.ch/web/communication/w/votation-cantonale-deux-objets-soumis-au-vote-de-la-population-le-29-novembre-2026"
-    },
-    {
-     "media": "RTS",
-     "titre": "Aéroport de Sion: le Valais aux urnes le 29 novembre",
-     "url": "https://www.rts.ch/info/regions/valais/2026/article/aeroport-de-sion-le-valais-aux-urnes-le-29-novembre-29372282.html"
-    },
-    {
-     "media": "La Télé (Keystone-ATS)",
-     "titre": "Aéroport de Sion : le comité du oui lance sa campagne pour la loi",
-     "url": "https://latele.ch/articles/loi-sur-l-aeroport-de-sion-le-comite-du-oui-lance-sa-campagne"
-    },
-    {
-     "media": "24heures",
-     "titre": "Aéroport de Sion: la gauche combat la nouvelle loi",
-     "url": "https://www.24heures.ch/aeroport-de-sion-la-gauche-combat-la-nouvelle-loi-316562331326"
-    },
-    {
-     "media": "Comité du oui",
-     "titre": "L'avenir de l'aéroport de Sion se décide le 29 novembre",
-     "url": "https://oui-aeroport-valais.ch/"
-    },
-    {
-     "media": "ATE Valais (comité référendaire)",
-     "titre": "Aéroport de Sion : pas d'argent public pour les jets privés",
-     "url": "https://www.ate.ch/sektionen/wallis/news/aeroport-de-sion-pas-dargent-public-pour-les-jets-prives"
-    }
-   ],
-   "mp4": "out/aeroport-de-sion-ce-que-le-oui-met-sur-la-table/2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au.mp4",
-   "etat": "a_valider",
-   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au/LePouls_2026-11-04-soir-aeroport-de-sion-ce-que-contient-la-loi-soumise-au.mp4",
-   "lien_drive": "https://drive.google.com/drive/folders/1qp6JzIpfz5AbeSYCMFvz8u5WNzngNjRp",
-   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/3"
-  },
   {
    "id": "2026-11-04-soir-materiel-de-guerre-ce-qui-se-vote-le-29-novembre",
    "titre": "Matériel de guerre : ce qui se vote le 29 novembre",
@@ -2155,6 +2032,115 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-13-jour-snus-le-valais-etudie-une-interdiction/LePouls_2026-11-13-jour-snus-le-valais-etudie-une-interdiction.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1UGMWyHXW_V0OOwf5ZHFj0qgWsVs6-g2h",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/21"
+  },
+  {
+   "id": "2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop",
+   "titre": "Cremo quitte Sierre et Tourtemagne : la raclette AOP inquiète",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "La carte affiche encore « Turtmann-Unterems » comme commune, alors que la voix, les sous-titres et le kicker disent « Tourtemagne ». Le kicker a bien été corrigé, donc la confusion est atténuée.",
+     "correction_demandee": "Si la carte le permet, remplacer « Turtmann-Unterems » par « Tourtemagne » dans les communes."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "La frise est désormais calée sur la voix (Vendredi : première séance, seg 27 ; Walker, seg 31). Le libellé « Samedi » pour « Partenaires optimistes » date la communication, pas l'événement, et « Aussi » pour Walker est peu clair.",
+     "correction_demandee": "Remplacer « Samedi » par un libellé plus juste (par exemple « Ce week-end ») et « Aussi » par « Et aussi » ou « Autre signal »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "« Près d'une raclette du Valais sur deux est en jeu » est une simplification légèrement large : les sources parlent de près de la moitié de la production AOP prise en charge à Sierre.",
+     "correction_demandee": "Facultatif : garder la formule si elle reste cohérente avec la carte « Près de la moitié » de la scène 5."
+    },
+    {
+     "gravite": "important",
+     "scene": 2,
+     "constat": "Le titre « Le départ de Cremo » est répété presque à l'identique par le sous-titre « et aujourd'hui, le départ de Cremo. ». Le mot-clé apparaît deux fois dans le même écran.",
+     "correction_demandee": "Reformuler le sous-titre pour apporter une information nouvelle, par exemple « et aujourd'hui, la fromagerie ferme ses portes. » si c'est exact, ou supprimer la répétition."
+    },
+    {
+     "gravite": "important",
+     "scene": 3,
+     "constat": "Deux noms différents pour le même site : le titre dit « Sierre, Turtmann-Unterems » et le cartouche et le bas d'écran disent « Sierre et Tourtemagne ». Le spectateur voit deux noms pour un seul lieu.",
+     "correction_demandee": "Utiliser un seul nom par site dans toute la scène. Choisir « Tourtemagne » partout, ou ajouter la graphie officielle entre parenthèses une seule fois."
+    },
+    {
+     "gravite": "important",
+     "scene": 5,
+     "constat": "Scène bigFigure « 17 millions de perte » : aucun sous-titre visible sur l'image prélevée. Ce n'est pas une scène exemptée (seuls statement et outro le sont), donc la voix doit être sous-titrée.",
+     "correction_demandee": "Ajouter les sous-titres sur toute la durée de la scène, en cohérence avec la voix (« Cremo a perdu 17 millions en 2025. »), ou vérifier que la voix ne parle pas pendant cette scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Cartouche « PRÈS DE LA MOITIÉ DE LA RACLETTE AOP » sur deux lignes, avec « AOP » seul en deuxième ligne (mot orphelin). Le sous-titre « de la raclette du Valais AOP. » répète le même libellé.",
+     "correction_demandee": "Raccourcir le cartouche (par exemple « MOITIÉ DE LA RACLETTE AOP ») pour tenir sur une ligne, ou ajuster la largeur. Éviter la répétition avec le sous-titre."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Le titre « Sierre » est répété par le sous-titre « Sierre » juste en dessous. Redondance visible.",
+     "correction_demandee": "Remplacer le sous-titre par une information utile (par exemple « Près de la moitié de la production » ou la commune concernée) ou le supprimer."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Sur la carte, le libellé « Monthey » est coupé par le bord gauche de la carte, et la forme du canton est elle aussi rognée à gauche.",
+     "correction_demandee": "Recadrer la carte pour que tous les libellés soient entiers, ou décaler le libellé à l'intérieur de la zone."
+    },
+    {
+     "gravite": "important",
+     "scene": 7,
+     "constat": "Scène bigFigure « 130 emplois menacés » : aucun sous-titre visible sur l'image prélevée alors que la voix énonce le chiffre. Même problème de couverture que la scène 5.",
+     "correction_demandee": "Ajouter les sous-titres pendant toute la scène, en cohérence avec la voix, ou vérifier que la voix ne parle pas pendant cette scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 10,
+     "constat": "La frise utilise « Aussi » comme libellé de date (troisième item). Ce n'est pas une date et le spectateur ne comprend pas le repère temporel. Sur l'image prélevée, le troisième item « Walker se dit intéressée » (prévu à 5,48 s) n'apparaît pas encore.",
+     "correction_demandee": "Remplacer « Aussi » par un repère temporel réel (jour ou « Plus tard ») et vérifier que les trois items sont visibles au moment où la voix les énonce."
+    },
+    {
+     "gravite": "important",
+     "scene": 12,
+     "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Une task force cherche une solution » (prévu à 5,8 s) n'apparaît pas sur cette image.",
+     "correction_demandee": "Vérifier le timing de l'item 3 par rapport à la voix et fournir une image prélevée où les trois items sont visibles, ou corriger l'animation."
+    }
+   ],
+   "description_tiktok": "Cremo quitte Sierre et Tourtemagne d'ici 2030 : près de la moitié de la raclette AOP est concernée. Une task force cherche déjà une solution.\nSources : RTS, ArcInfo, 24 heures, Keystone-ATS\n#Valais #Raclette #Cremo #Sierre",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "En Valais, la filière du Raclette AOC s'inquiète pour son avenir après le départ de Cremo",
+     "url": "https://www.rts.ch/info/regions/valais/2026/article/depart-de-cremo-la-filiere-du-raclette-du-valais-s-inquiete-29415435.html"
+    },
+    {
+     "media": "ArcInfo",
+     "titre": "Cremo se retire de Sierre et Tourtemagne en Valais: une task force optimiste et un premier acteur intéressé",
+     "url": "https://www.arcinfo.ch/suisse/cremo-se-retire-de-sierre-et-tourtemagne-en-valais-une-task-force-optimiste-et-un-premier-acteur-interesse-1521685"
+    },
+    {
+     "media": "24 heures",
+     "titre": "La restructuration de Cremo menace la raclette du Valais AOP",
+     "url": "https://www.24heures.ch/cremo-sa-restructuration-menace-la-raclette-du-valais-aop-982205065219"
+    },
+    {
+     "media": "Keystone-ATS",
+     "titre": "Valais : Cremo se retire, un groupe de travail déjà en action",
+     "url": "https://www.bluewin.ch/fr/infos/suisse/keystone-ats-l-actualit-du-samedi-14-novembre-2026-li.3673318"
+    }
+   ],
+   "mp4": "out/cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l/2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.729,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop/LePouls_2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1eoH9C0l6Ss91qQxeWxAl5sqAp4fKv1m8",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/22"
   }
  ]
 }

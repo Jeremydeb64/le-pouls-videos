@@ -1,54 +1,6 @@
 [
  {
   "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par a"
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "La colonne « Non » reste vide jusqu'à 14,3 s dans la scène, alors que « Oui » apparaît à 1,8 s. Pendant plus de 12 s, seul « Oui » est visible. Cela ne respecte pas le même traitement graphique des deux camps. À vérifier: « Oui » reste affiché environ 12,4 s et « Non » environ 9,9 s, soit un écart d"
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le point 2 « TVA à 8,5 % si oui » est coupé net en bas (pastille et bas des lettres tronqués vers y≈390) pendant sa révélation, à 3,5 s dans la scène. Si c'est une animation de masque, elle est visible comme un texte coupé."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Sur la carte, les libellés « Viège » et « Brigue » se chevauchent et deviennent illisibles."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Le titre « SUBVENTIONS, PERSONNEL, INVESTISSEMENT, FISCALITÉ » est coupé : le « T » final de INVESTISSEMENT sort du cadre à droite."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "La demande de quatre pastilles icônes (Subventions, Personnel, Investissements, Fiscalité) n'apparaît pas à l'écran : la scène n'affiche que le titre."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Des fragments de texte (« s h… », « ain lift. ») apparaissent à gauche de la carte titre, en dehors de l'encart. On ne sait pas s'il s'agit de texte de la photo ou d'un débordement de l'interface."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "La frise « 3e site suisse » ne montre aucun de ses trois items sur les images prélevées (zone centrale vide, seul le sous-titre apparaît). Risque d'écran vide prolongé, donc de silence visuel."
- },
- {
-  "date": "historique",
   "gravite": "bloquant",
   "type": null,
   "constat": "Dans la photo AVA, le texte de l'interface à droite (« Comment p… », « vs.ch/… ») est coupé par le bord de l'écran."
@@ -358,5 +310,53 @@
   "gravite": "important",
   "type": "outro",
   "constat": "La scène récapitulatif (52,74 s à 61,58 s, environ 9 s) n'a pas de sous-titres sur les images, alors que ce n'est pas une scène exemptée (contrairement à statement et outro). Si la voix énonce les items pendant cette scène, la couverture des sous-titres est incomplète."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "Le titre « Le départ de Cremo » est répété presque à l'identique par le sous-titre « et aujourd'hui, le départ de Cremo. ». Le mot-clé apparaît deux fois dans le même écran."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Deux noms différents pour le même site : le titre dit « Sierre, Turtmann-Unterems » et le cartouche et le bas d'écran disent « Sierre et Tourtemagne ». Le spectateur voit deux noms pour un seul lieu."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "Scène bigFigure « 17 millions de perte » : aucun sous-titre visible sur l'image prélevée. Ce n'est pas une scène exemptée (seuls statement et outro le sont), donc la voix doit être sous-titrée."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "bigFigure",
+  "constat": "Cartouche « PRÈS DE LA MOITIÉ DE LA RACLETTE AOP » sur deux lignes, avec « AOP » seul en deuxième ligne (mot orphelin). Le sous-titre « de la raclette du Valais AOP. » répète le même libellé."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "bigFigure",
+  "constat": "Le titre « Sierre » est répété par le sous-titre « Sierre » juste en dessous. Redondance visible."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Scène bigFigure « 130 emplois menacés » : aucun sous-titre visible sur l'image prélevée alors que la voix énonce le chiffre. Même problème de couverture que la scène 5."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "La frise utilise « Aussi » comme libellé de date (troisième item). Ce n'est pas une date et le spectateur ne comprend pas le repère temporel. Sur l'image prélevée, le troisième item « Walker se dit intéressée » (prévu à 5,48 s) n'apparaît pas encore."
+ },
+ {
+  "date": "samedi, 14 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Une task force cherche une solution » (prévu à 5,8 s) n'apparaît pas sur cette image."
  }
 ]

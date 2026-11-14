@@ -1,0 +1,499 @@
+{
+ "id": "2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop",
+ "rubrique": "ÉCONOMIE",
+ "ambiance": "neutre",
+ "voice": "voix-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop.mp3",
+ "duration": 66.52,
+ "captions": [
+  [
+   0.1,
+   1.22,
+   "Près d'une raclette du Valais"
+  ],
+  [
+   1.28,
+   2.14,
+   "sur deux est en jeu."
+  ],
+  [
+   3.04,
+   3.94,
+   "Salut, c'est Lucie,"
+  ],
+  [
+   4.18,
+   5.78,
+   "et aujourd'hui, le départ de Cremo."
+  ],
+  [
+   6.22,
+   7.9,
+   "Jeudi, ce groupe laitier fribourgeois"
+  ],
+  [
+   7.92,
+   8.94,
+   "a annoncé qu'il se retire"
+  ],
+  [
+   8.98,
+   10.24,
+   "de Sierre et de Tourtemagne."
+  ],
+  [
+   10.52,
+   11.36,
+   "Il veut tout regrouper"
+  ],
+  [
+   11.38,
+   12.1,
+   "près de Fribourg"
+  ],
+  [
+   12.18,
+   12.42,
+   "d'ici 2030."
+  ],
+  [
+   13.54,
+   15.16,
+   "L'entreprise a perdu 17 millions"
+  ],
+  [
+   15.2,
+   15.76,
+   "de francs en 2025."
+  ],
+  [
+   17.48,
+   18.26,
+   "Et le Valais est touché"
+  ],
+  [
+   18.3,
+   18.88,
+   "de plein fouet."
+  ],
+  [
+   19.18,
+   20.78,
+   "À Sierre, Cremo affine et vend"
+  ],
+  [
+   20.82,
+   21.56,
+   "près de la moitié"
+  ],
+  [
+   21.6,
+   22.92,
+   "de la raclette du Valais AOP."
+  ],
+  [
+   23.28,
+   24.42,
+   "Environ 130 emplois"
+  ],
+  [
+   24.46,
+   25.74,
+   "sont menacés sur les deux sites."
+  ],
+  [
+   26.6,
+   27.32,
+   "Mais rien n'est joué."
+  ],
+  [
+   27.66,
+   29.14,
+   "Dès jeudi, le Canton a lancé"
+  ],
+  [
+   29.16,
+   29.98,
+   "une task force,"
+  ],
+  [
+   30.14,
+   30.96,
+   "un groupe de crise."
+  ],
+  [
+   31.24,
+   32.18,
+   "Elle réunit les acteurs"
+  ],
+  [
+   32.22,
+   33.38,
+   "du lait et de la raclette."
+  ],
+  [
+   33.74,
+   35.64,
+   "Leur but : garder l'affinage en Valais"
+  ],
+  [
+   35.68,
+   36.88,
+   "et trouver un repreneur."
+  ],
+  [
+   37.22,
+   38.46,
+   "Première séance vendredi."
+  ],
+  [
+   38.78,
+   40.36,
+   "Les partenaires se disent optimistes,"
+  ],
+  [
+   40.4,
+   40.92,
+   "selon le chef"
+  ],
+  [
+   40.94,
+   42.28,
+   "du Service de l'agriculture."
+  ],
+  [
+   42.6,
+   44.36,
+   "Une entreprise valaisanne, Walker,"
+  ],
+  [
+   44.44,
+   45.26,
+   "se dit intéressée."
+  ],
+  [
+   45.58,
+   46.28,
+   "Mais il est trop tôt"
+  ],
+  [
+   46.32,
+   47.62,
+   "pour savoir comment elle pourrait aider."
+  ],
+  [
+   48.42,
+   49.12,
+   "Pour les éleveurs,"
+  ],
+  [
+   49.28,
+   50.8,
+   "c'est un gros débouché qui vacille."
+  ],
+  [
+   51.06,
+   51.82,
+   "Pour les employés,"
+  ],
+  [
+   52.08,
+   52.92,
+   "c'est l'incertitude."
+  ],
+  [
+   53.86,
+   54.5,
+   "À retenir :"
+  ],
+  [
+   54.78,
+   55.28,
+   "Cremo part"
+  ],
+  [
+   55.34,
+   55.6,
+   "d'ici 2030."
+  ],
+  [
+   56.62,
+   57.3,
+   "Près de la moitié"
+  ],
+  [
+   57.34,
+   58.58,
+   "de la raclette AOP"
+  ],
+  [
+   58.62,
+   59.28,
+   "est concernée."
+  ],
+  [
+   59.56,
+   60.74,
+   "Une task force cherche"
+  ],
+  [
+   60.78,
+   61.64,
+   "déjà une solution."
+  ],
+  [
+   62.44,
+   63.42,
+   "C'était Lucie, pour Le Pouls."
+  ],
+  [
+   63.96,
+   64.72,
+   "On se retrouve demain."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "statement",
+   "from": 0,
+   "theme": "green",
+   "props": {
+    "kicker": "Valais",
+    "text": "Près d'une raclette sur *deux*"
+   },
+   "to": 2.94
+  },
+  {
+   "type": "photo",
+   "from": 2.94,
+   "theme": "green",
+   "props": {
+    "recherche": "Raclette cheese",
+    "kicker": "Raclette du Valais AOP",
+    "title": "Le départ de *Cremo*",
+    "src": "photo-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop-1.jpg",
+    "credit": "Photo : Faldrian. / Wikimedia Commons, CC BY 2.0"
+   },
+   "to": 6.12
+  },
+  {
+   "type": "carte",
+   "from": 6.12,
+   "theme": "green",
+   "props": {
+    "kicker": "Sierre et Tourtemagne",
+    "communes": [
+     "Sierre",
+     "Turtmann-Unterems"
+    ],
+    "titre": "Deux sites"
+   },
+   "to": 10.42
+  },
+  {
+   "type": "statement",
+   "from": 10.42,
+   "theme": "green",
+   "props": {
+    "kicker": "Le plan de Cremo",
+    "text": "Tout regrouper d'ici *2030*"
+   },
+   "to": 13.44
+  },
+  {
+   "type": "bigFigure",
+   "from": 13.44,
+   "theme": "green",
+   "props": {
+    "kicker": "Cremo en 2025",
+    "value": 17,
+    "label": "millions de perte",
+    "at": 0.1
+   },
+   "to": 19.08
+  },
+  {
+   "type": "carte",
+   "from": 19.08,
+   "theme": "green",
+   "props": {
+    "kicker": "Près de la moitié de la raclette AOP",
+    "communes": [
+     "Sierre"
+    ],
+    "titre": "Sierre"
+   },
+   "to": 23.18
+  },
+  {
+   "type": "bigFigure",
+   "from": 23.18,
+   "theme": "green",
+   "props": {
+    "kicker": "Sur les deux sites",
+    "prefix": "environ",
+    "value": 130,
+    "label": "emplois menacés",
+    "at": 0.1
+   },
+   "to": 27.56
+  },
+  {
+   "type": "photoRonde",
+   "from": 27.56,
+   "theme": "green",
+   "props": {
+    "recherche": "Palais du Gouvernement Sion",
+    "kicker": "Le Canton réagit",
+    "title": "Une *task force*",
+    "legende": "Lancée jeudi",
+    "src": "photo-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop-7.jpg",
+    "credit": "Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 33.64
+  },
+  {
+   "type": "photo",
+   "from": 33.64,
+   "theme": "green",
+   "props": {
+    "recherche": "Cheese cellar Switzerland",
+    "kicker": "Objectif de la task force",
+    "title": "Garder *l'affinage*",
+    "src": "photo-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop-8.jpg",
+    "credit": "Photo : Conceptuel / Wikimedia Commons, CC0"
+   },
+   "to": 37.12
+  },
+  {
+   "type": "frise",
+   "from": 37.12,
+   "theme": "green",
+   "props": {
+    "kicker": "La task force",
+    "items": [
+     {
+      "date": "Vendredi",
+      "label": "Première séance",
+      "at": 0.1
+     },
+     {
+      "date": "Samedi",
+      "label": "Partenaires optimistes",
+      "at": 1.66
+     },
+     {
+      "date": "Aussi",
+      "label": "Walker se dit intéressée",
+      "at": 5.48
+     }
+    ]
+   },
+   "to": 48.32
+  },
+  {
+   "type": "photoRonde",
+   "from": 48.32,
+   "theme": "green",
+   "props": {
+    "recherche": "Hérens cattle",
+    "kicker": "Pour les gens concernés",
+    "title": "L'*incertitude*",
+    "legende": "Éleveurs et employés",
+    "src": "photo-2026-11-14-jour-cremo-quitte-sierre-et-tourtemagne-la-raclette-aop-10.jpg",
+    "credit": "Photo : Espandero / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 53.76
+  },
+  {
+   "type": "recap",
+   "from": 53.76,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Cremo part d'ici 2030",
+      "at": 1.02
+     },
+     {
+      "n": 2,
+      "label": "Près de la moitié de la raclette",
+      "at": 2.86
+     },
+     {
+      "n": 3,
+      "label": "Une task force cherche une solution",
+      "at": 5.8
+     }
+    ]
+   },
+   "to": 62.34
+  },
+  {
+   "type": "outro",
+   "from": 62.34,
+   "theme": "green",
+   "props": {
+    "sources": "Sources : RTS, ArcInfo, 24 heures, Keystone-ATS"
+   },
+   "to": 66.52
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "RTS",
+    "titre": "En Valais, la filière du Raclette AOC s'inquiète pour son avenir après le départ de Cremo",
+    "url": "https://www.rts.ch/info/regions/valais/2026/article/depart-de-cremo-la-filiere-du-raclette-du-valais-s-inquiete-29415435.html"
+   },
+   {
+    "media": "ArcInfo",
+    "titre": "Cremo se retire de Sierre et Tourtemagne en Valais: une task force optimiste et un premier acteur intéressé",
+    "url": "https://www.arcinfo.ch/suisse/cremo-se-retire-de-sierre-et-tourtemagne-en-valais-une-task-force-optimiste-et-un-premier-acteur-interesse-1521685"
+   },
+   {
+    "media": "24 heures",
+    "titre": "La restructuration de Cremo menace la raclette du Valais AOP",
+    "url": "https://www.24heures.ch/cremo-sa-restructuration-menace-la-raclette-du-valais-aop-982205065219"
+   },
+   {
+    "media": "Keystone-ATS",
+    "titre": "Valais : Cremo se retire, un groupe de travail déjà en action",
+    "url": "https://www.bluewin.ch/fr/infos/suisse/keystone-ats-l-actualit-du-samedi-14-novembre-2026-li.3673318"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Cremo prévoit de concentrer ses activités industrielles à Villars-sur-Glâne d'ici 2030 et de se séparer de ses sites de Sierre et de Tourtemagne, annoncé jeudi 12 novembre",
+    "source": "https://www.rts.ch/info/regions/valais/2026/article/depart-de-cremo-la-filiere-du-raclette-du-valais-s-inquiete-29415435.html"
+   },
+   {
+    "fait": "Sur son site de Sierre, Cremo prend en charge près de la moitié de la production de Raclette du Valais AOP",
+    "source": "https://www.rts.ch/info/regions/valais/2026/article/depart-de-cremo-la-filiere-du-raclette-du-valais-s-inquiete-29415435.html"
+   },
+   {
+    "fait": "Perte de 17 millions de francs en 2025",
+    "source": "https://www.24heures.ch/cremo-le-groupe-laitier-fribourgeois-concentre-ses-activites-982205065219"
+   },
+   {
+    "fait": "130 emplois directement menacés sur les sites de Sierre et de Tourtemagne",
+    "source": "https://www.24heures.ch/cremo-sa-restructuration-menace-la-raclette-du-valais-aop-982205065219"
+   },
+   {
+    "fait": "Le Canton a mis sur pied dès jeudi une task force sous la direction du Service de l'agriculture, réunissant les acteurs de la filière",
+    "source": "https://www.rts.ch/info/regions/valais/2026/article/depart-de-cremo-la-filiere-du-raclette-du-valais-s-inquiete-29415435.html"
+   },
+   {
+    "fait": "Première séance du groupe de travail vendredi ; tous les partenaires optimistes selon Gérald Dayer, chef du Service de l'agriculture (Le Nouvelliste, via Keystone-ATS)",
+    "source": "https://www.bluewin.ch/fr/infos/suisse/keystone-ats-l-actualit-du-samedi-14-novembre-2026-li.3673318"
+   },
+   {
+    "fait": "L'entreprise valaisanne Walker se dit intéressée à contribuer à une solution locale ; il est trop tôt pour dire dans quelle mesure",
+    "source": "https://www.arcinfo.ch/suisse/cremo-se-retire-de-sierre-et-tourtemagne-en-valais-une-task-force-optimiste-et-un-premier-acteur-interesse-1521685"
+   }
+  ],
+  "sensible": false
+ }
+}
