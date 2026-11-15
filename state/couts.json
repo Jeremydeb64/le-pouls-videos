@@ -1936,6 +1936,11 @@
    "date": "2026-11-14T13:12:01.901Z",
    "etiquette": "édition jour 2026-11-14",
    "usd": 0.7407
+  },
+  {
+   "date": "2026-11-15T00:07:45.051Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -2030,7 +2035,7 @@
   "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729
  },
  "soldes": {
-  "date": "2026-11-14T13:12:01.910Z",
+  "date": "2026-11-15T00:07:45.122Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 82990,
@@ -2044,5 +2049,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-14T13:12:03.098Z"
+ "maj": "2026-11-15T00:07:46.581Z"
 }
