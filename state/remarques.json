@@ -3,48 +3,6 @@
   "date": "historique",
   "gravite": "bloquant",
   "type": null,
-  "constat": "Dans la photo AVA, le texte de l'interface à droite (« Comment p… », « vs.ch/… ») est coupé par le bord de l'écran."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Le tag « VALAIS » se superpose au texte du logo AVA en haut à gauche."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Le logo AVA est coupé par le bord gauche de l'écran."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Dans l'illustration « Des services en ligne », un fragment de texte (« AI Gé… ») est coupé par le bord droit, en bas de l'image."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Le titre « Bourg-Saint-Pierre » se chevauche avec le sous-titre « Grand-Saint-Bernard », qui est partiellement masqué et illisible."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "La légende « Accès à pied ou à skis de randonnée » se superpose au sous-titre vidéo « quand il y a assez de neige. »."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Le grand chiffre « 85'000 » est coupé à droite : le dernier zéro dépasse du bloc et est tronqué."
- },
- {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
   "constat": "Le texte de la photo de la gondole est coupé par le bord droit de l'écran (« SWISS WATC… » et le logo « TISSOT » sont tronqués). Ce texte déborde de la zone sûre et le logo de marque tiers n'est pas issu de la bibliothèque validée."
  },
  {
@@ -358,5 +316,47 @@
   "gravite": "important",
   "type": "outro",
   "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Une task force cherche une solution » (prévu à 5,8 s) n'apparaît pas sur cette image."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur l'image prélevée à t≈0, le grand chiffre affiche 185 alors que la donnée et le sous-titre disent 300. Le libellé « TONNES D'ACIER » est aussi coupé à sa base. Probablement un compteur et un masque d'animation en cours, mais la coupure est visible."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Sur l'image prélevée, le grand chiffre affiche 42 alors que le sous-titre dit « 43 mètres de long ». Même cas que la scène 1 : compteur probablement en cours d'animation."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Scène carte (18,68 s à 23,2 s, environ 4,5 s) : aucun sous-titre visible sur l'image prélevée. Ce n'est pas une scène exemptée, donc la voix doit être sous-titrée."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "Le titre « Sierre » est répété par le sous-titre « Sierre » juste en dessous. Redondance visible."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Le titre « Trains à deux étages » est suivi de la légende « Le vieux pont était trop bas » puis du sous-titre « Il était trop bas » : la même idée apparaît trois fois dans l'écran."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Le titre « TRAINS À DEUX / ÉTAGES » laisse « ÉTAGES » seul sur la deuxième ligne (mot orphelin)."
+ },
+ {
+  "date": "dimanche, 15 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Dans la scène outro, la ligne « Sources : Le Nouvelliste, Le Temps, 24 heures, Ville de Sierre » laisse « Sierre » seul sur la deuxième ligne (mot orphelin)."
  }
 ]

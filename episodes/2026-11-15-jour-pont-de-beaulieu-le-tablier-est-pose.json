@@ -1,0 +1,437 @@
+{
+ "id": "2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose",
+ "rubrique": "VALAIS",
+ "ambiance": "neutre",
+ "voice": "voix-2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose.mp3",
+ "duration": 61.34,
+ "captions": [
+  [
+   0.12,
+   1.72,
+   "Environ 300 tonnes d'acier,"
+  ],
+  [
+   2,
+   2.86,
+   "soulevées dans la nuit"
+  ],
+  [
+   2.9,
+   4.08,
+   "au-dessus des voies de Sierre."
+  ],
+  [
+   4.8,
+   5.64,
+   "Salut, c'est Lucie,"
+  ],
+  [
+   5.86,
+   7.38,
+   "et aujourd'hui, le pont de Beaulieu"
+  ],
+  [
+   7.64,
+   8.86,
+   "retrouve enfin son tablier."
+  ],
+  [
+   9.22,
+   10.4,
+   "Le tablier, c'est la partie"
+  ],
+  [
+   10.44,
+   11.64,
+   "plate sur laquelle on roule."
+  ],
+  [
+   12.04,
+   12.94,
+   "Celui-ci mesure"
+  ],
+  [
+   13,
+   14.08,
+   "43 mètres de long."
+  ],
+  [
+   14.4,
+   16.54,
+   "Pour le poser, les CFF ont fait venir"
+  ],
+  [
+   16.6,
+   18.42,
+   "la 2e plus grande grue de Suisse."
+  ],
+  [
+   18.78,
+   19.7,
+   "L'opération a eu lieu"
+  ],
+  [
+   19.74,
+   21.22,
+   "dans la nuit de samedi à dimanche."
+  ],
+  [
+   21.94,
+   22.84,
+   "Pourquoi un tel chantier ?"
+  ],
+  [
+   23.3,
+   24.58,
+   "Le vieux pont a été démoli"
+  ],
+  [
+   24.62,
+   24.74,
+   "en 2018."
+  ],
+  [
+   25.76,
+   26.6,
+   "Il était trop bas"
+  ],
+  [
+   26.64,
+   27.74,
+   "pour les trains à deux étages."
+  ],
+  [
+   28.12,
+   29.9,
+   "Depuis, le nord et le sud de Sierre"
+  ],
+  [
+   29.94,
+   31.08,
+   "ne sont plus reliés ici."
+  ],
+  [
+   31.8,
+   32.98,
+   "Mais ne roule pas encore dessus."
+  ],
+  [
+   33.28,
+   34.18,
+   "La pose du tablier"
+  ],
+  [
+   34.22,
+   35.3,
+   "n'est pas la fin du chantier."
+  ],
+  [
+   35.58,
+   36.86,
+   "Il reste à raccorder les routes,"
+  ],
+  [
+   37.04,
+   38.16,
+   "construire un giratoire"
+  ],
+  [
+   38.32,
+   39.38,
+   "et une rampe vers la gare."
+  ],
+  [
+   39.74,
+   41.02,
+   "Le projet coûte environ"
+  ],
+  [
+   41.06,
+   42.2,
+   "18 millions de francs."
+  ],
+  [
+   42.7,
+   43.7,
+   "Pour les automobilistes,"
+  ],
+  [
+   43.96,
+   45.26,
+   "rien ne change pour l'instant :"
+  ],
+  [
+   45.32,
+   46.38,
+   "le pont reste fermé."
+  ],
+  [
+   46.66,
+   47.72,
+   "Réouverture prévue"
+  ],
+  [
+   47.78,
+   48.12,
+   "à l'été 2027."
+  ],
+  [
+   49.6,
+   50.26,
+   "À retenir :"
+  ],
+  [
+   50.54,
+   51.88,
+   "1, le tablier est posé."
+  ],
+  [
+   52.32,
+   53.76,
+   "2, le pont reste fermé."
+  ],
+  [
+   54.12,
+   55.52,
+   "3, réouverture"
+  ],
+  [
+   55.58,
+   55.9,
+   "à l'été 2027."
+  ],
+  [
+   57.26,
+   58.26,
+   "C'était Lucie, pour Le Pouls."
+  ],
+  [
+   58.78,
+   59.54,
+   "On se retrouve demain."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "bigFigure",
+   "from": 0,
+   "theme": "green",
+   "props": {
+    "kicker": "Pont de Beaulieu, Sierre",
+    "prefix": "Environ",
+    "value": 300,
+    "label": "tonnes d'acier",
+    "at": 0.12
+   },
+   "to": 4.7
+  },
+  {
+   "type": "photo",
+   "from": 4.7,
+   "theme": "green",
+   "props": {
+    "recherche": "Sierre gare",
+    "kicker": "Sierre",
+    "title": "Un nouveau *tablier*",
+    "nom": "Gare de Sierre",
+    "role": "Voies CFF",
+    "src": "photo-2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose-1.jpg",
+    "credit": "Photo : Albins / Wikimedia Commons, Public domain"
+   },
+   "to": 11.94
+  },
+  {
+   "type": "bigFigure",
+   "from": 11.94,
+   "theme": "green",
+   "props": {
+    "kicker": "Le nouveau tablier",
+    "value": 43,
+    "label": "mètres de long",
+    "at": 1.06
+   },
+   "to": 14.3
+  },
+  {
+   "type": "statement",
+   "from": 14.3,
+   "theme": "green",
+   "props": {
+    "text": "Une *grue* géante"
+   },
+   "to": 18.68
+  },
+  {
+   "type": "carte",
+   "from": 18.68,
+   "theme": "green",
+   "props": {
+    "kicker": "Pont de Beaulieu",
+    "communes": [
+     "Sierre"
+    ],
+    "titre": "Sierre"
+   },
+   "to": 23.2
+  },
+  {
+   "type": "photoRonde",
+   "from": 23.2,
+   "theme": "green",
+   "props": {
+    "recherche": "Double-decker train Switzerland",
+    "kicker": "Démoli en 2018",
+    "title": "Trains à *deux étages*",
+    "legende": "Le vieux pont était trop bas",
+    "src": "photo-2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose-5.jpg",
+    "credit": "Photo : bigbirdz / Wikimedia Commons, CC BY 2.0"
+   },
+   "to": 31.7
+  },
+  {
+   "type": "statement",
+   "from": 31.7,
+   "theme": "green",
+   "props": {
+    "kicker": "Attention",
+    "text": "Pas encore la fin du *chantier*"
+   },
+   "to": 35.48
+  },
+  {
+   "type": "statement",
+   "from": 35.48,
+   "theme": "green",
+   "props": {
+    "kicker": "Il reste à faire",
+    "text": "*Routes*, giratoire et rampe vers la gare"
+   },
+   "to": 39.64
+  },
+  {
+   "type": "bigFigure",
+   "from": 39.64,
+   "theme": "green",
+   "props": {
+    "kicker": "Coût du projet",
+    "prefix": "Environ",
+    "value": 18,
+    "label": "millions de francs",
+    "at": 1.42
+   },
+   "to": 42.6
+  },
+  {
+   "type": "frise",
+   "from": 42.6,
+   "theme": "green",
+   "props": {
+    "kicker": "Pour les automobilistes",
+    "items": [
+     {
+      "date": "Maintenant",
+      "label": "Pont fermé",
+      "at": 1.36
+     },
+     {
+      "date": "Été 2027",
+      "label": "Réouverture",
+      "at": 4.06
+     }
+    ]
+   },
+   "to": 49.5
+  },
+  {
+   "type": "recap",
+   "from": 49.5,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Le tablier est posé",
+      "at": 1.04
+     },
+     {
+      "n": 2,
+      "label": "Le pont reste fermé",
+      "at": 2.82
+     },
+     {
+      "n": 3,
+      "label": "Réouverture à l'été 2027",
+      "at": 4.62
+     }
+    ]
+   },
+   "to": 57.16
+  },
+  {
+   "type": "outro",
+   "from": 57.16,
+   "theme": "green",
+   "props": {
+    "sources": "Sources : Le Nouvelliste, Le Temps, 24 heures, Ville de Sierre"
+   },
+   "to": 61.34
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "Le Nouvelliste",
+    "titre": "Sierre: le pont Beaulieu retrouve son tablier après une nuit de haute voltige",
+    "url": "https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/sierre-le-pont-beaulieu-retrouve-son-tablier-apres-une-nuit-de-haute-voltige-1521735"
+   },
+   {
+    "media": "Le Temps",
+    "titre": "Opération spectaculaire à Sierre: le pont Beaulieu a retrouvé son tablier",
+    "url": "https://www.letemps.ch/suisse/valais/operation-spectaculaire-a-sierre-le-pont-beaulieu-a-retrouve-son-tablier"
+   },
+   {
+    "media": "24 heures",
+    "titre": "Sierre: le tablier du pont Beaulieu posé par une grue géante",
+    "url": "https://www.24heures.ch/sierre-le-tablier-du-pont-beaulieu-pose-par-une-grue-geante-809103226488"
+   },
+   {
+    "media": "Ville de Sierre",
+    "titre": "Nouveau pont à Beaulieu",
+    "url": "https://www.sierre.ch/fr/nouveau-pont-beaulieu-2024.html"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Tablier métallique d'environ 300 tonnes et 43 mètres de long posé dans la nuit de samedi à dimanche",
+    "source": "https://www.24heures.ch/sierre-le-tablier-du-pont-beaulieu-pose-par-une-grue-geante-809103226488"
+   },
+   {
+    "fait": "Deuxième plus grande grue de Suisse mobilisée par les CFF",
+    "source": "https://www.24heures.ch/sierre-le-tablier-du-pont-beaulieu-pose-par-une-grue-geante-809103226488"
+   },
+   {
+    "fait": "Réouverture du pont prévue à l'été 2027",
+    "source": "https://www.letemps.ch/suisse/valais/operation-spectaculaire-a-sierre-le-pont-beaulieu-a-retrouve-son-tablier"
+   },
+   {
+    "fait": "Projet de 18,2 millions de francs, dont 11,8 financés par la Confédération via les CFF",
+    "source": "https://www.letemps.ch/suisse/valais/operation-spectaculaire-a-sierre-le-pont-beaulieu-a-retrouve-son-tablier"
+   },
+   {
+    "fait": "Ancien pont démoli en 2018, trop bas pour les trains à deux étages",
+    "source": "https://www.sierre.ch/fr/nouveau-pont-beaulieu-2024.html"
+   },
+   {
+    "fait": "La pose du tablier ne signifie pas la fin du chantier ; le pont n'est pas encore ouvert à la circulation",
+    "source": "https://www.bluewin.ch/fr/infos/suisse/sierre-encore-ferm-le-pont-beaulieu-a-d-j-retrouv-son-tablier-li.3674282"
+   },
+   {
+    "fait": "Suite du chantier : raccordements routiers, giratoire au nord et rampe d'accès à la gare",
+    "source": "https://news.sbb.ch/fr/019eb5f7-1aaa-7c10-9a65-40588ddba500/pont-de-beaulieu-la-premiere-pierre-est-posee"
+   }
+  ],
+  "sensible": false
+ }
+}

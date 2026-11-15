@@ -1,0 +1,34 @@
+LE POULS
+Pont de Beaulieu : le tablier est posé
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Une grue géante a posé les quelque 300 tonnes du nouveau tablier du pont de Beaulieu, à Sierre. Le pont reste fermé jusqu'à l'été 2027.
+Sources : Le Nouvelliste, Le Temps, 24 heures, Ville de Sierre
+#Valais #Sierre #PontDeBeaulieu #CFF
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Le Nouvelliste : Sierre: le pont Beaulieu retrouve son tablier après une nuit de haute voltige (https://www.lenouvelliste.ch/valais/valais-central/sierre-district/sierre-commune/sierre-le-pont-beaulieu-retrouve-son-tablier-apres-une-nuit-de-haute-voltige-1521735)
+- Le Temps : Opération spectaculaire à Sierre: le pont Beaulieu a retrouvé son tablier (https://www.letemps.ch/suisse/valais/operation-spectaculaire-a-sierre-le-pont-beaulieu-a-retrouve-son-tablier)
+- 24 heures : Sierre: le tablier du pont Beaulieu posé par une grue géante (https://www.24heures.ch/sierre-le-tablier-du-pont-beaulieu-pose-par-une-grue-geante-809103226488)
+- Ville de Sierre : Nouveau pont à Beaulieu (https://www.sierre.ch/fr/nouveau-pont-beaulieu-2024.html)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 5) : La voix affirme que « le nord et le sud de Sierre ne sont plus reliés ici ». Cette formulation n'apparaît pas telle quelle dans la liste `faits`, même si elle découle de la démolition du pont.
+- important (scène 1) : Sur l'image prélevée à t≈0, le grand chiffre affiche 185 alors que la donnée et le sous-titre disent 300. Le libellé « TONNES D'ACIER » est aussi coupé à sa base. Probablement un compteur et un masque d'animation en cours, mais la coupure est visible.
+- important (scène 3) : Sur l'image prélevée, le grand chiffre affiche 42 alors que le sous-titre dit « 43 mètres de long ». Même cas que la scène 1 : compteur probablement en cours d'animation.
+- important (scène 5) : Scène carte (18,68 s à 23,2 s, environ 4,5 s) : aucun sous-titre visible sur l'image prélevée. Ce n'est pas une scène exemptée, donc la voix doit être sous-titrée.
+- important (scène 5) : Le titre « Sierre » est répété par le sous-titre « Sierre » juste en dessous. Redondance visible.
+- important (scène 6) : Le titre « Trains à deux étages » est suivi de la légende « Le vieux pont était trop bas » puis du sous-titre « Il était trop bas » : la même idée apparaît trois fois dans l'écran.
+- important (scène 6) : Le titre « TRAINS À DEUX / ÉTAGES » laisse « ÉTAGES » seul sur la deuxième ligne (mot orphelin).
+- important (scène 11) : Dans la scène outro, la ligne « Sources : Le Nouvelliste, Le Temps, 24 heures, Ville de Sierre » laisse « Sierre » seul sur la deuxième ligne (mot orphelin).
+- mineur (scène 2) : Le titre « Un nouveau tablier » est répété par le sous-titre « retrouve enfin son tablier ». Le mot-clé apparaît deux fois.
+- mineur (scène 8) : Le libellé « MILLIONS DE FRANCS » est répété par le sous-titre « 18 millions de francs. ».
+- mineur (scène 9) : Le titre « Pont fermé » est répété par le sous-titre « le pont reste fermé. ». La même formulation revient dans la scène récapitulatif.
+- mineur (scène 5) : Sur la carte, le libellé « Monthey » est coupé par le bord gauche du cadre.

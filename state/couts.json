@@ -1769,6 +1769,116 @@
    "unite": "tokens",
    "usd": 0.0052,
    "execution": "édition jour 2026-11-14"
+  },
+  {
+   "date": "2026-11-15T13:05:39.830Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 95473,
+   "unite": "tokens",
+   "usd": 0.0113,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:06:56.840Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 61959,
+   "unite": "tokens",
+   "usd": 0.2253,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:06:56.840Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:07:13.767Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 37302,
+   "unite": "tokens",
+   "usd": 0.0921,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:07:13.767Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:07:50.934Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 56791,
+   "unite": "tokens",
+   "usd": 0.1708,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:07:50.934Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:07:56.888Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 11688,
+   "unite": "tokens",
+   "usd": 0.0017,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:08:15.755Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 517,
+   "unite": "crédits",
+   "usd": 0.0414,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:08:18.608Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 60,
+   "unite": "secondes",
+   "usd": 0.0036,
+   "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-15T13:09:53.737Z",
+   "contexte": "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21042,
+   "unite": "tokens",
+   "usd": 0.0042,
+   "execution": "édition jour 2026-11-15"
   }
  ],
  "executions": [
@@ -1941,6 +2051,11 @@
    "date": "2026-11-15T00:07:45.051Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-15T13:09:53.742Z",
+   "etiquette": "édition jour 2026-11-15",
+   "usd": 0.5904
   }
  ],
  "par_jour": {
@@ -2003,14 +2118,20 @@
    "elevenlabs": 0.0496,
    "higgsfield": 0,
    "total": 0.7407
+  },
+  "2026-11-15": {
+   "anthropic": 0.5454,
+   "elevenlabs": 0.045,
+   "higgsfield": 0,
+   "total": 0.5904
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 11.3686,
-   "elevenlabs": 1.0171,
+   "anthropic": 11.914,
+   "elevenlabs": 1.0621,
    "higgsfield": 0,
-   "total": 12.3857
+   "total": 12.9761
   }
  },
  "par_video": {
@@ -2032,22 +2153,23 @@
   "2026-11-13-jour-cremo-quitte-le-valais-la-raclette-aop-en-danger": 1.6452,
   "2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030": 0.0617,
   "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i": 0.6467,
-  "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729
+  "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729,
+  "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791
  },
  "soldes": {
-  "date": "2026-11-15T00:07:45.122Z",
+  "date": "2026-11-15T13:09:53.751Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 82990,
+   "credits_utilises": 83525,
    "credits_mois": 131000,
-   "credits_restants": 48010,
+   "credits_restants": 47475,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 3.5714,
+   "credit_estime_restant_usd": 3.026,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-15T00:07:46.581Z"
+ "maj": "2026-11-15T13:09:55.207Z"
 }
