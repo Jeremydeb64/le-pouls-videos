@@ -2056,6 +2056,11 @@
    "date": "2026-11-15T13:09:53.742Z",
    "etiquette": "édition jour 2026-11-15",
    "usd": 0.5904
+  },
+  {
+   "date": "2026-11-16T00:14:51.777Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -2157,7 +2162,7 @@
   "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791
  },
  "soldes": {
-  "date": "2026-11-15T13:09:53.751Z",
+  "date": "2026-11-16T00:14:52.400Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 83525,
@@ -2171,5 +2176,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-15T13:09:55.207Z"
+ "maj": "2026-11-16T00:14:53.917Z"
 }
