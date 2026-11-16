@@ -1,35 +1,5 @@
 [
  {
-  "date": "historique",
-  "gravite": "bloquant",
-  "type": null,
-  "constat": "Le texte de la photo de la gondole est coupé par le bord droit de l'écran (« SWISS WATC… » et le logo « TISSOT » sont tronqués). Ce texte déborde de la zone sûre et le logo de marque tiers n'est pas issu de la bibliothèque validée."
- },
- {
-  "date": "historique",
-  "gravite": "important",
-  "type": null,
-  "constat": "Faute d'accord : « 1 pistes » s'affiche sous Verbier."
- },
- {
-  "date": "mardi, 10 novembre 2026",
-  "gravite": "important",
-  "type": "versus",
-  "constat": "Le versus n'a pas le même traitement graphique pour les deux camps : la colonne « Pour » (PS, PLR) s'affiche dès 0,1 s et reste seule plus de 2 s, alors que « Contre » n'apparaît qu'à 2,64 s. Sur l'image prélevée, « Contre » n'affiche que « UDC » alors que « NEO » est attendu dans la liste."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "carte",
-  "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base (y≈593). Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "statement",
-  "constat": "Sur la carte, le titre « Sion » et le sous-titre « Sion » sont identiques. C'est redondant, et la carte ne dure que 6 s."
- },
- {
   "date": "mercredi, 11 novembre 2026",
   "gravite": "important",
   "type": "barres",
@@ -358,5 +328,35 @@
   "gravite": "important",
   "type": "outro",
   "constat": "Dans la scène outro, la ligne « Sources : Le Nouvelliste, Le Temps, 24 heures, Ville de Sierre » laisse « Sierre » seul sur la deuxième ligne (mot orphelin)."
+ },
+ {
+  "date": "lundi, 16 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Le grand chiffre affiche 7 alors que le sous-titre dit « de 8 % » et que la donnée est 8. Probablement un compteur en cours d'animation, mais l'image prélevée est incohérente avec la donnée."
+ },
+ {
+  "date": "lundi, 16 novembre 2026",
+  "gravite": "important",
+  "type": "statement",
+  "constat": "Le libellé « % DES ASSURÉS CHANGENT DE CAISSE » laisse « CAISSE » seul sur la deuxième ligne (mot orphelin). Le libellé commence aussi par « % », détaché du chiffre."
+ },
+ {
+  "date": "lundi, 16 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Le premier item de la frise « Le Conseil fédéral dit oui » laisse « oui » seul sur la deuxième ligne (mot orphelin)."
+ },
+ {
+  "date": "lundi, 16 novembre 2026",
+  "gravite": "important",
+  "type": "photo",
+  "constat": "Sur l'image prélevée de la frise, seuls les items 1 et 2 sont visibles. L'item 3 « Le Conseil fédéral prépare la loi » (prévu à 4,52 s) n'apparaît pas sur cette image."
+ },
+ {
+  "date": "lundi, 16 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Sur l'image prélevée du récapitulatif « À retenir », seul l'item 1 est visible. Les items 2 « Le Parlement doit voter » (prévu à 4,32 s) et 3 « Lettre chez l'assureur le 30 novembre » (prévu à 6,84 s) n'apparaissent pas."
  }
 ]

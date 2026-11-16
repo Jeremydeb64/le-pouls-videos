@@ -1,0 +1,27 @@
+LE POULS
+Changer de caisse-maladie en un clic ?
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Résilier sa caisse-maladie en ligne, bientôt possible ? Le Conseil fédéral dit oui à la motion, mais le Parlement doit encore voter. Cette année, ta lettre doit arriver au plus tard le 30 novembre.
+Sources : RTS, OFSP
+#Suisse #AssuranceMaladie #CaisseMaladie #Primes
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : Changer de caisse-maladie en un clic pourrait bientôt devenir possible en Suisse (https://www.rts.ch/info/suisse/2026/article/assurance-maladie-changer-de-caisse-en-un-clic-bientot-possible-29416844.html)
+- OFSP : Fiche d'information Changement de caisse-maladie (https://www.bag.admin.ch/dam/fr/sd-web/92VbSMPCd--v/PG27-FB-Versichererwechsel_FR.pdf)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 7) : La voix dit « Une élue verte doute des bénéfices de la concurrence ». Ta fiche de faits l'attribue à Léonore Porchet, mais je n'ai pas pu le confirmer sur le texte complet de l'article. La correction demandée (vérifier l'attribution) n'est pas documentée.
+- mineur (scène 9) : La liste de sources (outro « Sources : RTS, Confédération » et TikTok « RTS, OFSP ») ne mentionne pas l'OFS, source du chiffre de 8 %. Le spectateur peut donc confondre l'Office fédéral de la statistique avec l'OFSP, qui n'est cité que pour la date limite.
+- important (scène 1) : Le grand chiffre affiche 7 alors que le sous-titre dit « de 8 % » et que la donnée est 8. Probablement un compteur en cours d'animation, mais l'image prélevée est incohérente avec la donnée.
+- important (scène 1) : Le libellé « % DES ASSURÉS CHANGENT DE CAISSE » laisse « CAISSE » seul sur la deuxième ligne (mot orphelin). Le libellé commence aussi par « % », détaché du chiffre.
+- important (scène 6) : Le premier item de la frise « Le Conseil fédéral dit oui » laisse « oui » seul sur la deuxième ligne (mot orphelin).
+- important (scène 6) : Sur l'image prélevée de la frise, seuls les items 1 et 2 sont visibles. L'item 3 « Le Conseil fédéral prépare la loi » (prévu à 4,52 s) n'apparaît pas sur cette image.
+- important (scène 9) : Sur l'image prélevée du récapitulatif « À retenir », seul l'item 1 est visible. Les items 2 « Le Parlement doit voter » (prévu à 4,32 s) et 3 « Lettre chez l'assureur le 30 novembre » (prévu à 6,84 s) n'apparaissent pas.

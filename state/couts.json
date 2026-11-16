@@ -1879,6 +1879,116 @@
    "unite": "tokens",
    "usd": 0.0042,
    "execution": "édition jour 2026-11-15"
+  },
+  {
+   "date": "2026-11-16T13:05:29.730Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 95207,
+   "unite": "tokens",
+   "usd": 0.0109,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:07:05.710Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 64460,
+   "unite": "tokens",
+   "usd": 0.2511,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:07:05.710Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:08:00.798Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 44188,
+   "unite": "tokens",
+   "usd": 0.1502,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:08:00.798Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 1,
+   "unite": "recherches",
+   "usd": 0.01,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:09:29.849Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 75718,
+   "unite": "tokens",
+   "usd": 0.2683,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:09:29.849Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:09:40.169Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 14232,
+   "unite": "tokens",
+   "usd": 0.0024,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:10:10.583Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 580,
+   "unite": "crédits",
+   "usd": 0.0464,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:10:14.441Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 74,
+   "unite": "secondes",
+   "usd": 0.0045,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T13:12:21.543Z",
+   "contexte": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 19280,
+   "unite": "tokens",
+   "usd": 0.0039,
+   "execution": "édition jour 2026-11-16"
   }
  ],
  "executions": [
@@ -2061,6 +2171,11 @@
    "date": "2026-11-16T00:14:51.777Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-16T13:12:21.551Z",
+   "etiquette": "édition jour 2026-11-16",
+   "usd": 0.7877
   }
  ],
  "par_jour": {
@@ -2129,14 +2244,20 @@
    "elevenlabs": 0.045,
    "higgsfield": 0,
    "total": 0.5904
+  },
+  "2026-11-16": {
+   "anthropic": 0.7368,
+   "elevenlabs": 0.0509,
+   "higgsfield": 0,
+   "total": 0.7877
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 11.914,
-   "elevenlabs": 1.0621,
+   "anthropic": 12.6508,
+   "elevenlabs": 1.113,
    "higgsfield": 0,
-   "total": 12.9761
+   "total": 13.7638
   }
  },
  "par_video": {
@@ -2159,22 +2280,23 @@
   "2026-11-13-histoire-cremo-veut-quitter-le-valais-d-ici-2030": 0.0617,
   "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i": 0.6467,
   "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729,
-  "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791
+  "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791,
+  "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi": 0.7768
  },
  "soldes": {
-  "date": "2026-11-16T00:14:52.400Z",
+  "date": "2026-11-16T13:12:21.567Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 83525,
+   "credits_utilises": 84128,
    "credits_mois": 131000,
-   "credits_restants": 47475,
+   "credits_restants": 46872,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 3.026,
+   "credit_estime_restant_usd": 2.2892,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-16T00:14:53.917Z"
+ "maj": "2026-11-16T13:12:23.022Z"
 }

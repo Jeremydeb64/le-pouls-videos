@@ -10,101 +10,6 @@
  "messages": [
   {
    "agent": "systeme",
-   "texte": "Coût de cette édition : 0.82 $ (Claude + ElevenLabs).",
-   "t": "2026-11-13T08:13:31.751Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-13T08:13:31.755Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 53227 crédits restants ce mois-ci.",
-   "t": "2026-11-13T08:18:49.414Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "HISTOIRE IA : « Cremo veut quitter le Valais d'ici 2030 ». Script et images déjà prêts, on passe au montage.",
-   "t": "2026-11-13T08:18:49.416Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-13T08:18:49.419Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 6 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-13T08:19:19.674Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Arnaud 25 / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-13T08:19:20.343Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Template:Bild-picswiss / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-13T08:19:25.863Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Marizbluesky / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-13T08:19:26.521Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Georg Russ / Wikimedia Commons, CC0.",
-   "t": "2026-11-13T08:19:27.190Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Faldrian. / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-13T08:19:27.962Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Conceptuel / Wikimedia Commons, CC0.",
-   "t": "2026-11-13T08:19:28.673Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-13T08:19:28.965Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : FkMohr / Wikimedia Commons, CC BY-SA 3.0 de.",
-   "t": "2026-11-13T08:19:29.627Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-13T08:19:29.630Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-13T08:21:15.970Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Visuel : le fond vert, les pastilles et les sous-titres respectent la charte et la zone TikTok, la fin est bien couverte. À corriger avant nouveau rendu : (1) le crédit de la scène Sierre affiche « Template:Bild-picswiss », à remplacer par le vrai auteur ; (2) le nom du site Tourtemagne/Turtmann-Unterems est à harmoniser, et la phrase « Sierre et Tourtemagne » est répétée trois fois dans la carte ; (3) les répétitions « né en 1927 », « en 2025 » et « Lait… canton » sont à nettoyer, ainsi que le mot orphelin « 2025 » et « canton » ; (4) vérifie sur les images finales que le chiffre 130 s'affiche bien (le rendu montre 88) et que les barres, les items de « Trois priorités » et de « À retenir » apparaissent tous à leur temps prévu ; (5) le titre de la première image est coupé : vérifie qu'il s'agit bien d'une animation en cours.",
-   "t": "2026-11-13T08:22:03.403Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.06 $ (Claude + ElevenLabs).",
-   "t": "2026-11-13T08:22:05.426Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-13T08:22:05.429Z"
-  },
-  {
-   "agent": "systeme",
    "texte": "Clé ElevenLabs OK, 49188 crédits restants ce mois-ci.",
    "t": "2026-11-13T13:05:06.343Z"
   },
@@ -407,118 +312,105 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-15T13:09:55.213Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 47475 crédits restants ce mois-ci.",
+   "t": "2026-11-16T13:05:05.055Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-16T13:05:05.060Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "246 articles lus, je regroupe par sujet.",
+   "t": "2026-11-16T13:05:12.919Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Changer de caisse-maladie en un clic : bientôt possible ? ». Le Conseil fédéral propose d'accepter une motion pour une résiliation numérique et uniforme : une démarche simple qui touche tous les assurés et peut faire baisser les primes par la concurrence.",
+   "t": "2026-11-16T13:05:29.732Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Suisse.",
+   "t": "2026-11-16T13:05:29.739Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-16T13:07:05.713Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Sujet clair et dates justes : le 30 novembre est bien dans 14 jours depuis le 16 novembre. À corriger : 1) l'accroche « 1 sur 12 » est plus précise que la source (« un peu plus de 8 % », sans période), alors prends le chiffre de la source. 2) Le titre « Le Conseil fédéral dit oui » s'affiche avant que la voix en parle : recale la scène 2 et raccourcis-la. 3) Précise que le Conseil fédéral prépare la loi après le vote, sans la présenter comme acquise. 4) Vérifie l'attribution du doute à Léonore Porchet, adoucis « la paperasse freine », et corrige « avant le 30 novembre » et #Valais dans la description.",
+   "t": "2026-11-16T13:08:00.799Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-16T13:08:00.803Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-16T13:09:29.852Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les corrections demandées sont faites : chiffre de 8 % repris de la source, photoRonde synchronisée sur la voix, frise et voix prudentes, « au plus tard le 30 novembre » et hashtag #Suisse. Il reste deux points mineurs : vérifie l'attribution du doute à Léonore Porchet, et ajoute l'OFS aux sources de l'outro et de la description TikTok.",
+   "t": "2026-11-16T13:09:40.170Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-16T13:09:40.172Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-16T13:10:14.862Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Thomas Woodtli from Zürich, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
+   "t": "2026-11-16T13:10:15.197Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Superikonoskop / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-16T13:10:15.774Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-16T13:10:15.779Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-16T13:11:54.519Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Pas de problème de fond ni de droits. Il reste des retouches visuelles : le « 7 » du compteur doit atteindre 8 à temps, « CAISSE » et « oui » sont seuls sur leur ligne, et les items 3 de la frise et 2-3 du récap n'apparaissent pas sur les images prélevées. Corrige ces points et renvoie-moi la vidéo.",
+   "t": "2026-11-16T13:12:21.545Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.79 $ (Claude + ElevenLabs).",
+   "t": "2026-11-16T13:12:23.028Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-16T13:12:23.031Z"
   }
  ],
- "maj": "2026-11-15T13:10:10.704Z",
+ "maj": "2026-11-16T13:12:38.774Z",
  "episodes": [
-  {
-   "id": "2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24",
-   "titre": "13e rente AVS : la TVA en votation, J-24",
-   "edition": "matin",
-   "decision": "OK",
-   "problemes": [
-    {
-     "gravite": "mineur",
-     "scene": 7,
-     "constat": "Les corrections demandées ont été faites. Nicolas lit seul les deux camps avec la même balise [serious], et le temps de parole est équilibré (environ 36 mots pour le oui, 33 pour le non). L'UDC a été retirée du script, donc l'ajout dans `faits` n'est plus nécessaire. « Tout le monde participe, retraités compris » est bien couvert par la source Blick. « L'alimentation et les médicaments » suit la formulation de la source RTS.",
-     "correction_demandee": "Rien à corriger. Pour plus de rigueur, on pourrait ajouter le détail des camps (« partis bourgeois ») dans la note de l'écran, mais ce n'est pas nécessaire."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 9,
-     "constat": "Le fait « les réserves fondent » cite une source bluewin qui ne figure pas dans la liste `sources`. L'écran final affiche « RTS, Blick, Confédération ». Le contenu reste exact et c'est un simple écart de traçabilité.",
-     "correction_demandee": "Si possible, ajouter bluewin à `sources`, ou remplacer par une source RTS ou Blick déjà listée pour ce fait."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 2,
-     "constat": "Les autres corrections sont en place. « Financer en partie » est dit à l'oral. Le titre est devenu « Comment financer la 13e rente AVS ? ». La scène 5 ne contient plus que l'idée « une partie de la facture », sans chiffre. Les chiffres clés se limitent à 8,1 → 8,5 %, 84 à 336 francs et la date du vote. Les `at` de la frise (segments 52 et 55) correspondent maintenant au texte dit. Le décompte J-24 est juste pour le 5 novembre 2026.",
-     "correction_demandee": "Aucune."
-    },
-    {
-     "gravite": "important",
-     "scene": 4,
-     "constat": "Scène avant/après quasi vide: seul le bandeau « Taux normal de la TVA » est visible à environ 3,2 s, juste avant l'apparition prévue des valeurs (at 3,3 s sur 4,7 s de scène). Les chiffres 8,1 % et 8,5 % ne restent donc à l'écran qu'environ 1,4 s, alors que la voix dit déjà « à 8,5 % ». Le sous-titre est en plus quasi transparent sur le fond vert (fondu en cours), donc illisible sur cette image.",
-     "correction_demandee": "Faire apparaître « Aujourd'hui 8,1 % » dès le début de la scène (at ≈ 0,3 s) et « Si oui 8,5 % » en phase avec la voix (at ≈ 1,5 à 2 s), pour que les chiffres restent lisibles au moins 2 s. Vérifier que le sous-titre est pleinement opaque pendant qu'il est prononcé."
-    },
-    {
-     "gravite": "important",
-     "scene": 6,
-     "constat": "Les valeurs passent à la ligne: « 84 francs par / an » et « 336 francs / par an ». Le mot « an » est orphelin et la valeur de 84 touche presque le bord droit de la zone (x≈442 sur 450). Les libellés « Cas le plus / bas » et « Cas le plus / haut » passent aussi sur deux lignes. L'unité « francs par an » est répétée sur chaque ligne alors que le bandeau dit déjà « par an ». Difficile à lire d'un coup d'œil.",
-     "correction_demandee": "Afficher seulement « 84 francs » et « 336 francs » (unité « francs », « par an » déjà dans le bandeau). Raccourcir les libellés (« Minimum », « Maximum ») ou réduire la colonne de libellés pour tenir sur une ligne."
-    },
-    {
-     "gravite": "important",
-     "scene": 7,
-     "constat": "La colonne « Non » reste vide jusqu'à 14,3 s dans la scène, alors que « Oui » apparaît à 1,8 s. Pendant plus de 12 s, seul « Oui » est visible. Cela ne respecte pas le même traitement graphique des deux camps. À vérifier: « Oui » reste affiché environ 12,4 s et « Non » environ 9,9 s, soit un écart d'environ 20 %, au-dessus des 15 % tolérés.",
-     "correction_demandee": "Rééquilibrer les temps d'apparition et de parole des deux colonnes (écart de 15 % maximum). Idéalement, afficher les deux titres « Oui » et « Non » dès le début de la scène et révéler les points au rythme de la voix."
-    },
-    {
-     "gravite": "important",
-     "scene": 3,
-     "constat": "Aucun sous-titre visible sur cette image (≈16 s), alors que la scène dure 8,2 s pour une phrase courte. Même constat sur la scène 5 (≈27,6 s). Il faut s'assurer que la voix ne parle pas sans sous-titre et qu'il n'y a pas de silence de plus d'une seconde.",
-     "correction_demandee": "Vérifier la synchro voix/sous-titres sur les scènes 3 et 5 (les 67 sous-titres doivent couvrir toute la parole). Si la phrase est dite en 4 s environ, raccourcir la scène 3 (8,2 s) pour supprimer le blanc."
-    },
-    {
-     "gravite": "important",
-     "scene": 9,
-     "constat": "Le point 2 « TVA à 8,5 % si oui » est coupé net en bas (pastille et bas des lettres tronqués vers y≈390) pendant sa révélation, à 3,5 s dans la scène. Si c'est une animation de masque, elle est visible comme un texte coupé.",
-     "correction_demandee": "Remplacer le masque de révélation par un fondu ou un léger glissement sans découpe, ou vérifier que la découpe disparaît bien en moins de 0,2 s."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 3,
-     "constat": "En majuscules, « 13e » devient « 13E » (écriture incorrecte de l'ordinal). Les retours à la ligne séparent « QUEL / QUE SOIT LE VOTE » et laissent une ligne courte « VERSÉE EN ».",
-     "correction_demandee": "Garder « 13e » avec le « e » en minuscule (ou en exposant), et forcer les retours à la ligne: « La 13e rente sera versée / en décembre, / quel que soit le vote. »"
-    },
-    {
-     "gravite": "mineur",
-     "scene": 1,
-     "constat": "La première image affiche « 15 jours » pendant que le sous-titre dit « Dans 24 jours » (compteur en cours d'animation), sans titre à l'écran à cet instant.",
-     "correction_demandee": "Raccourcir l'animation du compteur pour que 24 soit atteint dès que la voix prononce « 24 jours », et faire apparaître le titre sans retard."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 10,
-     "constat": "Le pied de page « SENTIR L'ACTUALITÉ » est à y≈1526 en 1080×1920, hors de la zone sûre (y max 1450). Il est discret et fait partie du gabarit.",
-     "correction_demandee": "Si possible, remonter la ligne et la signature au-dessus de y = 1450, ou confirmer que c'est un élément décoratif sans importance."
-    }
-   ],
-   "description_tiktok": "Le 29 novembre, on vote sur une hausse de la TVA pour financer en partie la 13e rente AVS. Les arguments des deux camps, en une minute.\nSources : RTS, Blick, Confédération\n#Valais #Votation #AVS #TVA",
-   "sources": [
-    {
-     "media": "RTS",
-     "titre": "La 13e rente AVS doit être financée par une « réforme de fond », plaide Cyril Aellen",
-     "url": "https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-cyril-aellen-plaide-pour-une-reforme-de-fond-29403721.html"
-    },
-    {
-     "media": "RTS",
-     "titre": "13e rente AVS : Baume-Schneider défend la hausse de la TVA",
-     "url": "https://www.rts.ch/info/suisse/2026/article/13e-rente-avs-baume-schneider-defend-la-hausse-de-la-tva-29402432.html"
-    },
-    {
-     "media": "RTS",
-     "titre": "Hausse de la TVA pour l'AVS : ce qui change pour votre budget",
-     "url": "https://www.rts.ch/info/economie/2026/article/hausse-de-la-tva-pour-l-avs-ce-qui-change-pour-votre-budget-29399070.html"
-    },
-    {
-     "media": "Blick",
-     "titre": "Votation : tout ce qu'il faut savoir sur le financement de l'AVS",
-     "url": "https://www.blick.ch/fr/suisse/votation-tout-ce-quil-faut-savoir-sur-le-financement-de-lavs/n3d10y4"
-    },
-    {
-     "media": "Confédération",
-     "titre": "Votation du 29 novembre 2026",
-     "url": "https://www.bsv.admin.ch/fr/votation-29-novembre-2026-langue-facile"
-    }
-   ],
-   "mp4": "out/13e-rente-avs-la-tva-pour-la-financer-j-24/2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24.mp4",
-   "etat": "a_valider",
-   "cout_usd": 1.2115,
-   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24/LePouls_2026-11-05-matin-13e-rente-avs-la-tva-en-votation-j-24.mp4",
-   "lien_drive": "https://drive.google.com/drive/folders/1kv4ZPkLJ6vt3aUauKteLp9q3oxHSCqYK",
-   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/5"
-  },
   {
    "id": "2026-11-05-soir-budget-du-valais-180-millions-a-trouver",
    "titre": "Budget du Valais : 180 millions à trouver",
@@ -2132,6 +2024,75 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose/LePouls_2026-11-15-jour-pont-de-beaulieu-le-tablier-est-pose.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1t_-wHUlgY6ZqbCSquDcgib1YR6mIHYrj",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/23"
+  },
+  {
+   "id": "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic",
+   "titre": "Changer de caisse-maladie en un clic ?",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "La voix dit « Une élue verte doute des bénéfices de la concurrence ». Ta fiche de faits l'attribue à Léonore Porchet, mais je n'ai pas pu le confirmer sur le texte complet de l'article. La correction demandée (vérifier l'attribution) n'est pas documentée.",
+     "correction_demandee": "Vérifie dans l'article que le doute est bien attribué à Léonore Porchet. Sinon, reformule de façon fidèle (« rappelle que changer de caisse est vu comme un moyen de baisser ses primes »). Optionnel : coupe la scène « Un soutien large » en deux pour que la nuance soit visible à l'écran."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 9,
+     "constat": "La liste de sources (outro « Sources : RTS, Confédération » et TikTok « RTS, OFSP ») ne mentionne pas l'OFS, source du chiffre de 8 %. Le spectateur peut donc confondre l'Office fédéral de la statistique avec l'OFSP, qui n'est cité que pour la date limite.",
+     "correction_demandee": "Ajoute « OFS » à la liste de sources de l'outro et de la description TikTok, par exemple « Sources : RTS, OFS, OFSP »."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Le grand chiffre affiche 7 alors que le sous-titre dit « de 8 % » et que la donnée est 8. Probablement un compteur en cours d'animation, mais l'image prélevée est incohérente avec la donnée.",
+     "correction_demandee": "Vérifier que le compteur atteint 8 avant la fin de la voix sur ce chiffre, ou ajuster le masque d'animation pour que la valeur finale soit visible."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Le libellé « % DES ASSURÉS CHANGENT DE CAISSE » laisse « CAISSE » seul sur la deuxième ligne (mot orphelin). Le libellé commence aussi par « % », détaché du chiffre.",
+     "correction_demandee": "Reformuler le libellé pour éviter le mot orphelin (par exemple « des assurés changent de caisse ») et placer le signe % avec le chiffre."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Le premier item de la frise « Le Conseil fédéral dit oui » laisse « oui » seul sur la deuxième ligne (mot orphelin).",
+     "correction_demandee": "Raccourcir le libellé (« Le Conseil fédéral approuve ») ou élargir la zone de texte pour tenir sur une ligne."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Sur l'image prélevée de la frise, seuls les items 1 et 2 sont visibles. L'item 3 « Le Conseil fédéral prépare la loi » (prévu à 4,52 s) n'apparaît pas sur cette image.",
+     "correction_demandee": "Vérifier que les trois items s'affichent bien à leur temps prévu, et que le troisième est visible une fois sa cadence passée."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Sur l'image prélevée du récapitulatif « À retenir », seul l'item 1 est visible. Les items 2 « Le Parlement doit voter » (prévu à 4,32 s) et 3 « Lettre chez l'assureur le 30 novembre » (prévu à 6,84 s) n'apparaissent pas.",
+     "correction_demandee": "Vérifier l'apparition échelonnée des items et s'assurer que chacun est affiché à son temps prévu, sans rester hors cadre."
+    }
+   ],
+   "description_tiktok": "Résilier sa caisse-maladie en ligne, bientôt possible ? Le Conseil fédéral dit oui à la motion, mais le Parlement doit encore voter. Cette année, ta lettre doit arriver au plus tard le 30 novembre.\nSources : RTS, OFSP\n#Suisse #AssuranceMaladie #CaisseMaladie #Primes",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "Changer de caisse-maladie en un clic pourrait bientôt devenir possible en Suisse",
+     "url": "https://www.rts.ch/info/suisse/2026/article/assurance-maladie-changer-de-caisse-en-un-clic-bientot-possible-29416844.html"
+    },
+    {
+     "media": "OFSP",
+     "titre": "Fiche d'information Changement de caisse-maladie",
+     "url": "https://www.bag.admin.ch/dam/fr/sd-web/92VbSMPCd--v/PG27-FB-Versichererwechsel_FR.pdf"
+    }
+   ],
+   "mp4": "out/changer-de-caisse-maladie-en-un-clic-bientot-possi/2026-11-16-jour-changer-de-caisse-maladie-en-un-clic.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.7768,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-16-jour-changer-de-caisse-maladie-en-un-clic/LePouls_2026-11-16-jour-changer-de-caisse-maladie-en-un-clic.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1y0UNVpjlWtAuO1u48iUQNUdqW_LIg-nj",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/24"
   }
  ]
 }
