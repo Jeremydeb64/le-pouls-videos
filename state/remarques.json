@@ -2,36 +2,6 @@
  {
   "date": "mercredi, 11 novembre 2026",
   "gravite": "important",
-  "type": "barres",
-  "constat": "Sur les images prélevées de la scène « Qui paie quoi ? », seules les barres Actionnaires et Emprunts apparaissent. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 2 millions alors que la donnée est de 6 : c'est probablement un compteur en cours "
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "photo",
-  "constat": "Le titre « Dossier à l'examen à Berne » laisse « Berne » seul en deuxième ligne (mot orphelin)."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "recap",
-  "constat": "Sur l'image prélevée de la frise « Et pour l'ouverture ? », seul le premier item (« Aucune date annoncée ») est visible. Le second item (« Environ 2 ans de travaux », à 3,98 s dans la scène) n'apparaît pas sur l'image."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "outro",
-  "constat": "Sur l'image prélevée du récapitulatif, seuls les items 1 et 2 sont visibles. L'item 3 « Réponse de Berne : printemps 2027 » (prévu à 4,8 s) n'apparaît pas."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
-  "type": "photo",
-  "constat": "Sur la première image (t≈0), le titre « MOINS DE 11 MINUTES » est coupé net à sa base. Ça ressemble à un masque d'animation en cours, mais une coupure visible reste un texte tronqué. Le sous-titre « Moins de 11 minutes » répète aussi le titre mot pour mot."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
   "type": "photo",
   "constat": "Aucun sous-titre n'apparaît sur l'image prélevée entre 10,5 s et 15,2 s. Si la voix est silencieuse sur cette plage, cela dépasse la seconde de silence autorisée."
  },
@@ -358,5 +328,35 @@
   "gravite": "important",
   "type": "outro",
   "constat": "Sur l'image prélevée du récapitulatif « À retenir », seul l'item 1 est visible. Les items 2 « Le Parlement doit voter » (prévu à 4,32 s) et 3 « Lettre chez l'assureur le 30 novembre » (prévu à 6,84 s) n'apparaissent pas."
+ },
+ {
+  "date": "mardi, 17 novembre 2026",
+  "gravite": "important",
+  "type": "carte",
+  "constat": "Le titre « Sion » est répété par le sous-titre « Sion » juste en dessous. Redondance visible."
+ },
+ {
+  "date": "mardi, 17 novembre 2026",
+  "gravite": "important",
+  "type": "photoRonde",
+  "constat": "La légende « Hockey et patinage public » ne correspond pas à la photo, qui montre une sculpture de glace en noir et blanc."
+ },
+ {
+  "date": "mardi, 17 novembre 2026",
+  "gravite": "important",
+  "type": "frise",
+  "constat": "Sur l'image prélevée de la frise, aucun sous-titre n'est visible alors que la scène n'est pas exemptée et que la voix est présente."
+ },
+ {
+  "date": "mardi, 17 novembre 2026",
+  "gravite": "important",
+  "type": "frise",
+  "constat": "Sur l'image prélevée de la frise, seul l'item 1 « Sam. 21 nov. / Dès 12 h 30 » est visible. Les items 2 (« Dim. 29 nov. », prévu à 3,56 s) et 3 (« Dim. 13 déc. », prévu à 6,2 s) n'apparaissent pas sur cette image."
+ },
+ {
+  "date": "mardi, 17 novembre 2026",
+  "gravite": "important",
+  "type": "recap",
+  "constat": "Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. L'item 2 « Séance en plus le mardi soir » (prévu à 3,54 s) est absent de la liste. Un texte en fondu « Une séance s'ajoute » apparaît à la place des sous-titres et ne correspond à aucun libellé. L'item 3 « 3 fermetures les jours de ma"
  }
 ]

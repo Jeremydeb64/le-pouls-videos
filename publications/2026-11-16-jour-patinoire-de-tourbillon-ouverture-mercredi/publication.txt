@@ -1,0 +1,32 @@
+LE POULS
+Patinoire de Tourbillon : ouverture mercredi
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+La patinoire de plein air de Tourbillon, à Sion, ouvre demain à 8 h. Une séance en plus le mardi soir, et trois fermetures les jours de match du FC Sion.
+Sources : Ville de Sion, 24 heures
+#Valais #Sion #Patinoire #Tourbillon
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- Ville de Sion : Ouverture de la patinoire de plein air de Tourbillon le 18 novembre 2026 (https://www.sion.ch/infrastructuressportives/17942)
+- 24 heures : Sion: la patinoire de Tourbillon ouvre le 18 novembre (https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 8) : Le statement « Pas de glace l'après-midi » est un peu approximatif pour le samedi 21 novembre. La patinoire y ferme à 12 h 30, donc elle reste ouverte une demi-heure après midi. Les faits sont corrects partout ailleurs : dates, heures, jours de la semaine et source 24 heures concordent.
+- mineur (scène 1) : La recherche photo « Sion Valais » peut renvoyer une vue d'été, alors que le titre parle du retour de la glace. Ce n'est pas trompeur, mais l'ambiance hivernale serait plus cohérente.
+- mineur (scène 6) : Le fait « patinoire en plein air, tout près du stade » est rattaché à la page sion.ch. Cette page, telle que je l'ai trouvée, porte sur la saison 2025-2026 et n'indique pas explicitement la proximité du stade. L'information est exacte (site de Tourbillon, rue des Echutes) et sans risque.
+- mineur (scène 7) : La vidéo contient beaucoup de dates et d'heures : 18 novembre, 8 h, 21 novembre, 29 novembre, 13 décembre, 12 h 30 et 12 h. La frise et le récap les rendent lisibles, mais la voix est dense dans cette partie.
+- important (scène 1) : Le titre « Sion » est répété par le sous-titre « Sion » juste en dessous. Redondance visible.
+- important (scène 4) : La légende « Hockey et patinage public » ne correspond pas à la photo, qui montre une sculpture de glace en noir et blanc.
+- important (scène 6) : Sur l'image prélevée de la frise, aucun sous-titre n'est visible alors que la scène n'est pas exemptée et que la voix est présente.
+- important (scène 6) : Sur l'image prélevée de la frise, seul l'item 1 « Sam. 21 nov. / Dès 12 h 30 » est visible. Les items 2 (« Dim. 29 nov. », prévu à 3,56 s) et 3 (« Dim. 13 déc. », prévu à 6,2 s) n'apparaissent pas sur cette image.
+- important (scène 9) : Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. L'item 2 « Séance en plus le mardi soir » (prévu à 3,54 s) est absent de la liste. Un texte en fondu « Une séance s'ajoute » apparaît à la place des sous-titres et ne correspond à aucun libellé. L'item 3 « 3 fermetures les jours de match » (prévu à 5,6 s) n'apparaît pas.
+- mineur (scène 0) : Sur l'image à t≈0, le titre « LA GLACE REVIENT » est coupé à sa base. Sur l'image suivante, il est complet, ce qui suggère une animation d'entrée en cours.
+- mineur (scène 2) : Le sous-titre « à 8 h 00. » répète l'information déjà donnée par la headline « Mercredi 18 novembre à 8 h ».
+- mineur (scène 8) : Le titre « Sion » est suivi du sous-titre « Ville de Sion ». Le nom de la commune apparaît deux fois.

@@ -1989,6 +1989,86 @@
    "unite": "tokens",
    "usd": 0.0039,
    "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:01:01.653Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 79910,
+   "unite": "tokens",
+   "usd": 0.0096,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:02:15.871Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 86255,
+   "unite": "tokens",
+   "usd": 0.2631,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:02:15.871Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 3,
+   "unite": "recherches",
+   "usd": 0.03,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:02:46.990Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 42469,
+   "unite": "tokens",
+   "usd": 0.12,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:02:46.990Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:03:07.702Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 458,
+   "unite": "crédits",
+   "usd": 0.0366,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:03:11.520Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 57,
+   "unite": "secondes",
+   "usd": 0.0035,
+   "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-16T23:04:35.732Z",
+   "contexte": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 19729,
+   "unite": "tokens",
+   "usd": 0.0038,
+   "execution": "édition jour 2026-11-16"
   }
  ],
  "executions": [
@@ -2176,6 +2256,11 @@
    "date": "2026-11-16T13:12:21.551Z",
    "etiquette": "édition jour 2026-11-16",
    "usd": 0.7877
+  },
+  {
+   "date": "2026-11-16T23:04:35.738Z",
+   "etiquette": "édition jour 2026-11-16",
+   "usd": 0.4866
   }
  ],
  "par_jour": {
@@ -2250,14 +2335,20 @@
    "elevenlabs": 0.0509,
    "higgsfield": 0,
    "total": 0.7877
+  },
+  "2026-11-17": {
+   "anthropic": 0.4465,
+   "elevenlabs": 0.0401,
+   "higgsfield": 0,
+   "total": 0.4866
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 12.6508,
-   "elevenlabs": 1.113,
+   "anthropic": 13.0973,
+   "elevenlabs": 1.1531,
    "higgsfield": 0,
-   "total": 13.7638
+   "total": 14.2504
   }
  },
  "par_video": {
@@ -2281,22 +2372,23 @@
   "2026-11-13-jour-snus-en-valais-le-grand-conseil-veut-etudier-une-i": 0.6467,
   "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729,
   "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791,
-  "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi": 0.7768
+  "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi": 0.7768,
+  "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove": 0.477
  },
  "soldes": {
-  "date": "2026-11-16T13:12:21.567Z",
+  "date": "2026-11-16T23:04:35.746Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 84128,
+   "credits_utilises": 84603,
    "credits_mois": 131000,
-   "credits_restants": 46872,
+   "credits_restants": 46397,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 2.2892,
+   "credit_estime_restant_usd": 1.8427,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-16T13:12:23.022Z"
+ "maj": "2026-11-16T23:04:36.990Z"
 }

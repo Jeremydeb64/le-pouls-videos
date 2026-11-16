@@ -9,91 +9,6 @@
  },
  "messages": [
   {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 49188 crédits restants ce mois-ci.",
-   "t": "2026-11-13T13:05:06.343Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-13T13:05:06.347Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "254 articles lus, je regroupe par sujet.",
-   "t": "2026-11-13T13:05:15.438Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Snus en Valais : le Grand Conseil veut étudier une interdiction ». Vote serré (62 contre 61) sur un sujet santé qui touche les jeunes, confirmé par plusieurs médias. Attention au cadrage : le texte a été transformé en postulat, donc il demande une étude et non une interdiction immédiate.",
-   "t": "2026-11-13T13:05:39.506Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Rhône FM.",
-   "t": "2026-11-13T13:05:39.514Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-13T13:07:10.191Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bonne base, claire, sobre et neutre sur le fond. Deux points à corriger. 1) Équilibre : les auteurs parlent environ 28 mots contre 17 pour les opposants, donc raccourcis les auteurs et étoffe un peu les opposants avec des éléments déjà sourcés. 2) Versus : cale les `at` sur le début de la voix de chaque camp (30 et 37). Ajoute aussi une source pour « puis un changement de loi », ou atténue la formulation. La frise est à resynchroniser légèrement (l'item 1 n'a pas de phrase dite en face).",
-   "t": "2026-11-13T13:07:44.701Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-13T13:07:44.705Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-13T13:08:53.908Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Toutes les corrections demandées ont été faites : équilibre des deux camps, apparition des colonnes du versus alignée sur le début de chaque voix, procédure du changement de loi sourcée (Rhône FM), frise synchronisée. Il reste trois remarques mineures, sans obligation de modifier : la nuance sur l'UDC, qui est à la fois auteur et opposant, et le calage des items de la frise. Feu vert pour la phase image.",
-   "t": "2026-11-13T13:09:08.561Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-13T13:09:08.563Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-13T13:09:34.728Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Alekos / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-13T13:09:36.075Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-13T13:09:36.526Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Jacek Halicki / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-13T13:09:37.312Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-13T13:09:37.316Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-13T13:10:54.325Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Quelques corrections visuelles à faire avant la prochaine version : affichage du compteur de votes à t≈0 (« 62 contre » qui apparaît seul), colonne « Contre » du versus à rendre aussi remplie que « Pour », photo de la vape qui ne correspond pas à « jetables », redondance « Sion » sur la carte, items 2 et 3 du récapitulatif et de la frise à vérifier sur l'image, et sous-titres à ajouter ou confirmer pendant le récapitulatif.",
    "t": "2026-11-13T13:11:26.623Z"
@@ -407,102 +322,95 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-16T13:12:23.031Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 46872 crédits restants ce mois-ci.",
+   "t": "2026-11-16T23:00:32.624Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-16T23:00:32.626Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "189 articles lus, je regroupe par sujet.",
+   "t": "2026-11-16T23:00:41.559Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Patinoire de Tourbillon : ouverture mercredi 18 novembre ». Ouverture dans deux jours, utile à toutes les familles, avec des dates et des lieux claires ; le détail des fermetures reste à vérifier dans le communiqué (seuls les titres sont disponibles).",
+   "t": "2026-11-16T23:01:01.654Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du Ville de Sion.",
+   "t": "2026-11-16T23:01:01.659Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-16T23:02:15.874Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "RAS sur les faits : tout est confirmé par 24 heures, et les jours de la semaine sont justes pour 2026. Deux petits ajustements facultatifs : préciser « winter » dans la recherche photo de la scène 1, et reformuler le statement de la scène 8 (« Fermée dès *midi* »).",
+   "t": "2026-11-16T23:02:46.990Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-16T23:02:46.992Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 7 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-16T23:03:11.526Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-16T23:03:13.105Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Wilfredor / Wikimedia Commons, CC0.",
+   "t": "2026-11-16T23:03:13.673Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Валерий Дед / Wikimedia Commons, CC BY 3.0.",
+   "t": "2026-11-16T23:03:14.309Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-16T23:03:14.312Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-16T23:04:10.929Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Bonne base visuelle. Il reste à corriger : le « Sion » répété sur la carte, la légende « Hockey » qui ne colle pas à la sculpture, les sous-titres absents pendant la frise, et l'affichage des items 2 et 3 de la frise et du récapitulatif. Peux-tu vérifier ces points et fournir des images prélevées aux bons moments ?",
+   "t": "2026-11-16T23:04:35.733Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.49 $ (Claude + ElevenLabs).",
+   "t": "2026-11-16T23:04:36.995Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-16T23:04:36.998Z"
   }
  ],
- "maj": "2026-11-16T13:12:38.774Z",
+ "maj": "2026-11-16T23:04:53.507Z",
  "episodes": [
-  {
-   "id": "2026-11-05-soir-budget-du-valais-180-millions-a-trouver",
-   "titre": "Budget du Valais : 180 millions à trouver",
-   "edition": "soir",
-   "decision": "OK",
-   "problemes": [
-    {
-     "gravite": "mineur",
-     "scene": 6,
-     "constat": "La scène « Subventions, personnel, investissements, fiscalité » démarre au seg 26, alors que « Rien n'est décidé » est au seg 28 et les groupes de travail sont cités au seg 29. Les quatre thèmes sont affichés en une seule ligne, sans les quatre pastilles demandées dans la note `demande_nouvelle_scene`.",
-     "correction_demandee": "Démarrer la scène au seg 29, ou afficher les quatre thèmes en pastilles apparaissant une à une, comme prévu dans la note de scène."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 9,
-     "constat": "La frise reprend les repères demandés (fin 2027, 2028, dès 2029), mais les libellés ne sont pas tout à fait ceux proposés, et « Dès 2029 » ne précise pas que certaines mesures passent par le Grand Conseil et arrivent en 2030.",
-     "correction_demandee": "Facultatif : reprendre les libellés proposés (« Les autres mesures décidées », « Premières mesures », « Mise en œuvre des autres »)."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 11,
-     "constat": "La source « Canton du Valais » pointe toujours vers la page d'accueil https://www.vs.ch/, qui ne permet pas de vérifier la conférence de presse du 4 novembre.",
-     "correction_demandee": "Remplacer l'URL par celle du communiqué ou de la page « Programme d'équilibre des finances cantonales », ou retirer cette source."
-    },
-    {
-     "gravite": "bloquant",
-     "scene": 2,
-     "constat": "Sur la carte, les libellés « Viège » et « Brigue » se chevauchent et deviennent illisibles.",
-     "correction_demandee": "Écarter les libellés Viège et Brigue (décalage ou suppression de l'un des deux) pour qu'aucun texte ne se superpose."
-    },
-    {
-     "gravite": "bloquant",
-     "scene": 6,
-     "constat": "Le titre « SUBVENTIONS, PERSONNEL, INVESTISSEMENT, FISCALITÉ » est coupé : le « T » final de INVESTISSEMENT sort du cadre à droite.",
-     "correction_demandee": "Réduire la taille de police ou passer le mot sur une ligne plus courte pour que le titre entre entièrement dans la marge."
-    },
-    {
-     "gravite": "important",
-     "scene": 6,
-     "constat": "La demande de quatre pastilles icônes (Subventions, Personnel, Investissements, Fiscalité) n'apparaît pas à l'écran : la scène n'affiche que le titre.",
-     "correction_demandee": "Ajouter les quatre pastilles apparaissant une à une, avec le même style neutre, comme prévu dans le scénario."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 3,
-     "constat": "Le mot « francs » est seul sur la deuxième ligne du titre « 180 millions de francs ».",
-     "correction_demandee": "Reformuler ou ajuster la largeur pour éviter le mot orphelin."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 7,
-     "constat": "Le crédit photo se coupe en deux lignes avec « SA 3.0 » isolé, et il se situe en haut de l'image, dans la zone TikTok.",
-     "correction_demandee": "Raccourcir le crédit ou le réduire en taille pour qu'il tienne sur une ligne, et le placer dans la zone sûre tout en restant visible."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 11,
-     "constat": "Le titre de la carte récapitulative « Au moins 180 millions d'ici 2030 » laisse « 2030 » seul en fin de ligne.",
-     "correction_demandee": "Ajuster le retour à la ligne pour éviter le mot orphelin."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 2,
-     "constat": "La pastille de sous-titre « et aujourd'hui, on parle » commence à x≈92, légèrement en dehors de la zone x 100–900.",
-     "correction_demandee": "Recentrer ou réduire la pastille pour qu'elle reste dans la zone x 100–900."
-    }
-   ],
-   "description_tiktok": "Le Valais veut dégager au moins 180 millions d'ici 2030. Pas de licenciements prévus, une hausse d'impôts à l'étude pour les particuliers : on t'explique.\nSources : RTS Valais, « Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030 » ; Rhône FM ; Canton du Valais\n#Valais #Finances #Budget #Economies #Impots",
-   "sources": [
-    {
-     "media": "RTS Valais",
-     "titre": "Le Conseil d'Etat valaisan cherche à économiser 180 millions de francs d'ici à 2030",
-     "url": "https://www.rts.ch/info/regions/valais/2026/article/valais-le-conseil-d-etat-cherche-180-millions-d-economies-29405945.html"
-    },
-    {
-     "media": "Rhône FM",
-     "titre": "L'Etat du Valais veut trouver 180 millions de francs pour 2030",
-     "url": "https://www.rhonefm.ch/valais/letat-du-valais-veut-trouver-180-millions-de-francs-pour-2030-1843768"
-    },
-    {
-     "media": "Canton du Valais",
-     "titre": "Programme d'équilibre des finances cantonales : principes, organisation et calendrier",
-     "url": "https://www.vs.ch/"
-    }
-   ],
-   "mp4": "out/budget-cantonal-180-millions-a-trouver-d-ici-2030/2026-11-05-soir-budget-du-valais-180-millions-a-trouver.mp4",
-   "etat": "a_valider",
-   "cout_usd": 0.9181,
-   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-05-soir-budget-du-valais-180-millions-a-trouver/LePouls_2026-11-05-soir-budget-du-valais-180-millions-a-trouver.mp4",
-   "lien_drive": "https://drive.google.com/drive/folders/1ZG5DmDYO3xX3hHZ1fMhlCtypZrG_ajOc",
-   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/6"
-  },
   {
    "id": "2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g",
    "titre": "Le Cervin entre dans la liste mondiale des sites géologiques",
@@ -2093,6 +2001,105 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-16-jour-changer-de-caisse-maladie-en-un-clic/LePouls_2026-11-16-jour-changer-de-caisse-maladie-en-un-clic.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1y0UNVpjlWtAuO1u48iUQNUdqW_LIg-nj",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/24"
+  },
+  {
+   "id": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi",
+   "titre": "Patinoire de Tourbillon : ouverture mercredi",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "Le statement « Pas de glace l'après-midi » est un peu approximatif pour le samedi 21 novembre. La patinoire y ferme à 12 h 30, donc elle reste ouverte une demi-heure après midi. Les faits sont corrects partout ailleurs : dates, heures, jours de la semaine et source 24 heures concordent.",
+     "correction_demandee": "Facultatif : écrire « Fermée dès *midi* » ou « Fermée dès *12 h* ». Garder la frise pour l'heure exacte de chaque jour (12 h 30 le 21 novembre, 12 h les deux autres)."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "La recherche photo « Sion Valais » peut renvoyer une vue d'été, alors que le titre parle du retour de la glace. Ce n'est pas trompeur, mais l'ambiance hivernale serait plus cohérente.",
+     "correction_demandee": "Préciser la recherche : « Sion winter » ou « Tourbillon Sion snow »."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Le fait « patinoire en plein air, tout près du stade » est rattaché à la page sion.ch. Cette page, telle que je l'ai trouvée, porte sur la saison 2025-2026 et n'indique pas explicitement la proximité du stade. L'information est exacte (site de Tourbillon, rue des Echutes) et sans risque.",
+     "correction_demandee": "Aucune correction nécessaire. Si possible, rattacher ce fait à une source qui mentionne la proximité du stade."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 7,
+     "constat": "La vidéo contient beaucoup de dates et d'heures : 18 novembre, 8 h, 21 novembre, 29 novembre, 13 décembre, 12 h 30 et 12 h. La frise et le récap les rendent lisibles, mais la voix est dense dans cette partie.",
+     "correction_demandee": "Rien d'obligatoire. Vérifier au rendu que la frise affiche bien chaque item au bon moment (items à 22, 25 et 27) et que les sous-titres couvrent toute la scène."
+    },
+    {
+     "gravite": "important",
+     "scene": 1,
+     "constat": "Le titre « Sion » est répété par le sous-titre « Sion » juste en dessous. Redondance visible.",
+     "correction_demandee": "Remplacer le sous-titre par une précision utile (par exemple « Capitale du Valais ») ou le supprimer."
+    },
+    {
+     "gravite": "important",
+     "scene": 4,
+     "constat": "La légende « Hockey et patinage public » ne correspond pas à la photo, qui montre une sculpture de glace en noir et blanc.",
+     "correction_demandee": "Remplacer la légende par une description de l'image (par exemple « Sculpture sur glace ») ou la supprimer."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Sur l'image prélevée de la frise, aucun sous-titre n'est visible alors que la scène n'est pas exemptée et que la voix est présente.",
+     "correction_demandee": "Ajouter les sous-titres de la voix pendant toute la frise (30,28 s à 39,66 s)."
+    },
+    {
+     "gravite": "important",
+     "scene": 6,
+     "constat": "Sur l'image prélevée de la frise, seul l'item 1 « Sam. 21 nov. / Dès 12 h 30 » est visible. Les items 2 (« Dim. 29 nov. », prévu à 3,56 s) et 3 (« Dim. 13 déc. », prévu à 6,2 s) n'apparaissent pas sur cette image.",
+     "correction_demandee": "Vérifier que les items 2 et 3 s'affichent bien à leur moment prévu et fournir une image prélevée à ce moment pour contrôle."
+    },
+    {
+     "gravite": "important",
+     "scene": 9,
+     "constat": "Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. L'item 2 « Séance en plus le mardi soir » (prévu à 3,54 s) est absent de la liste. Un texte en fondu « Une séance s'ajoute » apparaît à la place des sous-titres et ne correspond à aucun libellé. L'item 3 « 3 fermetures les jours de match » (prévu à 5,6 s) n'apparaît pas.",
+     "correction_demandee": "Vérifier l'affichage séquentiel des trois items et aligner la formulation du sous-titre sur le libellé de l'item 2 ; fournir une image prélevée après 5,6 s."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "Sur l'image à t≈0, le titre « LA GLACE REVIENT » est coupé à sa base. Sur l'image suivante, il est complet, ce qui suggère une animation d'entrée en cours.",
+     "correction_demandee": "Confirmer que le masque d'animation se termine avant 1 s. Si la coupure persiste, corriger."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Le sous-titre « à 8 h 00. » répète l'information déjà donnée par la headline « Mercredi 18 novembre à 8 h ».",
+     "correction_demandee": "Reformuler la voix ou le sous-titre pour éviter la répétition."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "Le titre « Sion » est suivi du sous-titre « Ville de Sion ». Le nom de la commune apparaît deux fois.",
+     "correction_demandee": "Remplacer le titre ou le sous-titre par une information complémentaire."
+    }
+   ],
+   "description_tiktok": "La patinoire de plein air de Tourbillon, à Sion, ouvre demain à 8 h. Une séance en plus le mardi soir, et trois fermetures les jours de match du FC Sion.\nSources : Ville de Sion, 24 heures\n#Valais #Sion #Patinoire #Tourbillon",
+   "sources": [
+    {
+     "media": "Ville de Sion",
+     "titre": "Ouverture de la patinoire de plein air de Tourbillon le 18 novembre 2026",
+     "url": "https://www.sion.ch/infrastructuressportives/17942"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Sion: la patinoire de Tourbillon ouvre le 18 novembre",
+     "url": "https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511"
+    }
+   ],
+   "mp4": "out/patinoire-de-tourbillon-ouverture-mercredi-18-nove/2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.477,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi/LePouls_2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1y0UNVpjlWtAuO1u48iUQNUdqW_LIg-nj",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/25"
   }
  ]
 }

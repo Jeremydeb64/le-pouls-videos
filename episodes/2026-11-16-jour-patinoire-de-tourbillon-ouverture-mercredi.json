@@ -1,0 +1,422 @@
+{
+ "id": "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi",
+ "rubrique": "VALAIS",
+ "ambiance": "neutre",
+ "voice": "voix-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi.mp3",
+ "duration": 59.04,
+ "captions": [
+  [
+   0.08,
+   0.68,
+   "Demain matin,"
+  ],
+  [
+   1.04,
+   2.44,
+   "la glace revient à Sion."
+  ],
+  [
+   3.34,
+   4.18,
+   "Salut, c'est Lucie,"
+  ],
+  [
+   4.44,
+   5.84,
+   "et aujourd'hui, la patinoire"
+  ],
+  [
+   5.88,
+   7.18,
+   "de Tourbillon qui rouvre."
+  ],
+  [
+   7.78,
+   8.98,
+   "Elle ouvre ses portes demain,"
+  ],
+  [
+   9.16,
+   10.52,
+   "mercredi 18 novembre,"
+  ],
+  [
+   10.6,
+   11.24,
+   "à 8 h 00."
+  ],
+  [
+   11.64,
+   12.86,
+   "C'est une patinoire en plein air,"
+  ],
+  [
+   13,
+   13.82,
+   "tout près du stade."
+  ],
+  [
+   14.3,
+   14.78,
+   "Cette saison,"
+  ],
+  [
+   15.02,
+   15.76,
+   "il y a du nouveau."
+  ],
+  [
+   16.3,
+   17.74,
+   "Une séance de patinage public"
+  ],
+  [
+   17.86,
+   19.04,
+   "s'ajoute le mardi soir."
+  ],
+  [
+   19.3,
+   20.24,
+   "Les horaires du hockey"
+  ],
+  [
+   20.28,
+   21.34,
+   "et du patinage public"
+  ],
+  [
+   21.48,
+   22.5,
+   "ont aussi un peu changé."
+  ],
+  [
+   23.12,
+   23.72,
+   "Mais attention :"
+  ],
+  [
+   23.98,
+   25.2,
+   "il y aura des fermetures."
+  ],
+  [
+   25.52,
+   26.64,
+   "La raison ? Les matchs"
+  ],
+  [
+   26.66,
+   28.14,
+   "du FC Sion à domicile."
+  ],
+  [
+   28.56,
+   29.78,
+   "Trois dates sont déjà connues."
+  ],
+  [
+   30.38,
+   31.56,
+   "Samedi 21 novembre,"
+  ],
+  [
+   31.8,
+   32.62,
+   "la patinoire ferme"
+  ],
+  [
+   32.68,
+   33.42,
+   "à midi et demi."
+  ],
+  [
+   33.84,
+   35.1,
+   "Dimanche 29 novembre,"
+  ],
+  [
+   35.3,
+   36.1,
+   "elle ferme à midi."
+  ],
+  [
+   36.48,
+   37.8,
+   "Et dimanche 13 décembre,"
+  ],
+  [
+   38,
+   39.16,
+   "même chose : midi."
+  ],
+  [
+   39.76,
+   40.96,
+   "Concrètement, ces jours-là,"
+  ],
+  [
+   41.18,
+   42.22,
+   "ne viens pas l'après-midi."
+  ],
+  [
+   42.7,
+   43.58,
+   "Et avant de partir,"
+  ],
+  [
+   43.8,
+   44.66,
+   "vérifie les horaires"
+  ],
+  [
+   44.72,
+   45.7,
+   "sur le site de la Ville."
+  ],
+  [
+   46.46,
+   47.12,
+   "À retenir :"
+  ],
+  [
+   47.42,
+   48.94,
+   "la patinoire ouvre demain"
+  ],
+  [
+   49,
+   49.66,
+   "à 8 h 00."
+  ],
+  [
+   49.9,
+   50.78,
+   "Une séance s'ajoute"
+  ],
+  [
+   50.82,
+   51.68,
+   "le mardi soir."
+  ],
+  [
+   51.96,
+   53.22,
+   "3 fermetures sont prévues"
+  ],
+  [
+   53.28,
+   54.14,
+   "les jours de match."
+  ],
+  [
+   54.86,
+   55.88,
+   "C'était Lucie, pour Le Pouls."
+  ],
+  [
+   56.46,
+   57.24,
+   "On se retrouve demain."
+  ]
+ ],
+ "scenes": [
+  {
+   "type": "photo",
+   "from": 0,
+   "theme": "green",
+   "props": {
+    "recherche": "Sion Valais",
+    "kicker": "Sion",
+    "title": "La glace *revient*",
+    "src": "photo-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-0.jpg",
+    "credit": "Photo : Original:  Chensiyuan\nDerivative work:  Aristeas / Wikimedia Commons, CC BY-SA 4.0"
+   },
+   "to": 4.34
+  },
+  {
+   "type": "carte",
+   "from": 4.34,
+   "theme": "green",
+   "props": {
+    "kicker": "Patinoire de Tourbillon",
+    "communes": [
+     "Sion"
+    ],
+    "titre": "Sion"
+   },
+   "to": 7.68
+  },
+  {
+   "type": "chrono",
+   "from": 7.68,
+   "theme": "green",
+   "props": {
+    "kicker": "Patinoire de Tourbillon",
+    "label": "Ouverture dans",
+    "value": 1,
+    "unit": "jour",
+    "headline": "Mercredi 18 novembre à 8 h"
+   },
+   "to": 14.2
+  },
+  {
+   "type": "statement",
+   "from": 14.2,
+   "theme": "green",
+   "props": {
+    "kicker": "Nouveau cette saison",
+    "text": "Une séance en plus le *mardi soir*"
+   },
+   "to": 19.2
+  },
+  {
+   "type": "photoRonde",
+   "from": 19.2,
+   "theme": "green",
+   "props": {
+    "recherche": "ice skates",
+    "kicker": "Les horaires",
+    "title": "Quelques *ajustements*",
+    "legende": "Hockey et patinage public",
+    "src": "photo-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-4.jpg",
+    "credit": "Photo : Wilfredor / Wikimedia Commons, CC0"
+   },
+   "to": 23.02
+  },
+  {
+   "type": "photo",
+   "from": 23.02,
+   "theme": "green",
+   "props": {
+    "recherche": "Stade de Tourbillon Sion",
+    "kicker": "Mais attention",
+    "title": "Matchs du *FC Sion*",
+    "nom": "Stade de Tourbillon",
+    "role": "Sion",
+    "src": "photo-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-5.jpg",
+    "credit": "Photo : Валерий Дед / Wikimedia Commons, CC BY 3.0"
+   },
+   "to": 30.28
+  },
+  {
+   "type": "frise",
+   "from": 30.28,
+   "theme": "green",
+   "props": {
+    "kicker": "Fermetures de la patinoire",
+    "items": [
+     {
+      "date": "Sam. 21 nov.",
+      "label": "Dès 12 h 30",
+      "at": 0.1
+     },
+     {
+      "date": "Dim. 29 nov.",
+      "label": "Dès 12 h",
+      "at": 3.56
+     },
+     {
+      "date": "Dim. 13 déc.",
+      "label": "Dès 12 h",
+      "at": 6.2
+     }
+    ]
+   },
+   "to": 39.66
+  },
+  {
+   "type": "statement",
+   "from": 39.66,
+   "theme": "green",
+   "props": {
+    "kicker": "Jours de match",
+    "text": "Pas de glace *l'après-midi*"
+   },
+   "to": 42.6
+  },
+  {
+   "type": "carte",
+   "from": 42.6,
+   "theme": "green",
+   "props": {
+    "kicker": "Infos et horaires",
+    "communes": [
+     "Sion"
+    ],
+    "titre": "Ville de Sion"
+   },
+   "to": 46.36
+  },
+  {
+   "type": "recap",
+   "from": 46.36,
+   "theme": "green",
+   "props": {
+    "kicker": "À retenir",
+    "items": [
+     {
+      "n": 1,
+      "label": "Ouverture demain à 8 h",
+      "at": 1.06
+     },
+     {
+      "n": 2,
+      "label": "Séance en plus le mardi soir",
+      "at": 3.54
+     },
+     {
+      "n": 3,
+      "label": "3 fermetures les jours de match",
+      "at": 5.6
+     }
+    ]
+   },
+   "to": 54.76
+  },
+  {
+   "type": "outro",
+   "from": 54.76,
+   "theme": "green",
+   "props": {
+    "sources": "Sources : Ville de Sion, 24 heures"
+   },
+   "to": 59.04
+  }
+ ],
+ "meta": {
+  "presentateur": "lucie",
+  "sources": [
+   {
+    "media": "Ville de Sion",
+    "titre": "Ouverture de la patinoire de plein air de Tourbillon le 18 novembre 2026",
+    "url": "https://www.sion.ch/infrastructuressportives/17942"
+   },
+   {
+    "media": "24 heures",
+    "titre": "Sion: la patinoire de Tourbillon ouvre le 18 novembre",
+    "url": "https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511"
+   }
+  ],
+  "faits": [
+   {
+    "fait": "Ouverture le mercredi 18 novembre 2026 à 8 h 00",
+    "source": "https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511"
+   },
+   {
+    "fait": "Une séance de patinage public supplémentaire le mardi soir, horaires du hockey et du patinage public adaptés",
+    "source": "https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511"
+   },
+   {
+    "fait": "Fermetures liées aux matches du FC Sion : samedi 21 novembre à 12 h 30, dimanches 29 novembre et 13 décembre à 12 h 00",
+    "source": "https://www.24heures.ch/sion-la-patinoire-de-tourbillon-ouvre-le-18-novembre-230705035511"
+   },
+   {
+    "fait": "Patinoire de plein air, située à proximité du stade de Tourbillon",
+    "source": "https://www.sion.ch/infrastructuressportives/17942"
+   }
+  ],
+  "sensible": false
+ }
+}
