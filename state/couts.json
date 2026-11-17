@@ -2261,6 +2261,11 @@
    "date": "2026-11-16T23:04:35.738Z",
    "etiquette": "édition jour 2026-11-16",
    "usd": 0.4866
+  },
+  {
+   "date": "2026-11-17T03:05:06.510Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -2376,7 +2381,7 @@
   "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove": 0.477
  },
  "soldes": {
-  "date": "2026-11-16T23:04:35.746Z",
+  "date": "2026-11-17T03:05:07.112Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 84603,
@@ -2390,5 +2395,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-16T23:04:36.990Z"
+ "maj": "2026-11-17T03:05:08.613Z"
 }
