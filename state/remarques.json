@@ -2,12 +2,6 @@
  {
   "date": "mercredi, 11 novembre 2026",
   "gravite": "important",
-  "type": "photo",
-  "constat": "Aucun sous-titre n'apparaît sur l'image prélevée entre 10,5 s et 15,2 s. Si la voix est silencieuse sur cette plage, cela dépasse la seconde de silence autorisée."
- },
- {
-  "date": "mercredi, 11 novembre 2026",
-  "gravite": "important",
   "type": "barres",
   "constat": "L'image prélevée de « Qui paie quoi ? » n'affiche que les barres Actionnaires (6 millions) et Emprunts. La barre « Aides espérées » (18 millions, en accent) n'est pas visible. Le compteur d'Emprunts affiche 4 millions alors que la donnée est de 6, probablement en cours d'animation."
  },
@@ -358,5 +352,11 @@
   "gravite": "important",
   "type": "recap",
   "constat": "Sur l'image prélevée du récapitulatif, seul l'item 1 est visible. L'item 2 « Séance en plus le mardi soir » (prévu à 3,54 s) est absent de la liste. Un texte en fondu « Une séance s'ajoute » apparaît à la place des sous-titres et ne correspond à aucun libellé. L'item 3 « 3 fermetures les jours de ma"
+ },
+ {
+  "date": "mercredi, 18 novembre 2026",
+  "gravite": "important",
+  "type": "outro",
+  "constat": "Le titre de l'item 1 « Vote sur l'impôt fédéral direct » est répété presque à l'identique par le sous-titre « l'impôt fédéral direct. ». Le même mot-clé apparaît deux fois dans le même écran."
  }
 ]

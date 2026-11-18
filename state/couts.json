@@ -2069,6 +2069,116 @@
    "unite": "tokens",
    "usd": 0.0038,
    "execution": "édition jour 2026-11-16"
+  },
+  {
+   "date": "2026-11-18T13:05:26.912Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 75197,
+   "unite": "tokens",
+   "usd": 0.0086,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:07:19.041Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 75333,
+   "unite": "tokens",
+   "usd": 0.2926,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:07:19.041Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:08:08.911Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 102947,
+   "unite": "tokens",
+   "usd": 0.2601,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:08:08.911Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 4,
+   "unite": "recherches",
+   "usd": 0.04,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:09:40.032Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 86301,
+   "unite": "tokens",
+   "usd": 0.2995,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:09:40.032Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:09:49.600Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 16647,
+   "unite": "tokens",
+   "usd": 0.0025,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:10:23.432Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "elevenlabs",
+   "operation": "dialogue",
+   "quantite": 659,
+   "unite": "crédits",
+   "usd": 0.0527,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:10:26.868Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 81,
+   "unite": "secondes",
+   "usd": 0.005,
+   "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-18T13:12:27.527Z",
+   "contexte": "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 21657,
+   "unite": "tokens",
+   "usd": 0.0044,
+   "execution": "édition jour 2026-11-18"
   }
  ],
  "executions": [
@@ -2271,6 +2381,11 @@
    "date": "2026-11-18T02:33:00.841Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-18T13:12:27.533Z",
+   "etiquette": "édition jour 2026-11-18",
+   "usd": 1.0054
   }
  ],
  "par_jour": {
@@ -2351,14 +2466,20 @@
    "elevenlabs": 0.0401,
    "higgsfield": 0,
    "total": 0.4866
+  },
+  "2026-11-18": {
+   "anthropic": 0.9477,
+   "elevenlabs": 0.0577,
+   "higgsfield": 0,
+   "total": 1.0054
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 13.0973,
-   "elevenlabs": 1.1531,
+   "anthropic": 14.045,
+   "elevenlabs": 1.2108,
    "higgsfield": 0,
-   "total": 14.2504
+   "total": 15.2558
   }
  },
  "par_video": {
@@ -2383,22 +2504,23 @@
   "2026-11-14-jour-cremo-le-retrait-s-etend-a-sierre-et-tourtemagne-l": 0.729,
   "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791,
   "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi": 0.7768,
-  "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove": 0.477
+  "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove": 0.477,
+  "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29": 0.9968
  },
  "soldes": {
-  "date": "2026-11-18T02:33:00.890Z",
+  "date": "2026-11-18T13:12:27.543Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 90135,
+   "credits_utilises": 90829,
    "credits_mois": 131000,
-   "credits_restants": 40865,
+   "credits_restants": 40171,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 1.8427,
+   "credit_estime_restant_usd": 0.895,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-18T02:33:02.429Z"
+ "maj": "2026-11-18T13:12:28.942Z"
 }

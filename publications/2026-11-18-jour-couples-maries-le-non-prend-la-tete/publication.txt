@@ -1,0 +1,29 @@
+LE POULS
+Couples mariés : le non prend la tête
+Édition du jour, à publier en fin d'après-midi (vers 17 h 30)
+
+=== TEXTE DE PUBLICATION (à copier dans TikTok) ===
+Imposition des couples mariés : que propose l'initiative du Centre, et pourquoi le non passe en tête dans le sondage SSR ? Les deux camps, expliqués. Votation le 29 novembre.
+Sources : RTS, Le Temps, 24 heures, Confédération
+#Votation #Suisse #Impôts #29novembre #LePouls
+
+=== AVANT DE PUBLIER ===
+[ ] Activer l'étiquette « Contenu généré par l'IA » (voix de synthèse)
+[ ] Sujet de votation ou sensible : pas de son tendance
+[ ] Vérifier la couverture (image d'accroche)
+
+=== SOURCES ===
+- RTS : L'initiative fiscale sur les couples mariés bascule vers le non, selon le 2e sondage SSR (https://www.rts.ch/info/suisse/2026/article/sondage-ssr-l-impot-des-couples-maries-bascule-vers-le-non-29418422.html)
+- Le Temps : Votations du 29 novembre : derniers sondages (https://www.letemps.ch/suisse/votations-du-29-novembre-les-suisses-rejetteraient-la-hausse-de-la-tva-pour-l-avs-le-sort-de-la-loi-sur-le-materiel-de-guerre-tres-incertain-selon-un-sondage-de-la-ssr)
+- Le Temps : Pour Philipp Matthias Bregy, revoter sur l'imposition des couples mariés n'est pas inutile, mais nécessaire (https://www.letemps.ch/suisse/pour-philipp-matthias-bregy-revoter-sur-l-imposition-des-couples-maries-n-est-pas-inutile-mais-necessaire)
+- 24 heures : Imposition individuelle : les Suisses prêts à rejeter l'initiative du Centre (https://www.24heures.ch/imposition-individuelle-les-suisses-prets-a-rejeter-linitiative-du-centre-349910789356)
+- Confédération : Imposition des couples mariés (https://www.admin.ch/fr/imposition-couples)
+
+=== CONTRÔLE ===
+Décision : OK
+- mineur (scène 0) : Le script reste dense (environ 90 secondes, plusieurs chiffres : 11 jours, 29 novembre, 8 mars, 40 %, 54 %, 2,8 points). « Impôt fédéral direct » est expliqué dans la voix mais pas à l'écran.
+- mineur (scène 6) : Équilibre pour/contre désormais symétrique (deux points de chaque côté, deux phrases de voix). Le reliquat « deux systèmes à la fois » a bien disparu.
+- important (scène 11) : Le titre de l'item 1 « Vote sur l'impôt fédéral direct » est répété presque à l'identique par le sous-titre « l'impôt fédéral direct. ». Le même mot-clé apparaît deux fois dans le même écran.
+- mineur (scène 8) : La photo est un bulletin de vote réel de 2006 (loi sur la coopération avec les États d'Europe de l'Est). Le texte lisible concerne un autre objet de vote et peut prêter à confusion sur le scrutin de novembre 2026.
+- mineur (scène 2) : Le mot « Votation » apparaît deux fois : dans le libellé de rubrique en haut à gauche et dans le kicker « VOTATION FÉDÉRALE ». Redondance visuelle légère.
+- mineur (scène 1) : À t≈0, le titre « LE NON PREND L'AVANTAGE » est en cours d'animation et le dernier mot est partiellement masqué par le bandeau. L'image est prise pendant le mouvement, mais la coupure est visible.

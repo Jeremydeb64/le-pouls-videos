@@ -9,101 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Quelques corrections visuelles à faire avant la prochaine version : affichage du compteur de votes à t≈0 (« 62 contre » qui apparaît seul), colonne « Contre » du versus à rendre aussi remplie que « Pour », photo de la vape qui ne correspond pas à « jetables », redondance « Sion » sur la carte, items 2 et 3 du récapitulatif et de la frise à vérifier sur l'image, et sous-titres à ajouter ou confirmer pendant le récapitulatif.",
-   "t": "2026-11-13T13:11:26.623Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.66 $ (Claude + ElevenLabs).",
-   "t": "2026-11-13T13:11:28.153Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-13T13:11:28.156Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 48600 crédits restants ce mois-ci.",
-   "t": "2026-11-14T13:05:01.830Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-14T13:05:01.833Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "256 articles lus, je regroupe par sujet.",
-   "t": "2026-11-14T13:05:10.290Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Cremo : le retrait s'étend à Sierre et Tourtemagne, la raclette AOC inquiète ». Le départ de Cremo touche des communes concrètes et la production de raclette AOP du Valais, avec une task force en cours et un premier repreneur potentiel.",
-   "t": "2026-11-14T13:05:36.140Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS.",
-   "t": "2026-11-14T13:05:36.145Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-14T13:07:55.793Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Faits OK : jeudi 12 novembre pour l'annonce, vendredi 13 pour la séance, 17 millions, 130 emplois et près de la moitié de la raclette sont tous vérifiés. À corriger : 1) la frise « La suite » ne colle pas à la voix (items aux segments 32 à 34), recale-la ou remplace-la. 2) Le statement d'ouverture (segments 0 à 3) dépasse 6 s, découpe-le ou ajoute une photo. 3) Affiche « Tourtemagne » sur la carte plutôt que « Turtmann-Unterems ». 4) Écris « valaisanne » pour Walker, ou source le « haut- ». 5) Ajoute Keystone-ATS aux sources.",
-   "t": "2026-11-14T13:08:27.293Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-14T13:08:27.296Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-14T13:09:29.307Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les corrections demandées sont faites : frise recalée sur la voix, scène d'ouverture raccourcie, « valaisanne » sans « haut- », Keystone-ATS ajouté aux sources. Il reste trois remarques mineures, sans blocage.",
-   "t": "2026-11-14T13:09:42.308Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-14T13:09:42.310Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-14T13:10:11.998Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Faldrian. / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-14T13:10:12.591Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-14T13:10:13.110Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Conceptuel / Wikimedia Commons, CC0.",
-   "t": "2026-11-14T13:10:13.761Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Espandero / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-14T13:10:14.107Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "Montage lancé.",
    "t": "2026-11-14T13:10:14.110Z"
@@ -407,120 +312,105 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-16T23:04:36.998Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 40855 crédits restants ce mois-ci.",
+   "t": "2026-11-18T13:05:03.270Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-18T13:05:03.273Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "175 articles lus, je regroupe par sujet.",
+   "t": "2026-11-18T13:05:14.337Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Imposition des couples mariés : ce qui se vote le 29 novembre ». Votation du 29 novembre, sondage SSR gfs.bern publié aujourd'hui, et aucun sujet sur cet objet dans les 14 derniers jours. Le 8 mars, les Suisses ont accepté l'imposition individuelle : ce vote revient sur ce choix, c'est donc une explication utile.",
+   "t": "2026-11-18T13:05:26.913Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Suisse.",
+   "t": "2026-11-18T13:05:26.919Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-18T13:07:19.044Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Les chiffres sont exacts. Le compte à rebours de 11 jours et le dimanche 29 novembre sont justes, et la marge de 2,8 points est bien présentée comme une estimation. Quatre corrections avant validation : 1) Nomme YouGov et précise que Tamedia donne aussi le non devant (59 %). Aujourd'hui, « un autre sondage » est flou et peut être confondu avec Tamedia. 2) Attribue « ne paierait jamais plus » au texte de l'initiative, sans le dire en voix neutre, ici et dans la légende de la scène 5. 3) Utilise le titre officiel du bulletin à la scène 2. 4) Ajoute aux `faits` le sondage SSR à 55 % de oui, les arguments du Centre et les « deux systèmes ». Facultatif : une phrase plus claire pour le statement Tamedia, par exemple « L'effet du *8 mars* ».",
+   "t": "2026-11-18T13:08:08.912Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-18T13:08:08.915Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-18T13:09:40.034Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Toutes les corrections demandées sont faites : YouGov est nommé, Tamedia est présenté comme donnant aussi le non, la promesse de l'initiative est attribuée au texte, le titre de la carte est le titre officiel, le statement « Le 8 mars pèse sur le vote » est clarifié et les faits sont complétés. Seules restent des remarques mineures sur la densité du script.",
+   "t": "2026-11-18T13:09:49.600Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le dialogue à Lucie et Arthur.",
+   "t": "2026-11-18T13:09:49.602Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
+   "t": "2026-11-18T13:10:27.627Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Petar Milošević / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-18T13:10:28.495Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Keimzelle / Wikimedia Commons, Public domain.",
+   "t": "2026-11-18T13:10:29.659Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-18T13:10:29.664Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-18T13:11:56.532Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Scène recap : le sous-titre « l'impôt fédéral direct. » répète l'item 1 ; remplace-le par une formulation qui apporte autre chose. Pour la photo de la scène 8, choisis une image sans bulletin de vote lisible d'une autre votation.",
+   "t": "2026-11-18T13:12:27.528Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 1.01 $ (Claude + ElevenLabs).",
+   "t": "2026-11-18T13:12:28.947Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
+   "t": "2026-11-18T13:12:28.949Z"
   }
  ],
- "maj": "2026-11-16T23:04:53.507Z",
+ "maj": "2026-11-18T13:12:46.268Z",
  "episodes": [
-  {
-   "id": "2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g",
-   "titre": "Le Cervin entre dans la liste mondiale des sites géologiques",
-   "edition": "matin",
-   "decision": "BLOQUE",
-   "problemes": [
-    {
-     "gravite": "mineur",
-     "scene": 5,
-     "constat": "« Glaciers de blocs » et « grande faille » restent sans explication à l'oral. Le jargon n'est pas expliqué pour un spectateur qui ne connaît pas le sujet.",
-     "correction_demandee": "Simplifier à l'oral, par exemple : « deux autres sites suisses y figurent déjà : des glaciers de blocs dans l'Engadine et une grande faille à Glaris »."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 9,
-     "constat": "Le libellé du récap « Roches d'Afrique et de l'ancienne marge de l'Europe » ne reprend pas la nuance de la source (fragments de croûte terrestre).",
-     "correction_demandee": "Écrire « Des roches venues d'Afrique et de l'ancienne marge de l'Europe »."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 4,
-     "constat": "Le fait « liste créée en 2022 » est toujours rattaché à la seule source RTS. Il n'apparaît plus à l'écran ni à l'oral, donc il n'est pas bloquant.",
-     "correction_demandee": "Retirer ce fait de `faits` s'il n'est pas utilisé, ou ajouter une source qui le confirme."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 2,
-     "constat": "Droits des photos : la vérification du crédit (auteur + licence) et de la source libre ne peut se faire qu'au rendu.",
-     "correction_demandee": "Vérifier au rendu que les photos des scènes 2, 6 et 8 viennent de Wikimedia Commons ou d'une photothèque validée, avec crédit visible."
-    },
-    {
-     "gravite": "bloquant",
-     "scene": 6,
-     "constat": "L'image illustrant « Sculpté par les glaciers » est un dessin de Sargent portant l'inscription « JUNGFRAU ». Elle ne montre pas le Cervin, alors que le texte et le crédit la présentent comme le Cervin sculpté par la glace. Image trompeuse et identification incorrecte.",
-     "correction_demandee": "Remplacer par une image du Cervin dont la source et la licence sont vérifiables, ou faire valider par un humain l'usage de ce dessin. Ne pas publier en l'état."
-    },
-    {
-     "gravite": "bloquant",
-     "scene": 2,
-     "constat": "Des fragments de texte (« s h… », « ain lift. ») apparaissent à gauche de la carte titre, en dehors de l'encart. On ne sait pas s'il s'agit de texte de la photo ou d'un débordement de l'interface.",
-     "correction_demandee": "Vérifier le rendu. Si c'est un débordement, le corriger ; sinon recadrer la photo pour retirer ces fragments visibles ou les masquer."
-    },
-    {
-     "gravite": "important",
-     "scene": 2,
-     "constat": "Le crédit photo (« Photo : Sikander Iqbal… ») est placé à y ≈ 742 px sur la vue 540×960, soit hors de la zone de sécurité TikTok (y 300–1450 sur 1080×1920, soit ≈150–725 ici).",
-     "correction_demandee": "Remonter le crédit dans la zone de sécurité, par exemple juste sous le sous-titre, sans le couper."
-    },
-    {
-     "gravite": "important",
-     "scene": 8,
-     "constat": "Le crédit photo est à y ≈ 742 px, hors de la zone de sécurité.",
-     "correction_demandee": "Remonter le crédit dans la zone de sécurité."
-    },
-    {
-     "gravite": "important",
-     "scene": 6,
-     "constat": "Le crédit photo est à y ≈ 742 px, hors de la zone de sécurité.",
-     "correction_demandee": "Remonter le crédit dans la zone de sécurité."
-    },
-    {
-     "gravite": "important",
-     "scene": 1,
-     "constat": "Les scènes marquées « paper » (1, 3, 5, 7, 9, 10) apparaissent en vert foncé et non en crème. L'alternance papier / vert n'est donc pas visible à l'écran.",
-     "correction_demandee": "Vérifier le thème rendu. Les fonds papier doivent être crème #F5F2EA, ou la charte et le thème doivent être alignés."
-    },
-    {
-     "gravite": "important",
-     "scene": 5,
-     "constat": "La frise « 3e site suisse » ne montre aucun de ses trois items sur les images prélevées (zone centrale vide, seul le sous-titre apparaît). Risque d'écran vide prolongé, donc de silence visuel.",
-     "correction_demandee": "Vérifier l'animation des items sur toute la durée (25,78–35,66 s) et s'assurer qu'aucune plage n'est vide."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 4,
-     "constat": "Les libellés de la carte (Monthey, Sion, Sierre, Viège, Brigue, Martigny) sont très petits et peu lisibles sur mobile. La carte est recadrée de façon abrupte (bords coupés).",
-     "correction_demandee": "Agrandir les libellés principaux et recadrer proprement la carte, sans bord coupé visible."
-    },
-    {
-     "gravite": "mineur",
-     "scene": 9,
-     "constat": "Seul l'item 1 du récapitulatif est visible sur l'image prélevée. Les items 2 et 3 n'apparaissent pas à cet instant.",
-     "correction_demandee": "Confirmer que les items 2 et 3 apparaissent bien dans le temps prévu (5,64 s et 8,40 s)."
-    }
-   ],
-   "description_tiktok": "Le Cervin entre dans la liste mondiale des sites géologiques. Pourquoi cette montagne est-elle unique ? On t'explique.\nSources : RTS, « Le Cervin fait son entrée au patrimoine mondial géologique » ; Le Temps ; Le Nouvelliste\n#Valais #Cervin #Zermatt #Geologie #Montagne",
-   "sources": [
-    {
-     "media": "RTS Suisse",
-     "titre": "Le Cervin fait son entrée au patrimoine mondial géologique",
-     "url": "https://www.rts.ch/info/suisse/2026/article/le-cervin-entre-au-patrimoine-mondial-de-la-geologie-29407489.html"
-    },
-    {
-     "media": "Le Temps",
-     "titre": "Le Cervin fait son entrée dans le classement mondial du patrimoine géologique",
-     "url": "https://www.letemps.ch/suisse/le-cervin-fait-son-entree-dans-le-classement-mondial-du-patrimoine-geologique"
-    },
-    {
-     "media": "Le Nouvelliste",
-     "titre": "Le Cervin classé au patrimoine mondial géologique",
-     "url": "https://www.lenouvelliste.ch/valais/haut-valais/zermatt/le-cervin-classe-au-patrimoine-mondial-geologique-1520689"
-    }
-   ],
-   "mp4": "out/le-cervin-entre-au-patrimoine-geologique-mondial/2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g.mp4",
-   "etat": "bloque",
-   "cout_usd": 0.6357,
-   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g/LePouls_2026-11-06-matin-le-cervin-entre-dans-la-liste-mondiale-des-sites-g.mp4",
-   "lien_drive": "https://drive.google.com/drive/folders/1ons8ztp-mRyoieqw0ecHqtkn9co0AHIM",
-   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/7"
-  },
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
    "titre": "AVA, l'IA du Valais",
@@ -2100,6 +1990,84 @@
    "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi/LePouls_2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi.mp4",
    "lien_drive": "https://drive.google.com/drive/folders/1y0UNVpjlWtAuO1u48iUQNUdqW_LIg-nj",
    "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/25"
+  },
+  {
+   "id": "2026-11-18-jour-couples-maries-le-non-prend-la-tete",
+   "titre": "Couples mariés : le non prend la tête",
+   "edition": "jour",
+   "decision": "OK",
+   "problemes": [
+    {
+     "gravite": "mineur",
+     "scene": 0,
+     "constat": "Le script reste dense (environ 90 secondes, plusieurs chiffres : 11 jours, 29 novembre, 8 mars, 40 %, 54 %, 2,8 points). « Impôt fédéral direct » est expliqué dans la voix mais pas à l'écran.",
+     "correction_demandee": "Facultatif : resserrer le milieu du script (scène 8) si une coupe est simple. Sinon, ne rien changer."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 6,
+     "constat": "Équilibre pour/contre désormais symétrique (deux points de chaque côté, deux phrases de voix). Le reliquat « deux systèmes à la fois » a bien disparu.",
+     "correction_demandee": "Aucune. Point de vérification pour le montage : garder un temps de parole comparable lors du rendu audio."
+    },
+    {
+     "gravite": "important",
+     "scene": 11,
+     "constat": "Le titre de l'item 1 « Vote sur l'impôt fédéral direct » est répété presque à l'identique par le sous-titre « l'impôt fédéral direct. ». Le même mot-clé apparaît deux fois dans le même écran.",
+     "correction_demandee": "Remplacer le sous-titre par une phrase qui apporte autre chose, par exemple « le Parlement doit encore voter. » (à vérifier avec le texte validé), ou supprimer le sous-titre."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 8,
+     "constat": "La photo est un bulletin de vote réel de 2006 (loi sur la coopération avec les États d'Europe de l'Est). Le texte lisible concerne un autre objet de vote et peut prêter à confusion sur le scrutin de novembre 2026.",
+     "correction_demandee": "Choisir une photo sans texte lisible de votation antérieure, par exemple une urne ou un bureau de vote, ou recadrer pour que le texte ne soit pas identifiable."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 2,
+     "constat": "Le mot « Votation » apparaît deux fois : dans le libellé de rubrique en haut à gauche et dans le kicker « VOTATION FÉDÉRALE ». Redondance visuelle légère.",
+     "correction_demandee": "Remplacer le kicker par « Scrutin fédéral » ou « Sondage » selon le contexte, ou garder un seul libellé."
+    },
+    {
+     "gravite": "mineur",
+     "scene": 1,
+     "constat": "À t≈0, le titre « LE NON PREND L'AVANTAGE » est en cours d'animation et le dernier mot est partiellement masqué par le bandeau. L'image est prise pendant le mouvement, mais la coupure est visible.",
+     "correction_demandee": "Vérifier qu'une image prélevée après la fin de l'animation affiche le titre entier ; sinon ajuster le délai d'apparition ou le masque."
+    }
+   ],
+   "description_tiktok": "Imposition des couples mariés : que propose l'initiative du Centre, et pourquoi le non passe en tête dans le sondage SSR ? Les deux camps, expliqués. Votation le 29 novembre.\nSources : RTS, Le Temps, 24 heures, Confédération\n#Votation #Suisse #Impôts #29novembre #LePouls",
+   "sources": [
+    {
+     "media": "RTS",
+     "titre": "L'initiative fiscale sur les couples mariés bascule vers le non, selon le 2e sondage SSR",
+     "url": "https://www.rts.ch/info/suisse/2026/article/sondage-ssr-l-impot-des-couples-maries-bascule-vers-le-non-29418422.html"
+    },
+    {
+     "media": "Le Temps",
+     "titre": "Votations du 29 novembre : derniers sondages",
+     "url": "https://www.letemps.ch/suisse/votations-du-29-novembre-les-suisses-rejetteraient-la-hausse-de-la-tva-pour-l-avs-le-sort-de-la-loi-sur-le-materiel-de-guerre-tres-incertain-selon-un-sondage-de-la-ssr"
+    },
+    {
+     "media": "Le Temps",
+     "titre": "Pour Philipp Matthias Bregy, revoter sur l'imposition des couples mariés n'est pas inutile, mais nécessaire",
+     "url": "https://www.letemps.ch/suisse/pour-philipp-matthias-bregy-revoter-sur-l-imposition-des-couples-maries-n-est-pas-inutile-mais-necessaire"
+    },
+    {
+     "media": "24 heures",
+     "titre": "Imposition individuelle : les Suisses prêts à rejeter l'initiative du Centre",
+     "url": "https://www.24heures.ch/imposition-individuelle-les-suisses-prets-a-rejeter-linitiative-du-centre-349910789356"
+    },
+    {
+     "media": "Confédération",
+     "titre": "Imposition des couples mariés",
+     "url": "https://www.admin.ch/fr/imposition-couples"
+    }
+   ],
+   "mp4": "out/imposition-des-couples-maries-ce-qui-se-vote-le-29/2026-11-18-jour-couples-maries-le-non-prend-la-tete.mp4",
+   "etat": "a_valider",
+   "cout_usd": 0.9968,
+   "lien_video": "https://github.com/Jeremydeb64/le-pouls-videos/releases/download/video-2026-11-18-jour-couples-maries-le-non-prend-la-tete/LePouls_2026-11-18-jour-couples-maries-le-non-prend-la-tete.mp4",
+   "lien_drive": "https://drive.google.com/drive/folders/1hVYlh-zwZ1tAC7sBsYmhaEAgxC5ChRdb",
+   "lien_issue": "https://github.com/Jeremydeb64/le-pouls-videos/issues/26"
   }
  ]
 }
