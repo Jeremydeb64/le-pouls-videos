@@ -1,28 +1,13 @@
 {
  "edition": "jour",
- "etape": "scenariste",
+ "etape": "veille",
  "agents": {
-  "veilleur": "termine",
-  "scenariste": "travaille",
-  "controleur": "termine",
+  "veilleur": "travaille",
+  "scenariste": "attend",
+  "controleur": "attend",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 47475 crédits restants ce mois-ci.",
-   "t": "2026-11-16T13:05:05.055Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-16T13:05:05.060Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "246 articles lus, je regroupe par sujet.",
-   "t": "2026-11-16T13:05:12.919Z"
-  },
   {
    "agent": "veilleur",
    "texte": "Je garde « Changer de caisse-maladie en un clic : bientôt possible ? ». Le Conseil fédéral propose d'accepter une motion pour une résiliation numérique et uniforme : une démarche simple qui touche tous les assurés et peut faire baisser les primes par la concurrence.",
@@ -407,9 +392,24 @@
    "agent": "diffuseur",
    "texte": "Rien à publier pour cette édition.",
    "t": "2026-11-19T13:14:39.168Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39444 crédits restants ce mois-ci.",
+   "t": "2026-11-19T21:22:11.714Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-19T21:22:11.719Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "276 articles lus, je regroupe par sujet.",
+   "t": "2026-11-19T21:22:19.531Z"
   }
  ],
- "maj": "2026-11-19T13:14:39.168Z",
+ "maj": "2026-11-19T21:22:19.531Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
