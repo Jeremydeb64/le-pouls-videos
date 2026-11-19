@@ -2386,6 +2386,11 @@
    "date": "2026-11-18T13:12:27.533Z",
    "etiquette": "édition jour 2026-11-18",
    "usd": 1.0054
+  },
+  {
+   "date": "2026-11-19T01:58:02.138Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -2508,7 +2513,7 @@
   "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29": 0.9968
  },
  "soldes": {
-  "date": "2026-11-18T13:12:27.543Z",
+  "date": "2026-11-19T01:58:02.841Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 90829,
@@ -2522,5 +2527,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-18T13:12:28.942Z"
+ "maj": "2026-11-19T01:58:04.514Z"
 }
