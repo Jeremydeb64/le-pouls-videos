@@ -10,21 +10,6 @@
  "messages": [
   {
    "agent": "controleur",
-   "texte": "Sujet clair et dates justes : le 30 novembre est bien dans 14 jours depuis le 16 novembre. À corriger : 1) l'accroche « 1 sur 12 » est plus précise que la source (« un peu plus de 8 % », sans période), alors prends le chiffre de la source. 2) Le titre « Le Conseil fédéral dit oui » s'affiche avant que la voix en parle : recale la scène 2 et raccourcis-la. 3) Précise que le Conseil fédéral prépare la loi après le vote, sans la présenter comme acquise. 4) Vérifie l'attribution du doute à Léonore Porchet, adoucis « la paperasse freine », et corrige « avant le 30 novembre » et #Valais dans la description.",
-   "t": "2026-11-16T13:08:00.799Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-16T13:08:00.803Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-16T13:09:29.852Z"
-  },
-  {
-   "agent": "controleur",
    "texte": "Les corrections demandées sont faites : chiffre de 8 % repris de la source, photoRonde synchronisée sur la voix, frise et voix prudentes, « au plus tard le 30 novembre » et hashtag #Suisse. Il reste deux points mineurs : vérifie l'attribution du doute à Léonore Porchet, et ajoute l'OFS aux sources de l'outro et de la description TikTok.",
    "t": "2026-11-16T13:09:40.170Z"
   },
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "276 articles lus, je regroupe par sujet.",
    "t": "2026-11-19T21:47:03.893Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39444 crédits restants ce mois-ci.",
+   "t": "2026-11-19T22:15:32.103Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-19T22:15:32.118Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "256 articles lus, je regroupe par sujet.",
+   "t": "2026-11-19T22:15:40.635Z"
   }
  ],
- "maj": "2026-11-19T21:47:03.893Z",
+ "maj": "2026-11-19T22:15:40.635Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
