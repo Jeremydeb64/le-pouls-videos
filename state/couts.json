@@ -2179,6 +2179,126 @@
    "unite": "tokens",
    "usd": 0.0044,
    "execution": "édition jour 2026-11-18"
+  },
+  {
+   "date": "2026-11-19T13:06:40.434Z",
+   "contexte": "veille",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 93478,
+   "unite": "tokens",
+   "usd": 0.0113,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:08:27.591Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 72779,
+   "unite": "tokens",
+   "usd": 0.2809,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:08:27.591Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:09:19.999Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 77447,
+   "unite": "tokens",
+   "usd": 0.2109,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:09:19.999Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:10:34.351Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 82397,
+   "unite": "tokens",
+   "usd": 0.2692,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:10:34.351Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "recherche web",
+   "quantite": 2,
+   "unite": "recherches",
+   "usd": 0.02,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:10:45.776Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 16362,
+   "unite": "tokens",
+   "usd": 0.0027,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:11:18.838Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "elevenlabs",
+   "operation": "voix",
+   "quantite": 701,
+   "unite": "crédits",
+   "usd": 0.0561,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:11:23.306Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "elevenlabs",
+   "operation": "transcription",
+   "quantite": 85,
+   "unite": "secondes",
+   "usd": 0.0052,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:13:16.663Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-haiku-5-5",
+   "quantite": 22984,
+   "unite": "tokens",
+   "usd": 0.0045,
+   "execution": "édition jour 2026-11-19"
+  },
+  {
+   "date": "2026-11-19T13:13:27.579Z",
+   "contexte": "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee",
+   "service": "anthropic",
+   "operation": "claude-sonnet-5-5",
+   "quantite": 13672,
+   "unite": "tokens",
+   "usd": 0.0372,
+   "execution": "édition jour 2026-11-19"
   }
  ],
  "executions": [
@@ -2391,6 +2511,11 @@
    "date": "2026-11-19T01:58:02.138Z",
    "etiquette": "relevé des soldes",
    "usd": 0
+  },
+  {
+   "date": "2026-11-19T13:14:37.757Z",
+   "etiquette": "édition jour 2026-11-19",
+   "usd": 0.938
   }
  ],
  "par_jour": {
@@ -2477,14 +2602,20 @@
    "elevenlabs": 0.0577,
    "higgsfield": 0,
    "total": 1.0054
+  },
+  "2026-11-19": {
+   "anthropic": 0.8767,
+   "elevenlabs": 0.0613,
+   "higgsfield": 0,
+   "total": 0.938
   }
  },
  "par_mois": {
   "2026-11": {
-   "anthropic": 14.045,
-   "elevenlabs": 1.2108,
+   "anthropic": 14.9217,
+   "elevenlabs": 1.2721,
    "higgsfield": 0,
-   "total": 15.2558
+   "total": 16.1938
   }
  },
  "par_video": {
@@ -2510,22 +2641,23 @@
   "2026-11-15-jour-pont-de-beaulieu-a-sierre-le-tablier-est-pose": 0.5791,
   "2026-11-16-jour-changer-de-caisse-maladie-en-un-clic-bientot-possi": 0.7768,
   "2026-11-16-jour-patinoire-de-tourbillon-ouverture-mercredi-18-nove": 0.477,
-  "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29": 0.9968
+  "2026-11-18-jour-imposition-des-couples-maries-ce-qui-se-vote-le-29": 0.9968,
+  "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee": 0.9267
  },
  "soldes": {
-  "date": "2026-11-19T01:58:02.841Z",
+  "date": "2026-11-19T13:14:37.766Z",
   "elevenlabs": {
    "plan": "creator",
-   "credits_utilises": 90829,
+   "credits_utilises": 91556,
    "credits_mois": 131000,
-   "credits_restants": 40171,
+   "credits_restants": 39444,
    "renouvellement": "2026-12-04T07:53:19.000Z"
   },
   "anthropic": {
-   "credit_estime_restant_usd": 0.895,
+   "credit_estime_restant_usd": 0.0183,
    "depuis": "2026-11-04"
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-19T01:58:04.514Z"
+ "maj": "2026-11-19T13:14:39.163Z"
 }

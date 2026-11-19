@@ -1,138 +1,13 @@
 {
  "edition": "jour",
- "etape": "controleur",
+ "etape": "scenariste",
  "agents": {
   "veilleur": "termine",
-  "scenariste": "termine",
+  "scenariste": "travaille",
   "controleur": "termine",
   "diffuseur": "attend"
  },
  "messages": [
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-14T13:10:14.110Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-14T13:11:25.483Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Bonne base visuelle : charte respectée, pas de débordement, crédits présents, sous-titres en deux lignes au plus. Il reste des corrections à faire : répétition « le départ de Cremo » (scène 2), deux noms pour le même site (scène 3 : Turtmann-Unterems / Tourtemagne), cartouche « AOP » orphelin et « Sierre » répété (scène 6), libellé « Aussi » qui n'est pas une date (frise), et sous-titres absents sur les deux scènes de chiffres (scènes 5 et 7). Vérifie aussi que les items 3 de la frise et du récapitulatif sont bien visibles au moment où la voix les énonce.",
-   "t": "2026-11-14T13:12:01.897Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.74 $ (Claude + ElevenLabs).",
-   "t": "2026-11-14T13:12:03.102Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-14T13:12:03.105Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 48010 crédits restants ce mois-ci.",
-   "t": "2026-11-15T13:05:08.766Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-15T13:05:08.769Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "248 articles lus, je regroupe par sujet.",
-   "t": "2026-11-15T13:05:17.183Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Pont de Beaulieu à Sierre : le tablier est posé ». Quatre médias concordent sur une opération spectaculaire (grue, 300 tonnes, nuit) qui se lit tout de suite sur une infographie du chantier et touche les déplacements sierrois.",
-   "t": "2026-11-15T13:05:39.832Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Le Nouvelliste.",
-   "t": "2026-11-15T13:05:39.881Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-15T13:06:56.844Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les faits principaux concordent avec les sources : 300 tonnes, 43 mètres, 2e plus grande grue de Suisse, nuit de samedi à dimanche, réouverture à l'été 2027. Retire seulement « avec les trains à l'arrêt », car aucune source de la liste ne le confirme. Si tu veux, ajoute « environ » devant les 300 tonnes. Le reste est bon : le sujet n'est pas sensible, il n'y a pas de votation, et le texte ne copie pas les articles.",
-   "t": "2026-11-15T13:07:13.768Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-15T13:07:13.771Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-15T13:07:50.936Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Les deux corrections sont faites : « avec les trains à l'arrêt » a été supprimé, et le grand chiffre et la voix disent « environ 300 tonnes ». Il reste une remarque mineure sur la coupure nord-sud, à sourcer ou à reformuler si tu veux.",
-   "t": "2026-11-15T13:07:56.889Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-15T13:07:56.891Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Attention, 10 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-15T13:08:18.615Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Albins / Wikimedia Commons, Public domain.",
-   "t": "2026-11-15T13:08:24.402Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Pas de photo libre convenable, je la remplace par un plein écran texte.",
-   "t": "2026-11-15T13:08:24.762Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : bigbirdz / Wikimedia Commons, CC BY 2.0.",
-   "t": "2026-11-15T13:08:26.284Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-15T13:08:26.287Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-15T13:09:25.815Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Visuel globalement propre, mais à corriger : les compteurs 185 et 42 doivent être vérifiés sur l'état final (300 et 43). La scène carte n'a pas de sous-titres, et « Sierre » est répété. La légende de la photo des trains répète le titre, la source a un « Sierre » orphelin. Tu peux reprendre ces points ?",
-   "t": "2026-11-15T13:09:53.738Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.59 $ (Claude + ElevenLabs).",
-   "t": "2026-11-15T13:09:55.211Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-15T13:09:55.213Z"
-  },
   {
    "agent": "systeme",
    "texte": "Clé ElevenLabs OK, 47475 crédits restants ce mois-ci.",
@@ -407,9 +282,134 @@
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-18T13:12:28.949Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 40171 crédits restants ce mois-ci.",
+   "t": "2026-11-19T13:06:07.419Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-19T13:06:07.422Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "280 articles lus, je regroupe par sujet.",
+   "t": "2026-11-19T13:06:15.741Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Je garde « Crue de 2024 à Sierre : elle aurait pu être évitée ». Un rapport de commission d'enquête parlementaire, repris par la plupart des médias valaisans et romands, dit que la crue de juin 2024 à Sierre et Chippis aurait pu être évitée ; sujet frais, concret pour les habitants et chiffré (dizaines de millions de dégâts, travaux mis à l'enquête seize ans plus tôt).",
+   "t": "2026-11-19T13:06:40.436Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je lis l'article du RTS Valais.",
+   "t": "2026-11-19T13:06:40.441Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-19T13:08:27.594Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Neutralité OK : la position de Ruppen est présentée et tout est attribué à la commission. Corrige d'abord les chiffres : les sources disent « environ 300 » évacués, pas « plus de 300 ». Retire « gouvernements précédents », car le rapport vise la période Ruppen depuis 2021. Reformule la position de Ruppen en « n'a pas perdu sa priorité ». Dis que le rapport propose d'étudier le transfert à une entité distincte. Recale l'item 3 de la frise (seg 29) sur la voix, change le titre « Un autre responsable » et remplace « 19 nov. 2026 » par « Ce jeudi ». Complète `faits` avec les éléments sur les services cantonaux, la période Ruppen et sa réponse.",
+   "t": "2026-11-19T13:09:20.000Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Je reprends le script avec les corrections du contrôle.",
+   "t": "2026-11-19T13:09:20.003Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je relis le script et je vérifie les faits.",
+   "t": "2026-11-19T13:10:34.353Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Corrections vérifiées et bien faites : chiffres des évacués, « gouvernements précédents » supprimé, phrase Ruppen recadrée, frise sans date 2026 parallèle, item 3 de la frise recalé sur l'expertise, voix sur l'étude du transfert, « insatisfaisante ». Il reste trois points mineurs : libellé de l'item 250 millions à aligner sur « plus de 250 millions de francs », et deux compléments de sources dans `faits`. Rien de bloquant : la vidéo peut passer en phase image.",
+   "t": "2026-11-19T13:10:45.776Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "J'envoie le texte à Lucie.",
+   "t": "2026-11-19T13:10:45.778Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Attention, 13 mots d'écart entre le texte et la voix.",
+   "t": "2026-11-19T13:11:23.313Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-19T13:11:26.774Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Lezecoto / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-19T13:11:27.862Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-19T13:11:29.641Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
+   "t": "2026-11-19T13:11:31.305Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Montage lancé.",
+   "t": "2026-11-19T13:11:31.308Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-19T13:12:48.241Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Deux points bloquants : la photo « Le rapport des députés » montre une femme identifiable qui peut passer pour l'auteure du rapport, il faut la remplacer par un visuel du Grand Conseil ou du bâtiment. Et il faut vérifier la phase d'animation des compteurs et des frises (la scène 1 et les stats montrent des valeurs intermédiaires), la coupure du titre « CRUE » et l'absence de sous-titres sur les deux scènes carte.",
+   "t": "2026-11-19T13:13:16.664Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
+   "t": "2026-11-19T13:13:16.668Z"
+  },
+  {
+   "agent": "scenariste",
+   "texte": "2 correction(s) appliquée(s), je relance le montage.",
+   "t": "2026-11-19T13:13:27.956Z"
+  },
+  {
+   "agent": "controleur",
+   "texte": "Je regarde les images clés de la vidéo.",
+   "t": "2026-11-19T13:14:32.992Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Sujet « Crue de 2024 à Sierre : elle aurait pu être évitée » abandonné : Error: Claude 400 : {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChCM7Wb6NF1w6FkaNrVg5\"}\n    at appel (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:63:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async demander (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:38:15)\n    at async demanderJSON (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:111:15)\n    at async controlerVisuel (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:225:19)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:362:23",
+   "t": "2026-11-19T13:14:37.755Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Coût de cette édition : 0.94 $ (Claude + ElevenLabs).",
+   "t": "2026-11-19T13:14:39.166Z"
+  },
+  {
+   "agent": "diffuseur",
+   "texte": "Rien à publier pour cette édition.",
+   "t": "2026-11-19T13:14:39.168Z"
   }
  ],
- "maj": "2026-11-18T13:12:46.268Z",
+ "maj": "2026-11-19T13:14:39.168Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
