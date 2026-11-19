@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "veilleur",
-   "texte": "Je garde « Changer de caisse-maladie en un clic : bientôt possible ? ». Le Conseil fédéral propose d'accepter une motion pour une résiliation numérique et uniforme : une démarche simple qui touche tous les assurés et peut faire baisser les primes par la concurrence.",
-   "t": "2026-11-16T13:05:29.732Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Suisse.",
-   "t": "2026-11-16T13:05:29.739Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-16T13:07:05.713Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Sujet clair et dates justes : le 30 novembre est bien dans 14 jours depuis le 16 novembre. À corriger : 1) l'accroche « 1 sur 12 » est plus précise que la source (« un peu plus de 8 % », sans période), alors prends le chiffre de la source. 2) Le titre « Le Conseil fédéral dit oui » s'affiche avant que la voix en parle : recale la scène 2 et raccourcis-la. 3) Précise que le Conseil fédéral prépare la loi après le vote, sans la présenter comme acquise. 4) Vérifie l'attribution du doute à Léonore Porchet, adoucis « la paperasse freine », et corrige « avant le 30 novembre » et #Valais dans la description.",
    "t": "2026-11-16T13:08:00.799Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "276 articles lus, je regroupe par sujet.",
    "t": "2026-11-19T21:22:19.531Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39444 crédits restants ce mois-ci.",
+   "t": "2026-11-19T21:46:55.803Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-19T21:46:55.862Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "276 articles lus, je regroupe par sujet.",
+   "t": "2026-11-19T21:47:03.893Z"
   }
  ],
- "maj": "2026-11-19T21:22:19.531Z",
+ "maj": "2026-11-19T21:47:03.893Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
