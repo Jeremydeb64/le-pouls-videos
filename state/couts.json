@@ -2516,6 +2516,11 @@
    "date": "2026-11-19T13:14:37.757Z",
    "etiquette": "édition jour 2026-11-19",
    "usd": 0.938
+  },
+  {
+   "date": "2026-11-20T01:51:29.733Z",
+   "etiquette": "relevé des soldes",
+   "usd": 0
   }
  ],
  "par_jour": {
@@ -2645,7 +2650,7 @@
   "2026-11-19-jour-crue-de-2024-a-sierre-elle-aurait-pu-etre-evitee": 0.9267
  },
  "soldes": {
-  "date": "2026-11-19T13:14:37.766Z",
+  "date": "2026-11-20T01:51:30.059Z",
   "elevenlabs": {
    "plan": "creator",
    "credits_utilises": 91556,
@@ -2659,5 +2664,5 @@
   }
  },
  "usd_chf": 0.8,
- "maj": "2026-11-19T13:14:39.163Z"
+ "maj": "2026-11-20T01:51:31.484Z"
 }
