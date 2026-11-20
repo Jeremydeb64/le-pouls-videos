@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Thomas Woodtli from Zürich, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
-   "t": "2026-11-16T13:10:15.197Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Superikonoskop / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-16T13:10:15.774Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-16T13:10:15.779Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Je regarde les images clés de la vidéo.",
    "t": "2026-11-16T13:11:54.519Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "256 articles lus, je regroupe par sujet.",
    "t": "2026-11-20T13:05:09.424Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39433 crédits restants ce mois-ci.",
+   "t": "2026-11-20T20:59:57.315Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-20T20:59:57.320Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "276 articles lus, je regroupe par sujet.",
+   "t": "2026-11-20T21:00:05.940Z"
   }
  ],
- "maj": "2026-11-20T13:05:09.424Z",
+ "maj": "2026-11-20T21:00:05.940Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
