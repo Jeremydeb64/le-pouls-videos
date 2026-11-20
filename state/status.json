@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Les corrections demandées sont faites : chiffre de 8 % repris de la source, photoRonde synchronisée sur la voix, frise et voix prudentes, « au plus tard le 30 novembre » et hashtag #Suisse. Il reste deux points mineurs : vérifie l'attribution du doute à Léonore Porchet, et ajoute l'OFS aux sources de l'outro et de la description TikTok.",
-   "t": "2026-11-16T13:09:40.170Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-16T13:09:40.172Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-16T13:10:14.862Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : Thomas Woodtli from Zürich, Switzerland / Wikimedia Commons, CC BY-SA 2.0.",
    "t": "2026-11-16T13:10:15.197Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "256 articles lus, je regroupe par sujet.",
    "t": "2026-11-19T22:15:40.635Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39444 crédits restants ce mois-ci.",
+   "t": "2026-11-20T13:05:00.596Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-20T13:05:00.598Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "256 articles lus, je regroupe par sujet.",
+   "t": "2026-11-20T13:05:09.424Z"
   }
  ],
- "maj": "2026-11-19T22:15:40.635Z",
+ "maj": "2026-11-20T13:05:09.424Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
