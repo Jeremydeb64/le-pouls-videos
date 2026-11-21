@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "veilleur",
-   "texte": "189 articles lus, je regroupe par sujet.",
-   "t": "2026-11-16T23:00:41.559Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Patinoire de Tourbillon : ouverture mercredi 18 novembre ». Ouverture dans deux jours, utile à toutes les familles, avec des dates et des lieux claires ; le détail des fermetures reste à vérifier dans le communiqué (seuls les titres sont disponibles).",
-   "t": "2026-11-16T23:01:01.654Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du Ville de Sion.",
-   "t": "2026-11-16T23:01:01.659Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Je relis le script et je vérifie les faits.",
    "t": "2026-11-16T23:02:15.874Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "278 articles lus, je regroupe par sujet.",
    "t": "2026-11-20T21:52:27.848Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39433 crédits restants ce mois-ci.",
+   "t": "2026-11-21T13:05:02.858Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-21T13:05:02.863Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "273 articles lus, je regroupe par sujet.",
+   "t": "2026-11-21T13:05:10.240Z"
   }
  ],
- "maj": "2026-11-20T21:52:27.848Z",
+ "maj": "2026-11-21T13:05:10.240Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
