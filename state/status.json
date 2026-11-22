@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Bonne base visuelle. Il reste à corriger : le « Sion » répété sur la carte, la légende « Hockey » qui ne colle pas à la sculpture, les sous-titres absents pendant la frise, et l'affichage des items 2 et 3 de la frise et du récapitulatif. Peux-tu vérifier ces points et fournir des images prélevées aux bons moments ?",
-   "t": "2026-11-16T23:04:35.733Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.49 $ (Claude + ElevenLabs).",
-   "t": "2026-11-16T23:04:36.995Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-16T23:04:36.998Z"
-  },
-  {
    "agent": "systeme",
    "texte": "Clé ElevenLabs OK, 40855 crédits restants ce mois-ci.",
    "t": "2026-11-18T13:05:03.270Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "270 articles lus, je regroupe par sujet.",
    "t": "2026-11-21T20:35:14.926Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39433 crédits restants ce mois-ci.",
+   "t": "2026-11-22T13:05:04.111Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-22T13:05:04.114Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "265 articles lus, je regroupe par sujet.",
+   "t": "2026-11-22T13:05:12.286Z"
   }
  ],
- "maj": "2026-11-21T20:35:14.926Z",
+ "maj": "2026-11-22T13:05:12.286Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
