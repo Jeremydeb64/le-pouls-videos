@@ -10,21 +10,6 @@
  "messages": [
   {
    "agent": "controleur",
-   "texte": "Les chiffres sont exacts. Le compte à rebours de 11 jours et le dimanche 29 novembre sont justes, et la marge de 2,8 points est bien présentée comme une estimation. Quatre corrections avant validation : 1) Nomme YouGov et précise que Tamedia donne aussi le non devant (59 %). Aujourd'hui, « un autre sondage » est flou et peut être confondu avec Tamedia. 2) Attribue « ne paierait jamais plus » au texte de l'initiative, sans le dire en voix neutre, ici et dans la légende de la scène 5. 3) Utilise le titre officiel du bulletin à la scène 2. 4) Ajoute aux `faits` le sondage SSR à 55 % de oui, les arguments du Centre et les « deux systèmes ». Facultatif : une phrase plus claire pour le statement Tamedia, par exemple « L'effet du *8 mars* ».",
-   "t": "2026-11-18T13:08:08.912Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je reprends le script avec les corrections du contrôle.",
-   "t": "2026-11-18T13:08:08.915Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-18T13:09:40.034Z"
-  },
-  {
-   "agent": "controleur",
    "texte": "Toutes les corrections demandées sont faites : YouGov est nommé, Tamedia est présenté comme donnant aussi le non, la promesse de l'initiative est attribuée au texte, le titre de la carte est le titre officiel, le statement « Le 8 mars pèse sur le vote » est clarifié et les faits sont complétés. Seules restent des remarques mineures sur la densité du script.",
    "t": "2026-11-18T13:09:49.600Z"
   },
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "265 articles lus, je regroupe par sujet.",
    "t": "2026-11-22T20:27:54.547Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 39433 crédits restants ce mois-ci.",
+   "t": "2026-11-22T20:45:26.669Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-22T20:45:26.673Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "265 articles lus, je regroupe par sujet.",
+   "t": "2026-11-22T20:45:35.272Z"
   }
  ],
- "maj": "2026-11-22T20:27:54.547Z",
+ "maj": "2026-11-22T20:45:35.272Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
