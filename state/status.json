@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Toutes les corrections demandées sont faites : YouGov est nommé, Tamedia est présenté comme donnant aussi le non, la promesse de l'initiative est attribuée au texte, le titre de la carte est le titre officiel, le statement « Le 8 mars pèse sur le vote » est clarifié et les faits sont complétés. Seules restent des remarques mineures sur la densité du script.",
-   "t": "2026-11-18T13:09:49.600Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le dialogue à Lucie et Arthur.",
-   "t": "2026-11-18T13:09:49.602Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Daniel Kraft / Wikimedia Commons, CC BY-SA 3.0.",
-   "t": "2026-11-18T13:10:27.627Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : Petar Milošević / Wikimedia Commons, CC BY-SA 4.0.",
    "t": "2026-11-18T13:10:28.495Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "265 articles lus, je regroupe par sujet.",
    "t": "2026-11-22T20:45:35.272Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 37275 crédits restants ce mois-ci.",
+   "t": "2026-11-23T13:05:04.120Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-23T13:05:04.123Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "220 articles lus, je regroupe par sujet.",
+   "t": "2026-11-23T13:05:12.941Z"
   }
  ],
- "maj": "2026-11-22T20:45:35.272Z",
+ "maj": "2026-11-23T13:05:12.941Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
