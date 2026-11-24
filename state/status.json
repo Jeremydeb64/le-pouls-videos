@@ -10,21 +10,6 @@
  "messages": [
   {
    "agent": "scenariste",
-   "texte": "Attention, 13 mots d'écart entre le texte et la voix.",
-   "t": "2026-11-19T13:11:23.313Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-19T13:11:26.774Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Lezecoto / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-19T13:11:27.862Z"
-  },
-  {
-   "agent": "scenariste",
    "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
    "t": "2026-11-19T13:11:29.641Z"
   },
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "270 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T23:14:57.269Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 26588 crédits restants ce mois-ci.",
+   "t": "2026-11-24T23:30:36.403Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T23:30:36.405Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "268 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T23:30:45.327Z"
   }
  ],
- "maj": "2026-11-24T23:14:57.269Z",
+ "maj": "2026-11-24T23:30:45.327Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
