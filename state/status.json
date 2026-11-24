@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Petar Milošević / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-18T13:10:28.495Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Keimzelle / Wikimedia Commons, Public domain.",
-   "t": "2026-11-18T13:10:29.659Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-18T13:10:29.664Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Je regarde les images clés de la vidéo.",
    "t": "2026-11-18T13:11:56.532Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "220 articles lus, je regroupe par sujet.",
    "t": "2026-11-23T13:05:12.941Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 35840 crédits restants ce mois-ci.",
+   "t": "2026-11-24T00:43:41.224Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T00:43:41.228Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "265 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T00:43:51.704Z"
   }
  ],
- "maj": "2026-11-23T13:05:12.941Z",
+ "maj": "2026-11-24T00:43:51.704Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
