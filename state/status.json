@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "veilleur",
-   "texte": "280 articles lus, je regroupe par sujet.",
-   "t": "2026-11-19T13:06:15.741Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Je garde « Crue de 2024 à Sierre : elle aurait pu être évitée ». Un rapport de commission d'enquête parlementaire, repris par la plupart des médias valaisans et romands, dit que la crue de juin 2024 à Sierre et Chippis aurait pu être évitée ; sujet frais, concret pour les habitants et chiffré (dizaines de millions de dégâts, travaux mis à l'enquête seize ans plus tôt).",
-   "t": "2026-11-19T13:06:40.436Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Je lis l'article du RTS Valais.",
-   "t": "2026-11-19T13:06:40.441Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Je relis le script et je vérifie les faits.",
    "t": "2026-11-19T13:08:27.594Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "268 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T01:44:09.747Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 26588 crédits restants ce mois-ci.",
+   "t": "2026-11-24T13:05:02.994Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T13:05:02.998Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "246 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T13:05:11.163Z"
   }
  ],
- "maj": "2026-11-24T01:44:09.747Z",
+ "maj": "2026-11-24T13:05:11.163Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
