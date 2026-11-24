@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "diffuseur",
-   "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
-   "t": "2026-11-18T13:12:28.949Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 40171 crédits restants ce mois-ci.",
-   "t": "2026-11-19T13:06:07.419Z"
-  },
-  {
-   "agent": "veilleur",
-   "texte": "Édition du jour, je fais le tour des sources.",
-   "t": "2026-11-19T13:06:07.422Z"
-  },
-  {
    "agent": "veilleur",
    "texte": "280 articles lus, je regroupe par sujet.",
    "t": "2026-11-19T13:06:15.741Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "264 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T01:11:52.854Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 35840 crédits restants ce mois-ci.",
+   "t": "2026-11-24T01:44:00.825Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T01:44:00.828Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "268 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T01:44:09.747Z"
   }
  ],
- "maj": "2026-11-24T01:11:52.854Z",
+ "maj": "2026-11-24T01:44:09.747Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
