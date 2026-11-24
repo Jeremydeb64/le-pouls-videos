@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Je relis le script et je vérifie les faits.",
-   "t": "2026-11-19T13:10:34.353Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Corrections vérifiées et bien faites : chiffres des évacués, « gouvernements précédents » supprimé, phrase Ruppen recadrée, frise sans date 2026 parallèle, item 3 de la frise recalé sur l'expertise, voix sur l'étude du transfert, « insatisfaisante ». Il reste trois points mineurs : libellé de l'item 250 millions à aligner sur « plus de 250 millions de francs », et deux compléments de sources dans `faits`. Rien de bloquant : la vidéo peut passer en phase image.",
-   "t": "2026-11-19T13:10:45.776Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "J'envoie le texte à Lucie.",
-   "t": "2026-11-19T13:10:45.778Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "Attention, 13 mots d'écart entre le texte et la voix.",
    "t": "2026-11-19T13:11:23.313Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "70 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T23:00:26.807Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 26588 crédits restants ce mois-ci.",
+   "t": "2026-11-24T23:14:49.333Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T23:14:49.335Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "270 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T23:14:57.269Z"
   }
  ],
- "maj": "2026-11-24T23:00:26.807Z",
+ "maj": "2026-11-24T23:14:57.269Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
