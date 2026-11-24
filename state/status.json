@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-18T13:11:56.532Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Scène recap : le sous-titre « l'impôt fédéral direct. » répète l'item 1 ; remplace-le par une formulation qui apporte autre chose. Pour la photo de la scène 8, choisis une image sans bulletin de vote lisible d'une autre votation.",
-   "t": "2026-11-18T13:12:27.528Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 1.01 $ (Claude + ElevenLabs).",
-   "t": "2026-11-18T13:12:28.947Z"
-  },
-  {
    "agent": "diffuseur",
    "texte": "Vidéo prête, j'attends le feu vert de Jérémy.",
    "t": "2026-11-18T13:12:28.949Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "265 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T00:43:51.704Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 35840 crédits restants ce mois-ci.",
+   "t": "2026-11-24T01:11:44.359Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-24T01:11:44.363Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "264 articles lus, je regroupe par sujet.",
+   "t": "2026-11-24T01:11:52.854Z"
   }
  ],
- "maj": "2026-11-24T00:43:51.704Z",
+ "maj": "2026-11-24T01:11:52.854Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
