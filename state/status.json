@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-19T13:12:48.241Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Deux points bloquants : la photo « Le rapport des députés » montre une femme identifiable qui peut passer pour l'auteure du rapport, il faut la remplacer par un visuel du Grand Conseil ou du bâtiment. Et il faut vérifier la phase d'animation des compteurs et des frises (la scène 1 et les stats montrent des valeurs intermédiaires), la coupure du titre « CRUE » et l'absence de sous-titres sur les deux scènes carte.",
-   "t": "2026-11-19T13:13:16.664Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Le Contrôleur a bloqué des images : je corrige et je refais le montage.",
-   "t": "2026-11-19T13:13:16.668Z"
-  },
-  {
    "agent": "scenariste",
    "texte": "2 correction(s) appliquée(s), je relance le montage.",
    "t": "2026-11-19T13:13:27.956Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "248 articles lus, je regroupe par sujet.",
    "t": "2026-11-25T13:05:20.565Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 21338 crédits restants ce mois-ci.",
+   "t": "2026-11-25T22:23:02.451Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-25T22:23:02.453Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "249 articles lus, je regroupe par sujet.",
+   "t": "2026-11-25T22:23:11.132Z"
   }
  ],
- "maj": "2026-11-25T13:05:20.565Z",
+ "maj": "2026-11-25T22:23:11.132Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
