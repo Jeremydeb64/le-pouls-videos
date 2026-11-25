@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "systeme",
-   "texte": "Coût de cette édition : 0.94 $ (Claude + ElevenLabs).",
-   "t": "2026-11-19T13:14:39.166Z"
-  },
-  {
-   "agent": "diffuseur",
-   "texte": "Rien à publier pour cette édition.",
-   "t": "2026-11-19T13:14:39.168Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Clé ElevenLabs OK, 39444 crédits restants ce mois-ci.",
-   "t": "2026-11-19T21:22:11.714Z"
-  },
-  {
    "agent": "veilleur",
    "texte": "Édition du jour, je fais le tour des sources.",
    "t": "2026-11-19T21:22:11.719Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "269 articles lus, je regroupe par sujet.",
    "t": "2026-11-25T22:43:11.946Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 21338 crédits restants ce mois-ci.",
+   "t": "2026-11-25T23:08:50.753Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-25T23:08:50.757Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "269 articles lus, je regroupe par sujet.",
+   "t": "2026-11-25T23:08:58.866Z"
   }
  ],
- "maj": "2026-11-25T22:43:11.946Z",
+ "maj": "2026-11-25T23:08:58.866Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
