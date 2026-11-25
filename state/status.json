@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : EpsilonEridani / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-19T13:11:29.641Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Photo trouvée sur Wikimedia : Photo : Christian David / Wikimedia Commons, CC BY-SA 4.0.",
-   "t": "2026-11-19T13:11:31.305Z"
-  },
-  {
-   "agent": "scenariste",
-   "texte": "Montage lancé.",
-   "t": "2026-11-19T13:11:31.308Z"
-  },
-  {
    "agent": "controleur",
    "texte": "Je regarde les images clés de la vidéo.",
    "t": "2026-11-19T13:12:48.241Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "268 articles lus, je regroupe par sujet.",
    "t": "2026-11-24T23:30:45.327Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 21338 crédits restants ce mois-ci.",
+   "t": "2026-11-25T13:05:12.139Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-25T13:05:12.142Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "248 articles lus, je regroupe par sujet.",
+   "t": "2026-11-25T13:05:20.565Z"
   }
  ],
- "maj": "2026-11-24T23:30:45.327Z",
+ "maj": "2026-11-25T13:05:20.565Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
