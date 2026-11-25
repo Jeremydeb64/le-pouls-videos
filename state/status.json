@@ -9,21 +9,6 @@
  },
  "messages": [
   {
-   "agent": "scenariste",
-   "texte": "2 correction(s) appliquée(s), je relance le montage.",
-   "t": "2026-11-19T13:13:27.956Z"
-  },
-  {
-   "agent": "controleur",
-   "texte": "Je regarde les images clés de la vidéo.",
-   "t": "2026-11-19T13:14:32.992Z"
-  },
-  {
-   "agent": "systeme",
-   "texte": "Sujet « Crue de 2024 à Sierre : elle aurait pu être évitée » abandonné : Error: Claude 400 : {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011ChCM7Wb6NF1w6FkaNrVg5\"}\n    at appel (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:63:22)\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n    at async demander (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:38:15)\n    at async demanderJSON (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/lib/claude.mjs:111:15)\n    at async controlerVisuel (file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:225:19)\n    at async file:///home/runner/work/le-pouls-videos/le-pouls-videos/pipeline/edition.mjs:362:23",
-   "t": "2026-11-19T13:14:37.755Z"
-  },
-  {
    "agent": "systeme",
    "texte": "Coût de cette édition : 0.94 $ (Claude + ElevenLabs).",
    "t": "2026-11-19T13:14:39.166Z"
@@ -407,9 +392,24 @@
    "agent": "veilleur",
    "texte": "249 articles lus, je regroupe par sujet.",
    "t": "2026-11-25T22:23:11.132Z"
+  },
+  {
+   "agent": "systeme",
+   "texte": "Clé ElevenLabs OK, 21338 crédits restants ce mois-ci.",
+   "t": "2026-11-25T22:43:03.291Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "Édition du jour, je fais le tour des sources.",
+   "t": "2026-11-25T22:43:03.295Z"
+  },
+  {
+   "agent": "veilleur",
+   "texte": "269 articles lus, je regroupe par sujet.",
+   "t": "2026-11-25T22:43:11.946Z"
   }
  ],
- "maj": "2026-11-25T22:23:11.132Z",
+ "maj": "2026-11-25T22:43:11.946Z",
  "episodes": [
   {
    "id": "2026-11-06-soir-ava-l-ia-du-valais",
